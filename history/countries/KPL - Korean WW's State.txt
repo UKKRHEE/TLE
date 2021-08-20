@@ -1,0 +1,42 @@
+﻿capital = 803
+OOB = "KPL"
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1934.6.15"
+	election_frequency = 48
+	elections_allowed = no
+}
+give_military_access = KOR
+give_military_access = CHI
+give_military_access = ITA
+give_military_access = JAP
+give_military_access = ENG
+give_military_access = FRA
+give_military_access = USA
+give_military_access = SOV
+
+set_popularities = {
+	neutrality = 100
+}
+
+add_ideas = {
+	#
+}
+
+create_country_leader = {
+	name = "Jean de Laborde"
+	picture = "gfx/leaders/FRA/Portrait_France_Jean_de_Laborde.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+

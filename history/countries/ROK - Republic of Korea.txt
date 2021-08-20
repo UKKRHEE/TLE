@@ -1,0 +1,137 @@
+﻿capital = 525
+
+oob = "ROK_1936"
+
+set_research_slots = 3
+
+set_technology = {
+	### 보병 ###
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	motorised_infantry = 1
+	marines  = 1
+	
+	### 지원 ###
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	
+	### 포병 ###
+	gw_artillery = 1
+	
+	### 공군 ###
+	early_fighter = 1
+	early_bomber = 1
+	CAS1 = 1
+	
+	### 육군 교리 ###
+	superior_firepower = 1
+	
+	### 산업/공학 ###
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+}
+
+show_ideas_tooltip = {
+	KOR_kepco
+}
+
+add_ideas = {
+	KOR_political_officer
+	KOR_weak_army
+	KOR_Japanese_influence
+}
+
+set_convoys = 250
+
+set_politics = {
+	ruling_party = democratic 
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 50
+	communism = 1
+	fascism = 19
+	neutrality = 30
+}
+
+create_country_leader = {
+	name = "서재필"
+	desc = ""
+	picture = "gfx/leaders/KOR/Portrait_KOR_Philip_Jason.dds"
+	expire = "1951.1.5"
+	ideology = liberalism
+	traits = {
+		triumphant_revolutionary
+	}
+}
+
+create_country_leader = {
+	name = "이강"
+	desc = "KOR_YI_KANG_DESC"
+	picture = "gfx/leaders/KOR/Portrait_KOR_Yi_Kang.dds"
+	expire = "1955.8.1"
+	ideology = despotism
+	traits = {
+		korea_emperor
+	}
+}
+
+create_country_leader = {
+	name = "김일성"
+	desc = ""
+	picture = "gfx/leaders/KOR/Portrait_KOR_Kim_Il-sung.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "이범석"
+	desc = ""
+	picture = "gfx/leaders/KOR/Portrait_KOR_Lee_Beom_seok.dds"
+	expire = "1972.5.11"
+	ideology = fascism_ideology
+	traits = {
+		korea_four_star
+	}
+}	
+
+#육군(대장)
+create_corps_commander = {
+	name = "Lee Beom Seok"
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Lee_Beom_seok.dds"
+	traits = { cavalry_officer brilliant_strategist politically_connected }
+	skill = 3
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Hong Sa ik"
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Hong_Sa_ik.dds"
+	traits = { organizer career_officer brilliant_strategist }
+	skill = 2
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Kim Won Bong"
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Kim_Won_bong.dds"
+	traits = { commando trickster brilliant_strategist }
+	skill = 3
+    attack_skill = 4
+    defense_skill = 1
+    planning_skill = 3
+    logistics_skill = 3
+}

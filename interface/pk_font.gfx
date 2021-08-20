@@ -1,0 +1,26 @@
+bitmapfonts = {
+
+	bitmapfont = {
+		name = "nnmj_16"
+		path = "gfx/fonts/nnmj_16"
+		color = 0xff000000
+	}
+
+	bitmapfont = {
+		name = "nnmj_19"
+		path = "gfx/fonts/nnmj_19"
+		color = 0xff000000
+	}
+
+	bitmapfont = {
+		name = "nnmj_21"
+		path = "gfx/fonts/nnmj_21"
+		color = 0xff000000
+	}
+
+	bitmapfont = {
+		name = "nnmj_i_27"
+		path = "gfx/fonts/nnmj_i_27"
+		color = 0xff000000
+	}
+}

@@ -1,0 +1,75 @@
+﻿capital = 328
+
+oob = "YOD_1936"
+
+set_research_slots = 2
+
+set_technology = {
+	### 보병 ###
+	infantry_weapons = 1
+	
+	### 포병 ###
+	gw_artillery = 1
+}
+
+add_ideas = {
+}
+
+set_convoys = 10
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
+}
+
+create_country_leader = {
+	name = "서재필"
+	desc = ""
+	picture = "gfx/leaders/KOR/Portrait_KOR_Philip_Jason.dds"
+	expire = "1951.1.5"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "영친왕 이은"
+	desc = ""
+	picture = "gfx/leaders/KOR/Portrait_KOR_Yi_Un.dds"
+	expire = "1955.8.1"
+	ideology = despotism
+	traits = {
+		korea_other_nations_king
+	}
+}
+
+create_country_leader = {
+	name = "김일성"
+	desc = ""
+	picture = "gfx/leaders/KOR/Portrait_KOR_Kim_Il-sung.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "이범석"
+	desc = ""
+	picture = "gfx/leaders/KOR/Portrait_KOR_Lee_Beom_seok.dds"
+	expire = "1972.5.11"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}	

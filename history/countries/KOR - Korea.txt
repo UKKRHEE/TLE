@@ -1,0 +1,913 @@
+﻿capital = 525
+
+oob = "KOR_1936"
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+		not = { has_dlc = "Waking the Tiger" }
+	}
+	set_autonomy = {
+		target = RUS
+		autonomous_state = autonomy_integrated_puppet
+	}
+}
+if = {
+	limit = { 
+		not = {
+			has_dlc = "Waking the Tiger"
+			has_dlc = "Together for Victory"
+		}
+	}
+	set_autonomy = {
+		target = RUS
+		autonomous_state = autonomy_puppet
+	}
+}
+if = {
+	limit = { 
+		has_dlc = "Waking the Tiger"
+	}
+	set_autonomy = {
+		target = RUS
+		autonomous_state = autonomy_wtt_imperial_protectorate
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+		not = { has_dlc = "Waking the Tiger" }
+	}
+	set_autonomy = {
+		target = KMN
+		autonomous_state = autonomy_integrated_puppet
+	}
+}
+if = {
+	limit = { 
+		not = {
+			has_dlc = "Waking the Tiger"
+			has_dlc = "Together for Victory"
+		}
+	}
+	set_autonomy = {
+		target = KMN
+		autonomous_state = autonomy_puppet
+	}
+}
+if = {
+	limit = { 
+		has_dlc = "Waking the Tiger"
+	}
+	set_autonomy = {
+		target = KMN
+		autonomous_state = autonomy_wtt_imperial_protectorate
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+		not = { has_dlc = "Waking the Tiger" }
+	}
+	set_autonomy = {
+		target = MON
+		autonomous_state = autonomy_integrated_puppet
+	}
+}
+if = {
+	limit = { 
+		not = {
+			has_dlc = "Waking the Tiger"
+			has_dlc = "Together for Victory"
+		}
+	}
+	set_autonomy = {
+		target = MON
+		autonomous_state = autonomy_puppet
+	}
+}
+if = {
+	limit = { 
+		has_dlc = "Waking the Tiger"
+	}
+	set_autonomy = {
+		target = MON
+		autonomous_state = autonomy_wtt_imperial_protectorate
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+		not = { has_dlc = "Waking the Tiger" }
+	}
+	set_autonomy = {
+		target = QIN
+		autonomous_state = autonomy_integrated_puppet
+	}
+}
+if = {
+	limit = { 
+		not = {
+			has_dlc = "Waking the Tiger"
+			has_dlc = "Together for Victory"
+		}
+	}
+	set_autonomy = {
+		target = QIN
+		autonomous_state = autonomy_puppet
+	}
+}
+if = {
+	limit = { 
+		has_dlc = "Waking the Tiger"
+	}
+	set_autonomy = {
+		target = QIN
+		autonomous_state = autonomy_wtt_imperial_protectorate
+	}
+}
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.15
+set_technology = {
+	### 보병 ###
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	motorised_infantry = 1
+	marines  = 
+	
+	gwtank = 1
+	basic_light_tank = 1
+	
+	### 지원 ###
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	
+	### 포병 ###
+	gw_artillery = 1
+	
+	### 공군 ###
+	early_fighter = 1
+	CAS1 = 1
+	
+	### 육군 교리 ###
+	superior_firepower = 1
+	
+	### 산업/공학 ###
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+}
+
+#해군(맨더건)"
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_heavy_battery = 1
+		basic_medium_battery = 1
+		improved_ship_torpedo_launcher = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		mtg_transport = 1
+		coastal_defense_ships = 1
+		basic_secondary_battery = 1
+		basic_depth_charges = 1
+	}
+	set_naval_oob = "KOR_1936_Naval"
+}
+
+#해군(호구 에디션)"
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		basic_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+	set_naval_oob = "KOR_1936_Naval_Legacy"
+}
+
+show_ideas_tooltip = {
+	KOR_kepco
+}
+
+add_ideas = {
+	KOR_yi_jin #황제
+	#####게임 시작시 국민정신 ㅅㄱ#####
+	KOR_Weakening_the_kingship #근황파
+	KOR_militarism #군국주의
+	KOR_striked_factories #파업!
+	KOR_divided_politics #분열된 정부
+	KOR_failed_civilian_control_of_the_military #실패한 문민통제
+	KOR_political_officer #정치군인
+	#####관짝#####
+	#KOR_weak_army #베르사유 - 군제 제한
+	#KOR_divided_nation_2 #상실된 북방영토
+	#KOR_bersaju_pact_of_korea #베르사유 조약
+	
+	#법률
+	low_economic_mobilisation
+	limited_conscription
+	limited_exports
+}
+rule = {
+	can_create_factions = yes
+}
+create_import = {
+		resource = oil
+		factories = 2
+		exporter = USA
+}
+
+#country_lock_all_division_template = yes
+set_convoys = 250
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.3.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 36 #liberalism
+	fascism = 17 #nazism
+	communism = 24 #marxism
+	neutrality = 23 #despotism
+}
+
+create_country_leader = {
+	name = "Ahn Chang Ho"
+	desc = ""
+	picture = "gfx/leaders/KOR/Portrait_KOR_Ahn_Changho.dds"
+	expire = "1951.1.5"
+	ideology = liberalism
+	traits = {
+		
+	}
+}
+#create_country_leader = {
+#	name = "Kim Koo"
+#	desc = ""
+#	picture = "gfx/leaders/KOR/Portrait_Kim_Koo.png"
+#	expire = "1951.1.5"
+#	ideology = conservatism
+#	traits = {
+#	}
+#}
+
+create_country_leader = {
+	name = "Yi Jin"
+	desc = "KOR_YI_JIN_DESC"
+	picture = "gfx/leaders/KOR/Portrait_Yi_Kang.dds"
+	expire = "1955.8.1"
+	ideology = despotism
+	traits = {
+		korea_emperor
+	}
+}
+
+create_country_leader = {
+	name = "Pak Hon Yong"
+	desc = ""
+	picture = "gfx/leaders/KOR/Portrait_KOR_Pak_Hon_yong.dds"
+	expire = "1965.1.1"
+	ideology = communism_subtype
+	traits = {
+		#
+	}
+}
+
+#create_country_leader = {
+#	name = "Lyuh Woon Hyung	"
+#	desc = ""
+#	picture = "gfx/leaders/KOR/Portrait_Lyuh_Woonhyung.png"
+#	expire = "1965.1.1"
+#	ideology = socialist_subtype
+#	traits = {
+#		#
+#	}
+#}
+
+create_country_leader = {
+	name = "Yu Dong Yeol"
+	desc = ""
+	picture = "gfx/leaders/KOR/Portrait_KOR_Yu_Dong_yeol.dds"
+	expire = "1972.5.11"
+	ideology = fascism_ideology
+	traits = {
+		dictator_kor
+	}
+}	
+
+#육군(원수)
+create_field_marshal = {
+	name = "Yu Dong Yeol"
+	id = 12139
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Yu_Dong_yeol.dds"
+	traits = { 
+		old_guard
+		cavalry_officer 
+		cavalry_leader
+		politically_connected
+	}
+	skill = 5
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 3
+    logistics_skill = 4
+}
+create_field_marshal = {
+	name = "Song Ho seong"
+	id = 12140
+	portrait_path = "gfx/leaders/KOR/Portrait_general_song_hoseong.dds"
+	traits = { 
+		old_guard
+		cavalry_officer 
+		defensive_doctrine
+		career_officer
+	}
+	skill = 4
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_field_marshal = {
+	name = "Yi Jin"
+	id = 20100
+	portrait_path = "gfx/leaders/KOR/Portrait_general_lee_jongchan.dds"
+	traits = { KOR_emperor KOR_imperial_family politically_connected old_guard media_personality }
+	skill = 5
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 4
+}
+create_field_marshal = {
+	name = "Yi Won"
+	id = 20101
+	portrait_path = "gfx/leaders/KOR/yi_geon_old.dds"
+	traits = { KOR_imperial_family politically_connected }
+	skill = 3
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 4
+}
+
+
+create_field_marshal = {
+	name = "Kim Chwa Chin"
+	id = 19361
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Kim_Chwa_chin.dds"
+	traits = { politically_connected inflexible_strategist trickster career_officer }
+	skill = 3
+    attack_skill = 3
+    defense_skill = 4
+    planning_skill = 3
+    logistics_skill = 5
+}
+
+create_field_marshal = {
+	name = "Yi Un"
+	id = 19362
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Yi_Un.dds"
+	traits = { KOR_imperial_family politically_connected old_guard defensive_doctrine media_personality }
+	skill = 2
+    attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 3
+}
+create_field_marshal = {
+	name = "Yujin Choi"
+	portrait_path = "gfx/leaders/KOR/Portrait_Future_Korea_Generic_Male_navy_5.dds"
+	traits = { old_guard defensive_doctrine inflexible_strategist trickster career_officer }
+	skill = 4
+    attack_skill = 5
+    defense_skill = 7
+    planning_skill = 5
+    logistics_skill = 4
+}
+
+#육군(대장)
+create_corps_commander = {
+	name = "Yi Wu"
+	id = 19363
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Yi_Wu.dds"
+	traits = { KOR_imperial_family politically_connected media_personality armor_officer trait_engineer }
+	skill = 2
+    attack_skill = 2
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Yi Geon"
+	id = 19380
+	portrait_path = "gfx/leaders/KOR/Portrait_general_lee_geon.dds"
+	traits = { KOR_imperial_family politically_connected brilliant_strategist armor_officer }
+	skill = 2
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Lee Beom Seok"
+	id = 19364
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Lee_Beom_seok.dds"
+	traits = { KOR_imperial_family cavalry_officer brilliant_strategist politically_connected }
+	skill = 3
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Kim Kyung cheon"
+	id = 19365
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Kim_Kyung_cheon.dds"
+	traits = { cavalry_officer armor_officer panzer_leader career_officer }
+	skill = 3
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ji Cheong Cheone"
+	id = 19366
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Ji_Cheong_cheon.dds"
+	traits = { inflexible_strategist infantry_officer defensive_doctrine }
+	skill = 3
+    attack_skill = 2
+    defense_skill = 4
+    planning_skill = 3
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Hong Sa ik"
+	id = 19367
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Hong_Sa_ik.dds"
+	traits = { organizer career_officer brilliant_strategist }
+	skill = 2
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Kim Won Bong"
+	id = 19368
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Kim_Won_bong.dds"
+	traits = { commando trickster brilliant_strategist }
+	skill = 3
+    attack_skill = 4
+    defense_skill = 1
+    planning_skill = 3
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Kim Suk won"
+	id = 19369
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Kim_Suk_won.dds"
+	traits = { infantry_officer brilliant_strategist career_officer }
+	skill = 3
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Eugene Kim"
+	id = 189390
+	portrait_path = "gfx/leaders/KOR/Portrait_USA_yujin_kim.dds"
+	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality armor_officer panzer_leader war_hero }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Kim Du Han"
+	portrait_path = "gfx/leaders/KOR/Portrait_4dollor2.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Kim Sung Ju"
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Kim_Il_sung.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Yang Se Bong"
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Yang_Se_bong.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Ryu Ja Meong"
+	portrait_path = "gfx/leaders/KOR/Portrait_ryu_ja_meog.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Kim Hong Il"
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Kim_Hong_il.dds"
+	skill = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Nam Il"
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Nam_Il.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Choe Yong Geon"
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Choe_Yong_gon.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+#해군
+create_navy_leader = {
+	name = "Sin Sun seong"
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Sin_Sun_seong.dds"
+	traits = { naval_lineage battleship_adherent gunnery_expert ironside }
+	skill = 3
+	id = 19370
+	attack_skill = 5
+	defense_skill = 3
+	maneuvering_skill = 4
+	coordination_skill = 4
+}
+
+create_navy_leader = {
+	name = "Son Won Ile"
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Son_Won_il.dds"
+	traits = { bold aviation_enthusiast superior_tactician }
+	id = 19371
+	skill = 3
+	attack_skill = 5
+	defense_skill = 4
+	maneuvering_skill = 3
+	coordination_skill = 4
+}
+
+create_navy_leader = {
+	name = "Shin Sung mo"
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Shin_Sung_mo.dds"
+	id = 19372
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+create_navy_leader = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+create_navy_leader = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+create_navy_leader = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+create_navy_leader = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+create_navy_leader = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+create_navy_leader = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+create_navy_leader = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+create_navy_leader = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+
+
+if = {
+	limit = { has_dlc = "Man the Guns"}
+		#전함
+		create_equipment_variant = {
+			name = "광무황제급"
+			name_group = KOR_BB_HISTORICAL
+			type = ship_hull_heavy_1
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_heavy_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				fixed_ship_armor_slot = ship_armor_bb_1
+				front_1_custom_slot = empty
+				mid_1_custom_slot = ship_secondaries_1
+				mid_2_custom_slot = ship_airplane_launcher_1
+				rear_1_custom_slot = ship_heavy_battery_2
+			}
+		}
+		#중순양함	
+		create_equipment_variant = {
+			name = "경주급"
+			type = ship_hull_cruiser_1
+			name_group = KOR_CA_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_medium_battery_2
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_armor_slot = ship_armor_cruiser_2
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				front_1_custom_slot = ship_medium_battery_2
+				mid_1_custom_slot = ship_torpedo_1
+				mid_2_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_airplane_launcher_1
+			}
+		}
+		#경순양함
+		create_equipment_variant = {
+			name = "평양급"
+			type = ship_hull_cruiser_1
+			name_group = KOR_CL_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				mid_1_custom_slot = empty
+				mid_2_custom_slot = ship_torpedo_2
+				rear_1_custom_slot = empty
+			}
+		}
+		#구축함
+		create_equipment_variant = {
+			name = "광개토대왕급"
+			type = ship_hull_light_2
+			name_group = KOR_DD_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_depth_charge_1
+			}
+		}
+		#구축함2
+		create_equipment_variant = {
+			name = "울산급"
+			type = ship_hull_light_1
+			name_group = KOR_DD_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = empty
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_depth_charge_1
+			}
+		}
+		#잠수함
+		create_equipment_variant = {
+			name = "부산급"
+			type = ship_hull_submarine_1
+			name_group = KOR_SS_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_torpedo_slot = ship_torpedo_sub_1
+				fixed_ship_engine_slot = sub_ship_engine_1
+				rear_1_custom_slot = ship_mine_layer_sub
+			}
+		}
+}
+
+1939.1.1 = {
+    oob = "KOR_1939"
+	declare_war_on = {
+		target = CHI
+		type = puppet_wargoal_focus
+	}
+	declare_war_on = {
+		target = GXC
+	    type = puppet_focus
+	}
+	declare_war_on = {
+		target = YUN
+		type = puppet_focus
+	}
+	declare_war_on = {
+		target = PRC
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = XSM
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = SHX
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = SIK
+		type = annex_everything
+	}
+	complete_national_focus = kor_reform_korea
+	complete_national_focus = kor_monarchy
+	complete_national_focus = kor_homeland_development
+	complete_national_focus = kor_industrial_complex_1
+	complete_national_focus = kor_arms_factory_1
+	complete_national_focus = kor_friendship_with_japan
+	complete_national_focus = kor_korean_lebensraum
+	complete_national_focus = kor_territory_expansion
+	complete_national_focus = kor_market_economy_reform
+	complete_national_focus = kor_strengthening_cooperation_japan
+	complete_national_focus = kor_korea_japan_military_agreement
+	complete_national_focus = kor_south_manju
+	complete_national_focus = kor_join_japan
+	complete_national_focus = kor_tsushima
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+		not = { has_dlc = "Waking the Tiger" }
+	}
+	set_autonomy = {
+		target = MEN
+		autonomous_state = autonomy_integrated_puppet
+	}
+}
+if = {
+	limit = { 
+		not = {
+			has_dlc = "Waking the Tiger"
+			has_dlc = "Together for Victory"
+		}
+	}
+	set_autonomy = {
+		target = MEN
+		autonomous_state = autonomy_puppet
+	}
+}
+if = {
+	limit = { 
+		has_dlc = "Waking the Tiger"
+	}
+	set_autonomy = {
+		target = MEN
+		autonomous_state = autonomy_wtt_imperial_protectorate
+	}
+}
+	
+}	

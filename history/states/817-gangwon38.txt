@@ -1,0 +1,22 @@
+
+state={
+	id=817
+	name="고성"
+
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = KOR
+
+	}
+
+	provinces={
+		1148 13238 
+	}
+	manpower=43689
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

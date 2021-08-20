@@ -1,0 +1,104 @@
+﻿units = {
+	fleet = {
+		name = "대한제국 황립 제 1 함대"			
+		naval_base = 4056
+		task_force = {
+			name = "제 1 해상 전투기동전단"
+			location = 4056
+        	ship = { name = "EOKN 광무" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOR version_name = "광무황제급" } } }
+			ship = { name = "EOKN 융희" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOR version_name = "광무황제급" } } }
+			ship = { name = "EOKN 대조영" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "경주급" } } }
+			ship = { name = "EOKN 이종무" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "경주급" } } }
+			ship = { name = "EOKN 장보고" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "경주급" } } }
+			ship = { name = "EOKN 권율" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "경주급" } } }
+			ship = { name = "EOKN 한성" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "평양급" } } }
+			ship = { name = "EOKN 부산" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "평양급" } } }
+			ship = { name = "EOKN 평양" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "평양급" } } }
+			ship = { name = "EOKN 수원" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "평양급" } } }
+			ship = { name = "EOKN 전주" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "평양급" } } }
+			ship = { name = "EOKN 거제" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "광개토대왕급" } } }
+			ship = { name = "EOKN 울산" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "광개토대왕급" } } }
+			ship = { name = "EOKN 파주" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "울산급" } } }
+			ship = { name = "EOKN 목포" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "울산급" } } }
+			ship = { name = "EOKN 광주" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "울산급" } } }
+		}	
+		task_force = {
+			name = "제 1 잠수전단"
+			location = 4056
+			ship = { name = "EOKN 부산-001" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "부산급" } } }
+			ship = { name = "EOKN 부산-002" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "부산급" } } }
+			ship = { name = "EOKN 부산-003" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "부산급" } } }
+			ship = { name = "EOKN 부산-004" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "부산급" } } }
+			ship = { name = "EOKN 부산-005" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "부산급" } } }
+			ship = { name = "EOKN 부산-006" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "부산급" } } }
+			ship = { name = "EOKN 부산-007" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "부산급" } } }
+		}
+	}
+		
+	fleet = {
+		name = "대한제국 황립 제 2 함대"			
+		naval_base = 4056
+		task_force = {
+			name = "제 2 해상 전투기동전단"
+			location = 4056
+            ship = { name = "EOKN 이순신" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOR version_name = "광무황제급" } } }
+		    ship = { name = "EOKN 광개토" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "경주급" } } }
+		    ship = { name = "EOKN 대구" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "경주급" } } }
+		    ship = { name = "EOKN 백두" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "경주급" } } }
+		    ship = { name = "EOKN 지리" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "평양급" } } }
+		    ship = { name = "EOKN 설악" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "평양급" } } }
+		    ship = { name = "EOKN 신라" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "평양급" } } }
+		    ship = { name = "EOKN 영원" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "광개토대왕급" } } }
+		    ship = { name = "EOKN 의원" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "광개토대왕급" } } }
+		    ship = { name = "EOKN 울릉" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "광개토대왕급" } } }
+		    ship = { name = "EOKN 풍기" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "울산급" } } }
+		}	
+		task_force = {
+			name = "제 2 잠수전단"
+			location = 4056
+		    ship = { name = "EOKN 부산-011" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "부산급" } } }
+		    ship = { name = "EOKN 부산-012" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "부산급" } } }
+		    ship = { name = "EOKN 부산-013" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "부산급" } } }
+		    ship = { name = "EOKN 부산-014" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "부산급" } } }
+		}
+	}
+	
+	fleet = {
+		name = "대한제국 황립 제 3 함대"			
+		naval_base = 4056
+	    task_force = {
+		    name = "제 3 해상 전투기동전단"			
+		    location = 4056
+		    ship = { name = "EOKN 필승" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "경주급" } } }
+		    ship = { name = "EOKN 선운" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "평양급" } } }
+		    ship = { name = "EOKN 팔공" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "평양급" } } }
+		    ship = { name = "EOKN 무장" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "울산급" } } }
+		    ship = { name = "EOKN 구례" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "울산급" } } }
+		    ship = { name = "EOKN 장성" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "울산급" } } }
+		}	
+		task_force = {
+		    name = "제 3 잠수전단"			
+		    location = 4056
+		    ship = { name = "EOKN 부산-017" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "부산급" } } }
+		    ship = { name = "EOKN 부산-018" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "부산급" } } }
+		    ship = { name = "EOKN 부산-019" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "부산급" } } }
+			ship = { name = "EOKN 부산-019" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "부산급" } } }
+		}
+	}
+}
+instant_effect = 
+{
+	
+### 느어어어 ###
+		# 
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_submarine_1
+				creator = "KOR" 
+				version_name = "해누리급"
+			}
+			requested_factories = 7
+			progress = 0.8
+			amount = 15
+		}
+}

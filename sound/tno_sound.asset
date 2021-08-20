@@ -1,0 +1,9 @@
+sound = {
+	name = "tno_se_korea_the_yi_kang"
+	file = "menu/tno_se_korea_the_yi_kang.wav"
+	always_load = no
+}sound = {
+	name = "tno_se_korea_ww_china"
+	file = "menu/tno_se_korea_ww_china.wav"
+	always_load = no
+}

@@ -1,0 +1,23 @@
+state={
+	id=842
+	name="STATE_842"
+	provinces={
+		1184 7089 12074 
+	}
+	manpower=3000000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	history={
+		victory_points = {
+			1184 1 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+			owner = CHI
+			add_core_of = CHI
+			add_core_of = PRC
+			buildings = {
+			}
+		}
+}

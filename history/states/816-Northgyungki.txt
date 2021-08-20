@@ -1,0 +1,17 @@
+state={
+	id=816
+	name="연천"
+	provinces={
+		13247 
+	}
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = KOR
+	}
+	manpower=24680
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,21 @@
+state={
+	id=841
+	name="STATE_841"
+	provinces={
+		4619 
+	}
+	manpower=522000
+	state_category=rural
+	buildings_max_level_factor=1.000
+	history={
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+		}
+			owner = CHI
+			add_core_of = CHI
+			add_core_of = PRC
+			buildings = {
+			}
+		}
+}

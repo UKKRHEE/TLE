@@ -1,0 +1,17 @@
+state={
+	id=818
+	name="북부 강원"
+	provinces={
+		4004 9981 11958
+	}
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = KOR
+	}
+	manpower=138000
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

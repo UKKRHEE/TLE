@@ -1,0 +1,73 @@
+add_namespace = kor_news
+
+news_event = { #전면적인 개혁을 선포한 황제
+	id = kor_news.1
+	title = kor_news.1.t
+	desc = kor_news.1.desc
+	picture = news_event_ast_parliament_house
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_news.1.a
+		trigger = {
+			TAG = KOR
+			name = kor_news.2.a
+		}
+	}
+}
+news_event = { #황제의 전제군주제 선포
+	id = kor_news.2
+	title = kor_news.2.t
+	desc = kor_news.2.desc
+	picture = news_event_ast_parliament_house
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_news.2.a
+		trigger = {
+			TAG = KOR
+		}
+	}
+}
+
+news_event = { #황제의 전제군주제 선포
+	id = kor_news.3
+	title = kor_news.3.t
+	desc = kor_news.3.desc
+	picture = GFX_world_event_nanking
+	
+	major = yes
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = kor_news.3.a
+		trigger = {
+			TAG = KOR
+		}
+	}
+	option = {
+		name = kor_news.3.b
+		trigger = {
+			TAG = CHI
+		}
+	}
+	option = {
+		name = kor_news.3.c
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = KOR
+					TAG = CHI
+				}
+			}			
+		}
+	}
+}

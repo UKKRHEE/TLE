@@ -1,0 +1,66 @@
+﻿
+# MAIN THEME
+music = {
+	name = "I_couldnt_say_anything"
+	file = "kim_kwang_seok/I_couldnt_say_anything.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "I_couldnt_say_anything"
+	file = "Lee_Moon_Sae1/I_couldnt_say_anything.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "I_dont_know_yet"
+	file = "Lee_Moon_Sae1/I_dont_know_yet.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "Wild_horse"
+	file = "Lee_Moon_Sae1/Wild_horse.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "in_the_rain"
+	file = "Lee_Moon_Sae1/in_the_rain.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "On_a_night_alone_its_raining"
+	file = "Lee_Moon_Sae1/On_a_night_alone_its_raining.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "whistle"
+	file = "Lee_Moon_Sae1/whistle.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "A_Girl"
+	file = "Lee_Moon_Sae1/A_Girl.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "white_feeling"
+	file = "Lee_Moon_Sae1/white_feeling.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "You_and_forever"
+	file = "Lee_Moon_Sae1/You_and_forever.ogg"
+	volume = 1.0
+}
+music = {
+	name = "guanghwamun"
+	file = "kbs/Gwanghwamun_love_song.ogg"
+	volume = 1.0
+}

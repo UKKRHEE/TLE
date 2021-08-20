@@ -1,0 +1,21 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_report_event_Kor_empire_comeback"
+		texturefile = "gfx/event_pictures/report_event_Kor_empire_comeback.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_Kor_empire_vs"
+		texturefile = "gfx/event_pictures/report_event_Kor_empire_vs.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_han_gang"
+		texturefile = "gfx/event_pictures/news_han_gang.dds"
+	}
+	spriteType = { 
+		name = "GFX_world_event_nanking"
+		texturefile = "gfx/event_pictures/GFX_world_event_nanking.png"
+	}
+}

@@ -1,0 +1,16 @@
+spriteTypes = {
+    #군정
+	spriteType = {
+		name = "GFX_ideology_KOR_neutrality_group"
+		texturefile = "gfx/yi_dynasties.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_KOR_fascism_group"
+		texturefile = "gfx/yi_dynasties.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_KOR_democratic_group"
+		texturefile = "gfx/yi_dynasties.dds"
+	}
+	
+}

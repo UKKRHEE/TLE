@@ -1,0 +1,114 @@
+spriteTypes = {
+
+	SpriteType = {  
+		name = "GFX_focus_goal_KOR_jeju_annex"  
+		texturefile = "gfx/interface/goals/goal_KOR_jeju_annex.png"
+	}
+	SpriteType = {  
+		name = "GFX_focus_goal_KOR_reform_korea" 
+		texturefile = "gfx/interface/goals/goal_KOR_reform_korea.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_goal_KOR_heil_korea"
+		texturefile = "gfx/interface/goals/goal_KOR_heil_korea.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_goal_KOR_fuck_pact"
+		texturefile = "gfx/interface/goals/goal_KOR_fuck_pact.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_goal_kor_empire_gangyu"
+		texturefile = "gfx/interface/goals/goal_kor_empire_gangyu.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_kor_empire"
+		texturefile = "gfx/interface/goals/goal_kor_empire.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_kor_ihwa"
+		texturefile = "gfx/interface/goals/focus_kor_ihwa.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_kor_flag_korea"
+		texturefile = "gfx/interface/goals/focus_kor_flag_korea.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_guardian_of_asia"
+		texturefile = "gfx/interface/goals/focus_guardian_of_asia.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_KOR_strong_hand"
+		texturefile = "gfx/interface/goals/goal_KOR_strong_hand.dds"
+	}
+	
+	
+	SpriteType = {
+		name = "GFX_goal_kor_deal"
+		texturefile = "gfx/interface/goals/goal_kor_deal.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_KOR_uprising"
+		texturefile = "gfx/interface/goals/goal_KOR_uprising.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_kor_loyal"
+		texturefile = "gfx/interface/goals/focus_kor_loyal.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_kor_empire_gukjang"
+		texturefile = "gfx/interface/goals/focus_kor_empire_gukjang.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_kor_crush"
+		texturefile = "gfx/interface/goals/goal_kor_crush.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_eok_navy"
+		texturefile = "gfx/interface/goals/focus_eok_navy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_eok_army"
+		texturefile = "gfx/interface/goals/focus_eok_army.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_eok_air"
+		texturefile = "gfx/interface/goals/focus_eok_air.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_kor_eok_army"
+		texturefile = "gfx/interface/goals/goal_kor_eok_army.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_kpg"
+		texturefile = "gfx/interface/goals/focus_kpg.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_assembly_election"
+		texturefile = "gfx/interface/goals/focus_assembly_election.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_attack_usa"
+		texturefile = "gfx/interface/goals/focus_attack_usa.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_대한국만세"
+		texturefile = "gfx/interface/goals/대한국만세.dds"
+	}
+}	

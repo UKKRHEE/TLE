@@ -1,0 +1,290 @@
+﻿capital = 605
+oob = "SZC"
+set_research_slots = 2
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}
+
+set_stability = 0.6
+set_war_support = 0.4
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+	}
+	add_ideas = {
+		PRC_government_corruption
+		CHI_ineffective_bureaucracy_warlord
+	}
+}
+set_popularities = {
+	neutrality = 100
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+1939.1.1 = {
+	
+	oob = "FNG"
+
+	add_political_power = 1198
+	
+	if = {
+		limit = {
+			has_dlc = "Waking the Tiger"
+		}
+
+
+		complete_national_focus = CHI_secure_internal_politics
+		complete_national_focus = CHI_cooperation_with_the_nationalists
+		complete_national_focus = CHI_industrial_investment
+		complete_national_focus = CHI_public_education_reform
+		complete_national_focus = CHI_long_term_economic_planning
+		complete_national_focus = CHI_technological_cooperation
+		complete_national_focus = CHI_local_arms_production
+		complete_national_focus = CHI_new_model_province
+		complete_national_focus = CHI_root_out_corruption
+		complete_national_focus = CHI_land_reform
+		complete_national_focus = CHI_reform_the_administration
+		complete_national_focus = CHI_heavy_weapons_development
+		else = {
+			#generic focuses
+			complete_national_focus = army_effort
+			complete_national_focus = equipment_effort
+			complete_national_focus = motorization_effort
+			complete_national_focus = aviation_effort
+			complete_national_focus = naval_effort
+			complete_national_focus = flexible_navy
+			complete_national_focus = industrial_effort
+			complete_national_focus = construction_effort
+			complete_national_focus = production_effort
+		}
+	}
+
+}
+
+### Country Leaders ###
+create_country_leader = {
+	name = "Xiong Kewu"
+	desc = "POLITICS_SZC_XIONG_KEWU_DESC"
+	picture = "Portrait_SZC_Xiong_Kewu.tga"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Liu Wenhui"
+	desc = "POLITICS_SZC_LIU_WENHUI_DESC"
+	picture = "Portrait_SZC_Liu_Wenhui.tga"
+	expire = "1865.1.1"
+	ideology = despotism
+	traits = {
+	    #
+	}
+}
+
+create_country_leader = {
+	name = "Liu Wenhui"
+	desc = "POLITICS_SZC_LIU_WENHUI_DESC"
+	picture = "Portrait_SZC_Liu_Wenhui.tga"
+	expire = "1865.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Liu Wenhui"
+	desc = "POLITICS_SZC_LIU_WENHUI_DESC"
+	picture = "Portrait_SZC_Liu_Wenhui.tga"
+	expire = "1865.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+#Armament Department generals
+create_field_marshal = {
+	name = "Yang Sen"
+	desc = "POLITICS_SZC_YANG_SEN_ARMY_DESC"
+	picture = "Portrait_SZC_Yang_Sen.tga"
+	traits = {
+		inflexible_strategist
+		politically_connected
+	}
+	id = 1129
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Liu Cunhou"
+	desc = "POLITICS_SZC_LIU_CUNHOU_ARMY_DESC"
+	picture = "Portrait_SZC_Liu_Cunhou.tga"
+	traits = {
+		old_guard
+		politically_connected
+		trait_reckless
+	}
+	id = 1130
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Fan Shaozeng"
+	desc = "POLITICS_SZC_FAN_SHAOZENG_ARMY_DESC"
+	picture = "Portrait_SZC_Fan_Shaozeng.tga"
+	traits = {
+		old_guard
+		substance_abuser
+	}
+	id = 1131
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Wang Lingji"
+	desc = "POLITICS_SZC_WANG_LINGJI_ARMY_DESC"
+	picture = "Portrait_SZC_Wang_Lingji.tga"
+	traits = {
+		brilliant_strategist
+		infantry_officer
+	}
+	id = 1132
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "He Guoguang"
+	desc = "POLITICS_SZC_HE_GUOGUANG_ARMY_DESC"
+	picture = "Portrait_SZC_He_Guoguang.tga"
+	traits = {
+		old_guard
+	}
+	id = 1133
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+random_unit_leader = {
+	limit = { has_id = 1133 }
+	save_global_event_target_as = SZC_He_Guoguang
+}
+
+#Baoding Department generals
+create_corps_commander = {
+	name = "Deng Xihou"
+	desc = "POLITICS_SZC_DENG_XIHOU_ARMY_DESC"
+	picture = "Portrait_SZC_Deng_Xihou.tga"
+	traits = {
+		career_officer
+	}
+	id = 1134
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Liu Wenhui"
+	desc = "POLITICS_SZC_LIU_WENHUI_ARMY_DESC"
+	picture = "Portrait_SZC_Liu_Wenhui.tga"
+	traits = {
+		old_guard
+		politically_connected
+		substance_abuser
+	}
+	id = 1135
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Wang Zuanxu"
+	desc = "POLITICS_SZC_WANG_ZUANXU_ARMY_DESC"
+	picture = "Portrait_SZC_Wang_Zuanxu.tga"
+	traits = {
+		artillery_officer
+		politically_connected
+		trait_reckless
+		harsh_leader
+	}
+	id = 1136
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Tian Songyao"
+	desc = "POLITICS_SZC_TIAN_SONGYAO_ARMY_DESC"
+	picture = "Portrait_SZC_Tian_Songyao.tga"
+	traits = {
+		inflexible_strategist
+		old_guard
+	}
+	id = 1137
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+#Industrial Corps generals
+create_field_marshal = {
+	name = "Liu Xiang"
+	desc = "POLITICS_SZC_LIU_XIANG_ARMY_DESC"
+	picture = "Portrait_SZC_Liu_Xiang.tga"
+	traits = {
+		inflexible_strategist
+		old_guard
+		politically_connected
+	}
+	id = 1138
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Pan Wenhua"
+	desc = "POLITICS_SZC_PAN_WENHUA_ARMY_DESC"
+	picture = "Portrait_SZC_Pan_Wenhua.tga"
+	traits = {
+		brilliant_strategist
+		war_hero
+	}
+	id = 1139
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}

@@ -1,0 +1,70 @@
+﻿capital = 527
+
+oob = "KOR_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	motorised_infantry = 1
+
+}
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 30
+	fascism = 18
+	communism = 50
+	neutrality = 2
+}
+
+create_country_leader = {
+	name = "김구"
+	desc = ""
+	picture = "gfx/leaders/KOR/Portrait_KOR_Kim_Koo.dds"
+	expire = "9999.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "여운형"
+	desc = ""
+	picture = "gfx/leaders/KOR/Portrait_Korea_Lyuh_Woon_hyung.dds"
+	expire = "1955.8.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "김일성"
+	desc = ""
+	picture = "gfx/leaders/KOR/Portrait_KOR_Kim_Il-sung.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "군사정부"
+	desc = ""
+	picture = ""
+	expire = "1956.8.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}	

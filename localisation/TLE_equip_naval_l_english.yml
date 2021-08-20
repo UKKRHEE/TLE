@@ -1,0 +1,47 @@
+﻿l_english:
+
+ #잠수함
+ KOR_submarine_1:0 "부산급"
+ KOR_submarine_2:0 "강릉급"
+ KOR_submarine_3:0 "목포급"
+ KOR_submarine_4:0 "해주급"
+ 
+ #구축함
+ KOR_destroyer_1:0 "울산급"
+ KOR_destroyer_2:0 "광개토대왕급"
+ KOR_destroyer_3:0 "충무공 이순신급"
+ KOR_destroyer_4:0 "세종대왕급"
+ 
+ #순양함
+ KOR_light_cruiser_1:0 "평양급"
+ KOR_light_cruiser_2:0 "인천급"
+ KOR_light_cruiser_3:0 "개성급"
+ KOR_light_cruiser_4:0 "의주급"
+ KOR_heavy_cruiser_1:0 "경주급"
+ KOR_heavy_cruiser_2:0 "나선급"
+ KOR_heavy_cruiser_3:0 "원산급"
+ KOR_heavy_cruiser_4:0 "대구급"
+ 
+ #전함
+ KOR_battleship_1:0 "광무황제급"
+ KOR_battleship_2:0 "태조급"
+ KOR_battleship_3:0 "오얏꽃급"
+ KOR_battleship_4:0 "장보고급"
+ KOR_SH_battleship_1:0 "이화급"
+ KOR_SH_battleship_2:0 "대한제국급"
+ KOR_battle_cruiser_1:0 "대조영급"
+ KOR_battle_cruiser_2:0 "무의공급"
+ 
+ #항공모함
+ KOR_carrier_1:0 "한성급"
+ KOR_carrier_2:0 "융희황제급"
+ KOR_carrier_3:0 "정조대왕급"
+ KOR_carrier_4:0 "단군급"
+ 
+ #함명
+ NAME_KOR_DO:0 "도"
+ NAME_KOR_CITIES:0 "도시"
+ NAME_KOR_RIVER:0 "강"
+ NAME_KOR_MOUNTAIN:0 "산"
+ 
+ 

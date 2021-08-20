@@ -1,0 +1,46 @@
+
+state={
+	id=825
+	name="남부 요동"
+	resources={
+		steel=27.000
+	}
+
+	history={
+		owner = KOR
+		add_core_of = CHI
+		add_core_of = FNG
+		add_core_of = KOR
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 5
+			964 = {
+				naval_base = 3
+
+			}
+
+		}
+		victory_points = {
+			836 3 
+		}
+		victory_points = {
+			6981 10 #단동 
+		}
+		#set_demilitarized_zone = yes
+		#1936.3.7 = {
+		#	set_demilitarized_zone = no
+		#
+		#}
+
+	}
+
+	provinces={
+		836 3839 3895 3970 6804 6860 6910 6981 9854 
+	}
+	manpower=4264620
+	buildings_max_level_factor=1.000
+	state_category=city
+}

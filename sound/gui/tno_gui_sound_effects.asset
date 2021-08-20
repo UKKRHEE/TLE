@@ -1,0 +1,14 @@
+soundeffect = {
+	name = tno_se_korea_the_yi_kang
+	sounds = {
+		sound = tno_se_korea_the_yi_kang
+	}
+	volume = 55
+}
+soundeffect = {
+	name = tno_se_korea_ww_china
+	sounds = {
+		sound = tno_se_korea_ww_china
+	}
+	volume = 55
+}

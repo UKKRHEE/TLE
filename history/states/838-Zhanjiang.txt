@@ -1,0 +1,21 @@
+state={
+	id=838
+	name="STATE_838"
+	provinces={
+		4160 7135 
+	}
+	manpower=135000
+	state_category=rural
+	buildings_max_level_factor=1.000
+	history={
+		buildings = {
+			infrastructure = 2
+		}
+			owner = GXC
+			add_core_of = GXC
+			add_core_of = CHI
+			add_core_of = PRC
+			buildings = {
+			}
+		}
+}

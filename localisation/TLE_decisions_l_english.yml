@@ -1,0 +1,38 @@
+﻿l_english:
+
+ #한국
+ KOR_new_country_name:0 "새로운 국가"
+ KOR_new_country_name_desc:0 "붕괴되었던 국가는 회복되고 있으며 경제는 안정화 되었습니다. 이제는 다른 행동이 필요한 시간입니다.\n\n각하, 명령을 내려주십시오."
+ 
+ KOR_daehwan_empire:0 "대환제국 선포"
+ KOR_asia_union:0 "아시아 연방 선포"
+ 
+ #툴팁
+ form_country_korea_tt:0 "아시아의 §Y한반도§! 전역을 지배합니다." 
+ form_country_manju_tt:0 "아시아의 §Y간도를 제외한 만주§! 전역을 지배합니다." 
+ form_country_mongolia_tt:0 "아시아의 §Y몽골과 내몽골과 탄누투바§! 전역을 지배합니다."
+ form_country_china_tt:0 "아시아의 §Y중국§! 전역을 지배합니다."
+ form_country_japan_tt:0 "아시아의 §Y일본 열도§! 전역을 지배합니다."
+ form_state_gando_tt:0 "아시아의 §Y간도§! 전역을 지배합니다."
+ form_state_siberia_tt:0 "아시아의 §Y시베리아§! 전역을 지배합니다."
+ form_state_indochina_tt:0 "아시아의 §Y버마,시암을 포함한 인도차이나§! 전역을 지배합니다."
+ KOR_attack_siam:0 "시암 공격" 
+ KOR_attack_siam_desc:0 "" 
+ KOR_attack_japanese_empire:0 "일본 공격"
+ KOR_japanese-korean_empire:0 "일본 단일화"
+ KOR_japanese-korean_empire_desc:0 "일본통일은 우리의 유구한 꿈입니다."
+ KOR_attack_fengtian:0 "봉천 공격"
+ KOR_attack_fengtian_desc:0 "봉천은 우리 대한의 적법한 영토입니다.과거 고구려-발해로 이어지는 역사는 간악한 짱깨들에 의해 빼앗겼으니,우리는 이제 대한제국의 고토를 되찾아야 합니다."
+ 
+ KOR_goonsoo:0 "군수산업"
+ KOR_goonsoo_desc:0 "군수공업은 우리를 지키는 일의 첫걸음 입니다."
+ KOR_mingangongjang:0 "민간산업"
+ KOR_mingangongjang_desc:0 "민생이야말로 곧 국가입니다."
+ KOR_dockyard:0 "조선산업"
+ KOR_dockyard_desc:0 "조선기술은 패권을 차지하는 지름길입니다."
+ 
+ KOR_nuke_surrend:0 "외교정책"
+ KOR_sue_for_peace_nuke:0 "조건부 항복제의"
+ KOR_sue_for_peace_nuke_desc:0 "적들은 새롭고 가장 잔혹한 폭탄을 사용했습니다. 전쟁은 우리의 우위로 발달하는 것 만은 아닙니다. 우리는 반드시 견딜 수 없는 것을 견뎌야만 합니다."
+ KOR_sue_for_peace_nuke_mission:0 "대한 국토에 핵공격"
+ KOR_sue_for_peace_nuke_mission_desc:0 "최근 성공한 핵폭탄 실험은 대한 본토로의 전면적인 침공대책을 마련해주었습니다. 정보부는 대한과 멀리 떨어진 타이완 섬과 그들의 과거 식민지였던 칭다오를 지배하며 괴뢰국 만주국을 지배하며, 저들의 육군을 100사단 이하로 줄이거나 해군을 30개로 줄인 후 본토의 두 장소를 핵폭탄으로 기습하면 대한 정부의 무조건적인 항복을 이끌어낼 수 있다고 제안했습니다."

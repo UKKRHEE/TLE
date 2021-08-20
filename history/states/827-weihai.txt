@@ -1,0 +1,25 @@
+state={
+	id=827
+	name="STATE_827"
+	provinces={
+		4205 10018 
+	}
+	manpower=222000
+	state_category=rural
+	buildings_max_level_factor=1.000
+	history={
+		buildings = {
+			infrastructure = 6
+			4205 = {
+				naval_base = 3
+
+			}
+
+		}
+			owner = CHI
+			add_core_of = CHI
+			add_core_of = PRC
+			buildings = {
+			}
+		}
+}

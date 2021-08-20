@@ -1,0 +1,33 @@
+
+state={
+	id=812
+	name="황해"
+	resources={
+		aluminium=5.000
+	}
+
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 1
+
+		}
+		victory_points = {
+			10065 5
+		}
+		victory_points = {
+			11915 1
+		}
+		add_core_of = KOR
+
+	}
+
+	provinces={
+		1003 4107 7070 7155 10065 11915 
+	}
+	manpower=3434105
+	buildings_max_level_factor=1.000
+	state_category=city
+}

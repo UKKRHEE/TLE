@@ -1,0 +1,133 @@
+﻿
+# MAIN THEME
+music = {
+	name = "maintheme"
+	file = "kim_kwang_seok/letter_private.ogg"
+	volume = 1
+}
+
+# Anthem
+
+music = {
+	name = "National_Anthem_of_the_Korean_Empire"
+	file = "kbs/National_Anthem_of_the_Korean_Empire.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "National_Anthem_of_the_Korean_Empire"
+	file = "kbs/National_Anthem_of_the_Korean_Empire.ogg"
+	volume = 0.8
+}
+
+# War Song
+
+music = {
+	name = "The_Torch_of_Eradicating_Communism"
+	file = "kbs/The_Torch_of_Eradicating_Communism.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "6.25s_mugic"
+	file = "kbs/6.25s_mugic.ogg"
+	volume = 0.8
+}
+
+# Peace Song
+
+music = {
+	name = "Seoul_Central_Radio_Station_1"
+	file = "kbs/Seoul_Central_Radio_Station_1.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "national_anthem"
+	file = "kbs/national_anthem.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "KOR_National_anthem"
+	file = "kbs/KOR_National_anthem.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "around_thirty"
+	file = "kbs/around_thirty.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "Four_Seasons"
+	file = "kbs/Four_Seasons.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "beautiful_country"
+	file = "kbs/beautiful_country.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "Good_night_comrade"
+	file = "kbs/Good_night_comrade.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "anthem_fascism"
+	file = "kbs/anthem_fascism.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "old_love"
+	file = "kbs/old_love.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "Dont_worry"
+	file = "kbs/Dont_worry.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "Toyou_tome_tome_toyou"
+	file = "kbs/Toyou_tome_tome_toyou.ogg"
+	volume = 0.3
+}
+
+music = {
+	name = "To_you"
+	file = "kbs/To_you.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "ah_Korea"
+	file = "kbs/ah_Korea.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "Mokpos_Tears"
+	file = "kbs/Mokpos_Tears.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "coming_to_end_live"
+	file = "kbs/coming_to_end_live.ogg"
+	volume = 0.2
+}
+
+music = {
+	name = "arirang"
+	file = "kbs/arirang.ogg"
+	volume = 0.6
+}

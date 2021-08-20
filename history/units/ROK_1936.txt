@@ -1,0 +1,52 @@
+﻿#편제
+division_template = {
+	name = "신민해방군"
+	division_names_group = "ROK"
+	# Garrison Division
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		military_police = { x = 0 y = 0 }
+	}
+    priority = 0
+}
+
+#시작 생산 장비
+instant_effect = {
+	add_equipment_production = { #소총 I
+		equipment = {
+			type = infantry_equipment_1
+			creator = "KOR"
+		}
+		requested_factories = 4
+		progress = 0.79
+		efficiency = 100
+	}
+}
+instant_effect = {
+	add_equipment_production = { #지원 장비
+		equipment = {
+			type = support_equipment_1
+			creator = "KOR"
+		}
+		requested_factories = 5
+		progress = 0.79
+		efficiency = 100
+	}
+}
+instant_effect = {
+	add_equipment_production = { #야포
+		equipment = {
+			type = artillery_equipment_1
+			creator = "KOR"
+		}
+		requested_factories = 2
+		progress = 0.79
+		efficiency = 100
+	}
+}

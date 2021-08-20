@@ -1,0 +1,17 @@
+state={
+	id=819
+	name="장청"
+	provinces={
+		13248 
+	}
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = KOR
+	}
+	manpower=32400
+	state_category=rural
+	buildings_max_level_factor=1.000
+}
