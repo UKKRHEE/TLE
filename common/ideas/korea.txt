@@ -1,0 +1,1719 @@
+ideas = {
+	country = { #국민정신
+		KOR_failed_civilian_control_of_the_military = {
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = -0.1
+				political_power_cost = 0.1
+				democratic_drift = -0.05
+				custom_modifier_tooltip = tooltip_failed_civilian_control
+			}
+		}
+		KOR_anti_chinese_holy_war = {
+			picture = generic_manpower_bonus
+			modifier = {
+				war_support_factor = 0.05
+				conscription = 0.002
+			}
+		}
+		KOR_democracy_spread = {
+			modifier = {
+				democratic_drift = 0.04
+			}
+		}
+		KOR_tongil_politics = {
+			modifier = {
+				political_power_gain = 0.3
+				stability_factor = 0.05
+				surrender_limit = 0.15
+			}
+		}
+		KOR_divided_politics = {
+			modifier = {
+				political_power_cost = 0.4
+				stability_factor = -0.05
+				surrender_limit = -0.3
+			}
+		}
+		KOR_dead_strike = {
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = -0.2
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+			}
+		}
+		KOR_striked_factories = {
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				stability_factor = -0.1
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+			}
+		}
+		KOR_air_productive_project = {
+			
+			allowed = {
+				original_tag = KOR
+			}
+			picture = chi_hyper_inflation5
+			modifier = {
+				research_speed_factor = -0.05
+			}
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.05 
+					instant = yes
+				}
+			}	
+			equipment_bonus = {
+				CAS_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}	
+		}
+		KOR_the_democracy_ruler = {
+			
+			allowed = {
+				original_tag = KOR
+			}
+			picture = chi_hyper_inflation5
+			modifier = {
+				research_speed_factor = 0.05
+				stability_factor = 0.05
+				democratic_drift = 0.1
+			}
+		}
+		KOR_bersaju_pact_of_korea = {
+			
+			allowed = {
+				original_tag = KOR
+			}
+			picture = chi_hyper_inflation5
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_factory_factor = -0.3
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_dockyard_factor = -0.3
+				custom_modifier_tooltip = tooltip_bersaju_pact
+			}
+			on_remove = {
+				country_lock_all_division_template = no
+				
+			}
+			on_add = {
+				country_lock_all_division_template = yes
+			}
+				rule = {
+					can_not_declare_war = yes
+				}
+			
+		}
+		KOR_women_vote = {
+			allowed = {
+				original_tag = KOR
+			}
+			picture = chi_hyper_inflation5
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.05
+			}
+		}
+		KOR_militarism = { #황권 약화
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+			}
+			
+			picture = idea_kor_danilminjok
+			
+			removal_cost = 0
+			
+			modifier = {
+				war_support_factor = 0.15
+				mobilization_laws_cost_factor = -0.15
+				justify_war_goal_time = -0.4
+				research_speed_factor = -0.05
+				production_speed_industrial_complex_factor = -0.1
+			}
+		}
+		KOR_Weakening_the_kingship = { #황권 약화
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+			}
+			
+			picture = generic_king_handled
+			
+			removal_cost = 0
+			
+			modifier = {
+				stability_factor = -0.05
+				political_power_cost = 0.25
+				neutrality_drift = 0.1
+				custom_modifier_tooltip = tooltip_civilwar_willbe_WTK
+			}
+		}
+		KOR_divided_nation_1 = {
+			allowed = {
+				original_tag = KOR
+				NOT = {
+				
+				}
+			}
+			removal_cost = 0
+			
+			modifier = {
+				stability_factor = -0.1
+				custom_modifier_tooltip = divided_nation_1_tt
+				conscription_factor = -0.15
+			}
+		
+		}
+		KOR_divided_nation_2 = {
+			allowed = {
+				original_tag = KOR
+				NOT = {
+				
+				}
+			}
+			removal_cost = 0
+			
+			modifier = {
+				stability_factor = 0.005
+				custom_modifier_tooltip = divided_nation_2_tt
+				conscription_factor = 0.005
+			}
+		
+		}
+		KOR_divided_nation_3 = {
+			allowed = {
+				original_tag = KOR
+				NOT = {
+				
+				}
+			}
+			removal_cost = 0
+			
+			modifier = {
+				custom_modifier_tooltip = divided_nation_3_tt
+				stability_factor = 0.05
+				conscription_factor = 0.05
+			}
+		
+		}
+		KOR_nations = { #제주에서 연해까지
+				
+			allowed = {
+				original_tag = KOR
+				NOT = {
+				
+				}
+			}
+			
+			allowed_civil_war = {
+			}
+			removal_cost = 0
+			
+			modifier = {
+				war_support_factor = 0.05
+			    
+			}
+	   		targeted_modifier = {
+                tag = SOV			
+				attack_bonus_against = 0.05
+			}
+		}
+		
+		KOR_political_officer = { #정치장교
+			picture = german_advisors
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.10
+				political_power_cost = 0.15
+				planning_speed = 0.05	
+			}
+		}
+		kor_han_river = {
+
+        	allowed = {
+	    	    OR = {
+			        original_tag = KOR
+			        original_tag = FNG
+				}
+    		}
+			picture = chi_hyper_inflation5
+
+			modifier = {
+				consumer_goods_factor = -0.10
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+			}
+		}
+		KOR_political_officer_2 = { #숙청된 정치장교
+			picture = german_advisors
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				planning_speed = 0.052
+			}
+		}
+		
+		KOR_weak_army = { #나약한 군대
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = chi_incompetent_officers
+			
+			removal_cost = 0
+			
+			modifier = {
+				army_attack_factor = -0.35
+				army_defence_factor = -0.35
+			}
+		}
+		KOR_weak_army_2 = { #나약한 군대
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = chi_incompetent_officers
+			
+			removal_cost = 0
+			
+			modifier = {
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+			}
+		}
+		KOR_weak_army_3 = { #나약한 군대
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = chi_incompetent_officers
+			
+			removal_cost = 0
+			
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		
+		KOR_political_turmoil = { #정치적 혼란
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_neutrality_drift_bonus
+			
+			removal_cost = 0
+			
+			modifier = {
+				custom_modifier_tooltip = SPR_military_disloyalty_tt
+			}
+		}
+		
+		KOR_Impire_Yi_kang = { #이강
+				
+			allowed = {
+			original_tag = KOR
+			}
+			
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+			}
+			
+			picture = KOR_yi_Kang
+			
+			removal_cost = 0
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		
+		KOR_great_Yi_kang = { #황실 우상화
+				
+			allowed = {
+			original_tag = KOR
+			}
+			
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+			}
+			
+			picture = KOR_daejonggyo
+			
+			removal_cost = 0
+			
+			modifier = {
+				stability_factor = 0
+			}
+		}
+		
+		KOR_god_save_the_king = { #상제는 우리 황제를 도우사
+				
+			allowed = {
+			original_tag = KOR
+			}
+			
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+			}
+			
+			picture = dangun_nation
+			
+			removal_cost = 0
+			
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				training_time_army_factor = -0.05
+                army_morale_factor = 0.10
+				stability_factor = 0.10
+				war_support_factor = 0.10
+			}
+		}
+		KOR_we_korean = { #한민족
+				
+			allowed = {
+			original_tag = KOR
+			}
+			
+			picture = kor_danilminjok
+			
+			removal_cost = 0
+			
+			modifier = {
+				training_time_army_factor = -0.025
+                army_morale_factor = 0.05
+				war_support_factor = 0.05
+				stability_factor = -0.025
+			}
+		}
+		KOR_great_korea = { #위대한 조국
+				
+			allowed = {
+			original_tag = KOR
+			}
+			
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+			}
+			
+			picture = death_before_surrender
+			
+			removal_cost = 0
+			
+			modifier = {
+				training_time_army_factor = -0.05
+				army_defence_factor = 0.05
+				war_support_factor = 0.1
+				stability_factor = -0.05
+			}
+		}
+		
+		KOR_asia_democratic = { #아시아 민주주의의 마지막 보루
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+			}
+			
+			picture = generic_democratic_drift_bonus
+			
+			removal_cost = 0
+			
+			modifier = {
+				justify_war_goal_time = -0.25
+				generate_wargoal_tension = -0.5
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				training_time_army_factor = -0.25
+                army_morale_factor = 0.1
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				monthly_population = 0.10
+				democratic_drift = 0.01
+			}
+		}
+		
+		KOR_national_revitalization = { #국가적 활력
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			picture = idea_generic_build_infrastructure
+			
+			removal_cost = 0
+			
+			modifier = {
+				industry_repair_factor = 0.20
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		KOR_welfare = { #공공복지
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			picture = neutrality_idea
+			
+			removal_cost = 0
+			
+			modifier = {
+				stability_factor = 0.05
+				conscription = 0.01
+				monthly_population = 0.02
+			}
+		}
+		
+		KOR_road_end_railway = { #도로와 철도
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			picture = idea_generic_industrial_concern_1
+			
+			removal_cost = 0
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		
+		KOR_left_right_compromise = { #좌-우 합작
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			picture = neutrality_idea
+			
+			removal_cost = 0
+			
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = 0.1
+				political_power_gain = -0.2
+			}
+		}
+		
+		KOR_national_development = { #국가 재건
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			picture = idea_generic_build_infrastructure
+			
+			removal_cost = 0
+			
+			modifier = {
+				industry_repair_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+		
+		KOR_establishment = { #국영 산업
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			picture = generic_economic_increase
+			
+			removal_cost = 0
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		
+		KOR_market_economy_reform = { #경제 조정
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			picture = fra_market_dynamism
+			
+			removal_cost = 0
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		KOR_for_worker = { #노동자의 국가
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			picture = generic_goods_red_bonus
+			
+			removal_cost = 0
+			
+			modifier = {
+				stability_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				Industrial_capacity_factory = 0.1
+				Industrial_capacity_dockyard = 0.1
+			}
+		}
+		
+		KOR_marx = { #한국의 마르크스
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			picture = fourth_international
+			
+			removal_cost = 0
+			
+			modifier = {
+				military_leader_cost_factor = -0.1
+				political_advisor_cost_factor = -0.25
+			}
+		}
+		
+		KOR_people_worker_country = { #깨어라 노동자와 인민의 국가
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			picture = fourth_international
+			
+			removal_cost = 0
+			
+			modifier = {
+				training_time_army_factor = -0.05
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				stability_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				Industrial_capacity_factory = 0.1
+				Industrial_capacity_dockyard = 0.1
+				military_leader_cost_factor = -0.1
+				political_advisor_cost_factor = -0.25
+				communism_drift = 0.1
+			}
+		}
+		
+		KOR_communist_army = { #조선청년전위대
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			picture = nkvd_2
+			
+			removal_cost = 0
+			
+			modifier = {
+				non_core_manpower = 0.02
+				training_time_army_factor = -0.05
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				stability_factor = 0.05
+				military_leader_cost_factor = -0.1
+				political_advisor_cost_factor = -0.25
+				communism_drift = 0.1
+			}
+		}
+		
+		KOR_communist_propaganda = { #공산주의 선전
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			picture = spr_masters_of_our_own_fate
+			
+			removal_cost = 0
+			
+			modifier = {
+				communism_drift = 0.02
+			}
+		}
+		
+		KOR_dissolution_non-Communist = { #비공산주의 정당 해산
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			picture = spr_crush_the_revolution
+			
+			removal_cost = 0
+			
+			modifier = {
+				democratic_drift = -0.01
+				fascism_drift = -0.01
+				neutrality_drift = -0.01
+			}
+		}
+		
+		KOR_socialist_paradise = { #사회주의 락원
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = 0
+			
+			modifier = {
+				justify_war_goal_time = -0.5
+				generate_wargoal_tension = -0.5
+				training_time_army_factor = -0.25
+                army_morale_factor = 0.1
+				stability_factor = 0.2
+				war_support_factor = 0.2
+				monthly_population = 0.1
+				communism_drift = 0.1
+			}
+		}
+		
+		KOR_military_organization_youth = { #대한민족청년단
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			picture = generic_manpower_bonus
+			
+			removal_cost = 0
+			
+			modifier = {
+				training_time_army_factor = -0.05
+				war_support_factor = 0.05
+				stability_factor = -0.1
+				fascism_drift = 0.1
+			}
+		}
+		
+		KOR_fascist_propaganda = { #파시스트 선동
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			picture = generic_fascism_drift_bonus
+			
+			removal_cost = 0
+			
+			modifier = {
+				fascism_drift = 0.02
+			}
+		}
+		
+		KOR_lebensraum = { #생활권
+				
+			allowed = {
+			original_tag = KOR
+			}
+			
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+			}
+			
+			picture = KOR_yi_Kang
+			
+			removal_cost = 0
+			
+			modifier = {
+				justify_war_goal_time = -0.25
+				training_time_army_factor = -0.05
+				war_support_factor = 0.2
+			}
+		}
+		
+		KOR_national_development_5years = { #경제 개발 5개년 계획
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			picture = fourth_international
+			
+			removal_cost = 0
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_arms_factory_factor = -0.05
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = -0.05
+			}
+		}
+		
+		KOR_new_owner = { #새로운 왕조
+		
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+			}
+			
+			picture = jap_power
+			
+			removal_cost = 0
+			
+			modifier = {
+				stability_factor = 0.1
+				drift_defence_factor = 0.2
+			}
+		}
+		
+		KOR_new_history = { #새로운 역사
+			
+			picture = generic_fascism_drift_bonus
+			
+			removal_cost = 0
+			picture = 
+			
+			modifier = {
+				non_core_manpower = 0.05
+				training_time_army_factor = -0.05
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				military_leader_cost_factor = -0.5
+				political_advisor_cost_factor = -0.5
+				fascism_drift = 0.1
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+			}
+		}
+		
+		#대체
+		KOR_strong_the_kingship = { #강력한 황권
+				
+			allowed = {
+			original_tag = KOR
+			}
+			
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+			}
+			
+			picture = generic_intel_bonus
+			
+			removal_cost = 0
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_cost = -0.1
+			}
+		}
+		
+		KOR_doll_yi_kang = { #꼭두각시 황제
+		
+			allowed = {
+			original_tag = KOR
+			}
+			
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+			}
+			
+			picture = generic_intel_bonus
+			
+			removal_cost = 0
+			
+			modifier = {
+				political_power_cost = -0.1
+			}
+		}
+		KOR_yi_jin = { #꼭두각시 황제
+		
+			allowed = {
+			original_tag = KOR
+			}
+			
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+			}
+			
+			picture = Yi_Kang
+			
+			removal_cost = 0
+			
+			modifier = {
+				#stability_factor = 0.15
+			}
+			traits = {
+				young_monarchist
+			}
+		}
+		KOR_yi_jin_2 = { #꼭두각시 황제
+		
+			allowed = {
+			original_tag = KOR
+			}
+			
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+			}
+			
+			picture = Yi_Kang
+			
+			removal_cost = 0
+			
+			modifier = {
+				stability_factor = 0.15
+			}
+			traits = {
+				#young_monarchist
+			}
+		}
+		KOR_stability_country = { #안정적인 국가
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			picture = idea_hol_aloof_neutrality
+			
+			removal_cost = 0
+			
+			modifier = {
+				stability_factor = 0.2
+				drift_defence_factor = 0.5
+				political_power_gain = 0.5
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		KOR_kor_workers_union = { #전국노조연맹
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			picture = generic_goods_red_bonus
+			
+			removal_cost = 0
+			
+			modifier = {
+				communism_drift = 0.01
+				stability_factor = 0.1
+				production_factory_max_efficiency_factor = 0.2
+				Industrial_capacity_factory = 0.2
+				Industrial_capacity_dockyard = 0.2
+			}
+		}
+		KOR_leader_idolization = { #지도자 우상화
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			picture = spr_masters_of_our_own_fate
+			
+			removal_cost = 0
+			
+			modifier = {
+				stability_factor = 0.05
+				communism_drift = 0.05
+			}
+		}
+	}
+	
+	#정치 고문
+	political_advisor = {
+        KOR_phillip_jaisohn = { #서재필
+    
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			available = {
+			    has_completed_focus = KOR_use_the_anti-armed
+			}
+			
+		    traits = { democratic_reformer three_equalities }
+	
+		    do_effect = {
+			    NOT = {
+			    	has_government = democratic
+			    }
+	    	}
+		
+		    ai_will_do = {
+		    	factor = 0
+		    }
+	    }
+		
+		KOR_yi_dong_hwi = { #이동휘
+    
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+			available = {
+				has_completed_focus = kor_communism
+			}
+			
+		    traits = { communist_revolutionary }
+			
+			ai_will_do = {
+		    	factor = 0
+		    }
+	    }
+		
+		KOR_an_ho_sang = { #안호상
+    
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+		    traits = { fascist_demagogue }
+	
+		    do_effect = {
+		    	NOT = {
+		    		has_government = fascism
+		    	}
+		    }
+		    available = {
+		    	NOT = {
+					has_completed_focus = KOR_use_the_anti-armed
+				}
+			}	
+		
+		    ai_will_do = {
+		    	factor = 0
+		    }
+	    }
+
+        KOR_yi_un = { #영친왕 이은
+			
+		    allowed = {
+		    	original_tag = KOR
+            }
+
+		    available = {
+		    	has_completed_focus = KOR_power_up_to_imperial
+		    }
+			
+		    traits = { staunch_monarchist }
+	    }
+		
+        KOR_kim_koo = { #김구
+		   
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+		    traits = { backroom_backstabber }
+
+		    ai_will_do = {
+		    	factor = 0
+		    }
+	    }
+    
+        KOR_lee_beom_seok = { #이범석
+			
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		    available = {
+		    	NOT = {
+					has_completed_focus = KOR_use_the_anti-armed
+				}
+			}	
+		
+	    	traits = { prince_of_terror }
+	    }
+
+	    KOR_syngman_rhee = { #이승만
+
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		
+		    traits = { smooth_talking_charmer }
+	    }
+
+	    KOR_yeounhyeong = { #여운형
+		
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		
+		    traits = { silent_workhorse }
+	    }
+		
+		KOR_lee_byung-chul = {	#이병철
+
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+			available = {
+				has_completed_focus = kor_industrial_complex_1
+			}
+			
+		    traits = { captain_of_industry }
+		    ai_will_do = {
+			    factor = 0
+	    	}
+        }
+		
+		KOR_song_jin_woo = { #송진우
+		
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+			available = {
+				has_completed_focus = kor_arms_factory_1
+			}
+		    
+		    traits = { war_industrialist }
+	    }
+       
+        KOR_kim_gyu_sik = { #김규식
+		
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		
+		    traits = { fortification_engineer }
+	    }
+		
+		KOR_sin_ik_hui = { #신익희
+		
+			available = {
+				has_intelligence_agency = yes
+			}
+			
+			allowed = {
+				original_tag = KOR
+				has_dlc = "La Resistance" 
+			}
+			
+			traits = { head_of_intelligence }
+		}
+    }
+	
+	#이론가
+	theorist = {
+		KOR_ji_chung_chun_2 = { #지청천
+
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+		    research_bonus = {
+		    	land_doctrine = 0.07
+		    }
+			picture = KOR_ji_chung_chun
+			
+		    traits = { military_theorist }
+	    }
+
+	    KOR_shin_sung_mo = { #신성모
+
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		
+		    research_bonus = {
+		    	naval_doctrine = 0.07
+		    }
+		
+		    traits = { naval_theorist }
+	    }
+
+	    KOR_choi_yong_duk_2 = { #최용덕
+			
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		
+		    research_bonus = {
+		    	air_doctrine = 0.07
+		    }
+			picture = KOR_choi_yong_duk
+		
+		    traits = { air_warfare_theorist }
+	    }
+		
+		KOR_lee_tae_gyu = { #이태규
+			
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+	    	research_bonus = {
+		    	rocketry = 0.10
+		    }
+		
+		    traits = { rocket_scientist }
+	    }
+
+        KOR_do_sang_log = { #도상록
+			
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+		    research_bonus = {
+		    	nuclear = 0.10
+		    }
+	    	
+	    	traits = { nuclear_scientist }
+	    }
+    }
+	
+	#육군참모총장
+	 army_chief = {
+	    KOR_kim_chwa_chin = { #김좌진
+	    		
+	    	allowed = {
+	    		original_tag = KOR
+	    	}
+			
+	    	traits = { army_chief_defensive_2 }
+			
+	    	ai_will_do = {
+	    		factor = 1
+	    	}
+	    }
+    
+	    KOR_lee_beom_seok_army = { #이범석
+			
+	    	allowed = {
+	    		original_tag = KOR
+	    	}
+			
+			available = {
+				
+			}
+		    available = {
+		    	NOT = {
+					has_completed_focus = kor_republic
+				}
+			}	
+			
+			picture = KOR_lee_beom_seok
+	    	traits = { army_chief_offensive_2 }
+			
+	    	ai_will_do = {
+	    		factor = 1
+	    	}
+	    }
+
+	    KOR_kim_hong_il = { #김홍일
+			
+		    allowed = {
+	    		original_tag = KOR
+		    }
+			
+	    	traits = { army_chief_organizational_2 }
+			
+		    ai_will_do = {
+		    	factor = 1
+		    }
+	    }
+    }
+	
+	#해군참모총장
+	navy_chief = {
+	    KOR_sin_sun_sung = { #신순성
+		
+		    allowed = {
+		    	original_tag = KOR
+	    	}
+		    	
+		    traits = { navy_chief_decisive_battle_2 }
+			
+		    ai_will_do = {
+		    	factor = 1
+		    }
+	    }
+		
+		KOR_son_won_il = { #손원일
+		
+		    allowed = {
+		    	original_tag = KOR
+	    	}
+		    	
+		    traits = { navy_chief_naval_aviation_2 }
+			
+		    ai_will_do = {
+		    	factor = 1
+		    }
+	    }
+    }
+	
+	#공군참모총장
+	air_chief = {
+    	KOR_no_baeg_lin = { #노백린
+		
+	    	allowed = {
+		    	original_tag = KOR
+		    }
+			
+		    traits = { air_chief_ground_support_2 }
+			
+		    ai_will_do = {
+		    	factor = 1
+		    }
+	    }          
+    }
+	
+	#군 고위지휘관
+	high_command = {
+	    KOR_ji_chung_chun_high= { #지청천
+		
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		
+		    traits = { army_infantry_3 }
+		
+		    ai_will_do = {
+		    	factor = 1
+		    }
+    	}
+	    KOR_yujin_kim= { #정일권
+		
+	    	allowed = {
+		    	original_tag = KOR
+	    	}
+		
+	    	traits = { army_armored_3 }
+		
+		    ai_will_do = {
+		    	factor = 1
+		    }
+	    }
+
+	    KOR_choi_yong_duk_high = { #최용덕
+		
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		
+		    traits = { air_air_superiority_3 }
+		
+		    ai_will_do = {
+		    	factor = 1
+	    	}
+	    }
+		
+		KOR_no_baeg_lin_high = { #노백린
+		
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		
+		    traits = { air_close_air_support_2 }
+		
+		    ai_will_do = {
+		    	factor = 1
+	    	}
+	    }
+
+	    KOR_son_won_il_high = { #손원일
+		
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		
+		    traits = { navy_carrier_2 }
+		
+		    ai_will_do = {
+		    	factor = 1
+		    }
+	    }    
+	
+    	KOR_sin_sun_sung_high = { #신순성
+		
+	    	allowed = {
+	    		original_tag = KOR
+	    	}
+		
+	    	traits = { navy_capital_ship_2 }
+		
+	    	ai_will_do = {
+	    		factor = 1
+	    	}
+	    }
+
+	    KOR_yu_dong_yeol_high = { #유동열
+		
+	    	allowed = {
+	    		original_tag = KOR
+	    	}
+		
+		    traits = { army_cavalry_2 }
+		
+		    ai_will_do = {
+		    	factor = 1
+		    }
+	    }
+	    KOR_kim_jong_oh_high = { #김종오
+		
+	    	allowed = {
+	    		original_tag = KOR
+	    	}
+		
+		    traits = { army_logistics_2 }
+		
+		    ai_will_do = {
+		    	factor = 1
+		    }
+	    }
+	
+	    KOR_kim_hong_il_high = { #김홍일
+		
+	    	allowed = {
+		    	original_tag = KOR
+		    }
+		
+		    traits = { army_artillery_2 }
+		
+		    ai_will_do = {
+		    	factor = 1
+		    }
+	    }
+	}		
+	
+	#설계사
+	tank_manufacturer = {
+		KOR_hyundai_tank = { #현대 로템
+			
+		    picture = kor_hyundai
+
+		    allowed = {
+		    	original_tag = KOR
+		    }
+
+		    research_bonus = {
+		    	armor = 0.10
+		    }
+			
+		    traits = { fast_tank_manufacturer }
+	    }
+		
+		KOR_hyundai_tank2 = { #현대_로템
+			
+		    picture = kor_hyundai
+
+		    allowed = {
+		    	original_tag = KOR
+		    }
+
+		    research_bonus = {
+		    	armor = 0.10
+		    }
+			
+		    traits = { medium_tank_manufacturer }
+	    }	
+		
+		KOR_hanwha_def = { #한화_디펜스
+			
+		    picture = kor_hanwha
+
+		    allowed = {
+				original_tag = KOR
+		    }
+
+		    research_bonus = {
+		    	armor = 0.10
+		    }
+			
+		    traits = { heavy_tank_manufacturer }
+	    }
+	}
+	
+	naval_manufacturer = {
+	
+		KOR_samsung_pacific = { #삼성_중공업
+			
+		    picture = kor_samsung
+		
+		    allowed = {
+		    	original_tag = KOR
+		    }
+				
+		    research_bonus = {
+		    	naval_equipment = 0.10
+		    }
+			
+		    traits = { pacific_fleet_naval_manufacturer }
+    	}
+		
+		KOR_daewoo_josun = { #대우조선
+			
+		    picture = kor_daewoo
+    
+		    allowed = {
+		    	original_tag = KOR
+		    }
+
+		    research_bonus = {
+		    	naval_equipment = 0.10
+		    }
+			
+		    traits = { coastal_defence_naval_manufacturer }
+	    }
+		
+		KOR_hyundia_yong = { #현대_중공업
+			
+		    picture = kor_hyundai
+    
+		    allowed = {
+		    	original_tag = KOR
+		    }
+
+		    research_bonus = {
+		    	naval_equipment = 0.10
+		    }
+			
+		    traits = { convoy_escort_naval_manufacturer }
+	    }
+	}
+	
+	aircraft_manufacturer = {
+	
+		KOR_daihan_af = { #한국항공우주산업
+			
+		    picture = kor_kai
+				
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+		    research_bonus = {
+		    	air_equipment = 0.05
+		    }
+
+		    cost = 150
+			
+		    traits = { light_aircraft_manufacturer }
+	    }
+		
+		KOR_daihan_af2 = { #한국항공우주산업
+					
+		    picture = kor_kai
+				
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+		    research_bonus = {
+		    	air_equipment = 0.05
+		    }
+
+		    cost = 150
+			
+		    traits = { medium_aircraft_manufacturer }
+	    }
+		
+		KOR_daihan_af3 = { #한국항공우주산업
+					
+		    picture = kor_kai
+				
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+		    research_bonus = {
+		    	air_equipment = 0.05
+		    }
+
+		    cost = 150
+			
+		    traits = { heavy_aircraft_manufacturer }
+	    }
+	}
+	
+	materiel_manufacturer = { #대우정밀
+	
+		KOR_daewoo_st = {
+
+	    	picture = kor_daewoo
+            
+		    allowed = {
+		    	original_tag = KOR
+		    }
+	    		
+		    research_bonus = {
+		    	infantry_weapons = 0.20
+	    	}
+			
+		    traits = { infantry_equipment_manufacturer }
+	    }
+		
+		KOR_dasan = { #다산
+
+	    	picture = kor_dasan
+            
+		    allowed = {
+		    	original_tag = KOR
+		    }
+	    		
+		    research_bonus = {
+		    	infantry_weapons = 0.20
+	    	}
+			
+		    traits = { infantry_equipment_manufacturer }
+	    }
+		
+		KOR_kia_car = { #기아_자동차
+		
+			picture = kor_kia
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+	}
+	
+	industrial_concern = {
+	
+		KOR_posco = { #포항종합제철
+
+		    picture = KOR_posco
+			
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+		    research_bonus = {
+		    	industry = 0.15
+		    }
+			
+		    traits = { industrial_concern }
+	    }
+		KOR_kepco = { #한국전력공사
+					
+		    picture = KOR_kepco
+				
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+		    research_bonus = {
+		    	electronics = 0.10
+		    }
+
+		    cost = 150
+			
+		    traits = { electronics_developer }
+	    }
+		KOR_samsung = { #삼성전자
+					
+		    picture = kor_samsung
+				
+		    allowed = {
+				original_tag = KOR
+		    }
+			
+		    research_bonus = {
+		    	electronics = 0.15
+		    }
+
+		    cost = 150
+			
+		    traits = { electronics_developer }
+	    }
+	}
+}

@@ -1,0 +1,157 @@
+﻿##### Switzerland NAME LISTS #####
+### SUBMARINES ###
+SWI_SS_REGULAR = {
+	name = NAME_THEME_NUMBERED_SUBS
+
+	for_countries = { SWI }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "SUN "
+	fallback_name = "U-%d"
+	
+	ordered = {
+		1 = {"U-%d"}
+		2 = {"U-%d"} 
+		3 = {"U-%d"} 
+		4 = {"U-%d"} 
+		5 = {"U-%d"} 
+		6 = {"U-%d"} 
+		7 = {"U-%d"} 
+		8 = {"U-%d"} 
+		9 = {"U-%d"} 
+		10 = {"U-%d"}
+		11 = {"U-%d"} 
+		12 = {"U-%d"}
+		13 = {"U-%d"}
+		14 = {"U-%d"}
+		15 = {"U-%d"}
+		16 = {"U-%d"}
+		17 = {"U-%d"}
+		18 = {"U-%d"}
+		19 = {"U-%d"}
+		20 = {"U-%d"}
+		21 = {"U-%d"}
+		22 = {"U-%d"}
+		23 = {"U-%d"}
+		24 = {"U-%d"}
+		25 = {"U-%d"}
+	}
+}
+SWI_CITY_SHIPS = {
+	name = NAME_THEME_CITIES
+
+	for_countries = { SWI }
+
+	type = ship
+	ship_types = { 
+		ship_hull_carrier ship_hull_cruiser ship_hull_heavy ship_hull_light ship_hull_submarine
+		carrier battleship heavy_cruiser battle_cruiser light_cruiser destroyer submarine
+	}
+	
+	prefix = "SUN "
+	
+	unique = {											
+		"Geneva" "Thun" "Brienz" "Lucerne" "Bad Zurzach" "Zug" "Nyon" "Olten" "Männedorf" "Chiasso"
+		"Kreuzlingen" "St. Moritz" "Walenstadt" "Agno" "Arlesheim" "Grandcour" "Klingnau" "Losone"
+		"Köniz" "Fribourg" "Uster" "Winterthur"
+		
+		"Zürich" "Basel" "Lausanne" "Bern" "St. Gallen" "Lugano" "Biel" "Bienne" "La Chaux-de-Fonds"
+		"Schaffhausen" "Vernier" "Chur" "Sion" "Neuchâtel"
+		
+		"St. Nicholas" "Brun" "Aarau" "Aigle" "Delémont" "Frauenfeld" "Glarus" "Langenthal" "Martigny" 
+		"Rheinfelden" "Solothurn" "Veyrier" "Zofingen"
+		
+		"Attinghausen" "Laupen" "Giornico" "Dornach" "Sempach" "Dättwil" "Ins" "Näfels" "Rotmonten"
+		"Waldshut" "Grandson" "Lengnau" "Dijon"
+	}
+}
+SWI_MOUNTAIN_SHIPS = {
+	name = NAME_THEME_MOUNTAINS
+
+	for_countries = { SWI }
+
+	type = ship
+	ship_types = { 
+		ship_hull_carrier ship_hull_cruiser ship_hull_heavy ship_hull_light ship_hull_submarine
+		carrier battleship heavy_cruiser battle_cruiser light_cruiser destroyer submarine
+	}
+	
+	prefix = "SUN "
+	
+	unique = {
+		"Eiger" "Rigi" "Jungfrau" "Matterhorn" "Dufourspitze" "Nordend" "Zumsteinspitze" "Signalkuppe"
+		"Dom" "Liskamm" "Weisshorn" "Täschhorn" "Liskamm" "Parrotspitze" "Dent Blanche" "Ludwigshöhe"
+		"Grand Gendarme" "Nadelhorn" "Grand Combin" "Lenzspitze" "Finsteraarhorn" "Zwillinge" "Mönch"
+		
+		"Yberg" "Oberalp" "Schönberg"
+	}
+}
+SWI_LEADER_SHIPS = {
+	name = NAME_THEME_LEADERS
+
+	for_countries = { SWI }
+
+	type = ship
+	ship_types = { 
+		ship_hull_carrier ship_hull_cruiser ship_hull_heavy ship_hull_light ship_hull_submarine
+		carrier battleship heavy_cruiser battle_cruiser light_cruiser destroyer submarine
+	}
+	
+	prefix = "SUN "
+	
+	unique = {
+		"Herzog" "Dufour" "Wille" "Guisan" "Eberhard" "Ulrich" "Andermatt" "d'Erlach"
+		"Laharpe" "Reding" "Bachmann"
+		
+		"Lydia" "Zwinger" "Suit" "Bider" "Dufaux" "Failloubaz" "Piccard" "Paracelsus" "Pictet"
+		"Hesse" "Cendrars" "Bircher-Benner" "Burckhardt" "Reiss" "Vischer"
+		
+		"Konrad" "Fürst" "Stauffacher" "Klaus" "Magnus" "Ueli Rotach" "Winkelried" "Melchtal"
+	}
+}
+SWI_BATTLES_SHIPS = {
+	name = NAME_THEME_BATTLES
+
+	for_countries = { SWI }
+
+	type = ship
+	ship_types = { 
+		ship_hull_carrier ship_hull_cruiser ship_hull_heavy ship_hull_light ship_hull_submarine
+		carrier battleship heavy_cruiser battle_cruiser light_cruiser destroyer submarine
+	}
+	
+	prefix = "SUN "
+	
+	unique = {
+		"Sonderbund" "Gümmenenkrieg" "Renggpass" "Grynau" "Pavia" "Morgarten" "Renggpass" "Oberalp"
+		"Laupen" "Schönberg" "Dättwil" "Visp" "St. Jakob an der Sihl" "Greifensee" "Wolfhalden" "Ragaz"
+		"Héricourt" "Rorschacher" "Klosterbruch" "Hard" "Calven" "Novara" "Lebkuchenkrieg" "Zwiebelnkrieg"
+		"Musso" "Kappel" "Gubel" "Vaud" "Trinkelstierkrieg" "Heringskrieg" "Rappenkrieg" "Escalade de Genève"
+		"Rothenthurm"
+	}
+}
+SWI_TRADITIONAL_SHIPS = {
+	name = NAME_THEME_TRADITION
+
+	for_countries = { SWI }
+
+	type = ship
+	ship_types = { 
+		ship_hull_carrier ship_hull_cruiser ship_hull_heavy ship_hull_light ship_hull_submarine
+		carrier battleship heavy_cruiser battle_cruiser light_cruiser destroyer submarine
+	}
+	
+	prefix = "SUN "
+	
+	unique = {
+		"Samichlaus" "Perchta" "Rütlischwur" "William Tell" "St. Gall" "St. Fridolin" "Helvetia"
+		"Confœderatio" "Schweizer Stier" "An Eilvéis" "Ελβετία" "Elveţia" "Elvezia" "Helvetien"
+		"Eidgenosse" "Krampus" "der Teufel" "Chalandamarz" "Badalisc" "Berchtoldstag" "Fastnacht"
+		"Funkenfeuer" "Raeti" "Teufelsbrücke" "Barbegazi" "Berchtold" "Böögg" "Dragon" "Dwarf" "Fairie"
+		"Giant" "Gnome" "Herwisch" "Huttefroueli" "Imp" "Föhn" "Kobold" "Schmutzli" "Père Fouettard"
+		"Schnabelgeiss" "Tatzelwurm" "Undine" "Vogel Gryff"
+	}
+}
+

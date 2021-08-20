@@ -1,0 +1,45 @@
+leader_traits = {
+
+	korea_emperor = { #대한제국의 황제
+		random = no
+		stability_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	emperor_yi = { #황족 출신
+		random = no
+		stability_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	korea_four_star = { #군인 출신 지도자
+		random = no
+		army_attack_factor = 0.05
+		army_defence_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	korea_other_nations_king = { #타 민족의 왕
+		random = no
+		stability_factor = -0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	dictator_kor = { #황족 출신
+		random = no
+		political_power_gain = 0.25
+		stability_factor = 0.15
+		conscription = 0.0075
+	}
+}

@@ -1,0 +1,320 @@
+leader_traits = {
+
+    pacifist = {
+		stability_factor = 0.1
+		war_support_factor = -0.1
+		mobilization_laws_cost_factor = 1
+		send_volunteer_size = 5
+		justify_war_goal_time = 2
+		conscription = -0.02
+	}
+
+	international_pacifist = {
+		stability_weekly = 0.001
+		stability_factor = 0.1
+		army_defence_factor = 0.1
+		send_volunteer_size = 10
+		justify_war_goal_time = 2
+		conscription = 0.02
+	}
+
+	president_of_people = {
+		stability_factor = 0.2
+		political_power_gain = 0.5
+		democratic_acceptance = 50
+		democratic_drift = 0.1
+	}
+
+	pro_american = {
+		democratic_acceptance = 50
+	}
+
+	leader_of_terror = {
+		stability_factor = -0.2
+		political_power_gain = 0.5
+		army_attack_factor = 0.1
+	}
+
+	the_inexperienced_leader = {
+		stability_factor = 0.1
+		war_support_factor = 0.1
+		political_power_factor = 0.1
+	}
+
+	the_eternal_leader = {
+		stability_factor = 0.5
+		war_support_factor = 0.5
+		political_power_factor = 0.5
+	}
+
+	the_king = {
+		political_advisor_cost_factor = -0.25
+		trade_laws_cost_factor = -0.25
+		mobilization_laws_cost_factor = -0.25
+		economy_cost_factor = -0.25
+		high_command_cost_factor = -0.25
+		air_chief_cost_factor = -0.25
+		army_chief_cost_factor = -0.25
+		navy_chief_cost_factor = -0.25
+	}
+  
+#####################1896년 모드###################
+  
+	empire_emperor = { 
+	    stability_factor = -0.2
+	}
+	
+	king_of_korean_empire = {
+	    neutrality_drift = 0.1
+    }
+
+	daihan_minjok = {
+	    fascism_drift = 0.2
+    }
+	
+	kai-hwa = {
+	    democratic_drift = 0.4
+	}
+	
+	the_last_prince = {
+	    neutrality_drift = 0.1
+    }
+	
+	son_of_lee_hyee = {
+	    neutrality_drift = 0.1
+    }
+	
+	emperor_sungmu = {
+	    paternal_autrocracy_drift = 0.1
+    }
+	
+	lord_of_korea = {
+		stability_weekly = 0.025
+		stability_factor = 0.0025
+		war_support_factor = 0.05
+		justify_war_goal_time = -0.1
+	}
+
+	week_government = {
+		stability_weekly = -0.1
+		stability_factor = -0.1
+		war_support_factor = -0.1
+		army_core_defence_factor = -0.1
+		mobilization_laws_cost_factor = 20
+		send_volunteer_size = -300
+		justify_war_goal_time = 30
+		conscription = -0.1
+		fascism_drift = 0.01
+		communism_drift = 0.01
+	}
+	
+	no_communism_crusader = {
+	    communism_drift = -0.2
+	}
+	
+	whkdngkqwkr = {
+	    stability_weekly = -0.001
+		conscription = -0.001
+	}
+	
+	yes_people = { 
+	    stability_weekly = 0.01
+	}
+	
+	no_people = { 
+	    stability_weekly = -0.01
+	}
+	
+	emperor_of_korea = {
+		stability_weekly = 0.1
+		stability_factor = 0.1
+		war_support_factor = 0.2
+		army_core_defence_factor = 0.1
+		mobilization_laws_cost_factor = 0.1
+		send_volunteer_size = 5
+		justify_war_goal_time = -0.2
+		conscription = 0.02
+	}
+	
+	yi_gun2 = {
+		conscription = 0.02
+		democratic_drift = 0.1
+	}
+	
+	yi_wu2 = {
+     	justify_war_goal_time = -0.3
+	}
+	
+	syngman_rhee = {
+		conscription = 0.015
+	}
+	
+    great_mak_li_ji = {
+	    fascism_drift = 0.1
+     	justify_war_goal_time = -0.3
+	}
+	
+	ji_cheong_chun = {
+	    neutrality_drift = 0.1
+		stability_weekly = 0.005
+	}
+	
+	yoonghee = {
+		stability_factor = 0.1
+	}
+	
+	kangsung = {
+		neutrality_drift = 0.1
+		stability_factor = 0.15
+	}
+	
+	romanof_empire = {
+		stability_factor = 0.1
+	}
+	
+	zuolin = {
+		justify_war_goal_time = -0.1
+	}
+	
+	kaishek = {
+	    random = no
+		stability_factor = 0.1
+		targeted_modifier = {
+			tag = QIN
+			generate_wargoal_tension_against = -0.75
+		}
+		targeted_modifier = {
+			tag = FNG
+			generate_wargoal_tension_against = -0.75
+		}
+		targeted_modifier = {
+			tag = SHX
+			generate_wargoal_tension_against = -0.75
+		}
+		targeted_modifier = {
+			tag = GDC
+			generate_wargoal_tension_against = -0.75
+		}
+		targeted_modifier = {
+			tag = GXC
+			generate_wargoal_tension_against = -0.75
+		}
+		targeted_modifier = {
+			tag = SIK
+			generate_wargoal_tension_against = -0.75
+		}
+		targeted_modifier = {
+			tag = MHB
+			generate_wargoal_tension_against = -0.75
+		}
+		targeted_modifier = {
+			tag = MHX
+			generate_wargoal_tension_against = -0.75
+		}
+		targeted_modifier = {
+			tag = SZC
+			generate_wargoal_tension_against = -0.75
+		}
+		targeted_modifier = {
+			tag = YUN
+			generate_wargoal_tension_against = -0.75
+		}
+	}
+	
+	trait_park = {
+		stability_factor = 0.1
+		fascism_drift = 0.1
+	}
+	trait_chang = {
+		stability_factor = -0.1
+		democratic_drift = -0.025
+	}
+	
+	imperial_sanction_kor = {
+		random = no
+
+		targeted_modifier = {
+			tag = SOV
+			generate_wargoal_tension_against = -0.50
+		}
+		targeted_modifier = {
+			tag = FNG
+			generate_wargoal_tension_against = -0.75
+		}
+		targeted_modifier = {
+			tag = CHI
+			generate_wargoal_tension_against = -0.75
+		}
+		targeted_modifier = {
+			tag = QIN
+			generate_wargoal_tension_against = -0.75
+		}
+		targeted_modifier = {
+			tag = SHX
+			generate_wargoal_tension_against = -0.75
+		}
+		targeted_modifier = {
+			tag = GDC
+			generate_wargoal_tension_against = -0.75
+		}
+		targeted_modifier = {
+			tag = GXC
+			generate_wargoal_tension_against = -0.75
+		}
+		targeted_modifier = {
+			tag = SIK
+			generate_wargoal_tension_against = -0.75
+		}
+		targeted_modifier = {
+			tag = MHB
+			generate_wargoal_tension_against = -0.75
+		}
+		targeted_modifier = {
+			tag = MHX
+			generate_wargoal_tension_against = -0.75
+		}
+		targeted_modifier = {
+			tag = SZC
+			generate_wargoal_tension_against = -0.75
+		}
+		targeted_modifier = {
+			tag = YUN
+			generate_wargoal_tension_against = -0.75
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	fascism_korean = {
+		fascism_drift = 0.2
+		stability_factor = -0.05
+	}
+	
+	showa_tenno = {
+	    stability_factor = 0.2
+	}
+	heisei_tenno = {
+	    stability_factor = 0.2
+	}
+	masahito_tenno = {
+	    stability_factor = 0.1
+	}
+	nobuhito_tenno = {
+	    stability_factor = 0.1
+	}
+	the_great_khan = {
+	    stability_factor = 0.2
+	}
+	yungsung = {
+	    democratic_drift = 0.25
+	    stability_factor = 0.15
+	}
+	sungmu = {
+	    stability_factor = 0.15
+	}
+	young_monarchist = {
+		stability_factor = 0.1
+		fascism_drift = 0.05
+		war_support_factor = 0.05
+	}
+}

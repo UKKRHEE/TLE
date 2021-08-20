@@ -1,0 +1,141 @@
+﻿### Names generation for aces ###
+# Surnames can be male/female dependent or general. Fe. in Polish some surnames has different endings depending on the gender.
+# Names and Surnames are randomly picked and will sometimes repeat, but will never repeat in combinations for example there will never be generated another "John Smith".
+# Assigning the callsign is random - may be assigned or not. If we use the callsign, it will never be assigned to anyone again. Callsigns are not obligatory to script.
+# Picking up a gender is random, and is influenced by the amount of names scripted.
+
+KOR = {
+	male = {
+		names = { Kim Lee Park Jung Jang Choi Kang Jo Yun Yim Han Oh Seo Sin Gwon Hwang An Song Jeon Hong Yu Go Mun Yang Son Bae Baek Huh Nam Sim Roh Ha Kwak Seong Cha Joo Goo Yi }
+	}
+	female = {
+		names = { Kim Lee Park Jung Jang Choi Kang Jo Yun Yim Han Oh Seo Sin Gwon Hwang An Song Jeon Hong Yu Go Mun Yang Son Bae Baek Huh Nam Sim Roh Ha Kwak Seong Cha Joo Goo Yi }
+	}
+	surnames = { Hyunseong Hyunchul Minchul Jaepil Young Jun Taeil Bongjun Junghwan Jaewoo Bongchang Sangok Jaesang Sunpil Doohan Jeongjae jaeseol byeong-og yangban yain dogil hangug manju hwangug }
+	callsigns = { }
+}
+KPL = {
+	male = {
+		names = { Kim Lee Park Jung Jang Choi Kang Jo Yun Yim Han Oh Seo Sin Gwon Hwang An Song Jeon Hong Yu Go Mun Yang Son Bae Baek Huh Nam Sim Roh Ha Kwak Seong Cha Joo Goo Yi }
+	}
+	female = {
+		names = { Kim Lee Park Jung Jang Choi Kang Jo Yun Yim Han Oh Seo Sin Gwon Hwang An Song Jeon Hong Yu Go Mun Yang Son Bae Baek Huh Nam Sim Roh Ha Kwak Seong Cha Joo Goo Yi }
+	}
+	surnames = { Hyunseong Hyunchul Minchul Jaepil Young Jun Taeil Bongjun Junghwan Jaewoo Bongchang Sangok Jaesang Sunpil Doohan Jeongjae jaeseol byeong-og yangban yain dogil hangug manju hwangug }
+	callsigns = { }
+}
+KMN = {
+	male = {
+		names = { Kim Lee Park Jung Jang Choi Kang Jo Yun Yim Han Oh Seo Sin Gwon Hwang An Song Jeon Hong Yu Go Mun Yang Son Bae Baek Huh Nam Sim Roh Ha Kwak Seong Cha Joo Goo Yi }
+	}
+	female = {
+		names = { Kim Lee Park Jung Jang Choi Kang Jo Yun Yim Han Oh Seo Sin Gwon Hwang An Song Jeon Hong Yu Go Mun Yang Son Bae Baek Huh Nam Sim Roh Ha Kwak Seong Cha Joo Goo Yi }
+	}
+	surnames = { Hyunseong Hyunchul Minchul Jaepil Young Jun Taeil Bongjun Junghwan Jaewoo Bongchang Sangok Jaesang Sunpil Doohan Jeongjae jaeseol byeong-og yangban yain dogil hangug manju hwangug }
+	callsigns = { }
+}
+YOD = {
+	male = {
+		names = { Kim Lee Park Jung Jang Choi Kang Jo Yun Yim Han Oh Seo Sin Gwon Hwang An Song Jeon Hong Yu Go Mun Yang Son Bae Baek Huh Nam Sim Roh Ha Kwak Seong Cha Joo Goo Yi }
+	}
+	female = {
+		names = { Kim Lee Park Jung Jang Choi Kang Jo Yun Yim Han Oh Seo Sin Gwon Hwang An Song Jeon Hong Yu Go Mun Yang Son Bae Baek Huh Nam Sim Roh Ha Kwak Seong Cha Joo Goo Yi }
+	}
+	surnames = { Hyunseong Hyunchul Minchul Jaepil Young Jun Taeil Bongjun Junghwan Jaewoo Bongchang Sangok Jaesang Sunpil Doohan Jeongjae jaeseol byeong-og yangban yain dogil hangug manju hwangug }
+	callsigns = { }
+}
+FNG = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+QIN = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+GDC = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+SCZ = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+SDG = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+SSK = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+}	
+KMK = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+}	
+ETS = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+}
+MHB = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+}	
+MHX = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+}	

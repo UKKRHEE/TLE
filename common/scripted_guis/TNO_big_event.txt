@@ -1,0 +1,52 @@
+scripted_gui = {
+
+	TNO_SG_big_event_korea_the_yi_kang = {
+		context_type = player_context
+		window_name = "TNO_SG_big_event_korea_the_yi_kang"
+
+		visible = {
+			has_country_flag = korea_the_yi_kang
+		}
+	}
+
+	TNO_SG_big_event_frame_korea_the_yi_kang = {
+		context_type = player_context
+		window_name = "TNO_SG_big_event_frame_korea_the_yi_kang"
+
+		visible = {
+			has_country_flag = korea_the_yi_kang
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = korea_the_yi_kang
+			}
+		}
+	}
+	TNO_SG_big_event_korea_ww_china = {
+		context_type = player_context
+		window_name = "TNO_SG_big_event_korea_ww_china"
+
+		visible = {
+			has_country_flag = korea_ww_china
+		}
+	}
+
+	TNO_SG_big_event_frame_korea_ww_china = {
+		context_type = player_context
+		window_name = "TNO_SG_big_event_frame_korea_ww_china"
+
+		visible = {
+			has_country_flag = korea_ww_china
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = korea_ww_china
+			}
+		}
+	}
+
+	##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
+
+}

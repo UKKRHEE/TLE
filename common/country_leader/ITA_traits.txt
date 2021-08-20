@@ -1,0 +1,13 @@
+leader_traits = {
+
+	italy_king = {
+		stability_factor = 0.1
+	}
+	democratic_kingdom = {
+	    democratic_drift = 0.1
+	}
+	democratic_republic = {
+	    democratic_drift = 0.2
+	}
+	
+}

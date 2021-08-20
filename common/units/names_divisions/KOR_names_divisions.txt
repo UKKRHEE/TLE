@@ -1,0 +1,597 @@
+﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
+
+
+KOR_INF_01 = 
+{
+	name = "보병 사단"
+
+	for_countries = { KOR }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { KOR_GAR_01 }
+
+	fallback_name = "%d. 보병 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. 보병 사단 '전진'" }
+		2 = { "%d. 보병 사단 '노도'" }
+		3 = { "%d. 보병 사단 '백골'" }
+		4 = { "%d. 보병 사단" }
+		5 = { "%d. 보병 사단 '열쇠'" }
+		6 = { "%d. 보병 사단 '청성'" }
+		7 = { "%d. 보병 사단 '칠성'" }
+		8 = { "%d. 보병 사단 '오뚜기'" }
+		9 = { "%d. 보병 사단 '백마'" }
+		10 = { "%d. 보병 사단" }
+		11 = { "%d. 보병 사단 '화랑'" }
+		12 = { "%d. 보병 사단 '을지'" }
+		13 = { "%d. 보병 사단" }
+		14 = { "%d. 보병 사단" }
+		15 = { "%d. 보병 사단 '승리'" }
+		16 = { "%d. 보병 사단" }
+		17 = { "%d. 보병 사단 '번개'" }
+		18 = { "%d. 보병 사단" }
+		19 = { "%d. 보병 사단" }
+		20 = { "%d. 보병 사단 '결전'" }
+		21 = { "%d. 보병 사단 '백두산'" }
+		22 = { "%d. 보병 사단 '율곡'" }
+		23 = { "%d. 보병 사단 '철벽'" }
+		24 = { "%d. 보병 사단" }
+		25 = { "%d. 보병 사단 '비룡'" }
+		26 = { "%d. 보병 사단 '불무리'" }
+		27 = { "%d. 보병 사단 '이기자'" }
+		28 = { "%d. 보병 사단 '무적태풍'" }
+		29 = { "%d. 보병 사단 '태권'" }
+		30 = { "%d. 보병 사단 '필승'" }
+		31 = { "%d. 보병 사단" }
+		32 = { "%d. 보병 사단" }
+		33 = { "%d. 보병 사단" }
+		34 = { "%d. 보병 사단" }
+		35 = { "%d. 보병 사단" }
+		36 = { "%d. 보병 사단" }
+		37 = { "%d. 보병 사단" }
+		38 = { "%d. 보병 사단" }
+		39 = { "%d. 보병 사단" }
+		40 = { "%d. 보병 사단" }
+		41 = { "%d. 보병 사단" }
+		42 = { "%d. 보병 사단" }
+		43 = { "%d. 보병 사단" }
+		44 = { "%d. 보병 사단" }
+		45 = { "%d. 보병 사단" }
+		46 = { "%d. 보병 사단" }
+		47 = { "%d. 보병 사단" }
+		48 = { "%d. 보병 사단" }
+		49 = { "%d. 보병 사단" }
+		50 = { "%d. 보병 사단" }
+		51 = { "%d. 보병 사단 '전승'" }
+		52 = { "%d. 보병 사단" }
+		53 = { "%d. 보병 사단" }
+		54 = { "%d. 보병 사단" }
+		55 = { "%d. 보병 사단" }
+		56 = { "%d. 보병 사단" }
+		57 = { "%d. 보병 사단" }
+		58 = { "%d. 보병 사단" }
+		59 = { "%d. 보병 사단" }
+		60 = { "%d. 보병 사단" }
+		61 = { "%d. 보병 사단" }
+		62 = { "%d. 보병 사단" }
+		63 = { "%d. 보병 사단" }
+		64 = { "%d. 보병 사단" }
+		65 = { "%d. 보병 사단" }
+		66 = { "%d. 보병 사단" }
+		67 = { "%d. 보병 사단" }
+		68 = { "%d. 보병 사단" }
+		69 = { "%d. 보병 사단" }
+		70 = { "%d. 보병 사단" }
+		71 = { "%d. 보병 사단" }
+		72 = { "%d. 보병 사단" }
+		73 = { "%d. 보병 사단" }
+		74 = { "%d. 보병 사단" }
+		75 = { "%d. 보병 사단" }
+		76 = { "%d. 보병 사단" }
+		77 = { "%d. 보병 사단" }
+		78 = { "%d. 보병 사단" }
+		79 = { "%d. 보병 사단" }
+		80 = { "%d. 보병 사단" }
+		81 = { "%d. 보병 사단" }
+		82 = { "%d. 보병 사단" }
+		83 = { "%d. 보병 사단" }
+		84 = { "%d. 보병 사단" }
+		85 = { "%d. 보병 사단" }
+		86 = { "%d. 보병 사단" }
+		87 = { "%d. 보병 사단" }
+		88 = { "%d. 보병 사단" }
+		89 = { "%d. 보병 사단" }
+		90 = { "%d. 보병 사단" }
+		91 = { "%d. 보병 사단" }
+		92 = { "%d. 보병 사단" }
+		93 = { "%d. 보병 사단" }
+		94 = { "%d. 보병 사단" }
+	    95 = { "%d. 보병 사단" }
+		96 = { "%d. 보병 사단" }
+		97 = { "%d. 보병 사단" }
+		98 = { "%d. 보병 사단" }
+		99 = { "%d. 보병 사단" }
+		100 = { "%d. 보병 사단" }
+	}
+}
+KOR_INF_02 = 
+{
+	name = "시위대"
+
+	for_countries = { KOR }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { KOR_GAR_01 }
+
+	fallback_name = "%d. 시위대"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. 시위대 '보황'" }
+		2 = { "%d. 시위대 '충용'" }
+		3 = { "%d. 시위대 '결전'" }
+		4 = { "%d. 시위대 '명운'" }
+		5 = { "%d. 시위대 '경덕'" }
+		6 = { "%d. 시위대 '융희'" }
+		7 = { "%d. 시위대 '광무'" }
+		8 = { "%d. 시위대 '영락'" }
+		9 = { "%d. 시위대 '진군'" }
+		10 = { "%d. 시위대 '한양'" }
+		11 = { "%d. 시위대 '제국'" }
+		12 = { "%d. 시위대 '대한'" }
+		13 = { "%d. 시위대 '만세'" }
+		14 = { "%d. 시위대 '영원'" }
+		15 = { "%d. 시위대 '불변'" }
+		16 = { "%d. 시위대 '강토'" }
+		17 = { "%d. 시위대 '화영'" }
+		18 = { "%d. 시위대 '패도'" }
+		19 = { "%d. 시위대 '호헌'" }
+		20 = { "%d. 시위대 '세종'" }
+		21 = { "%d. 시위대 '대명'" }
+		22 = { "%d. 시위대" }
+		23 = { "%d. 시위대" }
+		24 = { "%d. 시위대" }
+		25 = { "%d. 시위대" }
+		26 = { "%d. 시위대" }
+		27 = { "%d. 시위대" }
+		28 = { "%d. 시위대" }
+		29 = { "%d. 시위대" }
+		30 = { "%d. 시위대" }
+		31 = { "%d. 시위대" }
+		32 = { "%d. 시위대" }
+		33 = { "%d. 시위대" }
+		34 = { "%d. 시위대" }
+		35 = { "%d. 시위대" }
+		36 = { "%d. 시위대" }
+		37 = { "%d. 시위대" }
+		38 = { "%d. 시위대" }
+		39 = { "%d. 시위대" }
+		40 = { "%d. 시위대" }
+		41 = { "%d. 시위대" }
+		42 = { "%d. 시위대" }
+		43 = { "%d. 시위대" }
+		44 = { "%d. 시위대" }
+		45 = { "%d. 시위대" }
+		46 = { "%d. 시위대" }
+		47 = { "%d. 시위대" }
+		48 = { "%d. 시위대" }
+		49 = { "%d. 시위대" }
+		50 = { "%d. 시위대" }
+		51 = { "%d. 시위대" }
+		52 = { "%d. 시위대" }
+		53 = { "%d. 시위대" }
+		54 = { "%d. 시위대" }
+		55 = { "%d. 시위대" }
+		56 = { "%d. 시위대" }
+		57 = { "%d. 시위대" }
+		58 = { "%d. 시위대" }
+		59 = { "%d. 시위대" }
+		60 = { "%d. 시위대" }
+		61 = { "%d. 시위대" }
+		62 = { "%d. 시위대" }
+		63 = { "%d. 시위대" }
+		64 = { "%d. 시위대" }
+		65 = { "%d. 시위대" }
+		66 = { "%d. 시위대" }
+		67 = { "%d. 시위대" }
+		68 = { "%d. 시위대" }
+		69 = { "%d. 시위대" }
+		70 = { "%d. 시위대" }
+		71 = { "%d. 시위대" }
+		72 = { "%d. 시위대" }
+		73 = { "%d. 시위대" }
+		74 = { "%d. 시위대" }
+		75 = { "%d. 시위대" }
+		76 = { "%d. 시위대" }
+		77 = { "%d. 시위대" }
+		78 = { "%d. 시위대" }
+		79 = { "%d. 시위대" }
+		80 = { "%d. 시위대" }
+		81 = { "%d. 시위대" }
+		82 = { "%d. 시위대" }
+		83 = { "%d. 시위대" }
+		84 = { "%d. 시위대" }
+		85 = { "%d. 시위대" }
+		86 = { "%d. 시위대" }
+		87 = { "%d. 시위대" }
+		88 = { "%d. 시위대" }
+		89 = { "%d. 시위대" }
+		90 = { "%d. 시위대" }
+		91 = { "%d. 시위대" }
+		92 = { "%d. 시위대" }
+		93 = { "%d. 시위대" }
+		94 = { "%d. 시위대" }
+	    95 = { "%d. 시위대" }
+		96 = { "%d. 시위대" }
+		97 = { "%d. 시위대" }
+		98 = { "%d. 시위대" }
+		99 = { "%d. 시위대" }
+		100 = { "%d. 시위대" }
+	}
+}
+
+KOR_CAV_01 = 
+{
+	name = "기병 사단"
+
+	for_countries = { KOR }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { KOR_INF_01 }
+
+	fallback_name = "%d. 기병 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. 기병 사단" }
+		2 = { "%d. 기병 사단" }
+		3 = { "%d. 기병 사단" }
+		4 = { "%d. 기병 사단" }
+		5 = { "%d. 기병 사단" }
+		6 = { "%d. 기병 사단" }
+		7 = { "%d. 기병 사단" }
+		8 = { "%d. 기병 사단" }
+		9 = { "%d. 기병 사단" }
+		10 = { "%d. 기병 사단" }
+		11 = { "%d. 기병 사단" }
+		12 = { "%d. 기병 사단" }
+		13 = { "%d. 기병 사단" }
+		14 = { "%d. 기병 사단" }
+		15 = { "%d. 기병 사단" }
+		16 = { "%d. 기병 사단" }
+		17 = { "%d. 기병 사단" }
+		18 = { "%d. 기병 사단" }
+		19 = { "%d. 기병 사단" }
+		20 = { "%d. 기병 사단" }
+		21 = { "%d. 기병 사단" }
+		22 = { "%d. 기병 사단" }
+		23 = { "%d. 기병 사단" }
+		24 = { "%d. 기병 사단" }
+		25 = { "%d. 기병 사단" }
+		26 = { "%d. 기병 사단" }
+		27 = { "%d. 기병 사단" }
+		28 = { "%d. 기병 사단" }
+		29 = { "%d. 기병 사단" }
+		30 = { "%d. 기병 사단" }
+		31 = { "%d. 기병 사단" }
+		32 = { "%d. 기병 사단" }
+		33 = { "%d. 기병 사단" }
+		34 = { "%d. 기병 사단" }
+		35 = { "%d. 기병 사단" }
+		36 = { "%d. 기병 사단" }
+		37 = { "%d. 기병 사단" }
+		38 = { "%d. 기병 사단" }
+		39 = { "%d. 기병 사단" }
+		40 = { "%d. 기병 사단" }
+		41 = { "%d. 기병 사단" }
+		42 = { "%d. 기병 사단" }
+		43 = { "%d. 기병 사단" }
+		44 = { "%d. 기병 사단" }
+		45 = { "%d. 기병 사단" }
+		46 = { "%d. 기병 사단" }
+		47 = { "%d. 기병 사단" }
+		48 = { "%d. 기병 사단" }
+		49 = { "%d. 기병 사단" }
+		50 = { "%d. 기병 사단" }
+		51 = { "%d. 기병 사단" }
+		52 = { "%d. 기병 사단" }
+		53 = { "%d. 기병 사단" }
+
+	}
+}
+
+KOR_MOT_01 = 
+{
+	name = "기동 사단"
+
+	for_countries = { KOR }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" "mechanized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { KOR_INF_01 }
+
+	fallback_name = "%d. 기동 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		101 = { "%d. 기동 사단 '진군'" }
+		102 = { "%d. 기동 사단 '화염'" }
+		103 = { "%d. 기동 사단 '백룡'" }
+		104 = { "%d. 기동 사단" }
+		105 = { "%d. 기동 사단 '요충'" }
+		106 = { "%d. 기동 사단 '청화'" }
+		107 = { "%d. 기동 사단 '금성'" }
+		108 = { "%d. 기동 사단 '왕도'" }
+		109 = { "%d. 기동 사단 '개마무사'" }
+		110 = { "%d. 기동 사단" }
+		111 = { "%d. 기동 사단 '선인'" }
+		112 = { "%d. 기동 사단 '애국'" }
+		113 = { "%d. 기동 사단" }
+		114 = { "%d. 기동 사단" }
+		115 = { "%d. 기동 사단 '승전'" }
+		116 = { "%d. 기동 사단" }
+		117 = { "%d. 기동 사단 '천둥'" }
+		118 = { "%d. 기동 사단" }
+		119 = { "%d. 기동 사단" }
+		120 = { "%d. 기동 사단 '다산'" }
+		121 = { "%d. 기동 사단 '퇴계'" }
+		122 = { "%d. 기동 사단 '기계' " }
+		123 = { "%d. 기동 사단 '첨병'" }
+		124 = { "%d. 기동 사단" }
+		125 = { "%d. 기동 사단 '이무기'" }
+		126 = { "%d. 기동 사단 '적마'" }
+		127 = { "%d. 기동 사단 '위엄'" }
+		128 = { "%d. 기동 사단 '폭풍'" }
+		129 = { "%d. 기동 사단" }
+		130 = { "%d. 기동 사단 '충절'" }
+		131 = { "%d. 기동 사단" }
+		132 = { "%d. 기동 사단" }
+		133 = { "%d. 기동 사단" }
+		134 = { "%d. 기동 사단" }
+		135 = { "%d. 기동 사단" }
+		136 = { "%d. 기동 사단" }
+		137 = { "%d. 기동 사단" }
+		138 = { "%d. 기동 사단" }
+		139 = { "%d. 기동 사단" }
+		140 = { "%d. 기동 사단" }
+		141 = { "%d. 기동 사단" }
+		142 = { "%d. 기동 사단" }
+		143 = { "%d. 기동 사단" }
+		144 = { "%d. 기동 사단" }
+		145 = { "%d. 기동 사단" }
+		146 = { "%d. 기동 사단" }
+		147 = { "%d. 기동 사단" }
+		148 = { "%d. 기동 사단" }
+		149 = { "%d. 기동 사단" }
+		150 = { "%d. 기동 사단" }
+		151 = { "%d. 기동 사단" }
+		152 = { "%d. 기동 사단" }
+		153 = { "%d. 기동 사단" }
+		154 = { "%d. 기동 사단" }
+		155 = { "%d. 기동 사단" }
+		156 = { "%d. 기동 사단" }
+		157 = { "%d. 기동 사단" }
+		158 = { "%d. 기동 사단" }
+		159 = { "%d. 기동 사단" }
+		160 = { "%d. 기동 사단" }
+		161 = { "%d. 기동 사단" }
+		162 = { "%d. 기동 사단" }
+		163 = { "%d. 기동 사단" }
+		164 = { "%d. 기동 사단" }
+		165 = { "%d. 기동 사단" }
+		166 = { "%d. 기동 사단" }
+		167 = { "%d. 기동 사단" }
+		168 = { "%d. 기동 사단" }
+		169 = { "%d. 기동 사단" }
+		170 = { "%d. 기동 사단" }
+		171 = { "%d. 기동 사단" }
+		172 = { "%d. 기동 사단" }
+		173 = { "%d. 기동 사단" }
+		174 = { "%d. 기동 사단" }
+		175 = { "%d. 기동 사단" }
+		176 = { "%d. 기동 사단" }
+	}
+}
+
+KOR_ARM_01 = 
+{
+	name = "기갑 사단"
+
+	for_countries = { KOR }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { KOR_INF_01 }
+
+	fallback_name = "%d. 기갑 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. 기갑 사단" }
+		2 = { "%d. 기갑 사단" }
+		3 = { "%d. 기갑 사단" }
+		4 = { "%d. 기갑 사단" }
+		5 = { "%d. 기갑 사단" }
+		6 = { "%d. 기갑 사단" }
+		7 = { "%d. 기갑 사단" }
+		8 = { "%d. 기갑 사단" }
+		9 = { "%d. 기갑 사단" }
+		10 = { "%d. 기갑 사단" }
+		11 = { "%d. 기갑 사단" }
+		12 = { "%d. 기갑 사단" }
+		13 = { "%d. 기갑 사단" }
+		14 = { "%d. 기갑 사단" }
+		15 = { "%d. 기갑 사단" }
+		16 = { "%d. 기갑 사단" }
+		17 = { "%d. 기갑 사단" }
+		18 = { "%d. 기갑 사단" }
+		19 = { "%d. 기갑 사단" }
+		20 = { "%d. 기갑 사단" }
+		21 = { "%d. 기갑 사단" }
+		22 = { "%d. 기갑 사단" }
+		23 = { "%d. 기갑 사단" }
+
+	}
+}
+
+
+
+KOR_MAR_01 = 
+{
+	name = "해병 사단"
+
+	for_countries = { KOR }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { KOR_INF_01 }
+
+	fallback_name = "%d. 해병 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. 해병 사단 '해룡'" }
+		2 = { "%d. 해병 사단 '청룡'" }
+		3 = { "%d. 해병 사단 '흑룡'" }
+		4 = { "%d. 해병 사단 '공룡" }
+		5 = { "%d. 해병 사단 '천룡'" }
+		6 = { "%d. 해병 사단" }
+		7 = { "%d. 해병 사단" }
+		8 = { "%d. 해병 사단" }
+		9 = { "%d. 해병 사단" }
+		10 = { "%d. 해병 사단" }
+
+	}
+}
+
+KOR_MTN_01 = 
+{
+	name = "산악 사단"
+
+	for_countries = { KOR }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { KOR_INF_01 }
+
+	fallback_name = "%d. 산악 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. 산악 사단" }
+		2 = { "%d. 산악 사단" }
+		3 = { "%d. 산악 사단" }
+		4 = { "%d. 산악 사단" }
+		5 = { "%d. 산악 사단" }
+		6 = { "%d. 산악 사단" }
+		7 = { "%d. 산악 사단" }
+		8 = { "%d. 산악 사단" }
+		9 = { "%d. 산악 사단" }
+		10 = { "%d. 산악 사단" }
+
+	}
+}
+
+KOR_PAR_01 = 
+{
+	name = "공수 사단"
+
+	for_countries = { KOR }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { KOR_INF_01 }
+
+	fallback_name = "%d. 공수 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. 공수 사단 '독수리'" }
+		2 = { "%d. 공수 사단 '비호'" }
+		3 = { "%d. 공수 사단 '천마'" }
+		4 = { "%d. 공수 사단 '귀성'" }
+		5 = { "%d. 공수 사단 '황금 박쥐'" }
+		6 = { "%d. 공수 사단 '흑범'" }
+		7 = { "%d. 공수 사단" }
+		8 = { "%d. 공수 사단" }
+		9 = { "%d. 공수 사단" }
+		10 = { "%d. 공수 사단" }
+
+	}
+}

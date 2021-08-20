@@ -1,0 +1,4252 @@
+focus_tree = {
+	id = korea
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KOR
+		}
+	}
+	continuous_focus_position = { x = 100 y = 1300 }
+	default = no
+	focus = {
+		id = kor_road_and_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5.00
+		x = 7
+		y = 0
+		available = {
+		   has_stability > 0.25
+		}
+			completion_reward = {
+					add_ideas = KOR_road_end_railway
+				}
+
+	}
+	focus = {
+		id = kor_kill_Communist
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 12.9
+		prerequisite = {
+			focus = kor_reform_korea
+		}
+		available = {
+			has_idea = KOR_divided_politics
+			NOT = {
+				has_completed_focus = KOR_asian_democracy 
+			}
+		}
+		bypass = {
+			NOT = {
+				has_idea = KOR_political_officer
+			}
+		}
+		x = 38
+		y = 1
+			completion_reward = {
+			remove_ideas = KOR_striked_factories
+			remove_ideas = KOR_divided_politics
+					add_stability = 0.05
+					add_popularity = {
+							ideology = communism
+							popularity = -0.15
+						}
+				}
+
+	}
+	focus = {
+		id = kor_military
+		icon = GFX_goal_kor_eok_army
+		cost = 4.00
+		x = 88
+		y = 0
+		available = {
+			has_war_support > 0.2
+		}
+			completion_reward = {
+					KOR = {
+							add_timed_idea = {
+									idea = KOR_political_officer_2
+									days = 720
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = kor_rok_lebensraum
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 5.00
+		x = 23
+		y = 12
+		prerequisite = {
+			focus = kor_positive_heroism
+		}
+		prerequisite = {
+			focus = kor_communist_army
+		}
+			completion_reward = {
+					add_war_support = 0.1
+					add_ideas = KOR_lebensraum
+				}
+
+	}
+	focus = {
+		id = KOR_use_the_anti-armed
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 10.00
+		mutually_exclusive = {
+			focus = kor_reform_korea
+		}
+		x = 23
+		y = 0
+		completion_reward = {
+			add_country_leader_trait = 	reluctant_interventionist
+			add_country_leader_trait =	stout_defender
+			add_stability = -0.05
+			add_political_power = 200
+		}
+
+	}
+	focus = {
+		id = KOR_fuck_pact
+		icon = GFX_focus_goal_KOR_fuck_pact
+		cost = 10.00
+		prerequisite = {
+			focus = kor_reform_korea
+		}
+		x = 34
+		y = 1
+		available = {
+			NOT = {
+				has_completed_focus = KOR_asian_democracy
+			}
+		}
+		completion_reward = {
+			add_ideas = KOR_nations
+			add_war_support = 0.05
+		}
+
+	}
+	focus = {
+		id = kor_soe_establishment
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5.00
+		prerequisite = {
+			focus = kor_road_and_railway
+		}
+		mutually_exclusive = {
+			focus = kor_market_economy_reform
+		}
+		x = 6
+		y = 1
+			completion_reward = {
+					add_ideas = KOR_establishment
+				}
+
+	}
+	focus = {
+		id = kor_market_economy_reform
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 5.00
+		prerequisite = {
+			focus = kor_road_and_railway
+		}
+		mutually_exclusive = {
+			focus = kor_soe_establishment
+		}
+		x = 8
+		y = 1
+			available = {
+					has_stability > 0.6
+				}
+			completion_reward = {
+					add_ideas = KOR_market_economy_reform
+				}
+
+	}
+	focus = {
+		id = kor_homeland_development
+		icon = GFX_goal_generic_production
+		cost = 5.00
+		prerequisite = {
+			focus = kor_soe_establishment
+			focus = kor_market_economy_reform
+		}
+		x = 7
+		y = 2
+			available = {
+					OR = {
+							has_completed_focus = kor_monarchy
+							has_completed_focus = KOR_use_the_anti-armed
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = kor_infrastructure_1
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5.00
+		prerequisite = {
+			focus = kor_homeland_development
+		}
+		x = 3
+		y = 3
+			completion_reward = {
+					812 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = kor_seoul-busan_highway
+		icon = GFX_goal_generic_construction
+		cost = 5.00
+		prerequisite = {
+			focus = kor_infrastructure_1
+		}
+		x = 2
+		y = 4
+			completion_reward = {
+					807 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+						}
+					525 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+					809 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = kor_hunan_highway
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5.00
+		prerequisite = {
+			focus = kor_seoul-busan_highway
+		}
+		x = 1
+		y = 5
+			completion_reward = {
+					808 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = kor_uiju-busan_railway
+		icon = GFX_goal_generic_production
+		cost = 5.00
+		prerequisite = {
+			focus = kor_infrastructure_1
+		}
+		x = 4
+		y = 4
+			completion_reward = {
+					527 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+						}
+					811 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+					810 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = kor_fortress_city
+		icon = GFX_goal_generic_fortify_city
+		cost = 5.00
+		prerequisite = {
+			focus = kor_uiju-busan_railway
+		}
+		x = 5
+		y = 5
+			completion_reward = {
+					810 = {
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 6944
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 6822
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 3981
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 810
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = kor_industrial_complex_1
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5.00
+		prerequisite = {
+			focus = kor_homeland_development
+		}
+		x = 8
+		y = 3
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = kor_industrial_complex_pohang
+		icon = GFX_focus_generic_steel
+		cost = 5.00
+		prerequisite = {
+			focus = kor_industrial_complex_1
+		}
+		mutually_exclusive = {
+			focus = kor_industrial_complex_seoul
+		}
+		x = 7
+		y = 4
+			completion_reward = {
+					add_resource = {
+							type = steel
+							amount = 4
+							state = 809
+						}
+				}
+
+	}
+	focus = {
+		id = kor_industrial_complex_seoul
+		icon = GFX_goal_generic_consumer_goods
+		cost = 5.00
+		prerequisite = {
+			focus = kor_industrial_complex_1
+		}
+		mutually_exclusive = {
+			focus = kor_industrial_complex_pohang
+		}
+		x = 9
+		y = 4
+			completion_reward = {
+					807 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = kor_make_posco
+		icon = GFX_focus_generic_steel
+		cost = 5.00
+		prerequisite = {
+			focus = kor_industrial_complex_pohang
+			focus = kor_industrial_complex_seoul
+		}
+		mutually_exclusive = {
+			focus = kor_industrial_complex_gwangju
+		}
+		x = 7
+		y = 5
+			completion_reward = {
+					add_resource = {
+							type = steel
+							amount = 10
+							state = 809
+						}
+				}
+
+	}
+	focus = {
+		id = kor_industrial_complex_gwangju
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5.00
+		prerequisite = {
+			focus = kor_industrial_complex_seoul
+			focus = kor_industrial_complex_pohang
+		}
+		mutually_exclusive = {
+			focus = kor_make_posco
+		}
+		x = 9
+		y = 5
+			completion_reward = {
+					808 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = kor_resource_search
+		icon = GFX_focus_generic_tungsten
+		cost = 5.00
+		prerequisite = {
+			focus = kor_make_posco
+			focus = kor_industrial_complex_gwangju
+		}
+		mutually_exclusive = {
+			focus = kor_industrial_complex_haeju
+		}
+		x = 7
+		y = 6
+			completion_reward = {
+					add_resource = {
+							type = tungsten
+							amount = 20
+							state = 527
+						}
+				}
+
+	}
+	focus = {
+		id = kor_industrial_complex_haeju
+		icon = GFX_focus_generic_industry_1
+		cost = 5.00
+		prerequisite = {
+			focus = kor_industrial_complex_gwangju
+			focus = kor_make_posco
+		}
+		mutually_exclusive = {
+			focus = kor_resource_search
+		}
+		x = 9
+		y = 6
+			completion_reward = {
+					811 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = kor_hansung_university
+		icon = GFX_focus_research
+		cost = 5.00
+		prerequisite = {
+			focus = kor_resource_search
+			focus = kor_industrial_complex_haeju
+		}
+		x = 8
+		y = 7
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = kor_arms_factory_1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5.00
+		prerequisite = {
+			focus = kor_homeland_development
+		}
+		x = 12
+		y = 3
+			completion_reward = {
+					525 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = kor_arms_factory_gaesong
+		icon = GFX_focus_secret_rearmament
+		cost = 5.00
+		prerequisite = {
+			focus = kor_arms_factory_1
+		}
+		x = 12
+		y = 4
+			completion_reward = {
+					811 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = kor_arms_factory_incheon
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5.00
+		prerequisite = {
+			focus = kor_arms_factory_gaesong
+		}
+		x = 12
+		y = 5
+			completion_reward = {
+					525 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = kor_arms_factory_daegu
+		icon = GFX_focus_generic_tank_production
+		cost = 5.00
+		prerequisite = {
+			focus = kor_arms_factory_1
+		}
+		x = 14
+		y = 5
+			completion_reward = {
+					809 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = kor_arms_factory_womsan
+		icon = GFX_focus_generic_industry_2
+		cost = 5.00
+		prerequisite = {
+			focus = kor_arms_factory_incheon
+		}
+		prerequisite = {
+			focus = kor_arms_factory_daegu
+		}
+		x = 13
+		y = 6
+			completion_reward = {
+					810 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = kor_make_roket
+		icon = GFX_focus_rocketry
+		cost = 5.00
+		prerequisite = {
+			focus = kor_arms_factory_womsan
+		}
+		x = 12
+		y = 7
+			completion_reward = {
+					add_tech_bonus = {
+							name = jet_rocket_bonus
+							ahead_reduction = 0.5
+							uses = 2
+							category = rocketry
+							category = jet_technology
+						}
+				}
+
+	}
+	focus = {
+		id = kor_make_nuke
+		icon = GFX_focus_wonderweapons
+		cost = 5.00
+		prerequisite = {
+			focus = kor_make_roket
+		}
+		x = 13
+		y = 8
+			completion_reward = {
+					add_tech_bonus = {
+							name = kor_make_nuke
+							bonus = 2.0
+							technology = nukes
+						}
+				}
+
+	}
+	focus = {
+		id = kor_communism
+		icon = GFX_goal_support_communism
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_use_the_anti-armed
+		}
+		x = 21
+		y = 1
+			available = {
+					is_puppet = no
+					has_war = no
+					NOT = {
+						
+						has_completed_focus = KOR_cant_allied
+					}
+				}
+			completion_reward = {
+					remove_ideas = KOR_Weakening_the_kingship
+					
+			add_popularity = { ideology = communism popularity = 0.05 }
+			set_temp_variable = { communism_temp = party_popularity@communism }
+			multiply_temp_variable = { communism_temp = 0.25 }
+			add_stability = communism_temp
+				}
+
+	}
+	focus = {
+		id = KOR_united_power_up
+		icon = GFX_goal_generic_demand_territory
+		cost = 10.00
+		prerequisite = {
+			focus = kor_communism
+		}
+		x = 20
+		y = 2
+		completion_reward = {
+			add_popularity = { ideology = communism popularity = 0.05}
+			remove_ideas = KOR_striked_factories
+		}
+
+	}
+	focus = {
+		id = KOR_women_suffrage
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_united_power_up
+		}
+		x = 20
+		y = 5
+		completion_reward = {
+			add_popularity = { ideology = communism popularity = 0.05}
+			add_ideas = KOR_women_vote
+		}
+
+	}
+	focus = {
+		id = kor_communist_congress_dissolved
+		icon = GFX_focus_generic_self_management
+		cost = 5.00
+		prerequisite = {
+			focus = kor_communism
+		}
+		x = 22
+		y = 2
+			completion_reward = {
+					add_stability = -0.1
+					add_political_power = 120
+				}
+
+	}
+	focus = {
+		id = kor_national_industry_expansion
+		icon = GFX_goal_continuous_repairments
+		cost = 5.00
+		prerequisite = {
+			focus = kor_communist_congress_dissolved
+		}
+		prerequisite = {
+			focus = KOR_united_power_up
+		}
+		x = 21
+		y = 3
+			completion_reward = {
+					add_ideas = KOR_establishment
+				}
+
+	}
+	focus = {
+		id = KOR_industrial_collectivization
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = kor_national_industry_expansion
+		}
+		x = 21
+		y = 4
+		
+		completion_reward = {
+		
+			random_owned_state = {
+				limit = {
+					is_core_of = ROOT
+					is_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = kor_people_parliament
+		icon = GFX_focus_generic_soviet_politics
+		cost = 5.00
+		prerequisite = {
+			focus = kor_communist_congress_dissolved
+		}
+		x = 22
+		y = 5
+			completion_reward = {
+					add_stability = 0.05
+					add_popularity = {
+							ideology = communism
+							popularity = 0.05
+						}
+				}
+
+	}
+	focus = {
+		id = kor_kill_fascism_2
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 5.00
+		prerequisite = {
+			focus = kor_people_parliament
+		}
+		prerequisite = {
+			focus = KOR_women_suffrage
+		}
+		x = 21
+		y = 6
+			completion_reward = {
+					add_stability = 0.05
+					add_popularity = {
+							ideology = fascism
+							popularity = -0.20
+						}
+				}
+
+	}
+	focus = {
+		id = kor_election_maintenance
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 5.00
+		prerequisite = {
+			focus = kor_kill_fascism_2
+		}
+		mutually_exclusive = {
+			focus = kor_communism_dictatorship
+		}
+		x = 19
+		y = 7
+			available = {
+					communism > 0.3
+				}
+			completion_reward = {
+					add_stability = 0.05
+					add_war_support = 0.05
+					create_country_leader = {
+							name = "Lyuh Woon Hyung"
+							desc = ""
+							picture = "gfx/leaders/KOR/Portrait_Lyuh_Woonhyung.dds"
+							expire = "1956.12.1"
+							ideology = leninism
+							traits = { triumphant_revolutionary }
+						}
+					set_politics = {
+							ruling_party = communism
+							elections_allowed = yes
+						}
+					country_event = {
+							id = korea.18
+						}
+				}
+
+	}
+	focus = {
+		id = kor_people_the_best
+		icon = GFX_focus_yug_pan_slavic_congress
+		cost = 5.00
+		prerequisite = {
+			focus = kor_election_maintenance
+		}
+		x = 16
+		y = 8
+			completion_reward = {
+					add_popularity = {
+							ideology = communism
+							popularity = 0.05
+						}
+					add_stability = 0.05
+				}
+
+	}
+	focus = {
+		id = kor_marx
+		icon = GFX_focus_spr_unify_the_london_bureau
+		cost = 5.00
+		prerequisite = {
+			focus = kor_people_the_best
+		}
+		x = 14
+		y = 9
+			completion_reward = {
+					add_ideas = KOR_marx
+				}
+
+	}
+	focus = {
+		id = kor_for_worker
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		cost = 5.00
+		prerequisite = {
+			focus = kor_election_maintenance
+		}
+		x = 18
+		y = 8
+			completion_reward = {
+					add_ideas = KOR_for_worker
+				}
+
+	}
+	focus = {
+		id = kor_public_welfare_reform_2
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_use_the_anti-armed
+		}
+		x = 24
+		y = 2
+			completion_reward = {
+					add_ideas = KOR_welfare
+				}
+
+	}
+	focus = {
+		id = KOR_New_Deal
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10.00
+		prerequisite = {
+			focus = kor_public_welfare_reform_2
+		}
+		x = 24
+		y = 3
+		completion_reward = {
+			add_stability = 0.1
+		}
+
+	}
+	focus = {
+		id = KOR_air_production
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_New_Deal
+		}
+		x = 23
+		y = 4
+		completion_reward = {
+			add_timed_idea = {
+				idea = KOR_air_productive_project
+				days = 720
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_national_arms
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_New_Deal
+		}
+		x = 25
+		y = 4
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_peoples_save
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_air_production
+		}
+		prerequisite = {
+			focus = KOR_national_arms
+		}
+		x = 24
+		y = 5
+		completion_reward = {
+			add_stability = 0.15
+			add_war_support = 0.1
+		}
+
+	}
+	focus = {
+		id = KOR_cant_allied
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_use_the_anti-armed
+		}
+		available = {
+			NOT = {
+				has_completed_focus = kor_communism
+			}	
+		}
+		x = 25
+		y = 1
+		completion_reward = {
+			add_stability = -0.025
+					add_popularity = {
+							ideology = communism
+							popularity = -0.05
+						}
+					add_popularity = {
+							ideology = communism
+							popularity = -0.05
+						}
+						remove_ideas = KOR_striked_factories
+						add_timed_idea = {
+							idea = KOR_dead_strike
+							days = 365
+						}	
+						
+		}
+
+	}
+	focus = {
+		id = kor_reform_korea
+		icon = GFX_focus_goal_KOR_reform_korea 
+		cost = 5.00
+		
+		mutually_exclusive = {
+			focus = KOR_use_the_anti-armed
+		}
+		x = 37
+		y = 0
+			available = {
+					is_puppet = no
+					has_war = no
+				}
+			ai_will_do = {
+					factor = 2
+				}
+			completion_reward = {
+				create_country_leader = {
+					name = "Kim Koo"
+					desc = ""
+					picture = "gfx/leaders/KOR/Portrait_Kim_Koo.png"
+					expire = "1951.1.5"
+					ideology = conservatism
+					traits = {
+					}
+				}
+					add_political_power = 150
+					add_stability = 0.05
+					#country_event = kor_news.1
+					add_named_threat = {
+							threat = 3
+							name = kor_reform_korea
+						}
+					set_country_flag = korea_the_yi_kang
+					hidden_effect = {
+							add_ace = {
+									name = "Cheonsae"
+									surname = "Lee"
+									callsign = "Skyage"
+									type = fighter_genius
+									is_female = no
+								}
+							create_navy_leader = {
+									name = "Samuel D. Lewis"
+									skill = 4
+									attack_skill = 4
+									defense_skill = 4
+									maneuvering_skill = 3
+									coordination_skill = 4
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = kor_national_fascist_agitation
+		icon = GFX_goal_generic_propaganda
+		cost = 5.00
+		prerequisite = {
+			focus = kor_reform_korea
+		}
+		available = {
+			has_stability > 0.25
+		}
+		mutually_exclusive = {
+		}
+		x = 36
+		y = 1
+			completion_reward = {
+					add_war_support = 0.1
+					add_timed_idea = {
+					idea = KOR_fascist_propaganda
+					days = 1020
+					}
+				}
+
+	}
+	focus = {
+		id = KOR_free
+		icon = GFX_goal_kor_deal
+		cost = 10.00
+		prerequisite = {
+			focus = kor_national_fascist_agitation
+			focus = kor_kill_Communist
+		}
+		x = 36
+		y = 2
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 60
+		}
+
+	}
+	focus = {
+		id = KOR_asian_democracy
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10.00
+		prerequisite = {
+			focus = kor_public_welfare_reform_2
+			focus = KOR_free
+		}
+		available = {
+			NOT = {
+				has_completed_focus = kor_monarchy
+				has_completed_focus = kor_communism
+				has_completed_focus = KOR_fuck_pact
+			}
+			OR = {
+				has_completed_focus = KOR_cant_allied
+				has_completed_focus = KOR_free
+			}	
+			OR = {
+				has_government = fascism
+				has_government = democratic
+			}
+			has_idea = KOR_divided_politics
+		}
+		x = 31
+		y = 3
+		completion_reward = {
+			add_ideas = KOR_the_democracy_ruler
+			add_popularity = {
+				ideology = democratic 
+				popularity = 0.05
+			}
+			remove_ideas = KOR_Weakening_the_kingship
+		}
+
+	}
+	focus = {
+		id = KOR_austerity_policy
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_asian_democracy
+		}
+		x = 29
+		y = 4
+		completion_reward = {
+			add_timed_idea = {
+				idea = FRA_economy
+				days = 720
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_Prohibition_propaganda
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_austerity_policy
+		}
+		x = 28
+		y = 5
+		completion_reward = {
+			add_war_support = -0.05
+			add_stability = 0.1
+		}
+
+	}
+	focus = {
+		id = KOR_new_laodonglaw
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_austerity_policy
+		}
+		x = 30
+		y = 5
+		completion_reward = {
+		add_stability = 0.05
+		add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = KOR_demilitarzed_zone_is_none
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_asian_democracy
+		}
+		available = {
+			has_stability > 0.49
+		}
+		x = 33
+		y = 4
+		completion_reward = {
+			remove_ideas = KOR_political_officer 
+		}
+
+	}
+	focus = {
+		id = KOR_with_east
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_demilitarzed_zone_is_none
+		}
+		mutually_exclusive = {
+			focus = KOR_with_west_democracy
+		}
+		x = 32
+		y = 5
+		completion_reward = {
+				create_faction = "동아시아 민주동맹"
+				CHI = {
+					dismantle_faction = yes
+				}
+				add_to_faction = CHI
+				add_to_faction = YUN
+				add_to_faction = TIB
+				if = {
+					limit = {
+						JAP = {
+							OR = {
+								has_government = democratic
+								has_government = fascism
+							}	
+						}	
+					}
+					JAP = {
+						dismantle_faction = yes
+					}	
+					KOR = {
+						add_to_faction = JAP
+					}
+				}
+		}
+
+	}
+	focus = {
+		id = KOR_Basic_Welfare_Policy
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_free
+		}
+		x = 36
+		y = 3
+		completion_reward = {
+			add_stability = 0.1
+		}
+
+	}
+	focus = {
+		id = KOR_with_west_democracy
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_demilitarzed_zone_is_none
+		}
+		mutually_exclusive = {
+			focus = KOR_with_east
+		}
+		x = 36
+		y = 5
+		completion_reward = {
+			if = {
+				limit = {
+					ENG = {
+						OR = {
+							has_government = democratic
+							has_government = fascism
+						}	
+					}
+				}
+				ENG = {
+					add_to_faction = KOR
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_democracy_spread
+		icon = GFX_focus_benelux
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_with_east
+			focus = KOR_with_west_democracy
+		}
+		x = 34
+		y = 6
+		completion_reward = {
+			every_other_country = {
+				limit = {
+					NOT = {
+						OR = {
+							has_government = democratic
+							has_government = fascism
+						}
+					}
+				}
+				add_timed_idea = {
+					idea = KOR_democracy_spread 
+					days = 720
+				}	
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_defence_russia
+		icon = GFX_focus_befriend_russia
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_with_west_democracy
+		}
+		x = 36
+		y = 6
+		completion_reward = {
+			add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = KOR_first_attack_rus
+		icon = GFX_focus_attack_russia
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_defence_russia
+		}
+		x = 36
+		y = 7
+		completion_reward = {
+			create_wargoal = {
+				target = RUS
+				type = puppet_wargoal_focus
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_gold_collecting_exercise
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 10.00
+		prerequisite = {
+			focus = kor_kill_Communist
+			focus = kor_national_fascist_agitation
+		}
+		x = 38
+		y = 2
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = civilian_economy
+				}
+				swap_ideas = {
+					remove_idea = civilian_economy
+					add_idea = low_economic_mobilisation
+				}
+			}
+			if = {
+				limit = {
+					has_idea = low_economic_mobilisation
+				}
+				swap_ideas = {
+					remove_idea = low_economic_mobilisation
+					add_idea = partial_economic_mobilisation
+				}
+			}
+			if = {
+				limit = {
+					has_idea = partial_economic_mobilisation
+				}
+				swap_ideas = {
+					remove_idea = partial_economic_mobilisation
+					add_idea = war_economy
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_idea = war_economy
+						AND = {
+							NOT = {
+								has_idea = civilian_economy
+								has_idea = low_economic_mobilisation
+								has_idea = partial_economic_mobilisation
+								has_idea = war_economy
+							}
+						}
+					}	
+				}
+				add_war_support = 0.05
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_Entrepreneurship_Promotion
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_gold_collecting_exercise
+		}
+		x = 38
+		y = 3
+		completion_reward = {
+			add_political_power = 120
+			add_war_support = 0.05
+		}
+
+	}
+	focus = {
+		id = kor_national_development_2
+		icon = GFX_goal_generic_production
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_Basic_Welfare_Policy
+			focus = KOR_Entrepreneurship_Promotion
+		}
+		x = 37
+		y = 4
+			completion_reward = {
+					add_timed_idea = {
+							idea = KOR_national_development_5years
+							days = 365
+						}
+				}
+
+	}
+	focus = {
+		id = kor_monarchy
+		icon = GFX_focus_goal_KOR_jeju_annex
+		cost = 5.00
+		prerequisite = {
+			focus = kor_reform_korea
+		}
+		x = 46
+		y = 1
+		available = {
+			
+		}
+			completion_reward = {
+					add_stability = 0.05
+					hidden_effect = {
+						country_event = {
+						id = korea.24
+					}
+					}
+				}
+
+	}
+	focus = {
+		id = kor_korean_lebensraum
+		icon = GFX_focus_goal_KOR_heil_korea
+		cost = 5.00
+		prerequisite = {
+			focus = kor_monarchy
+		}
+		mutually_exclusive = {
+			focus = KOR_power_up_to_imperial 
+		} 
+		available = {
+			has_country_flag = FLAG_the_fascist_is_won_in_pact
+		}
+		x = 46
+		y = 2
+			completion_reward = {
+								set_politics = {
+									ruling_party = fascism
+									last_election = "1936.2.6"
+									election_frequency = 48
+									elections_allowed = no
+								}
+					add_war_support = 0.05
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.15
+						}
+				}
+
+	}
+	focus = {
+		id = kor_new_lifeguard_extension
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 5.00
+		prerequisite = {
+			focus = kor_korean_lebensraum
+		}
+		available = {
+			has_war = yes
+		}
+		x = 40
+		y = 3
+			completion_reward = {
+					add_manpower = 50000
+				}
+
+	}
+	focus = {
+		id = kor_the_new_history
+		icon = GFX_goal_generic_more_territorial_claims 
+		cost = 5.00
+		prerequisite = {
+			focus = kor_korean_lebensraum
+		}
+		available = {
+			has_war = no
+			has_stability > 0.45
+		}
+		x = 44
+		y = 3
+			completion_reward = {
+					add_war_support = 0.05
+				}
+
+	}
+	focus = {
+		id = kor_encouraging_patriotism_2
+		icon = GFX_focus_ger_revive_kaiserreich
+		cost = 5.00 
+		prerequisite = {
+			focus = kor_korean_lebensraum
+		}
+		x = 46
+		y = 3
+			completion_reward = {
+					add_stability = 0.05
+				}
+
+	}
+	focus = {
+		id = kor_forced_labor
+		icon = GFX_goal_generic_attack_allies
+		cost = 5.00
+		prerequisite = {
+			focus = kor_encouraging_patriotism_2
+		}
+		x = 46
+		y = 4
+			completion_reward = {
+					add_ideas = KOR_anti_chinese_holy_war
+				}
+
+	}
+	focus = {
+		id = kor_territory_expansion
+		icon = GFX_focus_chi_army_reform
+		cost = 5.00
+		prerequisite = {
+			focus = kor_korean_lebensraum
+		}
+		x = 48
+		y = 3
+			available = {
+				threat > 0.07
+				}
+			completion_reward = {
+					KOR = {
+						add_state_claim = 839
+						add_state_claim = 613
+						add_state_claim = 608
+						add_state_claim = 829
+					}
+						add_threat = 3
+				}
+
+	}
+	focus = {
+		id = KOR_all_claim
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10.00
+		prerequisite = {
+			focus = kor_territory_expansion
+		}
+		mutually_exclusive = {
+			focus = kor_Imperialism
+		}
+		x = 48
+		y = 4
+		completion_reward = {
+			KOR = {
+				add_state_claim = 826
+				add_state_claim = 614
+				add_state_claim = 597
+				add_state_claim = 843
+				add_state_claim = 842
+				add_state_claim = 828
+				add_state_claim = 827
+			}	
+		}
+
+	}
+	focus = {
+		id = KOR_plan_manchu
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_all_claim
+		}
+		x = 47
+		y = 5
+		completion_reward = {
+			army_experience = 15
+			annex_country = {
+				target = KMN
+				transfer_troops = yes
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_last_say_of_russia
+		icon = GFX_focus_attack_russia
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_plan_manchu
+		}
+		x = 46
+		y = 6
+		completion_reward = {
+			MON = { 
+				country_event = {
+					id = korea.23
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_kwangtungjun
+		icon = GFX_focus_AST_war_japan
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_plan_manchu
+		}
+		x = 48
+		y = 6
+		completion_reward = {
+			declare_war_on = {
+				target = MAN
+				type = annex_everything
+			}
+			white_peace = JAP
+		}
+
+	}
+	focus = {
+		id = KOR_dalian_attack
+		icon = GFX_focus_AST_war_japan
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_kwangtungjun
+		}
+		available = {
+			has_war_with = FNG
+		}
+		x = 48
+		y = 7
+		completion_reward = {
+			set_state_controller = 745
+		}
+
+	}
+	focus = {
+		id = KOR_attack_yeonhaeju
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_all_claim
+		}
+		x = 50
+		y = 5
+		completion_reward = {
+			add_state_core = 820
+			add_state_core = 408
+			add_state_core = 409
+			add_state_core = 655
+			add_state_core = 537
+		}
+
+	}
+	focus = {
+		id = KOR_chulbyong
+		icon = GFX_focus_attack_russia
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_attack_yeonhaeju
+		}
+		x = 50
+		y = 6
+		completion_reward = {
+			JAP = {
+				country_event = {
+						id = korea.16
+						days = 3
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_attack_colonial_territory
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_all_claim
+		}
+		x = 52
+		y = 5
+		completion_reward = {
+			add_state_claim = 743
+			add_state_claim = 524
+		}
+
+	}
+	focus = {
+		id = KOR_attack_tsingdao
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_attack_colonial_territory
+		}
+		x = 52
+		y = 6
+		completion_reward = {
+			
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SHX
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_attack_shanghai
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_attack_colonial_territory
+		}
+		x = 54
+		y = 6
+		completion_reward = {
+			
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = CHI
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_attack_taiwan
+		icon = GFX_focus_attack_japan
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_attack_shanghai
+		}
+		prerequisite = {
+			focus = KOR_attack_tsingdao
+		}
+		x = 53
+		y = 7
+		completion_reward = {
+			
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = JAP
+			}
+			if = {
+				limit = {
+					has_war_with = JAP
+				}
+				set_state_controller = 524
+				transfer_state = 524
+			}
+		}
+
+	}
+	focus = {
+		id = kor_control_asia
+		icon = GFX_focus_jap_cast_the_die
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_chulbyong
+		}
+		prerequisite = {
+			focus = KOR_attack_taiwan
+		}
+		prerequisite = {
+			focus = KOR_dalian_attack
+		}
+		prerequisite = {
+			focus = KOR_last_say_of_russia
+		}
+		x = 50
+		y = 8
+			completion_reward = {
+					add_war_support = 0.2
+					set_rule = {
+							can_create_factions = yes
+						}
+				}
+
+	}
+	focus = {
+		id = kor_Imperialism
+		icon = GFX_focus_jap_cast_the_die
+		cost = 5.00
+		prerequisite = {
+			focus = kor_territory_expansion
+		}
+		mutually_exclusive = {
+			focus = KOR_all_claim
+		}
+		x = 58
+		y = 4
+			available = {
+				}
+			completion_reward = {
+					set_rule = {
+							can_create_factions = yes
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_allied_with_russia
+		icon = GFX_focus_befriend_russia
+		cost = 10.00
+		prerequisite = {
+			focus = kor_Imperialism
+		}
+		mutually_exclusive = {
+			focus = kor_friendship_with_japan
+		}
+		x = 56
+		y = 5
+		completion_reward = {
+			SOV = {
+				country_event = {
+					id = generic.2
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_give_me_the_manchu
+		icon = GFX_focus_befriend_russia
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_allied_with_russia
+		}
+		x = 56
+		y = 6
+		completion_reward = {
+			SOV = {
+				white_peace = KOR
+			}
+			FNG = {
+				country_event = {
+					id = korea.11
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = kor_friendship_with_japan
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		cost = 5.00
+		prerequisite = {
+			focus = kor_Imperialism
+		}
+		mutually_exclusive = {
+			focus = KOR_allied_with_russia
+		}
+		x = 61
+		y = 5
+			available = {
+					has_political_power > 49
+					NOT = {
+							has_government = communism
+							has_government = neutrality
+							has_government = democratic
+						}
+				}
+			bypass = {
+
+}
+			completion_reward = {
+					add_political_power = -50
+					add_ideas = KOR_militarism
+				}
+
+	}
+	focus = {
+		id = kor_yeonhaeju
+		icon = GFX_goal_demand_sudetenland
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_allied_with_russia
+			focus = kor_friendship_with_japan
+		}
+		x = 58
+		y = 6
+		available = {
+			controls_state = 825
+			controls_state = 824
+			controls_state = 823
+		}
+			completion_reward = {
+					JAP = {
+							country_event = {
+									id = korea.16
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_threat_up_of_east_asia
+		icon = GFX_focus_secret_rearmament
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_give_me_the_manchu
+		}
+		prerequisite = {
+			focus = kor_yeonhaeju
+		}
+		x = 56
+		y = 7
+		completion_reward = {
+			add_threat = 5
+			add_political_power = 150
+		}
+	
+	}
+	focus = {
+		id = KOR_attack_japan
+		icon = GFX_focus_attack_japan
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_threat_up_of_east_asia
+		}
+		x = 56
+		y = 8
+		completion_reward = {
+			create_wargoal = {
+				target = JAP
+				type = puppet_wargoal_focus
+			}
+		}
+	
+	}
+	focus = {
+		id = kor_erection_fortress
+		icon = GFX_goal_generic_construct_military
+		cost = 5.00
+		prerequisite = {
+			focus = kor_friendship_with_japan
+		}
+		x = 60
+		y = 6
+			completion_reward = {
+					821 = {
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 964
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 892
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 3895
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 6804
+									instant_build = yes
+								}
+						}
+					824 = {
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 6868
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 3888
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 9866
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 3932
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 6947
+									instant_build = yes
+								}
+						}
+					823 = {
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 9913
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 9928
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 11893
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 3791
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 11906
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 6811
+									instant_build = yes
+								}
+						}
+					527 = {
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 11835
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 906
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 6963
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 11828
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 9795
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 9918
+									instant_build = yes
+								}
+						}
+					810 = {
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 9899
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 3803
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 3860
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 898
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 6944
+									instant_build = yes
+								}
+						}
+					820 = {
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 957
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = kor_strengthening_cooperation_japan
+		icon = GFX_goal_generic_military_deal
+		cost = 5.00
+		prerequisite = {
+			focus = kor_friendship_with_japan
+		}
+		x = 62
+		y = 6
+			completion_reward = {
+					JAP = {
+							give_guarantee = KOR
+						}
+				}
+
+	}
+	focus = {
+		id = kor_korea_japan_military_agreement
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5.00
+		prerequisite = {
+			focus = kor_strengthening_cooperation_japan
+		}
+		prerequisite = {
+			focus = kor_erection_fortress
+		}
+		x = 61
+		y = 7
+			completion_reward = {
+					KOR = {
+							give_military_access = JAP
+						}
+					JAP = {
+							give_military_access = KOR
+						}
+				}
+
+	}
+	focus = {
+		id = kor_join_japan
+		icon = GFX_goal_generic_alliance
+		cost = 5.00
+		prerequisite = {
+			focus = kor_korea_japan_military_agreement
+		}
+		x = 61
+		y = 8
+			available = {
+					JAP = {
+							has_completed_focus = JAP_purge_the_kodoha_faction
+							is_faction_leader = yes
+						}
+				}
+			bypass = {
+					JAP = {
+							NOT = {
+							has_completed_focus = JAP_purge_the_kodoha_faction
+						}
+					}	
+				}
+			completion_reward = {
+					JAP = {
+							country_event = {
+								id = generic.2
+							}
+						}
+				}
+
+	}
+	focus = {
+		id = kor_south_manju
+		icon = GFX_focus_대한국만세
+		cost = 5.00
+		prerequisite = {
+			focus = kor_join_japan
+		}
+		prerequisite = {
+			focus = kor_yeonhaeju
+		}
+		x = 59
+		y = 9
+			available = {
+					has_completed_focus = kor_strengthening_cooperation_japan
+				}
+			completion_reward = {
+					country_event = {
+							id = korea.10
+						}
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = kor_tsushima
+		icon = GFX_goal_demand_sudetenland
+		cost = 5.00
+		prerequisite = {
+			focus = kor_south_manju
+			focus = KOR_attack_japan
+			focus = kor_control_asia
+		}
+		x = 58
+		y = 10
+			available = {	
+					
+					CHI = {
+						controls_state = 608
+						controls_state = 614
+						controls_state = 597
+						controls_state = 743
+					}
+				}
+			bypass = {
+					OR = {
+							has_war_with = SHX
+							has_war_with = CHI
+							has_wargoal_against = CHI
+							has_wargoal_against = SHX
+						}
+				}
+			completion_reward = {
+					custom_effect_tooltip = KOR_tooltip_attack_china
+					CHI = {
+							country_event = {
+									id = korea.14
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_power_up_to_imperial
+		icon = GFX_goal_KOR_uprising
+		cost = 10.00
+		prerequisite = {
+			focus = kor_monarchy
+		}
+		mutually_exclusive = {
+			focus = kor_korean_lebensraum
+		}
+		available = {
+			has_country_flag = FLAG_the_monarchist_is_won_in_pact
+		}
+		x = 65
+		y = 2
+		completion_reward = {
+					add_stability = 0.05 
+					add_popularity = {
+							ideology = neutrality
+							popularity = 0.05
+						}
+		}
+
+	}
+	focus = {
+		id = KOR_up-coupdetat
+		icon = GFX_goal_KOR_strong_hand
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_power_up_to_imperial
+		}
+		available = {
+			neutrality > 0.4
+		}
+		x = 65
+		y = 3
+		completion_reward = {
+			
+					add_stability = 0.05
+					set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+			remove_ideas = KOR_Weakening_the_kingship
+		}
+
+	}
+	focus = {
+		id = kor_national_development
+		icon = GFX_goal_generic_production
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_up-coupdetat
+		}
+		x = 63
+		y = 4
+			available = {
+					has_idea = KOR_yi_un
+					is_puppet = no
+					has_war = no
+				}
+			completion_reward = {
+					add_ideas = KOR_national_development
+				}
+
+	}
+	focus = {
+		id = kor_neutrality
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_up-coupdetat
+		}
+		mutually_exclusive = {
+			focus = kor_a_stronger_country
+		}
+		x = 65
+		y = 4
+			completion_reward = {
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = kor_best_gangju
+		icon = GFX_focus_goal_kor_empire_gangyu
+		cost = 5.00
+		prerequisite = {
+			focus = kor_neutrality
+		}
+		x = 65
+		y = 5
+			completion_reward = {
+					add_popularity = {
+							ideology = neutrality
+							popularity = 0.10
+						}
+					add_ideas = KOR_great_Yi_kang
+				}
+
+	}
+	focus = {
+		id = kor_a_stronger_country
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_up-coupdetat
+		}
+		mutually_exclusive = {
+			focus = kor_neutrality
+		}
+		x = 67
+		y = 4
+			completion_reward = {
+					add_ideas = KOR_great_korea
+				}
+
+	}
+	focus = {
+		id = kor_lifeguard_extension
+		icon = GFX_focus_kor_loyal
+		cost = 5.00
+		prerequisite = {
+			focus = kor_a_stronger_country
+		}
+		x = 67
+		y = 5
+			completion_reward = {
+					add_manpower = 56172
+				}
+
+	}
+	focus = {
+		id = kor_public_welfare_reform
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 5.00
+		prerequisite = {
+			focus = kor_best_gangju
+			focus = kor_lifeguard_extension
+		}
+		x = 66
+		y = 6
+			completion_reward = {
+					add_ideas = KOR_welfare
+				}
+
+	}
+	focus = {
+		id = kor_emperor_empowerment
+		icon = GFX_focus_kor_ihwa
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_up-coupdetat
+		}
+		x = 70
+		y = 4
+			completion_reward = {
+					swap_ideas = {
+							add_idea = KOR_strong_the_kingship
+							remove_idea = KOR_Weakening_the_kingship
+						}
+				}
+
+	}
+	focus = {
+		id = kor_fuck_corruption
+		icon = GFX_focus_generic_self_management
+		cost = 5.00
+		prerequisite = {
+			focus = kor_emperor_empowerment
+		}
+		x = 69
+		y = 5
+			available = {
+					has_political_power > 80
+				}
+			completion_reward = {
+					add_political_power = -80
+					add_stability = 0.1
+					add_ideas = KOR_national_development_5years
+				}
+
+	}
+	focus = {
+		id = kor_what_fighting
+		icon = GFX_focus_generic_manpower
+		cost = 5.00
+		prerequisite = {
+			focus = kor_emperor_empowerment
+		}
+		x = 71
+		y = 5
+			completion_reward = {
+					add_ideas = why_we_fight_focus
+					add_war_support = 0.10
+				}
+
+	}
+	focus = {
+		id = kor_encouraging_patriotism
+		icon = GFX_goal_kor_empire_gukjang
+		cost = 5.00
+		prerequisite = {
+			focus = kor_fuck_corruption
+		}
+		prerequisite = {
+			focus = kor_what_fighting
+		}
+		x = 70
+		y = 6
+			completion_reward = {
+					add_war_support = 0.10
+				}
+
+	}
+	focus = {
+		id = kor_god_save_the_king
+		icon = GFX_focus_kor_flag_korea
+		cost = 5.00
+		prerequisite = {
+			focus = kor_public_welfare_reform
+		}
+		prerequisite = {
+			focus = kor_encouraging_patriotism
+		}
+		x = 68
+		y = 7
+			completion_reward = {
+					add_ideas = KOR_god_save_the_king
+				}
+
+	}
+	focus = {
+		id = kor_anti-Japanese_policy
+		icon = GFX_focus_AST_war_japan
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_power_up_to_imperial
+		}
+		x = 73
+		y = 3
+			available = {
+					has_war = no
+					NOT = {
+							has_war_with = JAP
+						}
+				}
+			bypass = {
+					has_war_with = JAP
+				}
+			completion_reward = {
+					add_state_core = 822
+					add_state_claim = 528
+					add_state_claim = 530
+					add_state_claim = 529
+					add_state_claim = 531
+					add_state_claim = 526
+				}
+			completion_reward = {
+					set_rule = {
+							can_create_factions = yes
+						}
+				}
+
+	}
+	focus = {
+		id = kor_anti_japanese_frontline_construction
+		icon = GFX_focus_generic_coastal_fort
+		cost = 5.00
+		prerequisite = {
+			focus = kor_what_fighting
+		}
+		prerequisite = {
+			focus = kor_anti-Japanese_policy
+		}
+		x = 72
+		y = 6
+			completion_reward = {
+					create_faction = "낙일 동맹"
+					add_to_faction = CHI
+					add_to_faction = FNG
+					add_to_faction = SHX
+					add_to_faction = MON
+					add_to_faction = XSM
+					add_to_faction = YUN
+					add_to_faction = GXC
+					add_to_faction = SIK
+					add_to_faction = SIA
+				}
+
+	}
+	focus = {
+		id = kor_war_japan
+		icon = GFX_focus_attack_japan
+		cost = 5.00
+		prerequisite = {
+			focus = kor_anti_japanese_frontline_construction
+		}
+		mutually_exclusive = {
+			focus = KOR_kwantungjun_attack_china
+		}
+		x = 71
+		y = 7
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = JAP
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_kwantungjun_attack_china
+		icon = GFX_focus_attack_japan
+		cost = 10.00
+		prerequisite = {
+			focus = kor_anti_japanese_frontline_construction
+		}
+		mutually_exclusive = {
+			focus = kor_war_japan
+		}
+		x = 73
+		y = 7
+		completion_reward = {
+			declare_war_on = {
+				target = MAN
+				type = annex_everything
+			}
+			white_peace = JAP
+		}
+
+	}
+	focus = {
+		id = kor_china_threat
+		icon = GFX_focus_attack_china
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_kwantungjun_attack_china
+			focus = kor_war_japan
+		}
+		x = 73
+		y = 8
+			available = {
+					NOT = {
+							has_war_with = CHI
+							has_war_with = JAP
+						}
+					OR = {
+						KOR = {
+							controls_state = 282
+							controls_state = 533
+							controls_state = 534
+							controls_state = 532
+							controls_state = 531
+							controls_state = 529
+							controls_state = 530
+							controls_state = 528
+						}
+							JAP = {
+								is_puppet_of = KOR
+							}
+						}
+				}
+			bypass = {
+					has_war_with = CHI
+					has_war_with = JAP
+				}
+			completion_reward = {
+					create_wargoal = {
+							type = puppet_wargoal_focus
+							target = CHI
+						}
+				}
+
+	}
+	focus = {
+		id = kor_fuck_soviet
+		icon = GFX_focus_attack_soviet
+		cost = 5.00
+		prerequisite = {
+			focus = kor_china_threat
+		}
+		mutually_exclusive = {
+			focus = kor_war_germany
+		}
+		x = 72
+		y = 9
+			available = {
+					NOT = {
+							has_war_with = SOV
+						}
+				}
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = SOV
+						}
+				}
+
+	}
+	focus = {
+		id = kor_contact_with_the_allies
+		icon = GFX_focus_chi_british_cooperation
+		cost = 5.00
+		prerequisite = {
+			focus = kor_anti-Japanese_policy
+		}
+		x = 74
+		y = 4
+			available = {
+					has_war = no
+					NOT = {
+							has_war_with = ENG
+						}
+				}
+			bypass = {
+					has_war_with = ENG
+				}
+			completion_reward = {
+					KOR = {
+							give_military_access = ENG
+						}
+					ENG = {
+							give_military_access = KOR
+						}
+				}
+
+	}
+	focus = {
+		id = kor_approach_united_states
+		icon = GFX_focus_chi_mission_to_the_us
+		cost = 5.00
+		prerequisite = {
+			focus = kor_contact_with_the_allies
+		}
+		x = 74
+		y = 5
+			available = {
+					has_war = no
+					NOT = {
+							has_war_with = USA
+						}
+				}
+			bypass = {
+					has_war_with = USA
+				}
+			completion_reward = {
+					KOR = {
+							give_military_access = USA
+						}
+					USA = {
+							give_military_access = KOR
+						}
+				}
+
+	}
+	focus = {
+		id = kor_war_germany
+		icon = GFX_focus_attack_germany
+		cost = 5.00
+		prerequisite = {
+			focus = kor_china_threat
+		}
+		mutually_exclusive = {
+			focus = kor_fuck_soviet
+		}
+		x = 74
+		y = 9
+			available = {
+					NOT = {
+							has_war_with = GER
+						}
+				}
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = GER
+						}
+				}
+
+	}
+	focus = {
+		id = kor_approach_france
+		icon = GFX_focus_chi_reach_out_to_france
+		cost = 5.00
+		prerequisite = {
+			focus = kor_anti-Japanese_policy
+		}
+		x = 76
+		y = 4
+			available = {
+					has_war = no
+					NOT = {
+							has_war_with = FRA
+						}
+				}
+			bypass = {
+					has_war_with = FRA
+				}
+			completion_reward = {
+					KOR = {
+							give_military_access = FRA
+						}
+					FRA = {
+							give_military_access = KOR
+						}
+				}
+
+	}
+	focus = {
+		id = kor_promotion_gukbang
+		icon = GFX_focus_usa_build_the_pentagon
+		cost = 5.00
+		prerequisite = {
+			focus = kor_military
+		}
+		x = 88
+		y = 1
+			completion_reward = {
+					#swap_ideas = {
+					#		add_idea = KOR_weak_army_2
+					#		remove_idea = KOR_weak_army
+					#	}
+				}
+
+	}
+	focus = {
+		id = kor_army_reform
+		icon = GFX_focus_eok_army
+		cost = 5.00
+		prerequisite = {
+			focus = kor_promotion_gukbang
+		}
+		x = 81
+		y = 2
+			completion_reward = {
+					army_experience = 15
+					KOR = {
+							add_timed_idea = {
+									idea = KOR_weak_army_3
+									days = 365
+								}
+						}
+					#remove_ideas = KOR_weak_army_2
+				}
+
+	}
+	focus = {
+		id = kor_new_gospel
+		icon = GFX_goal_generic_cavalry
+		cost = 5.00
+		prerequisite = {
+			focus = kor_army_reform
+		}
+		x = 81
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = kor_new_gospel
+							bonus = 0.33
+							uses = 3
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = kor_guksan_truck
+		icon = GFX_goal_generic_army_motorized
+		cost = 5.00
+		prerequisite = {
+			focus = kor_new_gospel
+		}
+		x = 79
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = motorized_bonus
+							bonus = 0.35
+							ahead_reduction = 1
+							category = motorized_equipment
+						}
+				}
+
+	}
+	focus = {
+		id = kor_guksan_gun
+		icon = GFX_goal_generic_small_arms
+		cost = 5.00
+		prerequisite = {
+			focus = kor_new_gospel
+		}
+		x = 81
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = kor_guksan_gun
+							bonus = 0.35
+							ahead_reduction = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = kor_guksan_po
+		icon = GFX_goal_generic_army_artillery2
+		cost = 5.00
+		prerequisite = {
+			focus = kor_guksan_gun
+		}
+		x = 81
+		y = 5
+			completion_reward = {
+					add_tech_bonus = {
+							name = kor_guksan_po
+							bonus = 0.35
+							ahead_reduction = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = kor_mechanization
+		icon = GFX_goal_generic_build_tank
+		cost = 5.00
+		prerequisite = {
+			focus = kor_guksan_truck
+		}
+		x = 79
+		y = 5
+			completion_reward = {
+					add_tech_bonus = {
+							name = mechanized_bonus
+							bonus = 0.35
+							ahead_reduction = 1
+							category = cat_mechanized_equipment
+						}
+				}
+
+	}
+	focus = {
+		id = kor_mountain_infantry
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		cost = 5.00
+		prerequisite = {
+			focus = kor_army_reform
+		}
+		x = 83
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = special_forces_bonus
+							bonus = 0.75
+							uses = 1
+							technology = tech_mountaineers
+						}
+				}
+
+	}
+	focus = {
+		id = kor_guksan_tank
+		icon = GFX_goal_generic_army_tanks
+		cost = 5.00
+		prerequisite = {
+			focus = kor_new_gospel
+		}
+		x = 83
+		y = 4
+			completion_reward = {
+					army_experience = 15
+					add_tech_bonus = {
+							name = kor_guksan_tank
+							bonus = 0.40
+							ahead_reduction = 1
+							category = cat_light_armor
+						}
+				}
+
+	}
+	focus = {
+		id = kor_guksan_tank_2
+		icon = GFX_goal_continuous_armor_production
+		cost = 5.00
+		prerequisite = {
+			focus = kor_guksan_tank
+		}
+		x = 83
+		y = 5
+			completion_reward = {
+					army_experience = 15
+					add_tech_bonus = {
+							name = kor_guksan_tank_2
+							bonus = 0.35
+							ahead_reduction = 1
+							uses = 2
+							category = cat_medium_armor
+							category = cat_heavy_armor
+						}
+				}
+
+	}
+	focus = {
+		id = kor_special_forces
+		icon = GFX_goal_generic_special_forces
+		cost = 5.00
+		prerequisite = {
+			focus = kor_mechanization
+		}
+		prerequisite = {
+			focus = kor_guksan_po
+		}
+		prerequisite = {
+			focus = kor_guksan_tank_2
+		}
+		x = 81
+		y = 6
+			completion_reward = {
+					add_ideas = special_forces
+					add_tech_bonus = {
+							name = special_forces_bonus
+							bonus = 0.5
+							uses = 1
+							technology = paratroopers
+							technology = paratroopers2
+							technology = marines2
+							technology = tech_mountaineers2
+						}
+				}
+
+	}
+	focus = {
+		id = kor_add
+		icon = GFX_focus_research
+		cost = 3.00
+		prerequisite = {
+			focus = kor_military
+		}
+		x = 86
+		y = 1
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = kor_naval_reform
+		icon = GFX_focus_eok_navy
+		cost = 5.00
+		prerequisite = {
+			focus = kor_promotion_gukbang
+		}
+		x = 88
+		y = 2
+			completion_reward = {
+					navy_experience = 15
+				}
+
+	}
+	focus = {
+		id = kor_new_navy_gospel
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 5.00
+		prerequisite = {
+			focus = kor_naval_reform
+		}
+		x = 88
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.25
+							uses = 3
+							category = base_strike_main
+						}
+				}
+
+	}
+	focus = {
+		id = kor_coastal_navy
+		icon = GFX_goal_generic_build_navy
+		cost = 5.00
+		prerequisite = {
+			focus = kor_new_navy_gospel
+		}
+		mutually_exclusive = {
+			focus = kor_great_navy
+		}
+		x = 86
+		y = 4
+			completion_reward = {
+					if = {
+							limit = {
+									NOT = {
+											has_idea = KOR_samsung_pacific
+										}
+								}
+							add_ideas = KOR_samsung_pacific
+						}
+					if = {
+							limit = {
+									has_idea = KOR_samsung_pacific
+								}
+							add_political_power = 150
+						}
+				}
+
+	}
+	focus = {
+		id = kor_great_navy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 5.00
+		prerequisite = {
+			focus = kor_new_navy_gospel
+		}
+		mutually_exclusive = {
+			focus = kor_coastal_navy
+		}
+		x = 90
+		y = 4
+			completion_reward = {
+					if = {
+							limit = {
+									NOT = {
+											has_idea = KOR_daewoo_josun
+										}
+								}
+							add_ideas = KOR_daewoo_josun
+						}
+					if = {
+							limit = {
+									has_idea = KOR_daewoo_josun
+								}
+							add_political_power = 150
+						}
+				}
+
+	}
+	focus = {
+		id = kor_Destroyer
+		icon = GFX_goal_generic_wolf_pack
+		cost = 5.00
+		prerequisite = {
+			focus = kor_great_navy
+			focus = kor_coastal_navy
+		}
+		x = 88
+		y = 5
+			completion_reward = {
+					add_tech_bonus = {
+							name = kor_Destroyer
+							bonus = 0.5
+							uses = 2
+							category = dd_tech
+						}
+				}
+
+	}
+	focus = {
+		id = kor_cruiser
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 5.00
+		prerequisite = {
+			focus = kor_coastal_navy
+			focus = kor_great_navy
+		}
+		x = 90
+		y = 5
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.35
+							ahead_reduction = 1
+							uses = 2
+							category = cl_tech
+							category = ca_tech
+						}
+				}
+
+	}
+	focus = {
+		id = kor_submarine
+		icon = GFX_goal_generic_navy_submarine
+		cost = 5.00
+		prerequisite = {
+			focus = kor_great_navy
+			focus = kor_coastal_navy
+		}
+		x = 86
+		y = 5
+			completion_reward = {
+					add_tech_bonus = {
+							name = ss_bonus
+							bonus = 0.35
+							ahead_reduction = 1
+							uses = 2
+							category = ss_tech
+						}
+				}
+
+	}
+	focus = {
+		id = kor_battleship
+		icon = GFX_goal_generic_navy_battleship
+		cost = 5.00
+		prerequisite = {
+			focus = kor_cruiser
+			focus = kor_submarine
+		}
+		mutually_exclusive = {
+			focus = kor_aircraft_carrier
+		}
+		x = 89
+		y = 6
+			completion_reward = {
+					navy_experience = 5
+					809 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = dockyard
+									level = 1
+									instant_build = yes
+								}
+						}
+					add_tech_bonus = {
+							bonus = 0.35
+							ahead_reduction = 1
+							uses = 2
+							category = bb_tech
+							category = shbb_tech
+						}
+				}
+
+	}
+	focus = {
+		id = kor_aircraft_carrier
+		icon = GFX_goal_generic_navy_carrier
+		cost = 5.00
+		prerequisite = {
+			focus = kor_submarine
+			focus = kor_cruiser
+		}
+		mutually_exclusive = {
+			focus = kor_battleship
+		}
+		x = 87
+		y = 6
+			completion_reward = {
+					navy_experience = 5
+					809 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = dockyard
+									level = 1
+									instant_build = yes
+								}
+						}
+					add_tech_bonus = {
+							bonus = 0.35
+							ahead_reduction = 1
+							uses = 2
+							category = cv_tech
+						}
+				}
+
+	}
+	focus = {
+		id = kor_marin
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 5.00
+		prerequisite = {
+			focus = kor_naval_reform
+		}
+		x = 90
+		y = 3
+			add_tech_bonus = {
+					name = special_forces_bonus
+					bonus = 0.75
+					uses = 1
+					technology = marines
+				}
+
+	}
+	focus = {
+		id = kor_air_reform
+		icon = GFX_focus_eok_air
+		cost = 5.00
+		prerequisite = {
+			focus = kor_promotion_gukbang
+		}
+		x = 95
+		y = 2
+			completion_reward = {
+					air_experience = 15
+				}
+
+	}
+	focus = {
+		id = kor_new_air_gospel
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5.00
+		prerequisite = {
+			focus = kor_air_reform
+		}
+		x = 95
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = air_doc_bonus
+							bonus = 0.25
+							uses = 3
+							category = air_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = kor_CSA
+		icon = GFX_goal_generic_CAS
+		cost = 5.00
+		prerequisite = {
+			focus = kor_new_air_gospel
+		}
+		x = 93
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = CAS_bonus
+							bonus = 0.5
+							ahead_reduction = 1
+							uses = 1
+							category = cas_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = kor_Fighter
+		icon = GFX_goal_generic_air_fighter
+		cost = 5.00
+		prerequisite = {
+			focus = kor_new_air_gospel
+		}
+		x = 95
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = fighter_bonus
+							bonus = 0.35
+							ahead_reduction = 1
+							uses = 2
+							category = light_fighter
+							category = cat_heavy_fighter
+						}
+				}
+
+	}
+	focus = {
+		id = kor_bomber
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 5.00
+		prerequisite = {
+			focus = kor_CSA
+		}
+		prerequisite = {
+			focus = kor_Fighter
+		}
+		mutually_exclusive = {
+			focus = kor_bomber_2
+		}
+		x = 94
+		y = 5
+			completion_reward = {
+					add_tech_bonus = {
+							name = bomber_bonus
+							bonus = 0.35
+							ahead_reduction = 1
+							category = tactical_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = kor_torpedo_bomber
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 5.00
+		prerequisite = {
+			focus = kor_new_air_gospel
+		}
+		x = 97
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = nav_bomber_bonus
+							bonus = 0.35
+							ahead_reduction = 1
+							uses = 2
+							category = naval_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = kor_bomber_2
+		icon = GFX_goal_generic_air_bomber
+		cost = 5.00
+		prerequisite = {
+			focus = kor_Fighter
+		}
+		prerequisite = {
+			focus = kor_torpedo_bomber
+		}
+		mutually_exclusive = {
+			focus = kor_bomber
+		}
+		x = 96
+		y = 5
+			completion_reward = {
+					add_tech_bonus = {
+							name = bomber_bonus
+							bonus = 0.35
+							ahead_reduction = 1
+							category = cat_strategic_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = kor_east_sea_railway
+		icon = GFX_goal_continuous_repairments
+		cost = 5.00
+		prerequisite = {
+			focus = kor_uiju-busan_railway
+		}
+		x = 3
+		y = 5
+			completion_reward = {
+					525 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+					810 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = kor_better_mining_technology
+		icon = GFX_goal_generic_oil_refinery
+		cost = 5.00
+		prerequisite = {
+			focus = kor_east_sea_railway
+		}
+		x = 3
+		y = 6
+			completion_reward = {
+					add_resource = {
+							type = oil
+							amount = 3
+							state = 813
+						}
+				}
+
+	}
+	focus = {
+		id = kor_seoul_uiju_highway
+		icon = GFX_goal_generic_construct_civilian
+		cost = 5.00
+		prerequisite = {
+			focus = kor_hunan_highway
+		}
+		x = 1
+		y = 6
+			completion_reward = {
+					525 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					812 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+					527 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = kor_better_construction_technology
+		icon = GFX_goal_generic_production2
+		cost = 5.00
+		prerequisite = {
+			focus = kor_fortress_city
+		}
+		x = 5
+		y = 6
+			completion_reward = {
+					add_tech_bonus = {
+							name = secret_bonus
+							bonus = 2
+							uses = 2
+							category = electronics
+							category = computing_tech
+						}
+				}
+
+	}
+	focus = {
+		id = kor_expansion_network
+		icon = GFX_goal_generic_radar
+		cost = 5.00
+		prerequisite = {
+			focus = kor_seoul_uiju_highway
+		}
+		prerequisite = {
+			focus = kor_better_construction_technology
+		}
+		prerequisite = {
+			focus = kor_better_mining_technology
+		}
+		x = 3
+		y = 7
+			completion_reward = {
+					808 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = kor_miracle_hangang
+		icon = GFX_focus_generic_industry_3
+		cost = 5.00
+		prerequisite = {
+			focus = kor_expansion_network
+			focus = kor_hansung_university
+			focus = kor_make_roket
+		}
+		x = 8
+		y = 8
+			completion_reward = {
+					add_ideas = kor_han_river
+				}
+
+	}
+	focus = {
+		id = kor_threat_united_states
+		icon = GFX_focus_attack_usa
+		cost = 5.00
+		prerequisite = {
+			focus = kor_tsushima
+		}
+		x = 58
+		y = 11
+			completion_reward = {
+					create_wargoal = {
+							type = puppet_wargoal_focus
+							target = USA
+						}
+				}
+
+	}
+	focus = {
+		id = kor_military_organization_youth
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		cost = 5.00
+		prerequisite = {
+			focus = kor_new_lifeguard_extension
+		}
+		mutually_exclusive = {
+			focus = kor_ethnicity
+		}
+		x = 40
+		y = 4
+			completion_reward = {
+					add_war_support = 0.05
+					add_ideas = KOR_military_organization_youth
+				}
+
+	}
+	focus = {
+		id = kor_best_gangju_2
+		icon = GFX_focus_goal_kor_empire_gangyu
+		cost = 5.00
+		prerequisite = {
+			focus = kor_the_new_history
+		}
+		x = 44
+		y = 4
+			completion_reward = {
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.05
+						}
+						add_political_power = 120
+				}
+
+	}
+	focus = {
+		id = kor_puppet_king
+		icon = GFX_goal_generic_attack_allies
+		cost = 5.00
+		prerequisite = {
+			focus = kor_best_gangju_2
+		}
+		x = 44
+		y = 5
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = KOR_Weakening_the_kingship
+							add_idea = KOR_great_Yi_kang
+						}
+				}
+
+	}
+	focus = {
+		id = kor_ethnicity
+		icon = GFX_focus_BUL_destroy_the_zveno
+		cost = 5.00
+		prerequisite = {
+			focus = kor_the_new_history
+		}
+		mutually_exclusive = {
+			focus = kor_military_organization_youth
+		}
+		x = 42
+		y = 4
+			completion_reward = {
+					add_ideas = KOR_we_korean
+					add_manpower = 30000
+				}
+
+	}
+	focus = {
+		id = kor_best_of_korea
+		icon = GFX_goal_KOR_uprising
+		cost = 5.00
+		prerequisite = {
+			focus = kor_ethnicity
+		}
+		x = 42
+		y = 5
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = KOR_we_korean
+							add_idea = KOR_great_korea
+						}
+				}
+
+	}
+	focus = {
+		id = kor_airborne_force
+		icon = GFX_focus_generic_paratrooper
+		cost = 5.00
+		prerequisite = {
+			focus = kor_air_reform
+		}
+		x = 97
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = kor_airborne_force
+							bonus = 1.0
+							uses = 2
+							category = para_tech
+						}
+				}
+
+	}
+	focus = {
+		id = kor_communist_union
+		icon = GFX_focus_generic_join_comintern
+		cost = 12.9
+		prerequisite = {
+			focus = kor_for_worker
+			focus = kor_dictatorship
+		}
+		x = 20
+		y = 9
+			completion_reward = {
+					set_rule = {
+							can_create_factions = yes
+						}
+						transfer_state = 813
+						remove_ideas = KOR_bersaju_pact_of_korea
+				}
+
+	}
+	focus = {
+		id = kor_asian_communist_union
+		icon = GFX_focus_chi_cooperation_with_the_communists
+		cost = 5.00
+		prerequisite = {
+			focus = kor_communist_union
+		}
+		x = 20
+		y = 10
+			available = {
+					has_completed_focus = kor_election_maintenance
+				}
+			completion_reward = {
+					create_faction = "동아시아 사회주의 연합"
+				}
+
+	}
+	focus = {
+		id = kor_traditional_socialism
+		icon = GFX_goal_support_fourth_int
+		cost = 5.00
+		prerequisite = {
+			focus = kor_communist_army
+		}
+		x = 22
+		y = 10
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = kor_key_point_asian_revolution
+		icon = GFX_focus_usa_focus_on_europe
+		cost = 5.00
+		prerequisite = {
+			focus = kor_traditional_socialism
+		}
+		x = 22
+		y = 11
+			completion_reward = {
+					KOR = {
+							give_guarantee = FNG
+							give_guarantee = SIA
+							give_guarantee = CHI
+							give_guarantee = PRC
+							give_guarantee = MON
+							give_guarantee = RAJ
+							give_guarantee = TIB
+							give_guarantee = MAL
+							give_guarantee = PHI
+						}
+				}
+
+	}
+	focus = {
+		id = kor_communism_dictatorship
+		icon = GFX_focus_generic_soviet_politics
+		cost = 5.00
+		prerequisite = {
+			focus = kor_kill_fascism_2
+		}
+		mutually_exclusive = {
+			focus = kor_election_maintenance
+		}
+		x = 23
+		y = 7
+			available = {
+					communism > 0.6
+				}
+			completion_reward = {
+					add_stability = -0.5
+					add_war_support = -0.5
+					set_politics = {
+							ruling_party = communism
+							elections_allowed = no
+						}
+					set_cosmetic_tag = KOR_revolutionary
+				}
+
+	}
+	focus = {
+		id = kor_dictatorship
+		icon = GFX_goal_support_communism
+		cost = 5.00
+		prerequisite = {
+			focus = kor_communism_dictatorship
+		}
+		x = 23
+		y = 8
+			completion_reward = {
+					add_stability = -0.1
+					set_popularities = {
+							democratic = 5
+							communism = 85
+							fascism = 0
+							neutrality = 10
+						}
+				}
+
+	}
+	focus = {
+		id = kor_communist_army
+		icon = GFX_focus_yug_pan_slavic_congress
+		cost = 5.00
+		prerequisite = {
+			focus = kor_dictatorship
+		}
+		x = 22
+		y = 9
+			completion_reward = {
+					add_ideas = KOR_communist_army
+				}
+
+	}
+	focus = {
+		id = kor_positive_heroism
+		icon = GFX_goal_generic_cavalry
+		cost = 5.00
+		prerequisite = {
+			focus = kor_communist_propaganda
+		}
+		mutually_exclusive = {
+			focus = kor_leader_idolization
+		}
+		x = 24
+		y = 10
+			completion_reward = {
+					add_war_support = 0.1
+				}
+
+	}
+	focus = {
+		id = kor_communist_propaganda
+		icon = GFX_focus_prc_maoism
+		cost = 5.00
+		prerequisite = {
+			focus = kor_dictatorship
+		}
+		x = 25
+		y = 9
+			completion_reward = {
+					add_ideas = KOR_communist_propaganda
+				}
+
+	}
+	focus = {
+		id = kor_leader_idolization
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 5.00
+		prerequisite = {
+			focus = kor_communist_propaganda
+		}
+		mutually_exclusive = {
+			focus = kor_positive_heroism
+		}
+		x = 26
+		y = 10
+			completion_reward = {
+					swap_ideas = {
+							add_idea = KOR_leader_idolization
+							remove_idea = KOR_communist_propaganda
+						}
+				}
+
+	}
+	focus = {
+		id = kor_collectivist_propaganda
+		icon = GFX_goal_generic_propaganda
+		cost = 5.00
+		prerequisite = {
+			focus = kor_positive_heroism
+		}
+		x = 24
+		y = 11
+			completion_reward = {
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = kor_dissolution_non-Communist
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 5.00
+		prerequisite = {
+			focus = kor_collectivist_propaganda
+			focus = kor_leader_idolization
+		}
+		x = 25
+		y = 12
+			completion_reward = {
+					add_ideas = KOR_dissolution_non-Communist
+				}
+
+	}
+	focus = {
+		id = kor_chinese_communist_party's_contact
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 5.00
+		prerequisite = {
+			focus = kor_asian_communist_union
+		}
+		prerequisite = {
+			focus = kor_people_worker_country
+		}
+		mutually_exclusive = {
+			focus = kor_korean_socialism
+		}
+		x = 18
+		y = 11
+			completion_reward = {
+					KOR = {
+							add_to_faction = PRC
+						}
+				}
+
+	}
+	focus = {
+		id = kor_korean_socialism
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = kor_asian_communist_union
+		}
+		mutually_exclusive = {
+			focus = kor_chinese_communist_party's_contact
+		}
+		x = 20
+		y = 11
+			completion_reward = {
+					add_popularity = {
+							ideology = communism
+							popularity = 0.235
+						}
+				}
+
+	}
+	focus = {
+		id = kor_world_revolution
+		icon = GFX_focus_ger_great_red_menace
+		cost = 5.00
+		prerequisite = {
+			focus = kor_chinese_communist_party's_contact
+			focus = kor_korean_socialism
+		}
+		x = 19
+		y = 12
+			completion_reward = {
+					CHI = {
+							add_popularity = {
+									ideology = communism
+									popularity = 0.33
+								}
+							start_civil_war = {
+									ideology = communism
+									size = 0.31
+									only_own_territory = no
+									capital = 608
+								}
+						}
+					JAP = {
+							add_popularity = {
+									ideology = communism
+									popularity = 0.33
+								}
+							start_civil_war = {
+									ideology = communism
+									size = 0.31
+									only_own_territory = no
+									capital = 282
+								}
+						}
+					RUS = {
+							add_popularity = {
+									ideology = communism
+									popularity = 0.33
+								}
+						}
+					SIA = {
+							add_popularity = {
+									ideology = communism
+									popularity = 0.33
+								}
+							start_civil_war = {
+									ideology = communism
+									size = 0.31
+									only_own_territory = no
+									capital = 289
+								}
+						}
+					MON = {
+							add_popularity = {
+									ideology = communism
+									popularity = 0.33
+								}
+						}
+					SOV = {
+							annex_country = {
+									target = RUS
+									transfer_troops = yes
+								}
+						}
+					SOV = {
+							change_tag_from = RUS
+						}
+					KOR = {
+							transfer_state = 820
+							transfer_state = 409
+							transfer_state = 408	
+						}
+				}
+
+	}
+	focus = {
+		id = kor_revolution_jap
+		icon = GFX_focus_attack_japan
+		cost = 5.00
+		prerequisite = {
+			focus = kor_world_revolution
+		}
+		x = 17
+		y = 13
+			completion_reward = {
+					create_wargoal = {
+							type = puppet_wargoal_focus
+							target = JAP
+						}
+				}
+
+	}
+	focus = {
+		id = kor_national_vitality
+		icon = GFX_goal_generic_construction2
+		cost = 5.00
+		prerequisite = {
+			focus = kor_national_development
+		}
+		x = 63
+		y = 5
+			completion_reward = {
+					add_ideas = KOR_national_revitalization
+				}
+
+	}
+	focus = {
+		id = kor_socialist_paradise
+		icon = GFX_goal_generic_soviet_construction
+		cost = 5.00
+		prerequisite = {
+			focus = kor_revolution_usa
+		}
+		prerequisite = {
+			focus = kor_revolution_mex
+		}
+		prerequisite = {
+			focus = kor_revolution_jap
+		}
+		x = 19
+		y = 14
+			completion_reward = {
+					add_ideas = KOR_socialist_paradise
+				}
+
+	}
+	focus = {
+		id = kor_workers_union
+		icon = GFX_focus_generic_industry_3
+		cost = 5.00
+		prerequisite = {
+			focus = kor_for_worker
+		}
+		x = 18
+		y = 9
+			completion_reward = {
+					swap_ideas = {
+							add_idea = KOR_kor_workers_union
+							remove_idea = KOR_for_worker
+						}
+				}
+
+	}
+	focus = {
+		id = kor_people_worker_country
+		icon = GFX_goal_support_fourth_int
+		cost = 5.00
+		prerequisite = {
+			focus = kor_people_the_best
+		}
+		x = 16
+		y = 9
+			completion_reward = {
+					add_ideas = KOR_people_worker_country
+				}
+
+	}
+	focus = {
+		id = kor_revolution_usa
+		icon = GFX_focus_attack_usa
+		cost = 5.00
+		prerequisite = {
+			focus = kor_world_revolution
+		}
+		x = 19
+		y = 13
+			completion_reward = {
+					create_wargoal = {
+							type = puppet_wargoal_focus
+							target = USA
+						}
+				}
+
+	}
+	focus = {
+		id = kor_revolution_mex
+		icon = GFX_focus_attack_mexico
+		cost = 5.00
+		prerequisite = {
+			focus = kor_world_revolution
+		}
+		x = 21
+		y = 13
+			completion_reward = {
+					create_wargoal = {
+							type = puppet_wargoal_focus
+							target = MEX
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_allied_politics
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_Prohibition_propaganda
+		}
+		prerequisite = {
+			focus = KOR_new_laodonglaw
+		}
+		x = 29
+		y = 6
+		completion_reward = {
+			swap_ideas = {
+				add_idea = KOR_tongil_politics
+				remove_idea = KOR_divided_politics
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_japans_defence
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_with_east
+		}
+		x = 32
+		y = 6
+		completion_reward = {
+			add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = KOR_first_attack_jap
+		icon = GFX_focus_attack_japan
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_japans_defence
+		}
+		x = 32
+		y = 7
+		completion_reward = {
+			create_wargoal = {
+				target = JAP
+				type = puppet_wargoal_focus
+			}
+		}
+
+	}
+}

@@ -1,0 +1,391 @@
+﻿##### Austria NAME LISTS #####
+### SUBMARINES ###
+AUS_SS_REGULAR = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { AUS }
+
+	can_use = { 
+		NOT = {
+			OR = {
+				has_country_leader = { id = 21010 ruling_only = yes name = "Otto von Habsburg" }
+				has_country_leader = { id = 21011 ruling_only = yes name = "Otto von Habsburg" }
+				has_idea = AUS_otto_von_figurehead
+			}
+		}
+	}
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "ÖM "
+	fallback_name = "U-%d"
+	
+	ordered = {
+		1 = {"U-%d"}
+		2 = {"U-%d"} 
+		3 = {"U-%d"} 
+		4 = {"U-%d"} 
+		5 = {"U-%d"} 
+		6 = {"U-%d"} 
+		7 = {"U-%d"} 
+		8 = {"U-%d"} 
+		9 = {"U-%d"} 
+		10 = {"U-%d"}
+		11 = {"U-%d"} 
+		12 = {"U-%d"}
+		13 = {"U-%d"}
+		14 = {"U-%d"}
+		15 = {"U-%d"}
+		16 = {"U-%d"}
+		17 = {"U-%d"}
+		18 = {"U-%d"}
+		19 = {"U-%d"}
+		20 = {"U-%d"}
+		21 = {"U-%d"}
+		22 = {"U-%d"}
+		23 = {"U-%d"}
+		24 = {"U-%d"}
+		25 = {"U-%d"}
+	}
+}
+AUS_REGULAR_SHIPS = {
+	name = NAME_THEME_HISTORICAL_SHIPS
+
+	for_countries = { AUS }
+
+	can_use = { 
+		NOT = {
+			OR = {
+				has_country_leader = { id = 21010 ruling_only = yes name = "Otto von Habsburg" }
+				has_country_leader = { id = 21011 ruling_only = yes name = "Otto von Habsburg" }
+				has_idea = AUS_otto_von_figurehead
+			}
+		}
+	}
+
+	type = ship
+	ship_types = { 
+		ship_hull_carrier ship_hull_cruiser ship_hull_heavy ship_hull_light
+		carrier battleship heavy_cruiser battle_cruiser light_cruiser destroyer
+	}
+	
+	prefix = "ÖM "
+	
+	unique = {											
+		"Novara" "Theresia" "Tátra" "Balaton" "Csepel" "Lika" "Orjen" "Triglav" "Dinara" "Csikós" "Pandur" "Réka" "Warasdiner" "Turul" 
+		"Velebit" "Huszár" "Streiter" "Ulan" "Wildfang" "Uskoke" "Magnet" "Satellit" "Trabant" "Planet" "Blitz" "Komet" "Meteor" "Kaiman" 
+		"Alk" "Alligator" "Anaconda" "Delphin" "Drache" "Salamander" "Echse" "Greif" "Hai" "Hydra" "Kormoran" "Krake" "Krokodil" "Molch" "Möwe" "Narwal" 
+		"Phönix" "Pinguin" "Polyp" "Schwalbe" "Seehund" "Skorpion" "Triton" "Wal"
+		 
+		"Sankt Georg" "Helgoland" "Saida" "Admiral Spaun" "Szigetvár" "Aspern" "Zenta" "Leopard" "Panther" "Königin" "Löwe" 
+		"Tiger"
+		 
+		"Tegetthoff" "Mars" "Viribus Unitis" "Szent István" "Erzherzog" "König" "Wien" "Budapest" "Zrinyi" "Radetzky" 
+		"Árpád" "Babenberg"
+		
+		"Ersatz Triglav" "Ersatz Tátra" "Ulan" "Krokodil" "Csikos" "Huszar"
+		"Ersatz Huszar" "Scharfschütze" "Dukla" "Ersatz Lika" "Uzsok"
+		
+		"Ersatz Zenta" "Von Sterneck" "Salzburg" "Von Pöck" "Zara" "Spalato" "Lussin" "Pola" "Schwarzenberg"
+		
+		"Karl Weyprecht" "Tyrol" "Temes" "Enns" "Sava" "Sebenico" "Maros" "Leitha" "Körös"
+		
+		"San Carlos" "Emo" "Cesare" "Drache" "Salamder" "Budapest"
+		
+		"Österreich" "Seipel" "Erzherzog Karl" "Erzherzog Ferdinand Max" "Zrínyi"
+		
+		"Erzherzog Albrecht" "Ersatz Custoza"
+		
+		"Admiral Pöck" "Kaiman" "Nautilus" "Albatros" "Dalmat" "Kerka"
+	}
+}
+AUS_THEME_RIVERS_HISTORICAL = {
+	name = NAME_THEME_RIVERS
+
+	for_countries = { AUS }
+
+	can_use = {
+		NOT = {
+			OR = {
+				has_country_leader = { id = 21010 ruling_only = yes name = "Otto von Habsburg" }
+				has_country_leader = { id = 21011 ruling_only = yes name = "Otto von Habsburg" }
+				has_idea = AUS_otto_von_figurehead
+			}
+		}
+	}
+
+	type = ship
+	ship_types = { 
+		ship_hull_carrier ship_hull_cruiser ship_hull_heavy ship_hull_light ship_hull_submarine
+		carrier battleship heavy_cruiser battle_cruiser light_cruiser destroyer submarine
+	}
+	
+	prefix = "ÖM "
+	fallback_name = "Schiff %d"
+	
+	unique = {
+		"Donau" "Tisza" "Sajó" "Rába" "Lafnitz" "Körös" "Zagyva" "Drava" "Zala" "Hornád" "Marcal" "Tarna" "Salzach" "Steyr" "Leitha" "Thaya" "Inn" "Isar" "Iller" "Traun" "Mur" "Drau" "Enns"
+	}
+}
+
+#### IMPERIAL ####
+### REGULAR DESTROYER NAMES###
+AUS_DD_IMPERIAL = {
+	name = NAME_THEME_IMPERIAL_DESTROYERS
+
+	for_countries = { AUS }
+
+	can_use = { 
+		OR = {
+			has_country_leader = { id = 21010 ruling_only = yes name = "Otto von Habsburg" }
+			has_country_leader = { id = 21011 ruling_only = yes name = "Otto von Habsburg" }
+			has_idea = AUS_otto_von_figurehead
+		}
+	}
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	prefix = "SMS "
+	fallback_name = "Romboló %d"					
+
+	unique = {											
+		 "Novara" "Theresia" "Tátra" "Balaton" "Csepel" "Lika" "Orjen" "Triglav" "Dinara" "Csikós" "Pandur" "Réka" "Warasdiner" "Turul" 
+		 "Velebit" "Huszár" "Streiter" "Ulan" "Wildfang" "Uskoke" "Magnet" "Satellit" "Trabant" "Planet" "Blitz" "Komet" "Meteor" "Kaiman" 
+		 "Alk" "Alligator" "Anaconda" "Delphin" "Drache" "Salamander" "Echse" "Greif" "Hai" "Hydra" "Kormoran" "Krake" "Krokodil" "Molch" "Möwe" "Narwal" 
+		 "Phönix" "Pinguin" "Polyp" "Schwalbe" "Seehund" "Skorpion" "Triton" "Wal"
+		 
+		 "Ersatz Triglav" "Ersatz Tátra" "Ulan" "Krokodil" "Csikos" "Huszar"
+		 "Ersatz Huszar" "Scharfschütze" "Dukla" "Ersatz Lika" "Uzsok"
+	}
+}
+
+### LIGHT CRUISER NAMES###
+AUS_CL_IMPERIAL = {
+	name = NAME_THEME_IMPERIAL_CL
+
+	for_countries = { AUS }
+
+	can_use = { 
+		OR = {
+			has_country_leader = { id = 21010 ruling_only = yes name = "Otto von Habsburg" }
+			has_country_leader = { id = 21011 ruling_only = yes name = "Otto von Habsburg" }
+			has_idea = AUS_otto_von_figurehead
+		}
+	}
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	prefix = "SMS "
+	fallback_name = "Könnyűcirkáló %d"
+
+	unique = {
+		"Sankt Georg" "Helgoland" "Saida" "Admiral Spaun" "Szigetvár" "Aspern" "Zenta" "Leopard" "Panther" "Kaiserin" "Königin" "Löwe" 
+		"Tiger" "Kronprinz" "Kronprinzessin" "Kaiser Max"
+		
+		"Ersatz Zenta" "Von Sterneck" "Salzburg" "Von Pöck" "Zara" "Spalato" "Lussin" "Pola"
+		"Kaiserin Elisabeth" "Novara" "Schwarzenberg"	
+	}
+}
+
+### HEAVY CRUISER NAMES###
+AUS_CA_IMPERIAL = {
+	name = NAME_THEME_IMPERIAL_CA
+
+	for_countries = { AUS }
+
+	can_use = { 
+		OR = {
+			has_country_leader = { id = 21010 ruling_only = yes name = "Otto von Habsburg" }
+			has_country_leader = { id = 21011 ruling_only = yes name = "Otto von Habsburg" }
+			has_idea = AUS_otto_von_figurehead
+		}
+	}
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	prefix = "SMS "
+	fallback_name = "Nehézcirkálo %d"
+
+	unique = {
+		"Sankt Georg" "Helgoland" "Saida" "Admiral Spaun" "Szigetvár" "Aspern" "Zenta" "Leopard" "Panther" "Kaiserin" "Königin" "Löwe" 
+		"Tiger" "Kronprinz" "Kronprinzessin" "Kaiser Max"
+		
+		"Kaiser Franz Joseph I" "Karl Weyprecht" "Tyrol" "Erzherzogin Sophie" "Kaiser Karl VI" 
+		"Temes" "Enns" "Sava" "Spalato" "Sebenico" "Maros" "Leitha" "Körös"
+	}
+}
+
+
+### BATTLESHIP NAMES ###
+AUS_BB_IMPERIAL = {
+	name = NAME_THEME_IMPERIAL_BB
+
+	for_countries = { AUS }
+
+	can_use = { 
+		OR = {
+			has_country_leader = { id = 21010 ruling_only = yes name = "Otto von Habsburg" }
+			has_country_leader = { id = 21011 ruling_only = yes name = "Otto von Habsburg" }
+			has_idea = AUS_otto_von_figurehead
+		}
+	}
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "SMS "
+	fallback_name = "Csatahajó %d"		
+
+	unique = {
+		"Tegetthoff" "Mars" "Viribus Unitis" "Prinz Eugen" "Szent István" "Erzherzog" "Kaiser" "König" "Monarch" 
+		"Wien" "Budapest" "Zrinyi" "Radetzky" "Habsburg" "Árpád" "Babenberg" "Erzherzog Karl" "Erzherzog Friedrich" 
+		"Erzherzog Franz Ferdinand" 
+		
+		"Ersatz Monarch" "Österreich" "Ersatz Hapsburg" "Seipel" "Erzherzog Karl" "Erzherzog Ferdinand Max" "Zrínyi"
+		
+		"Kaiser Franz Ferdinand" "Kaiser Otto" "Erzherzog Albrecht" "Kronprinz Erzherzog Rudolf"
+		"Kronprinzessin Erzherzogin Stephanie" "Ersatz Custoza" #Formerly SHBB names only
+	}
+}
+
+### BATTLECRUISER NAMES ###
+AUS_BC_IMPERIAL = {
+	name = NAME_THEME_IMPERIAL_BC
+
+	for_countries = { AUS }
+
+	can_use = { 
+		OR = {
+			has_country_leader = { id = 21010 ruling_only = yes name = "Otto von Habsburg" }
+			has_country_leader = { id = 21011 ruling_only = yes name = "Otto von Habsburg" }
+			has_idea = AUS_otto_von_figurehead
+		}
+	}
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "SMS "
+	fallback_name = "Csatacirkáló %d"		
+
+	unique = {
+		"Tegetthoff" "Mars" "Viribus Unitis" "Prinz Eugen" "Szent István" "Erzherzog" "Kaiser" "König" "Monarch" 
+		"Wien" "Budapest" "Zrinyi" "Radetzky" "Habsburg" "Árpád" "Babenberg" "Erzherzog Karl" "Erzherzog Friedrich" 
+		"Erzherzog Franz Ferdinand"
+		
+		"Kaiserin und Königin Maria Theresia" "Kaiser Joseph II" "San Carlos" "Emo" "Cesare" "Drache" "Salamder" 
+		"Don Juan d'Austria" "Budapest"
+	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+AUS_CV_IMPERIAL = {
+	name = NAME_THEME_IMPERIAL_CARRIERS
+
+	for_countries = { AUS }
+
+	can_use = { 
+		OR = {
+			has_country_leader = { id = 21010 ruling_only = yes name = "Otto von Habsburg" }
+			has_country_leader = { id = 21011 ruling_only = yes name = "Otto von Habsburg" }
+			has_idea = AUS_otto_von_figurehead
+		}
+	}
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "SMS "
+	fallback_name = "Repülögép-hordozó %d"	
+
+	unique = {
+		"Tegetthoff" "Mars" "Viribus Unitis" "Prinz Eugen" "Szent István" "Erzherzog" "Kaiser" "König" "Monarch" 
+		"Wien" "Budapest" "Zrinyi" "Radetzky" "Habsburg" "Árpád" "Babenberg" "Erzherzog Karl" "Erzherzog Friedrich" 
+		"Erzherzog Franz Ferdinand"
+		
+		"Prinz Ferdinand" "Von Daun" "Erzherzog Charles" "Von Otto" "Admiral Pöck" "Kaiman"
+		"Nautilus" "Albatros" "Dalmat" "Kerka"
+	}
+}
+
+### SUBMARINES ###
+AUS_SS_IMPERIAL = {
+	name = NAME_THEME_IMPERIAL_SUBMARINES
+
+	for_countries = { AUS }
+
+	can_use = { 
+		OR = {
+			has_country_leader = { id = 21010 ruling_only = yes name = "Otto von Habsburg" }
+			has_country_leader = { id = 21011 ruling_only = yes name = "Otto von Habsburg" }
+			has_idea = AUS_otto_von_figurehead
+		}
+	}
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "SM "
+	fallback_name = "U-%d"
+	
+	ordered = {
+		1 = {"U-%d"}
+		2 = {"U-%d"} 
+		3 = {"U-%d"} 
+		4 = {"U-%d"} 
+		5 = {"U-%d"} 
+		6 = {"U-%d"} 
+		7 = {"U-%d"} 
+		8 = {"U-%d"} 
+		9 = {"U-%d"} 
+		10 = {"U-%d"}
+		11 = {"U-%d"} 
+		12 = {"U-%d"}
+		13 = {"U-%d"}
+		14 = {"U-%d"}
+		15 = {"U-%d"}
+		16 = {"U-%d"}
+		17 = {"U-%d"}
+		18 = {"U-%d"}
+		19 = {"U-%d"}
+		20 = {"U-%d"}
+		21 = {"U-%d"}
+		22 = {"U-%d"}
+		23 = {"U-%d"}
+		24 = {"U-%d"}
+		25 = {"U-%d"}
+	}
+}
+
+### OTHER ###
+AUS_THEME_RIVERS_IMPERIAL = {
+	name = NAME_THEME_RIVERS
+
+	for_countries = { AUS }
+
+	can_use = {
+		OR = {
+			has_country_leader = { id = 21010 ruling_only = yes name = "Otto von Habsburg" }
+			has_country_leader = { id = 21011 ruling_only = yes name = "Otto von Habsburg" }
+			has_idea = AUS_otto_von_figurehead
+		}
+	}
+
+	type = ship
+	ship_types = { 
+		ship_hull_carrier ship_hull_cruiser ship_hull_heavy ship_hull_light ship_hull_submarine
+		carrier battleship heavy_cruiser battle_cruiser light_cruiser destroyer submarine
+	}
+	
+	prefix = "SMS "
+	fallback_name = "Schiff %d"
+	
+	unique = {
+		"Donau" "Tisza" "Sajó" "Rába" "Lafnitz" "Körös" "Zagyva" "Drava" "Zala" "Hornád" "Marcal" "Tarna" "Salzach" "Steyr" "Leitha" "Thaya" "Inn" "Isar" "Iller" "Traun" "Mur" "Drau" "Enns"
+	}
+}
+

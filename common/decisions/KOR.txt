@@ -1,0 +1,765 @@
+KOR_the_problem_of_militaryship = {
+	
+}
+KOR_new_country_name = {
+	KOR_goonsoo = {
+
+		icon = generic_prepare_civil_war
+		
+		picture = GFX_decision_cat_national_assembly
+        
+		allowed = {
+		    OR = {
+			    original_tag = KOR 
+			    original_tag = MKR
+			    original_tag = DKR 
+		    }
+		}
+		available = {
+		}
+
+		cost = 60
+		ai_will_do = {
+			factor = 1
+		}
+		
+		fire_only_once = no
+
+
+		modifier = {
+			training_time_army_factor = 0.1
+		}
+		
+		days_remove = 60
+
+		remove_effect = {
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+									    building = arms_factory
+									    size > 0
+								    	include_locked = yes
+								    }
+								    is_in_home_area = yes
+								}
+							}
+					    }
+				    }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+        }
+    }
+	KOR_mingangongjang = {
+
+		icon = ger_mefo_bills
+		
+		picture = GFX_decision_cat_national_assembly
+        
+		allowed = {
+		    OR = {
+			    original_tag = KOR 
+			    original_tag = MKR
+			    original_tag = DKR 
+		    }
+		}
+
+		cost = 80
+		ai_will_do = {
+			factor = 1
+		}
+		
+		fire_only_once = no
+
+		available = {
+		}
+
+		modifier = {
+			training_time_army_factor = 0.1
+		}
+		
+		days_remove = 60
+
+		remove_effect = {
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+									    building = industrial_complex
+									    size > 0
+								    	include_locked = yes
+								    }
+								    is_in_home_area = yes
+								}
+							}
+					    }
+				    }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+        }
+    }
+	KOR_dockyard = {
+
+		icon = generic_naval
+		
+		picture = GFX_decision_cat_national_assembly
+        
+		allowed = {
+		    OR = {
+			    original_tag = KOR 
+			    original_tag = MKR
+			    original_tag = DKR 
+		    }
+		}
+
+		cost = 90
+		ai_will_do = {
+			factor = 1
+		}
+		
+		fire_only_once = no
+
+		available = {
+		}
+
+		modifier = {
+			training_time_army_factor = 0.1
+		}
+		
+		days_remove = 60
+
+		remove_effect = {
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+									    building = dockyard
+									    size > 0
+								    	include_locked = yes
+								    }
+								    is_in_home_area = yes
+								}
+							}
+					    }
+				    }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+        }
+    }
+	KOR_attack_fengtian = {
+		icon = generic_industry
+		allowed = {
+		    OR = {
+			    original_tag = KOR 
+			    original_tag = MKR
+			    original_tag = DKR 
+		    }
+		}
+		available = {
+			FNG = { exists = yes }
+			OR = {
+				has_country_flag = fengtian_not_agreed
+				has_completed_focus = kor_republic
+			}
+		}	
+
+		fire_only_once = yes
+
+		cost = 50
+		days_remove = 45
+		ai_will_do = {
+			factor = 0
+		}
+
+		remove_effect = {
+            declare_war_on = {
+		        target = FNG
+		        type = annex_everything
+	        }
+		}
+	}
+	KOR_attack_siam = {
+		icon = generic_industry
+		allowed = {
+		    OR = {
+			    original_tag = KOR 
+			    original_tag = MKR
+		    }
+		}
+		available = {
+			SIA = { exists = yes }
+        }
+
+		fire_only_once = yes
+
+		cost = 50
+		days_remove = 45
+		ai_will_do = {
+			factor = 0
+		}
+
+		remove_effect = {
+            declare_war_on = {
+		        target = SIA
+		        type = puppet_wargoal_focus
+	        }
+		}
+	}
+	KOR_attack_japanese_empire = {
+		icon = generic_industry
+		allowed = {
+		    OR = {
+			    original_tag = KOR 
+			    original_tag = MKR
+		    }
+		}
+		available = {
+			JAP = { exists = yes }
+        }
+
+		fire_only_once = yes
+
+		cost = 50
+		days_remove = 45
+		ai_will_do = {
+			factor = 0
+		}
+
+		remove_effect = {
+            declare_war_on = {
+		        target = JAP
+		        type = puppet_wargoal_focus
+	        }
+		}
+	}
+}
+KOR_reichskommissariat = {
+	
+	
+	KOR_daehwan_empire = { #대환제국
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = KOR
+		}
+
+		available = {
+			has_country_flag = CHINA_KOREA
+			is_subject = no
+			JAP = { exists = no }
+			CHI = { exists = no }
+			custom_trigger_tooltip = {
+				tooltip = form_country_korea_tt
+				controls_state = 525
+				controls_state = 527
+				controls_state = 807
+				controls_state = 808
+				controls_state = 809
+				controls_state = 810
+				controls_state = 811
+				controls_state = 812
+				controls_state = 813
+				controls_state = 814
+				controls_state = 815
+				controls_state = 816
+				controls_state = 817
+				controls_state = 818
+				controls_state = 819		
+			}
+			custom_trigger_tooltip = {
+				tooltip = form_country_manju_tt
+				controls_state = 328
+				controls_state = 610
+				controls_state = 714
+				controls_state = 715
+				controls_state = 716
+				controls_state = 717
+				controls_state = 761
+			}
+			custom_trigger_tooltip = {
+				tooltip = form_country_mongolia_tt
+				controls_state = 329
+				controls_state = 330
+				controls_state = 611
+				controls_state = 612
+				controls_state = 621
+			}
+			custom_trigger_tooltip = {
+				tooltip = form_country_china_tt
+				controls_state = 615
+				controls_state = 621
+				controls_state = 746
+				controls_state = 622
+				controls_state = 756
+				controls_state = 755
+				controls_state = 604
+				controls_state = 754
+				controls_state = 616
+				controls_state = 283
+				controls_state = 753
+				controls_state = 618
+				controls_state = 617
+				controls_state = 760
+				controls_state = 619
+				controls_state = 287
+				controls_state = 759
+				controls_state = 747
+				controls_state = 325
+				controls_state = 599
+				controls_state = 594
+				controls_state = 593
+				controls_state = 591
+				controls_state = 729
+				controls_state = 326
+				controls_state = 524
+				controls_state = 609
+				controls_state = 608
+				controls_state = 614
+				controls_state = 597
+				controls_state = 743
+				controls_state = 607
+				controls_state = 598
+				controls_state = 744
+				controls_state = 620
+				controls_state = 606
+				controls_state = 613
+				controls_state = 601
+				controls_state = 752
+				controls_state = 751
+				controls_state = 605
+				controls_state = 748
+				controls_state = 603
+				controls_state = 602
+				controls_state = 750
+				controls_state = 600
+				controls_state = 595
+				controls_state = 749
+				controls_state = 609
+				controls_state = 596
+			}
+			custom_trigger_tooltip = {
+				tooltip = form_country_japan_tt
+				controls_state = 537
+				controls_state = 536
+				controls_state = 555
+				controls_state = 533
+				controls_state = 534
+				controls_state = 282
+				controls_state = 535
+				controls_state = 532
+				controls_state = 531
+				controls_state = 529
+				controls_state = 530
+				controls_state = 528
+				controls_state = 526
+			}
+			custom_trigger_tooltip = {
+				tooltip = form_state_gando_tt
+				controls_state = 821
+				controls_state = 823
+				controls_state = 824
+				controls_state = 825
+			}
+		}
+
+		visible = {
+			original_tag = KOR
+			is_subject = no
+		}
+
+		complete_effect = {
+			KOR = {
+			    set_cosmetic_tag = DWE_UNIFIED
+			}
+			hidden_effect = {
+				news_event = { id = wtk_news.2 days = 1 }
+			}
+			every_state = {
+				add_core_of = ROOT
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	KOR_asia_union = { #아시아 연방
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = KOR
+		}
+
+		available = {
+			is_subject = no
+			JAP = { exists = no }
+			CHI = { exists = no }
+			SIA = { exists = no }
+			RAJ = { exists = no }
+			INS = { exists = no }
+			custom_trigger_tooltip = {
+				tooltip = form_country_korea_tt
+				controls_state = 525
+				controls_state = 527
+				controls_state = 807
+				controls_state = 808
+				controls_state = 809
+				controls_state = 810
+				controls_state = 811
+				controls_state = 812
+				controls_state = 813
+				controls_state = 814
+				controls_state = 815
+				controls_state = 816
+				controls_state = 817
+				controls_state = 818
+				controls_state = 819		
+			}
+			custom_trigger_tooltip = {
+				tooltip = form_country_manju_tt
+				controls_state = 328
+				controls_state = 609
+				controls_state = 610
+				controls_state = 714
+				controls_state = 715
+				controls_state = 716
+				controls_state = 717
+				controls_state = 718
+				controls_state = 745
+			}
+			custom_trigger_tooltip = {
+				tooltip = form_country_mongolia_tt
+				controls_state = 329
+				controls_state = 330
+				controls_state = 611
+				controls_state = 612
+				controls_state = 621
+			}
+			custom_trigger_tooltip = {
+				tooltip = form_country_china_tt
+				controls_state = 615
+				controls_state = 621
+				controls_state = 746
+				controls_state = 622
+				controls_state = 756
+				controls_state = 755
+				controls_state = 604
+				controls_state = 754
+				controls_state = 616
+				controls_state = 283
+				controls_state = 753
+				controls_state = 618
+				controls_state = 617
+				controls_state = 760
+				controls_state = 619
+				controls_state = 287
+				controls_state = 759
+				controls_state = 747
+				controls_state = 325
+				controls_state = 599
+				controls_state = 594
+				controls_state = 593
+				controls_state = 591
+				controls_state = 729
+				controls_state = 326
+				controls_state = 524
+				controls_state = 609
+				controls_state = 608
+				controls_state = 614
+				controls_state = 597
+				controls_state = 743
+				controls_state = 607
+				controls_state = 598
+				controls_state = 744
+				controls_state = 620
+				controls_state = 606
+				controls_state = 613
+				controls_state = 601
+				controls_state = 752
+				controls_state = 751
+				controls_state = 605
+				controls_state = 748
+				controls_state = 603
+				controls_state = 602
+				controls_state = 750
+				controls_state = 600
+				controls_state = 595
+				controls_state = 749
+				controls_state = 596
+			}
+			custom_trigger_tooltip = {
+				tooltip = form_country_japan_tt
+				controls_state = 537
+				controls_state = 536
+				controls_state = 555
+				controls_state = 533
+				controls_state = 534
+				controls_state = 282
+				controls_state = 535
+				controls_state = 532
+				controls_state = 531
+				controls_state = 529
+				controls_state = 530
+				controls_state = 528
+				controls_state = 526
+			}
+			custom_trigger_tooltip = {
+				tooltip = form_state_gando_tt
+				controls_state = 821
+				controls_state = 823
+				controls_state = 824
+				controls_state = 825
+			}
+			custom_trigger_tooltip = {
+				tooltip = form_state_siberia_tt
+				controls_state = 584
+				controls_state = 585
+				controls_state = 405
+				controls_state = 586
+				controls_state = 732
+				controls_state = 742
+				controls_state = 404
+				controls_state = 590
+				controls_state = 571
+				controls_state = 570
+				controls_state = 578
+				controls_state = 569
+				controls_state = 40
+				controls_state = 588
+				controls_state = 589
+				controls_state = 618
+				controls_state = 654
+				controls_state = 568
+				controls_state = 567
+				controls_state = 566
+				controls_state = 576
+				controls_state = 575
+				controls_state = 565
+				controls_state = 564
+				controls_state = 563
+				controls_state = 561
+				controls_state = 560
+				controls_state = 657
+				controls_state = 409
+				controls_state = 408
+				controls_state = 655
+			}
+			custom_trigger_tooltip = {
+				tooltip = form_state_indochina_tt
+				controls_state = 289
+				controls_state = 741
+				controls_state = 286
+				controls_state = 670
+				controls_state = 671
+				controls_state = 288
+				controls_state = 640
+			}
+		}
+
+		visible = {
+			original_tag = KOR
+			is_subject = no
+		}
+
+		complete_effect = {
+			set_country_flag = CHINA_KOREA
+			KOR = {
+			    set_cosmetic_tag = ASI_UNIFIED
+			}
+			hidden_effect = {
+				news_event = { id = wtk_news.2 days = 1 }
+			}
+			every_state = {
+				limit = {
+					is_core_of = JAP
+				}
+				add_core_of = ROOT
+			}
+			every_state = {
+				limit = {
+					is_core_of = SIA
+				}
+				add_core_of = ROOT
+			}
+			every_state = {
+				limit = {
+					is_core_of = CHI
+				}
+				add_core_of = ROOT
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+KOR_nuke_surrend = {
+
+
+	KOR_sue_for_peace_nuke = {
+
+		allowed = {
+			original_tag = KOR
+		}
+
+		available = {
+			has_global_flag = KOR_nuke_1
+			has_global_flag = KOR_nuke_2
+			OR = {
+				has_army_size = { size < 100 }
+				has_navy_size = { size < 30 }
+			}	
+			NOT = {
+				controls_state = 524
+				controls_state = 743
+			}
+			MAN = {
+				NOT = {
+				    controls_state = 714
+					controls_state = 761
+					controls_state = 715
+					controls_state = 610
+				}
+			}
+		}
+
+		visible = {
+			has_war = yes
+			has_global_flag = KOR_nuke_1
+		}
+
+		cost = 0
+
+		days_remove = -1
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				NOT = {
+					controls_state = 820
+					controls_state = 821
+					controls_state = 823
+					controls_state = 824
+					controls_state = 825
+				}
+				factor = 10
+			}
+		}
+
+		modifier = {
+			forced_surrender_limit = -1.0
+		}
+
+		remove_effect = {
+
+		}
+
+		remove_trigger = {
+			has_war = no
+		}
+		complete_effect = {
+			hidden_effect = {
+				clr_global_flag = KOR_nuke_1
+				clr_global_flag = KOR_nuke_2
+			}
+		}
+	}
+	KOR_sue_for_peace_nuke_mission = {
+		available = {
+			has_global_flag = KOR_nuke_1
+			has_global_flag = KOR_nuke_2
+		}
+
+		visible = {
+			NOT = {
+				OR = {
+					controls_state = 525
+					controls_state = 527
+					controls_state = 809
+					controls_state = 810
+					controls_state = 811
+					controls_state = 812
+					controls_state = 813
+					controls_state = 814
+					controls_state = 815
+					controls_state = 816
+					controls_state = 817
+					controls_state = 818
+					controls_state = 819
+				}
+			}
+		}
+
+		modifier = {
+			
+		}
+
+		days_mission_timeout = 720
+		fire_only_once = yes
+
+		activation = {
+			has_tech = nukes
+			has_war_with = KOR
+		}
+
+		complete_effect = {
+			KOR = {
+				unlock_decision_tooltip = KOR_sue_for_peace_nuke
+			}
+		}
+	}
+}

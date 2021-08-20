@@ -1,0 +1,189 @@
+leader_traits = {
+
+	cheats_trait_general ={
+	
+		type = land
+		trait_type = personality_trait
+		
+		new_commander_weight = { factor = 0 }
+	
+		modifier = {
+		
+			defence = 0.1
+			offence = 0.1
+			planning_speed = 0.15
+			
+		}
+	
+	}
+	korean_empire_monarch_army ={
+	
+		type = land
+		trait_type = personality_trait
+		
+		new_commander_weight = { factor = 0 }
+		
+		field_marshal_modifier = {
+		    max_army_group_size = 15
+		}
+        corps_commander_modifier = {
+		    max_commander_army_size = 76
+		}
+	
+		modifier = {
+		
+			defence = 50
+			offence = 50
+			army_morale_factor = 10
+			recon_factor = 10
+			amphibious_invasion = 10
+			invasion_preparation = -2
+			planning_speed = 250
+			max_planning = 100
+			no_supply_grace = 43800
+			attrition = -5
+			land_reinforce_rate = 10
+			terrain_penalty_reduction = 2
+			dig_in_speed_factor = 100
+			max_dig_in = 1000
+			wounded_chance_factor = -10
+			reassignment_duration_factor = -2
+			
+		}
+	
+	}
+	
+	cheats_trait_admiral_yi ={
+	
+		type = all
+		trait_type = personality_trait
+		
+		new_commander_weight = { factor = 0 }
+	
+		modifier = {
+		
+			defence = 0.1
+			offence = 0.1
+			
+		}
+	
+	}
+	korean_empire_monarch ={
+	
+		type = all
+		trait_type = personality_trait
+		
+		new_commander_weight = { factor = 0 }
+	
+		modifier = {
+		
+			defence = 50
+			offence = 50
+			ships_at_battle_start = 1
+			naval_retreat_speed = 10
+			naval_retreat_chance = 10
+			convoy_escort_efficiency = 10
+			spotting_chance = 10
+			navy_anti_air_attack_factor = 10
+			sortie_efficiency = 10
+			naval_hit_chance = 10
+			naval_coordination = 10
+			convoy_raiding_efficiency_factor = 10
+			naval_speed_factor = 10
+			navy_submarine_detection_factor = 10
+			navy_max_range_factor = 10
+			reassignment_duration_factor = -2
+			
+		}
+	
+	}
+	KOR_independent_army = { 
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				tag = KOR
+			}
+		}
+		corps_commander_modifier = {
+			max_commander_army_size = 6
+		}
+		
+		modifier = {
+			dig_in_speed_factor = 0.20
+			equipment_capture = 0.06
+			terrain_penalty_reduction = 0.20
+			mountain = {
+				movement = 0.10
+				attack = 0.08
+				defence = 0.08
+			}
+			hills = {
+				movement = 0.10
+				attack = 0.08
+				defence = 0.08
+			}
+			forest = {
+				movement = 0.10
+				attack = 0.08
+				defence = 0.08
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	
+	KOR_imperial_family = { 
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				tag = KOR
+			}
+		}
+		corps_commander_modifier = {
+			max_commander_army_size = 6
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	KOR_emperor = { 
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				tag = KOR
+			}
+		}
+		field_marshal_modifier = {
+		    max_army_group_size = 2
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+}

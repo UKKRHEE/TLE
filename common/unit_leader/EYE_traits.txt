@@ -1,0 +1,46 @@
+leader_traits = {
+	
+	EYE_swiss_commander = {
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no
+		}
+		allowed = {
+			FROM = { tag = SWI }
+		}
+		modifier = {
+		}
+		
+		non_shared_modifier = {
+			promote_cost_factor = 10
+		}
+		
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	
+	EYE_swiss_general = {
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no
+		}
+		allowed = {
+			FROM = { tag = SWI }
+		}
+		modifier = {
+		}
+		
+		field_marshal_modifier = {
+			max_army_group_size = 10
+		}
+		
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+}

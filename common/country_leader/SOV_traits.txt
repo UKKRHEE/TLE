@@ -1,0 +1,11 @@
+leader_traits = {
+
+	romanof_empire = {
+		stability_factor = 0.1
+	}
+	romanov_soviet = {
+	    neutrality_drift = 0.1
+		justify_war_goal_time = -0.1
+	}
+	
+}

@@ -1,0 +1,37 @@
+KOR_the_problem_of_militaryship = {
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		original_tag = KOR
+	}
+}
+KOR_new_country_name = {
+
+	allowed = {
+		original_tag = KOR
+	}
+
+	visible = {
+		original_tag = KOR
+	}
+}
+KOR_reichskommissariat = {
+
+	allowed = {
+		original_tag = KOR
+	}
+
+	visible = {
+		original_tag = KOR
+	}
+}
+KOR_nuke_surrend = {
+
+	allowed = {
+	}
+
+	visible = {
+		has_war = yes
+	}
+}
