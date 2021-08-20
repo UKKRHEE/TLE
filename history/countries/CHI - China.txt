@@ -71,74 +71,6 @@ if = {
 		CHI_hyper_inflation_1
 	}
 }
-if = {
-    limit = {
-        has_dlc = "Together for Victory"
-        not = { has_dlc = "Waking the Tiger" }
-    }
-
-    set_autonomy = {
-        target = SND
-        autonomous_state = autonomy_integrated_puppet
-    }
-}
-if = {
-    limit = { 
-        not = {
-            has_dlc = "Waking the Tiger"
-            has_dlc = "Together for Victory"
-        }
-    }
-
-    set_autonomy = {
-        target = SND
-        autonomous_state = autonomy_puppet
-    }
-}
-if = {
-    limit = { 
-        has_dlc = "Waking the Tiger"
-    }
-
-    set_autonomy = {
-        target = SND
-        autonomous_state = autonomy_wtt_imperial_protectorate
-    }
-}
-if = {
-    limit = {
-        has_dlc = "Together for Victory"
-        not = { has_dlc = "Waking the Tiger" }
-    }
-
-    set_autonomy = {
-        target = SZY
-        autonomous_state = autonomy_integrated_puppet
-    }
-}
-if = {
-    limit = { 
-        not = {
-            has_dlc = "Waking the Tiger"
-            has_dlc = "Together for Victory"
-        }
-    }
-
-    set_autonomy = {
-        target = SZY
-        autonomous_state = autonomy_puppet
-    }
-}
-if = {
-    limit = { 
-        has_dlc = "Waking the Tiger"
-    }
-
-    set_autonomy = {
-        target = SZY
-        autonomous_state = autonomy_wtt_imperial_protectorate
-    }
-}
 save_global_event_target_as = WTT_current_china_leader
 
 set_convoys = 40
@@ -298,7 +230,7 @@ give_guarantee = KOR
 create_country_leader = {
 	name = "Chiang Kai-Shek"
 	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
-	picture = "Chiang_Kai_Shek_kormod.dds"
+	picture = "r56_portrait_CHI_Chiang_Kai_Shek.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -330,7 +262,7 @@ create_country_leader = {
 }
 create_field_marshal = {
 	name = "Chiang Kai-Shek"
-	picture = "Chiang_Kai_Shek_kormod.dds"
+	picture = "r56_portrait_CHI_Chiang_Kai_Shek.dds"
 	traits = { defensive_doctrine harsh_leader offensive_doctrine }
 	skill = 5
 	attack_skill = 3
