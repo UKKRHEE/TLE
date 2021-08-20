@@ -17,7 +17,8 @@ state={
 			}
 
 		}
-			owner = CHI
+			owner = ZLC
+			add_core_of = ZLC
 			add_core_of = CHI
 			add_core_of = PRC
 			buildings = {

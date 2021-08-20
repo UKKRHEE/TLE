@@ -2,9 +2,7 @@
 state={
 	id=847
 	name="STATE_847"
-	provinces={
-		1448 4125 7159 9982 11918 12350 12378 
-	}
+
 	history={
 		owner = HNC
 		add_core_of = HNC
@@ -21,7 +19,7 @@ state={
 	}
 
 	provinces={
-		4325 10763 11972 
+		1448 4125 7159 9982 11918 12350 12378 
 	}
 	manpower=1368987
 	buildings_max_level_factor=1.000

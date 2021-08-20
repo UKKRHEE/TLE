@@ -13,8 +13,9 @@ state={
 			industrial_complex = 1
 			arms_factory = 1
 		}
-			owner = CHI
+			owner = SZC
 			add_core_of = CHI
+			add_core_of = SZC
 			add_core_of = PRC
 			buildings = {
 			}
