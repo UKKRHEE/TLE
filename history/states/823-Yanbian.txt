@@ -1,7 +1,7 @@
 
 state={
 	id=823
-	name="간도"
+	name="STATE_823"
 
 	history={
 		owner = KOR

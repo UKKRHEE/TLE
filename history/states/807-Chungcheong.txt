@@ -1,7 +1,7 @@
 
 state={
 	id=807
-	name="충청"
+	name="STATE_807"
 
 	history={
 		owner = KOR

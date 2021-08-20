@@ -1,7 +1,7 @@
 
 state={
 	id=825
-	name="남부 요동"
+	name="STATE_825"
 	resources={
 		steel=27.000
 	}

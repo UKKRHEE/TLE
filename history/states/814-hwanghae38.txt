@@ -1,6 +1,6 @@
 state={
 	id=814
-	name="옹진 반도"
+	name="STATE_814"
 	provinces={
 		13245 13246 
 	}

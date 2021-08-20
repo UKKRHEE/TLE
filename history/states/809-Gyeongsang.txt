@@ -1,7 +1,7 @@
 
 state={
 	id=809
-	name="경상"
+	name="STATE_809"
 	resources={
 		steel=3.000
 		chromium=8.000

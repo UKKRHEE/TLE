@@ -1,6 +1,6 @@
 state={
 	id=818
-	name="북부 강원"
+	name="STATE_818"
 	provinces={
 		4004 9981 11958
 	}

@@ -1,6 +1,6 @@
 state={
 	id=816
-	name="연천"
+	name="STATE_816"
 	provinces={
 		13247 
 	}

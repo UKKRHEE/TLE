@@ -1,7 +1,7 @@
 
 state={
 	id=824
-	name="통백"
+	name="STATE_824"
 	resources={
 		aluminium=7.000
 	}
@@ -19,9 +19,6 @@ state={
 		}
 		victory_points = {
 			4572 1 
-		}
-		victory_points = {
-			10433 1 
 		}
 		#set_demilitarized_zone = yes
 		#1936.3.7 = {

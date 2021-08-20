@@ -1,7 +1,7 @@
 
 state={
 	id=811
-	name="강원"
+	name="STATE_811"
 	resources={
 		steel=5.000
 		chromium=7.000

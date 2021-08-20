@@ -1,7 +1,7 @@
 
 state={
 	id=525
-	name="경기"
+	name="STATE_525"
 	resources={
 		steel=30.000
 		tungsten=15.000
