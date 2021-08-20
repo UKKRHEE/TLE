@@ -1,0 +1,29 @@
+
+state={
+	id=847
+	name="STATE_847"
+	provinces={
+		1448 4125 7159 9982 11918 12350 12378 
+	}
+	history={
+		owner = HNC
+		add_core_of = HNC
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+
+	}
+
+	provinces={
+		4325 10763 11972 
+	}
+	manpower=1368987
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

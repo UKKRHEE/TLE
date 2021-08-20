@@ -10,13 +10,15 @@ state={
 	history={
 		buildings = {
 			infrastructure = 6
+			industrial_complex = 1
 			4205 = {
 				naval_base = 3
 
 			}
 
 		}
-			owner = CHI
+			owner = SND
+			add_core_of = SND
 			add_core_of = CHI
 			add_core_of = PRC
 			buildings = {

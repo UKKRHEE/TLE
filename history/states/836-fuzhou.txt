@@ -12,7 +12,8 @@ state={
 			infrastructure = 5
 			industrial_complex = 1
 		}
-			owner = CHI
+			owner = WZC
+			add_core_of = WZC
 			add_core_of = CHI
 			add_core_of = PRC
 			buildings = {

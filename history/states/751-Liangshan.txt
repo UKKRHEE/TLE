@@ -1,25 +1,26 @@
 
 state={
-	id=601
-	name="STATE_601"
-	resources={
-		oil=2.000
-	}
+	id=751
+	name="STATE_751"
 
 	history={
-		owner = TIB
+		owner = SZC
+		add_core_of = SZC
 		add_core_of = CHI
-		add_core_of = TIB
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 1
 
 		}
 		victory_points = {
-			10856 1 
+			12141 3 
+		}
+		victory_points = {
+			7294 1 
 		}
 		1939.1.1 = {
 			buildings = {
+				industrial_complex = 1
 				infrastructure = 2
 
 			}
@@ -29,9 +30,9 @@ state={
 	}
 
 	provinces={
-		4407 5102 8041 8059 10856 
+		2067 4375 7294 10841 12141 12819 
 	}
-	manpower=368200
+	manpower=300000
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+	state_category=pastoral
 }

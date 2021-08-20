@@ -760,10 +760,18 @@ TWC = {
     color_ui = rgb { 18  7  116 }
 }
 RYU = {
-    color = rgb { 18  7  116 }
-    color_ui = rgb { 18  7  116 }
+    color = rgb { 51  0  124 }
+    color_ui = rgb { 51  0  124 }
 }
 ZLC = { #직예
-    color = rgb { 18  7  116 }
-    color_ui = rgb { 18  7  116 }
+    color = rgb { 153  51  51 }
+    color_ui = rgb { 153  51  51 }
+}
+WZC = { #오성연군
+    color = rgb { 102  51  16 }
+    color_ui = rgb { 102  51  16 }
+}
+HNC = { #호남
+    color = rgb { 117  7  120 }
+    color_ui = rgb { 117  7  120 }
 }

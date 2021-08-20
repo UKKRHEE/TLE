@@ -1,0 +1,34 @@
+
+state={
+	id=748
+	name="STATE_748"
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+
+		}
+		victory_points = {
+			1010 3 
+		}
+		1939.1.1 = {
+			buildings = {
+				infrastructure = 4
+				air_base = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1010 4141 4431 9939 
+	}
+	manpower=1100000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

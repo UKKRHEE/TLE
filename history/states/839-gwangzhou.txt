@@ -12,7 +12,7 @@ state={
 			infrastructure = 6
 			arms_factory = 1
 		}
-			owner = GXC
+			owner = CHI
 			add_core_of = GXC
 			add_core_of = CHI
 			add_core_of = PRC
