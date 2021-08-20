@@ -692,8 +692,8 @@ FNG = { #봉천 군벌
 	color_ui = rgb { 189 113 33 }
 }
 SND = { #산둥군벌
-	color = rgb { 102 51 52 }
-	color_ui = rgb { 204 81 51 }
+	color = rgb { 153  51  51 }
+	color_ui = rgb { 153  51  51 }
 }
 SZC = { #사천 군벌
 	color = rgb { 154 115 56 }
@@ -772,6 +772,6 @@ WZC = { #오성연군
     color_ui = rgb { 102  51  16 }
 }
 HNC = { #호남
-    color = rgb { 117  7  120 }
-    color_ui = rgb { 117  7  120 }
+    color = rgb { 153  51  51 }
+    color_ui = rgb { 153  51  51 }
 }
