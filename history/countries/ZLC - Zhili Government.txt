@@ -2,6 +2,15 @@
 
 oob = "QIE"
 
+	set_autonomy = {
+		target = HNC
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = SND
+		autonomous_state = autonomy_puppet
+	}
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "CHI_1936_naval_mtg"
@@ -140,20 +149,6 @@ add_equipment_to_stockpile = {
 set_research_slots = 3
 set_convoys = 70
 
-add_offsite_building = {
-	type = dockyard
-	level = 3
-}
-
-add_offsite_building = {
-	type = arms_factory
-	level = 4
-}
-
-add_offsite_building = {
-	type = industrial_complex
-	level = 5
-}
 
 
 set_politics = {

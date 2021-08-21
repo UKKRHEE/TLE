@@ -454,20 +454,6 @@ units = {
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Hilfstruppe 'Guangzhou'"
-		location = 1047 # Guangzhou
-		division_template = "Polizeitruppe Liangguang"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Hilfstruppe 'Shamian'"
-		location = 1047 # Guangzhou
-		division_template = "Polizeitruppe Liangguang"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
-	}
-	division = {
 		name = "Hilfstruppe 'Wenzhou'"
 		location = 4013 # Wenzhou
 		division_template = "Polizeitruppe"

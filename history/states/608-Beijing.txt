@@ -36,10 +36,91 @@ state={
 
 		}
 		victory_points = {
-			9843 20 
+			7014 30 
 		}
 		victory_points = {
-			10068 1 
+			9843 40 
+		}
+		victory_points = {
+			10068 15 
+		}
+		victory_points = {
+			11931 10 
+		}
+		victory_points = {
+			4519 5 
+		}
+		victory_points = {
+			10446 5 
+		}
+		victory_points = {
+			1612 5 
+		}
+		victory_points = {
+			4009 5 
+		}
+		victory_points = {
+			7580 3 
+		}
+		victory_points = {
+			7656 15 
+		}
+		victory_points = {
+			9942 5 
+		}
+		victory_points = {
+			7099 5 
+		}
+		victory_points = {
+			12495 3 
+		}
+		victory_points = {
+			7549 3 
+		}
+		victory_points = {
+			11918 3 
+		}
+		victory_points = {
+			7502 3 
+		}
+		victory_points = {
+			7201 1 
+		}
+		victory_points = {
+			12043 5 
+		}
+		victory_points = {
+			3900 3 
+		}
+		victory_points = {
+			6837 3 
+		}
+		victory_points = {
+			1638 3 
+		}
+		victory_points = {
+			11801 1
+		}
+		victory_points = {
+			1502 1
+		}
+		victory_points = {
+			1627 1
+		}
+		victory_points = {
+			1645 3
+		}
+		victory_points = {
+			945 3
+		}
+		victory_points = {
+			9803 1
+		}
+		victory_points = {
+			1121 3
+		}
+		victory_points = {
+			944 5
 		}
 		1938.10.25 = {
 			controller = JAP

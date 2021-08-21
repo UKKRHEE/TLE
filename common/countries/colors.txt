@@ -660,8 +660,8 @@ SHL = {
 }
 
 KOR = { #한국
-	color = rgb { 18  7  116 }
-	color_ui = rgb { 18  7  116 }
+	color = rgb { 36  7  126 }
+	color_ui = rgb { 36  7  126 }
 }
 KMN = { #
 	color = rgb { 51  102  204 }
@@ -692,8 +692,8 @@ FNG = { #봉천 군벌
 	color_ui = rgb { 189 113 33 }
 }
 SND = { #산둥군벌
-	color = rgb { 153  51  51 }
-	color_ui = rgb { 153  51  51 }
+	color = rgb { 161 103 33 }
+	color_ui = rgb { 161 103 33 }
 }
 SZC = { #사천 군벌
 	color = rgb { 154 115 56 }
@@ -724,8 +724,8 @@ SZY = { #쑹저위안
 	color_ui = rgb { 250 200 153 }
 }
 QIN = {
-	color = rgb { 255 244 190 }
-	color_ui = rgb { 255 244 190 }
+	color = rgb { 51 172 123 }
+	color_ui = rgb { 51 172 123 }
 }
 
 PRC = {
@@ -764,14 +764,14 @@ RYU = {
     color_ui = rgb { 51  0  124 }
 }
 ZLC = { #직예
-    color = rgb { 153  51  51 }
-    color_ui = rgb { 153  51  51 }
+	color = rgb { 161 103 33 }
+	color_ui = rgb { 161 103 33 }
 }
 WZC = { #오성연군
-    color = rgb { 102  51  16 }
-    color_ui = rgb { 102  51  16 }
+	color = rgb { 248 198 0 }
+	color_ui = rgb { 255 198 0 }
 }
 HNC = { #호남
-    color = rgb { 153  51  51 }
-    color_ui = rgb { 153  51  51 }
+	color = rgb { 161 103 33 }
+	color_ui = rgb { 161 103 33 }
 }
