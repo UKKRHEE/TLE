@@ -1,0 +1,29 @@
+division_template = {
+	name = "Yiguandao Minbing"
+#	division_names_group = "QIE_INF_01"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+	}
+	template_counter = 68
+}
+
+units = {
+	division = {
+		name = "Yiguandao Minbing Dadui"
+		location = 7160
+		division_template = "Yiguandao Minbing"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Yiguandao Minbing Dadui"
+		location = 7160
+		division_template = "Yiguandao Minbing"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+}

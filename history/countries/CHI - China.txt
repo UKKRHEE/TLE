@@ -1,16 +1,9 @@
 ﻿capital = 613 # Nanjing
 
 oob = "CHI_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "CHI_1936_naval_mtg"
-	else = {
-		set_naval_oob = "CHI_1936_naval_legacy"
-	}
-}
 set_cosmetic_tag = CHI_guangdung
-set_stability = 0.2
-set_war_support = 0.5
+set_stability = 0.27
+set_war_support = 0.67
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -42,162 +35,10 @@ if = {
 	}
 }
 
-add_ideas = {
-	german_advisors
-}
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "Waking the Tiger"
-		}
-	}
-	add_ideas = {
-		CHI_communist_uprisings
-	}
-}
-
-
-if = {
-	limit = {
-		has_dlc = "Waking the Tiger"
-	}		
-	add_ideas = {
-		CHI_nine_power_treaty
-		CHI_army_corruption_1
-		CHI_ineffective_bureaucracy
-		CHI_incompetent_officers
-		free_trade
-		CHI_hyper_inflation_1
-	}
-}
-save_global_event_target_as = WTT_current_china_leader
 
 set_convoys = 40
 
-1939.1.1 = {
-
-	add_political_power = 1198
-	set_stability = 0.5
-	set_war_support = 0.7
-	
-	if = {
-		limit = { has_dlc = "Waking the Tiger" }
-		complete_national_focus = CHI_unified_industrial_planning
-		complete_national_focus = CHI_invite_foreign_investors
-		complete_national_focus = CHI_mission_to_germany
-		complete_national_focus = CHI_rural_reconstruction_movement
-		complete_national_focus = CHI_british_cooperation
-		unlock_national_focus = CHI_fighter_purchases
-		complete_national_focus = CHI_mission_to_the_us
-		complete_national_focus = CHI_mission_to_the_soviet_union
-		complete_national_focus = CHI_hire_chennault
-		complete_national_focus = CHI_rapprochement_with_soviet_union
-		complete_national_focus = CHI_invite_soviet_advisers
-		complete_national_focus = CHI_military_affairs_commission
-		complete_national_focus = CHI_burma_road
-		unlock_national_focus = CHI_the_soviet_volunteer_group
-		complete_national_focus = CHI_bureau_of_investigation_and_statistics
-		complete_national_focus = CHI_camco
-		complete_national_focus = CHI_three_principles_of_the_people
-		complete_national_focus = CHI_army_reform
-		complete_national_focus = CHI_nationalism
-		else = {
-			#generic focuses
-			complete_national_focus = army_effort
-			complete_national_focus = equipment_effort
-			complete_national_focus = motorization_effort
-			complete_national_focus = aviation_effort
-			complete_national_focus = naval_effort
-			complete_national_focus = flexible_navy
-			complete_national_focus = industrial_effort
-			complete_national_focus = construction_effort
-			complete_national_focus = production_effort
-		}
-	}
-
-	add_ideas = {
-		#laws
-		war_economy
-		service_by_requirement
-		closed_economy
-
-		#ministers
-		CHI_bo_yibo
-		CHI_xiao_yisu
-		CHI_chen_shaokuan
-		jiangnan_shipyard_group
-		camco
-
-	}
-	if = {
-		limit = {
-			has_dlc = "Waking the Tiger"
-		}
-		remove_ideas = CHI_army_corruption_1
-		add_ideas = {
-			#national spirits
-			CHI_hyper_inflation_1
-			CHI_nine_power_treaty
-			CHI_army_corruption_2
-			CHI_ineffective_bureaucracy
-			CHI_incompetent_officers
-			free_trade
-			CHI_military_affairs_commission
-		}
-	}
-###############################
-	set_global_flag = fall_of_nanjing
-	#load_oob = "CHI_united_front"
-	
-	oob = "CHI_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "CHI_1939_naval_mtg"
-		else = {
-			set_naval_oob = "CHI_1939_naval_legacy"
-		}
-	}
-	set_technology = {
-
-		#PLACEHOLDER techs for vehicles
-		motorised_infantry = 1
-		tech_support = 1		
-		tech_recon = 1
-		tech_engineers = 1
-
-		#doctrines
-		air_superiority = 1
-		pocket_defence = 1
-		defence_in_depth = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
-	}
-}
 
 set_politics = {
 	ruling_party = neutrality
@@ -301,17 +142,6 @@ create_field_marshal = {
 }
 
 create_corps_commander = {
-	name = "Sun Li Jen"
-	gfx = "GFX_portrait_chi_sun_li_jen"
-	traits = { brilliant_strategist }
-	skill = 4
-	attack_skill = 5
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
 	name = "Hu Zongnan"
 	gfx = "GFX_portrait_chi_hu_zongnan"
 	traits = { politically_connected }
@@ -355,6 +185,18 @@ create_corps_commander = {
 	logistics_skill = 2
 }
 
+
+create_corps_commander = {
+	name = "Chen Cheng"
+	portrait_path = "gfx/leaders/CHI/r56_portrait_CHI_Chen_Cheng.dds"
+	traits = { war_hero infantry_officer decided_planner }
+
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
 create_corps_commander = {
 	name = "Fu Zuoyi"
 	gfx = "GFX_portrait_chi_fu_zuoyi"
@@ -365,6 +207,493 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 2
 }
+
+
+create_navy_leader = {
+	name = "Li Zhilong"
+	desc = "POLITICS_CHI_LI_ZHILONG_NAVY_DESC"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Li_Zhilong.png"
+	traits = {
+		navy_career_officer
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+create_navy_leader = {
+	name = "Chen Shaokuan"
+	desc = "POLITICS_CHI_CHEN_SHAOKUAN_NAVY_DESC"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Chen_Shaokuan.png"
+	traits = {
+		blockade_runner
+		navy_career_officer
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+create_navy_leader = { 
+	name = "Chan Chak"
+	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_navy_3.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+create_navy_leader = { 
+	name = ""
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+create_navy_leader = { 
+	name = ""
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+create_navy_leader = { 
+	name = ""
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+create_navy_leader = { 
+	name = ""
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+create_navy_leader = { 
+	name = ""
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+create_navy_leader = { 
+	name = ""
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+create_navy_leader = { 
+	name = ""
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+create_corps_commander = {
+	name = ""
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = ""
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = ""
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = ""
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = ""
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = ""
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = ""
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = ""
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = ""
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = ""
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = ""
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = ""
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = ""
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = ""
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = ""
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = ""
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = ""
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = ""
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = ""
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = ""
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = ""
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = ""
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = ""
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_field_marshal = {
+	name = "Li Jishen"
+	desc = "POLITICS_CHI_Li_JISHEN_ARMY_DESC"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Li_Jishen.png"
+	traits = {
+		infantry_officer
+		organisational_leader
+		war_hero
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_field_marshal = {
+	name = "Cheng Qian"
+	desc = "POLITICS_CHI_CHENG_QIAN_ARMY_DESC"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Cheng_Qian.png"
+	traits = {
+		old_guard
+		politically_connected
+		career_officer
+		war_hero
+		artillery_officer
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	id = 2202
+}
+### Corps Commanders ###
+create_corps_commander = {
+	name = "Deng Yanda"
+	desc = "POLITICS_CHI_DENG_YANDA_ARMY_DESC"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Deng_Yanda.png"
+	traits = {
+		politically_connected
+		trait_engineer
+		fortress_buster
+		artillery_officer
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+	id = 2207
+}
+create_corps_commander = {
+	name = "Ye Ting"
+	desc = "POLITICS_CHI_YE_TING_ARMY_DESC"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Ye_Ting.png"
+	traits = {
+		infantry_officer
+		commando
+		organizer
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Lin Biao"
+	desc = "POLITICS_CHI_LIN_BIAO_ARMY_DESC"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Lin_Biao.png"
+	traits = {
+		brilliant_strategist
+		infantry_officer
+		trait_mountaineer
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Wang Yaowu"
+	desc = "POLITICS_CHI_WANG_YAOWU_ARMY_DESC"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Wang_Yaowu.png"
+	traits = {
+		career_officer
+		infantry_officer
+		inflexible_strategist
+		organizer
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Xu Xiangqian"
+	desc = "POLITICS_CHI_XU_XIANGQIAN_ARMY_DESC"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Xu_Xiangqian.png"
+	traits = {
+		trickster
+		commando
+		brilliant_strategist
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Zhang Yunyi"
+	desc = "POLITICS_CHI_ZHANG_YUNYI_ARMY_DESC"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Zhang_Yunyi.png"
+	traits = {
+		war_hero
+		career_officer
+		organizer
+		trickster
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Sun Liren"
+	desc = "POLITICS_CHI_SUN_LIREN_ARMY_DESC"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Sun_Liren.png"
+	traits = {
+		career_officer
+		brilliant_strategist
+		organizer
+		urban_assault_specialist
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+	create_corps_commander = {
+		name = "Xue Yue"
+		desc = "POLITICS_CHI_XUE_YUE_ARMY_DESC"
+		portrait_path = "gfx/leaders/CHI/Portrait_CHI_Xue_Yue.png"
+		traits = {
+			offensive_doctrine
+			trait_reckless
+			brilliant_strategist
+			war_hero
+		}
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 1
+		logistics_skill = 3
+		id = 2203
+	}
+
+	create_corps_commander = {
+		name = "Zhang Fakui"
+		desc = "POLITICS_CHI_ZHANG_FAKUI_ARMY_DESC"
+		portrait_path = "gfx/leaders/CHI/Portrait_CHI_Zhang_Fakui.png"
+		traits = {
+			war_hero
+			infantry_officer
+			harsh_leader
+		}
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 3
+		id = 2204
+	}
 
 
 

@@ -31,7 +31,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Aisin Gioro Puyi"
 	
-	picture = "gfx/leaders/QIN/Portrait_QIN_Pu_Yi.dds"
+	picture = "gfx/leaders/QIN/Portrait_QIE_Puyi_Uniform.png"
 	expire = "1960.1.1"
 	ideology = rexism
 	traits = {
@@ -42,7 +42,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Aisin Gioro Puyi"
 	
-	picture = "gfx/leaders/QIN/Portrait_QIN_Pu_Yi.dds"
+	picture = "gfx/leaders/QIN/Portrait_QIE_Puyi_Uniform.png"
 	expire = "1960.1.1"
 	ideology = despotism
 	traits = {
@@ -52,7 +52,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Aisin Gioro Puyi"
 	
-	picture = "gfx/leaders/QIN/Portrait_QIN_Pu_Yi.dds"
+	picture = "gfx/leaders/QIN/Portrait_QIE_Puyi_Uniform.png"
 	expire = "1960.1.1"
 	ideology = libertism
 	traits = {
@@ -71,50 +71,49 @@ create_field_marshal = {
 	logistics_skill = 1
 }
 create_corps_commander = {
-	name = "Zhang Haipeng"
-	GFX = "GFX_portrait_man_zhang_haipeng"
-	traits = {  }
-	skill = 2
-	
-	attack_skill = 2
-	defense_skill = 2
+	name = "Aisin-Gioro Zaitao"
+	portrait_path = "gfx/leaders/QIE/Portrait_QIE_Zaitao.png"
+	desc = "QIE_ZAITAO_ARMY_DESC"
+	traits = {
+		politically_connected
+		cavalry_officer
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
 	planning_skill = 1
-	logistics_skill = 2
+	logistics_skill = 1
+	id = 1173
 }
-
 create_corps_commander = {
-	name = "Zhang Jinghui"
-	GFX = "GFX_portrait_man_zhang_jinghui"
-	traits = { infantry_officer }
-	skill = 2
-	
+	name = "Aisin-Gioro Pujie"
+	portrait_path = "gfx/leaders/QIE/Portrait_QIE_Pujie.png"
+	desc = "QIE_PUJIE_ARMY_DESC"
+	traits = {
+		politically_connected
+		trait_reckless
+	}
+	skill = 1
 	attack_skill = 2
 	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Aisin Gioro Xiqia"
-	GFX = "GFX_portrait_man_aisin_gioro_xiqia"
-	traits = { career_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
+	planning_skill = 1
 	logistics_skill = 1
+	id = 1174
 }
-
 create_corps_commander = {
-	name = "Yoshiko Kawashima"
-	gfx = "GFX_portrait_man_yoshiko_kawashima"
-	traits = { cavalry_officer }
+	name = "Aisin-Gioro Xiqia"
+	portrait_path = "gfx/leaders/QIE/Portrait_QIE_Xiqia.png"
+	desc = "QIE_XIQIA_ARMY_DESC"
+	traits = {
+		cavalry_officer
+		politically_connected
+	}
 	skill = 3
 	attack_skill = 3
-	defense_skill = 3
+	defense_skill = 2
 	planning_skill = 2
-	logistics_skill = 2
-	female = yes
+	logistics_skill = 4
+	id = 1183
 }
 
 1939.1.1 = {
