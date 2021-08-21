@@ -1,4 +1,4 @@
-﻿capital = 615
+﻿capital = 622
 
 oob = "SHX_1936"
 

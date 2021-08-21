@@ -1,8 +1,11 @@
 
 state={
-	id=610
-	name="STATE_610"
-
+	id=852
+	name="STATE_852"
+	provinces={
+		1502 1847 4876 7873 7894 12485 
+	}
+	manpower=1124783
 	history={
 		owner = KMN
 		add_core_of = CHI
@@ -17,18 +20,8 @@ state={
 			owner = KOR
 
 		}
-		1939.1.1 = {
-			owner = MAN
-			add_core_of = MAN
-
-		}
 
 	}
-
-	provinces={
-		814 846 934 972 3828 3881 3934 4514 6852 6893 6937 6951 6988 7575 7633 9788 9831 9873 9927 10331 10426 11801 11815 11836 11855 
-	}
-	manpower=1775377
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 }
