@@ -12,6 +12,6 @@ state={
 		add_core_of = KOR
 	}
 	manpower=67000
-	state_category=rural
+	state_category=city
 	buildings_max_level_factor=1.000
 }

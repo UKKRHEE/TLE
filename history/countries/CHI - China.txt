@@ -207,26 +207,11 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 100
+	neutrality = 48
+	communism = 33
+	democratic = 7
+    fascism = 12	
 }
-
-create_faction = Kuomindang
-add_to_faction = CHI
-add_to_faction = GXC
-add_to_faction = GDC
-add_to_faction = SZC
-add_to_faction = YUN
-add_to_faction = XSM
-add_to_faction = SHX
-add_to_faction = MHX
-add_to_faction = MHB
-add_to_faction = SZY
-
-give_guarantee = KOR
-1936.3.21 = {
-    remove_guarantee = KOR
-}
-
 create_country_leader = {
 	name = "Chiang Kai-Shek"
 	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"

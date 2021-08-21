@@ -1,23 +1,29 @@
+
 state={
 	id=605
 	name="STATE_840"
-	provinces={
-		6999 
-	}
-	manpower=586000
-	buildings_max_level_factor=1.000
-	state_category=rural
+
 	history={
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 1
 			arms_factory = 1
+
 		}
-			owner = SZC
-			add_core_of = CHI
-			add_core_of = SZC
-			add_core_of = PRC
-			buildings = {
-			}
+		owner = SZC
+		add_core_of = CHI
+		add_core_of = SZC
+		add_core_of = PRC
+		buildings = {
+
 		}
+
+	}
+
+	provinces={
+		1395 6999 7240 12705 
+	}
+	manpower=586000
+	buildings_max_level_factor=1.000
+	state_category=large_city
 }

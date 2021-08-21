@@ -30,14 +30,14 @@ state={
 			1047 5 
 		}
 		victory_points = {
-			7152 1
+			7152 1 
 		}
 		1938.10.25 = {
 			if = {
 				limit = {
 					NOT = {
-						has_dlc = Waking the Tiger
-
+						has_dlc = Waking
+						the Tiger 
 					}
 
 				}
@@ -61,7 +61,7 @@ state={
 	}
 
 	provinces={
-		1087 1131 1187 4092 7039 7152 9963 11938 11941 12077 
+		1087 1131 1187 4092 7039 7152 7210 9963 11938 11941 12077 
 	}
 	manpower=16435200
 	buildings_max_level_factor=1.000
