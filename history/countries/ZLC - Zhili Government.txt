@@ -2,14 +2,14 @@
 
 oob = "QIE"
 
-	set_autonomy = {
-		target = HNC
-		autonomous_state = autonomy_puppet
-	}
-	set_autonomy = {
-		target = SND
-		autonomous_state = autonomy_puppet
-	}
+set_autonomy = {
+	target = HNC
+	autonomous_state = autonomy_puppet
+}
+set_autonomy = {
+	target = SND
+	autonomous_state = autonomy_puppet
+}
 
 if = {
 	limit = { has_dlc = "Man the Guns" }

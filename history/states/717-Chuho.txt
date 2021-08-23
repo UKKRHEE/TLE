@@ -17,6 +17,15 @@ state={
 			owner = KOR
 
 		}
+		victory_points = {
+			11906 3
+		}
+		victory_points = {
+			3815 1
+		}
+		victory_points = {
+			9623 5
+		}
 
 	}
 

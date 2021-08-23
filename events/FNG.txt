@@ -1,7 +1,7 @@
-﻿add_namespace = FNG
+﻿add_namespace = chinese
 
 country_event = {
-	id = FNG.1
+	id = chinese.1
 	title = korea.11.title
 	desc = korea.11.desc
 	picture = GFX_report_event_hitler_handshake
@@ -26,5 +26,20 @@ country_event = {
 			    id = korea.12
 			}
 		}
+	}
+}
+country_event = {
+	id = chinese.2
+	title = chinese.2.title
+	desc = chinese.2.desc
+	picture = GFX_report_event_hitler_handshake
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { 
+		name = chinese.2.a
+		ai_chance = { factor = 50 }
+		KOR = {
 	}
 }
