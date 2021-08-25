@@ -11,6 +11,7 @@
 				tag = SIK
 				tag = GXC
 				tag = SHX
+				tag = SZC
 				tag = XSM
 				tag = CHI
 				tag = WZC

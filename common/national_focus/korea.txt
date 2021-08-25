@@ -1724,10 +1724,9 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			declare_war_on = {
-				target = MAN
+				target = ZLC
 				type = annex_everything
 			}
-			white_peace = JAP
 		}
 
 	}
@@ -1744,7 +1743,38 @@ focus_tree = {
 		x = 48
 		y = 7
 		completion_reward = {
-			set_state_controller = 745
+			create_wargoal = {
+				target = SHX
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = SND
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = HNC
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = SZC
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = GXC
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = XSM
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = SIK
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = SHX
+				type = annex_everything
+			}
 		}
 
 	}
@@ -1776,7 +1806,7 @@ focus_tree = {
 		x = 50
 		y = 6
 		completion_reward = {
-			JAP = {
+			RUS = {
 				country_event = {
 						id = korea.16
 						days = 3
@@ -1813,7 +1843,7 @@ focus_tree = {
 			
 			create_wargoal = {
 				type = puppet_wargoal_focus
-				target = SHX
+				target = CHI
 			}
 		}
 
@@ -1831,7 +1861,7 @@ focus_tree = {
 			
 			create_wargoal = {
 				type = puppet_wargoal_focus
-				target = CHI
+				target = WZC
 			}
 		}
 
@@ -1998,7 +2028,7 @@ focus_tree = {
 			controls_state = 823
 		}
 			completion_reward = {
-					JAP = {
+					RUS = {
 							country_event = {
 									id = korea.16
 								}
@@ -2683,10 +2713,9 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			declare_war_on = {
-				target = MAN
+				target = ZLC
 				type = annex_everything
 			}
-			white_peace = JAP
 		}
 
 	}
