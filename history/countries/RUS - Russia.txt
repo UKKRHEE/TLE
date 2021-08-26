@@ -34,12 +34,18 @@ set_technology = {
 	fuel_refining = 1
 }
 set_convoys = 50
-every_states = {
+all_state = {
 	limit = {
-		is_cored_by = SOV
+		is_core_of = SOV
 	}
 	add_core_of = RUS
 }
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 12500
+	producer = KOR
+}
+add_manpower = 700000
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1933.7.1"
