@@ -34,7 +34,12 @@ set_technology = {
 	fuel_refining = 1
 }
 set_convoys = 50
-
+every_states = {
+	limit = {
+		is_cored_by = SOV
+	}
+	add_core_of = RUS
+}
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1933.7.1"

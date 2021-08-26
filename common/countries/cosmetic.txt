@@ -340,9 +340,9 @@ POR_empire = {
 	color_ui = rgb { 19  83  180 }
 }
 
-RUS = {
-    color = rgb { 72 143 68 }
-    color_ui = rgb { 72 143 68 }
+RUS_restored = {
+	color = rgb { 0 127 14 }
+	color_ui = rgb { 0 127 14 }
 }
 POL_kingdom = {
 	color = rgb { 255 125 160 }

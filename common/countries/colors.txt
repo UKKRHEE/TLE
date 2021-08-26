@@ -752,8 +752,8 @@ KPL = {
 	color_ui = rgb { 204 204 204 }
 }
 RUS = {
-    color = rgb { 72 143 68 }
-    color_ui = rgb { 72 143 68 }
+    color = rgb { 241 241 230 }
+    color_ui = rgb { 241 241 230 }
 }
 TWC = {
     color = rgb { 18  7  116 }

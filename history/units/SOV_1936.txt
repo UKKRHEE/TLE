@@ -1503,7 +1503,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 12
 		}
-		location = 4832
+		location = 7804
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -1514,7 +1514,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 21
 		}
-		location = 10681
+		location = 12531
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -1525,7 +1525,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 26
 		}
-		location = 4821
+		location = 4797
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -1536,7 +1536,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 32
 		}
-		location = 10608
+		location = 11537
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -1547,7 +1547,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 39
 		}
-		location = 10667
+		location = 12681
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -1560,7 +1560,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 59
 		}
-		location = 6838
+		location = 9224
 		division_template = "Strelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
@@ -1572,7 +1572,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 66
 		}
-		location = 3977
+		location = 1762
 		division_template = "Strelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
@@ -1584,7 +1584,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 69
 		}
-		location = 11879
+		location = 4724
 		division_template = "Strelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
@@ -1599,7 +1599,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 34
 		}
-		location = 1805
+		location = 1668
 		division_template = "Strelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
@@ -1611,7 +1611,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 35
 		}
-		location = 7786
+		location = 7274
 		division_template = "Strelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
@@ -1623,7 +1623,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 40
 		}
-		location = 10627
+		location = 11643
 		division_template = "Strelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
@@ -1635,7 +1635,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 8
 		}
-		location = 12507
+		location = 3529
 		division_template = "Kavaleriyskaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
@@ -1644,7 +1644,7 @@ units = {
 	}
 	division= {			
 		name = "DVVO Mekhanizirovaniy Korpus"		
-		location = 4728
+		location = 12189
 		division_template = "Mekhanizirovaniy Korpus"		# 3x Mekh Bge
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -1657,7 +1657,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 6
 		}
-		location = 957
+		location = 7707
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
@@ -1673,7 +1673,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 36
 		}
-		location = 4719
+		location = 4737
 		division_template = "Strelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
@@ -1685,7 +1685,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 57
 		}
-		location = 12622
+		location = 11225
 		division_template = "Strelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
@@ -1697,7 +1697,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 93
 		}
-		location = 10559
+		location = 4333
 		division_template = "Strelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
@@ -1711,7 +1711,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 18
 		}
-		location = 12641
+		location = 7597
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
