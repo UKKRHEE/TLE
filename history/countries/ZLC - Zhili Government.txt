@@ -118,33 +118,22 @@ set_war_support = 0.40
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 10000
-	producer = GER
+	amount = 3000
+	producer = ZLC
 }
 
 add_equipment_to_stockpile = {
 	type = support_equipment
 	amount = 200
-	producer = GER
+	producer = ZLC
 }
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 1000
-	producer = GER
+	amount = 200
+	producer = ZLC
 }
 
-add_equipment_to_stockpile = {
-	type = tac_bomber_equipment_0
-	amount = 50
-	producer = GER
-}
-
-add_equipment_to_stockpile = {
-	type = fighter_equipment_0
-	amount = 25
-	producer = GER
-}
 
 set_research_slots = 3
 set_convoys = 70

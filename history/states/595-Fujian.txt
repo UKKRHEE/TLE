@@ -10,6 +10,7 @@ state={
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 3
+			arms_factory = 1
 			industrial_complex = 1
 			7071 = {
 				naval_base = 1

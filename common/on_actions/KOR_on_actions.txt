@@ -7,6 +7,30 @@ on_actions = {
                     days = 0
       			}
 			}
+			if = {
+				limit = {
+					tag = RUS
+				}
+				all_state = {
+					limit = {
+						is_core_of = SOV
+					}
+					add_core_of = RUS
+				}
+			}
+			if = {
+				limit = {
+					tag = ZLC
+				}
+				all_state = {
+					limit = {
+						is_core_of = CHI
+					}
+					add_core_of = ZLC
+					add_core_of = QIN
+					add_core_of = WZC
+				}
+			}
 		}
 	}
 	on_declare_war = {

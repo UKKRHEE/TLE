@@ -10,8 +10,7 @@ state={
 		owner = KOR
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 3
-			arms_factory = 1
+			industrial_complex = 1
 
 		}
 		victory_points = {

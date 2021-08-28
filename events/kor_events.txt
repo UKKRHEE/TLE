@@ -12,6 +12,14 @@ country_event = { #간략한 설정
 	option = { #그래 시작해보자고
 		name = korea.1.a
 		set_major = yes
+		country_event = {
+			id = korea.777
+		}
+	}
+	
+	option = { #그래 시작해보자고
+		name = korea.1.b
+		set_major = yes
 	}
 }
 
@@ -748,7 +756,7 @@ country_event = { #반란!
 			id = korea.26
 		}
 	}	
-	option = { #
+	option = { #근황파
 		name = korea.25.a
 		country_event = {
 			id = korea.27
@@ -785,7 +793,7 @@ country_event = { #
 		complete_national_focus = KOR_power_up_to_imperial
 	}
 }
-country_event = { #
+country_event = { #결론
 	id = korea.28
 	title = korea.28.title
 	desc = korea.28.desc
@@ -796,5 +804,87 @@ country_event = { #
 	
 	option = { #
 		name = korea.28.a
+	}
+}
+
+
+##########
+country_event = { #결론
+	id = korea.777
+	title = korea.777.title
+	desc = korea.777.desc
+	picture = GFX_report_event_hitler_handshake
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.777.a
+		country_event = {
+			id = korea.778
+		}
+	}
+}
+country_event = { #결론
+	id = korea.778
+	title = korea.778.title
+	desc = korea.778.desc
+	picture = GFX_report_event_hitler_handshake
+	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.777.a
+		country_event = {
+			id = korea.779
+		}
+	} 
+}
+country_event = { #결론
+	id = korea.779
+	title = korea.779.title
+	desc = korea.779.desc
+	picture = GFX_report_event_hitler_handshake
+	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.779.a
+	}
+	option = { #
+		name = korea.779.b
+		country_event = {
+			id = korea.780
+		} 
+	}
+}
+country_event = { #결론
+	id = korea.780
+	title = korea.780.title
+	desc = korea.780.desc
+	picture = GFX_report_event_hitler_handshake
+	
+    is_triggered_only = yes
+	 
+	option = { #
+		name = korea.780.a
+		country_event = {
+			id = korea.781
+		}
+	}
+	option = { #
+		name = korea.780.b
+	}
+}
+country_event = { #결론
+	id = korea.781
+	title = korea.781.title
+	desc = korea.781.desc
+	picture = GFX_report_event_hitler_handshake
+	
+    is_triggered_only = yes
+	 
+	option = { #
+		name = korea.781.a
 	}
 }

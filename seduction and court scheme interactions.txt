@@ -1,5 +1,6 @@
 ﻿#Character interactions relating to schemes
 
+
 seduce_interaction = {
 	category = interaction_category_friendly
 	interface_priority = 90
@@ -138,11 +139,6 @@ seduce_interaction = {
 				primary_spouse = { has_strong_hook = scope:actor }
 			}
 		}
-
-		modifier = {
-			add = 100
-			scope:actor = { any_consort = { is_consort_of = scope:recipient } }
-		}
 		
 		modifier = {
 			add = 50
@@ -202,16 +198,6 @@ seduce_interaction = {
 			scope:actor = {
 				has_trait = lustful
 			}
-		}
-
-		physical_attraction_modifier = {
-			ATTRACTED = scope:actor
-			WHO = scope:recipient
-			MAX_ATTRACTION = 100
-		}
-
-		modifier = {
-			add = scope:actor.var:sexual_desire
 		}
 
 		modifier = { # ( ͡° ͜ʖ ͡°)
@@ -459,14 +445,6 @@ seduce_interaction = {
 				num_of_relation_soulmate > 0
 			}
 		}
-
-		modifier = {
-			factor = {
-				value = scope:actor.var:sexual_desire
-				divide = 100
-			}
-			scope:actor = { Not = { is_consort_of = scope:recipient } }
-		}
 	}
 }
 
@@ -518,10 +496,6 @@ court_interaction = {
 
 	on_accept = {
 		scope:actor = {
-			stress_impact = {
-				shy = medium_stress_impact_gain
-			}
-
 			# If you already have a soulmate, they get very mad
 			every_relation = {
 				type = soulmate
@@ -547,10 +521,6 @@ court_interaction = {
 					}
 
 					show_as_tooltip = {
-						stress_impact = {
-							shy = medium_stress_impact_gain
-						}
-
 						# If you already have a soulmate, they get very mad
 						every_relation = {
 							type = soulmate
@@ -616,12 +586,6 @@ court_interaction = {
 			compatibility_target = scope:recipient
 			multiplier = 0.3
 			max = 30
-		}
-
-		physical_attraction_modifier = {
-			ATTRACTED = scope:actor
-			WHO = scope:recipient
-			MAX_ATTRACTION = 100
 		}
 
 		modifier = {

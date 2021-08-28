@@ -25,7 +25,6 @@ division_template = {
 division_template = {
 	name = "Bubing Xie"
 	division_names_group = "LEP_INF_02"
-	is_locked = yes
 	regiments = { # was 8 inf brigade previously
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -36,7 +35,6 @@ division_template = {
 division_template = {
 	name = "Bubing Zhen" # Chinese divisions more brigade-sized
 	division_names_group = "LEP_INF_01"
-	is_locked = yes
 	regiments = { # was square division previously
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -61,7 +59,6 @@ division_template = {
 division_template = { #Artillery Division
 	name = "Paobing Zhen"
 	division_names_group = "LEP_INF_01"
-	is_locked = yes
 	regiments = { # Elite German-style divisions; was 6Inf5art Sart division previously
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -78,9 +75,21 @@ division_template = { #Artillery Division
 	}
 }
 division_template = {
+	name = "Polizeitruppe"
+	division_names_group = "LEP_MIL_01"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+division_template = {
 	name = "Minbing"
 	division_names_group = "LEP_MIL_01"
-	is_locked = yes
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -89,193 +98,6 @@ division_template = {
 	}
 	template_counter = 68
 }
-division_template = {
-	name = "Polizeitruppe"
-	division_names_group = GER_INF_03
-	is_locked = yes
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-	}
-}
-
-division_template = {
-	name = "Polizeitruppe Liangguang"
-	division_names_group = GER_INF_03
-	is_locked = yes
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-	}
-}
-
-#####################
-# Nanjing Divisions #
-#####################
-
-division_template = {
-	name = "Nanjing Bubing Zhen"
-	division_names_group = "LEP_INF_01"
-	is_locked = yes
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-	}
-}
-
-division_template = { #Artillery Division
-	name = "Nanjing Paobing Zhen"
-	division_names_group = "LEP_INF_01"
-	is_locked = yes
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		artillery_brigade = { x = 2 y = 2 }
-	}
-	support = {
-		artillery = { x = 0 y = 0 }
-	}
-}
-
-#####################
-# Jiangsu Divisions #
-#####################
-
-division_template = {
-	name = "Jiangsu Bubing Xie"
-	division_names_group = "LEP_INF_02"
-	is_locked = yes
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-	}
-}
-
-############################################
-# Anhui Divisions (All Transferred to ANQ) #
-############################################
-
-division_template = {
-	name = "Anhui Qibing Xie"
-	division_names_group = "LEP_CAV_01"
-	is_locked = yes
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-	}
-}
-division_template = {
-	name = "Anhui Bubing Zhen"
-	division_names_group = "LEP_INF_01"
-	is_locked = yes
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-	}
-}
-division_template = {
-	name = "Anhui Bubing Xie"
-	division_names_group = "LEP_INF_02"
-	is_locked = yes
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-	}
-}
-
-#######################################################
-# Zhejiang Divisions (Split between ANQ and LEP tags) #
-#######################################################
-
-division_template = {
-	name = "Zhejiang Bubing Xie"
-	division_names_group = "LEP_INF_02"
-	is_locked = yes
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-	}
-}
-
-####################
-# Fujian Divisions #
-####################
-
-division_template = {
-	name = "Fujian Bubing Zhen"
-	division_names_group = "LEP_INF_01"
-	is_locked = yes
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-	}
-}
-division_template = {
-	name = "Fujian Bubing Xie"
-	division_names_group = "LEP_INF_02"
-	is_locked = yes
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-	}
-}
-
-####################################
-# Jiangxi Divisions (Mostly loyal) #
-####################################
-
-division_template = {
-	name = "Jiangxi Bubing Xie"
-	division_names_group = "LEP_INF_02"
-	is_locked = yes
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-	}
-}
-
-
-#####################################################################################################
-# Units are sorted according to starting province for convenience. Nanjing is sorted as a province. #
-#####################################################################################################
 
 units = {
 
@@ -283,21 +105,21 @@ units = {
 	division= {
 		name = "Nanjing Paobing Zhen"
 		location = 11913
-		division_template = "Nanjing Paobing Zhen"
+		division_template = "Paobing Zhen"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division= {
 		name = "Nanjing Bubing Di 1 Zhen"
 		location = 11913
-		division_template = "Nanjing Bubing Zhen"
+		division_template = "Bubing Zhen"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division= {
 		name = "Nanjing Bubing Di 2 Zhen"
 		location = 11982
-		division_template = "Nanjing Bubing Zhen"
+		division_template = "Bubing Zhen"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
@@ -313,14 +135,14 @@ units = {
 	division= {
 		name = "Nantong Bubing Xie"
 		location = 4091
-		division_template = "Jiangsu Bubing Xie"
+		division_template = "Bubing Xie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division= {
 		name = "Yangcheng Bubing Xie"
 		location = 12067
-		division_template = "Jiangsu Bubing Xie"
+		division_template = "Bubing Xie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
@@ -329,35 +151,35 @@ units = {
 	division= {
 		name = "Anhui Bubing Di 1 Zhen"
 		location = 1146
-		division_template = "Anhui Bubing Zhen"
+		division_template = "Bubing Zhen"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division= {
 		name = "Anhui Bubing Di 2 Zhen"
 		location = 7035
-		division_template = "Anhui Bubing Zhen"
+		division_template = "Bubing Zhen"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division= {
 		name = "Anhui Bubing Di 1 Xie"
 		location = 9937
-		division_template = "Anhui Bubing Xie"
+		division_template = "Bubing Xie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division= {
 		name = "Anhui Bubing Di 2 Xie"
 		location = 7104
-		division_template = "Anhui Bubing Xie"
+		division_template = "Bubing Xie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division= {
 		name = "Yangzhou Qibing Xie"
 		location = 4148
-		division_template = "Anhui Qibing Xie"
+		division_template = "Qibing Xie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
@@ -387,7 +209,7 @@ units = {
 	division= {
 		name = "Taizhou Bubing Xie"
 		location = 7146
-		division_template = "Zhejiang Bubing Xie"
+		division_template = "Bubing Xie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
@@ -396,14 +218,14 @@ units = {
 	division= {
 		name = "Fujian Bubing Di 1 Zhen"
 		location = 7027
-		division_template = "Fujian Bubing Zhen"
+		division_template = "Bubing Zhen"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division= {
 		name = "Nanping Bubing Xie"
 		location = 1138
-		division_template = "Fujian Bubing Xie"
+		division_template = "Bubing Xie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
@@ -426,21 +248,21 @@ units = {
 	division= {
 		name = "Jingdezhen Bubing Xie"
 		location = 1153
-		division_template = "Jiangxi Bubing Xie"
+		division_template = "Bubing Xie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division= {
 		name = "Ganzhou Bubing Xie"
 		location = 9942
-		division_template = "Jiangxi Bubing Xie"
+		division_template = "Bubing Xie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division= {
 		name = "Yichun Bubing Xie"
 		location = 12495
-		division_template = "Jiangxi Bubing Xie"
+		division_template = "Bubing Xie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
