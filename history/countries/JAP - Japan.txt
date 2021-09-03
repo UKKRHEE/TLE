@@ -4,7 +4,7 @@ oob = "JAP_1936"
 
 set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
 set_war_support = 0.8
-
+set_cosmetic_tag = JAP_dokugawa
 set_research_slots = 4
 set_fuel_ratio = 1.0
 add_ideas = {
