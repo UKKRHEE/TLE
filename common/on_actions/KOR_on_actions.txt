@@ -29,6 +29,37 @@ on_actions = {
 	}
 	on_declare_war = {
 		effect = {
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = ZLC
+							original_tag = WZC
+							original_tag = SHX
+							original_tag = XSM
+							original_tag = SND
+							original_tag = CHI
+							original_tag = HNC
+							original_tag = YUN
+							original_tag = SZC
+							original_tag = GXC
+							original_tag = SIK
+						}
+					}
+					ROOT = {
+						original_tag = KOR
+					}
+				}
+				FROM = {
+					add_ideas = CHI_fight_with_korea
+				}
+				ROOT = {
+					country_event = {
+						id = korea.34
+					}
+				}	
+				
+			}
 		}
 	}
 	on_state_control_changed = { #내전	
@@ -1211,6 +1242,94 @@ on_actions = {
 	}
 	on_daily = {
 		effect = {
+			if = {
+				limit = {
+					tag = KOR
+					OR = {
+						has_government = fascism
+						has_government = neutrality
+						has_government = communism
+					}
+					has_idea = KOR_failed_civilian_control_of_the_military
+				}
+				remove_ideas = KOR_failed_civilian_control_of_the_military
+			}
+			if = {
+				limit = {
+					tag = KOR
+					has_government = democratic
+					has_idea = KOR_militarism
+					NOT = {
+						has_idea = KOR_failed_civilian_control_of_the_military
+					}
+				}
+				add_ideas = KOR_failed_civilian_control_of_the_military
+			}
+			if = {
+				limit = {
+					tag = KOR
+					has_government = democratic
+					NOT = {
+						has_idea = KOR_militarism
+					}
+					has_idea = KOR_failed_civilian_control_of_the_military
+				}
+				add_ideas = KOR_failed_civilian_control_of_the_military
+			}
+			if = {
+				limit = {
+						OR = {
+							original_tag = ZLC
+							original_tag = WZC
+							original_tag = SHX
+							original_tag = XSM
+							original_tag = SND
+							original_tag = CHI
+							original_tag = HNC
+							original_tag = YUN
+							original_tag = SZC
+							original_tag = GXC
+							original_tag = SIK
+						} 
+						NOT = {
+							has_war_with = KOR
+						}
+				}
+				remove_ideas = CHI_fight_with_korea
+				if = {
+					limit = {
+						KOR = {
+							has_idea = KOR_not_planed_attack
+						}
+					}
+					KOR = {
+						remove_ideas = KOR_not_planed_attack
+					}
+				}
+				if = {
+					limit = {
+						KOR = {
+							has_idea = KOR_embargo_us
+						}
+					}
+					KOR = {
+						remove_ideas = KOR_embargo_us
+					}
+				}
+			}	
+			if = {
+				limit = {
+					tag = KOR
+					controls_state = 608
+					controls_state = 826
+					controls_state = 829
+				}
+				USA = {
+				country_event = {
+					id = korea.28
+				}
+				}
+			}
 			if = {
 				limit = {
 					tag = KOR

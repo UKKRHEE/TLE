@@ -8,7 +8,7 @@ set_cosmetic_tag = JAP_dokugawa
 set_research_slots = 4
 set_fuel_ratio = 1.0
 add_ideas = {
-	JAP_hirohito
+	JAP_showa_hirohito
 	#state_shintoism
 	limited_exports
 	limited_conscription
@@ -215,8 +215,8 @@ set_politics = {
 set_popularities = {
 	neutrality = 47
 	fascism = 23
-	communism
-	democratic
+	communism = 12
+	democratic = 18
 }
 
 create_country_leader = {

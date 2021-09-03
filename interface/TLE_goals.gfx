@@ -1,5 +1,45 @@
 spriteTypes = {
 
+	SpriteType = {   
+		name = "GFX_focus_chi_socialist_purge" 
+		texturefile = "gfx/interface/goals/focus_chi_socialist_purge.dds"  
+	}   
+	SpriteType = {   
+		name = "GFX_focus_national_mermit" 
+		texturefile = "gfx/interface/goals/focus_national_mermit.dds" 
+	}   
+	SpriteType = {   
+		name = "GFX_focus_power_to_imperial" 
+		texturefile = "gfx/interface/goals/power_to_imperial.png" 
+	}   
+	SpriteType = {   
+		name = "GFX_focus_kor_question" 
+		texturefile = "gfx/interface/goals/focus_aus_question.dds"
+	}   
+	SpriteType = {   
+		name = "GFX_focus_c45_pass"
+		texturefile = "gfx/interface/goals/focus_c45_pass.dds"
+	}   
+	SpriteType = {   
+		name = "focus_kor_dragon_under_tiger"  
+		texturefile = "gfx/interface/goals/focus_kor_dragon_under_tiger.dds" 
+	}   
+	SpriteType = {   
+		name = "focus_knyc" 
+		texturefile = "gfx/interface/goals/focus_knyc.dds" 
+	}   
+	SpriteType = {   
+		name = "focus_kcpr" 
+		texturefile = "gfx/interface/goals/focus_kcpr.dds" 
+	}  
+	SpriteType = {   
+		name = "GFX_focus_qng_power_struggle" 
+		texturefile = "gfx/interface/goals/focus_qng_power_struggle.dds" 
+	} 
+	SpriteType = {   
+		name = "GFX_focus_production" 
+		texturefile = "gfx/interface/goals/focus_production.dds"
+	} 
 	SpriteType = {  
 		name = "GFX_focus_goal_kor_empire_of_korea" 
 		texturefile = "gfx/interface/goals/goal_kor_empire_of_korea.dds"

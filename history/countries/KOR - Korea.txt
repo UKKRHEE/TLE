@@ -267,7 +267,7 @@ create_country_leader = {
 	expire = "1951.1.5"
 	ideology = liberalism
 	traits = {
-		
+		the_democratist
 	}
 }
 #create_country_leader = {
@@ -281,9 +281,9 @@ create_country_leader = {
 #}
 
 create_country_leader = {
-	name = "Yi Jin"
+	name = "Yi Byung Mu"
 	desc = "KOR_YI_JIN_DESC"
-	picture = "gfx/leaders/KOR/Portrait_Yi_Kang.dds"
+	picture = "gfx/leaders/KOR/이병무.png"
 	expire = "1955.8.1"
 	ideology = despotism
 	traits = {

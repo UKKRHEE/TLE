@@ -1,6 +1,15 @@
 ideas = {
 	
 	country = {
+		JAP_showa_hirohito = {
+			allowed = {
+				original_tag = JAP
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.3
+			}
+		}
 
 		JAP_war_spirit = {
 			

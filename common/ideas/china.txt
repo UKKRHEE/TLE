@@ -1,5 +1,14 @@
 ideas = {
 	country = {
+		CHI_fight_with_korea = {
+			allowed = {
+				always = no
+			}
+			picture = generic_volunteer_expedition_bonus
+			modifier = {
+				surrender_limit = 0.15
+			}
+		}
 		german_advisors = {
 		
 			allowed = {

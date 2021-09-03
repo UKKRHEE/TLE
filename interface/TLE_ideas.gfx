@@ -2,6 +2,10 @@ spriteTypes = {
 	
 	#국민정신
 	spriteType = {
+		name = "GFX_idea_JAP_showa_hirohito"    
+		texturefile = "gfx/interface/ideas/idea_JAP_showa_hirohito.png"  
+	}	
+	spriteType = {
 		name = "GFX_idea_KOR_great_Yi_kang"    
 		texturefile = "gfx/interface/ideas/DKR_death_before_surrender.dds" 
 	}	

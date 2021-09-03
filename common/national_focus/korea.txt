@@ -19,19 +19,22 @@ focus_tree = {
 		   has_stability > 0.25
 		}
 			completion_reward = {
-					add_ideas = KOR_road_end_railway
+						
+					add_timed_idea = {
+						idea = KOR_road_end_railway
+						days = 180
+					}	
 				}
 
 	}
 	focus = {
 		id = kor_kill_Communist
-		icon = GFX_focus_ger_bulwark_against_bolshevism
+		icon = GFX_focus_aus_hun
 		cost = 12.9
 		prerequisite = {
 			focus = kor_reform_korea
 		}
 		available = {
-			has_idea = KOR_divided_politics
 			NOT = {
 				has_completed_focus = KOR_asian_democracy 
 			}
@@ -45,7 +48,6 @@ focus_tree = {
 		y = 1
 			completion_reward = {
 			remove_ideas = KOR_striked_factories
-			remove_ideas = KOR_divided_politics
 					add_stability = 0.05
 					add_popularity = {
 							ideology = communism
@@ -93,7 +95,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_use_the_anti-armed
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_c45_pass
 		cost = 10.00
 		mutually_exclusive = {
 			focus = kor_reform_korea
@@ -948,7 +950,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kor_public_welfare_reform_2
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_bel_picketing
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_use_the_anti-armed
@@ -1137,7 +1139,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kor_national_fascist_agitation
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_focus_national_mermit
 		cost = 5.00
 		prerequisite = {
 			focus = kor_reform_korea
@@ -1150,7 +1152,7 @@ focus_tree = {
 		x = 36
 		y = 1
 			completion_reward = {
-					add_war_support = 0.1
+					add_war_support = 0.05
 					add_timed_idea = {
 					idea = KOR_fascist_propaganda
 					days = 1020
@@ -1160,7 +1162,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_free
-		icon = GFX_goal_kor_deal
+		icon = GFX_focus_bel_liberal
 		cost = 10.00
 		prerequisite = {
 			focus = kor_national_fascist_agitation
@@ -1220,10 +1222,11 @@ focus_tree = {
 		x = 29
 		y = 4
 		completion_reward = {
-			add_timed_idea = {
-				idea = FRA_economy
-				days = 720
-			}
+			
+					add_timed_idea = {
+						idea = KOR_national_development
+						days = 720
+					}	
 		}
 
 	}
@@ -1380,7 +1383,9 @@ focus_tree = {
 					idea = KOR_democracy_spread 
 					days = 720
 				}	
-			}
+			} 
+			remove_ideas = KOR_militarism
+			custom_effect_tooltip = TOOLTIP_MILITARISM_DELETED
 		}
 
 	}
@@ -1489,7 +1494,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kor_national_development_2
-		icon = GFX_goal_generic_production
+		icon = GFX_focus_ger_four
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_Basic_Welfare_Policy
@@ -1515,10 +1520,14 @@ focus_tree = {
 		x = 46
 		y = 1
 		available = {
-			
+			has_completed_focus = kor_kill_Communist
+			NOT = {
+				has_completed_focus = KOR_asian_democracy
+			}
 		}
 			completion_reward = {
-					add_stability = 0.05
+					add_stability = -0.05
+				custom_effect_tooltip = FOCUS_WILL_BE_COUPDETA
 					hidden_effect = {
 						country_event = {
 						id = korea.24
@@ -1562,13 +1571,13 @@ focus_tree = {
 		icon = GFX_focus_ger_freikorps
 		cost = 5.00
 		prerequisite = {
-			focus = kor_korean_lebensraum
+			focus = kor_encouraging_patriotism_2
 		}
 		available = {
 			has_war = yes
 		}
-		x = 40
-		y = 3
+		x = 42
+		y = 4
 			completion_reward = {
 					add_manpower = 62350
 				}
@@ -1576,17 +1585,17 @@ focus_tree = {
 	}
 	focus = {
 		id = kor_the_new_history
-		icon = GFX_goal_generic_more_territorial_claims 
+		icon = GFX_focus_qng_power_struggle
 		cost = 5.00
 		prerequisite = {
-			focus = kor_korean_lebensraum
+			focus = kor_encouraging_patriotism_2
 		}
 		available = {
 			has_war = no
 			has_stability > 0.45
 		}
 		x = 44
-		y = 3
+		y = 4
 			completion_reward = {
 					add_war_support = 0.05
 				}
@@ -1595,11 +1604,11 @@ focus_tree = {
 	focus = {
 		id = kor_encouraging_patriotism_2
 		icon = GFX_focus_jap_free_korea
-		cost = 5.00 
+		cost = 10.00 
 		prerequisite = {
 			focus = kor_korean_lebensraum
 		}
-		x = 46
+		x = 44
 		y = 3
 			completion_reward = {
 					add_stability = 0.05
@@ -1608,8 +1617,8 @@ focus_tree = {
 	}
 	focus = {
 		id = kor_forced_labor
-		icon = GFX_goal_generic_attack_allies
-		cost = 5.00
+		icon = GFX_focus_aus_aut
+		cost = 10.00
 		prerequisite = {
 			focus = kor_encouraging_patriotism_2
 		}
@@ -1617,13 +1626,14 @@ focus_tree = {
 		y = 4
 			completion_reward = {
 					add_ideas = KOR_anti_chinese_holy_war
+					remove_ideas = KOR_divided_politics
 				}
 
 	}
 	focus = {
 		id = kor_territory_expansion
 		icon = GFX_focus_goal_KOR_reform_korea
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_korean_lebensraum
 		}
@@ -1645,13 +1655,18 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_all_claim
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = focus_kor_dragon_under_tiger
 		cost = 10.00
 		prerequisite = {
 			focus = kor_territory_expansion
 		}
 		mutually_exclusive = {
 			focus = kor_Imperialism
+		}
+		available = {
+			fascism > 0.6
+			has_war_support > 0.5
+			has_idea = KOR_yujin_kim
 		}
 		x = 48
 		y = 4
@@ -1705,14 +1720,88 @@ focus_tree = {
 
 	}
 	focus = {
-		id = KOR_kwangtungjun
-		icon = GFX_focus_AST_war_japan
-		cost = 10.00
+		id = kor_tsushima
+		icon = GFX_goal_demand_sudetenland
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_plan_manchu
 		}
 		x = 48
 		y = 6
+			available = {	
+					
+					CHI = {
+						controls_state = 608
+						controls_state = 614
+						controls_state = 597
+						controls_state = 743
+					}
+				}
+			bypass = {
+					OR = {
+							has_war_with = SHX
+							has_war_with = CHI
+							has_wargoal_against = CHI
+							has_wargoal_against = SHX
+						}
+				}
+			completion_reward = {
+					custom_effect_tooltip = KOR_tooltip_attack_china
+					ZLC = {
+							country_event = {
+									id = korea.14
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = kor_threat_united_states
+		icon = GFX_focus_attack_usa
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_kwangtungjun
+		}
+		available = {
+			has_country_flag = FLAG_USA_FUCK_TO_KOREA
+		}
+		x = 46 
+		y = 8
+		bypass = {
+			has_country_flag = FLAG_KOR_WAS_ACCEPT_US_SUGGETION
+		}
+			completion_reward = {
+					create_wargoal = {
+							type = puppet_wargoal_focus
+							target = USA
+						}
+						if = {
+							limit = {
+								has_idea = KOR_embargo_us
+							}
+							remove_ideas = KOR_embargo_us
+						}
+						hidden_effect = {
+							declare_war_on = {
+								type = puppet_wargoal_focus 
+								target = PHI
+							}
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_kwangtungjun
+		icon = GFX_focus_qing_help
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_plan_manchu
+		}
+		x = 48
+		y = 7
+		available = {
+			threat > 0.15
+		}
 		completion_reward = {
 			declare_war_on = {
 				target = ZLC
@@ -1729,10 +1818,25 @@ focus_tree = {
 			focus = KOR_kwangtungjun
 		}
 		available = {
-			has_war_with = FNG
+			OR = {
+				has_war_with = ZLC
+				ZLC = {
+					is_puppet_of = KOR
+				}
+				ROOT = {
+					controls_state = 608
+					controls_state = 614
+					controls_state = 615
+					controls_state = 607
+					controls_state = 850
+					controls_state = 744
+					controls_state = 849
+					controls_state = 841
+				}
+			}
 		}
 		x = 48
-		y = 7
+		y = 8
 		completion_reward = {
 			create_wargoal = {
 				target = SHX
@@ -1779,7 +1883,6 @@ focus_tree = {
 		x = 50
 		y = 5
 		completion_reward = {
-			add_state_core = 820
 			add_state_core = 408
 			add_state_core = 409
 			add_state_core = 655
@@ -1902,7 +2005,7 @@ focus_tree = {
 			focus = KOR_last_say_of_russia
 		}
 		x = 50
-		y = 8
+		y = 9
 			completion_reward = {
 					add_war_support = 0.2
 					set_rule = {
@@ -1957,7 +2060,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = KOR_give_me_the_manchu
+		id = KOR_give_me_the_manchu 
 		icon = GFX_focus_befriend_russia
 		cost = 10.00
 		prerequisite = {
@@ -2011,7 +2114,6 @@ focus_tree = {
 
 }
 			completion_reward = {
-					add_ideas = KOR_militarism
 					create_faction = KOR_DEFENCE_FACTION
 					add_to_faction = KMN
 					add_to_faction = QIN
@@ -2329,70 +2431,9 @@ focus_tree = {
 				}
 
 	}
-	focus = {
-		id = kor_south_manju
-		icon = GFX_focus_대한국만세
-		cost = 5.00
-		prerequisite = {
-			focus = kor_join_japan
-		}
-		prerequisite = {
-			focus = kor_yeonhaeju
-		}
-		x = 59
-		y = 9
-			available = {
-					has_completed_focus = kor_strengthening_cooperation_japan
-				}
-			completion_reward = {
-					country_event = {
-							id = korea.10
-						}
-					add_political_power = 150
-				}
-
-	}
-	focus = {
-		id = kor_tsushima
-		icon = GFX_goal_demand_sudetenland
-		cost = 5.00
-		prerequisite = {
-			focus = kor_south_manju
-			focus = KOR_attack_japan
-			focus = kor_control_asia
-		}
-		x = 58
-		y = 10
-			available = {	
-					
-					CHI = {
-						controls_state = 608
-						controls_state = 614
-						controls_state = 597
-						controls_state = 743
-					}
-				}
-			bypass = {
-					OR = {
-							has_war_with = SHX
-							has_war_with = CHI
-							has_wargoal_against = CHI
-							has_wargoal_against = SHX
-						}
-				}
-			completion_reward = {
-					custom_effect_tooltip = KOR_tooltip_attack_china
-					CHI = {
-							country_event = {
-									id = korea.14
-								}
-						}
-				}
-
-	}
-	focus = {
+	focus = { 
 		id = KOR_power_up_to_imperial
-		icon = GFX_goal_KOR_uprising
+		icon = GFX_focus_power_to_imperial 
 		cost = 10.00
 		prerequisite = {
 			focus = kor_monarchy
@@ -2411,12 +2452,30 @@ focus_tree = {
 							ideology = neutrality
 							popularity = 0.05
 						}
+					set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+						swap_ideas = {
+							remove_idea = KOR_Weakening_the_kingship
+							add_idea = KOR_emperors_country
+						}
+					set_party_name = {
+						ideology = fascism
+						long_name = "군사혁명위원회"
+						name = "군사혁명위원회"
+					}
+					set_party_name = {
+						ideology = neutrality
+						long_name = "군사혁명위원회"
+						name = "군사혁명위원회"
+					}
 		}
 
 	}
 	focus = {
-		id = KOR_up-coupdetat
-		icon = GFX_goal_KOR_strong_hand
+		id = KOR_up-coupdetat 
+		icon = GFX_focus_chi_socialist_purge
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_power_up_to_imperial
@@ -2429,11 +2488,11 @@ focus_tree = {
 		completion_reward = {
 			
 					add_stability = 0.05
-					set_politics = {
-							ruling_party = neutrality
-							elections_allowed = no
-						}
-			remove_ideas = KOR_Weakening_the_kingship
+			remove_ideas = KOR_political_officer
+			add_timed_idea = {
+				idea = KOR_political_officer_2 
+				days = 180
+			}
 		}
 
 	}
@@ -2452,13 +2511,16 @@ focus_tree = {
 					has_war = no
 				}
 			completion_reward = {
-					add_ideas = KOR_national_development
+					add_timed_idea = {
+						idea = KOR_national_development
+						days = 365
+					}	
 				}
 
 	}
 	focus = {
 		id = kor_neutrality
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_KOR_strong_hand
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_up-coupdetat
@@ -2469,7 +2531,39 @@ focus_tree = {
 		x = 65
 		y = 4
 			completion_reward = {
-					add_stability = 0.1
+					custom_effect_tooltip = TOOLTIP_EMPEROR_WILL_BE_LEADER
+					set_party_name = {
+						ideology = fascism
+						long_name = "수구파"
+						name = "수구파"
+					}
+					set_party_name = {
+						ideology = neutrality
+						long_name = "대한제국 황실"
+						name = "대한제국 황실"
+					}
+					hidden_effect = {
+						set_party_name = {
+							ideology = democratic
+							long_name = "보수당"
+							name = "보수당"
+						}
+						set_party_name = {
+							ideology = communism
+							long_name = "유교공산당"
+							name = "유교공산당"
+						}
+						create_country_leader = {
+							name = "Yi Jin"
+							desc = "KOR_YI_JIN_DESC"
+							picture = "gfx/leaders/KOR/Portrait_Yi_Kang.dds"
+							expire = "1955.8.1"
+							ideology = despotism
+							traits = {
+								korea_emperor
+							}
+						}
+					}
 				}
 
 	}
@@ -2483,17 +2577,17 @@ focus_tree = {
 		x = 65
 		y = 5
 			completion_reward = {
+					add_stability = 0.1
 					add_popularity = {
 							ideology = neutrality
-							popularity = 0.10
+							popularity = 0.05
 						}
-					add_ideas = KOR_great_Yi_kang
 				}
 
 	}
 	focus = {
 		id = kor_a_stronger_country
-		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		icon = GFX_focus_chi_control_army
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_up-coupdetat
@@ -2504,7 +2598,19 @@ focus_tree = {
 		x = 67
 		y = 4
 			completion_reward = {
-					add_ideas = KOR_great_korea
+					custom_effect_tooltip = TOOLTIP_JUNTA_WILL_BE_LEADER
+					hidden_effect = {
+						create_country_leader = {
+							name = "EOK Military Junta"
+							desc = ""
+							picture = "gfx/leaders/KOR/Portrait_KOR_military_junta.png"
+							expire = "1955.8.1"
+							ideology = despotism
+							traits = {
+								korean_military_junta
+							}
+						}
+					}
 				}
 
 	}
@@ -2517,9 +2623,9 @@ focus_tree = {
 		}
 		x = 67
 		y = 5
-			completion_reward = {
-					add_manpower = 56172
-				}
+		completion_reward = {
+			remove_ideas = KOR_divided_politics
+		}
 
 	}
 	focus = {
@@ -2547,10 +2653,7 @@ focus_tree = {
 		x = 70
 		y = 4
 			completion_reward = {
-					swap_ideas = {
-							add_idea = KOR_strong_the_kingship
-							remove_idea = KOR_Weakening_the_kingship
-						}
+					add_stability = 0.05
 				}
 
 	}
@@ -2564,12 +2667,10 @@ focus_tree = {
 		x = 69
 		y = 5
 			available = {
-					has_political_power > 80
 				}
 			completion_reward = {
-					add_political_power = -80
+					add_political_power = 120
 					add_stability = 0.1
-					add_ideas = KOR_national_development_5years
 				}
 
 	}
@@ -2624,7 +2725,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kor_anti-Japanese_policy
-		icon = GFX_focus_AST_war_japan
+		icon = GFX_focus_ger_war
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_power_up_to_imperial
@@ -3658,25 +3759,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = kor_threat_united_states
-		icon = GFX_focus_attack_usa
-		cost = 5.00
-		prerequisite = {
-			focus = kor_tsushima
-		}
-		x = 58
-		y = 11
-			completion_reward = {
-					create_wargoal = {
-							type = puppet_wargoal_focus
-							target = USA
-						}
-				}
-
-	}
-	focus = {
 		id = kor_military_organization_youth
-		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		icon = focus_kcpr
 		cost = 5.00
 		prerequisite = {
 			focus = kor_new_lifeguard_extension
@@ -3684,8 +3768,8 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = kor_ethnicity
 		}
-		x = 40
-		y = 4
+		x = 42
+		y = 5
 			completion_reward = {
 					add_war_support = 0.05
 					add_ideas = KOR_military_organization_youth
@@ -3694,13 +3778,13 @@ focus_tree = {
 	}
 	focus = {
 		id = kor_best_gangju_2
-		icon = GFX_focus_goal_kor_empire_gangyu
-		cost = 5.00
+		icon = GFX_focus_kor_question
+		cost = 1.50
 		prerequisite = {
-			focus = kor_the_new_history
+			focus = kor_korean_lebensraum
 		}
-		x = 44
-		y = 4
+		x = 40
+		y = 3
 			completion_reward = {
 					add_popularity = {
 							ideology = fascism
@@ -3712,13 +3796,13 @@ focus_tree = {
 	}
 	focus = {
 		id = kor_puppet_king
-		icon = GFX_goal_generic_attack_allies
-		cost = 5.00
+		icon = GFX_focus_aus_kingfa
+		cost = 2.90
 		prerequisite = {
 			focus = kor_best_gangju_2
 		}
-		x = 44
-		y = 5
+		x = 40
+		y = 4
 			completion_reward = {
 					swap_ideas = {
 							remove_idea = KOR_Weakening_the_kingship
@@ -3729,7 +3813,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kor_ethnicity
-		icon = GFX_focus_BUL_destroy_the_zveno
+		icon = focus_knyc
 		cost = 5.00
 		prerequisite = {
 			focus = kor_the_new_history
@@ -3737,8 +3821,8 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = kor_military_organization_youth
 		}
-		x = 42
-		y = 4
+		x = 44
+		y = 5
 			completion_reward = {
 					add_ideas = KOR_we_korean
 				}
@@ -3751,8 +3835,8 @@ focus_tree = {
 		prerequisite = {
 			focus = kor_ethnicity
 		}
-		x = 42
-		y = 5
+		x = 44
+		y = 6
 			completion_reward = {
 					swap_ideas = {
 							remove_idea = KOR_we_korean
@@ -4131,7 +4215,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kor_national_vitality
-		icon = GFX_goal_generic_construction2
+		icon = GFX_focus_ger_recovery
 		cost = 5.00
 		prerequisite = {
 			focus = kor_national_development

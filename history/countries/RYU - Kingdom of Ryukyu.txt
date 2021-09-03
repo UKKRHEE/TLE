@@ -22,10 +22,28 @@ add_ideas = {
 }
 
 create_country_leader = {
-	name = "Jean de Laborde"
-	picture = "gfx/leaders/FRA/Portrait_France_Jean_de_Laborde.dds"
+	name = "Sho Hiroshi"
+	picture = "gfx/leaders/RYU/RYU_herosee.dds"
 	expire = "1965.1.1"
 	ideology = despotism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Sho Hiroshi"
+	picture = "gfx/leaders/RYU/RYU_herosee.dds"
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Sho Hiroshi"
+	picture = "gfx/leaders/RYU/RYU_herosee.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
 	traits = {
 		#
 	}

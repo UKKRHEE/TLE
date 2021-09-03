@@ -434,20 +434,6 @@ on_actions = {
 
 	#FROM is war target
 	on_declare_war = {
-			if = {
-				limit = {
-					FROM = {
-						tag = CHI
-						OR = {
-							has_idea = CHI_army_corruption_1
-							has_idea = CHI_army_corruption_2
-							has_idea = CHI_army_corruption_3
-						}
-					}
-					ROOT = { is_major = yes }
-				}
-				CHI = { country_event = korea.21 days = 2 }
-			}
 			#make sure Germany doesn't force ideology on France for the achievement
 			if = {
 				limit = {

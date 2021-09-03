@@ -1,5 +1,94 @@
 ideas = {
 	country = { #국민정신
+		KOR_emperors_country = {
+			picture = KOR_Weakening_the_kingship
+			modifier = {
+				stability_factor = 0.05
+				neutrality_drift = 0.1
+			}
+		}
+		KOR_is_failed_china = {
+			picture = officers_purged
+			modifier = {
+				stability_factor = -0.3
+				consumer_goods_factor = 0.3
+				war_support_factor = -0.3
+				political_power_cost = 0.3
+			}
+		}
+		KOR_embargo_us = {
+			picture = generic_goods_red_bonus
+			targeted_modifier = {
+				tag = USA
+				trade_opinion_factor = -1.0
+				license_armor_purchase_cost = 1.0
+				improve_relations_maintain_cost_factor = 9.99
+			}
+			targeted_modifier = {
+				tag = ENG
+				trade_opinion_factor = -1.0
+				license_armor_purchase_cost = 1.0
+				improve_relations_maintain_cost_factor = 9.99
+			}
+			targeted_modifier = {
+				tag = FRA
+				trade_opinion_factor = -1.0
+				license_armor_purchase_cost = 1.0
+				improve_relations_maintain_cost_factor = 9.99
+			}
+			targeted_modifier = {
+				tag = SOV
+				trade_opinion_factor = -1.0
+				license_armor_purchase_cost = 1.0
+				improve_relations_maintain_cost_factor = 9.99
+			}
+		}
+	    KOR_not_planed_attack = {
+			picture = chi_warlord_integration5
+			modifier = {
+			
+			}
+			targeted_modifier = {
+                tag = ZLC
+				attack_bonus_against = -0.3
+			}
+			targeted_modifier = {
+                tag = CHI
+				attack_bonus_against = -0.3
+			}
+			targeted_modifier = {
+                tag = WZC
+				attack_bonus_against = -0.3
+			}
+			targeted_modifier = {
+                tag = SND
+				attack_bonus_against = -0.3
+			}
+			targeted_modifier = {
+                tag = SHX
+				attack_bonus_against = -0.3
+			}
+			targeted_modifier = {
+                tag = HNC
+				attack_bonus_against = -0.3
+			}
+			targeted_modifier = {
+                tag = YUN
+				attack_bonus_against = -0.3
+			}
+			targeted_modifier = {
+                tag = XSM
+				attack_bonus_against = -0.3
+			}
+			targeted_modifier = {
+                tag = GXC
+				attack_bonus_against = -0.3
+			}
+			targeted_modifier = {
+                tag = SIK
+				attack_bonus_against = -0.3
+			}
+		}
 		KOR_failed_civilian_control_of_the_military = {
 			modifier = {
 				war_support_factor = 0.05
@@ -30,7 +119,7 @@ ideas = {
 		}
 		KOR_divided_politics = {
 			modifier = {
-				political_power_cost = 0.4
+				political_power_cost = 0.35
 				stability_factor = -0.05
 				surrender_limit = -0.3
 			}
@@ -164,7 +253,7 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.05
-				political_power_cost = 0.25
+				political_power_cost = 0.15
 				neutrality_drift = 0.1
 				custom_modifier_tooltip = tooltip_civilwar_willbe_WTK
 			}
