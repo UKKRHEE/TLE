@@ -1,0 +1,515 @@
+ideas = {
+	
+	country = {
+
+		JAP_war_spirit = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				army_morale_factor = 0.1
+				army_attack_factor = 0.1
+			}
+		}
+
+		JAP_army_planning = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_war_preparation
+			
+			modifier = {
+				max_planning = 0.25
+				planning_speed = 0.25
+			}
+		}
+
+		JAP_sea_invasion = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				amphibious_invasion = 0.10
+				invasion_preparation = -0.2 
+			}
+		}
+
+		JAP_jungle_combat = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				attrition = -0.1
+				army_morale_factor = 0.1
+			}
+		}
+
+		JAP_loyal_army = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = YUG_federal_defense_council
+			
+			modifier = {
+				political_power_gain = 0.15
+				army_morale_factor = 0.1
+			}
+		}
+
+		JAP_student_idea = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = 0.02
+				research_speed_factor = 0.05
+			}
+		}
+
+		JAP_industrial_powerhouse = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.05  
+			}
+		}
+
+		JAP_facist_unrest = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_2
+			
+			modifier = {
+				stability_factor  = -0.25
+				political_power_gain = -0.25
+			}
+		}
+
+		JAP_further_reforms = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				stability_factor  = -0.15
+				political_power_gain = -0.15
+			}
+		}
+
+		JAP_democratic_popularity = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+			
+			modifier = {
+				stability_factor  = -0.05
+				political_power_gain = -0.10
+			}
+		}
+
+		JAP_democratic_outburst = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+			
+			modifier = {
+				stability_factor  = -0.10
+				political_power_gain = -0.15
+			}
+		}
+
+		JAP_silencing = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_army_of_aggression_focus
+			
+			modifier = {
+				stability_factor  = -0.025
+				political_power_gain = -0.05
+			}
+		}
+
+		JAP_new_project = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.10
+			}
+		}
+
+		JAP_full_rights = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				stability_factor  = -0.075
+				political_power_gain = -0.075
+			}
+		}
+
+		JAP_democratic_nation = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = JAP_democratic
+			
+			modifier = {
+				stability_factor  = 0.15
+				political_power_gain = 0.15
+			}
+		}
+
+		JAP_slaves = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_deal_with_the_devil
+			
+			modifier = {
+			    industrial_capacity_factory =0.10
+			    production_speed_buildings_factor = 0.10
+				stability_factor  = -0.10
+				political_power_gain = -0.05
+			}
+		}
+
+		JAP_slaves1 = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_deal_with_the_devil
+			
+			modifier = {
+			    industrial_capacity_factory =0.10
+			    production_speed_buildings_factor = 0.10
+				stability_factor  = -0.025
+			}
+		}
+
+		JAP_resource = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_factory_strikes
+			
+			modifier = {
+			    local_resources_factor = 0.10 
+				stability_factor  = -0.10
+				political_power_gain = -0.05
+			}
+		}
+
+		JAP_resource1 = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_factory_strikes
+			
+			modifier = {
+			    local_resources_factor = 0.125 
+				stability_factor  = -0.025
+			}
+		}
+
+		JAP_imperial_glory = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = state_shintoism
+			
+			modifier = {
+			    political_power_gain = 0.25
+			    war_support_factor = 0.1
+				stability_factor  = 0.10
+			}
+		}
+
+		JAP_fighters_for_emporer = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+			    conscription_factor = 0.05 
+			    war_support_factor = 0.1
+			}
+		}
+
+
+		JAP_warriors = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+			    army_attack_factor = 0.1
+			    army_defence_factor = 0.1 
+			}
+		}
+
+
+		JAP_new_army = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+			    army_org_Factor = 0.1 
+			    army_speed_factor = 0.1
+			    land_reinforce_rate = 0.1
+			}
+		}
+
+		JAP_influence_us = {
+			
+		#	allowed = {
+		#		original_tag = GER
+		#	}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.10 
+				democratic_acceptance = 85
+			}
+		}
+		}
+}

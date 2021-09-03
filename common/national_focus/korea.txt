@@ -962,7 +962,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_New_Deal
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_focus_ger_auto
 		cost = 10.00
 		prerequisite = {
 			focus = kor_public_welfare_reform_2
@@ -1040,7 +1040,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_peoples_save
-		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		icon = GFX_focus_ger_autarky
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_air_production
@@ -1091,8 +1091,8 @@ focus_tree = {
 	}
 	focus = {
 		id = kor_reform_korea
-		icon = GFX_focus_goal_KOR_reform_korea 
-		cost = 5.00
+		icon = GFX_focus_kor_empire 
+		cost = 10
 		
 		mutually_exclusive = {
 			focus = KOR_use_the_anti-armed
@@ -1107,22 +1107,13 @@ focus_tree = {
 					factor = 2
 				}
 			completion_reward = {
-				create_country_leader = {
-					name = "Kim Koo"
-					desc = ""
-					picture = "gfx/leaders/KOR/Portrait_Kim_Koo.png"
-					expire = "1951.1.5"
-					ideology = conservatism
-					traits = {
-					}
-				}
 					add_political_power = 150
 					add_stability = 0.05
 					#country_event = kor_news.1
-					add_named_threat = {
-							threat = 3
-							name = kor_reform_korea
-						}
+					#add_named_threat = {
+					#		threat = 3
+					#		name = kor_reform_korea
+					#	}
 					set_country_flag = korea_the_yi_kang
 					hidden_effect = {
 							add_ace = {
@@ -1483,7 +1474,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_Entrepreneurship_Promotion
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_hun_workers
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_gold_collecting_exercise
@@ -1516,7 +1507,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kor_monarchy
-		icon = GFX_focus_goal_KOR_jeju_annex
+		icon = GFX_focus_military_coup
 		cost = 5.00
 		prerequisite = {
 			focus = kor_reform_korea
@@ -1538,7 +1529,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kor_korean_lebensraum
-		icon = GFX_focus_goal_KOR_heil_korea
+		icon = GFX_goal_prussia_army
 		cost = 5.00
 		prerequisite = {
 			focus = kor_monarchy
@@ -1568,7 +1559,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kor_new_lifeguard_extension
-		icon = GFX_goal_generic_axis_build_infantry
+		icon = GFX_focus_ger_freikorps
 		cost = 5.00
 		prerequisite = {
 			focus = kor_korean_lebensraum
@@ -1579,7 +1570,7 @@ focus_tree = {
 		x = 40
 		y = 3
 			completion_reward = {
-					add_manpower = 50000
+					add_manpower = 62350
 				}
 
 	}
@@ -1603,7 +1594,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kor_encouraging_patriotism_2
-		icon = GFX_focus_ger_revive_kaiserreich
+		icon = GFX_focus_jap_free_korea
 		cost = 5.00 
 		prerequisite = {
 			focus = kor_korean_lebensraum
@@ -1631,7 +1622,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kor_territory_expansion
-		icon = GFX_focus_chi_army_reform
+		icon = GFX_focus_goal_KOR_reform_korea
 		cost = 5.00
 		prerequisite = {
 			focus = kor_korean_lebensraum
@@ -1951,6 +1942,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = kor_friendship_with_japan
 		}
+		available = {
+			is_in_faction = no
+		}
 		x = 56
 		y = 5
 		completion_reward = {
@@ -1972,13 +1966,24 @@ focus_tree = {
 		x = 56
 		y = 6
 		completion_reward = {
-			SOV = {
-				white_peace = KOR
-			}
-			FNG = {
-				country_event = {
-					id = korea.11
+			KOR = {
+				annex_country = {
+					target = RUS
+					transfer_troops = yes
 				}
+			}
+			SOV = {
+				transfer_state = 564
+				transfer_state = 563
+				transfer_state = 565
+				transfer_state = 574
+				transfer_state = 562
+				transfer_state = 561
+				transfer_state = 644
+				transfer_state = 560
+				transfer_state = 567
+				transfer_state = 637
+				transfer_state = 657
 			}
 		}
 
@@ -1996,7 +2001,6 @@ focus_tree = {
 		x = 61
 		y = 5
 			available = {
-					has_political_power > 49
 					NOT = {
 							has_government = communism
 							has_government = neutrality
@@ -2007,8 +2011,14 @@ focus_tree = {
 
 }
 			completion_reward = {
-					add_political_power = -50
 					add_ideas = KOR_militarism
+					create_faction = KOR_DEFENCE_FACTION
+					add_to_faction = KMN
+					add_to_faction = QIN
+					add_to_faction = MON
+					add_to_faction = RYU 
+					add_to_faction = RUS
+					
 				}
 
 	}
@@ -2306,22 +2316,14 @@ focus_tree = {
 		x = 61
 		y = 8
 			available = {
-					JAP = {
-							has_completed_focus = JAP_purge_the_kodoha_faction
-							is_faction_leader = yes
-						}
+				is_faction_leader = yes
 				}
 			bypass = {
-					JAP = {
-							NOT = {
-							has_completed_focus = JAP_purge_the_kodoha_faction
-						}
-					}	
 				}
 			completion_reward = {
 					JAP = {
 							country_event = {
-								id = generic.2
+								id = generic.5
 							}
 						}
 				}
@@ -3739,7 +3741,6 @@ focus_tree = {
 		y = 4
 			completion_reward = {
 					add_ideas = KOR_we_korean
-					add_manpower = 30000
 				}
 
 	}

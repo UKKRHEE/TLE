@@ -9,14 +9,16 @@ set_research_slots = 4
 set_fuel_ratio = 1.0
 add_ideas = {
 	JAP_hirohito
-	state_shintoism
+	#state_shintoism
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
 
-	JAP_zaibatsus
-	JAP_duplicate_research_efforts
-	JAP_militarism
+	#JAP_zaibatsus
+	#JAP_duplicate_research_efforts
+	#JAP_militarism
+	JAP_army_planning
+	JAP_democratic_popularity
 }
 
 609 = {

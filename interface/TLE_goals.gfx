@@ -1,6 +1,14 @@
 spriteTypes = {
 
 	SpriteType = {  
+		name = "GFX_focus_goal_kor_empire_of_korea" 
+		texturefile = "gfx/interface/goals/goal_kor_empire_of_korea.dds"
+	} 
+	SpriteType = {  
+		name = "GFX_focus_military_coup" 
+		texturefile = "gfx/interface/goals/focus_military_coup.dds"
+	} 
+	SpriteType = {  
 		name = "GFX_focus_goal_KOR_jeju_annex"  
 		texturefile = "gfx/interface/goals/goal_KOR_jeju_annex.png"
 	}
