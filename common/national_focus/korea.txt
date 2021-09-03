@@ -1730,12 +1730,13 @@ focus_tree = {
 		y = 6
 			available = {	
 					
-					CHI = {
+					ZLC = {
 						controls_state = 608
 						controls_state = 614
-						controls_state = 597
-						controls_state = 743
 					}
+					SND = {
+						is_puppet_of = ZLC
+					}	
 				}
 			bypass = {
 					OR = {

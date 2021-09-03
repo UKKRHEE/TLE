@@ -678,11 +678,11 @@ country_event = { #중국의 거절!
 			    id = korea.20
 			}
 			declare_war_on = {
-				target = SHX
+				target = ZLC
 				type = puppet_wargoal_focus
 			}
 			declare_war_on = {
-				target = CHI
+				target = SND
 				type = puppet_wargoal_focus
 			}
 		}
