@@ -1,0 +1,157 @@
+ideas = {
+
+	country = {
+		CHI_wargaming_division = {
+
+			picture = chi_wargaming_division
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				max_command_power = 5
+			}
+		}
+
+		CHI_chinese_general_staff = {
+
+			picture = general_staff
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_leader_start_planning_level = 1
+			}
+		}
+	
+		CHI_elite_mountaineers = {
+
+			picture = ast_volunteer_defence_corps
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				special_forces_cap = 0.02
+			}
+		}
+
+		CHI_french_drill = {
+
+			picture = generic_intel_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_leader_start_defense_level = 1
+			}
+		}
+
+		CHI_modern_logistics = {
+
+			picture = FRA_motorized_focus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_leader_start_logistics_level = 1
+			}
+		}
+
+		CHI_construction_battalions = {
+
+			picture = ast_all_in
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				max_dig_in = 5
+			}
+		}
+
+		CHI_chinese_support = {
+
+			picture = chi_chinese_support
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				autonomy_gain = 0.5
+			}
+		}
+
+		CHI_train_marines = {
+
+			picture = generic_infantry_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				special_forces_cap = 0.02
+			}
+		}
+
+	}
+}

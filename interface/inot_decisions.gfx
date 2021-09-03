@@ -1,0 +1,11 @@
+spriteTypes = {	
+
+	### categories
+	
+
+	spriteType = {
+		name = "GFX_decision_cat_generic_pink_map"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_pink_map.dds"
+	}
+
+}
