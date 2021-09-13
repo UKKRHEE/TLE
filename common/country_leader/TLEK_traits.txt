@@ -1,8 +1,30 @@
 leader_traits = {
 
+	young_monarchist = {
+		stability_factor = 0.1
+		fascism_drift = 0.05
+		neutrality_drift = 0.05
+		war_support_factor = 0.05
+	}
+	korean_military_junta = {
+		stability_factor = -0.05
+		neutrality_drift = 0.05
+		war_support_factor = 0.05
+     	justify_war_goal_time = -0.4
+	}
+	the_democratist = {
+		democratic_drift = 0.1
+		research_speed_factor = 0.05
+		war_support_factor = -0.05
+	}	
+	leader_of_despotism = {
+		war_support_factor = 0.05
+		army_core_defence_factor = 0.05
+	}
 	korea_emperor = { #대한제국의 황제
 		random = no
-		stability_factor = 0.1
+		stability_factor = 0.05
+		army_core_defence_factor = 0.05
 
 		ai_will_do = {
 			factor = 1

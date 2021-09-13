@@ -738,16 +738,7 @@ instant_effect = {
 			type = infantry_equipment_1
 			creator = "KOR"
 		}
-		requested_factories = 10
-		progress = 0.50
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = pistol_0
-			creator = "KOR"
-		}
-		requested_factories = 3
+		requested_factories = 5
 		progress = 0.50
 		efficiency = 100
 	}
@@ -756,7 +747,7 @@ instant_effect = {
 			type = support_equipment_1
 			creator = "KOR"
 		}
-		requested_factories = 3
+		requested_factories = 2
 		progress = 0.50
 		efficiency = 100
 	}
@@ -771,7 +762,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = fighter_equipment_1
+			type = fighter_equipment_0
 			creator = "KOR"
 		}
 		requested_factories = 2

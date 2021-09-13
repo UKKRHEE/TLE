@@ -1,6 +1,10 @@
 spriteTypes = {
 
 	SpriteType = {   
+		name = "GFX_focus_c45_reject" 
+		texturefile = "gfx/interface/goals/focus_c45_reject.dds"   
+	}   
+	SpriteType = {   
 		name = "GFX_focus_chi_socialist_purge" 
 		texturefile = "gfx/interface/goals/focus_chi_socialist_purge.dds"  
 	}   

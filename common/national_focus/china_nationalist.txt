@@ -9,24 +9,25 @@ focus_tree = {
 	}
 
 	default = no
+	shared_focus = CHI_invite_foreign_investors
 
 	continuous_focus_position = { x = 50 y = 1200 }
 	########################################################################
 	focus = {
-		id = CHI_constitution
+		id = ZLC_constitution
 		icon = GFX_focus_generic_treaty
 		cost = 10.00
 		x = 3
 		y = 0
 		available = {
-		has_completed_focus = CHI_stay_on_course
+		has_completed_focus = ZLC_stay_on_course
 		}
 		completion_reward = {
 		add_political_power = 120
 		}
 	}
 	focus = {
-		id = CHI_rebuild
+		id = ZLC_rebuild
 		icon = GFX_focus_generic_little_entente
 		cost = 10.00
 		x = 15
@@ -39,7 +40,7 @@ focus_tree = {
 	}
 	#Politics
 	focus = {
-		id = CHI_stay_on_course
+		id = ZLC_stay_on_course
 		icon = GFX_focus_generic_china1
 		cost = 1.50
 		x = 39
@@ -51,17 +52,17 @@ focus_tree = {
 	}
 	###############################################################################################################################
 	focus = {
-		id = CHI_chiang
+		id = ZLC_chiang
 		icon = GFX_focus_prc_remove_chiang_kai_shek
 		cost = 5.00
 		prerequisite = {
-			focus = CHI_stay_on_course
+			focus = ZLC_stay_on_course
 		}
 		mutually_exclusive = {
-			focus = CHI_left
+			focus = ZLC_left
 		}
 		available = {
-		NOT = { has_country_leader = { name = "Hu Hanmin" ruling_only = yes } }
+		    has_country_leader = { name = "Wu Peifu" ruling_only = yes }
         }
 		x = 29
 		y = 1
@@ -69,11 +70,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_invite_military_members
+		id = ZLC_invite_military_members
 		icon = GFX_chi_mil_gov
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_chiang
+			focus = ZLC_chiang
 		}
 		x = 28
 		y = 2
@@ -83,11 +84,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_restrict_the_party
+		id = ZLC_restrict_the_party
 		icon = GFX_chi_restrict_party
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_chiang
+			focus = ZLC_chiang
 		}
 		x = 30
 		y = 2
@@ -97,12 +98,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_war_propaganda
+		id = ZLC_war_propaganda
 		icon = GFX_goal_generic_propaganda
 		cost = 10.00
 		prerequisite = {
-		focus = CHI_restrict_the_party
-		focus = CHI_invite_military_members
+		focus = ZLC_restrict_the_party
+		focus = ZLC_invite_military_members
 		}
 		x = 28
 		y = 4
@@ -112,27 +113,47 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_remilitarize_shangai
+		id = ZLC_remilitarize_shangai
 		icon = GFX_goal_generic_military_sphere
 		cost = 2.00
 		prerequisite = {
-		focus = CHI_invite_military_members
-		focus = CHI_restrict_the_party
+		focus = ZLC_invite_military_members
+		focus = ZLC_restrict_the_party
 		}
 		x = 29
 		y = 3
 		completion_reward = {
-        hidden_effect = { country_event = { days = 1 id = china.1020 } }
-        613 = { set_demilitarized_zone = no }
+			if = {
+				limit = {
+					WZC = {
+						exists = yes
+					}
+				}
+				create_wargoal = {
+					type = annex_everything 
+					target = WZC
+				}
+			}	
+			if = {
+				limit = {
+					HNC = {
+						exists = yes
+					}
+				}
+				create_wargoal = {
+					type = annex_everything 
+					target = HNC
+				}
+			}	
 		}
 	}
 	focus = {
-		id = CHI_absolute_controll
+		id = ZLC_absolute_controll
 		icon = GFX_focus_generic_support_the_left_right
 		cost = 10.00
 		prerequisite = {
-		focus = CHI_restrict_the_party
-		focus = CHI_invite_military_members
+		focus = ZLC_restrict_the_party
+		focus = ZLC_invite_military_members
 		}
 		x = 30
 		y = 4
@@ -142,11 +163,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_new_problem
+		id = ZLC_new_problem
 		icon = GFX_focus_chi_country_side
 		cost = 10.00
 		prerequisite = {
-		focus = CHI_absolute_controll	
+		focus = ZLC_absolute_controll	
 		}
 		x = 31
 		y = 5
@@ -156,11 +177,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_new_life
+		id = ZLC_new_life
 		icon = GFX_focus_chi_new_life
 		cost = 10.00
 		prerequisite = {
-		focus = CHI_war_propaganda
+		focus = ZLC_war_propaganda
 		}
 		x = 27
 		y = 5
@@ -169,12 +190,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_unite_campaign
+		id = ZLC_unite_campaign
 		icon = GFX_chi_blue
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_war_propaganda
-			focus = CHI_absolute_controll
+			focus = ZLC_war_propaganda
+			focus = ZLC_absolute_controll
 		}
 		x = 29
 		y = 5
@@ -183,11 +204,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_work_longer
+		id = ZLC_work_longer
 		icon = GFX_goal_generic_construction2
 		cost = 5.00
 		prerequisite = {
-			focus = CHI_unite_campaign
+			focus = ZLC_unite_campaign
 		}
 		x = 28
 		y = 6
@@ -196,11 +217,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_militarian_industry
+		id = ZLC_militarian_industry
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
-			focus = CHI_unite_campaign
+			focus = ZLC_unite_campaign
 		}
 		x = 30
 		y = 6
@@ -224,11 +245,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_west_warlord
+		id = ZLC_west_warlord
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		cost = 5.00
 		prerequisite = {
-			focus = CHI_unite_campaign
+			focus = ZLC_unite_campaign
 		}
 		x = 27
 		y = 7
@@ -249,11 +270,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_north_campaign
+		id = ZLC_north_campaign
 		icon = GFX_chi_kill_emp
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_unite_campaign
+			focus = ZLC_unite_campaign
 		}
 		x = 29
 		y = 7
@@ -261,25 +282,29 @@ focus_tree = {
 		has_army_manpower = {
         size > 250000
            } 
-        SHX  = { exists = yes }
-        NOT = { has_non_aggression_pact_with = SHX }
-        NOT = { is_in_faction_with = SHX }
+        CHI  = { exists = yes }
+        NOT = { has_non_aggression_pact_with = CHI }
+        NOT = { is_in_faction_with = CHI }
 		}
-		will_lead_to_war_with = SHX
+		will_lead_to_war_with = CHI
 		completion_reward = {
 		add_war_support = 0.05
 		create_wargoal = {
         type = annex_everything
-        target = SHX
+        target = CHI
+           } 
+		create_wargoal = {
+        type = annex_everything
+        target = GXC
            } 
 		}
 	}
 	focus = {
-		id = CHI_root_out_communist
+		id = ZLC_root_out_communist
 		icon = GFX_goal_anti_comintern_pact
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_unite_campaign
+			focus = ZLC_unite_campaign
 		}
 		x = 31
 		y = 7
@@ -297,16 +322,24 @@ focus_tree = {
         target = PRC
         type = annex_everything
         }
+		declare_war_on = {
+        target = XSM
+        type = annex_everything
+        }
+		declare_war_on = {
+        target = SIK
+        type = annex_everything
+        }
 		}
 	}
 	focus = {
-		id = CHI_re_manchu
+		id = ZLC_re_manchu
 		icon = GFX_focus_jap_cast_the_die
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_west_warlord
-			focus = CHI_north_campaign
-			focus = CHI_root_out_communist
+			focus = ZLC_west_warlord
+			focus = ZLC_north_campaign
+			focus = ZLC_root_out_communist
 		}
 		x = 29
 		y = 8
@@ -314,25 +347,25 @@ focus_tree = {
 		has_army_manpower = {
         size > 500000
            } 
-        JAP = { exists = yes }
-        NOT = { has_non_aggression_pact_with = JAP }
-        NOT = { is_in_faction_with = JAP }
+        KOR = { exists = yes }
+        NOT = { has_non_aggression_pact_with = KOR }
+        NOT = { is_in_faction_with = KOR }
 		}
-		will_lead_to_war_with = JAP
-		will_lead_to_war_with = MAN
+		will_lead_to_war_with = KOR
+		will_lead_to_war_with = KMN
 		completion_reward = {
 		declare_war_on = {
-        target = JAP
+        target = KOR
         type = annex_everything
         }
 		}
 	}
 	focus = {
-		id = CHI_silence_the_left
+		id = ZLC_silence_the_left
 		icon = GFX_goal_demand_sudetenland
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_chiang
+			focus = ZLC_chiang
 		}
 		x = 26
 		y = 2
@@ -342,11 +375,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_ban_members
+		id = ZLC_ban_members
 		icon = GFX_chi_ban_left
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_silence_the_left
+			focus = ZLC_silence_the_left
 		}
 		x = 26
 		y = 3
@@ -356,11 +389,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_purge_socialist_and_communist
+		id = ZLC_purge_socialist_and_communist
 		icon = GFX_chi_socialist_purge
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_ban_members
+			focus = ZLC_ban_members
 		}
 		x = 26
 		y = 4
@@ -371,60 +404,60 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_attack_capitalists
+		id = ZLC_attack_capitalists
 		icon = GFX_chi_capitalist
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_chiang
+			focus = ZLC_chiang
 		}
 		x = 32
 		y = 2
 		completion_reward = {
 		add_political_power = 50
-		add_popularity = { ideology = conservatives popularity = -0.025 } 
+		add_popularity = { ideology = democratic popularity = -0.025 } 
 		}
 	}
 	focus = {
-		id = CHI_seize_assets
+		id = ZLC_seize_assets
 		icon = GFX_chi_seize
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_government_controlled_industry
+			focus = ZLC_government_controlled_industry
 		}
 		x = 32
 		y = 3
 		completion_reward = {
 		add_ideas = CHI_seized_assets
-		add_popularity = { ideology = conservatives popularity = -0.025 } 
+		add_popularity = { ideology = democratic popularity = -0.025 } 
 		}
 	}
 	focus = {
-		id = CHI_government_controlled_industry
+		id = ZLC_government_controlled_industry
 		icon = GFX_chi_state_controlled
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_attack_capitalists
+			focus = ZLC_attack_capitalists
 		}
 		x = 32
 		y = 4
 		completion_reward = {
 		add_ideas = CHI_controlled_industry
-		add_popularity = { ideology = conservatives popularity = -0.1 } 
+		add_popularity = { ideology = democratic popularity = -0.1 } 
 		}
 	}
 	#####################################################################################################################################
 	focus = {
-		id = CHI_left
+		id = ZLC_left
 		icon = GFX_focus_chi_cooperation_with_the_nationalists
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_stay_on_course
+			focus = ZLC_stay_on_course
 		}
 		mutually_exclusive = {
-			focus = CHI_chiang
+			focus = ZLC_chiang
 		}
 		available = {
-		NOT = { has_country_leader = { name = "Hu Hanmin" ruling_only = yes } }
+		NOT = { has_country_leader = { name = "Wu Peifu" ruling_only = yes } }
         }
 		x = 49
 		y = 1
@@ -432,11 +465,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_attract_investors
+		id = ZLC_attract_investors
 		icon = GFX_focus_generic_the_giant_wakes
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_left
+			focus = ZLC_left
 		}
 		x = 46
 		y = 2
@@ -445,11 +478,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_unite_the_party
+		id = ZLC_unite_the_party
 		icon = GFX_goal_generic_major_alliance
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_left
+			focus = ZLC_left
 		}
 		x = 52
 		y = 2
@@ -458,24 +491,26 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_deal_with_chiang
+		id = ZLC_deal_with_chiang
 		icon = GFX_focus_chi_deal_chiang
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_unite_the_party
+			focus = ZLC_unite_the_party
 		}
 		x = 51
 		y = 3
 		completion_reward = {
+		CHI = {
 		country_event = { id = china.1086 }
+		}
 		}
 	}
 	focus = {
-		id = CHI_regain_trust_of_warlords
+		id = ZLC_regain_trust_of_warlords
 		icon = GFX_focus_chi_compromise_warlords
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_unite_the_party
+			focus = ZLC_unite_the_party
 		}
 		x = 53
 		y = 3
@@ -485,14 +520,15 @@ focus_tree = {
         remove_idea = CHI_risk_of_famine
         add_idea = CHI_risk_of_famine_1
         }
+		
 		}
 	}
 	focus = {
-		id = CHI_land_reforms
+		id = ZLC_land_reforms
 		icon = GFX_focus_chi_land_reform
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_regain_trust_of_warlords
+			focus = ZLC_regain_trust_of_warlords
 		}
 		x = 54
 		y = 4
@@ -521,11 +557,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_trial_the_military
+		id = ZLC_trial_the_military
 		icon = GFX_focus_chi_control_army
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_deal_with_chiang
+			focus = ZLC_deal_with_chiang
 		}
 		x = 50
 		y = 4
@@ -534,35 +570,55 @@ focus_tree = {
 		add_command_power = -100
 		}
 	}
-	focus = {
-		id = CHI_root_out_corruption
+	focus = { 
+		id = ZLC_root_out_corruption
 		icon = GFX_focus_chi_corruption
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_land_reforms
+			focus = ZLC_land_reforms
 		}
 		prerequisite = {
-			focus = CHI_trial_the_military
+			focus = ZLC_trial_the_military
 		}
 		prerequisite = {
-			focus = CHI_regain_trust_of_warlords
+			focus = ZLC_regain_trust_of_warlords
 		}
 		prerequisite = {
-			focus = CHI_deal_with_chiang
+			focus = ZLC_deal_with_chiang
 		}
 		x = 52
 		y = 5
 		completion_reward = {
 		add_stability = 0.1
 		remove_ideas = CHI_disjointed_gov
+		every_other_country = {
+			limit = {
+				is_puppet_of = ROOT
+				OR = {
+					original_tag = CHI
+					original_tag = SHX
+					original_tag = XSM 
+					original_tag = WZC
+					original_tag = HNC
+					original_tag = SIK
+					original_tag = SZC
+					original_tag = SND
+					original_tag = YUN
+					original_tag = GXC
+				}
+			}
+			country_event = {
+				id = china.1088
+			}
+		}
 		}
 	}
 	focus = {
-		id = CHI_infrastructure_brings_more_workers
+		id = ZLC_infrastructure_brings_more_workers
 		icon = GFX_chi_left_infraproject
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_attract_investors
+			focus = ZLC_attract_investors
 		}
 		x = 46
 		y = 3
@@ -601,11 +657,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_harbors
+		id = ZLC_harbors
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_attract_investors
+			focus = ZLC_attract_investors
 		}
 		x = 48
 		y = 3
@@ -637,11 +693,11 @@ focus_tree = {
 		}
 	}	
 	focus = {
-		id = CHI_resources
+		id = ZLC_resources
 		icon = GFX_goal_generic_construction2
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_attract_investors
+			focus = ZLC_attract_investors
 		}
 		x = 44
 		y = 3
@@ -674,11 +730,11 @@ focus_tree = {
 		}
 	}		
 	focus = {
-		id = CHI_backlands_work
+		id = ZLC_backlands_work
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_infrastructure_brings_more_workers
+			focus = ZLC_infrastructure_brings_more_workers
 		}
 		x = 46
 		y = 4
@@ -710,11 +766,11 @@ focus_tree = {
 	    }
 	}
 	focus = {
-		id = CHI_future_of_china
+		id = ZLC_future_of_china
 		icon = GFX_goal_generic_more_territorial_claims
 		cost = 7.2
 		prerequisite = {
-			focus = CHI_left
+			focus = ZLC_left
 		}
 		x = 49
 		y = 5
@@ -724,11 +780,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_the_real_threat
+		id = ZLC_the_real_threat
 		icon = GFX_focus_AST_war_japan
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_future_of_china
+			focus = ZLC_future_of_china
 		}
 		available = {
 		JAP = { has_completed_focus = JAP_rising_sun }
@@ -740,11 +796,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_defensive_alliance
+		id = ZLC_defensive_alliance
 		icon = GFX_goal_generic_national_unity
 		cost = 5.00
 		prerequisite = {
-			focus = CHI_the_real_threat
+			focus = ZLC_the_real_threat
 		}
 		x = 44
 		y = 7
@@ -754,11 +810,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_coastal_defenses
+		id = ZLC_coastal_defenses
 		icon = GFX_focus_generic_coastal_fort
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_the_real_threat
+			focus = ZLC_the_real_threat
 		}
 		x = 46
 		y = 7
@@ -810,11 +866,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_buying_ships
+		id = ZLC_buying_ships
 		icon = GFX_focus_generic_destroyer
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_coastal_defenses
+			focus = ZLC_coastal_defenses
 		}
 		x = 46
 		y = 8
@@ -831,24 +887,26 @@ focus_tree = {
       }
 	}
 	focus = {
-		id = CHI_yunnan
+		id = ZLC_yunnan
 		icon = GFX_focus_chi_sichuan_unite
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_future_of_china
+			focus = ZLC_future_of_china
 		}
 		x = 49
 		y = 6
 		completion_reward = {
-        country_event = { id = china.1045 }
+			YUN = {
+				country_event = { id = china.1045 }
+			}
 		}
 	}
 	focus = {
-		id = CHI_secret_alliance
+		id = ZLC_secret_alliance
 		icon = GFX_focus_prc_social_democracy
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_yunnan
+			focus = ZLC_yunnan
 		}
 		x = 49
 		y = 7
@@ -857,11 +915,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_old_goal
+		id = ZLC_old_goal
 		icon = GFX_focus_chi_qing
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_secret_alliance
+			focus = ZLC_secret_alliance
 		}
 		x = 49
 		y = 8
@@ -871,14 +929,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_unify
+		id = ZLC_unify
 		icon = GFX_focus_chi_united_front
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_old_goal
+			focus = ZLC_old_goal
 		}
 		available = {
-        NOT = { has_completed_focus = CHI_betray }
+        NOT = { has_completed_focus = ZLC_betray }
 		}
 		x = 48
 		y = 9
@@ -888,11 +946,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_betray
+		id = ZLC_betray
 		icon = GFX_focus_prc_infiltration
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_old_goal
+			focus = ZLC_old_goal
 		}
 		x = 50
 		y = 9
@@ -905,15 +963,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_bear
+		id = ZLC_bear
 		icon = GFX_focus_rus_russiantsar
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_future_of_china
+			focus = ZLC_future_of_china
 		}
 		available = {
 		country_exists = RUS
-		NOT = { RUS = { has_government = conservatives } }
+		NOT = { RUS = { has_government = democratic } }
 		}
 		x = 53
 		y = 6
@@ -922,15 +980,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_our_lands
+		id = ZLC_our_lands
 		icon = GFX_focus_generic_provoke_border_clashes
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_bear
+			focus = ZLC_bear
 		}
 		available = {
 		country_exists = RUS
-		NOT = { RUS = { has_government = conservatives } }
+		NOT = { RUS = { has_government = democratic } }
 		}
 		x = 53
 		y = 7
@@ -939,15 +997,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_demand
+		id = ZLC_demand
 		icon = GFX_goal_generic_political_pressure
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_our_lands
+			focus = ZLC_our_lands
 		}
 		available = {
 		country_exists = RUS
-		NOT = { RUS = { has_government = conservatives } }
+		NOT = { RUS = { has_government = democratic } }
 		NOT = { country_exists = PRC country_exists = SHX }
 		}
 		x = 53
@@ -957,11 +1015,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_western_support
+		id = ZLC_western_support
 		icon = GFX_focus_generic_license_production
 		cost = 20.00
 		prerequisite = {
-			focus = CHI_demand
+			focus = ZLC_demand
 		}
 		x = 53
 		y = 9
@@ -985,14 +1043,14 @@ focus_tree = {
 	}
 	##################################################################################################################################################
 		focus = {
-		id = CHI_defence_fond
+		id = ZLC_defence_fond
 		icon = GFX_goal_generic_military_sphere
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_rebuild
+			focus = ZLC_rebuild
 		}
 		available = {
-		has_completed_focus = CHI_stay_on_course
+		has_completed_focus = ZLC_stay_on_course
 		}
 		x = 15
 		y = 1
@@ -1001,11 +1059,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_defend_JAP
+		id = ZLC_defend_JAP
 		icon = GFX_goal_generic_fortify_city
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_defence_fond
+			focus = ZLC_defence_fond
 		}
 		x = 14
 		y = 2
@@ -1056,11 +1114,11 @@ focus_tree = {
 	}
 	}
 	focus = {
-		id = CHI_coastal_def
+		id = ZLC_coastal_def
 		icon = GFX_goal_generic_construct_military
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_defence_fond
+			focus = ZLC_defence_fond
 		}
 		x = 16
 		y = 2
@@ -1103,11 +1161,11 @@ focus_tree = {
 	}
 	}
 	focus = {
-		id = CHI_stabilize_economy
+		id = ZLC_stabilize_economy
 		icon = GFX_goal_generic_national_unity
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_infrastructure
+			focus = ZLC_infrastructure
 		}
 		x = 2
 		y = 2
@@ -1118,11 +1176,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_infrastructure
+		id = ZLC_infrastructure
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_constitution
+			focus = ZLC_constitution
 		}
 		x = 2
 		y = 1
@@ -1160,12 +1218,12 @@ focus_tree = {
 		}
 	}	
 	focus = {
-		id = CHI_slot2
+		id = ZLC_slot2
 		icon = GFX_goal_generic_scientific_exchange
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_dockyard_effort
-			focus = CHI_radars
+			focus = ZLC_dockyard_effort
+			focus = ZLC_radars
 		}
 		available = {
 			num_of_factories > 75
@@ -1177,12 +1235,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_industrial_effort1
+		id = ZLC_industrial_effort1
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_stabilize_economy
-			focus = CHI_slot1
+			focus = ZLC_stabilize_economy
+			focus = ZLC_slot1
 		}
 		x = 3
 		y = 3
@@ -1198,11 +1256,11 @@ focus_tree = {
 	    }
 	}
 	focus = {
-		id = CHI_industrial_effort2
+		id = ZLC_industrial_effort2
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_industrial_effort1
+			focus = ZLC_industrial_effort1
 		}
 		x = 2
 		y = 4
@@ -1218,11 +1276,11 @@ focus_tree = {
 	    }
 	}	
 	focus = {
-		id = CHI_dockyard_effort
+		id = ZLC_dockyard_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_industrial_effort2
+			focus = ZLC_industrial_effort2
 		}
 		x = 2
 		y = 5
@@ -1324,11 +1382,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_school_reform
+		id = ZLC_school_reform
 		icon = GFX_goal_generic_defence
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_constitution
+			focus = ZLC_constitution
 		}
 		x = 4
 		y = 1
@@ -1337,11 +1395,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_slot1
+		id = ZLC_slot1
 		icon = GFX_goal_generic_scientific_exchange
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_school_reform
+			focus = ZLC_school_reform
 		}
 		x = 4
 		y = 2
@@ -1350,11 +1408,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_sprite
+		id = ZLC_sprite
 		icon = GFX_goal_generic_cavalry
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_industrial_effort1
+			focus = ZLC_industrial_effort1
 		}
 		x = 4
 		y = 4
@@ -1363,11 +1421,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_radars
+		id = ZLC_radars
 		icon = GFX_goal_generic_radar
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_sprite
+			focus = ZLC_sprite
 		}
 		x = 4
 		y = 5
@@ -1382,11 +1440,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_army_path
+		id = ZLC_army_path
 		icon = GFX_focus_chi_whampoa_military_academy
 		cost = 8.00
 		prerequisite = {
-			focus = CHI_rebuild
+			focus = ZLC_rebuild
 		}
 		x = 9
 		y = 1
@@ -1395,11 +1453,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_inf_equipment
+		id = ZLC_inf_equipment
 		icon = GFX_chi_type_24
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_army_path
+			focus = ZLC_army_path
 		}
 		x = 7
 		y = 2
@@ -1419,11 +1477,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_inf_equipment_hard_buy
+		id = ZLC_inf_equipment_hard_buy
 		icon = GFX_goal_generic_small_arms
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_inf_equipment
+			focus = ZLC_inf_equipment
 		}
 		x = 7
 		y = 3
@@ -1438,11 +1496,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_artillery
+		id = ZLC_artillery
 		icon = GFX_goal_generic_army_artillery2
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_army_path
+			focus = ZLC_army_path
 		}
 		x = 10
 		y = 2
@@ -1457,11 +1515,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_air
+		id = ZLC_air
 		icon = GFX_goal_generic_air_naval_bomber
 		cost = 2.0
 		prerequisite = {
-			focus = CHI_rebuild
+			focus = ZLC_rebuild
 		}
 		x = 21
 		y = 1
@@ -1471,11 +1529,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_air_warfare
+		id = ZLC_air_warfare
 		icon = GFX_focus_chi_air_question
 		cost = 5.00
 		prerequisite = {
-			focus = CHI_air
+			focus = ZLC_air
 		}
 		x = 18
 		y = 2
@@ -1484,11 +1542,11 @@ focus_tree = {
 	 }
 	}
 	focus = {
-		id = CHI_fighter
+		id = ZLC_fighter
 		icon = GFX_focus_chi_flying_tigers
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_air_warfare
+			focus = ZLC_air_warfare
 		}
 		x = 18
 		y = 3
@@ -1505,11 +1563,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_new_fighter
+		id = ZLC_new_fighter
 		icon = GFX_goal_generic_air_fighter
 		cost = 7.20
 		prerequisite = {
-			focus = CHI_fighter
+			focus = ZLC_fighter
 		}
 		x = 16
 		y = 4
@@ -1527,11 +1585,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_cas
+		id = ZLC_cas
 		icon = GFX_goal_generic_occupy_start_war
 		cost = 7.20
 		prerequisite = {
-			focus = CHI_fighter
+			focus = ZLC_fighter
 		}
 		x = 18
 		y = 4
@@ -1549,11 +1607,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_bomber
+		id = ZLC_bomber
 		icon = GFX_goal_generic_air_bomber
 		cost = 7.20
 		prerequisite = {
-			focus = CHI_fighter
+			focus = ZLC_fighter
 		}
 		available = {
 		has_tech = air_superiority	
@@ -1575,13 +1633,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_air_school
+		id = ZLC_air_school
 		icon = GFX_focus_chi_air_school
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_new_fighter
-			focus = CHI_cas
-			focus = CHI_bomber
+			focus = ZLC_new_fighter
+			focus = ZLC_cas
+			focus = ZLC_bomber
 		}
 		x = 18
 		y = 5
@@ -1597,11 +1655,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_medium_tank
+		id = ZLC_medium_tank
 		icon = GFX_goal_generic_army_tanks
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_support
+			focus = ZLC_support
 		}
 		available = {
 			has_army_experience > 450
@@ -1619,11 +1677,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_support
+		id = ZLC_support
 		icon = GFX_focus_generic_combined_arms
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_army_path
+			focus = ZLC_army_path
 		}
 		available = {
 			has_army_experience > 75
@@ -1641,11 +1699,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_motorized
+		id = ZLC_motorized
 		icon = GFX_focus_chi_trucks
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_support
+			focus = ZLC_support
 		}
 		available = {
 			has_army_experience > 125
@@ -1667,11 +1725,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_begin_sea
+		id = ZLC_begin_sea
 		icon = GFX_goal_generic_build_navy
 		cost = 5.00
 		prerequisite = {
-			focus = CHI_air
+			focus = ZLC_air
 		}
 		x = 23
 		y = 2
@@ -1684,14 +1742,14 @@ focus_tree = {
      }
 	}
 	focus = {
-		id = CHI_fleet_in_being
+		id = ZLC_fleet_in_being
 		icon = GFX_goal_generic_navy_battleship
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_begin_sea
+			focus = ZLC_begin_sea
 		}
 		mutually_exclusive = {
-			focus = CHI_flex_navy
+			focus = ZLC_flex_navy
 		}
 		x = 22
 		y = 3
@@ -1706,11 +1764,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_models
+		id = ZLC_models
 		icon = GFX_focus_generic_navy_battleship2
 		cost = 5.00
 		prerequisite = {
-			focus = CHI_fleet_in_being
+			focus = ZLC_fleet_in_being
 		}
 		x = 22
 		y = 4
@@ -1726,11 +1784,11 @@ focus_tree = {
 		}
 	}	
 	focus = {
-		id = CHI_navy_equip
+		id = ZLC_navy_equip
 		icon = GFX_goal_continuous_naval_production
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_models
+			focus = ZLC_models
 		}
 		x = 22
 		y = 5
@@ -1745,14 +1803,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_flex_navy
+		id = ZLC_flex_navy
 		icon = GFX_goal_generic_navy_anti_submarine
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_begin_sea
+			focus = ZLC_begin_sea
 		}
 		mutually_exclusive = {
-			focus = CHI_fleet_in_being
+			focus = ZLC_fleet_in_being
 		}
 		x = 24
 		y = 3
@@ -1767,11 +1825,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_submarine_models
+		id = ZLC_submarine_models
 		icon = GFX_goal_generic_navy_submarine
 		cost = 7.20
 		prerequisite = {
-			focus = CHI_flex_navy
+			focus = ZLC_flex_navy
 		}
 		x = 24
 		y = 4
@@ -1786,11 +1844,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_naval_bombers
+		id = ZLC_naval_bombers
 		icon = GFX_focus_usa_escort_fighters
 		cost = 5.00
 		prerequisite = {
-			focus = CHI_submarine_models
+			focus = ZLC_submarine_models
 		}
 		x = 24
 		y = 5
@@ -1805,11 +1863,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_army_developing
+		id = ZLC_army_developing
 		icon = GFX_goal_generic_position_armies
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_army_path
+			focus = ZLC_army_path
 		}
 		x = 9
 		y = 3
@@ -1824,11 +1882,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_army_developing_foreign
+		id = ZLC_army_developing_foreign
 		icon = GFX_focus_generic_military_mission
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_army_developing
+			focus = ZLC_army_developing
 		}
 		x = 9
 		y = 4
@@ -1838,11 +1896,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_army_stable
+		id = ZLC_army_stable
 		icon = GFX_focus_chi_army_reform
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_army_developing_foreign
+			focus = ZLC_army_developing_foreign
 		}
 		available = {
 			has_army_experience > 350
@@ -1860,14 +1918,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_diplomacy
+		id = ZLC_diplomacy
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 5.00
 		prerequisite = {
-			focus = CHI_stay_on_course
+			focus = ZLC_stay_on_course
 		}
 		available = {
-		  	OR = {	has_completed_focus = CHI_left has_completed_focus = CHI_chiang }
+		  	OR = {	has_completed_focus = ZLC_left has_completed_focus = ZLC_chiang }
 		}
 		x = 39
 		y = 3
@@ -1876,17 +1934,17 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_imperial
+		id = ZLC_imperial
 		icon = GFX_goal_generic_CAS
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_diplomacy
+			focus = ZLC_diplomacy
 		}
 		mutually_exclusive = {
-			focus = CHI_peace
+			focus = ZLC_peace
 		}
 		available = {
-		  	has_completed_focus = CHI_chiang 
+		  	has_completed_focus = ZLC_chiang 
 		}
 		x = 37
 		y = 4
@@ -1895,17 +1953,17 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_peace
+		id = ZLC_peace
 		icon = GFX_goal_generic_alliance
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_diplomacy
+			focus = ZLC_diplomacy
 		}
 		mutually_exclusive = {
-			focus = CHI_imperial
+			focus = ZLC_imperial
 		}
 		available = {
-		  	has_completed_focus = CHI_left
+		  	has_completed_focus = ZLC_left
 		}
 		x = 41
 		y = 4
@@ -1914,14 +1972,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_approach_ENG
+		id = ZLC_approach_ENG
 		icon = GFX_focus_chi_british_cooperation
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_peace
+			focus = ZLC_peace
 		}
 		mutually_exclusive = {
-			focus = CHI_approach_FRA
+			focus = ZLC_approach_FRA
 		}
 		available = {
 		ENG = { exists = yes }
@@ -1935,11 +1993,11 @@ focus_tree = {
 			}
 		}
 	focus = {
-		id = CHI_joint_research
+		id = ZLC_joint_research
 		icon = GFX_goal_generic_scientific_exchange
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_approach_ENG
+			focus = ZLC_approach_ENG
 		}
 		available = {
 		ENG = { exists = yes }
@@ -1956,14 +2014,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_approach_FRA
+		id = ZLC_approach_FRA
 		icon = GFX_focus_chi_reach_out_to_france
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_peace
+			focus = ZLC_peace
 		}
 		mutually_exclusive = {
-			focus = CHI_approach_ENG
+			focus = ZLC_approach_ENG
 		}
 		available = {
 		FRA = { exists = yes }
@@ -1977,11 +2035,11 @@ focus_tree = {
 			}
 		}
 	focus = {
-		id = CHI_french_advisors
+		id = ZLC_french_advisors
 		icon = GFX_goal_demand_sudetenland
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_approach_FRA
+			focus = ZLC_approach_FRA
 		}
 		x = 42
 		y = 6
@@ -1997,12 +2055,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_join_ENG
+		id = ZLC_join_ENG
 		icon = GFX_goal_anschluss
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_french_advisors
-			focus = CHI_joint_research
+			focus = ZLC_french_advisors
+			focus = ZLC_joint_research
 		}
 		x = 41
 		y = 7
@@ -2019,12 +2077,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_western_colonies
+		id = ZLC_western_colonies
 		icon = GFX_goal_generic_position_armies
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_french_advisors
-			focus = CHI_joint_research
+			focus = ZLC_french_advisors
+			focus = ZLC_joint_research
 		}
 		x = 42
 		y = 8
@@ -2040,14 +2098,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_mission_RUS
+		id = ZLC_mission_RUS
 		icon = GFX_goal_generic_improve_relations
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_imperial
+			focus = ZLC_imperial
 		}
 		mutually_exclusive = {
-			focus = CHI_approach_GER
+			focus = ZLC_approach_GER
 		}
 		x = 36
 		y = 5
@@ -2062,11 +2120,11 @@ focus_tree = {
 			}
 	}
 	focus = {
-		id = CHI_naval_research
+		id = ZLC_naval_research
 		icon = GFX_goal_demand_sudetenland
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_mission_RUS
+			focus = ZLC_mission_RUS
 		}
 		x = 36
 		y = 6
@@ -2082,11 +2140,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_join_RUS
+		id = ZLC_join_RUS
 		icon = GFX_goal_anschluss
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_naval_research
+			focus = ZLC_naval_research
 		}
 		x = 36
 		y = 7
@@ -2102,11 +2160,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_Sinkiang_issue
+		id = ZLC_Sinkiang_issue
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_join_RUS
+			focus = ZLC_join_RUS
 		}
 		x = 36
 		y = 8
@@ -2123,11 +2181,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_improve_equipment
+		id = ZLC_improve_equipment
 		icon = GFX_goal_generic_military_sphere
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_approach_GER
+			focus = ZLC_approach_GER
 		}
 		available = { 
 		GER = { exists = yes }
@@ -2149,14 +2207,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_approach_GER
+		id = ZLC_approach_GER
 		icon = GFX_goal_tripartite_pact
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_imperial
+			focus = ZLC_imperial
 		}
 		mutually_exclusive = {
-			focus = CHI_mission_RUS
+			focus = ZLC_mission_RUS
 		}
 		available = {
 		GER = { exists = yes 
@@ -2175,11 +2233,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_inv_GER
+		id = ZLC_inv_GER
 		icon = GFX_goal_anschluss
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_improve_equipment
+			focus = ZLC_improve_equipment
 		}
 		x = 38
 		y = 7

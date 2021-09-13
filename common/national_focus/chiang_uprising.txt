@@ -9,6 +9,7 @@ focus_tree = {
 	}
 
 	default = no
+	shared_focus = CHI_invite_foreign_investors
 
 	continuous_focus_position = { x = 50 y = 2000 }
 	#Politics
@@ -19,9 +20,13 @@ focus_tree = {
 		x = 3
 		y = 0
 		available = {
-		NOT = { CHI = { exists = yes } }
+			has_country_flag = FLAG_WZC_WAS_COLLAPESED
         }
 		completion_reward = {
+			transfer_state = 848
+			transfer_state = 854
+			transfer_state = 837
+			
 		}
 	}
 	###############################################################################################################################
@@ -33,11 +38,13 @@ focus_tree = {
 			focus = CHC_victory
 		}
 		available = {
-		NOT = { has_country_leader = { name = "Hu Hanmin" ruling_only = yes } }
+			has_country_leader = { name = "Chiang Kai-Shek" ruling_only = yes } 
         }
 		x = 3
 		y = 1
 		completion_reward = {
+			add_political_power = 120
+			army_experience = 10
 		}
 	}
 	focus = {
@@ -94,8 +101,29 @@ focus_tree = {
 		x = 3
 		y = 3
 		completion_reward = {
-        hidden_effect = { country_event = { days = 1 id = china.1020 } }
-        613 = { set_demilitarized_zone = no }
+			if = {
+				limit = {
+					WZC = {
+						exists = yes
+					}
+				}
+				create_wargoal = {
+					type = annex_everything 
+					target = WZC
+				}
+			}	
+			if = {
+				limit = {
+					HNC = {
+						exists = yes
+					}
+				}
+				create_wargoal = {
+					type = annex_everything 
+					target = HNC
+				}
+			}	
+			set_capital = 613
 		}
 	}
 	focus = {
@@ -111,6 +139,11 @@ focus_tree = {
 		completion_reward = {
 		add_ideas = CHI_absolut_control
 		remove_ideas = CHI_disjointed_gov
+		GXC = {
+			country_event = {
+				id = china.1092
+			}
+		}
 		}
 	}
 	focus = {
@@ -201,7 +234,7 @@ focus_tree = {
 		}
         will_lead_to_war_with = YUN
 		completion_reward = {
-		declare_war_on = {
+		create_wargoal = {
         target = YUN
         type = annex_everything
         }
@@ -220,16 +253,16 @@ focus_tree = {
 		has_army_manpower = {
         size > 250000
            } 
-        SHX  = { exists = yes }
-        NOT = { has_non_aggression_pact_with = SHX }
-        NOT = { is_in_faction_with = SHX }
+        ZLC  = { exists = yes }
+        NOT = { has_non_aggression_pact_with = ZLC }
+        NOT = { is_in_faction_with = ZLC }
 		}
-		will_lead_to_war_with = SHX
+		will_lead_to_war_with = ZLC
 		completion_reward = {
 		add_war_support = 0.05
 		create_wargoal = {
         type = annex_everything
-        target = SHX
+        target = ZLC
            } 
 		}
 	}
@@ -243,19 +276,71 @@ focus_tree = {
 		x = 5
 		y = 7
 		available = {
-		has_army_manpower = {
-        size > 350000
-           } 
-        PRC = { exists = yes }
-        NOT = { has_non_aggression_pact_with = PRC }
-        NOT = { is_in_faction_with = PRC }
+			has_army_manpower = {
+			size > 350000
+			   } 
+			  
 		}
-		will_lead_to_war_with = PRC
+		bypass = {
+			SHX = {
+				exists = no
+			}
+			PRC = {
+				exists = no
+			}
+			XSM = {
+				exists = no
+			}
+			SIK = {
+				exists = no
+			}
+		}
+		will_lead_to_war_with = SHX
 		completion_reward = {
-		declare_war_on = {
-        target = PRC
-        type = annex_everything
-        }
+			if = {
+				limit = {
+					SHX = {
+						exists = yes
+					}
+				}
+				create_wargoal = {
+					target = SHX
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					PRC = {
+						exists = yes
+					}
+				}
+				create_wargoal = {
+					target = PRC
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					XSM = {
+						exists = yes
+					}
+				}
+				create_wargoal = {
+					target = XSM
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					SIK = {
+						exists = yes
+					}
+				}
+				create_wargoal = {
+					target = SIK
+					type = annex_everything
+				}
+			}
 		}
 	}
 	focus = {
@@ -270,20 +355,70 @@ focus_tree = {
 		x = 3
 		y = 8
 		available = {
-		has_army_manpower = {
-        size > 500000
-           } 
-        JAP = { exists = yes }
-        NOT = { has_non_aggression_pact_with = JAP }
-        NOT = { is_in_faction_with = JAP }
+			OR = {
+				AND = {
+					KMN = {
+						is_puppet_of = KOR
+						}
+					has_army_manpower = {
+					size > 500000
+					   } 
+					KMN = { exists = yes }
+					KOR = { exists = yes }
+					NOT = { has_non_aggression_pact_with = KOR }
+					NOT = { is_in_faction_with = KOR }
+				}	
+				AND = {
+					KMN = { exists = no }
+					KOR = { 
+						exists = yes 
+						has_completed_focus =KOR_plan_manchu
+					}
+					NOT = { has_non_aggression_pact_with = KOR }
+					NOT = { is_in_faction_with = KOR }
+					has_army_manpower = {
+					size > 500000
+					   } 
+				}
+			}
 		}
-		will_lead_to_war_with = JAP
-		will_lead_to_war_with = MAN
+		bypass = {
+			KMN = {
+				exists = no
+			}
+		}
+		will_lead_to_war_with = KOR
+		will_lead_to_war_with = KMN
 		completion_reward = {
-		declare_war_on = {
-        target = JAP
-        type = annex_everything
-        }
+			if = {
+				limit = {
+					KMN = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = KMN
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					KMN = {
+						exists = no
+					}
+					KOR = {
+						controls_state = 714
+						controls_state = 852
+						controls_state = 715
+						controls_state = 610
+						controls_state = 853
+					}
+				}
+				declare_war_on = {
+					target = KMN
+					type = annex_everything
+				}
+			}
 		}
 	}
 	focus = {
@@ -340,7 +475,7 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 		add_political_power = 50
-		add_popularity = { ideology = conservatives popularity = -0.025 } 
+		add_popularity = { ideology = democratic popularity = -0.025 } 
 		}
 	}
 	focus = {
@@ -354,7 +489,7 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 		add_ideas = CHI_seized_assets
-		add_popularity = { ideology = conservatives popularity = -0.025 } 
+		add_popularity = { ideology = democratic popularity = -0.025 } 
 		}
 	}
 	focus = {
@@ -368,7 +503,7 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 		add_ideas = CHI_controlled_industry
-		add_popularity = { ideology = conservatives popularity = -0.1 } 
+		add_popularity = { ideology = democratic popularity = -0.1 } 
 		}
 	}
 #######################################################################################
@@ -379,7 +514,7 @@ focus_tree = {
 		x = 10
 		y = 0
 		available = {
-		has_completed_focus = CHC_stay_on_course
+			has_completed_focus = CHC_chiang
 		}
 		completion_reward = {
 		add_political_power = 120
@@ -410,9 +545,9 @@ focus_tree = {
 		x = 9
 		y = 1
 		completion_reward = {
-			750 = {
+			593 = {
 			if = {
-				limit = { is_controlled_by = CHC }
+				limit = { is_controlled_by = CHI }
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -420,9 +555,9 @@ focus_tree = {
 				}
 			}
 		}
-		748 = {
+		848 = {
 			if = {
-				limit = { is_controlled_by = CHC }
+				limit = { is_controlled_by = CHI }
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -430,9 +565,9 @@ focus_tree = {
 				}
 			}
 		}
-		603 = {
+		854 = {
 			if = {
-				limit = { is_controlled_by = CHC }
+				limit = { is_controlled_by = CHI }
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -616,7 +751,7 @@ focus_tree = {
 		x = 11
 		y = 1
 		completion_reward = { 
-		add_ideas = CHC_edu_reform
+			add_ideas = CHI_edu_reform
 		}
 	}
 	focus = {
@@ -642,9 +777,12 @@ focus_tree = {
 		x = 11
 		y = 4
 		completion_reward = {
-		add_ideas = CHC_new_labour	
+		add_timed_idea = {
+			idea = CHI_new_labour
+				days = 720
+		}	 
 		}
-	}
+	} 
 	focus = {
 		id = CHC_radars
 		icon = GFX_goal_generic_radar
@@ -671,6 +809,9 @@ focus_tree = {
 		cost = 10.00
 		x = 21
 		y = 0
+		available = {
+			has_country_flag = FLAG_WZC_WAS_COLLAPESED
+		}
 		completion_reward = {
 		army_experience = 10
 		navy_experience = 10
@@ -1035,7 +1176,7 @@ focus_tree = {
 		x = 20
 		y = 2
 		completion_reward = {
-				613 = {
+				829 = {
 			if = {
 				limit = { is_controlled_by = ROOT }
 				add_building_construction = {

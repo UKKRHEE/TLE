@@ -19,5 +19,6 @@ QIN = "countries/China.txt" #대청국 #대한령
 ZLC = "countries/China.txt" #직예군벌
 WZC = "countries/China.txt" #오성연군
 HNC = "countries/China.txt" #호남군벌
+AHC = "countries/China.txt" #호남군벌
 ###Eastern Republic###
 RUS = "countries/Soviet Union.txt" #극동 공화국 #명복을 빌지.

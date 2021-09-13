@@ -15,7 +15,11 @@ state={
 			add_core_of = PRC
 			buildings = {
 			
-				industrial_complex = 3
+			10076 = {
+				naval_base = 3
+
+			}
+				industrial_complex = 1
 			}
 		}
 }

@@ -664,8 +664,8 @@ KOR = { #한국
 	color_ui = rgb { 36  7  126 }
 }
 KMN = { #
-	color = rgb { 51  102  204 }
-	color_ui = rgb { 51  102  204 }
+	color = rgb { 51  92  187 }
+	color_ui = rgb { 51  92  187 }
 }
 YUN = {
 	color = rgb { 143 20 20 }
@@ -718,6 +718,10 @@ MHB = { #마홍빈
 MHX = { #마후샨
 	color = rgb { 55 108 158 }
 	color_ui = rgb { 55 108 158 }
+}
+AHC = { #안휘군벌
+	color = rgb { 191 110 62 }
+	color_ui = rgb { 191 110 62 }
 }
 SZY = { #쑹저위안
 	color = rgb { 250 200 153 }

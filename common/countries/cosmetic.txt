@@ -360,3 +360,11 @@ KOR_revolutionary = { #조선인민공화국
 	color = rgb { 204 0 0 }
 	color_ui = rgb { 204 0 0 }
 }
+CHI = { #조선인민공화국
+	color = rgb { 51 102 153 }
+	color_ui = rgb { 51 102 153 }
+}
+ZLC = { #조선인민공화국
+	color = rgb { 51 102 153 }
+	color_ui = rgb { 51 102 153 }
+}

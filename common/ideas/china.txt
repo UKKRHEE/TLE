@@ -552,7 +552,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-			    conscription_factor = -0.5
+			    conscription_factor = -0.25
 				production_speed_buildings_factor = 0.10
 			}
 
@@ -601,8 +601,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-                 production_factory_max_efficiency_factor = 0.15
-                 stability_factor = -0.5
+                 production_factory_max_efficiency_factor = 0.2
+                 stability_factor = -0.15
 			}
 
 		}

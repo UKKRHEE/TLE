@@ -21,7 +21,12 @@ if = {
 
 add_ideas = {
 	german_advisors
+	CHI_risk_of_famine
+	CHI_dictatorship_idea
+	CHI_disjointed_gov
+	CHI_factory_strikes
 }
+set_cosmetic_tag = ZLC_beiyang
 if = {
 	limit = {
 		NOT = {
@@ -188,7 +193,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Wu Peifu"
-	portrait_path = "gfx/leaders/QIE/Portrait_QIE_Wu_Peifu.png"
+	portrait_path = "gfx/leaders/ZLC/Portrait_QIE_Wu_Peifu.png"
 	desc = "QIE_WU_PEIFU_ARMY_DESC"
 	traits = {
 		old_guard
@@ -206,7 +211,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "Jiang Baili"
-	portrait_path = "gfx/leaders/QIE/Portrait_QIE_Jiang_Baili.png"
+	portrait_path = "gfx/leaders/ZLC/Portrait_QIE_Jiang_Baili.png"
 	desc = "QIE_JIANG_BAILI_ARMY_DESC"
 	traits = {
 		old_guard
@@ -226,7 +231,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Wang Huaiqing"
-	portrait_path = "gfx/leaders/QIE/Portrait_QIE_Wang_Huaiqing.png"
+	portrait_path = "gfx/leaders/ZLC/Portrait_QIE_Wang_Huaiqing.png"
 	desc = "QIE_WANG_HUAIQING_ARMY_DESC"
 	traits = {
 		substance_abuser
@@ -242,7 +247,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Cai Chengxun"
-	portrait_path = "gfx/leaders/QIE/Portrait_QIE_Cai_Chengxun.png"
+	portrait_path = "gfx/leaders/ZLC/Portrait_QIE_Cai_Chengxun.png"
 	desc = "QIE_CAI_CHENGXUN_ARMY_DESC"
 	traits = {
 		politically_connected
@@ -259,7 +264,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Liu Menggeng"
-	portrait_path = "gfx/leaders/QIE/Portrait_QIE_Liu_Menggeng.png"
+	portrait_path = "gfx/leaders/ZLC/Portrait_QIE_Liu_Menggeng.png"
 	desc = "QIE_LIU_MENGGENG_ARMY_DESC"
 	traits = {
 		career_officer
@@ -275,7 +280,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Wang Chengbin"
-	portrait_path = "gfx/leaders/QIE/Portrait_QIE_Wang_Chengbin.png"
+	portrait_path = "gfx/leaders/ZLC/Portrait_QIE_Wang_Chengbin.png"
 	desc = "QIE_WANG_CHENGBIN_ARMY_DESC"
 	traits = {
 		politically_connected
@@ -291,7 +296,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Gobulo Runqi"
 	desc = "QIE_GOBULO_RUNQI_ARMY_DESC"
-	portrait_path = "gfx/leaders/QIE/Portrait_QIE_Gobulo_Runqi.png"
+	portrait_path = "gfx/leaders/ZLC/Portrait_QIE_Gobulo_Runqi.png"
 	traits = {
 		politically_connected
 		armor_officer
@@ -307,7 +312,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Zhang Qihuang"
-	portrait_path = "gfx/leaders/QIE/Portrait_QIE_Zhang_Qihuang.png"
+	portrait_path = "gfx/leaders/ZLC/Portrait_QIE_Zhang_Qihuang.png"
 	desc = "QIE_ZHANG_QIHUANG_ARMY_DESC"
 	traits = {
 		substance_abuser
@@ -323,7 +328,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Lu Xiangting"
-	portrait_path = "gfx/leaders/QIE/Portrait_QIE_Lu_Xiangting.png"
+	portrait_path = "gfx/leaders/ZLC/Portrait_QIE_Lu_Xiangting.png"
 	desc = "QIE_LU_XIANGTING_ARMY_DESC"
 	traits = {
 		politically_connected
@@ -339,7 +344,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Xiao Yaonan"
 	desc = "QIE_XIAO_YAONAN_ARMY_DESC"
-	portrait_path = "gfx/leaders/QIE/Portrait_QIE_Xiao_Yaonan.png"
+	portrait_path = "gfx/leaders/ZLC/Portrait_QIE_Xiao_Yaonan.png"
 	traits = {
 		politically_connected
 		war_hero
@@ -354,7 +359,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Li Bingzhi"
-	portrait_path = "gfx/leaders/QIE/Portrait_QIE_Li_Bingzhi.png"
+	portrait_path = "gfx/leaders/ZLC/Portrait_QIE_Li_Bingzhi.png"
 	desc = "QIE_LI_BINGZHI_ARMY_DESC"
 	traits = {
 		career_officer
@@ -369,7 +374,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Zhang Shaozeng"
-	portrait_path = "gfx/leaders/QIE/Portrait_QIE_Zhang_Shaozeng.png"
+	portrait_path = "gfx/leaders/ZLC/Portrait_QIE_Zhang_Shaozeng.png"
 	desc = "QIE_ZHANG_SHAOZENG_ARMY_DESC"
 	traits = {
 		politically_connected
@@ -384,7 +389,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Cao Shijie"
-	portrait_path = "gfx/leaders/QIE/Portrait_QIE_Cao_Shijie.png"
+	portrait_path = "gfx/leaders/ZLC/Portrait_QIE_Cao_Shijie.png"
 	desc = "QIE_CAO_SHIJIE_ARMY_DESC"
 	traits = {
 		politically_connected
@@ -474,7 +479,7 @@ create_corps_commander = {
 ### Admirals ###
 create_navy_leader = {
 	name = "Wu Renli"
-	portrait_path = "gfx/leaders/QIE/Portrait_QIE_Wu_Renli.png"
+	portrait_path = "gfx/leaders/ZLC/Portrait_QIE_Wu_Renli.png"
 	desc = "QIE_WU_RENLI_NAVY_DESC"
 	traits = {
 		superior_tactician
@@ -488,7 +493,7 @@ create_navy_leader = {
 }
 create_navy_leader = {
 	name = "Sa Zhenbing"
-	portrait_path = "gfx/leaders/QIE/Portrait_QIE_Sa_Zhenbing.png"
+	portrait_path = "gfx/leaders/ZLC/Portrait_QIE_Sa_Zhenbing.png"
 	desc = "QIE_SA_ZHENBING_NAVY_DESC"
 	traits = {
 		battleship_adherent
@@ -504,7 +509,7 @@ create_navy_leader = {
 }
 create_navy_leader = {
 	name = "Du Xigui"
-	portrait_path = "gfx/leaders/QIE/Portrait_QIE_Du_Xigui.png"
+	portrait_path = "gfx/leaders/ZLC/Portrait_QIE_Du_Xigui.png"
 	desc = "QIE_DU_XIGUI_NAVY_DESC"
 	traits = {
 		old_guard_navy

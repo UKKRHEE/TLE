@@ -1,4 +1,4 @@
-﻿###########################
+﻿Zhang Tianran###########################
 # Chinese Events ##########
 ###########################
 
@@ -342,19 +342,19 @@ news_event = {
 	id = china.1019
 	title = {
 	text = china.1019.t
-	trigger = { tag = CHI }
+	trigger = { tag = ZLC }
 	}
 	title = {
 	text = china.1019.t_other
-	trigger = { NOT { tag = CHI }}
+	trigger = { NOT { tag = ZLC }}
 	}
 	desc = {
 	text = china.1019.d
-	trigger = { tag = CHI }
+	trigger = { tag = ZLC }
 	}
 	desc = {
 	text = china.1019.d_other
-	trigger = { NOT { tag = CHI }}
+	trigger = { NOT { tag = ZLC }}
 	}
 	picture = GFX_news_event_CHI_hanmin_dies
 	is_triggered_only = yes
@@ -365,7 +365,7 @@ news_event = {
 	
 	option = {
 	name = china.1019.a
-	trigger = { tag = CHI}
+	trigger = { tag = ZLC}
 	hidden_effect = { set_global_flag = hu_hanmin_dead }
     }
 	option = {
@@ -585,13 +585,16 @@ country_event = {
 			factor = 90
 		}
 		name = china.1033.b
-		hidden_effect = { country_event = { days = 89 id = china.1035 } country_event = { days = 78 id = china.1019 } }
+		hidden_effect = { 
+			country_event = { days = 89 id = china.1035 } 
+			country_event = { days = 78 id = china.1019 } 
+		}
     }
 }
 
 #newcommanderofthearmy
 country_event = {
-	id = china.1034
+	id = china.1034 
 	title = china.1034.t
 	desc = china.1034.d
     
@@ -603,15 +606,20 @@ country_event = {
 			factor = 50
 		}
 		name = china.1034.a
-		hidden_effect = { country_event = { days = 79 id = china.1036 } country_event = { days = 78 id = china.1019 } }
+		hidden_effect = { 
+		country_event = { days = 79 id = china.1037 } 
+		country_event = { days = 78 id = china.1019 } 
+		}
     }
     option = {
     ai_chance = {
 			factor = 50
 		}
 		name = china.1034.b
-		hidden_effect = { country_event = { days = 79 id = china.1036 } }
-		hidden_effect = { country_event = { days = 125 id = china.1037 } }
+		hidden_effect = { 
+		country_event = { days = 79 id = china.1036 } 
+		country_event = { days = 78 id = china.1019 } 
+		}
     }
 }
  
@@ -626,11 +634,18 @@ country_event = {
 
 	option = {
 		name = china.1035.a  
-        kill_country_leader = yes
-        set_politics = {
-        ruling_party = neutrality
-        }
-        hidden_effect = { complete_national_focus = CHI_chiang }
+		kill_country_leader = yes
+		
+		create_country_leader = {
+			name = "Chao Kun"
+			portrait_path = "gfx/leaders/ZLC/Portrait_ZLC_Chao_kun.png"
+			desc = "QIE_WU_PEIFU_ARMY_DESC"
+			desc = "QIE_WANG_HUAIQING_ARMY_DESC"
+			traits = {
+			}
+			ideology = despotism
+		}	
+        hidden_effect = { complete_national_focus = ZLC_chiang }
     }
 } 
 
@@ -645,10 +660,16 @@ country_event = {
 
 	option = {
 		name = china.1036.a
-		set_politics = {
-        ruling_party = democratic
-        }
-        hidden_effect = { complete_national_focus = CHI_left }
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Wang Huaiqing"
+			portrait_path = "gfx/leaders/ZLC/Portrait_QIE_Wang_Huaiqing.png"
+			desc = "QIE_WANG_HUAIQING_ARMY_DESC"
+			traits = {
+			}
+			ideology = despotism
+		}	
+        hidden_effect = { complete_national_focus = ZLC_left }
     }
 } 
 
@@ -663,33 +684,17 @@ country_event = {
 
 	option = {
 	name = china.1037.a
-    hidden_effect = {
-	add_threat = 5
-	CHC = { transfer_state = 750 transfer_state = 748 transfer_state = 603 transfer_state = 602 transfer_state = 600 load_oob = "CHC_revolt"}
-	set_politics = {
-	ruling_party = democratic
-    }
-    set_popularities = {
-		conservatives = 25 
-		democratic = 75
-		fascism = 0
-		neutrality = 0
-		communism = 0
-		socialist = 0
-	}
-    create_country_leader = {
-	name = "No one"
-	expire = "1965.1.1"
-	ideology = despotism
-      }
-	}
-    CHI = {
-	declare_war_on = {
-    target = CHC
-    type = annex_everything
-    }
-    remove_ideas = CHI_disjointed_gov
-    }
+	
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Jiang Baili"
+			portrait_path = "gfx/leaders/ZLC/Portrait_QIE_Jiang_Baili.png"
+			desc = "QIE_WANG_HUAIQING_ARMY_DESC"
+			traits = {
+			}
+			ideology = despotism
+		}	
+        hidden_effect = { complete_national_focus = ZLC_left }
 	}
 } 
 #attackrepublic
@@ -825,11 +830,22 @@ country_event = {
 
 	option = {
 		name = china.1045.a
-		annex_country = {
-    target = YUN
-    transfer_troops = yes
+		ZLC = {
+			annex_country = {
+				target = YUN
+				transfer_troops = yes
+			}
+		}
     }
-    }
+	option = {
+		name = china.1045.b
+		ZLC = {
+			create_wargoal = {
+				target = YUN
+				type = annex_everything
+			}
+		}
+	}
 }
 #####################################################################################################################RussianManchuriaDemand
 country_event = {
@@ -1172,13 +1188,27 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 	name = china.1086.a
-	add_stability = -0.05
-	add_political_power = -25
+		add_stability = 0.05
+		add_political_power = 200
+		ZLC = {
+			puppet = CHI
+			set_cosmetic_tag = ZLC
+		}
+		CHI = {
+			set_cosmetic_tag = ZLC
+		}
     }
     option = {
 	name = china.1086.b
-	army_experience = -150
-    add_political_power = -200
+		army_experience = 20
+		add_stability = -0.05
+		ZLC = {
+			create_wargoal = {
+				type = annex_everything
+				target = CHI
+			}
+		}
+		
     }
 }     
 #########################
@@ -1199,6 +1229,508 @@ country_event = {
 	option = {
 	name = china.1087.a
 	CHI = { add_ideas = CHI_our_hour }
+    }
+}
+country_event = {
+	id = china.1088
+	title = china.1088.t
+	desc = china.1088.d
+    
+    picture = GFX_report_event_chi_great_war
+
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+	name = china.1088.a
+		ZLC = {
+			annex_country = {
+				target = PREV
+				transfer_troops = yes
+			}
+		}
+    }
+	option = {
+	name = china.1088.b
+		end_puppet = PREV
+		ZLC = {
+			create_wargoal = {
+				target = PREV
+				type = annex_everything
+			}
+		}
+    }
+}
+country_event = {
+	id = china.1089
+	title = china.1089.t
+	desc = china.1089.d
+    
+    picture = GFX_report_event_chi_great_war
+
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		set_country_flag  = FLAG_WZC_WAS_COLLAPESED
+		name = china.1089.a
+		remove_unit_leader = 91099
+		kill_country_leader = yes
+		hidden_effect = {
+		create_country_leader = {
+			name = "Qi Xieyuan"
+			desc = "POLITICS_LEP_QI_XIEYUAN_ARMY_DESC"
+			picture = "Portrait_LEP_Qi_Xieyuan.png"
+			expire = "1965.1.1"
+			ideology = despotism
+		}
+		country_event = {
+			id = china.1091
+			days = 3
+		}
+		}
+    }
+}
+country_event = {
+	id = china.1090
+	title = china.1090.t
+	desc = china.1090.d
+    
+    picture = GFX_report_event_chi_great_war
+
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = china.1090.a
+		remove_unit_leader = 91110
+		hidden_effect = {
+			
+			delete_unit_template_and_units = {
+				division_template = "Qibing Xie"
+				disband = yes
+			}
+			delete_unit_template_and_units = {
+				division_template = "Bubing Xie"
+				disband = yes
+			}
+			delete_unit_template_and_units = {
+				division_template = "Bubing Zhen"
+				disband = yes
+			}
+			delete_unit_template_and_units = {
+				division_template = "Xin Bubing Zhen"
+				disband = yes
+			}
+			delete_unit_template_and_units = {
+				division_template = "Paobing Zhen"
+				disband = yes
+			}
+			delete_unit_template_and_units = {
+				division_template = "Polizeitruppe"
+				disband = yes
+			}
+			delete_unit_template_and_units = {
+				division_template = "Minbing"
+				disband = yes
+			}
+			set_cosmetic_tag = WZC_nanzig_clique
+		AHC = {
+			transfer_state = 606
+			transfer_state = 833
+			transfer_state = 832
+			transfer_state = 844
+			transfer_state = 598
+			add_state_core = 606
+			add_state_core = 833
+			add_state_core = 832
+			add_state_core = 844
+			add_state_core = 598
+			load_oob = "ANC_Collapse"
+			declare_war_on = {
+			target = WZC
+			type = annex_everything
+			}
+			WZC = {
+				load_oob = "LEP_collapse"
+			}
+		}
+		ZLC = {
+			set_country_flag = FLAG_WZC_WAS_COLLAPESED
+		}
+		}
+    }
+	option = {
+		name = china.1090.b
+		custom_effect_tooltip = PLAY_WILL_ANHUI
+		hidden_effect = {
+			delete_unit_template_and_units = {
+				division_template = "Qibing Xie"
+				disband = yes
+			}
+			delete_unit_template_and_units = {
+				division_template = "Bubing Xie"
+				disband = yes
+			}
+			delete_unit_template_and_units = {
+				division_template = "Bubing Zhen"
+				disband = yes
+			}
+			delete_unit_template_and_units = {
+				division_template = "Xin Bubing Zhen"
+				disband = yes
+			}
+			delete_unit_template_and_units = {
+				division_template = "Paobing Zhen"
+				disband = yes
+			}
+			delete_unit_template_and_units = {
+				division_template = "Polizeitruppe"
+				disband = yes
+			}
+			delete_unit_template_and_units = {
+				division_template = "Minbing"
+				disband = yes
+			}
+			set_cosmetic_tag = WZC_nanzig_clique
+		remove_unit_leader = 91110
+			AHC = { change_tag_from = WZC }
+		AHC = {
+			transfer_state = 606
+			transfer_state = 833
+			transfer_state = 832
+			transfer_state = 844
+			transfer_state = 598
+			add_state_core = 606
+			add_state_core = 833
+			add_state_core = 832
+			add_state_core = 844
+			add_state_core = 598
+			load_oob = "ANC_Collapse"
+			declare_war_on = {
+			target = WZC
+			type = annex_everything
+			}
+		}
+		ZLC = {
+		set_country_flag = FLAG_WZC_WAS_COLLAPESED
+		}
+			WZC = {
+				load_oob = "LEP_collapse"
+			}
+		}
+    }
+}
+country_event = {
+	id = china.1091
+	title = china.1091.t
+	desc = china.1091.d
+    
+    picture = GFX_report_event_chi_great_war
+
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		CHI = {
+			set_country_flag = FLAG_WZC_WAS_COLLAPESED
+			#complete_national_focus = CHC_victory
+		}
+		848 = {
+			
+			set_demilitarized_zone = yes
+		}
+		854 = {
+			
+			set_demilitarized_zone = yes
+		}
+		837 = {
+			
+			set_demilitarized_zone = yes
+		}
+		name = china.1091.a
+		
+		country_event = {
+			id = china.1090
+			days = 11
+		}
+    }
+}
+country_event = {
+	id = china.1092
+	title = china.1092.t
+	desc = china.1092.d
+    
+    picture = GFX_report_event_chi_great_war
+
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = china.1092.a
+		CHI = {
+			annex_country = {
+				target = PREV
+				transfer_troops = yes
+			}
+		}
+    }
+	option = {
+		name = china.1092.b
+		CHI = {
+			create_wargoal = {
+				target = PREV
+				type = annex_everything
+			}
+		}
+    }
+}
+  
+country_event = {
+	id = china.1093
+	title = china.1093.t
+	desc = china.1093.d
+    
+    picture = GFX_report_event_chi_great_war
+
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = china.1093.a
+		create_faction = "중국 연합전선"
+		set_rule = {
+			can_create_faction = yes
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					PRC = {
+						exists = yes
+					}
+				}			
+				PRC = {
+					country_event = {
+						id = china.1094
+						days = 1
+					}
+				}
+
+			}
+			if = {
+				limit = {
+					WZC = {
+						exists = yes
+					}
+				}			
+				WZC = {
+					country_event = {
+						id = china.1094
+						days = 1
+					}
+				}
+
+			}
+			if = {
+				limit = {
+					CHI = {
+						exists = yes
+					}
+				}			
+				CHI = {
+					country_event = {
+						id = china.1094
+						days = 1
+					}
+				}
+
+			}
+			if = {
+				limit = {
+					XSM = {
+						exists = yes
+					}
+				}			
+				XSM = {
+					country_event = {
+						id = china.1094
+						days = 1
+					}
+				}
+
+			}
+			if = {
+				limit = {
+					SHX = {
+						exists = yes
+					}
+				}			
+				SHX = {
+					country_event = {
+						id = china.1094
+						days = 1
+					}
+				}
+
+			}
+			if = {
+				limit = {
+					YUN = {
+						exists = yes
+					}
+				}			
+				YUN = {
+					country_event = {
+						id = china.1094
+						days = 1
+					}
+				}
+
+			}
+			if = {
+				limit = {
+					SZC = {
+						exists = yes
+					}
+				}			
+				SZC = {
+					country_event = {
+						id = china.1094
+						days = 1
+					}
+				}
+
+			}
+			if = {
+				limit = {
+					SIK = {
+						exists = yes
+					}
+				}			
+				SIK = {
+					country_event = {
+						id = china.1094
+						days = 1
+					}
+				}
+
+			}
+			if = {
+				limit = {
+					GXC = {
+						exists = yes
+					}
+				}			
+				GXC = {
+					country_event = {
+						id = china.1094
+						days = 1
+					}
+				}
+
+			}
+			if = {
+				limit = {
+					AHC = {
+						exists = yes
+					}
+				}			
+				AHC = {
+					country_event = {
+						id = china.1094
+						days = 1
+					}
+				}
+
+			}
+		}
+    }
+}
+country_event = {
+	id = china.1094
+	title = china.1094.t
+	desc = china.1094.d
+    
+    picture = GFX_report_event_chi_great_war
+
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = china.1094.a
+		ZLC = {
+			add_to_faction = PREV
+			country_event = {
+				id = china.1095
+			}
+		}	
+    }
+	option = { 
+		name = china.1094.b
+		ZLC = {
+			country_event = {
+				id = china.1096
+			}
+			create_wargoal = {
+				target = PREV
+				type = annex_everything
+			}
+		}	
+    }
+}
+  
+country_event = {
+	id = china.1095
+	title = china.1095.t
+	desc = china.1095.d
+    
+    picture = GFX_report_event_chi_great_war
+
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = china.1095.a
+    }
+}
+country_event = {
+	id = china.1096
+	title = china.1096.t
+	desc = china.1096.d
+    
+    picture = GFX_report_event_chi_great_war
+
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = china.1096.a
+    }
+}
+  
+country_event = {
+	id = china.1097
+	title = china.1097.t
+	desc = china.1097.d
+    
+    picture = GFX_report_event_chi_great_war
+
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = china.1097.a
+		PRC = {
+			transfer_state = 845
+			declare_war_on = {
+				type = annex_everything 
+				target = SHX
+			}
+			load_oob = "PRC_shanxi"
+		}
+    }
+	option = { 
+		name = china.1097.b
+		PRC = {
+			transfer_state = 845
+			declare_war_on = {
+				type = annex_everything 
+				target = SHX
+			}
+			load_oob = "PRC_shanxi"
+		}
+			PRC = { change_tag_from = SHX }
+		
     }
 }
   

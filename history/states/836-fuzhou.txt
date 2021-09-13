@@ -11,6 +11,10 @@ state={
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 1
+			4196 = {
+				naval_base = 3
+
+			}
 		}
 			owner = WZC
 			add_core_of = WZC

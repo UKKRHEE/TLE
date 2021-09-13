@@ -726,6 +726,11 @@ focus_tree = {
 		set_rule = {
 				can_create_factions = yes
 			}
+			set_cosmetic_tag = JAP
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
         add_political_power = 120
         swap_ideas = { remove_idea = JAP_democratic_popularity add_idea = JAP_democratic_outburst }
         }
@@ -1564,11 +1569,23 @@ focus_tree = {
         type = annex_everything
         }
 		declare_war_on = {
-        target = SHX
+        target = WZC
         type = annex_everything
         }	
 		declare_war_on = {
-        target = PRC
+        target = ZLC
+        type = annex_everything
+        }
+		declare_war_on = {
+        target = YUN
+        type = annex_everything
+        }
+		declare_war_on = {
+        target = SHX
+        type = annex_everything
+        }
+		declare_war_on = {
+        target = XSM
         type = annex_everything
         }
 		}
@@ -1583,10 +1600,10 @@ focus_tree = {
 		x = 17
 		y = 9
 		completion_reward = {
-		add_state_core = 525
-		add_state_core = 527
-        hidden_effect = { country_event = { id = japan.1000 }
-            }       
+			create_wargoal = {
+				type = annex_everything
+				target = KOR
+			}
         }
 	}
 	focus = {

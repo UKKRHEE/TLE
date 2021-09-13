@@ -15,6 +15,7 @@
 				tag = XSM
 				tag = WZC
 				tag = SND
+				tag = AHC
 				tag = HNC
 			}
 			has_dlc = "Waking the Tiger"

@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = kor_road_and_railway
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5.00
+		cost = 3.00
 		x = 7
 		y = 0
 		available = {
@@ -30,7 +30,7 @@ focus_tree = {
 	focus = {
 		id = kor_kill_Communist
 		icon = GFX_focus_aus_hun
-		cost = 12.9
+		cost = 7
 		prerequisite = {
 			focus = kor_reform_korea
 		}
@@ -47,7 +47,10 @@ focus_tree = {
 		x = 38
 		y = 1
 			completion_reward = {
-			remove_ideas = KOR_striked_factories
+				swap_ideas = {
+				add_idea = KOR_dead_strike
+				remove_idea = KOR_striked_factories
+					}
 					add_stability = 0.05
 					add_popularity = {
 							ideology = communism
@@ -78,7 +81,7 @@ focus_tree = {
 	focus = {
 		id = kor_rok_lebensraum
 		icon = GFX_goal_generic_more_territorial_claims
-		cost = 5.00
+		cost = 10.00
 		x = 23
 		y = 12
 		prerequisite = {
@@ -103,8 +106,8 @@ focus_tree = {
 		x = 23
 		y = 0
 		completion_reward = {
+			remove_country_leader_trait =	the_democratist
 			add_country_leader_trait = 	reluctant_interventionist
-			add_country_leader_trait =	stout_defender
 			add_stability = -0.05
 			add_political_power = 200
 		}
@@ -113,7 +116,7 @@ focus_tree = {
 	focus = {
 		id = KOR_fuck_pact
 		icon = GFX_focus_goal_KOR_fuck_pact
-		cost = 10.00
+		cost = 2.00
 		prerequisite = {
 			focus = kor_reform_korea
 		}
@@ -133,7 +136,7 @@ focus_tree = {
 	focus = {
 		id = kor_soe_establishment
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 5.00
+		cost = 4.00
 		prerequisite = {
 			focus = kor_road_and_railway
 		}
@@ -143,14 +146,17 @@ focus_tree = {
 		x = 6
 		y = 1
 			completion_reward = {
-					add_ideas = KOR_establishment
+					add_timed_idea = {
+						idea = KOR_establishment
+						days = 365
+					}	
 				}
 
 	}
 	focus = {
 		id = kor_market_economy_reform
 		icon = GFX_focus_usa_reestablish_the_gold_standard
-		cost = 5.00
+		cost = 4.00
 		prerequisite = {
 			focus = kor_road_and_railway
 		}
@@ -170,7 +176,7 @@ focus_tree = {
 	focus = {
 		id = kor_homeland_development
 		icon = GFX_goal_generic_production
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_soe_establishment
 			focus = kor_market_economy_reform
@@ -179,43 +185,19 @@ focus_tree = {
 		y = 2
 			available = {
 					OR = {
-							has_completed_focus = kor_monarchy
+							has_completed_focus = kor_reform_korea
 							has_completed_focus = KOR_use_the_anti-armed
 						}
 				}
 			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = industrial_complex
-																			size > 0
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = industrial_complex
-									level = 1
-									instant_build = yes
-								}
-						}
-				}
-
+				add_ideas = KOR_industry_reform
+			add_tech_bonus = {
+				name = kor_homeland_development
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
 	}
 	focus = {
 		id = kor_infrastructure_1
@@ -328,7 +310,7 @@ focus_tree = {
 	focus = {
 		id = kor_fortress_city
 		icon = GFX_goal_generic_fortify_city
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_uiju-busan_railway
 		}
@@ -367,7 +349,7 @@ focus_tree = {
 	focus = {
 		id = kor_industrial_complex_1
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_homeland_development
 		}
@@ -404,13 +386,43 @@ focus_tree = {
 									instant_build = yes
 								}
 						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
 				}
 
 	}
 	focus = {
 		id = kor_industrial_complex_pohang
 		icon = GFX_focus_generic_steel
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_industrial_complex_1
 		}
@@ -431,7 +443,7 @@ focus_tree = {
 	focus = {
 		id = kor_industrial_complex_seoul
 		icon = GFX_goal_generic_consumer_goods
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_industrial_complex_1
 		}
@@ -455,7 +467,7 @@ focus_tree = {
 	focus = {
 		id = kor_make_posco
 		icon = GFX_focus_generic_steel
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_industrial_complex_pohang
 			focus = kor_industrial_complex_seoul
@@ -477,7 +489,7 @@ focus_tree = {
 	focus = {
 		id = kor_industrial_complex_gwangju
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_industrial_complex_seoul
 			focus = kor_industrial_complex_pohang
@@ -502,7 +514,7 @@ focus_tree = {
 	focus = {
 		id = kor_resource_search
 		icon = GFX_focus_generic_tungsten
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_make_posco
 			focus = kor_industrial_complex_gwangju
@@ -524,7 +536,7 @@ focus_tree = {
 	focus = {
 		id = kor_industrial_complex_haeju
 		icon = GFX_focus_generic_industry_1
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_industrial_complex_gwangju
 			focus = kor_make_posco
@@ -549,7 +561,7 @@ focus_tree = {
 	focus = {
 		id = kor_hansung_university
 		icon = GFX_focus_research
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_resource_search
 			focus = kor_industrial_complex_haeju
@@ -564,7 +576,7 @@ focus_tree = {
 	focus = {
 		id = kor_arms_factory_1
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_homeland_development
 		}
@@ -585,7 +597,7 @@ focus_tree = {
 	focus = {
 		id = kor_arms_factory_gaesong
 		icon = GFX_focus_secret_rearmament
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_arms_factory_1
 		}
@@ -606,7 +618,7 @@ focus_tree = {
 	focus = {
 		id = kor_arms_factory_incheon
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_arms_factory_gaesong
 		}
@@ -627,7 +639,7 @@ focus_tree = {
 	focus = {
 		id = kor_arms_factory_daegu
 		icon = GFX_focus_generic_tank_production
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_arms_factory_1
 		}
@@ -648,7 +660,7 @@ focus_tree = {
 	focus = {
 		id = kor_arms_factory_womsan
 		icon = GFX_focus_generic_industry_2
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_arms_factory_incheon
 		}
@@ -672,7 +684,7 @@ focus_tree = {
 	focus = {
 		id = kor_make_roket
 		icon = GFX_focus_rocketry
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_arms_factory_womsan
 		}
@@ -692,7 +704,7 @@ focus_tree = {
 	focus = {
 		id = kor_make_nuke
 		icon = GFX_focus_wonderweapons
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_make_roket
 		}
@@ -710,7 +722,7 @@ focus_tree = {
 	focus = {
 		id = kor_communism
 		icon = GFX_goal_support_communism
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = KOR_use_the_anti-armed
 		}
@@ -767,7 +779,7 @@ focus_tree = {
 	focus = {
 		id = kor_communist_congress_dissolved
 		icon = GFX_focus_generic_self_management
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_communism
 		}
@@ -782,7 +794,7 @@ focus_tree = {
 	focus = {
 		id = kor_national_industry_expansion
 		icon = GFX_goal_continuous_repairments
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_communist_congress_dissolved
 		}
@@ -830,7 +842,7 @@ focus_tree = {
 	focus = {
 		id = kor_people_parliament
 		icon = GFX_focus_generic_soviet_politics
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_communist_congress_dissolved
 		}
@@ -848,7 +860,7 @@ focus_tree = {
 	focus = {
 		id = kor_kill_fascism_2
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_people_parliament
 		}
@@ -869,7 +881,7 @@ focus_tree = {
 	focus = {
 		id = kor_election_maintenance
 		icon = GFX_goal_generic_war_with_comintern
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_kill_fascism_2
 		}
@@ -905,7 +917,7 @@ focus_tree = {
 	focus = {
 		id = kor_people_the_best
 		icon = GFX_focus_yug_pan_slavic_congress
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_election_maintenance
 		}
@@ -923,7 +935,7 @@ focus_tree = {
 	focus = {
 		id = kor_marx
 		icon = GFX_focus_spr_unify_the_london_bureau
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_people_the_best
 		}
@@ -937,7 +949,7 @@ focus_tree = {
 	focus = {
 		id = kor_for_worker
 		icon = GFX_focus_spr_torchbearers_of_tomorrow
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_election_maintenance
 		}
@@ -951,7 +963,7 @@ focus_tree = {
 	focus = {
 		id = kor_public_welfare_reform_2
 		icon = GFX_focus_bel_picketing
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = KOR_use_the_anti-armed
 		}
@@ -1110,7 +1122,7 @@ focus_tree = {
 				}
 			completion_reward = {
 					add_political_power = 150
-					add_stability = 0.05
+					#add_stability = 0.05
 					#country_event = kor_news.1
 					#add_named_threat = {
 					#		threat = 3
@@ -1140,7 +1152,7 @@ focus_tree = {
 	focus = {
 		id = kor_national_fascist_agitation
 		icon = GFX_focus_national_mermit
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_reform_korea
 		}
@@ -1290,27 +1302,13 @@ focus_tree = {
 		x = 32
 		y = 5
 		completion_reward = {
-				create_faction = "동아시아 민주동맹"
-				CHI = {
-					dismantle_faction = yes
+				set_rule = {
+					can_create_factions = yes
 				}
-				add_to_faction = CHI
-				add_to_faction = YUN
-				add_to_faction = TIB
-				if = {
-					limit = {
-						JAP = {
-							OR = {
-								has_government = democratic
-								has_government = fascism
-							}	
-						}	
-					}
-					JAP = {
-						dismantle_faction = yes
-					}	
-					KOR = {
-						add_to_faction = JAP
+				create_faction = "동아시아 민주동맹"
+				JAP = {
+					country_event = {
+						id = generic.5
 					}
 				}
 		}
@@ -1353,7 +1351,9 @@ focus_tree = {
 					}
 				}
 				ENG = {
-					add_to_faction = KOR
+					country_event = {
+						id = generic.2
+					}
 				}
 			}
 		}
@@ -1495,7 +1495,7 @@ focus_tree = {
 	focus = {
 		id = kor_national_development_2
 		icon = GFX_focus_ger_four
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = KOR_Basic_Welfare_Policy
 			focus = KOR_Entrepreneurship_Promotion
@@ -1513,7 +1513,7 @@ focus_tree = {
 	focus = {
 		id = kor_monarchy
 		icon = GFX_focus_military_coup
-		cost = 5.00
+		cost = 2.00
 		prerequisite = {
 			focus = kor_reform_korea
 		}
@@ -1539,7 +1539,7 @@ focus_tree = {
 	focus = {
 		id = kor_korean_lebensraum
 		icon = GFX_goal_prussia_army
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_monarchy
 		}
@@ -1569,12 +1569,12 @@ focus_tree = {
 	focus = {
 		id = kor_new_lifeguard_extension
 		icon = GFX_focus_ger_freikorps
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_encouraging_patriotism_2
 		}
 		available = {
-			has_war = yes
+			has_war_support > 0.5
 		}
 		x = 42
 		y = 4
@@ -1586,7 +1586,7 @@ focus_tree = {
 	focus = {
 		id = kor_the_new_history
 		icon = GFX_focus_qng_power_struggle
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_encouraging_patriotism_2
 		}
@@ -1619,7 +1619,7 @@ focus_tree = {
 		id = kor_forced_labor
 		icon = GFX_focus_aus_aut
 		cost = 10.00
-		prerequisite = {
+		prerequisite = { 
 			focus = kor_encouraging_patriotism_2
 		}
 		x = 46
@@ -1627,7 +1627,7 @@ focus_tree = {
 			completion_reward = {
 					add_ideas = KOR_anti_chinese_holy_war
 					remove_ideas = KOR_divided_politics
-				}
+				} 
 
 	}
 	focus = {
@@ -1640,7 +1640,7 @@ focus_tree = {
 		x = 48
 		y = 3
 			available = {
-				threat > 0.07
+				threat > 0.05
 				}
 			completion_reward = {
 					KOR = {
@@ -1722,7 +1722,7 @@ focus_tree = {
 	focus = {
 		id = kor_tsushima
 		icon = GFX_goal_demand_sudetenland
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = KOR_plan_manchu
 		}
@@ -1913,7 +1913,7 @@ focus_tree = {
 	focus = {
 		id = KOR_attack_colonial_territory
 		icon = GFX_goal_generic_position_armies
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_all_claim
 		}
@@ -1928,7 +1928,7 @@ focus_tree = {
 	focus = {
 		id = KOR_attack_tsingdao
 		icon = GFX_goal_generic_major_war
-		cost = 10.00
+		cost = 2.00
 		prerequisite = {
 			focus = KOR_attack_colonial_territory
 		}
@@ -1946,7 +1946,7 @@ focus_tree = {
 	focus = {
 		id = KOR_attack_shanghai
 		icon = GFX_goal_generic_major_war
-		cost = 10.00
+		cost = 2.00
 		prerequisite = {
 			focus = KOR_attack_colonial_territory
 		}
@@ -1992,7 +1992,7 @@ focus_tree = {
 	focus = {
 		id = kor_control_asia
 		icon = GFX_focus_jap_cast_the_die
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = KOR_chulbyong
 		}
@@ -2018,7 +2018,7 @@ focus_tree = {
 	focus = {
 		id = kor_Imperialism
 		icon = GFX_focus_jap_cast_the_die
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_territory_expansion
 		}
@@ -2095,7 +2095,7 @@ focus_tree = {
 	focus = {
 		id = kor_friendship_with_japan
 		icon = GFX_focus_chi_collaboration_with_the_japanese
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_Imperialism
 		}
@@ -2128,7 +2128,7 @@ focus_tree = {
 	focus = {
 		id = kor_yeonhaeju
 		icon = GFX_goal_demand_sudetenland
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = KOR_allied_with_russia
 			focus = kor_friendship_with_japan
@@ -2187,7 +2187,7 @@ focus_tree = {
 	focus = {
 		id = kor_erection_fortress
 		icon = GFX_goal_generic_construct_military
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_friendship_with_japan
 		}
@@ -2374,7 +2374,7 @@ focus_tree = {
 	focus = {
 		id = kor_strengthening_cooperation_japan
 		icon = GFX_goal_generic_military_deal
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_friendship_with_japan
 		}
@@ -2390,7 +2390,7 @@ focus_tree = {
 	focus = {
 		id = kor_korea_japan_military_agreement
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_strengthening_cooperation_japan
 		}
@@ -2412,7 +2412,7 @@ focus_tree = {
 	focus = {
 		id = kor_join_japan
 		icon = GFX_goal_generic_alliance
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_korea_japan_military_agreement
 		}
@@ -2499,8 +2499,8 @@ focus_tree = {
 	}
 	focus = {
 		id = kor_national_development
-		icon = GFX_goal_generic_production
-		cost = 5.00
+		icon = GFX_focus_aus_war
+		cost = 10.00
 		prerequisite = {
 			focus = KOR_up-coupdetat
 		}
@@ -2522,7 +2522,7 @@ focus_tree = {
 	focus = {
 		id = kor_neutrality
 		icon = GFX_goal_KOR_strong_hand
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = KOR_up-coupdetat
 		}
@@ -2571,7 +2571,7 @@ focus_tree = {
 	focus = {
 		id = kor_best_gangju
 		icon = GFX_focus_goal_kor_empire_gangyu
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_neutrality
 		}
@@ -2589,7 +2589,7 @@ focus_tree = {
 	focus = {
 		id = kor_a_stronger_country
 		icon = GFX_focus_chi_control_army
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = KOR_up-coupdetat
 		}
@@ -2618,7 +2618,7 @@ focus_tree = {
 	focus = {
 		id = kor_lifeguard_extension
 		icon = GFX_focus_kor_loyal
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_a_stronger_country
 		}
@@ -2632,7 +2632,7 @@ focus_tree = {
 	focus = {
 		id = kor_public_welfare_reform
 		icon = GFX_focus_hol_the_foundations_of_defense
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_best_gangju
 			focus = kor_lifeguard_extension
@@ -2646,8 +2646,8 @@ focus_tree = {
 	}
 	focus = {
 		id = kor_emperor_empowerment
-		icon = GFX_focus_kor_ihwa
-		cost = 5.00
+		icon = GFX_focus_kor_flag_korea
+		cost = 10.00
 		prerequisite = {
 			focus = KOR_up-coupdetat
 		}
@@ -2655,13 +2655,14 @@ focus_tree = {
 		y = 4
 			completion_reward = {
 					add_stability = 0.05
+					remove_ideas = KOR_dead_strike
 				}
 
 	}
 	focus = {
 		id = kor_fuck_corruption
 		icon = GFX_focus_generic_self_management
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_emperor_empowerment
 		}
@@ -2678,7 +2679,7 @@ focus_tree = {
 	focus = {
 		id = kor_what_fighting
 		icon = GFX_focus_generic_manpower
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_emperor_empowerment
 		}
@@ -2693,7 +2694,7 @@ focus_tree = {
 	focus = {
 		id = kor_encouraging_patriotism
 		icon = GFX_goal_kor_empire_gukjang
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_fuck_corruption
 		}
@@ -2709,13 +2710,16 @@ focus_tree = {
 	}
 	focus = {
 		id = kor_god_save_the_king
-		icon = GFX_focus_kor_flag_korea
-		cost = 5.00
+		icon = GFX_focus_kor_ihwa
+		cost = 10.00
 		prerequisite = {
 			focus = kor_public_welfare_reform
 		}
 		prerequisite = {
 			focus = kor_encouraging_patriotism
+		}
+		available = {
+			
 		}
 		x = 68
 		y = 7
@@ -2727,7 +2731,7 @@ focus_tree = {
 	focus = {
 		id = kor_anti-Japanese_policy
 		icon = GFX_focus_ger_war
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = KOR_power_up_to_imperial
 		}
@@ -2760,7 +2764,7 @@ focus_tree = {
 	focus = {
 		id = kor_anti_japanese_frontline_construction
 		icon = GFX_focus_generic_coastal_fort
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_what_fighting
 		}
@@ -2786,12 +2790,9 @@ focus_tree = {
 	focus = {
 		id = kor_war_japan
 		icon = GFX_focus_attack_japan
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_anti_japanese_frontline_construction
-		}
-		mutually_exclusive = {
-			focus = KOR_kwantungjun_attack_china
 		}
 		x = 71
 		y = 7
@@ -2810,9 +2811,6 @@ focus_tree = {
 		prerequisite = {
 			focus = kor_anti_japanese_frontline_construction
 		}
-		mutually_exclusive = {
-			focus = kor_war_japan
-		}
 		x = 73
 		y = 7
 		completion_reward = {
@@ -2826,7 +2824,7 @@ focus_tree = {
 	focus = {
 		id = kor_china_threat
 		icon = GFX_focus_attack_china
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = KOR_kwantungjun_attack_china
 			focus = kor_war_japan
@@ -2869,7 +2867,7 @@ focus_tree = {
 	focus = {
 		id = kor_fuck_soviet
 		icon = GFX_focus_attack_soviet
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_china_threat
 		}
@@ -2894,7 +2892,7 @@ focus_tree = {
 	focus = {
 		id = kor_contact_with_the_allies
 		icon = GFX_focus_chi_british_cooperation
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_anti-Japanese_policy
 		}
@@ -2922,7 +2920,7 @@ focus_tree = {
 	focus = {
 		id = kor_approach_united_states
 		icon = GFX_focus_chi_mission_to_the_us
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_contact_with_the_allies
 		}
@@ -2950,7 +2948,7 @@ focus_tree = {
 	focus = {
 		id = kor_war_germany
 		icon = GFX_focus_attack_germany
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_china_threat
 		}
@@ -2975,7 +2973,7 @@ focus_tree = {
 	focus = {
 		id = kor_approach_france
 		icon = GFX_focus_chi_reach_out_to_france
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_anti-Japanese_policy
 		}
@@ -3003,7 +3001,7 @@ focus_tree = {
 	focus = {
 		id = kor_promotion_gukbang
 		icon = GFX_focus_usa_build_the_pentagon
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_military
 		}
@@ -3014,13 +3012,17 @@ focus_tree = {
 					#		add_idea = KOR_weak_army_2
 					#		remove_idea = KOR_weak_army
 					#	}
+					army_experience = 5
+					navy_experience = 5
+					air_experience = 5
+					add_political_power = 80
 				}
 
 	}
 	focus = {
 		id = kor_army_reform
 		icon = GFX_focus_eok_army
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_promotion_gukbang
 		}
@@ -3041,7 +3043,7 @@ focus_tree = {
 	focus = {
 		id = kor_new_gospel
 		icon = GFX_goal_generic_cavalry
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_army_reform
 		}
@@ -3050,7 +3052,7 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = kor_new_gospel
-							bonus = 0.33
+							bonus = 1
 							uses = 3
 							category = land_doctrine
 						}
@@ -3060,7 +3062,7 @@ focus_tree = {
 	focus = {
 		id = kor_guksan_truck
 		icon = GFX_goal_generic_army_motorized
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_new_gospel
 		}
@@ -3069,7 +3071,7 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = motorized_bonus
-							bonus = 0.35
+							bonus = 1
 							ahead_reduction = 1
 							category = motorized_equipment
 						}
@@ -3079,7 +3081,7 @@ focus_tree = {
 	focus = {
 		id = kor_guksan_gun
 		icon = GFX_goal_generic_small_arms
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_new_gospel
 		}
@@ -3088,7 +3090,7 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = kor_guksan_gun
-							bonus = 0.35
+							bonus = 1
 							ahead_reduction = 1
 							category = infantry_weapons
 						}
@@ -3098,26 +3100,27 @@ focus_tree = {
 	focus = {
 		id = kor_guksan_po
 		icon = GFX_goal_generic_army_artillery2
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_guksan_gun
 		}
 		x = 81
 		y = 5
-			completion_reward = {
-					add_tech_bonus = {
-							name = kor_guksan_po
-							bonus = 0.35
-							ahead_reduction = 1
-							category = infantry_weapons
-						}
-				}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = kor_guksan_po
+				bonus = 1.0
+				uses = 2
+				category = artillery
+			}
+		}
 
 	}
 	focus = {
 		id = kor_mechanization
 		icon = GFX_goal_generic_build_tank
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_guksan_truck
 		}
@@ -3126,7 +3129,7 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = mechanized_bonus
-							bonus = 0.35
+							bonus = 1
 							ahead_reduction = 1
 							category = cat_mechanized_equipment
 						}
@@ -3136,7 +3139,7 @@ focus_tree = {
 	focus = {
 		id = kor_mountain_infantry
 		icon = GFX_focus_generic_commonwealth_build_infantry
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_army_reform
 		}
@@ -3145,7 +3148,7 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = special_forces_bonus
-							bonus = 0.75
+							bonus = 1
 							uses = 1
 							technology = tech_mountaineers
 						}
@@ -3155,7 +3158,7 @@ focus_tree = {
 	focus = {
 		id = kor_guksan_tank
 		icon = GFX_goal_generic_army_tanks
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_new_gospel
 		}
@@ -3165,7 +3168,7 @@ focus_tree = {
 					army_experience = 15
 					add_tech_bonus = {
 							name = kor_guksan_tank
-							bonus = 0.40
+							bonus = 1
 							ahead_reduction = 1
 							category = cat_light_armor
 						}
@@ -3175,7 +3178,7 @@ focus_tree = {
 	focus = {
 		id = kor_guksan_tank_2
 		icon = GFX_goal_continuous_armor_production
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_guksan_tank
 		}
@@ -3185,7 +3188,7 @@ focus_tree = {
 					army_experience = 15
 					add_tech_bonus = {
 							name = kor_guksan_tank_2
-							bonus = 0.35
+							bonus = 1
 							ahead_reduction = 1
 							uses = 2
 							category = cat_medium_armor
@@ -3197,7 +3200,7 @@ focus_tree = {
 	focus = {
 		id = kor_special_forces
 		icon = GFX_goal_generic_special_forces
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_mechanization
 		}
@@ -3213,7 +3216,7 @@ focus_tree = {
 					add_ideas = special_forces
 					add_tech_bonus = {
 							name = special_forces_bonus
-							bonus = 0.5
+							bonus = 1
 							uses = 1
 							technology = paratroopers
 							technology = paratroopers2
@@ -3240,7 +3243,7 @@ focus_tree = {
 	focus = {
 		id = kor_naval_reform
 		icon = GFX_focus_eok_navy
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_promotion_gukbang
 		}
@@ -3254,7 +3257,7 @@ focus_tree = {
 	focus = {
 		id = kor_new_navy_gospel
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_naval_reform
 		}
@@ -3262,7 +3265,7 @@ focus_tree = {
 		y = 3
 			completion_reward = {
 					add_tech_bonus = {
-							bonus = 0.25
+							bonus = 1
 							uses = 3
 							category = base_strike_main
 						}
@@ -3272,7 +3275,7 @@ focus_tree = {
 	focus = {
 		id = kor_coastal_navy
 		icon = GFX_goal_generic_build_navy
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_new_navy_gospel
 		}
@@ -3302,7 +3305,7 @@ focus_tree = {
 	focus = {
 		id = kor_great_navy
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_new_navy_gospel
 		}
@@ -3332,7 +3335,7 @@ focus_tree = {
 	focus = {
 		id = kor_Destroyer
 		icon = GFX_goal_generic_wolf_pack
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_great_navy
 			focus = kor_coastal_navy
@@ -3342,7 +3345,7 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = kor_Destroyer
-							bonus = 0.5
+							bonus = 1
 							uses = 2
 							category = dd_tech
 						}
@@ -3352,7 +3355,7 @@ focus_tree = {
 	focus = {
 		id = kor_cruiser
 		icon = GFX_goal_generic_navy_cruiser
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_coastal_navy
 			focus = kor_great_navy
@@ -3361,7 +3364,7 @@ focus_tree = {
 		y = 5
 			completion_reward = {
 					add_tech_bonus = {
-							bonus = 0.35
+							bonus = 1
 							ahead_reduction = 1
 							uses = 2
 							category = cl_tech
@@ -3373,7 +3376,7 @@ focus_tree = {
 	focus = {
 		id = kor_submarine
 		icon = GFX_goal_generic_navy_submarine
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_great_navy
 			focus = kor_coastal_navy
@@ -3383,7 +3386,7 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = ss_bonus
-							bonus = 0.35
+							bonus = 1
 							ahead_reduction = 1
 							uses = 2
 							category = ss_tech
@@ -3394,7 +3397,7 @@ focus_tree = {
 	focus = {
 		id = kor_battleship
 		icon = GFX_goal_generic_navy_battleship
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_cruiser
 			focus = kor_submarine
@@ -3415,7 +3418,7 @@ focus_tree = {
 								}
 						}
 					add_tech_bonus = {
-							bonus = 0.35
+							bonus = 1
 							ahead_reduction = 1
 							uses = 2
 							category = bb_tech
@@ -3427,7 +3430,7 @@ focus_tree = {
 	focus = {
 		id = kor_aircraft_carrier
 		icon = GFX_goal_generic_navy_carrier
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_submarine
 			focus = kor_cruiser
@@ -3448,7 +3451,7 @@ focus_tree = {
 								}
 						}
 					add_tech_bonus = {
-							bonus = 0.35
+							bonus = 1
 							ahead_reduction = 1
 							uses = 2
 							category = cv_tech
@@ -3459,24 +3462,33 @@ focus_tree = {
 	focus = {
 		id = kor_marin
 		icon = GFX_goal_generic_amphibious_assault
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_naval_reform
 		}
 		x = 90
 		y = 3
+		
+		completion_reward = {
 			add_tech_bonus = {
-					name = special_forces_bonus
-					bonus = 0.75
-					uses = 1
-					technology = marines
-				}
+				name = kor_marin
+				bonus = 1.0
+				uses = 1
+				category = marine_tech
+			}
+			add_tech_bonus = {
+				name = kor_marin
+				bonus = 1.0
+				uses = 2
+				category = tp_tech
+			}
+		}
 
 	}
 	focus = {
 		id = kor_air_reform
 		icon = GFX_focus_eok_air
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_promotion_gukbang
 		}
@@ -3490,7 +3502,7 @@ focus_tree = {
 	focus = {
 		id = kor_new_air_gospel
 		icon = GFX_goal_generic_air_doctrine
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_air_reform
 		}
@@ -3499,7 +3511,7 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = air_doc_bonus
-							bonus = 0.25
+							bonus = 1
 							uses = 3
 							category = air_doctrine
 						}
@@ -3509,7 +3521,7 @@ focus_tree = {
 	focus = {
 		id = kor_CSA
 		icon = GFX_goal_generic_CAS
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_new_air_gospel
 		}
@@ -3518,7 +3530,7 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = CAS_bonus
-							bonus = 0.5
+							bonus = 1
 							ahead_reduction = 1
 							uses = 1
 							category = cas_bomber
@@ -3529,7 +3541,7 @@ focus_tree = {
 	focus = {
 		id = kor_Fighter
 		icon = GFX_goal_generic_air_fighter
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_new_air_gospel
 		}
@@ -3538,7 +3550,7 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = fighter_bonus
-							bonus = 0.35
+							bonus = 1
 							ahead_reduction = 1
 							uses = 2
 							category = light_fighter
@@ -3550,7 +3562,7 @@ focus_tree = {
 	focus = {
 		id = kor_bomber
 		icon = GFX_goal_generic_occupy_start_war
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_CSA
 		}
@@ -3565,7 +3577,7 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = bomber_bonus
-							bonus = 0.35
+							bonus = 1
 							ahead_reduction = 1
 							category = tactical_bomber
 						}
@@ -3575,7 +3587,7 @@ focus_tree = {
 	focus = {
 		id = kor_torpedo_bomber
 		icon = GFX_goal_generic_air_naval_bomber
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_new_air_gospel
 		}
@@ -3584,7 +3596,7 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = nav_bomber_bonus
-							bonus = 0.35
+							bonus = 1
 							ahead_reduction = 1
 							uses = 2
 							category = naval_bomber
@@ -3595,7 +3607,7 @@ focus_tree = {
 	focus = {
 		id = kor_bomber_2
 		icon = GFX_goal_generic_air_bomber
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_Fighter
 		}
@@ -3610,7 +3622,7 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = bomber_bonus
-							bonus = 0.35
+							bonus = 1
 							ahead_reduction = 1
 							category = cat_strategic_bomber
 						}
@@ -3699,7 +3711,7 @@ focus_tree = {
 	focus = {
 		id = kor_better_construction_technology
 		icon = GFX_goal_generic_production2
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_fortress_city
 		}
@@ -3719,7 +3731,7 @@ focus_tree = {
 	focus = {
 		id = kor_expansion_network
 		icon = GFX_goal_generic_radar
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_seoul_uiju_highway
 		}
@@ -3746,7 +3758,7 @@ focus_tree = {
 	focus = {
 		id = kor_miracle_hangang
 		icon = GFX_focus_generic_industry_3
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_expansion_network
 			focus = kor_hansung_university
@@ -3762,7 +3774,7 @@ focus_tree = {
 	focus = {
 		id = kor_military_organization_youth
 		icon = focus_kcpr
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_new_lifeguard_extension
 		}
@@ -3813,9 +3825,30 @@ focus_tree = {
 
 	}
 	focus = {
+		id = kor_remove_strike
+		icon = GFX_focus_c45_reject 
+		cost = 2.90
+		prerequisite = {
+			focus = kor_puppet_king
+		}
+		prerequisite = {
+			focus = kor_new_lifeguard_extension
+		}
+		x = 40
+		y = 5	
+			completion_reward = { 
+					remove_ideas = KOR_dead_strike
+					add_timed_idea = {
+						days = 365
+						idea = KOR_pay_of_ww1
+					}
+				}
+
+	}
+	focus = {
 		id = kor_ethnicity
 		icon = focus_knyc
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_the_new_history
 		}
@@ -3832,7 +3865,7 @@ focus_tree = {
 	focus = {
 		id = kor_best_of_korea
 		icon = GFX_goal_KOR_uprising
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_ethnicity
 		}
@@ -3849,7 +3882,7 @@ focus_tree = {
 	focus = {
 		id = kor_airborne_force
 		icon = GFX_focus_generic_paratrooper
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_air_reform
 		}
@@ -3887,7 +3920,7 @@ focus_tree = {
 	focus = {
 		id = kor_asian_communist_union
 		icon = GFX_focus_chi_cooperation_with_the_communists
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_communist_union
 		}
@@ -3904,7 +3937,7 @@ focus_tree = {
 	focus = {
 		id = kor_traditional_socialism
 		icon = GFX_goal_support_fourth_int
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_communist_army
 		}
@@ -3918,7 +3951,7 @@ focus_tree = {
 	focus = {
 		id = kor_key_point_asian_revolution
 		icon = GFX_focus_usa_focus_on_europe
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_traditional_socialism
 		}
@@ -3942,7 +3975,7 @@ focus_tree = {
 	focus = {
 		id = kor_communism_dictatorship
 		icon = GFX_focus_generic_soviet_politics
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_kill_fascism_2
 		}
@@ -3968,7 +4001,7 @@ focus_tree = {
 	focus = {
 		id = kor_dictatorship
 		icon = GFX_goal_support_communism
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_communism_dictatorship
 		}
@@ -3988,7 +4021,7 @@ focus_tree = {
 	focus = {
 		id = kor_communist_army
 		icon = GFX_focus_yug_pan_slavic_congress
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_dictatorship
 		}
@@ -4002,7 +4035,7 @@ focus_tree = {
 	focus = {
 		id = kor_positive_heroism
 		icon = GFX_goal_generic_cavalry
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_communist_propaganda
 		}
@@ -4019,7 +4052,7 @@ focus_tree = {
 	focus = {
 		id = kor_communist_propaganda
 		icon = GFX_focus_prc_maoism
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_dictatorship
 		}
@@ -4033,7 +4066,7 @@ focus_tree = {
 	focus = {
 		id = kor_leader_idolization
 		icon = GFX_focus_prc_agrarian_socialism
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_communist_propaganda
 		}
@@ -4053,7 +4086,7 @@ focus_tree = {
 	focus = {
 		id = kor_collectivist_propaganda
 		icon = GFX_goal_generic_propaganda
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_positive_heroism
 		}
@@ -4067,7 +4100,7 @@ focus_tree = {
 	focus = {
 		id = kor_dissolution_non-Communist
 		icon = GFX_goal_generic_war_with_comintern
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_collectivist_propaganda
 			focus = kor_leader_idolization
@@ -4082,7 +4115,7 @@ focus_tree = {
 	focus = {
 		id = kor_chinese_communist_party's_contact
 		icon = GFX_focus_prc_agrarian_socialism
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_asian_communist_union
 		}
@@ -4104,7 +4137,7 @@ focus_tree = {
 	focus = {
 		id = kor_korean_socialism
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_asian_communist_union
 		}
@@ -4124,7 +4157,7 @@ focus_tree = {
 	focus = {
 		id = kor_world_revolution
 		icon = GFX_focus_ger_great_red_menace
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_chinese_communist_party's_contact
 			focus = kor_korean_socialism
@@ -4200,7 +4233,7 @@ focus_tree = {
 	focus = {
 		id = kor_revolution_jap
 		icon = GFX_focus_attack_japan
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_world_revolution
 		}
@@ -4217,21 +4250,27 @@ focus_tree = {
 	focus = {
 		id = kor_national_vitality
 		icon = GFX_focus_ger_recovery
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_national_development
 		}
 		x = 63
 		y = 5
+		available = {
+			has_stability > 0.45
+		}
 			completion_reward = {
-					add_ideas = KOR_national_revitalization
+					add_timed_idea = {
+						idea = KOR_national_revitalization 
+						days = 1020
+					}
 				}
 
 	}
 	focus = {
 		id = kor_socialist_paradise
 		icon = GFX_goal_generic_soviet_construction
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_revolution_usa
 		}
@@ -4251,7 +4290,7 @@ focus_tree = {
 	focus = {
 		id = kor_workers_union
 		icon = GFX_focus_generic_industry_3
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_for_worker
 		}
@@ -4268,7 +4307,7 @@ focus_tree = {
 	focus = {
 		id = kor_people_worker_country
 		icon = GFX_goal_support_fourth_int
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_people_the_best
 		}
@@ -4282,7 +4321,7 @@ focus_tree = {
 	focus = {
 		id = kor_revolution_usa
 		icon = GFX_focus_attack_usa
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_world_revolution
 		}
@@ -4299,7 +4338,7 @@ focus_tree = {
 	focus = {
 		id = kor_revolution_mex
 		icon = GFX_focus_attack_mexico
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = kor_world_revolution
 		}

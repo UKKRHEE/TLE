@@ -1,5 +1,19 @@
 ideas = {
 	country = { #국민정신
+		KOR_pay_of_ww1 = { 
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = 0.10
+			}
+		}
+		KOR_industry_reform = {
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = -0.025
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+
 		KOR_emperors_country = {
 			picture = KOR_Weakening_the_kingship
 			modifier = {
@@ -136,6 +150,7 @@ ideas = {
 		KOR_striked_factories = {
 			
 			modifier = {
+				communism_drift = 0.05
 				consumer_goods_factor = 0.1
 				stability_factor = -0.1
 				industrial_capacity_factory = -0.2
@@ -233,6 +248,7 @@ ideas = {
 				justify_war_goal_time = -0.4
 				research_speed_factor = -0.05
 				production_speed_industrial_complex_factor = -0.1
+				generate_wargoal_tension = -0.4
 			}
 		}
 		KOR_Weakening_the_kingship = { #황권 약화
@@ -519,12 +535,10 @@ ideas = {
 			removal_cost = 0
 			
 			modifier = {
-				army_core_attack_factor = 0.1
-				army_core_defence_factor = 0.1
+				army_core_defence_factor = 0.05
 				training_time_army_factor = -0.05
-                army_morale_factor = 0.10
-				stability_factor = 0.10
-				war_support_factor = 0.10
+                army_morale_factor = 0.05
+				war_support_factor = 0.05
 			}
 		}
 		KOR_we_korean = { #한민족

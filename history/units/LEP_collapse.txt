@@ -1,0 +1,180 @@
+﻿
+# The LEP begins with multiple named variants of its starting divisions, one for each province.
+# This is to accommodate the events of the LEP collapse, wherein units are added, deleted, and transferred.
+# There is no compositional difference between a named and unnamed division (i.e. Qibing Xie = Anhui Qibing Xie), or between named variants of the same division.
+# Divisions in Nanjing are an exception to this rule, and are sorted as a province.
+
+
+###########################################################################################
+
+########################################
+# Vanilla Divisions (No-name variants) #
+########################################
+
+division_template = {
+	name = "Qibing Xie"
+	division_names_group = "LEP_CAV_01"
+	is_locked = yes
+	regiments = { # was 8 cav brigade previously
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Bubing Xie"
+	division_names_group = "LEP_INF_02"
+	regiments = { # was 8 inf brigade previously
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+
+units = {
+
+	# Nanjing
+	division = {
+		name = "Bubing Xie"
+		location = 11913 # Xiamen
+		division_template = "Bubing Xie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Bubing Xie"
+		location = 7071 # Xiamen
+		division_template = "Bubing Xie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Bubing Xie"
+		location = 10076 # Xiamen
+		division_template = "Bubing Xie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Bubing Xie"
+		location = 7014 # Xiamen
+		division_template = "Bubing Xie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Bubing Xie"
+		location = 12019 # Xiamen
+		division_template = "Bubing Xie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Bubing Xie"
+		location = 1628 # Xiamen
+		division_template = "Bubing Xie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Bubing Xie"
+		location = 11920 # Xiamen
+		division_template = "Bubing Xie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Bubing Xie"
+		location = 11991 # Xiamen
+		division_template = "Bubing Xie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Bubing Xie"
+		location = 1171 # Xiamen
+		division_template = "Bubing Xie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Bubing Xie"
+		location = 10044 # Xiamen
+		division_template = "Bubing Xie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Bubing Xie"
+		location = 11937 # Xiamen
+		division_template = "Bubing Xie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Bubing Xie"
+		location = 11913 # Xiamen
+		division_template = "Bubing Xie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Qibing Xie"
+		location = 1125 # Xiamen
+		division_template = "Qibing Xie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Qibing Xie"
+		location = 4173 # Xiamen
+		division_template = "Qibing Xie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Qibing Xie"
+		location = 10076 # Xiamen
+		division_template = "Qibing Xie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Qibing Xie"
+		location = 1099 # Xiamen
+		division_template = "Qibing Xie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+		}
+		requested_factories = 5
+		progress = 0.11
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+		}
+		requested_factories = 2
+		progress = 0.34
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.82
+		efficiency = 100
+	}
+}

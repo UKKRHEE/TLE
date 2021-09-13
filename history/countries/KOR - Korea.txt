@@ -235,9 +235,6 @@ add_ideas = {
 	limited_conscription
 	limited_exports
 }
-rule = {
-	can_create_factions = yes
-}
 create_import = {
 		resource = oil
 		factories = 2
@@ -250,13 +247,13 @@ set_convoys = 250
 set_politics = {
 	ruling_party = democratic
 	last_election = "1932.3.8"
-	election_frequency = 48
+	election_frequency = 60
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 36 #liberalism
+	democratic = 46 #liberalism
 	fascism = 17 #nazism
-	communism = 24 #marxism
+	communism = 14 #marxism
 	neutrality = 23 #despotism
 }
 
@@ -287,7 +284,7 @@ create_country_leader = {
 	expire = "1955.8.1"
 	ideology = despotism
 	traits = {
-		korea_emperor
+		leader_of_despotism
 	}
 }
 
@@ -326,6 +323,21 @@ create_country_leader = {
 
 #육군(원수)
 create_field_marshal = {
+	name = "Yi Byung Mu"
+	id = 12138
+	portrait_path = "gfx/leaders/KOR/이병무.png"
+	traits = { 
+		old_guard
+		infantry_officer 
+		infantry_leader
+	}
+	skill = 5
+    attack_skill = 2
+    defense_skill = 4
+    planning_skill = 2
+    logistics_skill = 4
+}
+create_field_marshal = {
 	name = "Yu Dong Yeol"
 	id = 12139
 	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Yu_Dong_yeol.dds"
@@ -335,7 +347,7 @@ create_field_marshal = {
 		cavalry_leader
 		politically_connected
 	}
-	skill = 5
+	skill = 4
     attack_skill = 3
     defense_skill = 3
     planning_skill = 3
@@ -409,9 +421,9 @@ create_field_marshal = {
 	portrait_path = "gfx/leaders/KOR/Portrait_Future_Korea_Generic_Male_navy_5.dds"
 	traits = { old_guard defensive_doctrine inflexible_strategist trickster career_officer }
 	skill = 4
-    attack_skill = 5
-    defense_skill = 7
-    planning_skill = 5
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 2
     logistics_skill = 4
 }
 
@@ -754,8 +766,8 @@ if = {
 		}
 		#중순양함	
 		create_equipment_variant = {
-			name = "경주급"
-			type = ship_hull_cruiser_1
+			name = "태종대왕급"
+			type = ship_hull_cruiser_2
 			name_group = KOR_CA_HISTORICAL
 			parent_version = 0
 			modules = {
@@ -774,50 +786,50 @@ if = {
 		}
 		#경순양함
 		create_equipment_variant = {
-			name = "평양급"
+			name = "영조대왕급"
 			type = ship_hull_cruiser_1
 			name_group = KOR_CL_HISTORICAL
 			parent_version = 0
 			modules = {
-				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_battery_slot = ship_light_medium_battery_1
 				fixed_ship_anti_air_slot = empty
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = cruiser_ship_engine_1
 				fixed_ship_armor_slot = ship_armor_cruiser_1
-				fixed_ship_secondaries_slot = ship_secondaries_1
+				fixed_ship_secondaries_slot = empty
 				mid_1_custom_slot = empty
-				mid_2_custom_slot = ship_torpedo_2
+				mid_2_custom_slot = empty
 				rear_1_custom_slot = empty
 			}
 		}
 		#구축함
 		create_equipment_variant = {
-			name = "광개토대왕급"
+			name = "장보고급"
 			type = ship_hull_light_2
 			name_group = KOR_DD_HISTORICAL
 			parent_version = 0
 			modules = {
-				fixed_ship_battery_slot = ship_light_battery_1
-				fixed_ship_anti_air_slot = empty
+				fixed_ship_battery_slot = ship_light_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = light_ship_engine_1
-				fixed_ship_torpedo_slot = ship_torpedo_1
-				mid_1_custom_slot = ship_torpedo_1
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_torpedo_slot = ship_torpedo_2
+				mid_1_custom_slot = ship_torpedo_2
 				rear_1_custom_slot = ship_depth_charge_1
 			}
 		}
 		#구축함2
 		create_equipment_variant = {
-			name = "울산급"
+			name = "경성급"
 			type = ship_hull_light_1
 			name_group = KOR_DD_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_battery_1
 				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = light_ship_engine_1
 				fixed_ship_torpedo_slot = ship_torpedo_1
@@ -827,7 +839,7 @@ if = {
 		}
 		#잠수함
 		create_equipment_variant = {
-			name = "부산급"
+			name = "이사부급"
 			type = ship_hull_submarine_1
 			name_group = KOR_SS_HISTORICAL
 			parent_version = 0

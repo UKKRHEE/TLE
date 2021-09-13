@@ -40,6 +40,14 @@ shared_focus = {
 	icon = GFX_focus_generic_concessions
 	x = 40
 	y = 0
+	available = {
+		if = {
+			limit = {
+				original_tag = CHI
+			}
+			has_completed_focus = CHC_chiang
+		}
+	}
 	offset = {
 		x = -6
 		y = 0
@@ -52,6 +60,20 @@ shared_focus = {
 		y = 0
 		trigger = {
 			 tag = MAN 
+		}
+	}
+	offset = {
+		x = 4
+		y = 0
+		trigger = {
+			tag = CHI
+		}
+	}
+	offset = {
+		x = 28
+		y = 0
+		trigger = {
+			tag = ZLC
 		}
 	}
 
@@ -1580,7 +1602,7 @@ shared_focus = {
 	}
 
 	bypass = {
-		NOT = { has_idea = CHI_nine_power_treaty }
+		
 
 	}
 
@@ -1589,7 +1611,7 @@ shared_focus = {
 	available_if_capitulated = yes
 
 	completion_reward = {
-		remove_ideas = CHI_nine_power_treaty
+		add_political_power = 120
 	}
 }
 

@@ -112,7 +112,7 @@ create_field_marshal = {
 	planning_skill = 3
 	logistics_skill = 2
 
-	id = 1099
+	id = 91099
 }
 
 ### Corps Commanders
@@ -132,7 +132,7 @@ create_corps_commander = { # Anhui Province
 	planning_skill = 3
 	logistics_skill = 3
 
-	id = 1110
+	id = 91110
 }
 
 create_corps_commander = { # Nanjing
@@ -153,7 +153,7 @@ create_corps_commander = { # Nanjing
 	planning_skill = 2
 	logistics_skill = 3
 
-	id = 1111
+	id = 91111
 }
 
 create_corps_commander = { # Zhejiang Province
@@ -173,7 +173,7 @@ create_corps_commander = { # Zhejiang Province
 	planning_skill = 4
 	logistics_skill = 1
 
-	id = 1112
+	id = 91112
 }
 
 create_corps_commander = { # Jiangsu Province
@@ -189,7 +189,7 @@ create_corps_commander = { # Jiangsu Province
 	planning_skill = 2
 	logistics_skill = 2
 
-	id = 1113
+	id = 91113
 }
 
 create_corps_commander = { # Jiangxi Province
@@ -208,7 +208,7 @@ create_corps_commander = { # Jiangxi Province
 	planning_skill = 3
 	logistics_skill = 2
 
-	id = 1114
+	id = 91114
 }
 
 create_corps_commander = { # Fujian Province
@@ -226,7 +226,7 @@ create_corps_commander = { # Fujian Province
 	planning_skill = 1
 	logistics_skill = 2
 
-	id = 1115
+	id = 91115
 }
 
 create_corps_commander = {
@@ -244,7 +244,7 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 1
 
-	id = 1505
+	id = 91505
 }
 
 create_corps_commander = {

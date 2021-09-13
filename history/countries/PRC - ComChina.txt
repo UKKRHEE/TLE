@@ -1,4 +1,4 @@
-﻿capital = 622
+﻿capital = 608
 
 oob = "PRC_1936"
 
@@ -8,7 +8,7 @@ set_technology = {
 	mass_assault = 1
 }
 set_stability = 0.6
-set_war_support = 0.7
+set_war_support = 1
 
 
 save_global_event_target_as = WTT_communist_china

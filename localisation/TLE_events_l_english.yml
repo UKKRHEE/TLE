@@ -4,8 +4,8 @@
  #황제의 전제군주정 선포!
  korea.1.title:0 "THE LAST EMPIRE"
  korea.1.desc:0 ""§R마지막 제국§!"에 오신 것을 환영합니다. 이 모드는 근대화에 성공한 대한제국이 동아시아의 강국인 상황입니다.\n여러 설정을 읽으실 것이면 1번 선택지를, 게임을 플레이 하실거면 2번 선택지를 누르시길 바랍니다."
- korea.1.a:0 "1.설정을 읽는다"
- korea.1.b:0 "2.게임을 플레이 한다."
+ korea.1.a:0 "설정을 읽는다"
+ korea.1.b:0 "게임을 플레이 한다."
  
  korea.2.title:0 "총리의 권한 강화 선포!"
  korea.2.desc:0 "오늘 이강 총리는 혼란한 제국정세를 잠재우기 위해서 계엄령 및 2차 개혁을 선포하였습니다.입헌파들은"
@@ -268,3 +268,4 @@
  TOOLTIP_MILITARISM_DELETED:0 "§G군국주의가 사라짐에 따라, 문민통제가 이뤄질 것입니다.§!"
  TOOLTIP_EMPEROR_WILL_BE_LEADER:0 "§Y황제폐하께서 친히 제국을 다스릴 것입니다.§!"
  TOOLTIP_JUNTA_WILL_BE_LEADER:0 "§Y군사혁명위원회가 제국을 통치할 것입니다.§!"
+ FLAG_WZC_WAS_COLLAPESED:0 "오성연군이 붕괴되다."

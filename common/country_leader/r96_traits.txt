@@ -312,21 +312,4 @@ leader_traits = {
 	sungmu = {
 	    stability_factor = 0.15
 	}
-	young_monarchist = {
-		stability_factor = 0.1
-		fascism_drift = 0.05
-		neutrality_drift = 0.05
-		war_support_factor = 0.05
-	}
-	korean_military_junta = {
-		stability_factor = -0.05
-		neutrality_drift = 0.05
-		war_support_factor = 0.05
-     	justify_war_goal_time = -0.4
-	}
-	the_democratist = {
-		democratic_drift = 0.1
-		research_speed_factor = 0.05
-		war_support_factor = -0.05
-	}	
 }
