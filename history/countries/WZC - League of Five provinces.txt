@@ -49,6 +49,20 @@ if = {
 	}
 }
 
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+	}
+	add_ideas = {
+		PRC_government_corruption
+		CHI_ineffective_bureaucracy_warlord
+	}
+}
+
+add_ideas = {
+	CHI_factory_strikes
+	
+}
 diplomatic_relation = { country = GEA relation = non_aggression_pact }
 
 set_politics = {

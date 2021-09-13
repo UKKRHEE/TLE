@@ -1355,6 +1355,13 @@ country_event = {
 		ZLC = {
 			set_country_flag = FLAG_WZC_WAS_COLLAPESED
 		}
+		KPL = {
+			transfer_state = 829
+		}
+		829 = {
+			
+				set_demilitarized_zone = yes
+		}
 		}
     }
 	option = {
@@ -1411,6 +1418,13 @@ country_event = {
 		}
 		ZLC = {
 		set_country_flag = FLAG_WZC_WAS_COLLAPESED
+		}
+		KPL = {
+			transfer_state = 829
+		}
+		829 = {
+			
+				set_demilitarized_zone = yes
 		}
 			WZC = {
 				load_oob = "LEP_collapse"

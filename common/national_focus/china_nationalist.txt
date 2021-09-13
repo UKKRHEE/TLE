@@ -45,6 +45,11 @@ focus_tree = {
 		cost = 1.50
 		x = 39
 		y = 0
+		bypass = {
+			NOT = {
+				original_tag = ZLC
+			}
+		}
 		completion_reward = {
 		add_stability = 0.01
 		country_event = { id = china.1021 }
@@ -61,8 +66,26 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ZLC_left
 		}
-		available = {
+		bypass = {
+			NOT = {
+				original_tag = ZLC
+			}
+		}
+		available = {	
+			if = {
+				limit = {
+					original_tag = ZLC
+				}
 		    has_country_leader = { name = "Wu Peifu" ruling_only = yes }
+			}
+			if = {
+				limit = {
+					NOT = {
+						original_tag = ZLC
+					}
+				}
+				has_political_power > 1
+			}
         }
 		x = 29
 		y = 1
@@ -458,6 +481,7 @@ focus_tree = {
 		}
 		available = {
 		NOT = { has_country_leader = { name = "Wu Peifu" ruling_only = yes } }
+		original_tag = ZLC
         }
 		x = 49
 		y = 1

@@ -1612,6 +1612,12 @@ shared_focus = {
 
 	completion_reward = {
 		add_political_power = 120
+		if = {
+			limit = {
+				has_idea = CHI_factory_strikes
+			}
+			remove_ideas = CHI_factory_strikes
+		}
 	}
 }
 

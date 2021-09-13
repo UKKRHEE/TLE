@@ -175,6 +175,33 @@ ideas = {
 		partial_economic_mobilisation = {
 			
 			available = {
+				if = {
+					limit = {
+						OR = {
+							 original_tag = CHI
+							 original_tag = ZLC
+							 original_tag = WZC
+							 original_tag = AHC
+							 original_tag = GXC
+							 original_tag = PRC
+							 original_tag = SHX
+							 original_tag = XSM
+							 original_tag = SIK
+							 original_tag = SZC
+	
+						}
+					}
+					controls_state = 613
+					controls_state = 829
+					controls_state = 608
+					controls_state = 716
+					controls_state = 605
+					NOT = {
+						has_idea = CHI_disjointed_gov
+						has_idea = CHI_ineffective_bureaucracy_warlord
+					}
+					
+				}
 				has_war_support > 0.25
 
 				if = {
@@ -250,6 +277,33 @@ ideas = {
 			
 			available = {
 				has_war_support > 0.5
+				if = {
+					limit = {
+						OR = {
+							 original_tag = CHI
+							 original_tag = ZLC
+							 original_tag = WZC
+							 original_tag = AHC
+							 original_tag = GXC
+							 original_tag = PRC
+							 original_tag = SHX
+							 original_tag = XSM
+							 original_tag = SIK
+							 original_tag = SZC
+	
+						}
+					}
+					controls_state = 613
+					controls_state = 829
+					controls_state = 608
+					controls_state = 716
+					controls_state = 605
+					NOT = {
+						has_idea = CHI_disjointed_gov
+						has_idea = CHI_ineffective_bureaucracy_warlord
+					}
+					
+				}
 				OR = {
 					has_government = fascism
 					has_government = communism
@@ -341,6 +395,33 @@ ideas = {
 			
 			
 			available = {
+				if = {
+					limit = {
+						OR = {
+							 original_tag = CHI
+							 original_tag = ZLC
+							 original_tag = WZC
+							 original_tag = AHC
+							 original_tag = GXC
+							 original_tag = PRC
+							 original_tag = SHX
+							 original_tag = XSM
+							 original_tag = SIK
+							 original_tag = SZC
+	
+						}
+					}
+					controls_state = 613
+					controls_state = 829
+					controls_state = 608
+					controls_state = 716
+					controls_state = 605
+					NOT = {
+						has_idea = CHI_disjointed_gov
+						has_idea = CHI_ineffective_bureaucracy_warlord
+					}
+					
+				}
 				has_war = yes
 				has_war_support > 0.8
 				any_enemy_country = {
@@ -526,7 +607,7 @@ ideas = {
 						original_tag = CHI
 						has_dlc = "Waking the Tiger"
 					}
-					NOT = { has_idea = CHI_nine_power_treaty }
+					NOT = { has_idea = CHI_factory_strikes }
 				}
 				if = {
 					limit = {
@@ -606,7 +687,7 @@ ideas = {
 						original_tag = CHI
 						has_dlc = "Waking the Tiger"
 					}
-					NOT = { has_idea = CHI_nine_power_treaty }
+					NOT = { has_idea = CHI_factory_strikes }
 				}
 				if = {
 					limit = {
@@ -684,7 +765,7 @@ ideas = {
 						original_tag = CHI
 						has_dlc = "Waking the Tiger"
 					}
-					NOT = { has_idea = CHI_nine_power_treaty }
+					NOT = { has_idea = CHI_factory_strikes }
 				}
 			}
 			
