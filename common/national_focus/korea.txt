@@ -1311,7 +1311,7 @@ focus_tree = {
 				set_rule = {
 					can_create_factions = yes
 				}
-				create_faction = "동아시아 민주동맹"
+				create_faction = "EASTASIAN_DEMOCRATICUNION"
 				JAP = {
 					country_event = {
 						id = generic.5
@@ -2807,7 +2807,7 @@ focus_tree = {
 		x = 72
 		y = 6
 			completion_reward = {
-					create_faction = "낙일 동맹"
+					create_faction = "GREAT_KOREAN_FACTION"
 					set_rule = {
 						can_create_factions = yes
 					}
@@ -3958,7 +3958,7 @@ focus_tree = {
 					has_completed_focus = kor_election_maintenance
 				}
 			completion_reward = {
-					create_faction = "동아시아 사회주의 연합"
+					create_faction = "FACTION_EAST_ASIAN_SOCIALIST_UNION"
 				}
 
 	}

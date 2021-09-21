@@ -1506,7 +1506,7 @@ country_event = {
 	is_triggered_only = yes
 	option = { 
 		name = china.1093.a
-		create_faction = "중국 연합전선"
+		create_faction = "FACTION_ZLC_UNITED_FRONT"
 		set_rule = {
 			can_create_faction = yes
 		}
