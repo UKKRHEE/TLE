@@ -563,7 +563,6 @@
 		id = SOV_collectivist_propaganda
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = SOV_stalin_constitution }
-		mutually_exclusive = { focus = SOV_positive_heroism }
 		x = -2
 		y = 1
 		relative_position_id = SOV_stalin_constitution
@@ -657,7 +656,6 @@
 		id = SOV_positive_heroism
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = SOV_stalin_constitution }
-		mutually_exclusive = { focus = SOV_collectivist_propaganda }
 		x = 0
 		y = 1
 		relative_position_id = SOV_stalin_constitution
@@ -2694,7 +2692,6 @@
 		id = SOV_rehabilitated_military
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = SOV_great_purge focus = SOV_permanent_revolution }
-		mutually_exclusive = { focus = SOV_nkvd_primacy }
 		x = -2
 		y = 1
 		relative_position_id = SOV_great_purge
@@ -2750,7 +2747,6 @@
 		id = SOV_nkvd_primacy
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = SOV_great_purge }
-		mutually_exclusive = { focus = SOV_rehabilitated_military }
 		x = 0
 		y = 1
 		relative_position_id = SOV_great_purge
@@ -2949,7 +2945,7 @@
 		available = {
 			OR = {
 				has_war_with = GER
-				has_war_with = JAP
+				has_war_with = KOR
 				has_war_with = ENG
 				has_war_with = FRA
 				has_war_with = USA

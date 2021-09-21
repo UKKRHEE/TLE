@@ -1,4 +1,12 @@
 ﻿l_english:
+ #군부대립
+ KOR_interservice_rivalry_army_dominant:0 "군부 대립 - 육군 우세"
+ KOR_interservice_rivalry_navy_dominant:0 "군부 대립 - 해군 우세"
+ KOR_interservice_rivalry_army_strengthened:0 "군부 대립 - 육군 강세"
+ KOR_interservice_rivalry_navy_strengthened:0 "군부 대립 - 해군 강세"
+ KOR_interservice_rivalry_balanced:0 "군부 대립 - 균형적"
+
+ #일본-중국
  JAP_showa_hirohito:0 "히로히토"
  JAP_showa_hirohito_desc:0 ""진무 덴노로부터 내려져 온 민세일계의 일본의 덴노이신 히로히토 폐하"\n\n다이쇼 덴노의 장남으로 태어난 히로히토는 일본의 구심점으로 자리매김하고 있습니다. 실권은 도쿠가와 가문이 다 장악을 하였지만, 언젠가 그들이 약해질 시기가 올 때까지 암중에서 기다릴 것입니다.."
  CHI_fight_with_korea:0 "항전"
@@ -13,6 +21,8 @@
  KOR_yi_jin_2:0 "강명황제 이진"
  KOR_yi_jin_2_desc:0 "굳셀 강, 밝을 명. 초명은 "§W이우용§!"인 대한제국의 3대 황제이자 조선의 28대 국왕인 그는 고조 광무제의 차남으로 태어났습니다. \n\n1917년 자식 없이 형황이 훙하자 대한제국 황태제에서 젊은 나이에 즉위를 하였습니다. 당시 혈기 어린, 젊은 황제인 그는 군에 대한 동경으로 가득 차있었으며 의도하지는 않았지만 이로 인해 군부가 커지는 결과를 자아냈습니다.\n\n1920년대부터 차근차근히 군부 내에서 황도파가 증가하면서 문민통제가 어긋나고 있을 때, 그는 가만히 상황을 두고만 보고 있었습니다.\n\n결국 지금 상황에서, 그의 제국은 어디로 튈지 모르는 혼란스러운 상황에 접어들었습니다. 이것이 다 그의 계획일지 아니면 의도치 않은 결과일지는 훗날 역사가 알려줄 것이지만 말입니다."
  
+ KOR_not_go_outside:0 "억제된 확장정책"
+ KOR_not_go_outside_2:0 "중국침략 야욕"
  KOR_emperors_country:0 "강명유신"
  KOR_emperors_country_desc:0 ""
  KOR_nations:0 "불구의 승리"

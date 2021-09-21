@@ -2,11 +2,73 @@
 
 oob = "KOR_1936"
 
+609 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+
+527 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+
+525 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+
+745 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+
+524 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+
+647 = {
+	start_resistance = yes
+	set_compliance = 20
+	set_resistance = 0
+	set_garrison_strength = 1.0
+}
+
+684 = {
+	start_resistance = yes
+	set_compliance = 20
+	set_resistance = 0
+	set_garrison_strength = 1.0
+}
+
+633 = {
+	start_resistance = yes
+	set_compliance = 20
+	set_resistance = 0
+	set_garrison_strength = 1.0
+}
 #set_autonomy = {
 #	target = RUS
 #	autonomous_state = autonomy_puppet
 #}
 give_guarantee = RUS
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	add_ideas = MTG_naval_treaty_adherent
+}
 if = {
 	limit = {
 		has_dlc = "Together for Victory"
@@ -139,10 +201,12 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	motorised_infantry = 1
-	marines  = 
+	marines  = 1
 	
+	### 기갑 ###
 	gwtank = 1
 	basic_light_tank = 1
+	basic_heavy_tank = 1
 	
 	### 지원 ###
 	tech_support = 1		
@@ -151,10 +215,16 @@ set_technology = {
 	
 	### 포병 ###
 	gw_artillery = 1
+	interwar_antiair = 1
 	
 	### 공군 ###
 	early_fighter = 1
+	naval_bomber1 = 1
+	early_bomber = 1
 	CAS1 = 1
+	cv_early_fighter = 1
+	cv_CAS1 = 1
+	cv_naval_bomber1 = 1
 	
 	### 육군 교리 ###
 	superior_firepower = 1
@@ -222,6 +292,7 @@ add_ideas = {
 	KOR_Weakening_the_kingship #근황파
 	KOR_militarism #군국주의
 	KOR_striked_factories #파업!
+	KOR_not_go_outside #억제된 확장정책
 	KOR_divided_politics #분열된 정부
 	KOR_failed_civilian_control_of_the_military #실패한 문민통제
 	KOR_political_officer #정치군인
@@ -234,6 +305,8 @@ add_ideas = {
 	low_economic_mobilisation
 	limited_conscription
 	limited_exports
+	#군부
+	KOR_interservice_rivalry_balanced #군부대립
 }
 create_import = {
 		resource = oil

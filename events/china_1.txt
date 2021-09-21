@@ -1522,6 +1522,7 @@ country_event = {
 						id = china.1094
 						days = 1
 					}
+					white_peace = ZLC
 				}
 
 			}
@@ -1536,6 +1537,7 @@ country_event = {
 						id = china.1094
 						days = 1
 					}
+					white_peace = ZLC
 				}
 
 			}
@@ -1550,6 +1552,7 @@ country_event = {
 						id = china.1094
 						days = 1
 					}
+					white_peace = ZLC
 				}
 
 			}
@@ -1564,6 +1567,7 @@ country_event = {
 						id = china.1094
 						days = 1
 					}
+					white_peace = ZLC
 				}
 
 			}
@@ -1578,6 +1582,7 @@ country_event = {
 						id = china.1094
 						days = 1
 					}
+					white_peace = ZLC
 				}
 
 			}
@@ -1592,6 +1597,7 @@ country_event = {
 						id = china.1094
 						days = 1
 					}
+					white_peace = ZLC
 				}
 
 			}
@@ -1606,6 +1612,7 @@ country_event = {
 						id = china.1094
 						days = 1
 					}
+					white_peace = ZLC
 				}
 
 			}
@@ -1620,6 +1627,7 @@ country_event = {
 						id = china.1094
 						days = 1
 					}
+					white_peace = ZLC
 				}
 
 			}
@@ -1634,6 +1642,7 @@ country_event = {
 						id = china.1094
 						days = 1
 					}
+					white_peace = ZLC
 				}
 
 			}
@@ -1648,6 +1657,7 @@ country_event = {
 						id = china.1094
 						days = 1
 					}
+					white_peace = ZLC
 				}
 
 			}
@@ -1666,9 +1676,29 @@ country_event = {
 	option = { 
 		name = china.1094.a
 		ZLC = {
-			add_to_faction = PREV
+			add_to_faction = ROOT
 			country_event = {
 				id = china.1095
+			}
+			if = {
+				limit = {
+					AHC = {
+						has_war_with = WZC
+					}
+				}		
+				AHC = {
+					white_peace = WZC
+				}
+			}
+			if = {
+				limit = {
+					CHI = {
+						has_war_with = WZC
+					}
+				}		
+				CHI = {
+					white_peace = WZC
+				}
 			}
 		}	
     }
@@ -1679,7 +1709,7 @@ country_event = {
 				id = china.1096
 			}
 			create_wargoal = {
-				target = PREV
+				target = ROOT
 				type = annex_everything
 			}
 		}	

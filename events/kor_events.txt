@@ -686,6 +686,7 @@ country_event = { #중국의 거절!
 				type = puppet_wargoal_focus
 			}
 		}
+		complete_national_focus = KOR_kwangtungjun
 	}
 }
 country_event = { #중국의 거절!
@@ -699,13 +700,15 @@ country_event = { #중국의 거절!
 	
 	option = { #동의
 		name = korea.23.a
+		ai_chance = {
+			base = 99
+		}
 		KOR = {
 			transfer_state = 761
 			transfer_state = 612
 			transfer_state = 611
 			transfer_state = 621	
 			transfer_state = 330	
-			add_state_core = 761
 			add_state_core = 612
 			add_state_core = 611
 			add_state_core = 621	
@@ -714,8 +717,16 @@ country_event = { #중국의 거절!
 	}
 	option = { #거절
 		name = korea.23.b
+		ai_chance = {
+			base = 1
+		}
+			add_state_core = 612
+			add_state_core = 611
+			add_state_core = 621	
+			add_state_core = 330	
+		end_puppet = MON
 		KOR = {
-			create_wargoal = {
+			declare_war_on = {
 				target = MON 
 				type = annex_everything
 			}
@@ -946,6 +957,48 @@ country_event = { #난항에 빠진 공세
 		name = korea.34.a
 		add_ideas = KOR_not_planed_attack
 	}
+}
+country_event = { #상하이 공습
+	id = korea.35
+	title = korea.35.title
+	desc = korea.35.desc
+	picture = GFX_report_event_hitler_handshake
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.35.a
+		load_oob = "KOR_shanghai"
+		transfer_state = 829
+		add_state_core = 829
+		829 = {
+			set_state_name = "상해"
+		}	
+		
+		set_province_name = {
+            id = 7014
+            name = "상해"
+        }
+		set_country_flag = KOR_SHANGHAI_ATTACK
+	}
+}
+country_event = { #
+	id = korea.36
+	title = korea.36.title
+	desc = korea.36.desc
+	picture = GFX_report_event_hitler_handshake
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.36.a
+		set_technology = {
+			
+	mobile_warfare = 1
+		}
+	}		
 }
 
 

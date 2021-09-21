@@ -1,5 +1,171 @@
 ideas = {
 	country = { #국민정신
+	
+		KOR_interservice_rivalry_army_dominant = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_interservice_rivalry_army_dominant
+			
+			research_bonus = {
+				naval_equipment = -0.1
+				naval_doctrine = -0.1
+				land_doctrine = 0.05
+			}
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = -0.2
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = -0.2
+			}
+		}
+
+		KOR_interservice_rivalry_army_strengthened = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_interservice_rivalry_army_strengthened
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = -0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = -0.1
+			}
+		}
+
+		KOR_interservice_rivalry_balanced = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_interservice_rivalry_balanced	
+		}
+		
+		KOR_interservice_rivalry_navy_strengthened = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_interservice_rivalry_navy_strengthened
+			
+			modifier = {
+				production_speed_arms_factory_factor = -0.1
+				production_speed_dockyard_factor = 0.1
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+
+		KOR_interservice_rivalry_navy_dominant = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_interservice_rivalry_navy_dominant
+			
+			research_bonus = { 
+				land_doctrine = -0.1
+				naval_doctrine = 0.05
+			} 
+
+			modifier = {
+				production_speed_arms_factory_factor = -0.2
+				production_speed_dockyard_factor = 0.2
+				planning_speed = -0.1
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = 0.1
+			}
+		}		
+		KOR_not_go_outside_2 = {
+			picture = generic_victors_of_ww1
+			targeted_modifier = {
+				tag = ZLC
+				generate_wargoal_tension = 0.75
+			}		
+			targeted_modifier = {
+				tag = CHI
+				generate_wargoal_tension = 0.75
+			}		
+			targeted_modifier = {
+				tag = WZC
+				generate_wargoal_tension = 0.75
+			}		
+			targeted_modifier = {
+				tag = SHX
+				generate_wargoal_tension = 0.75
+			}		
+			targeted_modifier = {
+				tag = XSM
+				generate_wargoal_tension = 0.75
+			}		
+			targeted_modifier = {
+				tag = SZC
+				generate_wargoal_tension = 0.75
+			}		
+			targeted_modifier = {
+				tag = GXC
+				generate_wargoal_tension = 0.75
+			}		
+			targeted_modifier = {
+				tag = YUN
+				generate_wargoal_tension = 0.75
+			}		
+			targeted_modifier = {
+				tag = HNC
+				generate_wargoal_tension = 0.75
+			}		
+			targeted_modifier = {
+				tag = SND
+				generate_wargoal_tension = 0.75
+			}		
+			targeted_modifier = {
+				tag = SIK
+				generate_wargoal_tension = 0.75
+			}		
+		}
+		KOR_not_go_outside = {
+			picture = generic_victors_of_ww1
+			modifier = {
+				war_support_factor = -0.05
+			}
+			rule = { 
+				can_not_declare_war = yes 
+			}
+		}
 		KOR_pay_of_ww1 = { 
 			picture = generic_goods_red_bonus
 			modifier = {
@@ -31,7 +197,12 @@ ideas = {
 			}
 		}
 		KOR_embargo_us = {
-			picture = generic_goods_red_bonus
+			picture = generic_goods_red_bonusofficers_purged
+			modifier = {
+				consumer_goods_factor = 0.1
+				stability_factor = -0.1
+				war_support_factor = -0.05
+			}
 			targeted_modifier = {
 				tag = USA
 				trade_opinion_factor = -1.0
@@ -226,7 +397,7 @@ ideas = {
 				stability_factor = 0.05
 			}
 		}
-		KOR_militarism = { #황권 약화
+		KOR_militarism = { #군국주의
 				
 			allowed = {
 				original_tag = KOR
@@ -1166,9 +1337,7 @@ ideas = {
 		    	}
 		    }
 		    available = {
-		    	NOT = {
-					has_completed_focus = KOR_use_the_anti-armed
-				}
+					has_completed_focus = kor_reform_korea
 			}	
 		
 		    ai_will_do = {
@@ -1299,6 +1468,13 @@ ideas = {
 		    	land_doctrine = 0.07
 		    }
 			picture = KOR_ji_chung_chun
+			on_add = {
+				hidden_effect = {
+					country_event = {
+						id = korea.36
+					}
+				}
+			}
 			
 		    traits = { military_theorist }
 	    }

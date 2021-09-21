@@ -6,6 +6,15 @@ KOR_the_problem_of_militaryship = {
 		original_tag = KOR
 	}
 }
+KOR_interservice_rivalry = {
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		original_tag = KOR
+	}
+}
+
 KOR_new_country_name = {
 
 	allowed = {

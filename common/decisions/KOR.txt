@@ -1,3 +1,440 @@
+
+KOR_interservice_rivalry = {
+	KOR_steel_for_guns = { 
+
+		icon = generic_tank
+
+		available = {
+			NOT = {
+				has_country_flag = KOR_war_conferences_cd
+			}
+			NOT = {
+				has_country_flag = KOR_steel_for_ships
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = KOR_steel_for_ships
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = -1
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			set_country_flag = { flag = KOR_war_conferences_cd value = 1 days = 180 }
+			KOR_interservice_rivalry_towards_army = yes
+			set_country_flag = KOR_steel_for_guns
+		}
+	}
+	KOR_prioritize_army_aircraft_construction = {
+
+		icon = generic_tank
+
+		available = {
+			NOT = {
+				has_country_flag = KOR_war_conferences_cd
+			}
+			NOT = {
+				has_country_flag = KOR_prioritize_naval_aircraft_construction
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = KOR_prioritize_naval_aircraft_construction
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = -1
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			set_country_flag = { flag = KOR_war_conferences_cd value = 1 days = 180 }
+			add_ideas = JAP_prioritize_army_aircraft_construction
+			KOR_interservice_rivalry_towards_army = yes
+			set_country_flag = KOR_prioritize_army_aircraft_construction
+		}
+	}
+	KOR_everybody_serves = {
+
+		icon = generic_tank
+
+		available = {
+			NOT = {
+				has_country_flag = KOR_war_conferences_cd
+			}
+			NOT = {
+				has_country_flag = KOR_draft_exemptions
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = KOR_draft_exemptions
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = -1
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			conscription = 0.02
+		}
+		complete_effect = {
+			set_country_flag = { flag = KOR_war_conferences_cd value = 1 days = 180 }
+			KOR_interservice_rivalry_towards_army = yes
+			set_country_flag = KOR_everybody_serves
+		}
+	}
+	KOR_raiding_regiments = {
+
+		icon = generic_tank
+
+		available = {
+			NOT = {
+				has_country_flag = KOR_war_conferences_cd
+			}
+			NOT = {
+				has_country_flag = KOR_special_air_landing_force
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = KOR_special_air_landing_force
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = -1
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			special_forces_cap = 0.02
+		}
+		complete_effect = {
+			set_country_flag = { flag = KOR_war_conferences_cd value = 1 days = 180 }
+			set_country_flag = KOR_raiding_regiments
+			KOR_interservice_rivalry_towards_army = yes
+		}
+	}
+	KOR_steel_for_ships = {
+
+		icon = generic_naval
+
+		available = {
+			NOT = {
+				has_country_flag = KOR_war_conferences_cd
+			}
+			NOT = {
+				has_country_flag = KOR_steel_for_guns
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = KOR_steel_for_guns
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = -1
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			set_country_flag = { flag = KOR_war_conferences_cd value = 1 days = 180 }
+			KOR_interservice_rivalry_towards_navy = yes
+			set_country_flag = KOR_steel_for_ships
+		}
+	}
+	KOR_prioritize_naval_aircraft_construction = {
+
+		icon = generic_naval
+
+		available = {
+			NOT = {
+				has_country_flag = KOR_war_conferences_cd
+			}
+			NOT = {
+				has_country_flag = KOR_prioritize_army_aircraft_construction
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = KOR_prioritize_army_aircraft_construction
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = -1
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			set_country_flag = { flag = KOR_war_conferences_cd value = 1 days = 180 }
+			add_ideas = JAP_prioritize_naval_aircraft_construction
+			KOR_interservice_rivalry_towards_navy = yes
+			set_country_flag = KOR_prioritize_naval_aircraft_construction
+		}
+	}
+	KOR_draft_exemptions = {
+
+		icon = generic_naval
+
+		available = {
+			NOT = {
+				has_country_flag = KOR_war_conferences_cd
+			}
+			NOT = {
+				has_country_flag = KOR_everybody_serves
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = KOR_everybody_serves
+			}
+		}
+		cost = 50
+		days_remove = -1
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 3
+		}
+		modifier = {
+			industrial_capacity_factory = 0.05
+			industrial_capacity_dockyard = 0.05
+		}
+		complete_effect = {
+			set_country_flag = { flag = KOR_war_conferences_cd value = 1 days = 180 }
+			KOR_interservice_rivalry_towards_navy = yes
+			set_country_flag = KOR_draft_exemptions
+		}
+	}
+	KOR_special_air_landing_force = {
+
+		icon = generic_naval
+
+		available = {
+			NOT = {
+				has_country_flag = KOR_war_conferences_cd
+			}
+			NOT = {
+				has_country_flag = KOR_raiding_regiments
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = KOR_raiding_regiments
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = -1
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			special_forces_attack_factor = 0.05 
+			special_forces_defence_factor = 0.05
+		}
+		complete_effect = {
+			set_country_flag = { flag = KOR_war_conferences_cd value = 1 days = 180 }
+			set_country_flag = KOR_special_air_landing_force
+			KOR_interservice_rivalry_towards_navy = yes
+		}
+	}
+	KOR_favor_army = {
+
+		icon = generic_tank
+
+		available = {
+			NOT = {
+				has_country_flag = KOR_war_conferences_cd
+			}
+			AND = {
+				OR = { 
+					has_country_flag = KOR_raiding_regiments 
+					has_country_flag = KOR_special_air_landing_force
+				}
+				OR = { 
+					has_country_flag = KOR_everybody_serves
+					has_country_flag = KOR_draft_exemptions
+				}
+				OR = { 
+					has_country_flag = KOR_prioritize_naval_aircraft_construction
+					has_country_flag = KOR_prioritize_army_aircraft_construction
+				}
+				OR = { 
+					has_country_flag = KOR_steel_for_guns
+					has_country_flag = KOR_steel_for_ships
+				}
+			}
+			
+		}
+		visible = {
+			AND = {
+				OR = { 
+					has_country_flag = KOR_raiding_regiments 
+					has_country_flag = KOR_special_air_landing_force
+				}
+				OR = { 
+					has_country_flag = KOR_everybody_serves
+					has_country_flag = KOR_draft_exemptions
+				}
+				OR = { 
+					has_country_flag = KOR_prioritize_naval_aircraft_construction
+					has_country_flag = KOR_prioritize_army_aircraft_construction
+				}
+				OR = { 
+					has_country_flag = KOR_steel_for_guns
+					has_country_flag = KOR_steel_for_ships
+				}
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		
+		complete_effect = {
+			set_country_flag = { flag = KOR_war_conferences_cd value = 1 days = 180 }
+			KOR_interservice_rivalry_towards_army = yes
+		}
+	}
+	KOR_favor_navy = {
+
+		icon = generic_naval
+
+		available = { 
+			NOT = {
+				has_country_flag = KOR_war_conferences_cd
+			}
+			AND = {
+				OR = { 
+					has_country_flag = KOR_raiding_regiments 
+					has_country_flag = KOR_special_air_landing_force
+				}
+				OR = { 
+					has_country_flag = KOR_everybody_serves
+					has_country_flag = KOR_draft_exemptions
+				}
+				OR = { 
+					has_country_flag = KOR_prioritize_naval_aircraft_construction
+					has_country_flag = KOR_prioritize_army_aircraft_construction
+				}
+				OR = { 
+					has_country_flag = KOR_steel_for_guns
+					has_country_flag = KOR_steel_for_ships
+				}
+			}
+			
+		}
+		visible = {
+			AND = {
+				OR = { 
+					has_country_flag = KOR_raiding_regiments 
+					has_country_flag = KOR_special_air_landing_force
+				}
+				OR = { 
+					has_country_flag = KOR_everybody_serves
+					has_country_flag = KOR_draft_exemptions
+				}
+				OR = { 
+					has_country_flag = KOR_prioritize_naval_aircraft_construction
+					has_country_flag = KOR_prioritize_army_aircraft_construction
+				}
+				OR = { 
+					has_country_flag = KOR_steel_for_guns
+					has_country_flag = KOR_steel_for_ships
+				}
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		
+		complete_effect = {
+			set_country_flag = { flag = KOR_war_conferences_cd value = 1 days = 180 }
+			KOR_interservice_rivalry_towards_navy = yes
+		}
+	}
+}
 KOR_the_problem_of_militaryship = {
 	
 }
@@ -191,38 +628,6 @@ KOR_new_country_name = {
 			}
         }
     }
-	KOR_attack_fengtian = {
-		icon = generic_industry
-		allowed = {
-		    OR = {
-			    original_tag = KOR 
-			    original_tag = MKR
-			    original_tag = DKR 
-		    }
-		}
-		available = {
-			FNG = { exists = yes }
-			OR = {
-				has_country_flag = fengtian_not_agreed
-				has_completed_focus = kor_republic
-			}
-		}	
-
-		fire_only_once = yes
-
-		cost = 50
-		days_remove = 45
-		ai_will_do = {
-			factor = 0
-		}
-
-		remove_effect = {
-            declare_war_on = {
-		        target = FNG
-		        type = annex_everything
-	        }
-		}
-	}
 	KOR_attack_siam = {
 		icon = generic_industry
 		allowed = {

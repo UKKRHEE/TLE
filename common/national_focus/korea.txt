@@ -873,8 +873,13 @@ focus_tree = {
 					add_stability = 0.05
 					add_popularity = {
 							ideology = fascism
-							popularity = -0.20
+							popularity = -0.15
 						}
+					add_popularity = {
+							ideology = neutrality
+							popularity = -0.07
+						}
+						remove_ideas = KOR_not_go_outside
 				}
 
 	}
@@ -1221,6 +1226,7 @@ focus_tree = {
 				popularity = 0.05
 			}
 			remove_ideas = KOR_Weakening_the_kingship
+			remove_ideas = KOR_not_go_outside
 		}
 
 	}
@@ -1598,6 +1604,10 @@ focus_tree = {
 		y = 4
 			completion_reward = {
 					add_war_support = 0.05
+					swap_ideas = {
+						add_idea = KOR_not_go_outside_2
+						remove_idea = KOR_not_go_outside
+					}
 				}
 
 	}
@@ -1664,9 +1674,7 @@ focus_tree = {
 			focus = kor_Imperialism
 		}
 		available = {
-			fascism > 0.45
-			has_war_support > 0.5
-			has_idea = KOR_yujin_kim
+			has_idea = KOR_not_go_outside_2 
 		}
 		x = 48
 		y = 4
@@ -1698,6 +1706,10 @@ focus_tree = {
 				target = KMN
 				transfer_troops = yes
 			}
+			annex_country = {
+				target = QIN
+				transfer_troops = yes
+			}
 		}
 
 	}
@@ -1716,6 +1728,7 @@ focus_tree = {
 					id = korea.23
 				}
 			}
+			recall_attache = MON
 		}
 
 	}
@@ -1794,20 +1807,20 @@ focus_tree = {
 	focus = {
 		id = KOR_kwangtungjun
 		icon = GFX_focus_qing_help
-		cost = 10.00
+		cost = 0.00
 		prerequisite = {
 			focus = KOR_plan_manchu
 		}
 		x = 48
 		y = 7
 		available = {
-			threat > 0.15
+			custom_trigger_tooltip = {
+				tooltip = KOR_WILL_BE_SKIPPED
+				has_country_flag = KOR_WILL_BE_SKIPPED
+			}
 		}
 		completion_reward = {
-			declare_war_on = {
-				target = ZLC
-				type = annex_everything
-			}
+			custom_effect_tooltip = KOREA_ATTACK_CHINA_IS_GOOD
 		}
 
 	}
@@ -1871,6 +1884,14 @@ focus_tree = {
 				target = SHX
 				type = annex_everything
 			}
+			create_wargoal = {
+				target = YUN
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = PRC
+				type = annex_everything
+			}
 		}
 
 	}
@@ -1920,8 +1941,14 @@ focus_tree = {
 		x = 52
 		y = 5
 		completion_reward = {
-			add_state_claim = 743
-			add_state_claim = 524
+			custom_effect_tooltip = KOREA_WILL_CLAIM_CHINA
+			hidden_effect = {
+			add_state_claim = 829
+			add_state_claim = 832
+			add_state_claim = 834
+			add_state_claim = 836
+			add_state_claim = 837
+			}
 		}
 
 	}
@@ -2018,7 +2045,7 @@ focus_tree = {
 	focus = {
 		id = kor_Imperialism
 		icon = GFX_focus_jap_cast_the_die
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = kor_territory_expansion
 		}
@@ -2039,7 +2066,7 @@ focus_tree = {
 	focus = {
 		id = KOR_allied_with_russia
 		icon = GFX_focus_befriend_russia
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = kor_Imperialism
 		}
@@ -2063,7 +2090,7 @@ focus_tree = {
 	focus = {
 		id = KOR_give_me_the_manchu 
 		icon = GFX_focus_befriend_russia
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_allied_with_russia
 		}
@@ -2095,7 +2122,7 @@ focus_tree = {
 	focus = {
 		id = kor_friendship_with_japan
 		icon = GFX_focus_chi_collaboration_with_the_japanese
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = kor_Imperialism
 		}
@@ -2116,11 +2143,6 @@ focus_tree = {
 }
 			completion_reward = {
 					create_faction = KOR_DEFENCE_FACTION
-					add_to_faction = KMN
-					add_to_faction = QIN
-					add_to_faction = MON
-					add_to_faction = RYU 
-					add_to_faction = RUS
 					
 				}
 
@@ -2128,7 +2150,7 @@ focus_tree = {
 	focus = {
 		id = kor_yeonhaeju
 		icon = GFX_goal_demand_sudetenland
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KOR_allied_with_russia
 			focus = kor_friendship_with_japan
@@ -2139,6 +2161,10 @@ focus_tree = {
 			controls_state = 825
 			controls_state = 824
 			controls_state = 823
+		}
+		bypass = {
+			controls_state = 408
+			controls_state = 409
 		}
 			completion_reward = {
 					RUS = {
@@ -2725,6 +2751,13 @@ focus_tree = {
 		y = 7
 			completion_reward = {
 					add_ideas = KOR_god_save_the_king
+					if = {
+						limit = {
+							has_idea = KOR_divided_politics 
+							has_completed_focus = kor_neutrality
+						}
+						remove_ideas = KOR_divided_politics
+					}
 				}
 
 	}
@@ -2775,15 +2808,10 @@ focus_tree = {
 		y = 6
 			completion_reward = {
 					create_faction = "낙일 동맹"
-					add_to_faction = CHI
-					add_to_faction = FNG
-					add_to_faction = SHX
-					add_to_faction = MON
-					add_to_faction = XSM
-					add_to_faction = YUN
-					add_to_faction = GXC
-					add_to_faction = SIK
-					add_to_faction = SIA
+					set_rule = {
+						can_create_factions = yes
+					}
+					remove_ideas = KOR_not_go_outside 
 				}
 
 	}
@@ -3288,14 +3316,14 @@ focus_tree = {
 					if = {
 							limit = {
 									NOT = {
-											has_idea = KOR_samsung_pacific
+											has_idea = KOR_daewoo_josun
 										}
 								}
-							add_ideas = KOR_samsung_pacific
+							add_ideas = KOR_daewoo_josun
 						}
 					if = {
 							limit = {
-									has_idea = KOR_samsung_pacific
+									has_idea = KOR_daewoo_josun
 								}
 							add_political_power = 150
 						}
@@ -3318,14 +3346,14 @@ focus_tree = {
 					if = {
 							limit = {
 									NOT = {
-											has_idea = KOR_daewoo_josun
+											has_idea = KOR_samsung_pacific
 										}
 								}
-							add_ideas = KOR_daewoo_josun
+							add_ideas = KOR_samsung_pacific
 						}
 					if = {
 							limit = {
-									has_idea = KOR_daewoo_josun
+									has_idea = KOR_samsung_pacific
 								}
 							add_political_power = 150
 						}

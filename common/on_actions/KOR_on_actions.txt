@@ -44,6 +44,21 @@ on_actions = {
 			if = {
 				limit = {
 					FROM = {
+						original_tag = WZC
+					}
+					ROOT = {
+						original_tag = KOR
+					}
+				}
+				KOR = {
+					country_event = {
+						id = korea.35
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
 						OR = {
 							original_tag = ZLC
 							original_tag = WZC
@@ -1274,6 +1289,46 @@ on_actions = {
 			if = {
 				limit = {
 					tag = KOR
+					has_war_support > 0.85
+					OR = {
+						
+							original_tag = ZLC
+							original_tag = WZC
+							original_tag = SHX
+							original_tag = XSM
+							original_tag = SND
+							original_tag = CHI
+							original_tag = HNC
+							original_tag = YUN
+							original_tag = SZC
+							original_tag = GXC
+							original_tag = SIK
+					}
+					has_idea = KOR_not_go_outside_2
+				}
+				remove_ideas = KOR_not_go_outside_2
+				
+			}
+			if = {
+				limit = {
+					tag = KOR
+					NOT = {
+						has_country_flag = KOR_SHANGHAI_ATTACK
+					}
+					has_war_with = WZC
+					829 = {
+						is_owned_by = KPL
+					}
+				}
+				KOR = {
+					country_event = {
+						id = korea.35
+					}
+				}	
+			}
+			if = {
+				limit = {
+					tag = KOR
 					OR = {
 						has_government = fascism
 						has_government = neutrality
@@ -1325,6 +1380,24 @@ on_actions = {
 						}
 				}
 				remove_ideas = CHI_fight_with_korea
+			}	
+			if = {
+				limit = {
+					original_tag = ZLC
+					original_tag = WZC
+					original_tag = SHX
+					original_tag = XSM
+					original_tag = SND
+					original_tag = CHI
+					original_tag = HNC
+					original_tag = YUN
+					original_tag = SZC
+					original_tag = GXC
+					original_tag = SIK
+						NOT = {
+							has_war_with = KOR
+						}
+				}				
 				if = {
 					limit = {
 						KOR = {
@@ -1352,6 +1425,13 @@ on_actions = {
 					controls_state = 608
 					controls_state = 826
 					controls_state = 829
+					KOR = {
+						OR = {
+							has_war_with = CHI
+							has_war_with = ZLC
+							has_war_with = WZC
+						}
+					}
 				}
 				USA = {
 				country_event = {

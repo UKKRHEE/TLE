@@ -129,9 +129,9 @@ bookmarks = {
 			history = "JAP_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
-				state_shintoism
-				JAP_zaibatsus
-				JAP_militarism
+				JAP_showa_hirohito
+				JAP_democratic_popularity
+				JAP_army_planning
 			}	
 			focuses = {
 				JAP_the_zero

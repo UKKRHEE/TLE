@@ -519,8 +519,8 @@ focus_tree = {
 				can_create_factions = yes
 			}
 		remove_ideas = JAP_democratic_popularity
-		set_politics = { ruling_party = democratic elections_allowed = yes }
-		add_popularity = { ideology = democratic popularity = 0.15 } 
+		set_politics = { ruling_party = neutrality elections_allowed = yes }
+		add_popularity = { ideology = neutrality popularity = 0.15 } 
 		add_ideas = JAP_facist_unrest
 		add_political_power = -75
 		hidden_effect = { country_event = { id = japan.1007 } }

@@ -1,11 +1,25 @@
 ﻿l_english:
 
  #한국
+ KOR_reichskommissariat:0 "더 멀리, 더 많이, 더 위로"
+ KOR_interservice_rivalry:0 "제국회의"
+ KOR_interservice_rivalry_desc:0 "제국 군부의 정책을 결정하는 제국회의는 현재 경상, 전라, 충청의 §C해군§! 파벌과 평안, 함경, 황해의 §R육군§! 파벌, 이 둘로 나뉘어져 있습니다. \n\n이 둘은 시시건건 대립을 하면서 군의 발전과 훈련보다는 내부적인 정치싸움에 휩싸여 있습니다."
  KOR_new_country_name:0 "새로운 국가"
  KOR_new_country_name_desc:0 "붕괴되었던 국가는 회복되고 있으며 경제는 안정화 되었습니다. 이제는 다른 행동이 필요한 시간입니다.\n\n각하, 명령을 내려주십시오."
+ KOR_war_conferences_cd:0 "근 6개월 안에 제국회의가 소집됨"
  
  KOR_daehwan_empire:0 "대환제국 선포"
  KOR_asia_union:0 "아시아 연방 선포"
+ 
+ #
+ KOR_steel_for_guns:0 "§R총기에 철강 할당§!"
+ KOR_steel_for_ships:0 "§C함선에 철강 할당§!"
+ KOR_prioritize_army_aircraft_construction:0 "§R육군 항공기 생산 우선§!"
+ KOR_prioritize_naval_aircraft_construction:0 "§C해군 항공기 생산 우선§!"
+ KOR_everybody_serves:0 "§R징병령§!"
+ KOR_draft_exemptions:0 "§C동원령§!"
+ KOR_raiding_regiments:0 "§R육군 특전대§!"
+ KOR_special_air_landing_force:0 "§C해군 특전대§!"
  
  #툴팁
  form_country_korea_tt:0 "아시아의 §Y한반도§! 전역을 지배합니다." 
