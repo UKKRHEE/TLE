@@ -1434,9 +1434,9 @@ on_actions = {
 					}
 				}
 				USA = {
-				country_event = {
-					id = korea.28
-				}
+					country_event = {
+						id = korea.28
+					}
 				}
 			}
 			if = {

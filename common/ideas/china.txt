@@ -1,5 +1,21 @@
 ideas = {
 	country = {
+		CHI_attack_with_clique = {
+			allowed = {
+				always = no
+			}
+			
+			targeted_modifier = {
+				tag = WZC
+				attack_bonus_against = 0.5
+				defense_bonus_against = 0.5
+			}	
+			targeted_modifier = {
+				tag = AHC
+				attack_bonus_against = 0.5
+				defense_bonus_against = 0.5
+			}	
+		}
 		CHI_fight_with_korea = {
 			allowed = {
 				always = no

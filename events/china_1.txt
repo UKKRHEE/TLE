@@ -639,8 +639,7 @@ country_event = {
 		create_country_leader = {
 			name = "Chao Kun"
 			portrait_path = "gfx/leaders/ZLC/Portrait_ZLC_Chao_kun.png"
-			desc = "QIE_WU_PEIFU_ARMY_DESC"
-			desc = "QIE_WANG_HUAIQING_ARMY_DESC"
+			desc = ""
 			traits = {
 			}
 			ideology = despotism
