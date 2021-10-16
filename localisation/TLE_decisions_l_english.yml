@@ -10,7 +10,10 @@
  
  KOR_daehwan_empire:0 "대환제국 선포"
  KOR_asia_union:0 "아시아 연방 선포"
- 
+ KOR_the_three_countries_plan:0 "천하삼분지계"
+ KOR_three_divided_china:0 "천하삼분지계"
+ TRIGGER_TOOLTIP_RULLED_CHINA:0 "§Y만주§!, §Y청도§!, §Y대만§!, §Y몽골령 중국§!을 제외한 모든 중국 전토를 점령하고 있다."
+ KOR_the_war_plan_Z:0 "§Y전쟁계획 '천명'§!"
  #
  KOR_steel_for_guns:0 "§R총기에 철강 할당§!"
  KOR_steel_for_ships:0 "§C함선에 철강 할당§!"
@@ -50,3 +53,7 @@
  KOR_sue_for_peace_nuke_desc:0 "적들은 새롭고 가장 잔혹한 폭탄을 사용했습니다. 전쟁은 우리의 우위로 발달하는 것 만은 아닙니다. 우리는 반드시 견딜 수 없는 것을 견뎌야만 합니다."
  KOR_sue_for_peace_nuke_mission:0 "대한 국토에 핵공격"
  KOR_sue_for_peace_nuke_mission_desc:0 "최근 성공한 핵폭탄 실험은 대한 본토로의 전면적인 침공대책을 마련해주었습니다. 정보부는 대한과 멀리 떨어진 타이완 섬과 그들의 과거 식민지였던 칭다오를 지배하며 괴뢰국 만주국을 지배하며, 저들의 육군을 100사단 이하로 줄이거나 해군을 30개로 줄인 후 본토의 두 장소를 핵폭탄으로 기습하면 대한 정부의 무조건적인 항복을 이끌어낼 수 있다고 제안했습니다."
+ 
+ CHI_fight_with_korea:0 "한국과의 전쟁"
+ CHI_fight_in_our_land:0 "중원에서의 항전"
+ CHI_fight_in_our_land_desc:0 "저들은 강하고, 우리 영 내로 진입하고 있습니다. @KOR한국의 공세를 막을 수는 없지만, 우리 중화인민의 힘으로 저들의 진공을 최대한 늦출 수는 있을 것입니다."

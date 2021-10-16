@@ -23,7 +23,7 @@ add_ideas = {
 
 
 #if = {
-#	limit = { has_dlc = "Waking the Tiger" }
+#	limit = { }
 #	add_ideas = {
 #		JAP_interservice_rivalry_balanced		
 #	}
@@ -125,7 +125,7 @@ set_convoys = 400
 if = {
 	limit = {
 		has_dlc = "Together for Victory"
-		not = { has_dlc = "Waking the Tiger" }
+		
 	}
 }
 if = {
@@ -163,7 +163,7 @@ create_country_leader = {
 	ideology = fascism_ideology
 	traits = {
 		#warrior_code
-		emperor_showa
+		tennoheika
 		#imperial_sanction
 	}
 	id = 700 #Hirohito
@@ -176,6 +176,7 @@ create_country_leader = {
 	expire = "1989.1.1"
 	ideology = despotism
 	traits = {
+		the_shogun
 		warrior_code
 		#emperor_showa
 		#imperial_sanction

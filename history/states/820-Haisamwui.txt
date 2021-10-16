@@ -27,8 +27,6 @@ state={
 			owner = KOR
 		}
 		add_core_of = KOR
-		add_claim_by = SOV
-		add_claim_by = RUS
 	}
 
 	provinces={

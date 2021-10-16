@@ -7,7 +7,12 @@ state={
 	history={
 		owner = KOR
 		buildings = {
-			infrastructure = 2
+			infrastructure = 5
+			industrial_complex = 1
+			7221 = {
+				naval_base = 7
+
+			}
 		}
 		add_core_of = KOR
 	}

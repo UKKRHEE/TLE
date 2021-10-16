@@ -31,6 +31,10 @@ set_politics = {
 	elections_allowed = no
 }
 
+	add_ideas = {
+		PRC_government_corruption
+		CHI_ineffective_bureaucracy_warlord
+	}
 set_popularities = {
 	neutrality = 100
 	

@@ -7,4 +7,12 @@ spriteTypes = {
 		tilingCenter = no	
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"				
 	}
+	spriteType = {
+		name = "GFX_frontend_logo_TLE" 
+		textureFile = "gfx/interface/TLE_logo_game.dds"
+	}
+	spriteType = {
+		name = "GFX_bookmark_TLE_logo" 
+		textureFile = "gfx/interface/TLE_2.png"
+	}
 }

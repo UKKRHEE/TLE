@@ -48,6 +48,9 @@ focus_tree = {
 		available = {
 			has_country_leader = { name = "Chiang Kai-Shek" ruling_only = yes } 
         }
+		ai_will_do = {
+				factor = 100
+		}
 		x = 3
 		y = 1
 		completion_reward = {
@@ -114,21 +117,15 @@ focus_tree = {
 		focus = CHC_invite_military_members
 		focus = CHC_restrict_the_party
 		}
+		
+		ai_will_do = {
+				factor = 2
+		}
 		x = 3
 		y = 3
 		completion_reward = {
-			if = {
-				limit = {
-					KPL = {
-						exists = yes
-					}
-				}
-				create_wargoal = {
-					type = annex_everything 
-					target = KPL
-				}
-			}	
-			set_capital = 613
+			remove_ideas = CHI_failed_north_attack
+			add_state_core = 829
 		}
 	}
 	focus = {
@@ -241,6 +238,10 @@ focus_tree = {
 		completion_reward = {
 		create_wargoal = {
         target = YUN
+        type = annex_everything
+        }
+		create_wargoal = {
+        target = SZC
         type = annex_everything
         }
 		}
@@ -523,6 +524,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_political_power = 120
+		remove_ideas = PRC_government_corruption
 		}
 	}
 	focus = {

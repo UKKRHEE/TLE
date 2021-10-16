@@ -47,6 +47,14 @@ oob = "KOR_1936"
 #	target = RUS
 #	autonomous_state = autonomy_puppet
 #}
+add_offsite_building = {
+	type = arms_factory
+	level = 3
+}
+add_offsite_building = {
+	type = industrial_complex
+	level = 4
+}
 give_guarantee = RUS
 
 if = {
@@ -337,22 +345,22 @@ create_country_leader = {
 #}
 
 create_country_leader = {
-	name = "Yi Byung Mu"
+	name = "Yi Byung Mu" #이병무
 	desc = "KOR_YI_JIN_DESC"
 	picture = "gfx/leaders/KOR/이병무.png"
 	expire = "1955.8.1"
-	ideology = despotism
+	ideology = despotism #권위주의
 	traits = {
-		leader_of_despotism
+		leader_of_despotism #대전쟁의 영웅
 	}
 }
 
 create_country_leader = {
-	name = "Pak Hon Yong"
+	name = "Pak Hon Yong" #빨갱이
 	desc = ""
-	picture = "gfx/leaders/KOR/Portrait_KOR_Pak_Hon_yong.dds"
+	picture = "gfx/leaders/KOR/Portrait_KOR_Pak_Hon_yong.dds" #빨갱이
 	expire = "1965.1.1"
-	ideology = communism_subtype
+	ideology = communism_subtype #빨갱이
 	traits = {
 		#
 	}
@@ -370,9 +378,9 @@ create_country_leader = {
 #}
 
 create_country_leader = {
-	name = "Yu Dong Yeol"
+	name = "Yi Kang"
 	desc = ""
-	picture = "gfx/leaders/KOR/Portrait_KOR_Yu_Dong_yeol.dds"
+	picture = "gfx/leaders/KOR/Portrait_yi_kang_old.png"
 	expire = "1972.5.11"
 	ideology = fascism_ideology
 	traits = {
@@ -381,19 +389,35 @@ create_country_leader = {
 }	
 
 #육군(원수)
-create_field_marshal = {
-	name = "Yi Byung Mu"
-	id = 12138
-	portrait_path = "gfx/leaders/KOR/이병무.png"
-	traits = { 
-		old_guard
+create_field_marshal = { #계급 - 원수
+	name = "Yi Byung Mu" #장군 이름 
+	id = 12138 #장군 고유 id
+	portrait_path = "gfx/leaders/KOR/이병무.png" #포트레잇(사진)
+	traits = { #트레잇
+		old_guard #ㅄ파
 		infantry_officer 
 		infantry_leader
 	}
-	skill = 5
-    attack_skill = 2
-    defense_skill = 4
-    planning_skill = 2
+	skill = 5 #레벨
+    attack_skill = 2 #공 
+    defense_skill = 4 #방
+    planning_skill = 2 #작전
+    logistics_skill = 4 #보급
+}
+create_field_marshal = {
+	name = "Yi Kang"
+	id = 12141
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_yi_kang_emperor.png"
+	traits = { 
+		KOR_imperial_family
+		old_guard
+		infantry_officer
+		politically_connected
+	}
+	skill = 4
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 3
     logistics_skill = 4
 }
 create_field_marshal = {
@@ -536,7 +560,7 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Ji Cheong Cheone"
+	name = "Ji Cheong Cheon"
 	id = 19366
 	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Ji_Cheong_cheon.dds"
 	traits = { inflexible_strategist infantry_officer defensive_doctrine }
@@ -798,11 +822,65 @@ create_navy_leader = {
 	maneuvering_skill = 1
 	coordination_skill = 1
 }
+create_navy_leader = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+create_navy_leader = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+create_navy_leader = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
 
 
 
 if = {
 	limit = { has_dlc = "Man the Guns"}
+		#항모
+		create_equipment_variant = {
+			name = "이순신급"
+			type = ship_hull_carrier_conversion_bb
+			name_group = KOR_CV_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_secondaries_slot = empty
+				mid_1_custom_slot = ship_deck_space
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "태조대제급"
+			type = ship_hull_carrier_conversion_bb
+			name_group = KOR_CV_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				mid_1_custom_slot = ship_deck_space
+			}
+			obsolete = yes
+		}
 		#전함
 		create_equipment_variant = {
 			name = "광무황제급"

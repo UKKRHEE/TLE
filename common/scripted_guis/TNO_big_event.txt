@@ -46,6 +46,78 @@ scripted_gui = {
 			}
 		}
 	}
+	##한미전쟁##
+	TNO_SG_big_event_korea_war_with_usa = { 
+		context_type = player_context
+		window_name = "TNO_SG_big_korea_war_with_usa"
+
+		visible = {
+			has_country_flag = korea_war_with_usa
+		}
+	}
+
+	TNO_SG_big_event_frame_korea_war_with_usa = {
+		context_type = player_context
+		window_name = "TNO_SG_big_event_frame_korea_war_with_usa"
+
+		visible = {
+			has_country_flag = korea_war_with_usa
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = korea_war_with_usa
+			}
+		}
+	}
+	##한소전쟁##
+	TNO_SG_big_event_russia_attack_korea = {
+		context_type = player_context
+		window_name = "TNO_SG_big_russia_attack_korea"
+
+		visible = {
+			has_country_flag = russia_attack_korea
+		}
+	}
+
+	TNO_SG_big_event_frame_russia_attack_korea = {
+		context_type = player_context
+		window_name = "TNO_SG_big_event_frame_russia_attack_korea"
+
+		visible = {
+			has_country_flag = russia_attack_korea
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = russia_attack_korea
+			}
+		}
+	}
+	##한소전쟁##
+	TNO_SG_big_event_fall_of_korea = { 
+		context_type = player_context
+		window_name = "TNO_SG_big_fall_of_korea"
+
+		visible = {
+			has_country_flag = fall_of_korea
+		}
+	}
+
+	TNO_SG_big_event_frame_fall_of_korea = {
+		context_type = player_context
+		window_name = "TNO_SG_big_event_frame_fall_of_korea"
+
+		visible = {
+			has_country_flag = fall_of_korea
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = fall_of_korea
+			}
+		}
+	}
 
 	##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
 

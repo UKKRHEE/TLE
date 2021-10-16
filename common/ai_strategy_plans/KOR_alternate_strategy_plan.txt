@@ -1,0 +1,36 @@
+KOR_alternate_plan_emperor = {
+	name = "Korea Shinhan Plan" #황제 집권
+	desc = "God Save our Country"
+
+	enable = {
+		original_tag = KOR
+		OR = {
+			has_game_rule = {
+				rule = KOR_ai_behavior
+				option = SHINHAN
+			}
+		}
+	}
+	abort = {
+
+	}
+
+	ai_national_focuses = {
+	    KOR_imperial_section
+		KOR_freedom_party
+		KOR_jiandao_zhichi
+		
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

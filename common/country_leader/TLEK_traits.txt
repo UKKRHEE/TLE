@@ -1,22 +1,26 @@
 leader_traits = {
 
 	young_monarchist = {
+		random = no
 		stability_factor = 0.1
-		fascism_drift = 0.05
 		war_support_factor = 0.05
+		offensive_war_stability_factor = 0.2
 	}
 	korean_military_junta = {
+		random = no
 		stability_factor = -0.05
 		neutrality_drift = 0.15
 		war_support_factor = 0.05
      	justify_war_goal_time = -0.4
 	}
 	the_democratist = {
+		random = no
 		democratic_drift = 0.1
 		research_speed_factor = 0.05
 		war_support_factor = -0.05
 	}	
 	leader_of_despotism = {
+		random = no
 		war_support_factor = 0.05
 		army_core_defence_factor = 0.05
 	}
@@ -59,8 +63,33 @@ leader_traits = {
 	}
 	dictator_kor = { #황족 출신
 		random = no
-		political_power_gain = 0.25
+		political_power_gain = 0.3
 		stability_factor = 0.15
-		conscription = 0.0075
+		conscription = 0.008
+		fascism_drift = 0.2
+	}
+	the_shogun = { #황족 출신
+		random = no
+		political_power_gain = 0.25
+		stability_factor = 0.05
+		generate_wargoal_tension = -0.4
+		targeted_modifier = {
+			tag = KOR
+			generate_wargoal_tension_against = 0.8
+		}
+	}
+	tennoheika = {
+		random = no
+		stability_factor = 0.05
+		political_power_gain = 0.5
+		
+	}
+	longyun_the_general = {
+		random = no
+		army_core_defence_factor = 0.05
+		stability_factor = 0.05
+		war_support_factor = 0.05
+		political_power_gain = 0.1
+		
 	}
 }

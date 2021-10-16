@@ -21,6 +21,15 @@ add_offsite_building = {
 	level = 2
 }
 
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+	}
+	add_ideas = {
+		PRC_government_corruption
+		CHI_ineffective_bureaucracy_warlord
+	}
+}
 set_research_slots = 2
 set_convoys = 10
 

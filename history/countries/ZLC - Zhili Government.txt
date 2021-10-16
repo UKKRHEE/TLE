@@ -27,22 +27,6 @@ add_ideas = {
 	CHI_factory_strikes
 }
 set_cosmetic_tag = ZLC_beiyang
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "Waking the Tiger"
-		}
-	}
-	add_ideas = {
-		CHI_communist_uprisings
-	}
-}
-
-
-if = {
-	limit = {
-		has_dlc = "Waking the Tiger"
-	}		
 	add_ideas = {
 		CHI_nine_power_treaty
 		CHI_army_corruption_1
@@ -51,7 +35,6 @@ if = {
 		free_trade
 		CHI_hyper_inflation_1
 	}
-}
 save_global_event_target_as = WTT_current_china_leader
 QIE_start_naval_variant = yes
 

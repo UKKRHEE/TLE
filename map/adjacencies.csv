@@ -176,4 +176,5 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4391;12526;impassable;-1;-1;-1;-1;-1;;pamir mountains
 3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
 4056;10011;sea;7932;-1;-1;-1;-1;;Busan-Tsushima
+13245;13246;sea;2781;-1;-1;-1;-1;;Ongjin Peninsula
 -1;-1;;-1;-1;-1;-1;-1;-1

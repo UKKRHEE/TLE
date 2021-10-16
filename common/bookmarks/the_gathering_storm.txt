@@ -3,7 +3,7 @@ bookmarks = {
 		name = "GATHERING_STORM_NAME"
 		desc = "GATHERING_STORM_DESC"
 		date = 1936.1.1.12
-		picture = "GFX_select_date_1936"
+		picture = "GFX_bookmark_TLE_logo"
 		default_country = "KOR"
 		default = yes
 		

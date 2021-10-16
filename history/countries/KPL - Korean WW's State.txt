@@ -27,7 +27,7 @@ set_popularities = {
 }
 
 add_ideas = {
-	#
+	KPL_is_cant_attack
 }
 
 create_country_leader = {

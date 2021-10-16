@@ -7,6 +7,18 @@ TNO_SG_big_event_korea_ww_china_T:0 "한중전쟁"
 TNO_SG_big_event_korea_ww_china_D:0 "중국이 제국주의에 의해서 망한다면\n중국인은 망국노로 살아가게 될 것이다.\n그러나 중국이 공산주의에 의해서 망한다면\n중국인은 노예로도 살아갈 수 없을 것이다.\n-장개석"
 TNO_SG_big_event_korea_ww_china_A:0 "전쟁의 시작이다."
 
+TNO_SG_big_event_korea_war_with_usa_T:0 "태평양 전쟁"
+TNO_SG_big_event_korea_war_with_usa_D:0 "사내 대장부는 집을 나가\n뜻을 이루기 전에는\n집에 돌아오지 않는다.\n-윤봉길"
+TNO_SG_big_event_korea_war_with_usa_A:0 "폭주하는 호랑이."
+
+TNO_SG_big_event_russia_attack_korea_T:0 "시베리아 전쟁"
+TNO_SG_big_event_russia_attack_korea_D:0 "뭉치면 살고\n흩어지면 죽는다\n-이승만"
+TNO_SG_big_event_russia_attack_korea_A:0 "곰과 호랑이의 싸움."
+
+TNO_SG_big_event_fall_of_korea_T:0 "한국의 종말"
+TNO_SG_big_event_fall_of_korea_D:0 "남을 너그럽게 받아들이는 사람은\n사람들의 마음을 얻고\n위엄과 무력으로 엄하게 다스리는 자는\n사람들의 노여움을 사게 된다\n-조선 세종"
+TNO_SG_big_event_fall_of_korea_A:0 "오, 대한이여."
+
 ##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
 
 

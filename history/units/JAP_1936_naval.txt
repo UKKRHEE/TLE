@@ -13,12 +13,7 @@ units = {
 			location = 9998  #Yokosuka
 			#Dai 1 Sentai
 			ship = { name = "Nagato"  pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Nagato Class" } } }
-			ship = { name = "Haruna" definition = battle_cruiser start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = JAP version_name = "Kongo Class"} } }
-			ship = { name = "Fuso" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = JAP version_name = "Fuso/Ise Class"} } }
-			ship = { name = "Haguro" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Myoko Class"} } }	
-			ship = { name = "Nachi" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Myoko Class"} } }
-			ship = { name = "Satsuki" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
-			ship = { name = "Minazuki" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
+			ship = { name = "Haruna" definition = battle_cruiser start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = 
 			ship = { name = "Fumizuki" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
 			ship = { name = "Nagatsuki" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
 			# Dai 23 Kuchikutai 
@@ -31,14 +26,6 @@ units = {
 			name = "1 Suirai Sentai" #A part of "Dai 1 Kantai"
 			location = 9998  #Yokosuka
 			#Flagship
-			ship = { name = "Abukuma" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma/Nagara Class"} } }
-			#Dai 9 Kuchikutai
-			ship = { name = "Ariake" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Fubuki Class"} } }
-			ship = { name = "Yugure" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Fubuki Class"} } }
-			#Dai 21 Kuchikutai
-			ship = { name = "Hatsuharu" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Fubuki Class"} } }
-			ship = { name = "Nenohi" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Fubuki Class"} } }	
-			ship = { name = "Wakaba" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Fubuki Class"} } }		
 			ship = { name = "Hatsushimo" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Fubuki Class"} } }
 			ship = { name = "Naka" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Sendai Class"} } }
 			#Dai 6 Kuchikutai, Type III Fubuki-class destroyers

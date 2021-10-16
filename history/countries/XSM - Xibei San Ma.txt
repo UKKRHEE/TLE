@@ -8,15 +8,10 @@ set_technology = {
 	mass_assault = 1
 }
 
-if = {
-	limit = {
-		has_dlc = "Waking the Tiger"
-	}
 	add_ideas = {
 		PRC_government_corruption
 		CHI_ineffective_bureaucracy_warlord
 	}
-}
 
 1939.1.1 = {
 

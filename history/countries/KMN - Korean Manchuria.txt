@@ -20,7 +20,7 @@ set_popularities = {
 }
 
 add_ideas = {
-	#
+	KOR_yi_jin_2
 }
 
 create_country_leader = {

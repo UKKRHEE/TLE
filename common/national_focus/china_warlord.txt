@@ -18,7 +18,7 @@
 				tag = AHC
 				tag = HNC
 			}
-			has_dlc = "Waking the Tiger"
+			
 		}
 	}
 	
@@ -899,11 +899,15 @@
 
 		completion_reward = {
 			CHI = { add_opinion_modifier = { modifier = CHI_opposition target = ROOT } }
+			ZLC = { add_opinion_modifier = { modifier = CHI_opposition target = ROOT } }
 			if = {
 				limit = {
 					is_subject = yes
 					OVERLORD = {
-						is_literally_china = yes
+						OR = {
+							original_tag = ZLC
+							original_tag = CHI
+						}
 					}
 				}
 				OVERLORD = {

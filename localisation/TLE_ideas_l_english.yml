@@ -5,6 +5,10 @@
  KOR_interservice_rivalry_army_strengthened:0 "군부 대립 - 육군 강세"
  KOR_interservice_rivalry_navy_strengthened:0 "군부 대립 - 해군 강세"
  KOR_interservice_rivalry_balanced:0 "군부 대립 - 균형적"
+ 
+ CHI_era_of_chinese_warlords_1:0 "중국 군벌시대"
+ CHI_era_of_chinese_warlords_2:0 "중국 군벌시대"
+ CHI_era_of_chinese_warlords_3:0 "중국 군벌시대"
 
  #일본-중국
  JAP_showa_hirohito:0 "히로히토"
@@ -14,7 +18,15 @@
  KOR_not_planed_attack:0 "계획되지 않은 침공"
  KOR_embargo_us:0 "금수조치"
  KOR_is_failed_china:0 "실패한 전쟁"
- CHI_attack_with_clique:0 "2차 북벌"
+ CHI_attack_with_clique_1:0 "2차 북벌"
+ CHI_attack_with_clique_2:0 "중원 대전"
+ 
+ CHI_kuomintang:0 "국민당"
+ CHI_kuomintang_desc:0 "비록 광동에서 임시적으로 존재하고 있지만 국민당이야 말로 중국의 적법하고도 합법적인 통치자입니다. 손문선생의 의지를 받들어, 언젠가 북쪽으로 나아갈 그날까지 우리는 싸울 것입니다."
+ CHI_legacy_of_sun_wen:0 "훈정"
+ CHI_legacy_of_sun_wen_desc:0 "아직 민정으로의 이양은 불가능한 시점입니다. 우리가 언젠가 국가를 통일하면, 그때야 민정으로의 이양이 이루어질 것입니다."
+ CHI_failed_north_attack:0 "실패한 북벌"
+ CHI_failed_north_attack_desc:0 "1926년 시작된 북벌에서 국민당은 파죽지세로 승리하는 듯 보였습니다. 그러나 당 내부의 공산주의자들의 습격으로 국민혁명군 총사령관인 장제스가 중상을 입게 되고, 결국 우리는 기회를 놓치고 후퇴할 수 밖에 없었습니다. \n\n그리고 지금, 중국 전토의 인민들은 도탄에 빠져있고 북의 악적들은 호위호식하고 있습니다. 그러나 우리는 기회를 노려서, 다시금 저들의 틈새를 공격하여 중국을 구할 것입니다."
  
  #국민정신
  KOR_yi_jin:0 "강명황제 이진"

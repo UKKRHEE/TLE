@@ -8,15 +8,10 @@ set_technology = {
 
 set_stability = 0.6
 set_war_support = 0.4
-if = {
-	limit = {
-		has_dlc = "Waking the Tiger"
-	}
 	add_ideas = {
 		PRC_government_corruption
 		CHI_ineffective_bureaucracy_warlord
 	}
-}
 1939.1.1 = {
 	
 	oob = "FNG"

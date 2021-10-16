@@ -2,6 +2,18 @@ spriteTypes = {
 	
 	#국민정신
 	spriteType = {
+		name = "GFX_idea_CHI_failed_north_attack"    
+		texturefile = "gfx/interface/ideas/CHI/military_propaganda.dds"  
+	}	
+	spriteType = {
+		name = "GFX_idea_CHI_kuomintang"    
+		texturefile = "gfx/interface/ideas/CHI/idea_chi_kuomintang.png"  
+	}	
+	spriteType = {
+		name = "GFX_idea_CHI_legacy_of_sun_wen"    
+		texturefile = "gfx/interface/ideas/CHI/idea_CHI_legacy_of_sun_wen.dds"  
+	}	
+	spriteType = {
 		name = "GFX_idea_JAP_showa_hirohito"    
 		texturefile = "gfx/interface/ideas/idea_JAP_showa_hirohito.png"  
 	}	

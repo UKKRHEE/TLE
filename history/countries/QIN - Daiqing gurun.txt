@@ -9,7 +9,7 @@ set_technology = {
 }
 
 if = {
-	limit = { has_dlc = "Waking the Tiger" }
+	limit = { }
 	add_ideas = MAN_banditry
 	add_ideas = MAN_kwantung_veto
 	add_ideas = MAN_low_legitimacy_5

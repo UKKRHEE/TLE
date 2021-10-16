@@ -1,12 +1,4 @@
 spriteTypes = {
-	spriteType = {
-		name = "GFX_superevent_korea_the_yi_kang"
-		textureFile = "gfx//superevent_pictures//korea_the_yi_kang.dds"
-	}
-	spriteType = {
-		name = "GFX_superevent_korea_ww_china"
-		textureFile = "gfx//superevent_pictures//korea_ww_china.png"
-	}
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_bigevent_border"
 		size= { x=192 y=243 }
@@ -28,5 +20,4 @@ spriteTypes = {
 		name = "GFX_superevent_text_underlay"
 		textureFile = "gfx//interface//superevent_text_underlay.dds"
 	}
-	
 }

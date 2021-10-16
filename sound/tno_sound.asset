@@ -2,8 +2,24 @@ sound = {
 	name = "tno_se_korea_the_yi_kang"
 	file = "menu/tno_se_korea_the_yi_kang.wav"
 	always_load = no
-}sound = {
+}
+sound = {
 	name = "tno_se_korea_ww_china"
 	file = "menu/tno_se_korea_ww_china.wav"
+	always_load = no
+}
+sound = {
+	name = "tno_se_russia_attack_korea"
+	file = "menu/tno_se_russia_attack_korea.wav"
+	always_load = no
+}
+sound = {
+	name = "tno_se_korea_war_with_usa"
+	file = "menu/tno_se_korea_war_with_usa.wav"
+	always_load = no
+}
+sound = {
+	name = "tno_se_fall_of_korea"
+	file = "menu/tno_se_fall_of_korea.wav"
 	always_load = no
 }

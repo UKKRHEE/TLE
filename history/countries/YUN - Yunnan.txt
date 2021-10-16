@@ -5,15 +5,10 @@ set_technology = {
 	infantry_weapons = 1
 }
 
-if = {
-	limit = {
-		has_dlc = "Waking the Tiger"
-	}
 	add_ideas = {
 		PRC_government_corruption
 		CHI_ineffective_bureaucracy_warlord
 	}
-}
 
 1939.1.1 = {
 
@@ -94,7 +89,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
-		#
+		longyun_the_general
 	}
 }
 ### Field Marshals ###

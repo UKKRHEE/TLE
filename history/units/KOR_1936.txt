@@ -92,6 +92,22 @@ division_template = {
 	}
     priority = 0
 }
+division_template = {
+	name = "해병대"				#This template covers SNLF divisions; historically there were roughly 5 total, with 1 being paratroopers
+	division_names_group = KOR_MAR_01
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 2 y = 0 }
+		marine = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}	
+	priority = 2
+}
 
 units = {
 #국내군
@@ -141,7 +157,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 7125
+		location = 964
 		division_template = "시위대"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
@@ -162,7 +178,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 9918
+		location = 11835
 		division_template = "시위대"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
@@ -222,7 +238,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 12011
+		location = 6904
 		division_template = "시위대"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
@@ -232,7 +248,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 12011
+		location = 7158
 		division_template = "보병 사단"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
@@ -272,7 +288,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 13244
+		location = 1177
 		division_template = "보병 사단"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
@@ -342,7 +358,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 10036
+		location = 11822
 		division_template = "보병 사단"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
@@ -693,9 +709,30 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 9899
+		location = 4052
 		division_template = "기병 사단"
 		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	##황근출##
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10000
+		division_template = "해병대"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10000
+		division_template = "해병대"
+		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 	}
 }
@@ -705,31 +742,61 @@ air_wings = {
 	525 = { #서울
 		fighter_equipment_0 = {
 			owner = "KOR" 
-			amount = 200
+			amount = 150
 		}
 		CAS_equipment_1 = {
 			owner = "KOR" 
-			amount = 50
+			amount = 110
+		}
+		tac_bomber_equipment_0 = {
+			owner = "KOR" 
+			amount = 40
 		}
 	}
 	527 = { #평안
 		fighter_equipment_0 = {
 			owner = "KOR" 
-			amount = 70
+			amount = 125
 		}
-		CAS_equipment_1 = {
-			owner = "KOR" 
-			amount = 180
-		}
-	}
-	797 = { #대구
 		fighter_equipment_0 = {
 			owner = "KOR" 
-			amount = 30
+			amount = 100
 		}
 		CAS_equipment_1 = {
 			owner = "KOR" 
-			amount = 200
+			amount = 20
+		}
+	}
+	809 = { #대구
+		fighter_equipment_0 = {
+			owner = "KOR" 
+			amount = 100
+		}
+		fighter_equipment_0 = {
+			owner = "KOR" 
+			amount = 100
+		}
+		CAS_equipment_1 = {
+			owner = "KOR" 
+			amount = 50
+		}
+		tac_bomber_equipment_0 = {
+			owner = "KOR" 
+			amount = 40
+		}
+	}
+	808 = { #대구
+		fighter_equipment_0 = {
+			owner = "KOR" 
+			amount = 100
+		}
+		tac_bomber_equipment_0 = {
+			owner = "KOR" 
+			amount = 40
+		}
+		CAS_equipment_1 = {
+			owner = "KOR" 
+			amount = 20
 		}
 	}
 }

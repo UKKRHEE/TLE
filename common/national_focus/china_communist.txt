@@ -3,7 +3,7 @@
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
 ### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
-### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_KMNPOWER}
 ### search_filters = {FOCUS_FILTER_ANNEXATION}
 
 focus_tree = {
@@ -14,7 +14,7 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = PRC
-			has_dlc = "Waking the Tiger"
+			
 		}
 	}
 	
@@ -799,7 +799,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 4
 			modifier = {
-				JAP = {
+				KOR = {
 					has_government = communism
 				}
 				factor = 0
@@ -808,12 +808,12 @@ focus_tree = {
 
 		available = {
 			not = {
-				is_subject_of = JAP
+				is_subject_of = KOR
 			}
 		}
 
 		bypass = {
-			has_war_with = JAP
+			has_war_with = KOR
 		}
 
 		cancel_if_invalid = yes
@@ -972,7 +972,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 4
 			modifier = {
-				JAP = {
+				KOR = {
 					has_government = communism
 				}
 				factor = 0
@@ -981,17 +981,17 @@ focus_tree = {
 
 		available = {
 			OR = {
-				MAN = {
+				KMN = {
 					OR = {
-						is_subject_of = JAP
-						has_cosmetic_tag = MAN_kwantung_army
+						is_subject_of = KOR
+						has_cosmetic_tag = KMN
 					}
 				}
 				AND = {
-					MAN = {
+					KMN = {
 						exists = no
 					}
-					JAP = {
+					KOR = {
 						owns_state = 612
 						owns_state = 611
 						owns_state = 610
@@ -999,19 +999,19 @@ focus_tree = {
 				}
 			}
 			NOT = {
-				is_subject_of = JAP
+				is_subject_of = KOR
 			}
 		}
 
 		bypass = {
-			has_war_with = JAP
+			has_war_with = KOR
 			OR = {
-				has_war_with = JAP
+				has_war_with = KOR
 				AND = {
-					MAN = {
+					KMN = {
 						is_subject = no
 					}
-					JAP = {
+					KOR = {
 						NOT = {
 							owns_state = 525
 							owns_state = 527
@@ -1080,7 +1080,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 4
 			modifier = {
-				JAP = {
+				KOR = {
 					has_government = communism
 				}
 				factor = 0
@@ -1089,18 +1089,18 @@ focus_tree = {
 
 		available = {
 			NOT = {
-				is_subject_of = JAP #was fun while it lasted
+				is_subject_of = KOR #was fun while it lasted
 			}
 		}
 
 		bypass = {
 			OR = {
-				has_war_with = JAP
+				has_war_with = KOR
 				AND = {
-					MAN = {
+					KMN = {
 						is_subject = no
 					}
-					JAP = {
+					KOR = {
 						NOT = {
 							owns_state = 525
 							owns_state = 527
@@ -1368,7 +1368,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		search_filters = { FOCUS_FILTER_MANPOWER }
+		search_filters = { FOCUS_FILTER_KMNPOWER }
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = PRC_kang_sheng

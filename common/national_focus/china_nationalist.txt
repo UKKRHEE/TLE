@@ -1,5 +1,5 @@
 focus_tree = {
-	id = China
+	id = china_nationalist_focus
 	country = {
 		factor = 0
 		modifier = {
@@ -288,6 +288,10 @@ focus_tree = {
 		completion_reward = {
 		declare_war_on = {
         target = YUN
+        type = annex_everything
+        }
+		declare_war_on = {
+        target = SZC
         type = annex_everything
         }
 		}

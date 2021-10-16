@@ -14,14 +14,23 @@ set_technology = {
 	mass_assault = 1
 	fleet_in_being = 1
 }
+add_ideas = {
+	CHI_kuomintang
+	CHI_legacy_of_sun_wen
+	CHI_failed_north_attack
+}
+	add_ideas = {
+		PRC_government_corruption
+	CHI_hyper_inflation_none
+	}
 add_offsite_building = {
 	type = arms_factory
-	level = 4
+	level = 2
 }
 
 add_offsite_building = {
 	type = industrial_complex
-	level = 2
+	level = 1
 }
 set_research_slots = 3
 if = {

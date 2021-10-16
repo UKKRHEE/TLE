@@ -11,6 +11,10 @@ state={
 		buildings = {
 			infrastructure = 6
 			arms_factory = 1
+			1047 = {
+				naval_base = 3
+
+			}
 		}
 			owner = CHI
 			add_core_of = GXC

@@ -18,4 +18,24 @@ spriteTypes = {
 		name = "GFX_world_event_nanking"
 		texturefile = "gfx/event_pictures/GFX_world_event_nanking.png"
 	}
+	spriteType = {
+		name = "GFX_superevent_korea_the_yi_kang"
+		textureFile = "gfx/superevent_pictures/korea_the_yi_kang.dds"
+	}
+	spriteType = {
+		name = "GFX_superevent_korea_ww_china"
+		textureFile = "gfx/superevent_pictures/korea_ww_china.dds"
+	}
+	spriteType = {
+		name = "GFX_russia_attack_korea"
+		textureFile = "gfx/superevent_pictures/russia_attack_korea.dds"
+	}
+	spriteType = {
+		name = "GFX_korea_war_with_usa"
+		textureFile = "gfx/superevent_pictures/korea_war_with_usa.dds"
+	}
+	spriteType = {
+		name = "GFX_fall_of_korea"
+		textureFile = "gfx/superevent_pictures/fall_of_korea.dds"
+	}
 }

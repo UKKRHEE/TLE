@@ -1,10 +1,11 @@
-KOR_the_problem_of_militaryship = {
+KOR_the_three_countries_plan = {
 	allowed = {
 		original_tag = KOR
 	}
 	visible = {
 		original_tag = KOR
 	}
+	priority = 80
 }
 KOR_interservice_rivalry = {
 	allowed = {
@@ -13,6 +14,7 @@ KOR_interservice_rivalry = {
 	visible = {
 		original_tag = KOR
 	}
+	priority = 79
 }
 
 KOR_new_country_name = {
@@ -24,6 +26,7 @@ KOR_new_country_name = {
 	visible = {
 		original_tag = KOR
 	}
+	priority = 78
 }
 KOR_reichskommissariat = {
 
@@ -34,6 +37,7 @@ KOR_reichskommissariat = {
 	visible = {
 		original_tag = KOR
 	}
+	priority = 77
 }
 KOR_nuke_surrend = {
 

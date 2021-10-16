@@ -12,3 +12,24 @@ soundeffect = {
 	}
 	volume = 55
 }
+soundeffect = {
+	name = tno_se_korea_war_with_usa
+	sounds = {
+		sound = tno_se_korea_war_with_usa
+	}
+	volume = 55
+}
+soundeffect = {
+	name = tno_se_russia_attack_korea
+	sounds = {
+		sound = tno_se_russia_attack_korea
+	}
+	volume = 55
+}
+soundeffect = {
+	name = tno_se_fall_of_korea
+	sounds = {
+		sound = tno_se_fall_of_korea
+	}
+	volume = 55
+}
