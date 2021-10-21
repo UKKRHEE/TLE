@@ -41,7 +41,7 @@ focus_tree = {
 	focus = {
 		id = CHC_chiang
 		icon = GFX_focus_prc_remove_chiang_kai_shek
-		cost = 5.00
+		cost = 1.50
 		prerequisite = {
 			focus = CHC_victory
 		}

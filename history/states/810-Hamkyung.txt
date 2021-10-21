@@ -16,14 +16,18 @@ state={
 			industrial_complex = 1
 
 			848 = {
-				naval_base = 3
+				naval_base = 6
 
 			}
 			3981 = {
-				naval_base = 3
+				naval_base = 5
 
 			}
 			6944 = {
+				naval_base = 3
+
+			}
+			6822 = {
 				naval_base = 3
 
 			}

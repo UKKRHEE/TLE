@@ -36,14 +36,16 @@ focus_tree = {
 		}
 		available = {
 		has_completed_focus = JAP_liberalization_of_regime
+		has_idea = JAP_democratic_popularity_2
 		}
 		x = 13
 		y = 7
         completion_reward = {
-        add_popularity = { ideology = democratic popularity = 0.15 } 
-        add_ideas = democratic_influence
+        add_popularity = { ideology = neutrality popularity = 0.15 } 
+        add_ideas = neutrality_influence
 		set_cosmetic_tag = JAP
 		
+		remove_ideas = JAP_democratic_popularity_2
 			create_country_leader = {
 				name = "Dokugawa Yoshihisa"
 				desc = "POLITICS_Hirohito_DESC"
@@ -495,13 +497,24 @@ focus_tree = {
 			focus = JAP_infrastructure2
 			focus = JAP_dockyard2
 		}
+		available = {
+			OR = {
+				has_completed_focus = JAP_industrial_liberty
+				has_completed_focus = JAP_more_resource
+			}
+		}
 		x = 3
 		y = 4
         completion_reward = {
         add_ideas = JAP_industrial_powerhouse
+		swap_ideas = {
+			add_idea = JAP_not_regulared_industry_3
+			remove_idea = JAP_not_regulared_industry_2
+		}
+		
         }
 	}
-	###################################################################################PoliticPartDemocratic
+	###################################################################################PoliticPartneutrality
 	focus = {
 		id = JAP_liberalization_of_regime
 		icon = GFX_focus_generic_anti_fascist_diplomacy
@@ -512,13 +525,19 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = JAP_rising_sun
 		}
+		ai_chance = {
+			factor = 100
+		}
 		x = 10
 		y = 1
 		completion_reward = {
 		set_rule = {
 				can_create_factions = yes
 			}
-		remove_ideas = JAP_democratic_popularity
+		swap_ideas = {
+			remove_idea = JAP_democratic_popularity
+			add_idea = JAP_democratic_popularity_2
+		}	
 		set_politics = { ruling_party = neutrality elections_allowed = yes }
 		add_popularity = { ideology = neutrality popularity = 0.15 } 
 		add_ideas = JAP_facist_unrest
@@ -538,7 +557,7 @@ focus_tree = {
 		y = 2
         completion_reward = {
         add_political_power = 100
-        add_popularity = { ideology = democratic popularity = 0.05 }
+        add_popularity = { ideology = neutrality popularity = 0.05 }
         swap_ideas = { remove_idea = JAP_facist_unrest add_idea = JAP_further_reforms }
         }
 	}
@@ -552,6 +571,10 @@ focus_tree = {
 		x = 12
 		y = 2
         completion_reward = {
+			swap_ideas = {
+				add_idea = JAP_not_regulared_industry_2
+				remove_idea = JAP_not_regulared_industry
+			}
         add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 1.0
@@ -590,7 +613,7 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 		add_political_power = 100
-		add_popularity = { ideology = democratic popularity = 0.10 }
+		add_popularity = { ideology = neutrality popularity = 0.10 }
 		swap_ideas = { remove_idea = JAP_further_reforms add_idea = JAP_full_rights }
     }
 	}
@@ -688,7 +711,7 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 		add_political_power = 100
-		add_popularity = { ideology = democratic popularity = 0.20 }
+		add_popularity = { ideology = neutrality popularity = 0.20 }
 		swap_ideas = { remove_idea = JAP_full_rights add_idea = JAP_democratic_nation }
     }
 	}
@@ -734,6 +757,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = JAP_liberalization_of_regime
 		}
+		ai_chance = {
+			factor = 0
+		}
 		x = 18
 		y = 1
         completion_reward = {
@@ -746,7 +772,7 @@ focus_tree = {
 				elections_allowed = no
 			}
         add_political_power = 120
-        swap_ideas = { remove_idea = JAP_democratic_popularity add_idea = JAP_democratic_outburst }
+        swap_ideas = { remove_idea = JAP_neutrality_popularity add_idea = JAP_neutrality_outburst }
         }
 	}
 	focus = {
@@ -761,6 +787,10 @@ focus_tree = {
 		x = 19
 		y = 3
         completion_reward = {
+			swap_ideas = {
+				add_idea = JAP_not_regulared_industry_2
+				remove_idea = JAP_not_regulared_industry
+			}
         add_political_power = -120
         add_resource = {
         type = oil
@@ -795,6 +825,7 @@ focus_tree = {
         completion_reward = {
         add_political_power = -120
         add_ideas = JAP_slaves
+		remove_ideas = JAP_democratic_popularity
         }
 	}
 	focus = {
@@ -849,7 +880,7 @@ focus_tree = {
 		x = 18
 		y = 4
         completion_reward = {
-        swap_ideas = { remove_idea = JAP_democratic_outburst add_idea = JAP_silencing }
+        swap_ideas = { remove_idea = JAP_neutrality_outburst add_idea = JAP_silencing }
         swap_ideas = { remove_idea = JAP_slaves add_idea = JAP_slaves1 }
         swap_ideas = { remove_idea = JAP_resource add_idea = JAP_resource1 }
         }
@@ -1002,6 +1033,7 @@ focus_tree = {
 		y = 3
         completion_reward = {
         army_experience = 25
+		add_ideas = JAP_militarism
         }
 	}
 	focus = {
@@ -1261,6 +1293,7 @@ focus_tree = {
 				category = air_doctrine
 			}
 	}
+		remove_ideas = JAP_duplicate_research_efforts
 	}
 	focus = {
 		id = JAP_fighter
@@ -2015,6 +2048,12 @@ focus_tree = {
 		y = 9
         completion_reward = {
 		add_political_power = 100
+			create_wargoal = {
+					type = take_state_focus
+					target = KOR
+					expire = 0
+					generator = { 528 }
+			}
 		
         }
 	}

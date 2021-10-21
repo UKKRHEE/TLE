@@ -147,7 +147,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 7125
+		location = 7110
 		division_template = "전차 사단"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
@@ -228,7 +228,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 4103
+		location = 7110
 		division_template = "시위대"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
@@ -318,7 +318,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 1054
+		location = 7110
 		division_template = "보병 사단"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0

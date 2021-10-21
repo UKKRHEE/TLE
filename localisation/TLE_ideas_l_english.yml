@@ -24,6 +24,10 @@
  CHI_attack_with_clique_1:0 "2차 북벌"
  CHI_attack_with_clique_2:0 "중원 대전"
  
+ JAP_not_regulared_industry:0 "규격화되지 않은 산업"
+ JAP_not_regulared_industry_2:0 "규격화되지 않은 산업"
+ JAP_not_regulared_industry_3:0 "아라카와강의 기적"
+ 
  CHI_kuomintang:0 "국민당"
  CHI_kuomintang_desc:0 "비록 광동에서 임시적으로 존재하고 있지만 국민당이야 말로 중국의 적법하고도 합법적인 통치자입니다. 손문선생의 의지를 받들어, 언젠가 북쪽으로 나아갈 그날까지 우리는 싸울 것입니다."
  CHI_legacy_of_sun_wen:0 "훈정"

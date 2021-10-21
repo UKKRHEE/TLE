@@ -15,10 +15,11 @@ add_ideas = {
 	partial_economic_mobilisation
 
 	#JAP_zaibatsus
-	#JAP_duplicate_research_efforts
 	#JAP_militarism
+	JAP_not_regulared_industry
 	JAP_army_planning
 	JAP_democratic_popularity
+	JAP_duplicate_research_efforts
 }
 
 

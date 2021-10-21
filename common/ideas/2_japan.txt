@@ -217,8 +217,97 @@ ideas = {
 			picture = generic_victors_of_ww1
 			
 			modifier = {
-				stability_factor  = -0.05
-				political_power_gain = -0.10
+				stability_factor  = -0.25
+				political_power_gain = -0.3
+				war_support_factor = -0.5
+				offence = -0.5
+				defence = -0.5
+			}
+		}
+		JAP_democratic_popularity_2 = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+			
+			modifier = {
+				stability_factor  = -0.15
+				political_power_gain = -0.15
+				war_support_factor = -0.4
+				offence = -0.3
+				defence = -0.3
+			}
+		}
+		JAP_not_regulared_industry = {
+			allowed = {
+				original_tag = JAP
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = FRA_army_of_aggression_focus
+			modifier = {
+				industrial_capacity_factory = -0.35
+				industrial_capacity_dockyard = -0.3
+				production_speed_industrial_complex_factor = -0.15 
+				production_speed_arms_factory_factor = -0.15 
+				conversion_cost_civ_to_mil_factor= 0.2
+				conversion_cost_mil_to_civ_factor = 0.2
+			}
+		}
+		JAP_not_regulared_industry_2 = {
+			allowed = {
+				original_tag = JAP
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = FRA_army_of_aggression_focus
+			modifier = {
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.1
+				production_speed_industrial_complex_factor = -0.05 
+				production_speed_arms_factory_factor = -0.05
+				conversion_cost_civ_to_mil_factor= 0.1
+				conversion_cost_mil_to_civ_factor = 0.1
+			}
+		}
+		JAP_not_regulared_industry_3 = {
+			allowed = {
+				original_tag = JAP
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = FRA_army_of_aggression_focus
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				conversion_cost_civ_to_mil_factor= -0.05
+				conversion_cost_mil_to_civ_factor = -0.05
 			}
 		}
 
