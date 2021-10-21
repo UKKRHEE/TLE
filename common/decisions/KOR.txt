@@ -1,3 +1,4 @@
+
 KOR_the_three_countries_plan = {
 	KOR_three_divided_china = {
 		
@@ -109,23 +110,27 @@ KOR_the_three_countries_plan = {
 			original_tag = KOR
 			has_idea = KOR_not_planed_attack
 			has_army_experience > 100
+			command_power > 50
 		}
 
 		ai_will_do = {
 			factor = 200
 		}
 		visible = {
-			
 			has_idea = KOR_not_planed_attack
 		}
 		allowed = {
 			original_tag = KOR
 		}
+		custom_cost_trigger = {
+			command_power > 50
+			has_army_experience > 100
+		}
 		fire_only_once = yes
 		days_remove = 100
 		remove_effect = {
 			remove_ideas = KOR_not_planed_attack
-			army_experience = -100
+			army_experience = -150
 		}
 	}
 }

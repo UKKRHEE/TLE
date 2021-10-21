@@ -43,6 +43,29 @@ oob = "KOR_1936"
 	set_resistance = 0
 	set_garrison_strength = 1.0
 }
+528 = {
+	start_resistance = no
+	set_compliance = 100
+	set_resistance = 0
+	set_garrison_strength = 1.0
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 3000
+	producer = KOR
+}
+
+add_equipment_to_stockpile = {
+	type = support_equipment
+	amount = 200
+	producer = KOR
+}
+
+add_equipment_to_stockpile = {
+	type = artillery_equipment_0
+	amount = 200
+	producer = KOR
+}
 #set_autonomy = {
 #	target = RUS
 #	autonomous_state = autonomy_puppet

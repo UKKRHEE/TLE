@@ -238,10 +238,17 @@ ideas = {
 				improve_relations_maintain_cost_factor = 9.99
 			}
 		}
+		KOR_embargo_us_2 = {
+			picture = generic_goods_red_bonusofficers_purged
+			modifier = {
+				consumer_goods_factor = 0.2
+				war_support_factor = -0.6
+			}
+		}
 	    KOR_not_planed_attack = {
 			picture = chi_warlord_integration5
 			modifier = {
-			
+				custom_modifier_tooltip = IDEA_WILL_REMOVE_IN_DECISION
 			}
 			targeted_modifier = {
                 tag = ZLC

@@ -61,41 +61,6 @@ units = {
 		start_equipment_factor = 0.6
 	}
 	division = {
-		name = "Bubing Zhen"
-		location = 4091
-		division_template = "Bubing Zhen"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.6
-	}
-	division = {
-		name = "Bubing Zhen"
-		location = 12061
-		division_template = "Bubing Zhen"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.6
-	}
-	division = {
-		name = "Bubing Zhen"
-		location = 7035
-		division_template = "Bubing Zhen"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.6
-	}
-	division = {
-		name = "Bubing Zhen"
-		location = 10071
-		division_template = "Bubing Zhen"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.6
-	}
-	division = {
-		name = "Bubing Zhen"
-		location = 1146
-		division_template = "Bubing Zhen"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.6
-	}
-	division = {
 		name = "Duli Xie"
 		location = 4158
 		division_template = "Duli Xie"

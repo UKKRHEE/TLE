@@ -1582,6 +1582,21 @@ country_event = { #청도사건 - 중민
 		name = korea.42.a
 	}
 }
+country_event = { #청도사건 - 중민
+	id = korea.43
+	title = korea.43.title
+	desc = korea.43.desc
+	picture = GFX_report_event_hitler_handshake
+	 
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.43.a
+		add_ideas = KOR_embargo_us_2
+		remove_ideas = KOR_embargo_us
+	}
+}
 ##########
 country_event = { #결론
 	id = korea.777

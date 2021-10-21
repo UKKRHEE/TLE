@@ -9,6 +9,8 @@
  CHI_era_of_chinese_warlords_1:0 "중국 군벌시대"
  CHI_era_of_chinese_warlords_2:0 "중국 군벌시대"
  CHI_era_of_chinese_warlords_3:0 "중국 군벌시대"
+ 
+ CHI_fight_in_core_2:0 "저들은 이곳을 절대 지나지 못하리라"
 
  #일본-중국
  JAP_showa_hirohito:0 "히로히토"
@@ -17,6 +19,7 @@
  CHI_fight_with_korea_desc:0 "중국이 제국주의에 의해서 망한다면 중국인은 망국노로 살아가게 될 것이다.\n-장개석"
  KOR_not_planed_attack:0 "계획되지 않은 침공"
  KOR_embargo_us:0 "금수조치"
+ KOR_embargo_us_2:0 "경제 봉쇄의 여파"
  KOR_is_failed_china:0 "실패한 전쟁"
  CHI_attack_with_clique_1:0 "2차 북벌"
  CHI_attack_with_clique_2:0 "중원 대전"
@@ -230,3 +233,5 @@
  KOR_divided_nation_3:0 "천명"
  
  young_monarchist:0 "젊은 황제"
+ 
+ IDEA_WILL_REMOVE_IN_DECISION:0 "§C디시전을 통해 제거할 수 있습니다.§!"

@@ -20,11 +20,36 @@ CHI_fight_with_korea = {
 		complete_effect = {
 			add_timed_idea = {
 				idea = CHI_figth_in_core
-				days = 50
+				days = 100
 			}
 		}
 			
 	}	
+	CHI_we_will_fight_our_land = {
+		icon = generic_nationalism
+		available = {
+			ROOT = {
+				has_war_with = KOR
+				has_idea = CHI_figth_in_core
+			}
+		}
+		visible = {
+			ROOT = {
+				has_war_with = KOR
+				has_idea = CHI_figth_in_core
+			}
+		}
+		custom_cost_trigger = {
+			command_power > 50
+			has_army_experience > 100
+		}
+		fire_only_once = yes
+		cost = 150
+		complete_effect = {
+			remove_ideas = CHI_figth_in_core
+			add_ideas = CHI_fight_in_core_2
+		}
+	}
 	
 }
 #Category only allowed for CHI

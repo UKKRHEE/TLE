@@ -1,5 +1,15 @@
 ideas = {
 	country = {
+		CHI_fight_in_core_2 = {
+			picture = jap_intervene_in_china
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_core_defence_factor = 0.1
+				army_org_regain = 0.05
+			}
+		}	
 		CHI_figth_in_core = {
 			picture = jap_intervene_in_china
 			allowed = {
@@ -18,7 +28,8 @@ ideas = {
 			}	
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.4
+					build_cost_ic = -0.6
+					reliability = -0.5
 					instant = yes
 				}
 			}	
@@ -38,7 +49,8 @@ ideas = {
 			}	
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.3 
+					build_cost_ic = -0.3
+					reliability = -0.4
 					instant = yes
 				}
 			}	
@@ -59,6 +71,7 @@ ideas = {
 			equipment_bonus = {
 				infantry_equipment = {
 					build_cost_ic = -0.15 
+					reliability = -0.25
 					instant = yes
 				}
 			}	

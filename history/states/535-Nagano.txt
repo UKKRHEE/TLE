@@ -3,7 +3,7 @@ state={
 	id=535
 	name="STATE_535" # Koshinetsu
 	manpower = 3871000
-	state_category = large_city
+	state_category = large_town
 	
 	resources={
 		steel=13 # was: 35

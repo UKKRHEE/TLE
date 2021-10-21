@@ -60,6 +60,19 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					OR = {
+						FROM = { tag = SOV }
+						ROOT = { tag = SOV }
+					}
+					SOV = {
+						NOT = { has_country_flag = SOV_war_since_purge }
+						has_completed_focus = SOV_great_purge
+					}
+				}
+				SOV = { set_country_flag = SOV_war_since_purge }
+			}
+			if = {
+				limit = {
 					FROM = {
 						original_tag = KOR
 					}
@@ -387,13 +400,39 @@ on_actions = {
 					FROM.FROM = { state = 528 } #점령 주 - 규슈
 				}
                 FROM.FROM = {
-					set_state_name = "교송"
+					set_state_name = "장기"
 					
 				}
                 set_province_name = {
                     id = 9950
                     name = "장기"
                 }
+			}
+			if = {
+				limit = {
+					tag = JAP #점령국 - 일본
+					FROM = { tag = KOR } #피점령국 - 한국
+					FROM.FROM = { state = 528 } #점령 주 - 규슈
+				}
+                FROM.FROM = {
+					set_state_name = "나가사키"
+					
+				}
+                set_province_name = {
+                    id = 9950
+                    name = "나가사키"
+                }
+			}
+			if = {
+				limit = {
+					tag = KOR #점령국 - 대한
+					FROM = { tag = JAP } #피점령국 - 일본
+					FROM.FROM = { state = 857 } #점령 주 - 규슈
+				}
+                FROM.FROM = {
+					set_state_name = "교송"
+					
+				}
                 set_province_name = {
                     id = 1025
                     name = "소창"
@@ -407,16 +446,12 @@ on_actions = {
 				limit = {
 					tag = JAP #점령국 - 일본
 					FROM = { tag = KOR } #피점령국 - 한국
-					FROM.FROM = { state = 528 } #점령 주 - 규슈
+					FROM.FROM = { state = 857 } #점령 주 - 규슈
 				}
                 FROM.FROM = {
 					set_state_name = "규슈"
 					
 				}
-                set_province_name = {
-                    id = 9950
-                    name = "나가사키"
-                }
                 set_province_name = {
                     id = 1025
                     name = "고쿠라"
@@ -1514,17 +1549,6 @@ on_actions = {
 			if = {
 				limit = {
 					original_tag = KOR
-					has_wargoal_against = USA
-					has_idea = KOR_militarism
-				}
-				country_event = {
-					id = korea.37
-					days = 15
-				}
-			}
-			if = {
-				limit = {
-					original_tag = KOR
 					NOT = {
 						has_country_leader = {
 							name = "Yi Jin"
@@ -1583,7 +1607,14 @@ on_actions = {
 					original_tag = CHI
 					CHI = {
 						has_war_with = WZC
-						has_war_with = AHC
+						if = {
+							limit = {
+								AHC = {
+									exists = yes
+								}
+							}	
+							has_war_with = AHC
+						}
 					}
 				}
 				add_ideas = CHI_attack_with_clique_1
@@ -1731,25 +1762,13 @@ on_actions = {
 						NOT = {
 							has_war_with = KOR
 						}
-				}				
-				if = {
-					limit = {
-						KOR = {
-							has_idea = KOR_not_planed_attack
-						}
-					}
-					KOR = {
-						remove_ideas = KOR_not_planed_attack
-					}
-				}
-				if = {
-					limit = {
 						KOR = {
 							has_idea = KOR_embargo_us
 						}
-					}
-					KOR = {
-						remove_ideas = KOR_embargo_us
+				}	
+				KOR = {
+					country_event = {
+						id = korea.43
 					}
 				}
 			}	
@@ -1771,6 +1790,17 @@ on_actions = {
 					country_event = {
 						id = korea.28
 					}
+				}
+			}
+			if = {
+				limit = {
+					original_tag = KOR
+					has_wargoal_against = USA
+					has_idea = KOR_militarism
+				}
+				country_event = {
+					id = korea.37
+					days = 15
 				}
 			}
 			if = {

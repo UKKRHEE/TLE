@@ -88,64 +88,8 @@ units = {
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Bubing Xie"
-		location = 11991 # Xiamen
-		division_template = "Bubing Xie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Bubing Xie"
-		location = 1171 # Xiamen
-		division_template = "Bubing Xie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Bubing Xie"
-		location = 10044 # Xiamen
-		division_template = "Bubing Xie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Bubing Xie"
-		location = 11937 # Xiamen
-		division_template = "Bubing Xie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Bubing Xie"
-		location = 11913 # Xiamen
-		division_template = "Bubing Xie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
-	}
-	division = {
 		name = "Qibing Xie"
 		location = 1125 # Xiamen
-		division_template = "Qibing Xie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Qibing Xie"
-		location = 4173 # Xiamen
-		division_template = "Qibing Xie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Qibing Xie"
-		location = 10076 # Xiamen
-		division_template = "Qibing Xie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Qibing Xie"
-		location = 1099 # Xiamen
 		division_template = "Qibing Xie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
