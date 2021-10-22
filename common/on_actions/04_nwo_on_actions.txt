@@ -1,0 +1,42 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { has_government = communism }
+				country_event = welcome.1
+			}
+			
+			every_country = {
+				limit = { has_government = democratic }
+				country_event = welcome.3
+			}
+			
+			every_country = {
+				limit = { has_government = neutrality }
+				country_event = welcome.4
+			}
+			
+			every_country = {
+				limit = { tag = JAP }
+				country_event = welcome.5
+			}
+			
+			every_country = {
+				limit = {
+					has_government = fascism 
+					NOT = {
+						tag = JAP
+					} 
+				}
+				country_event = welcome.2
+			}
+			
+			every_country = {
+				set_variable = {
+						var = NWO_defensive_espionage
+						value = 2
+				}
+			}
+		}
+	}
+}

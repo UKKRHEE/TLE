@@ -2,6 +2,10 @@ spriteTypes = {
 	
 	#국민정신
 	spriteType = {
+		name = "GFX_idea_confucian_press"    
+		texturefile = "gfx/interface/ideas/korea/royal_charity.dds"  
+	}	
+	spriteType = {
 		name = "GFX_idea_CHI_failed_north_attack"    
 		texturefile = "gfx/interface/ideas/CHI/military_propaganda.dds"  
 	}	

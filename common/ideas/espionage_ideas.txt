@@ -1,0 +1,29 @@
+ideas = {
+	country = {
+		espionage_research_sabotage = {
+			allowed = { always = no }
+
+			picture =  generic_army_war_college
+
+			removal_cost = -1
+
+			modifier = {
+				research_time_factor = 0.10
+			}
+		}
+		
+		espionage_munitions_sabotage = {
+			allowed = { always = no }
+
+			picture =  generic_production_bonus
+
+			removal_cost = -1
+
+			modifier = {
+				attrition = 0.20
+			}
+		}
+	
+	}
+	
+}

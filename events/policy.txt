@@ -1,0 +1,164 @@
+﻿###########################
+# Policy Events
+###########################
+
+add_namespace = policy
+
+# Press Censorship! (Communism)
+news_event = {
+	id = policy.1
+	title = policy.1.t
+	desc = policy.1.d
+	picture = GFX_report_event_IPR_news
+	
+	trigger = {
+		has_government = communism
+		has_idea = free_press
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		#add_ideas = censored_press
+	}
+	
+	option = {
+		name = policy.1.a
+		add_ideas = censored_press
+	}
+}
+
+# Press Censorship! (Fascism)
+news_event = {
+	id = policy.2
+	title = policy.2.t
+	desc = policy.2.d
+	picture = GFX_report_event_IPR_news
+	
+	trigger = {
+		has_government = fascism
+		has_idea = free_press
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		#add_ideas = censored_press
+	}
+	
+	option = {
+		name = policy.2.a
+		add_ideas = censored_press
+	}
+}
+
+# Press Reopens!
+news_event = {
+	id = policy.3
+	title = policy.3.t
+	desc = policy.3.d
+	picture = GFX_report_event_IPR_news
+	
+	trigger = {
+		has_government = democratic
+		NOT = { has_idea = free_press }
+		NOT = { has_idea = communism_defeated }
+		NOT = { has_idea = fascism_defeated }
+		has_war = no
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		add_ideas = free_press
+	}
+	
+	option = {
+		name = policy.3.a
+	}
+}
+
+# Press Opens! (Fascism)
+news_event = {
+	id = policy.4
+	title = policy.4.t
+	desc = policy.4.d
+	picture = GFX_report_event_IPR_news
+	
+	trigger = {
+		has_government = democratic
+		NOT = { has_idea = free_press }
+		has_idea = fascism_defeated
+		has_war = no
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		add_ideas = free_press
+	}
+	
+	option = {
+		name = policy.4.a
+	}
+}
+
+# Press Opens! (Communism)
+news_event = {
+	id = policy.5
+	title = policy.5.t
+	desc = policy.5.d
+	picture = GFX_report_event_IPR_news
+	
+	trigger = {
+		has_government = democratic
+		NOT = { has_idea = free_press }
+		has_idea = communism_defeated
+		has_war = no
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		add_ideas = free_press
+	}
+	
+	option = {
+		name = policy.5.a
+	}
+}
+
+# Rosie The Riveter! (USA Only)
+news_event = {
+	id = policy.6
+	title = policy.6.t
+	desc = policy.6.d
+	picture = GFX_report_event_IPR_USA_rosie
+	
+	trigger = {
+		AND = {
+			has_idea = stay_at_home
+			tag = USA
+			OR = {
+				has_war_with = GER
+				has_war_with = JAP
+				has_war_with = ITA
+				has_war_with = SOV
+				has_war_with = FRA
+				has_war_with = ENG
+			}
+		}
+	}
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 31 }
+
+	immediate = {
+		add_ideas = women_workers
+	}
+	
+	option = {
+		name = policy.6.a
+	}
+}

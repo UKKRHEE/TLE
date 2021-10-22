@@ -51,19 +51,19 @@ oob = "KOR_1936"
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 3000
+	amount = 5000
 	producer = KOR
 }
 
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 200
+	amount = 1000
 	producer = KOR
 }
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_0
-	amount = 200
+	amount = 1000
 	producer = KOR
 }
 #set_autonomy = {
@@ -322,6 +322,8 @@ add_ideas = {
 	low_economic_mobilisation
 	limited_conscription
 	limited_exports
+	confucian_press
+	age_18
 	#군부
 	KOR_interservice_rivalry_balanced #군부대립
 }

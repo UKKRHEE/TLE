@@ -772,7 +772,7 @@ focus_tree = {
 				elections_allowed = no
 			}
         add_political_power = 120
-        swap_ideas = { remove_idea = JAP_neutrality_popularity add_idea = JAP_neutrality_outburst }
+        swap_ideas = { remove_idea = JAP_democratic_popularity add_idea = JAP_democratic_popularity_2 }
         }
 	}
 	focus = {
@@ -825,7 +825,6 @@ focus_tree = {
         completion_reward = {
         add_political_power = -120
         add_ideas = JAP_slaves
-		remove_ideas = JAP_democratic_popularity
         }
 	}
 	focus = {
@@ -880,7 +879,7 @@ focus_tree = {
 		x = 18
 		y = 4
         completion_reward = {
-        swap_ideas = { remove_idea = JAP_neutrality_outburst add_idea = JAP_silencing }
+        swap_ideas = { remove_idea = JAP_democratic_popularity_2 add_idea = JAP_silencing }
         swap_ideas = { remove_idea = JAP_slaves add_idea = JAP_slaves1 }
         swap_ideas = { remove_idea = JAP_resource add_idea = JAP_resource1 }
         }
