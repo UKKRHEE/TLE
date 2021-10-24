@@ -495,7 +495,7 @@ on_actions = {
 				limit = {
 					tag = KOR #점령국 - 대한
 					FROM = { tag = JAP } #피점령국 - 일본
-					FROM.FROM = { state = 530 } #점령 주 - 시고쿠
+					FROM.FROM = { state = 858 } #점령 주 - 시고쿠
 				}
                 FROM.FROM = {
 					set_state_name = "서국"
@@ -510,7 +510,7 @@ on_actions = {
 				limit = {
 					tag = JAP #점령국 - 일본
 					FROM = { tag = KOR } #피점령국 - 한국
-					FROM.FROM = { state = 530 } #점령 주 - 시고쿠
+					FROM.FROM = { state = 858 } #점령 주 - 시고쿠
 				}
                 FROM.FROM = {
 					set_state_name = "시고쿠"
@@ -1530,6 +1530,17 @@ on_actions = {
 					set_country_flag = FLAG_CHI_COSMETIC_NANKING
 					set_capital = 613
 					add_ideas = CHI_army_corruption_1
+					transfer_state = 600
+					transfer_state = 595
+					transfer_state = 596
+					transfer_state = 749
+					transfer_state = 613
+					transfer_state = 836
+					transfer_state = 837
+					transfer_state = 834
+					transfer_state = 835
+					transfer_state = 830
+					transfer_state = 831
 				}
 			}
 			if = {
@@ -1600,6 +1611,19 @@ on_actions = {
 				}
 				KPL = {
 					remove_state_core = 829
+				}
+			}
+			if = {
+				limit = {
+					KPL = {
+						exists = yes
+					}
+					829 = {
+						is_owned_by = KPL
+					}
+				}
+				KPL = {
+					add_state_core = 829
 				}
 			}
 			if = {
@@ -1745,6 +1769,19 @@ on_actions = {
 						}
 				}
 				remove_ideas = CHI_fight_with_korea
+				if = {
+					limit = {
+						KOR = {
+							OR = {
+								has_government = neutrality
+								has_government = communism
+								has_government = democratic
+							}
+							has_idea = KOR_embargo_us
+						}
+					}
+					remove_ideas = KOR_embargo_us
+				}
 			}	
 			if = {
 				limit = {
@@ -1783,6 +1820,9 @@ on_actions = {
 							has_war_with = CHI
 							has_war_with = ZLC
 							has_war_with = WZC
+						}
+						NOT = {
+							has_government = democratic
 						}
 					}
 				}

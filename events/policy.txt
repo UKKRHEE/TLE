@@ -65,6 +65,10 @@ news_event = {
 		NOT = { has_idea = communism_defeated }
 		NOT = { has_idea = fascism_defeated }
 		has_war = no
+		NOT = {
+			original_tag = KOR
+			has_idea = confucian_press
+		}
 	}
 
 	mean_time_to_happen = { days = 1 }
@@ -90,6 +94,10 @@ news_event = {
 		NOT = { has_idea = free_press }
 		has_idea = fascism_defeated
 		has_war = no
+		NOT = {
+			original_tag = KOR
+			has_idea = confucian_press
+		}
 	}
 
 	mean_time_to_happen = { days = 1 }
@@ -115,6 +123,10 @@ news_event = {
 		NOT = { has_idea = free_press }
 		has_idea = communism_defeated
 		has_war = no
+		NOT = {
+			original_tag = KOR
+			has_idea = confucian_press
+		}
 	}
 
 	mean_time_to_happen = { days = 1 }

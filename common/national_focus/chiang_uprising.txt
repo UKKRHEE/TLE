@@ -818,6 +818,7 @@ focus_tree = {
 		y = 0
 		available = {
 			has_country_flag = FLAG_WZC_WAS_COLLAPESED
+			has_completed_focus = CHC_chiang
 		}
 		completion_reward = {
 		army_experience = 10

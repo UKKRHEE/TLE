@@ -755,4 +755,54 @@ NWO_press_decisions = {
 		}
 		
 	}
+	NWO_adopt_confucian_press = {
+		allowed = {
+		}
+		
+		available = {
+			original_tag = KOR
+			NOT = {
+				has_idea = confucian_press
+			}
+		}
+		
+		visible = {
+			original_tag = KOR
+			NOT = {
+				has_idea = confucian_press
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				add = 1
+				ROOT = { has_added_tension_amount > 0.20 }
+			}
+			
+			modifier = {
+				add = 2
+				ROOT = { has_added_tension_amount > 0.50 }
+			}
+		}
+		
+		cost = 50
+		
+		fire_only_once = no
+		days_remove = 10
+		days_re_enable = 140
+		
+		complete_effect = {
+			set_country_flag = changing_press_law
+		}
+		
+		remove_effect = {
+			hidden_effect = {
+				add_ideas = confucian_press
+				clr_country_flag = changing_press_law
+			}
+		}
+		
+	}
 }

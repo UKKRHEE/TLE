@@ -21,6 +21,12 @@ scripted_gui = {
 			Option_click = {
 				clr_country_flag = korea_the_yi_kang
 			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				clr_country_flag = korea_the_yi_kang
+			}
 		}
 	}
 	TNO_SG_big_event_korea_ww_china = {
@@ -42,6 +48,12 @@ scripted_gui = {
 
 		effects = {
 			Option_click = {
+				clr_country_flag = korea_ww_china
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
 				clr_country_flag = korea_ww_china
 			}
 		}
@@ -68,6 +80,12 @@ scripted_gui = {
 			Option_click = {
 				clr_country_flag = korea_war_with_usa
 			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				clr_country_flag = korea_war_with_usa
+			}
 		}
 	}
 	##한소전쟁##
@@ -92,6 +110,12 @@ scripted_gui = {
 			Option_click = {
 				clr_country_flag = russia_attack_korea
 			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				clr_country_flag = russia_attack_korea
+			}
 		}
 	}
 	##한소전쟁##
@@ -114,6 +138,12 @@ scripted_gui = {
 
 		effects = {
 			Option_click = {
+				clr_country_flag = fall_of_korea
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
 				clr_country_flag = fall_of_korea
 			}
 		}

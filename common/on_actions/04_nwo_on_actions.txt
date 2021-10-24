@@ -17,7 +17,7 @@ on_actions = {
 			}
 			
 			every_country = {
-				limit = { tag = JAP }
+				limit = { tag = KOR }
 				country_event = welcome.5
 			}
 			
@@ -25,7 +25,7 @@ on_actions = {
 				limit = {
 					has_government = fascism 
 					NOT = {
-						tag = JAP
+						tag = KOR
 					} 
 				}
 				country_event = welcome.2
