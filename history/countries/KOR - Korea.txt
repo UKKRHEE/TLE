@@ -351,7 +351,7 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Kim Hui Sun"
-	desc = ""
+	desc = "KIM_HUI_SUN_DESC"
 	picture = "gfx/leaders/KOR/Portrait_KOR_kim_hui_sun.png"
 	expire = "1951.1.5"
 	ideology = liberalism
@@ -371,7 +371,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Yi Byung Mu" #이병무
-	desc = "KOR_YI_JIN_DESC"
+	desc = "KOR_YI_BYUNG_MU_DESC"
 	picture = "gfx/leaders/KOR/이병무.png"
 	expire = "1955.8.1"
 	ideology = despotism #권위주의
@@ -404,7 +404,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Yi Kang"
-	desc = ""
+	desc = "YI_KANG_DESC"
 	picture = "gfx/leaders/KOR/Portrait_yi_kang_old.png"
 	expire = "1972.5.11"
 	ideology = fascism_ideology
@@ -700,6 +700,90 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Choe Yong Geon"
 	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Choe_Yong_gon.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
 	skill = 1
 	attack_skill = 1
 	defense_skill = 1

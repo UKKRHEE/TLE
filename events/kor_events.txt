@@ -393,7 +393,7 @@ country_event = { #간략한 설정
 	id = korea.14
 	title = korea.14.title
 	desc = korea.14.desc
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_france_tank_production
 	
 	fire_only_once = yes	
     is_triggered_only = yes
@@ -431,7 +431,7 @@ country_event = { #중국의 거절!
 	id = korea.15
 	title = korea.15.title
 	desc = korea.15.desc
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_france_victory_syria
 	
 	fire_only_once = yes	
     is_triggered_only = yes
@@ -543,7 +543,7 @@ country_event = { #중국의 거절!
 		name = korea.17.a
 		create_wargoal = {
 			type = annex_everything
-			target = RMN
+			target = KMN
 		}
 		add_political_power = 75
 	}
@@ -552,7 +552,7 @@ country_event = { #사회주의 공화국 아님 제국!!
 	id = korea.18
 	title = korea.18.title
 	desc = korea.18.desc
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_generic_communist_congress
 	
 	fire_only_once = yes	
     is_triggered_only = yes
@@ -610,7 +610,7 @@ country_event = { #중국의 거절!
 	id = korea.20
 	title = korea.20.title
 	desc = korea.20.desc
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_generic_military_parade
 	
 	fire_only_once = yes	
     is_triggered_only = yes
@@ -619,6 +619,12 @@ country_event = { #중국의 거절!
 		name = korea.20.a
 		set_country_flag = korea_ww_china
 		CHI = {
+			set_country_flag = korea_ww_china
+			country_event = {
+			    id = korea.21
+			}
+		}
+		ZLC = {
 			set_country_flag = korea_ww_china
 			country_event = {
 			    id = korea.21
@@ -642,19 +648,13 @@ country_event = { #중국의 거절!
 		PRC = {
 			set_country_flag = korea_ww_china
 		}
-		KOR = {
-			declare_war_on = {
-				target = CHI
-				type = puppet_wargoal_focus
-			}
-		}	
 	}
 }
 country_event = { #중국의 거절!
 	id = korea.21
 	title = korea.21.title
 	desc = korea.21.desc
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_generic_military_parade
 	
 	fire_only_once = yes	
     is_triggered_only = yes
@@ -667,7 +667,7 @@ country_event = { #중국의 거절!
 	id = korea.22
 	title = korea.22.title
 	desc = korea.22.desc
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_generic_riot
 	
 	fire_only_once = yes	
     is_triggered_only = yes
@@ -712,7 +712,7 @@ country_event = { #중국의 거절!
 	id = korea.23
 	title = korea.23.title
 	desc = korea.23.desc
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_generic_sign_treaty1
 	
 	fire_only_once = yes	
     is_triggered_only = yes
@@ -779,7 +779,7 @@ country_event = { #반란!
 	id = korea.25
 	title = korea.25.title
 	desc = korea.25.desc
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_국회침입
 	
 	fire_only_once = yes	
     is_triggered_only = yes
@@ -813,7 +813,7 @@ country_event = { #진압, 성공적,.
 	id = korea.26
 	title = korea.26.title
 	desc = korea.26.desc
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_german_troops
 	
 	fire_only_once = yes	
     is_triggered_only = yes
@@ -828,7 +828,7 @@ country_event = { #
 	id = korea.27
 	title = korea.27.title
 	desc = korea.27.desc
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_german_troops
 	
 	fire_only_once = yes	 
     is_triggered_only = yes
@@ -843,7 +843,7 @@ country_event = { #미국 - 대(對)한 금수조치
 	id = korea.28
 	title = korea.28.title
 	desc = korea.28.desc
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_generic_usa_treaty
 	
 	fire_only_once = yes	
     is_triggered_only = yes
@@ -865,7 +865,7 @@ country_event = { #결론
 	id = korea.29
 	title = korea.29.title
 	desc = korea.29.desc
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_german_speech
 	
 	fire_only_once = yes	
     is_triggered_only = yes
@@ -949,7 +949,7 @@ country_event = { #결론
 	id = korea.30
 	title = korea.30.title
 	desc = korea.30.desc
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_german_reichstag_bombed
 	
 	fire_only_once = yes	
     is_triggered_only = yes
@@ -983,7 +983,7 @@ country_event = { #난항에 빠진 공세
 	id = korea.34
 	title = korea.34.title
 	desc = korea.34.desc
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_glorious_vehicle
 	
 	fire_only_once = yes	
     is_triggered_only = yes
@@ -997,7 +997,7 @@ country_event = { #상하이 공습
 	id = korea.35
 	title = korea.35.title
 	desc = korea.35.desc
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_gre_city_siege
 	
 	fire_only_once = yes	
     is_triggered_only = yes
@@ -1022,7 +1022,7 @@ country_event = { #
 	id = korea.36
 	title = korea.36.title
 	desc = korea.36.desc
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_german_volunteers
 	
 	fire_only_once = yes	
     is_triggered_only = yes
@@ -1127,7 +1127,7 @@ country_event = { #3분지계
 	id = korea.39
 	title = korea.39.title
 	desc = korea.39.desc
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_japanese_chinese_surrender
 	
 	fire_only_once = yes	
     is_triggered_only = yes
@@ -1597,12 +1597,342 @@ country_event = { #청도사건 - 중민
 		remove_ideas = KOR_embargo_us
 	}
 }
+country_event = { #미국의 단독 점령
+	id = korea.44
+	title = korea.44.title
+	desc = korea.44.desc
+	picture = GFX_report_event_japanese_soldiers_03
+	 
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.44.a
+					USA = { #한국 괴뢰화, 만주민국 설립, 제주 해군기지 획득
+						puppet = KMN
+						puppet = KOR
+						transfer_state = 745
+						transfer_state = 813
+					}
+					KMN = { #만주민국 건설 wwww
+						transfer_state = 825
+						transfer_state = 824
+						transfer_state = 823
+						transfer_state = 717
+						transfer_state = 328
+						transfer_state = 716
+						transfer_state = 715
+						transfer_state = 610
+						transfer_state = 853
+						
+						transfer_state = 612
+						transfer_state = 611
+						transfer_state = 621
+						
+						transfer_state = 852
+						transfer_state = 714
+						transfer_state = 761
+					}
+					JAP = { #일본에게 조차지 돌려줌
+						transfer_state = 860
+						transfer_state = 858
+						transfer_state = 859
+					}
+	}
+}
+country_event = { #소련과의 공동 분할
+	id = korea.45
+	title = korea.45.title
+	desc = korea.45.desc
+	picture = GFX_report_event_japanese_soldiers_03
+	 
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.45.a
+		
+					USA = { #한국 괴뢰화, 만주민국 설립, 제주 해군기지 획득
+						puppet = KMN
+						puppet = KOR
+						transfer_state = 745
+						transfer_state = 813
+					}
+					KMN = { #만주민국 건설, 근데 분단을 섞은
+						transfer_state = 825
+						transfer_state = 824
+						transfer_state = 823
+						transfer_state = 717
+						transfer_state = 328
+						transfer_state = 716
+						transfer_state = 715
+						transfer_state = 610
+						transfer_state = 853
+						
+						transfer_state = 612
+						transfer_state = 611
+						transfer_state = 621
+						
+						#transfer_state = 852
+						#transfer_state = 714
+						#transfer_state = 761
+					}
+					JAP = { #일본에게 조차지 돌려줌
+						transfer_state = 860
+						transfer_state = 858
+						transfer_state = 859
+					}
+					SOV = { #쏘오련이 북만주 습득, 북반도 먹음. 한반도 반갈죽 ㅇㅇ..
+						puppet = PRK
+						puppet = MAN
+					}
+					MAN = {
+						transfer_state = 714
+						transfer_state = 852
+						transfer_state = 761
+						
+						add_state_core = 714
+						add_state_core = 852
+						add_state_core = 761
+						add_state_core = 825
+						add_state_core = 824
+						add_state_core = 823
+						add_state_core = 717
+						add_state_core = 328
+						add_state_core = 716
+						add_state_core = 715
+						add_state_core = 610
+						add_state_core = 853
+						add_state_core = 612
+						add_state_core = 611
+						add_state_core = 621
+					}
+	}
+}
+country_event = { #소련의 단독 점령
+	id = korea.46
+	title = korea.46.title
+	desc = korea.46.desc
+	picture = GFX_report_event_japanese_soldiers_03
+	 
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.46.a
+		
+					SOV = {
+						transfer_state = 813
+						transfer_state = 745
+						puppet = KOR
+						puppet = MAN
+					}
+					MAN = {
+						transfer_state = 825
+						transfer_state = 824
+						transfer_state = 823
+						transfer_state = 717
+						transfer_state = 328
+						transfer_state = 716
+						transfer_state = 715
+						transfer_state = 610
+						transfer_state = 853
+						
+						transfer_state = 612
+						transfer_state = 611
+						transfer_state = 621
+						
+						transfer_state = 852
+						transfer_state = 714
+						transfer_state = 761
+						
+						add_state_core = 611
+						add_state_core = 612
+						add_state_core = 621
+					}
+					every_state = {
+						limit = {
+							is_core_of = KMN
+						}
+						add_core_of = MAN
+					}
+					KOR = {
+						remove_ideas = KOR_yi_jin
+						remove_ideas = KOR_yi_jin_2
+						remove_unit_leader = 19363
+						remove_unit_leader = 19362
+						remove_unit_leader = 20100
+					}
+	}
+}
+country_event = { #소련의 미국과의 분할점령
+	id = korea.47
+	title = korea.47.title
+	desc = korea.47.desc
+	picture = GFX_report_event_japanese_soldiers_03
+	 
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.47.a
+					SOV = { #여순먹고 만주 괴뢰화
+						transfer_state = 745
+						puppet = MAN
+						puppet = PRK
+					}
+					MAN = {
+						transfer_state = 825
+						transfer_state = 824
+						transfer_state = 823
+						transfer_state = 717
+						transfer_state = 328
+						transfer_state = 716
+						transfer_state = 715
+						transfer_state = 610
+						transfer_state = 853
+						
+						transfer_state = 612
+						transfer_state = 611
+						transfer_state = 621
+						
+						transfer_state = 852
+						transfer_state = 714
+						transfer_state = 761
+						
+						add_state_core = 611
+						add_state_core = 612
+						add_state_core = 621
+					}
+					USA = {
+						transfer_state = 813
+						puppet = KOR
+					}
+					every_state = {
+						limit = {
+							is_core_of = KMN
+						}
+						add_core_of = MAN
+					}
+					PRK = { #북괴 형성
+						transfer_state = 527
+						transfer_state = 810
+						transfer_state = 812
+						transfer_state = 818
+						transfer_state = 816
+						transfer_state = 819
+						transfer_state = 817
+						
+					}
+					every_state = {
+						limit = {
+							is_core_of = KOR
+						}
+						add_core_of = PRK
+					}
+	}
+} 
+country_event = { #일본의 단독점령
+	id = korea.48
+	title = korea.48.title
+	desc = korea.48.desc
+	picture = GFX_report_event_japanese_soldiers_03
+	 
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.48.a
+		
+					JAP = { #일본이 한국 괴뢰국 세우고, 제주와 여순을 먹는다
+						puppet = KMN
+						puppet = KOR
+						transfer_state = 745
+						transfer_state = 813
+					}
+					KOR = { #한국은 북방 3도만 남기고 뒈짖한다
+						transfer_state = 825
+						transfer_state = 824
+						transfer_state = 823
+					}
+					KMN = { #만주 풀로 괴뢰국
+						transfer_state = 716
+						transfer_state = 328
+						transfer_state = 717
+						transfer_state = 714
+						transfer_state = 715
+						transfer_state = 610
+						transfer_state = 853
+						transfer_state = 852
+					}
+	}
+}
+country_event = { #대한제국의 상황
+	id = korea.49
+	title = korea.49.title
+	desc = korea.49.desc
+	picture = GFX_Korean_Red_Cross
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	 
+	option = { #
+		name = korea.49.a
+		hidden_effect = {
+			country_event = {
+				id = korea.50
+				days = 17
+			}
+		}
+	}
+}
+country_event = { #이강 - 중추원
+	id = korea.50
+	title = korea.50.title
+	desc = korea.50.desc
+	picture = GFX_국회침입
+	
+	fire_only_once = yes
+	
+    is_triggered_only = yes
+	 
+	option = { #
+		name = korea.50.a
+	}
+}
+country_event = { #유괴
+	id = korea.51
+	title = korea.51.title
+	desc = korea.51.desc
+	picture = GFX_고원의_아이들
+	trigger = {
+		tag = KOR
+		date > 1936.4.2
+	}
+	fire_only_once = yes
+	 
+	option = { #
+		name = korea.51.a
+	}
+}
+country_event = { #유괴
+	id = korea.52
+	title = korea.52.title
+	desc = korea.52.desc
+	picture = GFX_계엄군
+	fire_only_once = yes
+    is_triggered_only = yes
+	 
+	option = { #
+		name = korea.52.a
+	}
+}
 ##########
 country_event = { #결론
 	id = korea.777
 	title = korea.777.title
 	desc = korea.777.desc
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_korean_war_march
 	
 	fire_only_once = yes	
     is_triggered_only = yes
@@ -1618,7 +1948,7 @@ country_event = { #결론
 	id = korea.778
 	title = korea.778.title
 	desc = korea.778.desc
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_korean_war_march
 	
     is_triggered_only = yes
 	
@@ -1633,7 +1963,7 @@ country_event = { #결론
 	id = korea.779
 	title = korea.779.title
 	desc = korea.779.desc
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_korean_war_march
 	
     is_triggered_only = yes
 	
@@ -1651,7 +1981,7 @@ country_event = { #결론
 	id = korea.780
 	title = korea.780.title
 	desc = korea.780.desc
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_korean_war_march
 	
     is_triggered_only = yes
 	 
@@ -1669,7 +1999,7 @@ country_event = { #결론
 	id = korea.781
 	title = korea.781.title
 	desc = korea.781.desc
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_korean_war_march
 	
     is_triggered_only = yes
 	 

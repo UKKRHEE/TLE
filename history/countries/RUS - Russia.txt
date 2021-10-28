@@ -90,9 +90,9 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-	name = "Aleksandr Kerenskiy"
+	name = "Aleksandr Kolchak"
 	desc = ""
-	picture = "Portrait_RUS_Aleksandr_Kerenskiy.tga"
+	picture = "Portrait_RUS_Aleksandr_Kolchak.tga"
 	expire = "1953.3.1"
 	ideology = despotism
 	traits = {

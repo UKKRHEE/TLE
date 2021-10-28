@@ -1,23 +1,6 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			if = {
-				limit = {
-					OR = {
-						original_tag = KOR
-						original_tag = JAP
-						original_tag = ENG
-						original_tag = FRA
-						original_tag = USA
-						original_tag = ITA
-						original_tag = SPR
-					}
-				}
-				give_guarantee = KPL
-				KPL = {
-					add_idea = KPL_is_cant_attack
-				}
-			}
 			SHX = {
 				country_event = {
 					id = china.1097
@@ -34,6 +17,10 @@ on_actions = {
                 country_event = {
                     id = korea.1
                     days = 0
+      			}
+                country_event = {
+                    id = korea.49
+                    days = 2
       			}
 			}
 			if = {
@@ -195,6 +182,103 @@ on_actions = {
 		}
 		####중국 주 이름 변경######
 		effect = {
+			if = {
+				limit = {
+					tag = PRC
+					NOT = {
+						has_country_flag = PRC_LOSE_IN_THE_TSINGHAI
+						has_country_flag = PRC_WIN_IN_THE_TSINGHAI
+					}
+					622 = {
+						is_owned_by = SHX
+					}
+					622 = { is_controlled_by = PRC }
+					divisions_in_state = { state = 622 size > 0 }
+				}
+			}
+			if = {
+				limit = {
+					tag = TIB
+					NOT = {
+						has_country_flag = TIB_LOSE_IN_THE_TSINGHAI
+						has_country_flag = TIB_WIN_IN_THE_TSINGHAI
+					}
+					604 = {
+						is_owned_by = XSM
+					}
+					604 = { is_controlled_by = TIB }
+					divisions_in_state = { state = 604 size > 0 }
+				}
+				TIB = {
+					set_country_flag = TIB_WIN_IN_THE_TSINGHAI
+				}	
+				transfer_state = 604
+				MHB = {
+					transfer_state = 756
+					transfer_state = 616
+					transfer_state = 746
+					transfer_state = 283
+					transfer_state = 856
+					declare_war_on = {
+						target = XSM
+						type = annex_everything
+					}
+				}
+				KOR = {
+					create_wargoal = {
+						type = annex_everything
+						target = MHB
+					}
+				}
+				SIK = {
+					create_wargoal = {
+						type = annex_everything
+						target = MHB
+					}
+					create_wargoal = {
+						type = annex_everything
+						target = XSM
+					}
+				}
+				SZC = {
+					create_wargoal = {
+						type = annex_everything
+						target = MHB
+					}
+					create_wargoal = {
+						type = annex_everything
+						target = XSM
+					}
+				}
+				XSM = {
+					set_cosmetic_tag = XSM_HAIXI
+				}
+				white_peace = XSM
+			}
+			if = {
+				limit = {
+					tag = XSM
+					TIB = {
+						NOT = {
+							has_country_flag = TIB_LOSE_IN_THE_TSINGHAI
+							has_country_flag = TIB_WIN_IN_THE_TSINGHAI
+						}
+					}
+					601 = {
+						is_owned_by = TIB
+					}
+					601 = { is_controlled_by = XSM }
+					divisions_in_state = { state = 601 size > 0 }
+				}
+				TIB = {
+					set_country_flag = TIB_LOSE_IN_THE_TSINGHAI
+				}
+				SZC = {
+					transfer_state = 601
+				}
+				white_peace = TIB
+				puppet = TIB
+			}
 			if = {
 				limit = {
 					tag = KOR #점령국 - 대한
@@ -991,6 +1075,42 @@ on_actions = {
 					
 				}
 			}
+			if = {
+				limit = {
+					tag = SOV #점령국 - 한국
+					FROM = { tag = KOR } #피점령국 - 조선총독부
+					FROM.FROM = { state = 527 } #점령 주 - 장단
+				}
+				SOV = {
+					set_country_flag = TLE_THE_RULING_PYONGYANG
+				}
+			}
+			if = {
+				limit = {
+					tag = USA #점령국 - 한국
+					FROM = { tag = KOR } #피점령국 - 조선총독부
+					FROM.FROM = { 
+						OR = {
+							state = 813 
+							state = 808
+							state = 809 
+							state = 807 
+							state = 811 
+							state = 818 
+							state = 819 
+							state = 815 
+							state = 814 
+							state = 816 
+							state = 812 
+							state = 810 
+							state = 527 
+						}	
+					} #점령 주 - 장단
+				}
+				USA = {
+					set_country_flag = TLE_THE_RULING_KOREAN_STATE
+				}
+			}
         }	
 		####일
 		effect = {
@@ -998,11 +1118,15 @@ on_actions = {
 				limit = {
 					OR = {
 						tag = JAP
-						tag = CHI
 						tag = SOV
 						tag = USA
-						tag = ZLC
-						tag = WZC
+					}
+					has_war_with = KOR
+					KOR = {
+						#has_completed_focus = kor_korean_lebensraum
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_ENDED
+						}	
 					}
 					FROM = { tag = KOR } #피점령국 - 조선총독부
 					FROM.FROM = { state = 525 } #점령 주 - 경기도
@@ -1010,232 +1134,281 @@ on_actions = {
 				set_country_flag = fall_of_korea
 				KOR = {
 					set_country_flag = fall_of_korea
+					set_country_flag = TLE_THE_WAR_IS_ENDED
+					add_ideas = KOR_not_go_outside
 				}
-			}
-			if = {
-				limit = {
-					tag = JAP #점령국 - 한국
-					FROM = { tag = KOR } #피점령국 - 조선총독부
-					FROM.FROM = { state = 525 } #점령 주 - 경기도
+				KOR = {
+					every_other_country = {
+						limit = {
+							has_war_with = KOR
+						}	
+						white_peace = KOR
+					}
 				}
-                FROM.FROM = {
-					set_state_name = "케이키"
+				SOV = {
+					white_peace = KOR
+				}	
+				USA = {
+					white_peace = KOR
+				}	
+				CHI = {
+					white_peace = KOR
+				}	
+				JAP = {
+					white_peace = KOR
+				}	
+				ZLC = {
+					white_peace = KOR
+				}	
+				WZC = {
+					white_peace = KOR
+				}	
+				HNC = {
+					white_peace = KOR
+				}	
+				AHC = {
+					white_peace = KOR
+				}	
+				SND = {
+					white_peace = KOR
+				}	
+				USA = {
+					white_peace = KOR
+				}	
+				SZC = {
+					white_peace = KOR
+				}	
+				YUN = {
+					white_peace = KOR
+				}	
+				GXC = {
+					white_peace = KOR
+				}	
+				SIK = {
+					white_peace = KOR
+				}	
+				XSM = {
+					white_peace = KOR
+				}	
+				MON = {
+					white_peace = KOR
+				}	
+				KMN = {
+					white_peace = KOR
+				}	
+				RUS = {
+					white_peace = KOR
+				}	
+				ENG = {
+					white_peace = KOR
+				}	
+				FRA = {
+					white_peace = KOR
+				}	
+				GER = {
+					white_peace = KOR
+				}	
+				POL = {
+					white_peace = KOR
+				}	
+				ITA = {
+					white_peace = KOR
+				}	
+				set_country_flag = TLE_THE_WAR_IS_ENDED
+				if = { #미국이 서울 입성했을 때
+					limit = { #평양에 소련군 없어야 함
+						tag = USA
+						SOV = {
+							NOT = {
+							    has_country_flag = TLE_THE_RULING_PYONGYANG
+							}	
+						}
+					}
+					USA = {
+						country_event = {
+							id = korea.44
+						}
+					}
 				}
-                set_province_name = {
-                    id = 7125
-                    name = "케이조"
-                }
-                set_province_name = {
-                    id = 7221
-                    name = "진센"
-                }
-			}
-			if = {
-				limit = {
-					tag = JAP #점령국 - 한국
-					FROM = { tag = KOR } #피점령국 - 조선총독부
-					FROM.FROM = { state = 527 } #점령 주 - 평안
+				if = { #미국이 서울 입성했을 때
+					limit = { #평양에 소련군이 있을 시
+						tag = USA
+						SOV = {
+							has_country_flag = TLE_THE_RULING_PYONGYANG
+						}
+					}
+					USA = {
+						country_event = {
+							id = korea.45
+						}
+					}
 				}
-                FROM.FROM = {
-					set_state_name = "헤이안"
+				if = { #일본이 서울 점령
+					limit = {
+						tag = JAP
+					}
+					JAP = {
+						country_event = {
+							id = korea.48
+						}
+					}
 				}
-                set_province_name = {
-                    id = 7171
-                    name = "헤이조"
-                }
-                set_province_name = {
-                    id = 4052
-                    name = "진난포"
-                }
-                set_province_name = {
-                    id = 11835
-                    name = "신키슈"
-                }
-			}
-			if = {
-				limit = {
-					tag = JAP #점령국 - 한국
-					FROM = { tag = KOR } #피점령국 - 조선총독부
-					FROM.FROM = { state = 807 } #점령 주 - 충청
+				if = { #소련이 서울 점령
+					limit = {
+						tag = SOV
+						USA = {
+							NOT = {
+								has_country_flag = TLE_THE_RULING_KOREAN_STATE
+							}
+						}	
+					}
+					SOV = {
+						country_event = {
+							id = korea.46
+						}
+					}
+					
 				}
-                FROM.FROM = {
-					set_state_name = "츄세이"
+				if = { #소련이 서울 점령, 근데 미군을 곁들인
+					limit = {
+						tag = SOV
+						USA = {
+							has_country_flag = TLE_THE_RULING_KOREAN_STATE
+						}	
+					}
+					SOV = {
+						country_event = {
+							id = korea.47
+						}
+					}
+					
 				}
-                set_province_name = {
-                    id = 13241
-                    name = "타이텐"
-                }
-			}
-			if = {
-				limit = {
-					tag = JAP #점령국 - 한국
-					FROM = { tag = KOR } #피점령국 - 조선총독부
-					FROM.FROM = { state = 808 } #점령 주 - 전라
+				if = { #소련이 극동공화국과 전쟁할 때
+					limit = {
+						SOV = {
+							has_war_with = RUS
+						}
+					}
+					SOV = {
+						transfer_state = 637
+						transfer_state = 644
+						transfer_state = 562
+						transfer_state = 574
+						transfer_state = 565
+						transfer_state = 564
+						transfer_state = 563
+						transfer_state = 561
+						transfer_state = 657
+						transfer_state = 560
+						transfer_state = 555
+						transfer_state = 537
+						transfer_state = 655
+						transfer_state = 820
+						transfer_state = 821
+						transfer_state = 409
+						transfer_state = 408
+					}
 				}
-                FROM.FROM = {
-					set_state_name = "젠라"
+				every_other_country = {
+					limit = {
+						OR = {
+							TAG = CHI
+							TAG = WZC
+							TAG = ZLC
+							TAG = YUN
+							TAG = GXC
+							TAG = PRC
+							TAG = XSM
+							TAG = AHC
+							TAG = HNC
+							TAG = SND
+							TAG = SZC
+							TAG = SIK
+						}
+						owns_state = 608
+					}
+					transfer_state = 609
+					transfer_state = 743
 				}
-                set_province_name = {
-                    id = 10110
-                    name = "쿄슈"
-                }
-			}
-			if = {
-				limit = {
-					tag = JAP #점령국 - 한국
-					FROM = { tag = KOR } #피점령국 - 조선총독부
-					FROM.FROM = { state = 809 } #점령 주 - 경상
+				every_other_country = {
+					limit = {
+						OR = {
+							TAG = CHI
+							TAG = WZC
+							TAG = ZLC
+							TAG = YUN
+							TAG = GXC
+							TAG = PRC
+							TAG = XSM
+							TAG = AHC
+							TAG = HNC
+							TAG = SND
+							TAG = SZC
+							TAG = SIK
+						}
+						owns_state = 613
+					}
+					transfer_state = 524
 				}
-                FROM.FROM = {
-					set_state_name = "켄산"
+				MON = {
+					transfer_state = 330
 				}
-                set_province_name = {
-                    id = 7121
-                    name = "포한"
-                }
-                set_province_name = {
-                    id = 4086
-                    name = "타이큐"
-                }
-                set_province_name = {
-                    id = 4056
-                    name = "후잔"
-                }
-			}
-			if = {
-				limit = {
-					tag = JAP #점령국 - 한국
-					FROM = { tag = KOR } #피점령국 - 조선총독부
-					FROM.FROM = { state = 810 } #점령 주 - 함경
+				SOV = {
+					puppet = MON
+					transfer_state = 329
+					add_state_core = 821
+					add_state_core = 820
+					add_state_core = 555
 				}
-                FROM.FROM = {
-					set_state_name = "한켄"
+				
+				JAP = {
+					transfer_state = 528
+					transfer_state = 822
+					transfer_state = 645
+					add_state_core = 822
+					add_state_core = 645
 				}
-                set_province_name = {
-                    id = 6822
-                    name = "세이신"
-                }
-                set_province_name = {
-                    id = 6944
-                    name = "라신"
-                }
-                set_province_name = {
-                    id = 848
-                    name = "켄산"
-                }
-                set_province_name = {
-                    id = 3981
-                    name = "칸쿄"
-                }
-			}
-			if = {
-				limit = {
-					tag = JAP #점령국 - 한국
-					FROM = { tag = KOR } #피점령국 - 조선총독부
-					FROM.FROM = { state = 811 } #점령 주 - 강원
+				USA = {
+					transfer_state = 526
+					
+					transfer_state = 648
+					transfer_state = 633
+					transfer_state = 684
+					transfer_state = 647
+					transfer_state = 646
 				}
-                FROM.FROM = {
-					set_state_name = "고켄"
+				
+				every_other_country = {
+					limit = {
+						NOT = {
+							original_tag = KOR
+						}
+					}	
+					news_event = {
+						id = kor_news.4
+						hours = 3
+					}
 				}
-                set_province_name = {
-                    id = 13249
-                    name = "슌센"
-                }
-			}
-			if = {
-				limit = {
-					tag = JAP #점령국 - 한국
-					FROM = { tag = KOR } #피점령국 - 조선총독부
-					FROM.FROM = { state = 812 } #점령 주 - 황해
+				every_other_country = {
+					limit = {
+						original_tag = KOR
+					}	
+					news_event = {
+						id = kor_news.4
+						hours = 3
+					}
 				}
-                FROM.FROM = {
-					set_state_name = "고카이"
-				}
-                set_province_name = {
-                    id = 10065
-                    name = "고슈"
-                }
-                set_province_name = {
-                    id = 11915
-                    name = "사리옌"
-                }
-			}
-			if = {
-				limit = {
-					tag = JAP #점령국 - 한국
-					FROM = { tag = KOR } #피점령국 - 조선총독부
-					FROM.FROM = { state = 813 } #점령 주 - 제주
-				}
-                FROM.FROM = {
-					set_state_name = "사이슈"
-				}
-                set_province_name = {
-                    id = 1177
-                    name = "사이슈"
-                }
-			}
-			if = {
-				limit = {
-					tag = JAP #점령국 - 한국
-					FROM = { tag = KOR } #피점령국 - 조선총독부
-					FROM.FROM = { state = 814 } #점령 주 - 옹진반도
-				}
-                FROM.FROM = {
-					set_state_name = "오신"
-				}
-			}
-			if = {
-				limit = {
-					tag = JAP #점령국 - 한국
-					FROM = { tag = KOR } #피점령국 - 조선총독부
-					FROM.FROM = { state = 815 } #점령 주 - 개성
-				}
-                FROM.FROM = {
-					set_state_name = "카이조"
-				}
-                set_province_name = {
-                    id = 12040
-                    name = "카이조"
-                }
-			}
-			if = {
-				limit = {
-					tag = JAP #점령국 - 한국
-					FROM = { tag = KOR } #피점령국 - 조선총독부
-					FROM.FROM = { state = 816 } #점령 주 - 연천
-				}
-                FROM.FROM = {
-					set_state_name = "옌센"
-				}
-			}
-			if = {
-				limit = {
-					tag = JAP #점령국 - 한국
-					FROM = { tag = KOR } #피점령국 - 조선총독부
-					FROM.FROM = { state = 817 } #점령 주 - 고성
-				}
-                FROM.FROM = {
-					set_state_name = "고조"
-				}
-			}
-			if = {
-				limit = {
-					tag = JAP #점령국 - 한국
-					FROM = { tag = KOR } #피점령국 - 조선총독부
-					FROM.FROM = { state = 818 } #점령 주 - 북강원
-				}
-                FROM.FROM = {
-					set_state_name = "기타 간켄"
-				}
-			}
-			if = {
-				limit = {
-					tag = JAP #점령국 - 한국
-					FROM = { tag = KOR } #피점령국 - 조선총독부
-					FROM.FROM = { state = 819 } #점령 주 - 장단
-				}
-                FROM.FROM = {
-					set_state_name = "쵸단"
+				KOR = {
+					remove_ideas = KOR_militarism
+					remove_ideas = KOR_Weakening_the_kingship
+					remove_unit_leader = 12141
+					remove_unit_leader = 12139
+					remove_unit_leader = 20101
+					remove_unit_leader = 19362
+					remove_unit_leader = 19380
+					remove_unit_leader = 19364
+					remove_unit_leader = 19365
+					remove_unit_leader = 19366
 				}
 			}
         }
@@ -1406,6 +1579,89 @@ on_actions = {
 	}
 	on_daily = {
 		effect = {
+			if = {
+				limit = {
+					original_tag = TIB
+				}	
+				declare_war_on = {
+					target = XSM
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						original_tag = CHI
+						original_tag = WZC
+						original_tag = SND
+						original_tag = HNC
+						original_tag = XSM
+						original_tag = SHX
+						original_tag = PRC
+						original_tag = SZC
+						original_tag = YUN
+						original_tag = GXC
+						original_tag = AHC
+						original_tag = SIK
+					}
+					has_country_flag = ZLC_ACCEPT_UNITED_FRONT
+					NOT = {
+						has_country_flag = ZLC_OWN_UNITED_FRONT
+					}
+				}
+				ZLC = {
+					add_to_faction = ROOT 
+					set_country_flag = ZLC_OWN_UNITED_FRONT
+				}
+				set_country_flag = ZLC_OWN_UNITED_FRONT
+			}
+			if = {
+				limit = {
+					KOR = {
+						NOT = {
+							OR = {
+								has_idea = KOR_yi_jin
+								has_idea = KOR_yi_jin_2
+							}
+						}
+					}
+				}
+				KOR = {
+					set_cosmetic_tag = KOR_REPUBLIC
+				}
+			}
+			if = {
+				limit = {
+					KOR = {
+						has_country_flag = TLE_THE_WAR_IS_ENDED
+					}
+					RUS = {
+						exists = yes
+						NOT = {
+							has_war_with = SOV
+						}	
+					}
+				}
+				SOV = {
+					transfer_state = 637
+					transfer_state = 644
+					transfer_state = 562
+					transfer_state = 574
+					transfer_state = 565
+					transfer_state = 564
+					transfer_state = 563
+					transfer_state = 561
+					transfer_state = 657
+					transfer_state = 560
+					transfer_state = 555
+					transfer_state = 537
+					transfer_state = 655
+					transfer_state = 820
+					transfer_state = 821
+					transfer_state = 409
+					transfer_state = 408
+					}
+			}
 			if = {
 				limit = {
 					date > 1937.1.1
@@ -1596,6 +1852,10 @@ on_actions = {
 					date > 1939.9.1
 					KOR = {
 						has_idea = KOR_not_go_outside
+						has_completed_focus = kor_communism
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_ENDED
+						}
 					}	
 				}
 				remove_ideas = KOR_not_go_outside
@@ -1751,7 +2011,6 @@ on_actions = {
 			}
 			if = {
 				limit = {
-						OR = {
 							original_tag = ZLC
 							original_tag = WZC
 							original_tag = SHX
@@ -1763,10 +2022,12 @@ on_actions = {
 							original_tag = SZC
 							original_tag = GXC
 							original_tag = SIK
-						} 
 						NOT = {
 							has_war_with = KOR
 						}
+				}
+				ZLC = {
+					dismantle_faction = yes
 				}
 				remove_ideas = CHI_fight_with_korea
 				if = {

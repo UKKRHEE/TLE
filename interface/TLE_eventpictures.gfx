@@ -1,6 +1,31 @@
 spriteTypes = {
 	
 	spriteType = {
+		name = "GFX_Korean_Red_Cross"
+		texturefile = "gfx/event_pictures/Korean_Red_Cross.dds"
+	}
+	spriteType = {
+		name = "GFX_고원의_아이들"
+		texturefile = "gfx/event_pictures/고원의_아이들.png"
+	}
+	spriteType = {
+		name = "GFX_국회침입"
+		texturefile = "gfx/event_pictures/국회침입.png"
+	}
+	spriteType = {
+		name = "GFX_국가재건위원회"
+		texturefile = "gfx/event_pictures/국가재건위원회.png"
+	}
+	spriteType = {
+		name = "GFX_계엄군"
+		texturefile = "gfx/event_pictures/계엄군.png"
+	}
+	spriteType = {
+		name = "GFX_계엄군3"
+		texturefile = "gfx/event_pictures/계엄군3.png"
+	}
+	
+	spriteType = {
 		name = "GFX_report_event_Kor_empire_comeback"
 		texturefile = "gfx/event_pictures/report_event_Kor_empire_comeback.dds"
 	}

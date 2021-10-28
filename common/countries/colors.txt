@@ -382,8 +382,8 @@ BLR = {
 	color_ui = rgb { 180 220 190 }
 }
 MAN = {
-	color = rgb { 255 120 71 }
-	color_ui = rgb { 255 120 71 }
+	color = rgb { 178  51  52 }
+	color_ui = rgb { 178  51  52 }
 }
 ANG = {
 	color = rgb { 37 140 61 }
@@ -659,6 +659,10 @@ SHL = {
 	color_ui = rgb { 51 51 255 }
 }
 
+PRK = { #북괴
+	color = rgb { 204  51  64 }
+	color_ui = rgb { 204  51  64 }
+}
 KOR = { #한국
 	color = rgb { 36  7  126 }
 	color_ui = rgb { 36  7  126 }

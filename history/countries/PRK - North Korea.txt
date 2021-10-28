@@ -26,7 +26,7 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "김구"
+	name = "Ki Koo"
 	desc = ""
 	picture = "gfx/leaders/KOR/Portrait_KOR_Kim_Koo.dds"
 	expire = "9999.1.1"
@@ -37,7 +37,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "여운형"
+	name = "Lyuh Woon Hyung"
 	desc = ""
 	picture = "gfx/leaders/KOR/Portrait_Korea_Lyuh_Woon_hyung.dds"
 	expire = "1955.8.1"
@@ -48,7 +48,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "김일성"
+	name = "Kimm Il-Sung"
 	desc = ""
 	picture = "gfx/leaders/KOR/Portrait_KOR_Kim_Il-sung.dds"
 	expire = "1965.1.1"
@@ -59,7 +59,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "군사정부"
+	name = "Yi Kang"
 	desc = ""
 	picture = ""
 	expire = "1956.8.1"

@@ -56,6 +56,12 @@ focus_tree = {
 							ideology = communism
 							popularity = -0.15
 						}
+						hidden_effect = {
+							country_event = {
+								id = korea.52
+								days = 3
+							}
+						}
 				}
 
 	}
@@ -1586,6 +1592,12 @@ focus_tree = {
 		y = 4
 			completion_reward = {
 					add_manpower = 62350
+			hidden_effect = {
+				set_rule = {
+					can_use_kamikaze_pilots = yes
+				}
+			}
+			custom_effect_tooltip = kamikaze_focus_tooltip
 				}
 
 	}
@@ -1696,6 +1708,11 @@ focus_tree = {
 				add_state_claim = 828
 				add_state_claim = 827
 			}	
+			
+			set_rule = {
+				can_create_factions = yes
+			}
+			create_faction = TLE_COPERATION
 		}
 
 	}
@@ -1782,6 +1799,9 @@ focus_tree = {
 					}
 				}
 			completion_reward = {
+			hidden_effect = {
+			add_ideas = spiritual_mobilization_idea
+			}
 					custom_effect_tooltip = KOR_tooltip_attack_china
 					if = {
 					limit = {
@@ -2080,9 +2100,6 @@ focus_tree = {
 		y = 9
 			completion_reward = {
 					add_war_support = 0.2
-					set_rule = {
-							can_create_factions = yes
-						}
 				}
 
 	}
@@ -3864,6 +3881,7 @@ focus_tree = {
 			completion_reward = {
 					add_war_support = 0.05
 					add_ideas = KOR_military_organization_youth
+					set_technology = { suicide_craft = 1 }
 				}
 
 	}

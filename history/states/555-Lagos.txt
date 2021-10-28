@@ -7,9 +7,10 @@ state={
 	state_category = tiny_island
 
 	history={
-		owner = JAP
+		owner = KOR
+		add_core_of = KOR
 		add_core_of = JAP
-		#add_claim_by = SOV # Removed because of too much aggression
+		add_claim_by = SOV # Removed because of too much aggression
 		buildings = {
 			infrastructure = 3
 			1399 = {

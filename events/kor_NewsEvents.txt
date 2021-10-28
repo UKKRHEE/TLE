@@ -102,6 +102,8 @@ news_event = { #남경 폭동
 				TAG = AHC
 				TAG = HNC
 				TAG = SIK
+				TAG = SND
+				TAG = SZC
 			}	
 		}
 	}

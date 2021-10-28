@@ -1509,157 +1509,25 @@ country_event = {
 		create_faction = FACTION_ZLC_UNITED_FRONT
 		set_rule = {
 			can_create_faction = yes
-		}
-		hidden_effect = {
-			if = {
-				limit = {
-					PRC = {
-						exists = yes
-					}
-				}			
-				PRC = {
-					country_event = {
-						id = china.1094
-						days = 1
-					}
-					white_peace = ZLC
+		}	
+		every_other_country = {
+			limit = {
+				OR = {
+					TAG = CHI
+					TAG = WZC
+					TAG = YUN
+					TAG = GXC
+					TAG = PRC
+					TAG = XSM
+					TAG = AHC
+					TAG = HNC 
+					TAG = SND
+					TAG = SZC
+					TAG = SIK
 				}
-
-			}
-			if = {
-				limit = {
-					WZC = {
-						exists = yes
-					}
-				}			
-				WZC = {
-					country_event = {
-						id = china.1094
-						days = 1
-					}
-					white_peace = ZLC
-				}
-
-			}
-			if = {
-				limit = {
-					CHI = {
-						exists = yes
-					}
-				}			
-				CHI = {
-					country_event = {
-						id = china.1094
-						days = 1
-					}
-					white_peace = ZLC
-				}
-
-			}
-			if = {
-				limit = {
-					XSM = {
-						exists = yes
-					}
-				}			
-				XSM = {
-					country_event = {
-						id = china.1094
-						days = 1
-					}
-					white_peace = ZLC
-				}
-
-			}
-			if = {
-				limit = {
-					SHX = {
-						exists = yes
-					}
-				}			
-				SHX = {
-					country_event = {
-						id = china.1094
-						days = 1
-					}
-					white_peace = ZLC
-				}
-
-			}
-			if = {
-				limit = {
-					YUN = {
-						exists = yes
-					}
-				}			
-				YUN = {
-					country_event = {
-						id = china.1094
-						days = 1
-					}
-					white_peace = ZLC
-				}
-
-			}
-			if = {
-				limit = {
-					SZC = {
-						exists = yes
-					}
-				}			
-				SZC = {
-					country_event = {
-						id = china.1094
-						days = 1
-					}
-					white_peace = ZLC
-				}
-
-			}
-			if = {
-				limit = {
-					SIK = {
-						exists = yes
-					}
-				}			
-				SIK = {
-					country_event = {
-						id = china.1094
-						days = 1
-					}
-					white_peace = ZLC
-				}
-
-			}
-			if = {
-				limit = {
-					GXC = {
-						exists = yes
-					}
-				}			
-				GXC = {
-					country_event = {
-						id = china.1094
-						days = 1
-					}
-					white_peace = ZLC
-				}
-
-			}
-			if = {
-				limit = {
-					AHC = {
-						exists = yes
-					}
-				}			
-				AHC = {
-					country_event = {
-						id = china.1094
-						days = 1
-					}
-					white_peace = ZLC
-				}
-
+			}	
+			country_event = {
+				id = china.1094
 			}
 		}
     }
@@ -1674,6 +1542,9 @@ country_event = {
     fire_only_once = yes
 	is_triggered_only = yes
 	option = { 
+		ai_chance = {
+			factor = 100
+		}	
 		name = china.1094.a
 			if = {
 				limit = {
@@ -1716,14 +1587,20 @@ country_event = {
 				}
 			}
 		ZLC = {
-			add_to_faction = ROOT
+			add_to_faction = FROM 
 			country_event = {
 				id = china.1095
+				hours = 3
 			}
 		}	
+		set_country_flag = ZLC_ACCEPT_UNITED_FRONT
     }
 	option = { 
-		name = china.1094.b
+		ai_chance = {
+			factor = 0
+		}	
+	name = china.1094.b
+	leave_faction = ZLC
 		ZLC = {
 			country_event = {
 				id = china.1096
