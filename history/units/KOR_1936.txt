@@ -69,10 +69,11 @@ division_template = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
-		mot_artillery_brigade = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
 	}
 	support = {
-        recon = { x = 0 y = 0 }
 	}
 }
 
@@ -102,6 +103,9 @@ division_template = {
 		marine = { x = 1 y = 1 }
 		marine = { x = 2 y = 0 }
 		marine = { x = 2 y = 1 }
+		marine = { x = 3 y = 0 }
+		marine = { x = 3 y = 1 }
+		marine = { x = 3 y = 2 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
@@ -826,6 +830,24 @@ instant_effect = {
 		}
 		requested_factories = 2
 		progress = 0.50
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1
+			creator = "KOR"
+		}
+		requested_factories = 2
+		progress = 0.5
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "KOR"
+		}
+		requested_factories = 2
+		progress = 0.5
 		efficiency = 100
 	}
 	add_equipment_production = {

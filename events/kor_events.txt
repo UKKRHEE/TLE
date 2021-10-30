@@ -1898,6 +1898,9 @@ country_event = { #이강 - 중추원
 	 
 	option = { #
 		name = korea.50.a
+		country_event = {
+			id = korea.53
+		}
 	}
 }
 country_event = { #유괴
@@ -1925,6 +1928,42 @@ country_event = { #유괴
 	 
 	option = { #
 		name = korea.52.a
+	}
+}
+country_event = { #유괴
+	id = korea.53
+	title = korea.53.title
+	desc = korea.53.desc
+	picture = GFX_국회침입
+	fire_only_once = yes
+    is_triggered_only = yes
+	 
+	option = { #
+		name = korea.53.a
+	}
+}
+country_event = { #유괴
+	id = korea.54
+	title = korea.54.title
+	desc = korea.54.desc
+	picture = GFX_계엄군
+	fire_only_once = yes
+    is_triggered_only = yes
+	 
+	option = { #
+		name = korea.54.a
+	}
+}
+country_event = { #유괴
+	id = korea.55
+	title = korea.55.title
+	desc = korea.55.desc
+	picture = GFX_계엄군
+	fire_only_once = yes
+    is_triggered_only = yes
+	 
+	option = { #
+		name = korea.55.a
 	}
 }
 ##########
