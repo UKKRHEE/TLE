@@ -2,6 +2,10 @@ spriteTypes = {
 	
 	#국민정신
 	spriteType = {
+		name = "GFX_idea_KOR_not_go_outside"    
+		texturefile = "gfx/interface/ideas/korea/억제된확장정책.png"  
+	}	
+	spriteType = {
 		name = "GFX_idea_confucian_press"    
 		texturefile = "gfx/interface/ideas/korea/royal_charity.dds"  
 	}	
@@ -43,7 +47,7 @@ spriteTypes = {
 	}	
 	spriteType = {
 		name = "GFX_idea_KOR_divided_politics"  
-		texturefile = "gfx/interface/ideas/idea_KOR_divided_politics.png"
+		texturefile = "gfx/interface/ideas/korea/분열된정부.png"
 	}	
 	spriteType = {
 		name = "GFX_idea_KOR_tongil_politics" 
@@ -66,12 +70,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_KOR_women_vote.png"
 	}	
 	spriteType = { 
-		name = "GFX_idea_KOR_striked_factories"
-		texturefile = "gfx/interface/ideas/idea_KOR_striked_factories.png"
+		name = "GFX_idea_KOR_striked_factories" 
+		texturefile = "gfx/interface/ideas/korea/파업.png"
 	}	
 	spriteType = { 
 		name = "GFX_idea_KOR_dead_strike" 
-		texturefile = "gfx/interface/ideas/idea_KOR_dead_strike.png" 
+		texturefile = "gfx/interface/ideas/korea/진압된파업.png" 
 	}	
 	spriteType = {
 		name = "GFX_idea_Yi_Kang"

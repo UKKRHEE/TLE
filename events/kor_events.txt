@@ -1966,6 +1966,32 @@ country_event = { #유괴
 		name = korea.55.a
 	}
 }
+####
+country_event = { #유괴
+	id = korea.56
+	title = korea.56.title
+	desc = korea.56.desc
+	picture = GFX_계엄군
+	fire_only_once = yes
+    is_triggered_only = yes
+	 
+	option = { #
+		name = korea.56.a
+			transfer_state = 716
+			transfer_state = 328
+			transfer_state = 717
+			transfer_state = 714
+			transfer_state = 715
+			transfer_state = 610
+			transfer_state = 853
+			transfer_state = 852
+			transfer_state = 825
+			transfer_state = 824
+			transfer_state = 823
+			transfer_state = 745
+			puppet = KOR
+	}
+}
 ##########
 country_event = { #결론
 	id = korea.777

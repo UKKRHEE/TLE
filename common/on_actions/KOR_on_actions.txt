@@ -1252,6 +1252,45 @@ on_actions = {
 						}
 					}
 				}
+				if = { #중국이 서울 점령
+					limit = {
+						OR = {
+							tag = CHI
+							tag = ZLC
+							tag = SND
+							tag = SHX
+							tag = PRC
+							tag = WZC
+							tag = AHC
+							tag = GXC
+							tag = SZC
+							tag = YUN
+							tag = XSM
+							tag = SIK
+						}
+					}
+					every_other_country = {
+						limit = {
+							OR = {
+								TAG = CHI
+								TAG = WZC
+								TAG = ZLC
+								TAG = YUN
+								TAG = GXC
+								TAG = PRC
+								TAG = XSM
+								TAG = AHC
+								TAG = HNC
+								TAG = SND
+								TAG = SZC
+								TAG = SIK
+							}
+						}
+						country_event = {
+							id = korea.56
+						}
+					}
+				}
 				if = { #소련이 서울 점령
 					limit = {
 						tag = SOV
