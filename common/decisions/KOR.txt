@@ -156,7 +156,7 @@ KOR_interservice_rivalry = {
 		fire_only_once = yes
 		days_remove = -1
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		complete_effect = {
 			random_owned_state = {
@@ -592,7 +592,7 @@ KOR_new_country_name = {
 
 		cost = 60
 		ai_will_do = {
-			factor = 10
+			factor = 100
 		}
 		
 		fire_only_once = no

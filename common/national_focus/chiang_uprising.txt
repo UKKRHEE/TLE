@@ -378,7 +378,7 @@ focus_tree = {
 					KMN = { exists = no }
 					KOR = { 
 						exists = yes 
-						has_completed_focus =KOR_plan_manchu
+						controls_state = 714
 					}
 					NOT = { has_non_aggression_pact_with = KOR }
 					NOT = { is_in_faction_with = KOR }
@@ -421,7 +421,7 @@ focus_tree = {
 					}
 				}
 				declare_war_on = {
-					target = KMN
+					target = KOR
 					type = annex_everything
 				}
 			}

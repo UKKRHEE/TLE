@@ -557,18 +557,32 @@ country_event = { #사회주의 공화국 아님 제국!!
 	fire_only_once = yes	
     is_triggered_only = yes
 	
-	option = { 
-	    ai_chance = {
-		    factor = 0
+	option = { #공화국
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = KOR_ai_behavior 
+					option = COMMUNISM_EMPIRE
+				}
+			}
 		}
 		name = korea.18.a
 		remove_ideas = KOR_yi_jin
 		remove_unit_leader = 20100
 		remove_unit_leader = 20101
 	}
-	option = { 
-	    ai_chance = {
-		    factor = 1
+	option = { #제국
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = KOR_ai_behavior 
+					option = COMMUNISM
+				}
+			}
 		}
 		name = korea.18.b
 		set_cosmetic_tag = KOR_socialist_empire
@@ -617,36 +631,81 @@ country_event = { #중국의 거절!
 	
 	option = { #거절
 		name = korea.20.a
-		set_country_flag = korea_ww_china
-		CHI = {
+		if = {
+			limit = {
+				is_ai = no
+			}
 			set_country_flag = korea_ww_china
+		}	
+		CHI = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = korea_ww_china
+			}	
 			country_event = {
 			    id = korea.21
 			}
 		}
 		ZLC = {
-			set_country_flag = korea_ww_china
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = korea_ww_china
+			}	
 			country_event = {
 			    id = korea.21
 			}
 		}
 		JAP = {
-			set_country_flag = korea_ww_china
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = korea_ww_china
+			}	
 		}
 		GXC = {
-			set_country_flag = korea_ww_china
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = korea_ww_china
+			}	
 		}
 		XSM = {
-			set_country_flag = korea_ww_china
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = korea_ww_china
+			}	
 		}
 		SIK = {
-			set_country_flag = korea_ww_china
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = korea_ww_china
+			}	
 		}
 		SHX = {
-			set_country_flag = korea_ww_china
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = korea_ww_china
+			}	
 		}
 		PRC = {
-			set_country_flag = korea_ww_china
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = korea_ww_china
+			}	
 		}
 	}
 }
@@ -787,7 +846,14 @@ country_event = { #반란!
 	option = { #진압
 		name = korea.25.a
 		ai_chance = {
-			factor = 100
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = KOR_ai_behavior 
+					option = NEUTRALITY
+				}
+			}
 		}
 		country_event = {
 			id = korea.26
@@ -799,7 +865,21 @@ country_event = { #반란!
 	option = { #근황파
 		name = korea.25.b
 		ai_chance = {
-			factor = 0
+			factor = 50
+			modifier = {
+				factor = 0
+				OR = {
+					is_historical_focus_on = yes
+					has_game_rule = {
+						rule = KOR_ai_behavior
+						option = DEFAULT
+					}				
+					has_game_rule = {
+						rule = KOR_ai_behavior
+						option = FASCIST_HISTORICAL
+					}
+				}
+			}
 		}
 		country_event = {
 			id = korea.27

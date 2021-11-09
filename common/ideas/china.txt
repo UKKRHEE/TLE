@@ -1,5 +1,158 @@
 ideas = {
 	country = {
+		CHI_bloody_yangzi = { #핏빛 장강
+			picture = CHI_bloody_yangzi
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.1
+				political_advisor = -0.05
+			}		
+			targeted_modifier = {
+                tag = NAC
+			}
+			on_add = {
+				NAC = {
+					add_opinion_modifier = {
+						target = NAN
+						modifier = CHI_bloody_yangzi_opinion
+					}
+				}	
+			}
+			on_remove = {
+				NAC = {
+					remove_opinion_modifier = {
+						target = NAN
+						modifier = CHI_bloody_yangzi_opinion
+					}
+				}	
+			}
+		}
+		CHI_conservetic_administration_hard = { #보수적 통치-심각
+			picture = CHI_conservetic_administration
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.1
+				auto_despotism _drift = 0.0002
+				social_democracy_acceptance = -50
+				social_liberalism_acceptance = -50
+				national_liberalism_acceptance = -50
+				liberal_conservatism _acceptance = 25
+				democratic_acceptance = 25
+				national_conservatism_acceptance = 25
+			}		
+		}
+		CHI_two_sided_enemy = { #양면의 적
+			picture = CHI_two_sided_enemy
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+			}		
+		}
+		CHI_hedong_zhili = { #화동의 직예
+			picture = CHI_two_sided_enemy
+			allowed = {
+				always = no
+			}
+			modifier = {
+				war_support_factor = 0.1
+			}	
+			on_add = {
+				ZHI = {
+					add_opinion_modifier = {
+						target = NAN
+						modifier = ZHI_CHI_hedong_zhili_opinion #25 추가
+					}
+				}	
+				MAN = {
+					add_opinion_modifier = {
+						target = NAN
+						modifier = MAN_CHI_hedong_zhili_opinion #25 아웃
+					}
+				}	
+			}
+			on_remove = {
+				ZHI = {
+					remove_opinion_modifier = {
+						target = NAN
+						modifier = ZHI_CHI_hedong_zhili_opinion #25 추가
+					}
+				}	
+				MAN = {
+					remove_opinion_modifier = {
+						target = NAN
+						modifier = MAN_CHI_hedong_zhili_opinion #25 아웃
+					}
+				}	
+			}	
+		}
+		CHI_incomplete_national_cooperation = { #미완의 국공합작
+			picture = CHI_incomplete_national_cooperation
+			allowed = {
+				always = no
+			}
+			modifier = {
+				political_advisor = -0.15
+				social_democracy_acceptance = 25
+				social_liberalism_acceptance = 25
+				national_liberalism_acceptance = 25
+				democratic_acceptance = 25
+				national_conservatism_acceptance = 25
+			}		
+			
+		}
+		CHI_republics_orthodox_government = { #민국의 정통정부
+			picture = CHI_republics_orthodox_government
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.15
+				surrender_limit = 0.1
+				drift_defence_factor = 0.5
+			}		
+			
+		}
+		CHI_foreign_pressure = { #외세의 압박
+			picture = CHI_foreign_pressure
+			allowed = {
+				always = no
+			}
+			modifier = {
+				war_support_factor = 0.15
+				army_core_attack_factor = -0.05
+				army_core_defence_factor = 0.05
+			}		
+			targeted_modifier = {
+                tag = RUS
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+                tag = KOR
+				defense_bonus_against = 0.1
+			}
+			
+		}
+		CHI_sleeping_dragon = { #잠룡
+			picture = CHI_sleeping_dragon
+			allowed = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.15
+				
+			}		
+		}
 		CHI_fight_in_core_2 = {
 			picture = jap_intervene_in_china
 			allowed = {

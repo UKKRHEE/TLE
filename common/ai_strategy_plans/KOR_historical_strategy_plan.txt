@@ -2,20 +2,21 @@ KOR_historical_plan = {
 	name = "The Last Empire" #황국협회의 개혁
 	desc = "Historical behavior for Korea"
 
-	enable = {
+	allowed = {
 		original_tag = KOR
+	}
+	enable = {
 		OR = {
-			is_historical_focus_on = yes
 			AND = {
 				is_historical_focus_on = yes
 				has_game_rule = {
 					rule = KOR_ai_behavior
-					option = KOR_THE_LAST_EMPIRE_RULE
+					option = FASCIST_HISTORICAL
 				}
 			}
 			has_game_rule = {
 				rule = KOR_ai_behavior
-				option = KOR_THE_LAST_EMPIRE_RULE
+				option = DEFAULT
 			}
 		}
 	}
@@ -34,6 +35,7 @@ KOR_historical_plan = {
 		kor_add
 		kor_encouraging_patriotism_2
 		kor_territory_expansion
+		kor_puppet_king
 		kor_forced_labor
 		kor_the_new_history
 		KOR_all_claim

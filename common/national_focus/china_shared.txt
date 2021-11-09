@@ -73,7 +73,19 @@ shared_focus = {
 		x = 28
 		y = 0
 		trigger = {
-			tag = ZLC
+			OR = {
+				tag = ZLC
+				tag = SND
+				tag = SHX
+				tag = SZC
+				tag = YUN
+				tag = GXC
+				tag = SIK
+				tag = HNC
+				tag = AHC
+				tag = MHB
+				tag = XSM
+			}	
 		}
 	}
 

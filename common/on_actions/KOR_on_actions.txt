@@ -211,6 +211,7 @@ on_actions = {
 				}
 				TIB = {
 					set_country_flag = TIB_WIN_IN_THE_TSINGHAI
+					complete_national_focus = TIB_win_in_qinghai
 				}	
 				transfer_state = 604
 				MHB = {
@@ -272,9 +273,11 @@ on_actions = {
 				}
 				TIB = {
 					set_country_flag = TIB_LOSE_IN_THE_TSINGHAI
+					complete_national_focus = TIB_lose_in_qinghai
 				}
 				SZC = {
 					transfer_state = 601
+					add_state_core = 601
 				}
 				white_peace = TIB
 			}
@@ -1611,6 +1614,7 @@ on_actions = {
 					target = XSM
 					type = annex_everything
 				}
+				complete_national_focus = TIB_start_to_war
 			}
 			if = {
 				limit = {

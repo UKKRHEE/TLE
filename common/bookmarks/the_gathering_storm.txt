@@ -134,9 +134,9 @@ bookmarks = {
 				JAP_army_planning
 			}	
 			focuses = {
-				JAP_the_zero
-				JAP_warrior_spirit
-				JAP_strike_on_the_southern_resource_area
+				JAP_rising_sun
+				JAP_new_rework
+				JAP_liberalization_of_regime
 			}			
 		}
 		"SOV"={

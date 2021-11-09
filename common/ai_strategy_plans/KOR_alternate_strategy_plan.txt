@@ -1,31 +1,214 @@
-KOR_alternate_plan_emperor = {
-	name = "Korea Shinhan Plan" #황제 집권
+KOR_alternate_plan_democratic = {
+	name = "Korea Democratic Plan" #좌익 민주주의
 	desc = "God Save our Country"
 
-	enable = {
+	allowed = {
 		original_tag = KOR
+	}
+	enable = {
 		OR = {
 			has_game_rule = {
 				rule = KOR_ai_behavior
-				option = SHINHAN
+				option = DEMOCRATIC
 			}
 		}
 	}
 	abort = {
 
 	}
-
 	ai_national_focuses = {
-	    KOR_imperial_section
-		KOR_freedom_party
-		KOR_jiandao_zhichi
+		KOR_use_the_anti-armed
+		KOR_cant_allied
+		kor_public_welfare_reform_2
+		KOR_New_Deal
+		KOR_asian_democracy
+		KOR_austerity_policy
+		KOR_Prohibition_propaganda
+		
+		kor_road_and_railway #경제
+		kor_military #군사
+		kor_add
+		KOR_national_arms
+		kor_soe_establishment
+
+		KOR_demilitarzed_zone_is_none
+		KOR_with_east
+		KOR_democracy_spread
+		KOR_new_laodonglaw
+		KOR_allied_politics
+		KOR_japans_defence
+		KOR_first_attack_jap
+
 		
 	}
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
 
-	
+}
+KOR_alternate_plan_democratic_right_wing = {
+	name = "Korea Democratic rightwing Plan" #우익 민주주의
+	desc = "God Save our Country"
 
-	# Keep small, as it is used as a factor for some things (such as research needs)
-	# Recommended around 1.0. Useful for relation between plans
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = KOR_ai_behavior
+				option = DEMOCRATIC_CONSERVETISM
+			}
+		}
+	}
+	abort = {
+
+	}
+	ai_national_focuses = {
+		kor_reform_korea
+		kor_national_fascist_agitation
+		KOR_free
+		KOR_asian_democracy
+		KOR_austerity_policy
+		KOR_Prohibition_propaganda
+		
+		kor_road_and_railway #경제
+		kor_military #군사
+		kor_add
+		kor_soe_establishment
+
+		KOR_demilitarzed_zone_is_none
+		KOR_with_west_democracy
+
+		KOR_democracy_spread
+		KOR_new_laodonglaw
+		KOR_allied_politics
+		KOR_defence_russia
+		KOR_first_attack_rus
+
+		
+	}
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+KOR_alternate_plan_communism = {
+	name = "Korea Communism Plan" #빨갱이
+	desc = "God Save our Country"
+
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = KOR_ai_behavior
+				option = COMMUNISM
+			}
+		}
+	}
+	abort = {
+
+	}
+	ai_national_focuses = {
+		KOR_use_the_anti-armed
+		kor_communism
+		KOR_united_power_up
+		kor_communist_congress_dissolved
+		KOR_women_suffrage
+		kor_people_parliament
+		kor_kill_fascism_2
+		kor_communism_dictatorship
+	}
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+KOR_alternate_plan_communism_empire = {
+	name = "Korea Communism Plan" #사회주의 제국
+	desc = "God Save our Country"
+
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = KOR_ai_behavior
+				option = COMMUNISM_EMPIRE
+			}
+		}
+	}
+	abort = {
+
+	}
+	ai_national_focuses = {
+		KOR_use_the_anti-armed
+		kor_communism
+		KOR_united_power_up
+		kor_communist_congress_dissolved
+		KOR_women_suffrage
+		kor_people_parliament
+		kor_kill_fascism_2
+		kor_election_maintenance
+	}
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+KOR_alternate_plan_neutrality = {
+	name = "Korea Neutrality Plan" #비동맹주의 - 강명유신
+	desc = "God Save our Country"
+
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = KOR_ai_behavior
+				option = NEUTRALITY
+			}
+		}
+	}
+	abort = {
+
+	}
+	ai_national_focuses = {
+		kor_reform_korea
+		kor_kill_Communist
+		kor_monarchy
+		KOR_power_up_to_imperial
+		KOR_fuck_pact
+		KOR_up-coupdetat
+		
+		kor_road_and_railway #경제
+		kor_military #군사
+		kor_add
+		kor_soe_establishment
+		
+		kor_neutrality
+		kor_best_gangju
+		kor_anti-Japanese_policy
+		kor_emperor_empowerment
+		
+		
+	}
 	weight = {
 		factor = 1.0
 		modifier = {

@@ -5,6 +5,9 @@ tags={
 	"Map"
 	"Sound"
 }
+dependencies={
+	"Korean Language (Europa)"
+}
 name="THE LAST EMPIRE"
 supported_version="1.10.*"
 remote_file_id="2263813821"
