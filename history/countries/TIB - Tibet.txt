@@ -20,13 +20,17 @@ set_popularities = {
 	democratic = 0
 }
 create_country_leader = {
-	name = "The Dalai Lama" # the real one, the other one hidden behind special event
+	name = "Tenzin Gyatso" # the real one, the other one hidden behind special event
 	desc = "POLITICS_JAMPHEL_YESHE_GYALTSEN_DESC"
 	picture = "Portrait_TIB_dalai_lama.dds" 
 	expire = "1965.1.1"
-	ideology = moderatism
+	ideology = fascism_ideology
 	traits = {
-		#
+		fascist_demagogue
+		national_integralist
+		tenacious_negotiator
+		backroom_backstabber
+		silent_workhorse
 	}
 }
 create_country_leader = {
@@ -44,7 +48,7 @@ create_country_leader = {
 	desc = "POLITICS_JAMPHEL_YESHE_GYALTSEN_DESC"
 	picture = "portrait_TIB_Thubten_Kunphela.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = moderatism
 	traits = {
 		#
 	}

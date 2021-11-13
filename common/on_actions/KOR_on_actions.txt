@@ -214,38 +214,13 @@ on_actions = {
 					complete_national_focus = TIB_win_in_qinghai
 				}	
 				transfer_state = 604
-				MHB = {
-					transfer_state = 756
-					transfer_state = 616
-					transfer_state = 746
-					transfer_state = 283
-					transfer_state = 856
-					declare_war_on = {
-						target = XSM
-						type = annex_everything
-					}
-				}
-				KOR = {
-					create_wargoal = {
-						type = annex_everything
-						target = MHB
-					}
-				}
 				SIK = {
-					create_wargoal = {
-						type = annex_everything
-						target = MHB
-					}
 					create_wargoal = {
 						type = annex_everything
 						target = XSM
 					}
 				}
 				SZC = {
-					create_wargoal = {
-						type = annex_everything
-						target = MHB
-					}
 					create_wargoal = {
 						type = annex_everything
 						target = XSM
@@ -1606,15 +1581,33 @@ on_actions = {
 				limit = {
 					original_tag = TIB
 					NOT = {
-						has_country_flag = TIB_LOSE_IN_THE_TSINGHAI
-						has_country_flag = TIB_WIN_IN_THE_TSINGHAI
+						has_country_flag = TIB_fire_only_once
 					}
 				}	
 				declare_war_on = {
 					target = XSM
 					type = annex_everything
 				}
+				set_country_flag = TIB_fire_only_once
 				complete_national_focus = TIB_start_to_war
+			}
+			if = {
+				limit = {
+					has_war_with = XSM
+					original_tag = TIB
+					NOT = {
+						has_country_flag = TIB_LOSE_IN_THE_TSINGHAI
+						has_country_flag = TIB_WIN_IN_THE_TSINGHAI
+					}
+				}
+				TIB = {
+					add_war_support = 0.001
+					add_political_power = 100
+				}
+				XSM = {
+					army_experience = 1
+					add_war_support = 0.001
+				}
 			}
 			if = {
 				limit = {

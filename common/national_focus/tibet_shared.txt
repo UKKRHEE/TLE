@@ -78,7 +78,11 @@
 				expire = "1965.1.1"
 				ideology = rexism
 				traits = {
-					#
+					fascist_demagogue
+					national_integralist
+					tenacious_negotiator
+					backroom_backstabber
+					silent_workhorse
 				}
 			}
 			create_country_leader = {
@@ -86,10 +90,15 @@
 				desc = "POLITICS_JAMPHEL_YESHE_GYALTSEN_DESC"
 				picture = "Portrait_TIB_dalai_lama.dds" 
 				expire = "1965.1.1"
-				ideology = despotism
+				ideology = despotism			
 				traits = {
-					#
+					fascist_demagogue
+					national_integralist
+					tenacious_negotiator
+					backroom_backstabber
+					silent_workhorse
 				}
+
 			}
 		}
 

@@ -167,6 +167,11 @@ spriteTypes = {
 	}	
 	
 	spriteType = {
+		name = "GFX_idea_KOR_park_sang_jin"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_park_sang_jin.png"
+	}	
+	
+	spriteType = {
 		name = "GFX_idea_KOR_kim_koo"
 		texturefile = "gfx/interface/ideas/KOR/idea_KOR_kim_koo.dds"
 	}	

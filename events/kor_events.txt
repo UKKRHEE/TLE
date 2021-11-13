@@ -1998,7 +1998,7 @@ country_event = { #유괴
 		name = korea.51.a
 	}
 }
-country_event = { #유괴
+country_event = { #군인
 	id = korea.52
 	title = korea.52.title
 	desc = korea.52.desc
@@ -2010,7 +2010,7 @@ country_event = { #유괴
 		name = korea.52.a
 	}
 }
-country_event = { #유괴
+country_event = { #다짐
 	id = korea.53
 	title = korea.53.title
 	desc = korea.53.desc
@@ -2022,11 +2022,11 @@ country_event = { #유괴
 		name = korea.53.a
 	}
 }
-country_event = { #유괴
+country_event = { #피땀연기~
 	id = korea.54
 	title = korea.54.title
 	desc = korea.54.desc
-	picture = GFX_계엄군
+	picture = GFX_TLE_korea_event_none
 	fire_only_once = yes
     is_triggered_only = yes
 	 
@@ -2034,13 +2034,157 @@ country_event = { #유괴
 		name = korea.54.a
 	}
 }
-country_event = { #유괴
+country_event = { #마지막 제국
 	id = korea.55
 	title = korea.55.title
 	desc = korea.55.desc
-	picture = GFX_계엄군
+	picture = GFX_report_event_usa_ne_hurricane
 	fire_only_once = yes
-    is_triggered_only = yes
+	trigger = {
+		tag = KOR
+		KOR = {
+			has_country_leader = {
+				name = "Yi Kang"
+				ruling_only = yes
+			}
+			has_government = fascism
+		}
+		OR = {
+			USA = {
+				has_war_with = KOR
+				OR = {
+					divisions_in_state = {
+						state = 525
+						size > 0
+					}
+					divisions_in_state = {
+						state = 527
+						size > 0
+					}
+					divisions_in_state = {
+						state = 807
+						size > 0
+					}
+					divisions_in_state = {
+						state = 808
+						size > 0
+					}
+					divisions_in_state = {
+						state = 809
+						size > 0
+					}
+					divisions_in_state = {
+						state = 810
+						size > 0
+					}
+					divisions_in_state = {
+						state = 811
+						size > 0
+					}
+					divisions_in_state = {
+						state = 812
+						size > 0
+					}
+					divisions_in_state = {
+						state = 813
+						size > 0
+					}
+					divisions_in_state = {
+						state = 814
+						size > 0
+					}
+					divisions_in_state = {
+						state = 815
+						size > 0
+					}
+					divisions_in_state = {
+						state = 816
+						size > 0
+					}
+					divisions_in_state = {
+						state = 817
+						size > 0
+					}
+					divisions_in_state = {
+						state = 818
+						size > 0
+					}
+					divisions_in_state = {
+						state = 819
+						size > 0
+					}
+				}
+			}
+			SOV = {
+				has_war_with = KOR
+				OR = {
+					divisions_in_state = {
+						state = 525
+						size > 0
+					}
+					divisions_in_state = {
+						state = 527
+						size > 0
+					}
+					divisions_in_state = {
+						state = 807
+						size > 0
+					}
+					divisions_in_state = {
+						state = 808
+						size > 0
+					}
+					divisions_in_state = {
+						state = 809
+						size > 0
+					}
+					divisions_in_state = {
+						state = 810
+						size > 0
+					}
+					divisions_in_state = {
+						state = 811
+						size > 0
+					}
+					divisions_in_state = {
+						state = 812
+						size > 0
+					}
+					divisions_in_state = {
+						state = 813
+						size > 0
+					}
+					divisions_in_state = {
+						state = 814
+						size > 0
+					}
+					divisions_in_state = {
+						state = 815
+						size > 0
+					}
+					divisions_in_state = {
+						state = 816
+						size > 0
+					}
+					divisions_in_state = {
+						state = 817
+						size > 0
+					}
+					divisions_in_state = {
+						state = 818
+						size > 0
+					}
+					divisions_in_state = {
+						state = 819
+						size > 0
+					}
+				}
+			}
+		}
+	}	
+	mean_time_to_happen = {
+		days = 19
+	}
 	 
 	option = { #
 		name = korea.55.a
@@ -2051,7 +2195,7 @@ country_event = { #유괴
 	id = korea.56
 	title = korea.56.title
 	desc = korea.56.desc
-	picture = GFX_계엄군
+	picture = GFX_TLE_korea_event_none
 	fire_only_once = yes
     is_triggered_only = yes
 	 
@@ -2070,6 +2214,75 @@ country_event = { #유괴
 			transfer_state = 823
 			transfer_state = 745
 			puppet = KOR
+	}
+}
+country_event = { #유괴
+	id = korea.57
+	title = korea.57.title
+	desc = korea.57.desc
+	picture = GFX_TLE_korea_event_none
+	fire_only_once = yes
+    is_triggered_only = yes
+	 
+	option = { #
+		name = korea.57.a
+	}
+}
+country_event = { #유괴
+	id = korea.58
+	title = korea.58.title
+	desc = korea.58.desc
+	picture = GFX_TLE_korea_event_none
+	fire_only_once = yes
+	trigger = {
+		tag = KOR
+		OR = {
+			has_war_with = ZLC
+			has_war_with = CHI
+		}
+		controls_state = 608
+	}
+	mean_time_to_happen = {
+		months = 3
+	}
+	 
+	option = { #
+		name = korea.58.a
+	}
+}
+country_event = { #유괴
+	id = korea.59
+	title = korea.59.title
+	desc = korea.59.desc
+	picture = GFX_TLE_korea_event_none
+	fire_only_once = yes
+    is_triggered_only = yes
+	 
+	option = { #
+		name = korea.59.a
+	}
+}
+country_event = { #유괴
+	id = korea.60
+	title = korea.60.desc
+	picture = GFX_TLE_korea_event_none
+	fire_only_once = yes
+    is_triggered_only = yes
+	 
+	option = { #
+		name = korea.60.a
+	}
+}
+country_event = { #유괴
+	id = korea.61
+	title = korea.61.title
+	desc = korea.61.desc
+	picture = GFX_TLE_korea_event_none
+	fire_only_once = yes
+	is_triggered_only = yes
+	 
+	option = { #
+		name = korea.61.a
 	}
 }
 ##########

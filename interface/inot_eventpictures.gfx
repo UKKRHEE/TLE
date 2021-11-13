@@ -1,5 +1,9 @@
 spriteTypes = {
     spriteType = {
+      name = "GFX_TLE_korea_event_none"
+       texturefile = ""
+    }
+    spriteType = {
       name = "GFX_report_event_TUR_jizya"
        texturefile = "gfx/event_pictures/report_event_TUR_jizya_generic.dds"
     }

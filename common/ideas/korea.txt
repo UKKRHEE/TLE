@@ -1389,7 +1389,7 @@ ideas = {
 		    }
 	    }
     
-        KOR_lee_beom_seok = { #이범석
+        KOR_park_sang_jin = { #박상진
 			
 		    allowed = {
 		    	original_tag = KOR
@@ -1401,6 +1401,20 @@ ideas = {
 			}	
 		
 	    	traits = { prince_of_terror }
+	    }
+    
+        KOR_lee_beom_seok = { #이범석
+			
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		    available = {
+		    	NOT = {
+					has_completed_focus = KOR_use_the_anti-armed
+				}
+			}	
+		
+	    	traits = { militarian_fascist }
 	    }
 
 	    KOR_syngman_rhee = { #이승만
@@ -1428,7 +1442,6 @@ ideas = {
 		    }
 			
 			available = {
-				has_completed_focus = kor_industrial_complex_1
 			}
 			
 		    traits = { captain_of_industry }
@@ -1444,7 +1457,6 @@ ideas = {
 		    }
 			
 			available = {
-				has_completed_focus = kor_arms_factory_1
 			}
 		    
 		    traits = { war_industrialist }
