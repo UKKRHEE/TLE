@@ -2428,3 +2428,15 @@ country_event = { #결론
 		name = korea.781.a
 	}
 }
+country_event = { #결론
+	id = korea.782
+	title = korea.782.title
+	desc = korea.782.desc
+	picture = GFX_report_event_korean_war_march
+	
+    is_triggered_only = yes
+	 
+	option = { #
+		name = korea.782.a
+	}
+}

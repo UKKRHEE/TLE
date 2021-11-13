@@ -1151,6 +1151,14 @@ on_actions = {
 					FROM = { tag = KOR } #피점령국 - 조선총독부
 					FROM.FROM = { state = 525 } #점령 주 - 경기도
 				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					country_event = {
+						id = korea.782
+					}
+				}
 				set_country_flag = fall_of_korea
 				KOR = {
 					set_country_flag = fall_of_korea
