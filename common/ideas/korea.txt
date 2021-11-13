@@ -209,9 +209,11 @@ ideas = {
 		KOR_embargo_us = {
 			picture = generic_goods_red_bonusofficers_purged
 			modifier = {
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.2
 				stability_factor = -0.1
 				war_support_factor = -0.05
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
 			}
 			targeted_modifier = {
 				tag = USA

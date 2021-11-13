@@ -435,7 +435,6 @@ create_field_marshal = {
 	portrait_path = "gfx/leaders/KOR/Portrait_KOR_yi_kang_emperor.png"
 	traits = { 
 		KOR_imperial_family
-		old_guard
 		infantry_officer
 		politically_connected
 	}
@@ -481,7 +480,7 @@ create_field_marshal = {
 	name = "Yi Jin"
 	id = 20100
 	portrait_path = "gfx/leaders/KOR/Portrait_Yi_Kang.dds"
-	traits = { KOR_emperor KOR_imperial_family politically_connected old_guard media_personality }
+	traits = { KOR_emperor KOR_imperial_family politically_connected media_personality }
 	skill = 5
     attack_skill = 2
     defense_skill = 2
@@ -517,7 +516,7 @@ create_field_marshal = {
 	name = "Yi Un"
 	id = 19362
 	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Yi_Un.dds"
-	traits = { KOR_imperial_family politically_connected old_guard defensive_doctrine media_personality }
+	traits = { KOR_imperial_family politically_connected defensive_doctrine media_personality }
 	skill = 2
     attack_skill = 1
     defense_skill = 3
@@ -527,7 +526,7 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Yujin Choi"
 	portrait_path = "gfx/leaders/KOR/Portrait_Future_Korea_Generic_Male_navy_5.dds"
-	traits = { old_guard defensive_doctrine inflexible_strategist trickster career_officer }
+	traits = { defensive_doctrine inflexible_strategist trickster career_officer }
 	skill = 4
     attack_skill = 3
     defense_skill = 2

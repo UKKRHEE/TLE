@@ -1510,6 +1510,19 @@ country_event = {
 		set_rule = {
 			can_create_faction = yes
 		}	
+		ZLC = {
+			white_peace = CHI
+			white_peace = WZC
+			white_peace = YUN
+			white_peace = GXC
+			white_peace = PRC
+			white_peace = XSM
+			white_peace = AHC
+			white_peace = HNC 
+			white_peace = SND
+			white_peace = SZC
+			white_peace = SIK
+		}
 		every_other_country = {
 			limit = {
 				OR = {
@@ -1587,37 +1600,13 @@ country_event = {
 				}
 			}
 		ZLC = {
-			add_to_faction = FROM 
+			add_to_faction = ROOT 
 			country_event = {
 				id = china.1095
 				hours = 3
 			}
 		}	
 		set_country_flag = ZLC_ACCEPT_UNITED_FRONT
-    }
-	option = { 
-		ai_chance = {
-			factor = 0
-		}	
-	name = china.1094.b
-	leave_faction = ZLC
-		ZLC = {
-			country_event = {
-				id = china.1096
-			}
-			create_wargoal = {
-				target = FROM
-				type = annex_everything
-			}
-		}
-			if = {
-				limit = {
-					FROM = {
-						is_puppet_of = ZLC
-					}
-				}
-				end_puppet = FROM
-			}
     }
 }
   

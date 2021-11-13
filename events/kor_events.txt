@@ -411,19 +411,25 @@ country_event = { #간략한 설정
 	option = { #전쟁이 다가온다...
 		ai_chance = { factor = 0 }
 		name = korea.14.b
+		QIN = {
+			annex_country = {
+				target = ZLC
+				transfer_troops = yes
+			}
+		}
 		KOR = {
+			puppet = QIN
 			transfer_state = 608
-			transfer_state = 614
-			transfer_state = 597
-			transfer_state = 826
-			transfer_state = 843
-			transfer_state = 842
-			transfer_state = 828
-			transfer_state = 827
-			set_state_owner = 597
-			set_state_owner = 608
-			set_state_owner = 614
+			
+			add_state_core = 608
+			every_state = {
+				limit = {
+					is_core_of = ZLC
+				}
+				add_core_of = KOR
+			}
 		}	
+		custom_effect_tooltip = TOOLTIP_GAME_WILL_BE_OVER
 		
 	}
 }
@@ -764,6 +770,10 @@ country_event = { #중국의 거절!
 			}
 			}
 		}
+			news_event = {
+				id = kor_news.9
+				days = 1
+			}
 		complete_national_focus = KOR_kwangtungjun
 	}
 }
@@ -790,6 +800,7 @@ country_event = { #중국의 거절!
 			add_state_core = 612
 			add_state_core = 611
 			add_state_core = 621	
+			add_state_core = 329
 			add_state_core = 330	
 			annex_country = {
 				target = MON
@@ -805,6 +816,7 @@ country_event = { #중국의 거절!
 			add_state_core = 612
 			add_state_core = 611
 			add_state_core = 621	
+			add_state_core = 329
 			add_state_core = 330	
 		end_puppet = MON
 		KOR = {
@@ -919,7 +931,7 @@ country_event = { #
 		complete_national_focus = KOR_power_up_to_imperial
 	}
 }
-country_event = { #미국 - 대(對)한 금수조치
+country_event = { #미국 - 대(對)한 금수조치, 파나이호 사건 사과 요구
 	id = korea.28
 	title = korea.28.title
 	desc = korea.28.desc
@@ -934,10 +946,11 @@ country_event = { #미국 - 대(對)한 금수조치
 			factor = 100
 		}
 		KOR = { 
-		country_event = {
-			id = korea.29
-		}
-		add_ideas = KOR_embargo_us
+			country_event = {
+				id = korea.29
+				hours = 4
+			}
+			add_ideas = KOR_embargo_us
 		}
 	}
 } 
@@ -956,6 +969,9 @@ country_event = { #결론
 			factor = 100
 		}
 		set_country_flag = FLAG_USA_FUCK_TO_KOREA
+		custom_effect_tooltip = TOOLTIP_CAN_LOCKUP_IN_FOCUS
+		
+		news_event = { id = kor_news.7 hours = 12 }
 	} 
 	option = { #중국에서 물러선다
 		name = korea.29.a
@@ -1019,7 +1035,7 @@ country_event = { #결론
 			}
 			country_event = {
 				id = korea.30
-				days = 2
+				days = 7
 			}
 		}
 		set_country_flag = FLAG_KOR_WAS_ACCEPT_US_SUGGETION
@@ -1130,7 +1146,12 @@ country_event = { #미국 공습 시발아!!!!
 			target = USA
 			type = puppet_wargoal_focus
 		}
-		set_country_flag = korea_war_with_usa
+		if = {
+			limit = {
+				is_ai = no
+			}
+			set_country_flag = korea_war_with_usa
+		}
 		hidden_effect = {
 		declare_war_on = {
 			target = PHI
@@ -1219,6 +1240,7 @@ country_event = { #3분지계
 		puppet = GXC
 		puppet = QIN
 		SZC = {
+			set_cosmetic_tag = SZC_shuhan
 			create_country_leader = {
 				name = "Liu Chang"
 				desc = ""
@@ -1253,6 +1275,7 @@ country_event = { #3분지계
 			add_state_core = 750
 		}
 		GXC = {
+			set_cosmetic_tag = GXC_housong
 			create_country_leader = {
 				name = "Kung Decheng"
 				desc = ""
@@ -1369,9 +1392,6 @@ country_event = { #3분지계
 	}		
 	option = { #2분할(남북국)
 		name = korea.39.b
-		country_event = {
-			id = korea.41
-		}
 		release_puppet = SIK
 		puppet = GXC
 		puppet = QIN
@@ -1640,6 +1660,7 @@ country_event = { #칭다오 도발
 	option = { #젠장! 저 뙤놈새끼들!
 		name = korea.41.a 
 		set_country_flag = FLAG_THE_QINGDAO_PROBLEM_1
+		news_event = { id = kor_news.8 days = 2 }
 		ZLC = {
 			country_event = {
 				id = korea.42
@@ -2283,6 +2304,48 @@ country_event = { #유괴
 	 
 	option = { #
 		name = korea.61.a
+	}
+}
+#####
+country_event = { #수도방위군
+	id = korea.62
+	title = korea.62.title
+	desc = korea.62.desc
+	picture = GFX_TLE_korea_event_none
+	fire_only_once = yes
+	is_triggered_only = yes
+	 
+	option = { #
+		name = korea.62.a
+		load_oob = "KOR_seoul"
+	}
+}
+country_event = { #파나이호 사건 - 미국
+	id = korea.63
+	title = korea.63.title
+	desc = korea.63.desc
+	picture = GFX_TLE_korea_event_none
+	fire_only_once = yes
+	is_triggered_only = yes
+	 
+	option = { #
+		name = korea.63.a
+		country_event = {
+			id = korea.28
+			days = 8
+		}
+	}
+}
+country_event = { #파나이호 사건 - 조선
+	id = korea.64
+	title = korea.63.title
+	desc = korea.63.desc
+	picture = GFX_TLE_korea_event_none
+	fire_only_once = yes
+	is_triggered_only = yes
+	 
+	option = { #
+		name = korea.63.a
 	}
 }
 ##########

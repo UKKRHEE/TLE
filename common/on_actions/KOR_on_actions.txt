@@ -177,7 +177,15 @@ on_actions = {
 					}
 					divisions_in_state = { state = 613 size > 0 }
 				} 
-				news_event = { id = kor_news.3 hours = 6 trigger_for = controller }
+				every_other_country = {
+					limit = {
+						NOT = {
+							original_tag = KOR
+						}	
+					}
+					news_event = { id = kor_news.3 hours = 12 }
+				}
+				news_event = { id = kor_news.3 hours = 1 trigger_for = controller }
 			} 
 		}
 		####중국 주 이름 변경######
@@ -1086,6 +1094,41 @@ on_actions = {
 				}
 				USA = {
 					set_country_flag = TLE_THE_RULING_KOREAN_STATE
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						AND = {
+							NOT = {
+								original_tag = KOR
+							}
+							has_war_with = KOR
+						}
+					}	
+					FROM = { tag = KOR } #피점령국 - 조선총독부
+					FROM.FROM = { 
+						OR = {
+							state = 813 
+							state = 808
+							state = 809 
+							state = 807 
+							state = 811 
+							state = 818 
+							state = 819 
+							state = 815 
+							state = 814 
+							state = 816 
+							state = 812 
+							state = 810 
+							state = 527 
+						}	
+					} #점령 주 - 장단
+				}
+				KOR = {
+					country_event = {
+						id = korea.62
+					}
 				}
 			}
         }	
@@ -2108,39 +2151,22 @@ on_actions = {
 						id = korea.43
 					}
 				}
-			}	
-			if = {
-				limit = {
-					tag = KOR
-					controls_state = 608
-					controls_state = 826
-					controls_state = 829
-					KOR = {
-						OR = {
-							has_war_with = CHI
-							has_war_with = ZLC
-							has_war_with = WZC
-						}
-						NOT = {
-							has_government = democratic
-						}
-					}
-				}
-				USA = {
-					country_event = {
-						id = korea.28
-					}
-				}
-			}
+			}		
 			if = {
 				limit = {
 					original_tag = KOR
 					has_wargoal_against = USA
 					has_idea = KOR_militarism
+					NOT = {
+						has_country_flag = KOR_WAR_WITH_USA
+					}
 				}
 				country_event = {
 					id = korea.37
 					days = 15
+				}
+				KOR = {
+					set_country_flag = KOR_WAR_WITH_USA
 				}
 			}
 			if = {

@@ -71,11 +71,11 @@ news_event = { #남경 폭동
 		}
 	}
 }
-news_event = { #남경 폭동
+news_event = { #페킹 함락
 	id = kor_news.4
 	title = kor_news.4.t
 	desc = kor_news.4.desc
-	picture = GFX_world_event_nanking
+	picture = GFX_news_event_japan_attacks_china
 	
 	major = yes
 	fire_only_once = yes	
@@ -114,6 +114,306 @@ news_event = { #남경 폭동
 				OR = {
 					TAG = KOR
 					TAG = CHI
+					TAG = WZC
+					TAG = ZLC
+					TAG = YUN
+					TAG = GXC
+					TAG = PRC
+					TAG = XSM
+					TAG = AHC
+					TAG = HNC
+					TAG = SIK
+					TAG = SND
+					TAG = SZC
+
+				}
+			}			
+		}
+	}
+}
+
+news_event = { #아주 해방선언
+	id = kor_news.5
+	title = kor_news.5.t
+	desc = kor_news.5.desc
+	picture = GFX_world_event_nanking
+	
+	major = yes
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = kor_news.5.a
+		trigger = {
+			TAG = KOR
+		}
+	}
+	option = {
+		name = kor_news.5.b
+		trigger = {
+			OR = {
+				TAG = CHI
+				TAG = WZC
+				TAG = ZLC
+				TAG = YUN
+				TAG = GXC
+				TAG = PRC
+				TAG = XSM
+				TAG = AHC
+				TAG = HNC
+				TAG = SIK
+				TAG = SND
+				TAG = SZC
+			}	
+		}
+	}
+	option = {
+		name = kor_news.5.c
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = KOR
+					TAG = CHI
+					TAG = WZC
+					TAG = ZLC
+					TAG = YUN
+					TAG = GXC
+					TAG = PRC
+					TAG = XSM
+					TAG = AHC
+					TAG = HNC
+					TAG = SIK
+					TAG = SND
+					TAG = SZC
+				}
+			}			
+		}
+	}
+}
+news_event = { #파나이 호 사건
+	id = kor_news.6
+	title = kor_news.6.t
+	desc = kor_news.6.desc
+	picture = GFX_news_event_panay_incident
+	
+	major = yes
+	fire_only_once = yes	
+    trigger = {
+		KOR = {
+			controls_state = 608
+			controls_state = 826
+			controls_state = 829
+			KOR = {
+				OR = {
+					has_war_with = CHI
+					has_war_with = ZLC
+					has_war_with = WZC
+				}
+				NOT = {
+					has_government = democratic
+					has_government = communism
+				}
+			}
+		}
+		date > 1940.1.1
+	}
+	mean_time_to_happen = {
+		days = 14
+	}
+	immediate = {
+		USA = {
+			country_event = {
+				id = korea.63
+			}
+		}
+		KOR = {
+			country_event = {
+				id = korea.64
+			}
+		}
+	}		
+	
+	
+	option = {
+		name = kor_news.6.a
+		trigger = {
+			TAG = KOR
+		}
+	}
+	option = {
+		name = kor_news.6.b
+		trigger = {
+			TAG = USA
+		}
+	}
+	option = {
+		name = kor_news.6.c
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = KOR
+					TAG = USA
+				}
+			}			
+		}
+		USA = {
+			add_opinion_modifier = { target = KOR modifier = panay_inc2_opinion_modifier }
+		}
+		ENG = {
+			add_opinion_modifier = { target = KOR modifier = panay_inc2_opinion_modifier }
+		}
+	}
+}
+news_event = { #파나이 호 사건 - 2
+	id = kor_news.7
+	title = kor_news.7.t
+	desc = kor_news.7.desc
+	picture = GFX_news_event_panay_incident
+	
+	major = yes
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = kor_news.7.a
+		trigger = {
+			TAG = KOR
+		}
+	}
+	option = {
+		name = kor_news.7.b
+		trigger = {
+			TAG = USA
+		}
+	}
+	option = {
+		name = kor_news.7.c
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = KOR
+					TAG = USA
+				}
+			}			
+		}
+	}
+}
+
+news_event = { #청도 사건
+	id = kor_news.8
+	title = kor_news.8.t
+	desc = kor_news.8.desc
+	picture = GFX_news_event_japan_annexes_korea
+	
+	major = yes
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = kor_news.8.a
+		trigger = {
+			TAG = KOR
+		}
+	}
+	option = {
+		name = kor_news.8.b
+		trigger = {
+			OR = {
+				TAG = CHI
+				TAG = WZC
+				TAG = ZLC
+				TAG = YUN
+				TAG = GXC
+				TAG = PRC
+				TAG = XSM
+				TAG = AHC
+				TAG = HNC
+				TAG = SIK
+				TAG = SND
+				TAG = SZC
+			}	
+		}
+	}
+	option = {
+		name = kor_news.8.c
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = KOR
+					TAG = CHI
+					TAG = WZC
+					TAG = ZLC
+					TAG = YUN
+					TAG = GXC
+					TAG = PRC
+					TAG = XSM
+					TAG = AHC
+					TAG = HNC
+					TAG = SIK
+					TAG = SND
+					TAG = SZC
+				}
+			}			
+		}
+	}
+}
+news_event = { #한중전쟁
+	id = kor_news.9
+	title = kor_news.9.t
+	desc = kor_news.9.desc
+	picture = GFX_news_event_prussia_nieder
+	
+	major = yes
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = kor_news.9.a
+		trigger = {
+			TAG = KOR
+		}
+	}
+	option = {
+		name = kor_news.9.b
+		trigger = {
+			OR = {
+				TAG = CHI
+				TAG = WZC
+				TAG = ZLC
+				TAG = YUN
+				TAG = GXC
+				TAG = PRC
+				TAG = XSM
+				TAG = AHC
+				TAG = HNC
+				TAG = SIK
+				TAG = SND
+				TAG = SZC
+			}	
+		}
+	}
+	option = {
+		name = kor_news.9.c
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = KOR
+					TAG = CHI
+					TAG = WZC
+					TAG = ZLC
+					TAG = YUN
+					TAG = GXC
+					TAG = PRC
+					TAG = XSM
+					TAG = AHC
+					TAG = HNC
+					TAG = SIK
+					TAG = SND
+					TAG = SZC
 				}
 			}			
 		}
