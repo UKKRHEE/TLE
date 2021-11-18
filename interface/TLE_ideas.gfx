@@ -4,7 +4,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_KOR_not_go_outside"    
 		texturefile = "gfx/interface/ideas/korea/억제된확장정책.png"  
-	}	
+	}
 	spriteType = {
 		name = "GFX_idea_confucian_press"    
 		texturefile = "gfx/interface/ideas/korea/royal_charity.dds"  

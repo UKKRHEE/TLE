@@ -121,8 +121,8 @@ bookmarks = {
 			}
 			focuses = {
 			    kor_reform_korea
-				kor_monarchy
-				KOR_fuck_pact
+				kor_korean_lebensraum
+				 KOR_use_the_anti-armed
 			}
 		}	
 		"JAP"={

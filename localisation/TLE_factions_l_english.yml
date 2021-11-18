@@ -27,3 +27,5 @@
  RULE_OPTION_KOR_COMMUNISM:0 "인민의 나라"
  RULE_OPTION_KOR_COMMUNISM_EMPIRE:0 "사회주의 제국"
  RULE_OPTION_KOR_NEUTRALITY:0 "강명유신"
+ 
+ RULE_KOR_CAN_NOT_RELEASE_NATION:0 "대한제국은 공화정이거나 대전쟁에서 패배해야만 식민지 해방이 가능합니다."

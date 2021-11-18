@@ -9,6 +9,7 @@ state={
 	history={
 		owner = KOR
 		add_core_of = JAP
+		add_core_of = KOR
 		add_claim_by = KOR
 		buildings = {
 			infrastructure = 7

@@ -216,7 +216,7 @@ news_event = { #파나이 호 사건
 				}
 			}
 		}
-		date > 1940.1.1
+		date > 1940.8.1
 	}
 	mean_time_to_happen = {
 		days = 14
@@ -231,6 +231,7 @@ news_event = { #파나이 호 사건
 			country_event = {
 				id = korea.64
 			}
+			set_country_flag = KOR_PANAI_PROBLEM
 		}
 	}		
 	
@@ -240,6 +241,9 @@ news_event = { #파나이 호 사건
 		trigger = {
 			TAG = KOR
 		}
+		unlock_decision_tooltip = KOR_confiscation_of_US_assets
+		unlock_decision_tooltip = KOR_not_say_the_panay
+		unlock_decision_tooltip = KOR_hunlian_in_pacific
 	}
 	option = {
 		name = kor_news.6.b

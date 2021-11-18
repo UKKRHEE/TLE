@@ -1,7 +1,31 @@
 spriteTypes = {
 
+	SpriteType = {      
+		name = "GFX_focus_중국과의전쟁"    
+		texturefile = "gfx/interface/goals/중국과의전쟁.png"   
+	}
+	SpriteType = {      
+		name = "GFX_focus_한민족"    
+		texturefile = "gfx/interface/goals/한민족.png"   
+	}   
+	SpriteType = {     
+		name = "GFX_focus_친위대"   
+		texturefile = "gfx/interface/goals/친위대.png"   
+	}   
+	SpriteType = {       
+		name = "GFX_focus_국민주의광풍"  
+		texturefile = "gfx/interface/goals/국민주의광풍.png"   
+	}   
+	SpriteType = {     
+		name = "GFX_focus_빨갱이토벌" 
+		texturefile = "gfx/interface/goals/빨갱이토벌.png"   
+	}   
 	SpriteType = {   
-		name = "GFX_focus_c45_reject" 
+		name = "GFX_focus_몽슐루스" 
+		texturefile = "gfx/interface/goals/몽슐루스.png"   
+	}   
+	SpriteType = {   
+		name = "GFX_focus_c45_reject"  
 		texturefile = "gfx/interface/goals/focus_c45_reject.dds"   
 	}   
 	SpriteType = {   

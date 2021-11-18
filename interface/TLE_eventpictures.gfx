@@ -4,9 +4,21 @@ spriteTypes = {
 		name = "GFX_Korean_Red_Cross"
 		texturefile = "gfx/event_pictures/Korean_Red_Cross.dds"
 	}
+	spriteType = { 
+		name = "GFX_법안상정"
+		texturefile = "gfx/event_pictures/법안상정.png"
+	}
+	spriteType = { 
+		name = "GFX_윤봉길"
+		texturefile = "gfx/event_pictures/윤봉길.png"
+	}
 	spriteType = {
 		name = "GFX_고원의_아이들"
 		texturefile = "gfx/event_pictures/고원의_아이들.png"
+	}
+	spriteType = {
+		name = "GFX_위안부"
+		texturefile = "gfx/event_pictures/위안부.png"
 	}
 	spriteType = {
 		name = "GFX_국회침입"

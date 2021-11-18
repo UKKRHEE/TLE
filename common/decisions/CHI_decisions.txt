@@ -289,6 +289,22 @@ economy_decisions = {
 		}
 
 		visible = {
+			
+			OR = {
+				tag = CHI
+				tag = PRC
+				tag = GXC
+				tag = YUN
+				tag = SHX
+				tag = XSM
+				tag = SIK
+				tag = SND
+				tag = ZLC
+				tag = WZC
+				tag = SZC
+				tag = HNC
+				tag = AHC
+			}
 		}
 
 		days_re_enable = 90

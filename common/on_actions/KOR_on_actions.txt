@@ -357,22 +357,15 @@ on_actions = {
 			if = {
 				limit = {
 					tag = KOR #점령국 - 대한
-					FROM = { tag = CHI } #피점령국 - 중국
-					FROM.FROM = { state = 608 } #점령 주 - 북경
-				}
-                FROM.FROM = {
-					set_state_name = "북경"
-					
-				}
-                set_province_name = {
-                    id = 9843
-                    name = "북경"
-                }
-			}
-			if = {
-				limit = {
-					tag = CHI #점령국 - 중국
-					FROM = { tag = KOR } #피점령국 - 대한
+					FROM = { 	
+						OR = {
+							tag = ZLC 
+							tag = CHI 
+							tag = WZC 
+							tag = PRC 
+							tag = QIN 
+						}	
+					} #피점령국 - 중국
 					FROM.FROM = { state = 608 } #점령 주 - 북경
 				}
                 FROM.FROM = {
@@ -387,7 +380,68 @@ on_actions = {
 			if = {
 				limit = {
 					tag = KOR #점령국 - 대한
-					FROM = { tag = CHI } #피점령국 - 중국
+					FROM = { 	
+						OR = {
+							tag = ZLC 
+							tag = CHI 
+							tag = WZC 
+							tag = PRC 
+							tag = QIN 
+						}	
+					} #피점령국 - 중국
+					FROM.FROM = { state = 608 } #점령 주 - 북경
+					KOR = {
+						NOT = {
+							has_country_flag = FLAG_HAS_BEEN_EVENTED_PEKING
+						}
+					}
+				}
+				KOR = {
+					set_country_flag = FLAG_HAS_BEEN_EVENTED_PEKING
+				}
+				news_event = {
+					id = kor_news.4
+					hours = 3
+				}
+				country_event = {
+					id = korea.65
+					days = 3
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						tag = ZLC 
+						tag = CHI 
+						tag = WZC 
+						tag = PRC 
+						tag = QIN 
+					}	 
+					#점령국 - 중국
+					FROM = { tag = KOR } #피점령국 - 대한
+					FROM.FROM = { state = 608 } #점령 주 - 북경
+				}
+                FROM.FROM = {
+					set_state_name = "베이징"
+					
+				}
+                set_province_name = {
+                    id = 9843
+                    name = "베이징"
+                }
+			}
+			if = {
+				limit = {
+					tag = KOR #점령국 - 대한
+					FROM = { 
+						OR = {
+							tag = ZLC 
+							tag = CHI 
+							tag = WZC 
+							tag = PRC 
+							tag = QIN 
+						}
+					} #피점령국 - 중국
 					FROM.FROM = { state = 605 } #점령 주 - 중경
 				}
                 FROM.FROM = {
@@ -401,7 +455,13 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					tag = CHI #점령국 - 중국
+					OR = {
+						tag = ZLC 
+						tag = CHI 
+						tag = WZC 
+						tag = PRC 
+						tag = QIN
+					} #점령국 - 중국
 					FROM = { tag = KOR } #피점령국 - 대한
 					FROM.FROM = { state = 605 } #점령 주 - 중경
 				}
@@ -416,23 +476,17 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					tag = CHI #점령국 - 중국
-					FROM = { tag = KOR } #피점령국 - 대한
-					FROM.FROM = { state = 608 } #점령 주 - 중경
-				}
-                FROM.FROM = {
-					set_state_name = "베이징"
-					
-				}
-                set_province_name = {
-                    id = 9843
-                    name = "베이징"
-                }
-			}
-			if = {
-				limit = {
 					tag = KOR #점령국 - 대한
-					FROM = { tag = CHI } #피점령국 - 중국
+					FROM = { 
+						OR = {
+							tag = ZLC 
+							tag = CHI 
+							tag = WZC 
+							tag = PRC 
+							tag = QIN
+						} 
+						
+					} #피점령국 - 중국
 					FROM.FROM = { state = 841 } #점령 주 - 우한
 				}
                 FROM.FROM = {
@@ -446,17 +500,23 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					tag = CHI #점령국 - 중국
+					OR = {
+						tag = ZLC 
+						tag = CHI 
+						tag = WZC 
+						tag = PRC 
+						tag = QIN
+					}  #점령국 - 중국
 					FROM = { tag = KOR } #피점령국 - 대한
 					FROM.FROM = { state = 841 } #점령 주 - 우한
 				}
                 FROM.FROM = {
-					set_state_name = "무한"
+					set_state_name = "우한"
 					
 				}
                 set_province_name = {
                     id = 4619
-                    name = "무한"
+                    name = "우한"
                 }
 			}
 		}
@@ -816,255 +876,51 @@ on_actions = {
                     name = "아오모리"
                 }
 			}
+			if = {
+				limit = {
+					tag = KOR #점령국 - 대한
+					FROM = { tag = JAP } #피점령국 - 일본
+					FROM.FROM = { state = 536 } #점령 주 - 도호쿠
+				}
+                FROM.FROM = {
+					set_state_name = "북도"
+					
+				}
+                set_province_name = {
+                    id = 10444
+                    name = "찰황"
+                }
+                set_province_name = {
+                    id = 12421
+                    name = "욱천"
+                }
+			}
+			if = {
+				limit = {
+					tag = JAP #점령국 - 일본
+					FROM = { tag = KOR } #피점령국 - 한국
+					FROM.FROM = { state = 533 } #점령 주 - 도호쿠
+				}
+                FROM.FROM = {
+					set_state_name = "홋카이도"
+					
+				}
+                set_province_name = {
+                    id = 10444
+                    name = "삿포로"
+                }
+                set_province_name = {
+                    id = 12421
+                    name = "아사히카와"
+                }
+			}
 		}
 		####일본령 한국
-		effect = {
 			if = {
 				limit = {
-					tag = KOR #점령국 - 한국
-					FROM = { tag = JAP } #피점령국 - 조선총독부
-					FROM.FROM = { state = 525 } #점령 주 - 경기도
-				}
-                FROM.FROM = {
-					set_state_name = "경기"
-					
-				}
-                set_province_name = {
-                    id = 7125
-                    name = "한성"
-                }
-                set_province_name = {
-                    id = 7221
-                    name = "인천"
-                }
-			}
-			if = {
-				limit = {
-					tag = KOR #점령국 - 한국
-					FROM = { tag = JAP } #피점령국 - 조선총독부
-					FROM.FROM = { state = 527 } #점령 주 - 평안
-				}
-                FROM.FROM = {
-					set_state_name = "평안"
-					
-				}
-                set_province_name = {
-                    id = 7171
-                    name = "평양"
-                }
-                set_province_name = {
-                    id = 4052
-                    name = "남포"
-                }
-                set_province_name = {
-                    id = 11835
-                    name = "신의주"
-                }
-			}
-			if = {
-				limit = {
-					tag = KOR #점령국 - 한국
-					FROM = { tag = JAP } #피점령국 - 조선총독부
-					FROM.FROM = { state = 807 } #점령 주 - 충청
-				}
-                FROM.FROM = {
-					set_state_name = "충청"
-					
-				}
-                set_province_name = {
-                    id = 13241
-                    name = "대전"
-                }
-			}
-			if = {
-				limit = {
-					tag = KOR #점령국 - 한국
-					FROM = { tag = JAP } #피점령국 - 조선총독부
-					FROM.FROM = { state = 808 } #점령 주 - 전라
-				}
-                FROM.FROM = {
-					set_state_name = "전라"
-					
-				}
-                set_province_name = {
-                    id = 10110
-                    name = "광주"
-                }
-			}
-			if = {
-				limit = {
-					tag = KOR #점령국 - 한국
-					FROM = { tag = JAP } #피점령국 - 조선총독부
-					FROM.FROM = { state = 809 } #점령 주 - 경상
-				}
-                FROM.FROM = {
-					set_state_name = "경상"
-					
-				}
-                set_province_name = {
-                    id = 7121
-                    name = "포항"
-                }
-                set_province_name = {
-                    id = 4086
-                    name = "대구"
-                }
-                set_province_name = {
-                    id = 4056
-                    name = "부산"
-                }
-			}
-			if = {
-				limit = {
-					tag = KOR #점령국 - 한국
-					FROM = { tag = JAP } #피점령국 - 조선총독부
-					FROM.FROM = { state = 810 } #점령 주 - 함경
-				}
-                FROM.FROM = {
-					set_state_name = "함경"
-					
-				}
-                set_province_name = {
-                    id = 6822
-                    name = "청진"
-                }
-                set_province_name = {
-                    id = 6944
-                    name = "라진"
-                }
-                set_province_name = {
-                    id = 848
-                    name = "원산"
-                }
-                set_province_name = {
-                    id = 3981
-                    name = "함흥"
-                }
-			}
-			if = {
-				limit = {
-					tag = KOR #점령국 - 한국
-					FROM = { tag = JAP } #피점령국 - 조선총독부
-					FROM.FROM = { state = 811 } #점령 주 - 강원
-				}
-                FROM.FROM = {
-					set_state_name = "강원"
-					
-				}
-                set_province_name = {
-                    id = 13249
-                    name = "춘천"
-                }
-			}
-			if = {
-				limit = {
-					tag = KOR #점령국 - 한국
-					FROM = { tag = JAP } #피점령국 - 조선총독부
-					FROM.FROM = { state = 812 } #점령 주 - 황해
-				}
-                FROM.FROM = {
-					set_state_name = "황해"
-					
-				}
-                set_province_name = {
-                    id = 10065
-                    name = "황주"
-                }
-                set_province_name = {
-                    id = 11915
-                    name = "사리원"
-                }
-			}
-			if = {
-				limit = {
-					tag = KOR #점령국 - 한국
-					FROM = { tag = JAP } #피점령국 - 조선총독부
-					FROM.FROM = { state = 813 } #점령 주 - 제주
-				}
-                FROM.FROM = {
-					set_state_name = "제주"
-					
-				}
-                set_province_name = {
-                    id = 1177
-                    name = "제주"
-                }
-			}
-			if = {
-				limit = {
-					tag = KOR #점령국 - 한국
-					FROM = { tag = JAP } #피점령국 - 조선총독부
-					FROM.FROM = { state = 814 } #점령 주 - 옹진반도
-				}
-                FROM.FROM = {
-					set_state_name = "옹진"
-					
-				}
-			}
-			if = {
-				limit = {
-					tag = KOR #점령국 - 한국
-					FROM = { tag = JAP } #피점령국 - 조선총독부
-					FROM.FROM = { state = 815 } #점령 주 - 개성
-				}
-                FROM.FROM = {
-					set_state_name = "개성"
-					
-				}
-                set_province_name = {
-                    id = 12040
-                    name = "개성"
-                }
-			}
-			if = {
-				limit = {
-					tag = KOR #점령국 - 한국
-					FROM = { tag = JAP } #피점령국 - 조선총독부
-					FROM.FROM = { state = 816 } #점령 주 - 연천
-				}
-                FROM.FROM = {
-					set_state_name = "연천"
-					
-				}
-			}
-			if = {
-				limit = {
-					tag = KOR #점령국 - 한국
-					FROM = { tag = JAP } #피점령국 - 조선총독부
-					FROM.FROM = { state = 817 } #점령 주 - 고성
-				}
-                FROM.FROM = {
-					set_state_name = "고성"
-					
-				}
-			}
-			if = {
-				limit = {
-					tag = KOR #점령국 - 한국
-					FROM = { tag = JAP } #피점령국 - 조선총독부
-					FROM.FROM = { state = 818 } #점령 주 - 북강원
-				}
-                FROM.FROM = {
-					set_state_name = "북부 강원"
-					
-				}
-			}
-			if = {
-				limit = {
-					tag = KOR #점령국 - 한국
-					FROM = { tag = JAP } #피점령국 - 조선총독부
-					FROM.FROM = { state = 819 } #점령 주 - 장단
-				}
-                FROM.FROM = {
-					set_state_name = "장단"
-					
-				}
-			}
-			if = {
-				limit = {
-					tag = SOV #점령국 - 한국
-					FROM = { tag = KOR } #피점령국 - 조선총독부
-					FROM.FROM = { state = 527 } #점령 주 - 장단
+					tag = SOV #점령국 - 소련
+					FROM = { tag = KOR } #피점령국 - 대한
+					FROM.FROM = { state = 527 } #점령 주 - 평양
 				}
 				SOV = {
 					set_country_flag = TLE_THE_RULING_PYONGYANG
@@ -1861,6 +1717,10 @@ on_actions = {
 				CHI = {
 					set_cosmetic_tag = CHI
 					set_country_flag = FLAG_CHI_COSMETIC_CHINA
+					save_global_event_target_as = WTT_current_china_leader
+				}
+				ZLC = {
+					clear_global_event_targets = yes
 				}
 			}
 			if = {
@@ -1935,20 +1795,6 @@ on_actions = {
 					}	
 				}
 				remove_ideas = KOR_yi_jin
-			}
-			if = {
-				limit = {
-					original_tag = KOR
-					date > 1939.9.1
-					KOR = {
-						has_idea = KOR_not_go_outside
-						has_completed_focus = kor_communism
-						NOT = {
-							has_country_flag = TLE_THE_WAR_IS_ENDED
-						}
-					}	
-				}
-				remove_ideas = KOR_not_go_outside
 			}
 			if = {
 				limit = {

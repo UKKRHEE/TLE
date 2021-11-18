@@ -165,6 +165,21 @@ CHI_warlord_in_opposition = {
 CHI_political_power_struggle = {
 	allowed = {
 		
+		OR = {
+			tag = CHI
+			tag = PRC
+			tag = GXC
+			tag = YUN
+			tag = SHX
+			tag = XSM
+			tag = SIK
+			tag = SND
+			tag = ZLC
+			tag = WZC
+			tag = SZC
+			tag = HNC
+			tag = AHC
+		}
 	}
 
 	icon = power_struggle

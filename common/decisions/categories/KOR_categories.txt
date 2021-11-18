@@ -1,4 +1,24 @@
+KOR_decision_eulhae_goonchuk = {
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		original_tag = KOR
+		
+		has_completed_focus = kor_reform_korea
+	}
+	priority = 82
+}
 KOR_the_three_countries_plan = {
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		original_tag = KOR
+	}
+	priority = 81
+}
+KOR_kill_the_usa_plan = {
 	allowed = {
 		original_tag = KOR
 	}
