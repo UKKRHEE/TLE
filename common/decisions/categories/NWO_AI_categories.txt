@@ -1,7 +1,0 @@
-NWO_AI_Workaround = {
-	icon = infiltration
-
-	visible = {
-		is_ai = yes
-	}
-}

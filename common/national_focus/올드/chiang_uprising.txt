@@ -1,0 +1,1278 @@
+focus_tree = {
+	id = Chiang
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHI
+		}
+	}
+
+	default = no
+	shared_focus = CHI_invite_foreign_investors
+
+	continuous_focus_position = { x = 50 y = 2000 }
+	#Politics
+	focus = {
+		id = CHC_victory
+		icon = GFX_focus_generic_china1
+		cost = 1.50
+		x = 3
+		y = 0
+		available = {
+			has_country_flag = FLAG_WZC_WAS_COLLAPESED
+        }
+		completion_reward = {
+			transfer_state = 848
+			transfer_state = 854
+			transfer_state = 837
+			848 = {
+				set_demilitarized_zone = no
+			}
+			854 = {
+				set_demilitarized_zone = no
+			}
+			837 = {
+				set_demilitarized_zone = no
+			}
+		}
+	}
+	###############################################################################################################################
+	focus = {
+		id = CHC_chiang
+		icon = GFX_focus_prc_remove_chiang_kai_shek
+		cost = 1.50
+		prerequisite = {
+			focus = CHC_victory
+		}
+		available = {
+			has_country_leader = { name = "Chiang Kai-Shek" ruling_only = yes } 
+        }
+		ai_will_do = {
+				factor = 100
+		}
+		x = 3
+		y = 1
+		completion_reward = {
+			add_political_power = 120
+			army_experience = 10
+			declare_war_on = {
+				type = annex_everything 
+				target = WZC
+			}	
+			declare_war_on = {
+				type = annex_everything 
+				target = AHC
+			}	
+		}
+	}
+	focus = {
+		id = CHC_invite_military_members
+		icon = GFX_chi_mil_gov
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_chiang
+		}
+		x = 2
+		y = 2
+		completion_reward = {
+		add_war_support = 0.05
+		add_popularity = { ideology = neutrality popularity = 0.05 } 
+		}
+	}
+	focus = {
+		id = CHC_restrict_the_party
+		icon = GFX_chi_restrict_party
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_chiang
+		}
+		x = 4
+		y = 2
+		completion_reward = {
+		add_political_power = 100
+		add_stability = -0.05
+		}
+	}
+	focus = {
+		id = CHC_war_propaganda
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+		focus = CHC_restrict_the_party
+		focus = CHC_invite_military_members
+		}
+		x = 2
+		y = 4
+		completion_reward = {
+		add_war_support = 0.10
+		add_popularity = { ideology = neutrality popularity = 0.10 } 
+		}
+	}
+	focus = {
+		id = CHC_remilitarize_shangai
+		icon = GFX_goal_generic_military_sphere
+		cost = 2.00
+		prerequisite = {
+		focus = CHC_invite_military_members
+		focus = CHC_restrict_the_party
+		}
+		
+		ai_will_do = {
+				factor = 2
+		}
+		x = 3
+		y = 3
+		completion_reward = {
+			remove_ideas = CHI_failed_north_attack
+			add_state_core = 829
+		}
+	}
+	focus = {
+		id = CHC_absolute_controll
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10.00
+		prerequisite = {
+		focus = CHC_restrict_the_party
+		focus = CHC_invite_military_members
+		}
+		x = 4
+		y = 4
+		completion_reward = {
+		add_ideas = CHI_absolut_control
+		remove_ideas = CHI_disjointed_gov
+		GXC = {
+			country_event = {
+				id = china.1092
+			}
+		}
+		}
+	}
+	focus = {
+		id = CHC_new_problem
+		icon = GFX_focus_chi_country_side
+		cost = 10.00
+		prerequisite = {
+		focus = CHC_absolute_controll	
+		}
+		x = 5
+		y = 5
+		completion_reward = {
+		add_stability = -0.05
+		country_event = { id = china.1058 }
+		}
+	}
+	focus = {
+		id = CHC_unite_campaign
+		icon = GFX_chi_blue
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_war_propaganda
+			focus = CHC_absolute_controll
+		}
+		x = 3
+		y = 5
+		completion_reward = {
+		add_timed_idea = { idea = CHI_unite_morale  days = 1000 }
+		}
+	}
+	focus = {
+		id = CHC_work_longer
+		icon = GFX_goal_generic_construction2
+		cost = 5.00
+		prerequisite = {
+			focus = CHC_unite_campaign
+		}
+		x = 2
+		y = 6
+		completion_reward = {
+		add_ideas = CHI_longer_workshifts
+		}
+	}
+	focus = {
+		id = CHC_militarian_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5.00
+		prerequisite = {
+			focus = CHC_unite_campaign
+		}
+		x = 4
+		y = 6
+		completion_reward = {
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 3
+		 add_building_construction = {
+			 type = arms_factory
+			 level = 3
+			 instant_build = yes
+		    }
+		   } 
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 3
+		 add_building_construction = {
+			 type = arms_factory
+			 level = 3
+			 instant_build = yes
+		    }
+		   }   
+		}
+	}
+	focus = {
+		id = CHC_west_warlord
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 5.00
+		prerequisite = {
+			focus = CHC_unite_campaign
+		}
+		x = 1
+		y = 7
+		available = {
+		has_army_manpower = {
+        size > 150000
+           } 
+        YUN  = { exists = yes }
+        NOT = { has_non_aggression_pact_with = YUN }
+        NOT = { is_in_faction_with = YUN }
+		}
+        will_lead_to_war_with = YUN
+		completion_reward = {
+		create_wargoal = {
+        target = YUN
+        type = annex_everything
+        }
+		create_wargoal = {
+        target = SZC
+        type = annex_everything
+        }
+		}
+	}
+	focus = {
+		id = CHC_north_campaign
+		icon = GFX_chi_kill_emp
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_unite_campaign
+		}
+		x = 3
+		y = 7
+		available = {
+		has_army_manpower = {
+        size > 250000
+           } 
+        ZLC  = { exists = yes }
+        NOT = { has_non_aggression_pact_with = ZLC }
+        NOT = { is_in_faction_with = ZLC }
+		}
+		will_lead_to_war_with = ZLC
+		completion_reward = {
+		add_war_support = 0.05
+		create_wargoal = {
+        type = annex_everything
+        target = ZLC
+           } 
+		}
+	}
+	focus = {
+		id = CHC_root_out_communist
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_unite_campaign
+		}
+		x = 5
+		y = 7
+		available = {
+			has_army_manpower = {
+			size > 350000
+			   } 
+			  
+		}
+		bypass = {
+			SHX = {
+				exists = no
+			}
+			PRC = {
+				exists = no
+			}
+			XSM = {
+				exists = no
+			}
+			SIK = {
+				exists = no
+			}
+		}
+		will_lead_to_war_with = SHX
+		completion_reward = {
+			if = {
+				limit = {
+					SHX = {
+						exists = yes
+					}
+				}
+				create_wargoal = {
+					target = SHX
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					PRC = {
+						exists = yes
+					}
+				}
+				create_wargoal = {
+					target = PRC
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					XSM = {
+						exists = yes
+					}
+				}
+				create_wargoal = {
+					target = XSM
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					SIK = {
+						exists = yes
+					}
+				}
+				create_wargoal = {
+					target = SIK
+					type = annex_everything
+				}
+			}
+		}
+	}
+	focus = {
+		id = CHC_re_manchu
+		icon = GFX_focus_jap_cast_the_die
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_west_warlord
+			focus = CHC_north_campaign
+			focus = CHC_root_out_communist
+		}
+		x = 3
+		y = 8
+		available = {
+			OR = {
+				AND = {
+					KMN = {
+						is_puppet_of = KOR
+						}
+					has_army_manpower = {
+					size > 500000
+					   } 
+					KMN = { exists = yes }
+					KOR = { exists = yes }
+					NOT = { has_non_aggression_pact_with = KOR }
+					NOT = { is_in_faction_with = KOR }
+				}	
+				AND = {
+					KMN = { exists = no }
+					KOR = { 
+						exists = yes 
+						controls_state = 714
+					}
+					NOT = { has_non_aggression_pact_with = KOR }
+					NOT = { is_in_faction_with = KOR }
+					has_army_manpower = {
+					size > 500000
+					   } 
+				}
+			}
+		}
+		bypass = {
+			KMN = {
+				exists = no
+			}
+		}
+		will_lead_to_war_with = KOR
+		will_lead_to_war_with = KMN
+		completion_reward = {
+			if = {
+				limit = {
+					KMN = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = KMN
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					KMN = {
+						exists = no
+					}
+					KOR = {
+						controls_state = 714
+						controls_state = 852
+						controls_state = 715
+						controls_state = 610
+						controls_state = 853
+					}
+				}
+				declare_war_on = {
+					target = KOR
+					type = annex_everything
+				}
+			}
+		}
+	}
+	focus = {
+		id = CHC_silence_the_left
+		icon = GFX_goal_demand_sudetenland
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_chiang
+		}
+		x = 0
+		y = 2
+		completion_reward = {
+		add_stability = -0.025
+		add_popularity = { ideology = democratic popularity = -0.05 } 
+		}
+	}
+	focus = {
+		id = CHC_ban_members
+		icon = GFX_chi_ban_left
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_silence_the_left
+		}
+		x = 0
+		y = 3
+		completion_reward = {
+		add_stability = -0.025
+        add_popularity = { ideology = democratic popularity = -0.10 } 
+		}
+	}
+	focus = {
+		id = CHC_purge_socialist_and_communist
+		icon = GFX_chi_socialist_purge
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_ban_members
+		}
+		x = 0
+		y = 4
+		completion_reward = {
+		add_stability = -0.025
+		add_popularity = { ideology = democratic popularity = -0.10 } 
+		add_popularity = { ideology = communism popularity = -0.10 } 
+		}
+	}
+	focus = {
+		id = CHC_attack_capitalists
+		icon = GFX_chi_capitalist
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_chiang
+		}
+		x = 6
+		y = 2
+		completion_reward = {
+		add_political_power = 50
+		add_popularity = { ideology = democratic popularity = -0.025 } 
+		}
+	}
+	focus = {
+		id = CHC_seize_assets
+		icon = GFX_chi_seize
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_government_controlled_industry
+		}
+		x = 6
+		y = 3
+		completion_reward = {
+		add_ideas = CHI_seized_assets
+		add_popularity = { ideology = democratic popularity = -0.025 } 
+		}
+	}
+	focus = {
+		id = CHC_government_controlled_industry
+		icon = GFX_chi_state_controlled
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_attack_capitalists
+		}
+		x = 6
+		y = 4
+		completion_reward = {
+		add_ideas = CHI_controlled_industry
+		add_popularity = { ideology = democratic popularity = -0.1 } 
+		}
+	}
+#######################################################################################
+    focus = {
+		id = CHC_constitution
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		x = 10
+		y = 0
+		available = {
+			has_completed_focus = CHC_chiang
+		}
+		completion_reward = {
+		add_political_power = 120
+		remove_ideas = PRC_government_corruption
+		}
+	}
+	focus = {
+		id = CHC_stabilize_economy
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_infrastructure
+		}
+		x = 9
+		y = 2
+		completion_reward = {
+		add_political_power = 100
+		add_stability = 0.05
+		
+		}
+	}
+	focus = {
+		id = CHC_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_constitution
+		}
+		x = 9
+		y = 1
+		completion_reward = {
+			593 = {
+			if = {
+				limit = { is_controlled_by = CHI }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		848 = {
+			if = {
+				limit = { is_controlled_by = CHI }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		854 = {
+			if = {
+				limit = { is_controlled_by = CHI }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}			
+			}
+		}
+	}	
+	focus = {
+		id = CHC_slot2
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_dockyard_effort
+			focus = CHC_radars
+		}
+		available = {
+			num_of_factories > 75
+		}
+		x = 10
+		y = 6
+		completion_reward = {
+		add_research_slot = 1 
+		}
+	}
+	focus = {
+		id = CHC_industrial_effort1
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_stabilize_economy
+			focus = CHC_slot1
+		}
+		x = 10
+		y = 3
+		completion_reward = {
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 2
+			 instant_build = yes
+		    }
+		  }
+	    }
+	}
+	focus = {
+		id = CHC_industrial_effort2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_industrial_effort1
+		}
+		x = 9
+		y = 4
+		completion_reward = {
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = arms_factory
+			 level = 2
+			 instant_build = yes
+		    }
+		  }
+	    }
+	}	
+	focus = {
+		id = CHC_dockyard_effort
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_industrial_effort2
+		}
+		x = 9
+		y = 5
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}			
+		}
+	}
+	focus = {
+		id = CHC_school_reform
+		icon = GFX_goal_generic_defence
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_constitution
+		}
+		x = 11
+		y = 1
+		completion_reward = { 
+			add_ideas = CHI_edu_reform
+		}
+	}
+	focus = {
+		id = CHC_slot1
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_school_reform
+		}
+		x = 11
+		y = 2
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+	focus = {
+		id = CHC_sprite
+		icon = GFX_goal_generic_cavalry
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_industrial_effort1
+		}
+		x = 11
+		y = 4
+		completion_reward = {
+		add_timed_idea = {
+			idea = CHI_new_labour
+				days = 720
+		}	 
+		}
+	} 
+	focus = {
+		id = CHC_radars
+		icon = GFX_goal_generic_radar
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_sprite
+		}
+		x = 11
+		y = 5
+        completion_reward = {
+		air_experience = 15
+        add_tech_bonus = {
+				name = electronic_bonus
+				bonus = 1.0
+				uses = 1
+				category = electronics
+			}
+		}
+	}
+	################################################################################
+		focus = {
+		id = CHC_rebuild
+		icon = GFX_focus_generic_little_entente
+		cost = 10.00
+		x = 21
+		y = 0
+		available = {
+			has_country_flag = FLAG_WZC_WAS_COLLAPESED
+			has_completed_focus = CHC_chiang
+		}
+		completion_reward = {
+		army_experience = 10
+		navy_experience = 10
+		air_experience = 10
+		}
+	    }
+		focus = {
+		id = CHC_army_path
+		icon = GFX_focus_chi_whampoa_military_academy
+		cost = 8.00
+		prerequisite = {
+			focus = CHC_rebuild
+		}
+		x = 15
+		y = 1
+		completion_reward = {
+			country_event = { id = china.1025 }
+		}
+	}
+	focus = {
+		id = CHC_inf_equipment
+		icon = GFX_chi_type_24
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_army_path
+		}
+		x = 13
+		y = 2
+		completion_reward = {
+
+        add_tech_bonus = {
+        bonus = 1.0
+        uses = 1
+        technology = infantry_weapons1
+        }
+
+        add_equipment_to_stockpile = {
+        type = infantry_equipment
+        amount = 1000
+        producer = CHI
+        }
+		}
+	}
+	focus = {
+		id = CHC_inf_equipment_hard_buy
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_inf_equipment
+		}
+		x = 13
+		y = 3
+		completion_reward = {
+		add_equipment_to_stockpile = {
+        type = infantry_equipment
+        amount = 7500
+        producer = ENG
+        }
+	    add_timed_idea = { idea = CHI_weapon_payment days = 100 }
+	    ENG = { add_timed_idea = { idea = CHI_weapon_payment_eng days = 100 } }
+		}
+	}
+	focus = {
+		id = CHC_artillery
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_army_path
+		}
+		x = 16
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.0
+				uses = 2
+				#category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = CHC_air
+		icon = GFX_goal_generic_build_airforce
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_rebuild
+		}
+		x = 27
+		y = 1
+		completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		}
+	}
+	focus = {
+		id = CHC_fighter
+		icon = GFX_focus_chi_flying_tigers
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_air
+		}
+		mutually_exclusive = {
+			focus = CHC_cas
+		}
+		x = 25
+		y = 2
+		completion_reward = {
+		add_equipment_to_stockpile = {
+        type = fighter_equipment
+        amount = 150
+        producer = USA
+            }
+		}
+	}
+	focus = {
+		id = CHC_cas
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_fighter
+		}
+		x = 26
+		y = 3
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+	focus = {
+		id = CHC_bomber
+		icon = GFX_goal_generic_air_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_fighter
+		}
+		x = 24
+		y = 3
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				#technology = strategic_bomber1
+				#technology = strategic_bomber2
+				#technology = strategic_bomber3
+				category = tactical_bomber
+			}
+		}
+	}
+	focus = {
+		id = CHC_medium_tank
+		icon = GFX_goal_generic_army_tanks
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_support
+		}
+		available = {
+			has_army_experience > 450
+		}
+		x = 19
+		y = 3
+		completion_reward = {
+		add_tech_bonus = {
+			name = med_armor_bonus
+			ahead_reduction = 1
+			uses = 2
+			category = armor
+		}
+		
+		}
+	}
+	focus = {
+		id = CHC_support
+		icon = GFX_focus_generic_combined_arms
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_army_path
+		}
+		available = {
+			has_army_experience > 75
+		}
+		x = 18
+		y = 2
+		completion_reward = {
+		add_tech_bonus = {
+			name = med_armor_bonus
+			ahead_reduction = 1
+			uses = 1
+			category = support_tech
+		}
+		
+		}
+	}
+	focus = {
+		id = CHC_motorized
+		icon = GFX_focus_chi_trucks
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_support
+		}
+		available = {
+			has_army_experience > 125
+		}
+		x = 17
+		y = 3
+		completion_reward = {
+		add_tech_bonus = {
+			name = motorized_bonus
+			ahead_reduction = 1
+			uses = 1
+			category = motorized_equipment
+		}
+		add_equipment_to_stockpile = {
+        type = motorized_equipment
+        amount = 1000
+        producer = USA
+        }
+		}
+	}
+	focus = {
+		id = CHC_convoy
+		icon = GFX_goal_generic_build_navy
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_air
+		}
+		x = 29
+		y = 2
+		completion_reward = {
+		navy_experience = 25
+	add_equipment_to_stockpile = {
+    type = convoy
+    amount = 150
+    }
+    }
+	}
+	focus = {
+		id = CHC_fleet_in_being
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_convoy
+		}
+		x = 28
+		y = 3
+		completion_reward = {
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 1.0
+				uses = 2
+				category = fleet_in_being_tree
+			}
+		}
+	}
+	focus = {
+		id = CHC_flex_navy
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_convoy
+		}
+		x = 30
+		y = 3
+		completion_reward = {
+		
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 1
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
+		}
+	}
+	focus = {
+		id = CHC_army_developing
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_army_path
+		}
+		x = 17
+		y = 3
+		completion_reward = {
+		army_experience = 10
+		add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = CHC_army_developing_foreign
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_army_developing
+		}
+		x = 17
+		y = 4
+		completion_reward = {
+		GER = { country_event = { days = 1 id = china.1026 } }
+		ENG = { country_event = { days = 1 id = china.1026 } }
+		}
+	}
+	focus = {
+		id = CHC_army_stable
+		icon = GFX_focus_chi_army_reform
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_army_developing_foreign
+		}
+		available = {
+			has_army_experience > 350
+		}
+		x = 17
+		y = 5
+		completion_reward = {
+		army_experience = 30
+		add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = CHC_defence_fond
+		icon = GFX_goal_generic_military_sphere
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_rebuild
+		}
+		available = {
+		has_completed_focus = CHI_stay_on_course
+		}
+		x = 21
+		y = 1
+		completion_reward = {
+		add_ideas = RUS_fortification_focus
+		}
+	}
+	focus = {
+		id = CHC_defend_JAP
+		icon = GFX_goal_generic_fortify_city
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_defence_fond
+		}
+		x = 20
+		y = 2
+		completion_reward = {
+				829 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 7014
+					instant_build = yes
+				  }
+				 add_building_construction = {
+					type = bunker
+					level = 4
+					province = 11913
+					instant_build = yes
+				  }
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 996
+					instant_build = yes
+				  }
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 10076
+					instant_build = yes
+				  }
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 11986
+					instant_build = yes
+				  }
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 10034
+					instant_build = yes
+				  }	
+				  
+					
+		         }	
+				}
+	}
+	}
+	focus = {
+		id = CHC_coastal_def
+		icon = GFX_goal_generic_construct_military
+		cost = 10.00
+		prerequisite = {
+			focus = CHC_defence_fond
+		}
+		x = 22
+		y = 2
+        completion_reward = {
+				595 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = coastal_bunker
+					level = 5
+					province = 4196
+					instant_build = yes
+				  }		
+				}
+				}
+		592 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = coastal_bunker
+					level = 5
+					province = 1047
+					instant_build = yes	
+				  }		
+				}
+				}	
+		613 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = coastal_bunker
+					level = 5
+					province = 7014
+					instant_build = yes
+				  }		
+				  
+					
+		         }	
+				}
+	}
+	}

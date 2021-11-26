@@ -1,0 +1,28 @@
+
+state={
+	id=880
+	name="STATE_880"
+	local_supplies=0.0 
+	provinces={
+		1502 1847 4876 7873 7894 12485 
+	}
+	manpower=1124783
+	history={
+		owner = KMN
+		add_core_of = CHI
+		add_core_of = KMN
+		add_core_of = KOR
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 4
+
+		}
+		1936.8.1 = {
+			owner = KOR
+
+		}
+
+	}
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

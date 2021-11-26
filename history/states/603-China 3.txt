@@ -3,6 +3,7 @@ state={
 	id=603
 	name="STATE_603"
 
+	local_supplies=0.0 
 	history={
 		owner = YUN
 		add_core_of = YUN

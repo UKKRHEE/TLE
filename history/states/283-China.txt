@@ -5,6 +5,7 @@ state={
 	resources={
 		tungsten=1.000
 	}
+	local_supplies=0.0 
 
 	history={
 		owner = XSM

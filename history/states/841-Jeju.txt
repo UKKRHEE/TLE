@@ -1,0 +1,25 @@
+state={
+	id=841
+	name="STATE_841"
+	provinces={
+		1177 
+	}
+	local_supplies=0.0 
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 2
+			1177 = {
+				naval_base = 3
+
+			}
+		}
+		victory_points = {
+			1177 5
+		}
+		add_core_of = KOR
+	}
+	manpower=138000
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

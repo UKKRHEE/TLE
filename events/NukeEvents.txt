@@ -64,16 +64,16 @@ news_event = {
 						state = 141
 						state = 525
 						state = 527
-						state = 807
-						state = 808
-						state = 809
-						state = 810
-						state = 811
-						state = 812
-						state = 813
-						state = 814
-						state = 815
-						state = 820
+						state = 835
+						state = 836
+						state = 837
+						state = 838
+						state = 839
+						state = 840
+						state = 841
+						state = 842
+						state = 843
+						state = 848
 						state = 620
 					}
 				}
@@ -518,20 +518,20 @@ news_event = {
 	fire_only_once = yes
 
 	trigger = {
-		FROM.FROM = { state = 809 }
+		FROM.FROM = { state = 837 }
 	}
 
 	option = {
 		name = nuke_dropped.15.a
 		trigger = {
-			NOT = { owns_state = 809 }
+			NOT = { owns_state = 837 }
 		}
 	}
 	
 	option = {
 		name = nuke_dropped.15.b
 		trigger = {
-			owns_state = 809
+			owns_state = 837
 		}
 	}
 }
@@ -546,20 +546,20 @@ news_event = {
 	fire_only_once = yes
 
 	trigger = {
-		FROM.FROM = { state = 820 }
+		FROM.FROM = { state = 848 }
 	}
 
 	option = {
 		name = nuke_dropped.16.a
 		trigger = {
-			NOT = { owns_state = 820 }
+			NOT = { owns_state = 848 }
 		}
 	}
 	
 	option = {
 		name = nuke_dropped.16.b
 		trigger = {
-			owns_state = 820
+			owns_state = 848
 		}
 	}
 }
@@ -602,20 +602,20 @@ news_event = {
 	fire_only_once = yes
 
 	trigger = {
-		FROM.FROM = { state = 808 }
+		FROM.FROM = { state = 836 }
 	}
 
 	option = {
 		name = nuke_dropped.18.a
 		trigger = {
-			NOT = { owns_state = 808 }
+			NOT = { owns_state = 836 }
 		}
 	}
 	
 	option = {
 		name = nuke_dropped.18.b
 		trigger = {
-			owns_state = 808
+			owns_state = 836
 		}
 	}
 }
@@ -630,20 +630,20 @@ news_event = {
 	fire_only_once = yes
 
 	trigger = {
-		FROM.FROM = { state = 807 }
+		FROM.FROM = { state = 835 }
 	}
 
 	option = {
 		name = nuke_dropped.19.a
 		trigger = {
-			NOT = { owns_state = 807 }
+			NOT = { owns_state = 835 }
 		}
 	}
 	
 	option = {
 		name = nuke_dropped.19.b
 		trigger = {
-			owns_state = 807
+			owns_state = 835
 		}
 	}
 }
@@ -658,20 +658,20 @@ news_event = {
 	fire_only_once = yes
 
 	trigger = {
-		FROM.FROM = { state = 810 }
+		FROM.FROM = { state = 838 }
 	}
 
 	option = {
 		name = nuke_dropped.20.a
 		trigger = {
-			NOT = { owns_state = 810 }
+			NOT = { owns_state = 838 }
 		}
 	}
 	
 	option = {
 		name = nuke_dropped.20.b
 		trigger = {
-			owns_state = 810
+			owns_state = 838
 		}
 	}
 }
@@ -686,20 +686,20 @@ news_event = {
 	fire_only_once = yes
 
 	trigger = {
-		FROM.FROM = { state = 811 }
+		FROM.FROM = { state = 839 }
 	}
 
 	option = {
 		name = nuke_dropped.21.a
 		trigger = {
-			NOT = { owns_state = 811 }
+			NOT = { owns_state = 839 }
 		}
 	}
 	
 	option = {
 		name = nuke_dropped.21.b
 		trigger = {
-			owns_state = 811
+			owns_state = 839
 		}
 	}
 }
@@ -714,20 +714,20 @@ news_event = {
 	fire_only_once = yes
 
 	trigger = {
-		FROM.FROM = { state = 812 }
+		FROM.FROM = { state = 840 }
 	}
 
 	option = {
 		name = nuke_dropped.22.a
 		trigger = {
-			NOT = { owns_state = 812 }
+			NOT = { owns_state = 840 }
 		}
 	}
 	
 	option = {
 		name = nuke_dropped.22.b
 		trigger = {
-			owns_state = 812
+			owns_state = 840
 		}
 	}
 }
@@ -742,20 +742,20 @@ news_event = {
 	fire_only_once = yes
 
 	trigger = {
-		FROM.FROM = { state = 813 }
+		FROM.FROM = { state = 841 }
 	}
 
 	option = {
 		name = nuke_dropped.23.a
 		trigger = {
-			NOT = { owns_state = 813 }
+			NOT = { owns_state = 841 }
 		}
 	}
 	
 	option = {
 		name = nuke_dropped.23.b
 		trigger = {
-			owns_state = 813
+			owns_state = 841
 		}
 	}
 }

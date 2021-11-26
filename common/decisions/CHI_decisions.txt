@@ -15,6 +15,9 @@ CHI_fight_with_korea = {
 				has_war_with = KOR
 			}
 		}
+		ai_will_do = {
+			factor = 1000
+		}
 		fire_only_once = yes
 		cost = 0
 		complete_effect = {
@@ -42,6 +45,9 @@ CHI_fight_with_korea = {
 		custom_cost_trigger = {
 			command_power > 50
 			has_army_experience > 100
+		}
+		ai_will_do = {
+			factor = 1000
 		}
 		fire_only_once = yes
 		cost = 150

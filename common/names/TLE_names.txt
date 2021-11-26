@@ -6,42 +6,62 @@
 
 KOR = {
 	male = {
-		names = { Kim Lee Park Jung Jang Choi Kang Jo Yun Yim Han Oh Seo Sin Gwon Hwang An Song Jeon Hong Yu Go Mun Yang Son Bae Baek Huh Nam Sim Roh Ha Kwak Seong Cha Joo Goo Yi }
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}
+		
 	}
 	female = {
-		names = { Kim Lee Park Jung Jang Choi Kang Jo Yun Yim Han Oh Seo Sin Gwon Hwang An Song Jeon Hong Yu Go Mun Yang Son Bae Baek Huh Nam Sim Roh Ha Kwak Seong Cha Joo Goo Yi }
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}	
 	}
-	surnames = { Hyunseong Hyunchul Minchul Jaepil Young Jun Taeil Bongjun Junghwan Jaewoo Bongchang Sangok Jaesang Sunpil Doohan Jeongjae jaeseol byeong-og yangban yain dogil hangug manju hwangug }
+	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광 혁 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 윤휴 서연 서윤 지우 승자 미자 옥희 하은 하윤 윤서 지유 지민 채원 지윤 은서 수아 다은 수빈 소율 예린 예원 }
 	callsigns = { }
 }
 KPL = {
 	male = {
-		names = { Kim Lee Park Jung Jang Choi Kang Jo Yun Yim Han Oh Seo Sin Gwon Hwang An Song Jeon Hong Yu Go Mun Yang Son Bae Baek Huh Nam Sim Roh Ha Kwak Seong Cha Joo Goo Yi }
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}
+		
 	}
 	female = {
-		names = { Kim Lee Park Jung Jang Choi Kang Jo Yun Yim Han Oh Seo Sin Gwon Hwang An Song Jeon Hong Yu Go Mun Yang Son Bae Baek Huh Nam Sim Roh Ha Kwak Seong Cha Joo Goo Yi }
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}	
 	}
-	surnames = { Hyunseong Hyunchul Minchul Jaepil Young Jun Taeil Bongjun Junghwan Jaewoo Bongchang Sangok Jaesang Sunpil Doohan Jeongjae jaeseol byeong-og yangban yain dogil hangug manju hwangug }
+	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광 혁 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 윤휴 서연 서윤 지우 승자 미자 옥희 하은 하윤 윤서 지유 지민 채원 지윤 은서 수아 다은 수빈 소율 예린 예원 }
 	callsigns = { }
 }
 KMN = {
 	male = {
-		names = { Kim Lee Park Jung Jang Choi Kang Jo Yun Yim Han Oh Seo Sin Gwon Hwang An Song Jeon Hong Yu Go Mun Yang Son Bae Baek Huh Nam Sim Roh Ha Kwak Seong Cha Joo Goo Yi }
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}
+		
 	}
 	female = {
-		names = { Kim Lee Park Jung Jang Choi Kang Jo Yun Yim Han Oh Seo Sin Gwon Hwang An Song Jeon Hong Yu Go Mun Yang Son Bae Baek Huh Nam Sim Roh Ha Kwak Seong Cha Joo Goo Yi }
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}	
 	}
-	surnames = { Hyunseong Hyunchul Minchul Jaepil Young Jun Taeil Bongjun Junghwan Jaewoo Bongchang Sangok Jaesang Sunpil Doohan Jeongjae jaeseol byeong-og yangban yain dogil hangug manju hwangug }
+	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광 혁 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 윤휴 서연 서윤 지우 승자 미자 옥희 하은 하윤 윤서 지유 지민 채원 지윤 은서 수아 다은 수빈 소율 예린 예원 }
 	callsigns = { }
 }
-YOD = {
+PRK = {
 	male = {
-		names = { Kim Lee Park Jung Jang Choi Kang Jo Yun Yim Han Oh Seo Sin Gwon Hwang An Song Jeon Hong Yu Go Mun Yang Son Bae Baek Huh Nam Sim Roh Ha Kwak Seong Cha Joo Goo Yi }
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}
+		
 	}
 	female = {
-		names = { Kim Lee Park Jung Jang Choi Kang Jo Yun Yim Han Oh Seo Sin Gwon Hwang An Song Jeon Hong Yu Go Mun Yang Son Bae Baek Huh Nam Sim Roh Ha Kwak Seong Cha Joo Goo Yi }
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}	
 	}
-	surnames = { Hyunseong Hyunchul Minchul Jaepil Young Jun Taeil Bongjun Junghwan Jaewoo Bongchang Sangok Jaesang Sunpil Doohan Jeongjae jaeseol byeong-og yangban yain dogil hangug manju hwangug }
+	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광 혁 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 윤휴 서연 서윤 지우 승자 미자 옥희 하은 하윤 윤서 지유 지민 채원 지윤 은서 수아 다은 수빈 소율 예린 예원 }
 	callsigns = { }
 }
 FNG = {
@@ -94,15 +114,6 @@ SDG = {
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
 	callsigns = { }
 }
-SSK = {
-	male = {
-		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
-	}
-	female = {
-		names = { }
-	}
-	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
-}	
 KMK = {
 	male = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }

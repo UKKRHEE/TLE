@@ -20,32 +20,4 @@ set_popularities = {
 add_ideas = {
 	#
 }
-
-create_country_leader = {
-	name = "Sho Hiroshi"
-	picture = "gfx/leaders/RYU/RYU_herosee.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Sho Hiroshi"
-	picture = "gfx/leaders/RYU/RYU_herosee.dds"
-	expire = "1965.1.1"
-	ideology = rexism
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Sho Hiroshi"
-	picture = "gfx/leaders/RYU/RYU_herosee.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
-
+recruit_character = RYU_sho_hiroshi

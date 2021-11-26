@@ -1,0 +1,60 @@
+spriteTypes = {
+	 
+	spriteType = {
+		name = "GFX_focus_completed_bg_2"
+		texturefile = "gfx/interface/shangus2.dds"
+	}  
+	spriteType = {
+		name = "GFX_focus_unavailable_bg" 
+		texturefile = "gfx/interface/focus_unavailable_bg.dds"
+	}
+	spriteType = { 
+		name = "GFX_focus_can_start_bg_2" 
+		texturefile = "gfx/interface/shangus.dds"
+	}
+	spriteType = {
+		name = "GFX_pol_leader_rank_frame"
+		texturefile = "gfx/interface/pol_leader_rank_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Walter_Model"
+		texturefile = "gfx/interface/Portrait_Germany_Walter_Model.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Korea_Yi_Kang"
+		texturefile = "gfx/leaders/KOR/Portrait_Yi_Kang.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Korea_Yi_Kang_Emperor"
+		texturefile = "gfx/leaders/KOR/Portrait_Yi_Kang.dds"
+	}
+	spriteType = {
+		name = "GFX_button_reset_123x34"
+		texturefile = "gfx/interface/button_reset_123x34.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Korea_Yi_Geon"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_geon.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Korea_Yi_Un"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Yi_Un.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Korea_Yi_Wu"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_wu.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Korea_Yi_Geon_heir"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_geon.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Korea_Yi_Un_heir"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Yi_Un.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Korea_Yi_Wu_heir"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_wu.png"
+	}
+
+}

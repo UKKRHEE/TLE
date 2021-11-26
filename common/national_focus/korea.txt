@@ -41,6 +41,10 @@ focus_tree = {
 			completion_reward = {
 					add_political_power = 150
 					hidden_effect = {
+						country_event = {
+							id = korea.68
+							days = 3
+						}
 							add_ace = {
 									name = "Cheonsae"
 									surname = "Lee"
@@ -91,7 +95,7 @@ focus_tree = {
 		y = 1
 			completion_reward = {
 					add_ideas = KOR_industry_reform
-					812 = {
+					840 = {
 							add_building_construction = {
 									type = infrastructure
 									level = 3
@@ -111,7 +115,7 @@ focus_tree = {
 		x = 1
 		y = 2
 			completion_reward = {
-					807 = {
+					835 = {
 							add_building_construction = {
 									type = infrastructure
 									level = 3
@@ -125,7 +129,7 @@ focus_tree = {
 									instant_build = yes
 								}
 						}
-					809 = {
+					837 = {
 							add_building_construction = {
 									type = infrastructure
 									level = 2
@@ -145,7 +149,7 @@ focus_tree = {
 		x = 0
 		y = 3
 			completion_reward = {
-					808 = {
+					836 = {
 							add_building_construction = {
 									type = infrastructure
 									level = 3
@@ -172,14 +176,14 @@ focus_tree = {
 									instant_build = yes
 								}
 						}
-					811 = {
+					839 = {
 							add_building_construction = {
 									type = infrastructure
 									level = 2
 									instant_build = yes
 								}
 						}
-					810 = {
+					838 = {
 							add_building_construction = {
 									type = infrastructure
 									level = 2
@@ -206,7 +210,7 @@ focus_tree = {
 									instant_build = yes
 								}
 						}
-					810 = {
+					838 = {
 							add_building_construction = {
 									type = infrastructure
 									level = 2
@@ -229,7 +233,7 @@ focus_tree = {
 					add_resource = {
 							type = oil
 							amount = 3
-							state = 813
+							state = 841
 						}
 				}
 
@@ -251,7 +255,7 @@ focus_tree = {
 									instant_build = yes
 								}
 						}
-					812 = {
+					840 = {
 							add_building_construction = {
 									type = infrastructure
 									level = 2
@@ -278,7 +282,7 @@ focus_tree = {
 		x = 4
 		y = 3
 			completion_reward = {
-					810 = {
+					838 = {
 							add_building_construction = {
 									type = bunker
 									level = 3
@@ -288,7 +292,7 @@ focus_tree = {
 							add_building_construction = {
 									type = bunker
 									level = 3
-									province = 6822
+									province = 6850
 									instant_build = yes
 								}
 							add_building_construction = {
@@ -300,7 +304,7 @@ focus_tree = {
 							add_building_construction = {
 									type = bunker
 									level = 3
-									province = 810
+									province = 838
 									instant_build = yes
 								}
 						}
@@ -343,7 +347,7 @@ focus_tree = {
 		x = 2
 		y = 5
 			completion_reward = {
-					808 = {
+					836 = {
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = arms_factory
@@ -457,7 +461,7 @@ focus_tree = {
 					add_resource = {
 							type = steel
 							amount = 4
-							state = 809
+							state = 837
 						}
 				}
 
@@ -475,7 +479,7 @@ focus_tree = {
 		x = 8
 		y = 2
 			completion_reward = {
-					807 = {
+					835 = {
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = industrial_complex
@@ -503,7 +507,7 @@ focus_tree = {
 					add_resource = {
 							type = steel
 							amount = 10
-							state = 809
+							state = 837
 						}
 				}
 
@@ -522,7 +526,7 @@ focus_tree = {
 		x = 8
 		y = 3
 			completion_reward = {
-					808 = {
+					836 = {
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = industrial_complex
@@ -569,7 +573,7 @@ focus_tree = {
 		x = 8
 		y = 4
 			completion_reward = {
-					811 = {
+					839 = {
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = industrial_complex
@@ -626,7 +630,7 @@ focus_tree = {
 		x = 11
 		y = 2
 			completion_reward = {
-					811 = {
+					839 = {
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = arms_factory
@@ -668,7 +672,7 @@ focus_tree = {
 		x = 13
 		y = 3
 			completion_reward = {
-					809 = {
+					837 = {
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = arms_factory
@@ -692,7 +696,7 @@ focus_tree = {
 		x = 12
 		y = 4
 			completion_reward = {
-					810 = {
+					838 = {
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = arms_factory
@@ -1109,18 +1113,23 @@ focus_tree = {
 							election_frequency = 48
 							elections_allowed = no
 						}
-					add_war_support = 0.05
 					add_popularity = {
 							ideology = fascism
 							popularity = 0.15
 						}
+						hidden_effect = {
+							country_event = {
+								id = korea.70
+								days = 5
+							}
+						}	
 				}
 
 	}
 	focus = {
 		id = KOR_side_in
 		icon = GFX_focus_production
-		cost = 3.00
+		cost = 7
 		prerequisite = {
 			focus = kor_korean_lebensraum
 		}
@@ -1152,7 +1161,7 @@ focus_tree = {
 	focus = {
 		id = KOR_the_day_which_very_long
 		icon = GFX_focus_purge
-		cost = 1.50
+		cost = 7
 		prerequisite = {
 			focus = KOR_side_in
 		}
@@ -1161,11 +1170,11 @@ focus_tree = {
 		completion_reward = {
 		
 					custom_effect_tooltip = FOCUS_THE_LONG_NIGHT
-			hidden_effect = {
 				country_event = {
 					id = korea.57
 					hours = 3
 				}
+			hidden_effect = {
 				country_event = {
 					id = korea.52
 					days = 8
@@ -1194,24 +1203,32 @@ focus_tree = {
 	focus = {
 		id = kor_territory_expansion
 		icon = GFX_focus_goal_KOR_reform_korea
-		cost = 3.00
+		cost = 5.8
 		prerequisite = {
 			focus = kor_korean_lebensraum
 		}
 		x = 35
 		y = 5
 			available = {
+					custom_trigger_tooltip = {
+					tooltip = TOOLTIP_TERRITORY_KOR
+					has_completed_focus = kor_remove_strike
 					has_idea = KOR_not_go_outside_2
+				}	
 				}
 			completion_reward = {
 					KOR = {
-							add_state_claim = 839
+							add_state_claim = 867
 							add_state_claim = 613
 							add_state_claim = 608
-							add_state_claim = 829
-							add_state_claim = 841
+							add_state_claim = 857
+							add_state_claim = 869
 						}
 					add_threat = 3
+					country_event = {
+						id = korea.73
+						days = 2
+					}
 				}
 
 	}
@@ -1234,6 +1251,7 @@ focus_tree = {
 							target = QIN
 							transfer_troops = yes
 						}
+						transfer_state = 761
 				}
 
 	}
@@ -1456,13 +1474,13 @@ focus_tree = {
 				}
 			completion_reward = {
 					KOR = {
-							add_state_claim = 826
+							add_state_claim = 854
 							add_state_claim = 614
 							add_state_claim = 597
-							add_state_claim = 843
-							add_state_claim = 842
-							add_state_claim = 828
-							add_state_claim = 827
+							add_state_claim = 871
+							add_state_claim = 870
+							add_state_claim = 856
+							add_state_claim = 855
 						}
 					set_rule = {
 							can_create_factions = yes
@@ -1483,11 +1501,11 @@ focus_tree = {
 			completion_reward = {
 					custom_effect_tooltip = KOREA_WILL_CLAIM_CHINA
 					hidden_effect = {
-							add_state_claim = 829
-							add_state_claim = 832
-							add_state_claim = 834
-							add_state_claim = 836
-							add_state_claim = 837
+							add_state_claim = 857
+							add_state_claim = 860
+							add_state_claim = 862
+							add_state_claim = 864
+							add_state_claim = 865
 						}
 				}
 
@@ -1536,6 +1554,9 @@ focus_tree = {
 			available = {
 					is_in_faction = yes
 				}
+				bypass = {
+					has_war_with = SOV
+				}
 			completion_reward = {
 					SOV = {
 							add_political_power = 100
@@ -1555,12 +1576,21 @@ focus_tree = {
 		}
 		x = 37
 		y = 7
+				available = {
+				
+				}
+				bypass = {
+					has_war_with = SOV
+				}
 			completion_reward = {
 					KOR = {
 							annex_country = {
 									target = RUS
 									transfer_troops = yes
 								}
+								add_state_core = 657
+								add_state_core = 561
+								add_state_core = 560
 						}
 					SOV = {
 							transfer_state = 564
@@ -1568,12 +1598,9 @@ focus_tree = {
 							transfer_state = 565
 							transfer_state = 574
 							transfer_state = 562
-							transfer_state = 561
 							transfer_state = 644
-							transfer_state = 560
 							transfer_state = 567
 							transfer_state = 637
-							transfer_state = 657
 						}
 				}
 
@@ -1658,7 +1685,7 @@ focus_tree = {
 		x = 38
 		y = 10
 			completion_reward = {
-					821 = {
+					849 = {
 							add_building_construction = {
 									type = bunker
 									level = 3
@@ -1684,7 +1711,7 @@ focus_tree = {
 									instant_build = yes
 								}
 						}
-					824 = {
+					852 = {
 							add_building_construction = {
 									type = bunker
 									level = 3
@@ -1716,7 +1743,7 @@ focus_tree = {
 									instant_build = yes
 								}
 						}
-					823 = {
+					851 = {
 							add_building_construction = {
 									type = bunker
 									level = 3
@@ -1750,7 +1777,7 @@ focus_tree = {
 							add_building_construction = {
 									type = bunker
 									level = 3
-									province = 6811
+									province = 6839
 									instant_build = yes
 								}
 						}
@@ -1758,7 +1785,7 @@ focus_tree = {
 							add_building_construction = {
 									type = bunker
 									level = 3
-									province = 11835
+									province = 11863
 									instant_build = yes
 								}
 							add_building_construction = {
@@ -1776,7 +1803,7 @@ focus_tree = {
 							add_building_construction = {
 									type = bunker
 									level = 3
-									province = 11828
+									province = 11856
 									instant_build = yes
 								}
 							add_building_construction = {
@@ -1792,7 +1819,7 @@ focus_tree = {
 									instant_build = yes
 								}
 						}
-					810 = {
+					838 = {
 							add_building_construction = {
 									type = bunker
 									level = 3
@@ -1808,7 +1835,7 @@ focus_tree = {
 							add_building_construction = {
 									type = bunker
 									level = 3
-									province = 3860
+									province = 3888
 									instant_build = yes
 								}
 							add_building_construction = {
@@ -1824,7 +1851,7 @@ focus_tree = {
 									instant_build = yes
 								}
 						}
-					820 = {
+					848 = {
 							add_building_construction = {
 									type = bunker
 									level = 3
@@ -2045,14 +2072,18 @@ focus_tree = {
 									long_name = "유교공산당"
 									name = "유교공산당"
 								}
-							create_country_leader = {
-									name = "Yi Jin"
-									desc = "KOR_YI_JIN_DESC"
-									picture = "gfx/leaders/KOR/Portrait_Yi_Kang.dds"
-									expire = "1955.8.1"
-									ideology = despotism
-									traits = { korea_emperor }
+							KOR_emperor_yi_jin = {
+								add_country_leader_role = {
+									country_leader = {
+										expire = "1965.1.1"
+										ideology = despotism
+										traits = {
+											korea_emperor
+										}
+									}
+									promote_leader = yes
 								}
+							}	
 						}
 				}
 
@@ -2248,7 +2279,7 @@ focus_tree = {
 					has_war_with = JAP
 				}
 			completion_reward = {
-					add_state_core = 822
+					add_state_core = 850
 					add_state_claim = 528
 					add_state_claim = 530
 					add_state_claim = 529
@@ -3258,7 +3289,12 @@ focus_tree = {
 		x = 26
 		y = 8
 			available = {
-
+				custom_trigger_tooltip = {
+					tooltip = TOOLTIP_complete_all_up_foc
+					has_completed_focus = kor_puppet_king
+					has_completed_focus = kor_the_new_history
+					has_completed_focus = kor_remove_strike
+				}
 }
 			completion_reward = {
 					add_war_support = 0.1
@@ -3274,7 +3310,7 @@ focus_tree = {
 	focus = {
 		id = kor_forced_labor
 		icon = GFX_focus_aus_aut
-		cost = 4.00
+		cost = 8
 		prerequisite = {
 			focus = KOR_the_day_which_very_long
 		}
@@ -3282,6 +3318,10 @@ focus_tree = {
 		y = 7
 			completion_reward = {
 					remove_ideas = KOR_divided_politics
+					country_event = {
+						id = korea.72
+						days = 2
+					}
 				}
 
 	}
@@ -3338,35 +3378,35 @@ focus_tree = {
 											KOR = {
 													controls_state = 608
 													controls_state = 613
-													controls_state = 841
+													controls_state = 869
 													controls_state = 605
 												}
 											QIN = {
 													is_puppet_of = KOR
 													controls_state = 608
 													controls_state = 613
-													controls_state = 841
+													controls_state = 869
 													controls_state = 605
 												}
 											CHI = {
 													is_puppet_of = KOR
 													controls_state = 608
 													controls_state = 613
-													controls_state = 841
+													controls_state = 869
 													controls_state = 605
 												}
 											PRC = {
 													is_puppet_of = KOR
 													controls_state = 608
 													controls_state = 613
-													controls_state = 841
+													controls_state = 869
 													controls_state = 605
 												}
 											ZLC = {
 													is_puppet_of = KOR
 													controls_state = 608
 													controls_state = 613
-													controls_state = 841
+													controls_state = 869
 													controls_state = 605
 												}
 										}
@@ -3392,9 +3432,9 @@ focus_tree = {
 		x = 49
 		y = 10
 			available = {
-					controls_state = 825
-					controls_state = 824
-					controls_state = 823
+					controls_state = 853
+					controls_state = 852
+					controls_state = 851
 				}
 			bypass = {
 					controls_state = 408
@@ -3468,7 +3508,7 @@ focus_tree = {
 	focus = {
 		id = kor_the_new_history
 		icon = GFX_focus_qng_power_struggle
-		cost = 5.8
+		cost = 2.8
 		prerequisite = {
 			focus = kor_encouraging_patriotism_2
 		}
@@ -3482,9 +3522,9 @@ focus_tree = {
 				}
 			completion_reward = {
 					custom_effect_tooltip = TOOLTIP_WILL_FUCK_TO_PEACE
-					country_event = {
-							id = korea.40
-						}
+					#country_event = {
+					#		id = korea.40
+					#	}
 					hidden_effect = {
 							swap_ideas = {
 									add_idea = KOR_not_go_outside_2
@@ -3578,7 +3618,7 @@ focus_tree = {
 		y = 12
 			completion_reward = {
 					navy_experience = 5
-					809 = {
+					837 = {
 							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = dockyard
@@ -3611,7 +3651,7 @@ focus_tree = {
 		y = 12
 			completion_reward = {
 					navy_experience = 5
-					809 = {
+					837 = {
 							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = dockyard
@@ -3656,17 +3696,14 @@ focus_tree = {
 		x = 25
 		y = 7
 			completion_reward = {
-					swap_ideas = {
-							remove_idea = KOR_Weakening_the_kingship
-							add_idea = KOR_great_Yi_kang
-						}
+					remove_ideas = KOR_Weakening_the_kingship
 				}
 
 	}
 	focus = {
 		id = kor_remove_strike
 		icon = GFX_focus_c45_reject
-		cost = 2.90
+		cost = 10
 		prerequisite = {
 			focus = kor_forced_labor
 		}
@@ -3677,6 +3714,9 @@ focus_tree = {
 					add_timed_idea = {
 							days = 365
 							idea = KOR_pay_of_ww1
+						}
+						country_event = {
+							id = korea.74
 						}
 				}
 

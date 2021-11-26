@@ -1,0 +1,2895 @@
+﻿add_namespace = korea
+
+country_event = { #간략한 설정
+	id = korea.1
+	title = korea.1.title
+	desc = korea.1.desc
+	picture = GFX_report_event_hitler_handshake
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #그래 시작해보자고
+		name = korea.1.a
+		set_major = yes
+		country_event = {
+			id = korea.777
+		}
+	}
+	
+	option = { #그래 시작해보자고
+		name = korea.1.b
+		set_major = yes
+	}
+}
+#######################################################################################
+country_event = { #황제의 전제군주정 선포!
+	id = korea.2
+	title = korea.2.title
+	desc = korea.2.desc
+	picture = GFX_report_event_Kor_empire_comeback
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #오 드디어!
+		name = korea.2.a
+		country_event = korea.3
+	}
+}
+
+country_event = { #입헌파들의 반발
+	id = korea.3
+	title = korea.3.title
+	desc = korea.3.desc
+	picture = GFX_report_event_Kor_empire_comeback
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #저 놈 끌어내! 당장 끌어내!
+		name = korea.3.a
+		complete_national_focus = kor_autocracy
+		custom_effect_tooltip = kor.1.tt
+	}
+	option = { #듣고보니 일리가 있구만
+		name = korea.3.b
+		ai_chance = { factor = 100 }
+		complete_national_focus = kor_2nd_empire
+		country_event = korea.4
+		custom_effect_tooltip = kor.2.tt
+	}
+}
+
+country_event = { #제국 의회 패권 사움
+	id = korea.4
+	title = korea.4.title
+	desc = korea.4.desc
+	picture = GFX_report_event_Kor_empire_vs
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #제국 의회는 군부가 장악한다!
+		name = korea.4.b
+		complete_national_focus = kor_monarch_fascism
+		custom_effect_tooltip = kor.4.tt
+	}
+}
+
+country_event = { #제 1대 대한제국 수상 선거
+	id = korea.5
+	title = korea.5.title
+	desc = korea.5.desc
+	picture = GFX_report_event_election_vote
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #서재필
+		name = korea.5.a
+		custom_effect_tooltip = kor.5.tt
+	}
+	option = { #김구
+		name = korea.5.b
+		custom_effect_tooltip = kor.6.tt
+		create_country_leader = {
+			name = "백범 김구"
+			desc = ""
+			picture = "gfx/leaders/KOR/Portrait_KOR_Kim_Koo.dds"
+			expire = "1960.3.1"
+			ideology = conservatism
+			traits = {
+				stout_defender
+			}
+		}
+	}
+	option = { #이승만
+		name = korea.5.c
+		custom_effect_tooltip = kor.7.tt
+		create_country_leader = {
+			name = "Syngman Rhee"
+			desc = ""
+			picture = "gfx/leaders/KOR/Portrait_Korea_syngman.dds"
+			expire = "1965.7.1"
+			ideology = conservatism
+			traits = {
+				anti_communist
+			}
+		}
+	}
+}
+
+country_event = { #대한제국 황실에게 도전한 입헌파
+	id = korea.6
+	title = korea.6.title
+	desc = korea.6.desc
+	picture = GFX_report_event_election_vote
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #황실은 너무 구시대적이야
+		name = korea.6.a
+		hidden_effect = {
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = ROOT
+				size = 0.35
+				only_own_territory = no
+				capital = 527
+				states = { 
+					527 810 812 818 816 819 817
+				}
+				keep_unit_leaders = {
+					20100 20101 19361 19365 19366 19367 19368 19369 189390 19370 19371
+				}
+			}
+			KOR = {
+				set_capital = 525
+			}
+			KPL = {
+				transfer_state = 821
+				transfer_state = 823
+				transfer_state = 824
+				transfer_state = 825
+			}
+			set_politics = { 
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+		}
+	}
+}
+	
+country_event = { #자원입대한 군인들
+	id = korea.7
+	title = korea.7.title
+	desc = korea.7.desc
+	picture = GFX_report_event_election_vote
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #좋았어!
+		name = korea.7.a
+	}
+}
+
+country_event = { #제 1대 대한민국 대통령 선거
+	id = korea.8
+	title = korea.8.title
+	desc = korea.8.desc
+	picture = GFX_report_event_election_vote
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #서재필
+		name = korea.8.a
+		custom_effect_tooltip = kor.5.tt
+		complete_national_focus = kor_phillip_jaisohn
+	}
+	option = { #여운형
+		name = korea.8.b
+		custom_effect_tooltip = kor.9.tt
+		create_country_leader = {
+			name = "Lyuh Woon Hyung"
+			desc = ""
+			picture = "gfx/leaders/KOR/Portrait_Korea_Lyuh_Woon_hyung.dds"
+			expire = "1960.3.1"
+			ideology = conservatism
+			traits = {
+				#
+			}
+		}
+		complete_national_focus = kor_yeounhyeong
+	}
+	option = { #이승만
+		name = korea.8.c
+		custom_effect_tooltip = kor.7.tt
+		create_country_leader = {
+			name = "Syngman Rhee"
+			desc = ""
+			picture = "gfx/leaders/KOR/Portrait_Korea_syngman.dds"
+			expire = "1965.7.1"
+			ideology = conservatism
+			traits = {
+				anti_communist
+			}
+		}
+		complete_national_focus = kor_syngman_rhee
+	}
+}
+
+country_event = { #새로운 황제는 누구?
+	id = korea.9
+	title = korea.9.title
+	desc = korea.9.desc
+	picture = GFX_report_event_Kor_empire_comeback
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #이범석
+		name = korea.9.a
+		custom_effect_tooltip = kor.10.tt
+	}
+	option = { #영친왕 이은
+		name = korea.9.b
+		custom_effect_tooltip = kor.11.tt
+		create_country_leader = {
+			name = "Yi Un"
+			desc = ""
+			picture = "gfx/leaders/KOR/Portrait_KOR_Yi_Un.dds"
+			expire = "1960.3.1"
+			ideology = fascism_ideology
+			traits = {
+				emperor_yi
+			}
+		}
+	}
+}
+######
+country_event = { #남만주 요구
+	id = korea.10
+	title = korea.10.title
+	desc = korea.10.desc
+	picture = GFX_report_event_hitler_handshake
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #그래 시작해보자고
+		name = korea.10.a
+		RUS = {
+		    country_event = {
+				id = FNG.1
+			}
+		}
+	}
+}
+
+country_event = { #봉천의 거절!
+	id = korea.11
+	title = korea.11.title
+	desc = korea.11.desc
+	picture = GFX_report_event_hitler_handshake
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #거절
+		name = korea.11.a
+		KOR = {
+		    country_event = {
+			    id = korea.13
+			}
+		}
+	}
+	option = { #승낙
+		name = korea.11.b
+		ai_chance = { factor = 100 }
+		if = {
+		    limit = {
+			    KOR = {
+				    has_completed_focus = kor_monarchy
+				}
+			}
+			KOR = {
+				country_event = {
+					id = korea.12
+				}
+			}
+		}
+		if = {
+		    limit = {
+			    KOR = {
+					NOT = {
+						has_completed_focus = kor_monarchy
+					}
+				}	
+			}
+			KOR = {
+				country_event = {
+					id = korea.19
+				}
+			}
+		}
+	}
+}
+country_event = { #봉천의 승낙!
+	id = korea.12
+	title = korea.12.title
+	desc = korea.12.desc
+	picture = GFX_report_event_hitler_handshake
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #그래 시작해보자고
+		name = korea.12.a
+		MAN = { annex_country = { target = FNG } }
+		MAN = { change_tag_from = FNG }
+		716 = {
+			set_state_name = "요동"
+		}
+		328 = {
+			set_state_name = "길림"
+		}
+		717 = {
+			set_state_name = "송강"
+		}
+		set_province_name = {
+			id = 10433
+			name = "합성"
+		}
+		set_province_name = {
+			id = 4572
+			name = "장북"
+		}
+		set_province_name = {
+			id = 11771
+			name = "심양"
+		}
+		KOR = {
+			transfer_state = 716
+			transfer_state = 328
+			transfer_state = 717
+			transfer_state = 745
+			add_state_core = 716
+			add_state_core = 328
+			add_state_core = 717
+			add_state_core = 745
+		}	
+		if = { 
+			limit = {
+				has_completed_focus = KOR_allied_with_russia
+			}
+			SOV = {
+				puppet = MAN
+			}
+		}
+		if = {
+			limit = {
+				has_completed_focus = KOR_all_claim
+			}
+			KOR = {
+				puppet = MAN
+			}
+		}
+		
+	}
+}
+
+country_event = { #간략한 설정
+	id = korea.13
+	title = korea.13.title
+	desc = korea.13.desc
+	picture = GFX_report_event_hitler_handshake
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #전쟁이 다가온다...
+		name = korea.13.a
+		set_country_flag = fengtian_not_agreed
+	}
+}
+#######################################################################################
+country_event = { #간략한 설정
+	id = korea.14
+	title = korea.14.title
+	desc = korea.14.desc
+	picture = GFX_report_event_france_tank_production
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #전쟁이 다가온다...
+		ai_chance = { factor = 100 }
+		name = korea.14.a
+		KOR = {
+		    country_event = {
+			    id = korea.15
+				days = 4
+			}
+		}
+	}
+	option = { #전쟁이 다가온다...
+		ai_chance = { factor = 0 }
+		name = korea.14.b
+		QIN = {
+			annex_country = {
+				target = ZLC
+				transfer_troops = yes
+			}
+		}
+		KOR = {
+			puppet = QIN
+			transfer_state = 608
+			
+			add_state_core = 608
+			every_state = {
+				limit = {
+					is_core_of = ZLC
+				}
+				add_core_of = KOR
+			}
+		}	
+		custom_effect_tooltip = TOOLTIP_GAME_WILL_BE_OVER
+		
+	}
+}
+country_event = { #중국의 거절!
+	id = korea.15
+	title = korea.15.title
+	desc = korea.15.desc
+	picture = GFX_report_event_france_victory_syria
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #거절
+		name = korea.15.a
+		country_event = {
+			id = korea.22
+			days = 10
+		}
+	}
+}
+country_event = { #간략한 설정
+	id = korea.16
+	title = korea.16.title
+	desc = korea.16.desc
+	picture = GFX_report_event_hitler_handshake
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #전쟁이 다가온다...
+		ai_chance = { factor = 0 }
+		name = korea.16.a
+		KOR = {
+		    country_event = {
+			    id = korea.17
+				days = 4
+			}
+			set_country_flag = JAP_NOT_accept_korean
+		}
+	}
+	option = { #전쟁이 다가온다...
+		ai_chance = { factor = 100 }
+		name = korea.16.b
+		KOR = {
+			transfer_state = 821
+			transfer_state = 408
+			transfer_state = 409
+			transfer_state = 655
+			transfer_state = 537
+			transfer_state = 820
+		}	
+		hidden_effect = {
+		408 = {
+			set_state_name = "해위도"
+		}
+		408 = {
+			set_state_name = "영백남도"
+		}
+		409 = {
+			set_state_name = "영백북도"
+		}
+		655 = {
+			set_state_name = "북부 부상"
+			add_core_of = KOR
+		}
+		537 = {
+			set_state_name = "남부 부상"
+			add_core_of = KOR
+		}
+		set_province_name = {
+			id = 12189
+			name = "백주"
+		}
+		set_province_name = {
+			id = 12446
+			name = "풍원"
+		}
+		set_province_name = {
+			id = 664
+			name = "영주"
+		}
+		set_province_name = {
+			id = 957
+			name = "해삼위"
+		}
+		set_province_name = {
+			id = 6838
+			name = "복단"
+		}
+		set_province_name = {
+			id = 6961
+			name = "나철"
+		}
+		RMN = {
+			transfer_state = 761
+		}
+		RUS = {
+			puppet = RMN
+		}
+		JAP = {
+			add_political_power = 150
+		}	
+		set_country_flag = JAP_accept_korean
+		}
+	}
+}
+country_event = { #중국의 거절!
+	id = korea.17
+	title = korea.17.title
+	desc = korea.17.desc
+	picture = GFX_report_event_hitler_handshake
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #거절
+		name = korea.17.a
+		create_wargoal = {
+			type = annex_everything
+			target = KMN
+		}
+		add_political_power = 75
+	}
+}
+country_event = { #사회주의 공화국 아님 제국!!
+	id = korea.18
+	title = korea.18.title
+	desc = korea.18.desc
+	picture = GFX_report_event_generic_communist_congress
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #공화국
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = KOR_ai_behavior 
+					option = COMMUNISM_EMPIRE
+				}
+			}
+		}
+		name = korea.18.a
+		remove_ideas = KOR_yi_jin
+		remove_unit_leader = 20100
+		remove_unit_leader = 20101
+	}
+	option = { #제국
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = KOR_ai_behavior 
+					option = COMMUNISM
+				}
+			}
+		}
+		name = korea.18.b
+		set_cosmetic_tag = KOR_socialist_empire
+	}
+}
+country_event = { #봉천의 승낙!
+	id = korea.19
+	title = korea.12.title
+	desc = korea.12.desc
+	picture = GFX_report_event_hitler_handshake
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #그래 시작해보자고
+		name = korea.12.a
+		716 = {
+			set_state_name = "요동"
+		}
+		328 = {
+			set_state_name = "길림"
+		}
+		717 = {
+			set_state_name = "송강"
+		}
+		
+		KOR = {
+			transfer_state = 716
+			transfer_state = 328
+			transfer_state = 717
+			set_state_owner = 716
+			set_state_owner = 328
+			set_state_owner = 717
+		}	
+		
+	}
+}
+country_event = { #중국의 거절!
+	id = korea.20
+	title = korea.20.title
+	desc = korea.20.desc
+	picture = GFX_report_event_generic_military_parade
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #거절
+		name = korea.20.a
+		if = {
+			limit = {
+				is_ai = no
+			}
+			set_country_flag = korea_ww_china
+		}	
+		CHI = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = korea_ww_china
+			}	
+			country_event = {
+			    id = korea.21
+			}
+		}
+		ZLC = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = korea_ww_china
+			}	
+			country_event = {
+			    id = korea.21
+			}
+		}
+		JAP = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = korea_ww_china
+			}	
+		}
+		GXC = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = korea_ww_china
+			}	
+		}
+		XSM = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = korea_ww_china
+			}	
+		}
+		SIK = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = korea_ww_china
+			}	
+		}
+		SHX = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = korea_ww_china
+			}	
+		}
+		PRC = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = korea_ww_china
+			}	
+		}
+	}
+}
+country_event = { #중국의 거절!
+	id = korea.21
+	title = korea.21.title
+	desc = korea.21.desc
+	picture = GFX_report_event_generic_military_parade
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #거절
+		name = korea.21.a
+	}
+}
+country_event = { #중국의 거절!
+	id = korea.22
+	title = korea.22.title
+	desc = korea.22.desc
+	picture = GFX_report_event_generic_riot
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #거절
+		name = korea.22.a
+		KOR = {
+			country_event = {
+			    id = korea.20
+			}
+			if = {
+				limit = {
+					608 = {
+						is_owned_by = ZLC
+					}
+				}
+			declare_war_on = {
+				target = ZLC
+				type = puppet_wargoal_focus
+			}
+			declare_war_on = {
+				target = SND
+				type = puppet_wargoal_focus
+			}
+			}
+			if = {
+				limit = {
+					608 = {
+						is_owned_by = CHI
+					}
+				}
+			declare_war_on = {
+				target = CHI
+				type = puppet_wargoal_focus
+			}
+			}
+		}
+			news_event = {
+				id = kor_news.9
+				days = 1
+			}
+		complete_national_focus = KOR_kwangtungjun
+	}
+}
+country_event = { #중국의 거절!
+	id = korea.23
+	title = korea.23.title
+	desc = korea.23.desc
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #동의
+		name = korea.23.a
+		ai_chance = {
+			base = 99
+		}
+		KOR = {
+			transfer_state = 761
+			transfer_state = 612
+			transfer_state = 611
+			transfer_state = 621	
+			transfer_state = 330	
+			add_state_core = 612
+			add_state_core = 611
+			add_state_core = 621	
+			add_state_core = 329
+			add_state_core = 330	
+			annex_country = {
+				target = MON
+				transfer_troops = yes
+			}
+		}
+	}
+	option = { #거절
+		name = korea.23.b
+		ai_chance = {
+			base = 1
+		}
+			add_state_core = 612
+			add_state_core = 611
+			add_state_core = 621	
+			add_state_core = 329
+			add_state_core = 330	
+		end_puppet = MON
+		KOR = {
+			declare_war_on = {
+				target = MON 
+				type = annex_everything
+			}
+		}
+	}
+}
+country_event = { #
+	id = korea.24
+	title = korea.24.title
+	desc = korea.24.desc
+	picture = GFX_report_event_hitler_handshake
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.24.a
+		hidden_effect = {
+		country_event = {
+			id = korea.25 
+			days = 7
+		}
+		}
+	}
+}
+country_event = { #반란!
+	id = korea.25
+	title = korea.25.title
+	desc = korea.25.desc
+	picture = GFX_국회침입
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #진압
+		name = korea.25.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = KOR_ai_behavior 
+					option = NEUTRALITY
+				}
+			}
+		}
+		country_event = {
+			id = korea.26
+		}
+		remove_unit_leader = 19362 #이은
+		remove_unit_leader = 12140 #송호성
+		remove_unit_leader = 12138 #이병무
+	}	
+	option = { #근황파
+		name = korea.25.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				OR = {
+					is_historical_focus_on = yes
+					has_game_rule = {
+						rule = KOR_ai_behavior
+						option = DEFAULT
+					}				
+					has_game_rule = {
+						rule = KOR_ai_behavior
+						option = FASCIST_HISTORICAL
+					}
+				}
+			}
+		}
+		country_event = {
+			id = korea.27
+		}
+		remove_unit_leader = 12141 #이강
+		remove_unit_leader = 12139 #유동열
+		remove_unit_leader = 19364 #이범석
+	}
+}
+country_event = { #진압, 성공적,.
+	id = korea.26
+	title = korea.26.title
+	desc = korea.26.desc
+	picture = GFX_report_event_german_troops
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.26.a
+		set_country_flag = FLAG_the_fascist_is_won_in_pact
+		complete_national_focus = kor_korean_lebensraum
+		country_event = {
+			id = korea.71
+			hours = 3
+		}
+	}
+}
+country_event = { #
+	id = korea.27
+	title = korea.27.title
+	desc = korea.27.desc
+	picture = GFX_report_event_german_troops
+	
+	fire_only_once = yes	 
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.27.a
+		set_country_flag = FLAG_the_monarchist_is_won_in_pact
+		complete_national_focus = KOR_power_up_to_imperial
+	}
+}
+country_event = { #미국 - 대(對)한 금수조치, 파나이호 사건 사과 요구
+	id = korea.28
+	picture = GFX_report_event_generic_usa_treaty
+	title = {
+		text = korea.28.title
+		trigger = {
+			KOR = {
+				NOT = {
+					has_country_flag = FLAG_SAY_SORRY_TO_USA
+				}
+			}
+		}
+	}
+	desc = {
+		text = korea.28.desc
+		trigger = {
+			KOR = {
+				NOT = {
+					has_country_flag = FLAG_SAY_SORRY_TO_USA
+				}
+			}
+		}
+	}
+	title = {
+		text = korea.28.title.2
+		trigger = {
+			KOR = {
+				has_country_flag = FLAG_SAY_SORRY_TO_USA
+			}
+		}
+	}
+	desc = {
+		text = korea.28.desc.2
+		trigger = {
+			KOR = {
+				has_country_flag = FLAG_SAY_SORRY_TO_USA
+			}
+		}
+	}
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.28.a
+		trigger = {
+			KOR = {
+				NOT = {
+					has_country_flag = FLAG_SAY_SORRY_TO_USA
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+		KOR = { 
+			country_event = {
+				id = korea.29
+				hours = 4
+			}
+			add_ideas = KOR_embargo_us
+		}
+	}
+	
+	option = { #
+		name = korea.28.b
+		trigger = {
+			KOR = {
+				has_country_flag = FLAG_SAY_SORRY_TO_USA
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+		KOR = { 
+			country_event = {
+				id = korea.29
+				hours = 4
+			}
+		}
+	}
+} 
+country_event = { #결론 
+	id = korea.29
+	picture = GFX_report_event_german_speech
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	title = {
+		text = korea.29.title
+		trigger = {
+			NOT = {
+				has_country_flag = FLAG_SAY_SORRY_TO_USA
+			}	
+		}
+	}
+	desc = {
+		text = korea.29.desc
+		trigger = {
+			NOT = {
+				has_country_flag = FLAG_SAY_SORRY_TO_USA
+			}	
+		}
+	}
+	
+	title = {
+		text = korea.29.title.2
+		trigger = {
+			has_country_flag = FLAG_SAY_SORRY_TO_USA
+		}
+	}
+	
+	title = {
+		text = korea.29.desc.2
+		trigger = {
+			has_country_flag = FLAG_SAY_SORRY_TO_USA
+		}
+	}
+	
+	option = { #절대 안돼!
+		name = korea.29.b 
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			NOT = {
+				has_country_flag = FLAG_SAY_SORRY_TO_USA
+			}
+		}
+		set_country_flag = FLAG_USA_FUCK_TO_KOREA
+		set_country_flag = FLAG_END_OF_THE_PANAY
+		custom_effect_tooltip = TOOLTIP_CAN_LOCKUP_IN_FOCUS
+		
+		news_event = { id = kor_news.7 hours = 12 }
+	} 
+	option = { #중국에서 물러선다
+		name = korea.29.a
+		ai_chance = {
+			factor = 0
+		}
+		trigger = {
+			NOT = {
+				has_country_flag = FLAG_SAY_SORRY_TO_USA
+			}
+		}
+			if = {
+				limit = {
+					has_idea = war_economy
+				}
+				swap_ideas = {
+					remove_idea = war_economy
+					add_idea = civilian_economy
+				}
+			}
+			if = {
+				limit = {
+					has_idea = low_economic_mobilisation
+				}
+				swap_ideas = {
+					remove_idea = low_economic_mobilisation
+					add_idea = civilian_economy
+				}
+			}
+			if = {
+				limit = {
+					has_idea = partial_economic_mobilisation
+				}
+				swap_ideas = {
+					remove_idea = partial_economic_mobilisation
+					add_idea = civilian_economy
+				}
+			}
+			if = {
+				limit = {
+					has_idea = tot_economic_mobilisation
+				}
+				swap_ideas = {
+					remove_idea = tot_economic_mobilisation
+					add_idea = civilian_economy
+				}
+			}
+		add_timed_idea = {
+			idea = KOR_is_failed_china
+			days = 365
+		}
+		white_peace = ZLC
+		white_peace = CHI
+		white_peace = SHX
+		white_peace = SIK
+		white_peace = XSM
+		white_peace = SZC
+		white_peace = WZC
+		white_peace = SND
+		white_peace = HNC
+		white_peace = YUN
+		white_peace = GXC
+		if =  {
+			limit = {
+				has_government = fascism
+			}
+			country_event = {
+				id = korea.30
+				days = 7
+			}
+		}
+		set_country_flag = FLAG_KOR_WAS_ACCEPT_US_SUGGETION
+		set_country_flag = FLAG_END_OF_THE_PANAY
+	}
+	option = {
+		name = korea.29.c #제안을 정중히 거절한다.
+		trigger = { 
+			has_country_flag = FLAG_SAY_SORRY_TO_USA
+		}
+		set_country_flag = FLAG_END_OF_THE_PANAY
+		add_war_support = -0.05
+		USA = {
+			add_political_power = 120
+		}
+	}
+}
+country_event = { #결론
+	id = korea.30
+	title = korea.30.title
+	desc = korea.30.desc
+	picture = GFX_report_event_german_reichstag_bombed
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #중국에서 물러선다
+		name = korea.30.a
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1936.3.15"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		set_popularities = {
+			neutrality = 11
+			fascism = 5
+			communism = 14
+			democratic = 70
+		}
+		create_country_leader = {
+			name = "Kim Koo"
+			desc = ""
+			picture = "Portrait_Kim_Koo.dds"
+			expire = "1989.1.1"
+			ideology = conservatism
+			traits = {
+			}
+		}
+	}
+}
+country_event = { #난항에 빠진 공세
+	id = korea.34
+	title = korea.34.title
+	desc = korea.34.desc
+	picture = GFX_report_event_glorious_vehicle
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #중국에서 물러선다
+		name = korea.34.a
+		add_ideas = KOR_not_planed_attack
+	}
+}
+country_event = { #상하이 공습
+	id = korea.35
+	title = korea.35.title
+	desc = korea.35.desc
+	picture = GFX_report_event_gre_city_siege
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.35.a
+		load_oob = "KOR_shanghai"
+		transfer_state = 829
+		add_state_core = 829
+		829 = {
+			set_state_name = "상해"
+		}	
+		
+		set_province_name = {
+            id = 7014
+            name = "상해"
+        }
+		set_country_flag = KOR_SHANGHAI_ATTACK
+	}
+}
+country_event = { #
+	id = korea.36
+	title = korea.36.title
+	desc = korea.36.desc
+	picture = GFX_report_event_german_volunteers
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.36.a
+		set_technology = {
+			
+	mobile_warfare = 1
+		}
+	}		
+}
+country_event = { #미국 공습 시발아!!!!
+	id = korea.37
+	title = korea.37.title
+	desc = korea.37.desc
+	picture = GFX_report_event_hitler_handshake
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #악!!!!
+		name = korea.37.a
+		declare_war_on = {
+			target = USA
+			type = puppet_wargoal_focus
+		}
+		if = {
+			limit = {
+				is_ai = no
+			}
+			set_country_flag = korea_war_with_usa
+		}
+		hidden_effect = {
+		declare_war_on = {
+			target = PHI
+			type = puppet_wargoal_focus
+		}
+			set_state_controller = 638
+			set_state_controller = 632
+			set_state_controller = 623
+		}
+	}		
+}
+country_event = { #근황파 쿠데타
+	id = korea.38
+	title = korea.38.title
+	desc = korea.38.desc
+	picture = GFX_report_event_hitler_handshake
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #ㅇㅇ ㅋㅋ
+		name = korea.38.a
+		set_politics = {
+			ruling_party = neutrality
+			last_election = "1936.3.15"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		set_popularities = {
+			neutrality = 100
+			fascism = 0
+			communism = 0
+			democratic = 0
+		}
+		create_country_leader = {
+			name = "Yi Kang"
+			desc = ""
+			picture = "Portrait_yi_kang_old.png"
+			expire = "1989.1.1"
+			ideology = conservatism
+			traits = {
+			}
+		}
+		
+	}		
+	option = { #응~ 대가리 깨져도 울 정부 지지해~
+		name = korea.38.b
+		hidden_effect = {
+			start_civil_war = {
+				ruling_party = neutrality
+				ideology = despotism
+				size = 0.65
+				only_own_territory = no
+				capital = 525
+				states = { 
+					527 810 812 818 816 819 817
+				}
+				keep_unit_leaders = {
+					20100 20101 19361 19365 19366 19367 19368 19369 189390 19370 19371
+				}
+			}
+			KOR = {
+				set_capital = 525
+			}
+			set_politics = { 
+				ruling_party = democratic
+				elections_allowed = no
+			}
+		}
+		
+	}		
+}
+country_event = { #3분지계
+	id = korea.39
+	title = korea.39.title
+	desc = korea.39.desc
+	picture = GFX_report_event_japanese_chinese_surrender
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #3분할(위촉오 판도)
+		name = korea.39.a
+		release_puppet = SIK
+		puppet = SZC
+		puppet = GXC
+		puppet = QIN
+		SZC = {
+			set_cosmetic_tag = SZC_shuhan
+			create_country_leader = {
+				name = "Liu Chang"
+				desc = ""
+				expire = "1965.7.1"
+				ideology = fascism_ideology
+				traits = {
+				}
+			}
+			transfer_state = 753
+			transfer_state = 752
+			transfer_state = 751
+			transfer_state = 840
+			transfer_state = 605
+			transfer_state = 748
+			transfer_state = 846
+			transfer_state = 851
+			transfer_state = 603
+			transfer_state = 325
+			transfer_state = 747
+			transfer_state = 750
+			add_state_core = 753
+			add_state_core = 752
+			add_state_core = 751
+			add_state_core = 840
+			add_state_core = 605
+			add_state_core = 748
+			add_state_core = 846
+			add_state_core = 851
+			add_state_core = 603
+			add_state_core = 325
+			add_state_core = 747
+			add_state_core = 750
+		}
+		GXC = {
+			set_cosmetic_tag = GXC_housong
+			create_country_leader = {
+				name = "Kung Decheng"
+				desc = ""
+				expire = "1965.7.1"
+				ideology = fascism_ideology
+				traits = {
+				}
+			}
+			create_country_leader = {
+				name = "Kung Decheng"
+				desc = ""
+				expire = "1965.7.1"
+				ideology = despotism
+				traits = {
+				}
+			}
+			transfer_state = 613
+			transfer_state = 831
+			transfer_state = 830
+			transfer_state = 835
+			transfer_state = 749
+			transfer_state = 596
+			transfer_state = 600
+			transfer_state = 855
+			transfer_state = 854
+			transfer_state = 595
+			transfer_state = 848
+			transfer_state = 602
+			transfer_state = 847
+			transfer_state = 593
+			transfer_state = 839
+			transfer_state = 592
+			transfer_state = 838
+			transfer_state = 591
+			transfer_state = 599
+			transfer_state = 594
+			add_state_core = 613
+			add_state_core = 831
+			add_state_core = 830
+			add_state_core = 835
+			add_state_core = 749
+			add_state_core = 596
+			add_state_core = 600
+			add_state_core = 855
+			add_state_core = 854
+			add_state_core = 595
+			add_state_core = 848
+			add_state_core = 602
+			add_state_core = 847
+			add_state_core = 593
+			add_state_core = 839
+			add_state_core = 592
+			add_state_core = 838
+			add_state_core = 591
+			add_state_core = 599
+			add_state_core = 594
+			set_capital = 613
+		}
+		QIN = {
+			transfer_state = 608
+			transfer_state = 614
+			transfer_state = 615
+			transfer_state = 597
+			transfer_state = 842
+			transfer_state = 828
+			transfer_state = 607
+			transfer_state = 850
+			transfer_state = 744
+			transfer_state = 849
+			transfer_state = 620
+			transfer_state = 841
+			transfer_state = 606
+			transfer_state = 833
+			transfer_state = 844
+			transfer_state = 598
+			transfer_state = 622
+			transfer_state = 845
+			transfer_state = 856
+			transfer_state = 283
+		}
+		if = {
+			limit = {
+				MON = {
+					exists = yes
+				}
+			}
+			MON = {
+				transfer_state = 616
+				transfer_state = 756
+				transfer_state = 746
+				add_state_core = 616
+				add_state_core = 756
+				add_state_core = 746
+			}
+		}
+		if = {
+			limit = {
+				MON = {
+					exists = no
+				}
+			}
+				add_state_core = 616
+				add_state_core = 756
+				add_state_core = 746
+		}
+		TIB = {
+			transfer_state = 755
+			transfer_state = 754
+			transfer_state = 604
+			add_state_core = 755
+			add_state_core = 754
+			add_state_core = 604
+		}
+	}		
+	option = { #2분할(남북국)
+		name = korea.39.b
+		release_puppet = SIK
+		puppet = GXC
+		puppet = QIN
+		GXC = {
+			create_country_leader = {
+				name = "Kung Decheng"
+				desc = ""
+				expire = "1965.7.1"
+				ideology = fascism_ideology
+				traits = {
+				}
+			}
+			create_country_leader = {
+				name = "Kung Decheng"
+				desc = ""
+				expire = "1965.7.1"
+				ideology = despotism
+				traits = {
+				}
+			}
+			transfer_state = 613
+			transfer_state = 831
+			transfer_state = 830
+			transfer_state = 835
+			transfer_state = 749
+			transfer_state = 596
+			transfer_state = 600
+			transfer_state = 855
+			transfer_state = 854
+			transfer_state = 595
+			transfer_state = 848
+			transfer_state = 602
+			transfer_state = 847
+			transfer_state = 593
+			transfer_state = 839
+			transfer_state = 592
+			transfer_state = 838
+			transfer_state = 591
+			transfer_state = 599
+			transfer_state = 594
+			add_state_core = 613
+			add_state_core = 831
+			add_state_core = 830
+			add_state_core = 835
+			add_state_core = 749
+			add_state_core = 596
+			add_state_core = 600
+			add_state_core = 855
+			add_state_core = 854
+			add_state_core = 595
+			add_state_core = 848
+			add_state_core = 602
+			add_state_core = 847
+			add_state_core = 593
+			add_state_core = 839
+			add_state_core = 592
+			add_state_core = 838
+			add_state_core = 591
+			add_state_core = 599
+			add_state_core = 594
+			transfer_state = 748
+			transfer_state = 846
+			transfer_state = 851
+			transfer_state = 603
+			transfer_state = 325
+			transfer_state = 747
+			transfer_state = 750
+			add_state_core = 753
+			add_state_core = 752
+			add_state_core = 751
+			add_state_core = 840
+			add_state_core = 605
+			add_state_core = 748
+			add_state_core = 846
+			add_state_core = 851
+			add_state_core = 603
+			add_state_core = 325
+			add_state_core = 747
+			add_state_core = 750
+			set_capital = 613
+		}
+		QIN = {
+			transfer_state = 752
+			transfer_state = 751
+			transfer_state = 753
+			transfer_state = 605
+			transfer_state = 840
+			transfer_state = 608
+			transfer_state = 614
+			transfer_state = 615
+			transfer_state = 597
+			transfer_state = 842
+			transfer_state = 828
+			transfer_state = 607
+			transfer_state = 850
+			transfer_state = 744
+			transfer_state = 849
+			transfer_state = 620
+			transfer_state = 841
+			transfer_state = 606
+			transfer_state = 833
+			transfer_state = 844
+			transfer_state = 598
+			transfer_state = 622
+			transfer_state = 845
+			transfer_state = 856
+			transfer_state = 283
+		}
+		if = {
+			limit = {
+				MON = {
+					exists = yes
+				}
+			}
+			MON = {
+				transfer_state = 616
+				transfer_state = 756
+				transfer_state = 746
+				add_state_core = 616
+				add_state_core = 756
+				add_state_core = 746
+			}
+		}
+		if = {
+			limit = {
+				MON = {
+					exists = no
+				}
+			}
+				add_state_core = 616
+				add_state_core = 756
+				add_state_core = 746
+		}
+		TIB = {
+			transfer_state = 755
+			transfer_state = 754
+			transfer_state = 604
+			add_state_core = 755
+			add_state_core = 754
+			add_state_core = 604
+		}
+	}		
+	option = { #하나의 중국(청)
+		name = korea.39.c
+		puppet = QIN
+		release_puppet = SIK
+		QIN = {
+			
+			transfer_state = 608
+			transfer_state = 614
+			transfer_state = 615
+			transfer_state = 597
+			transfer_state = 842
+			transfer_state = 828
+			transfer_state = 607
+			transfer_state = 850
+			transfer_state = 744
+			transfer_state = 849
+			transfer_state = 620
+			transfer_state = 841
+			transfer_state = 606
+			transfer_state = 833
+			transfer_state = 844
+			transfer_state = 598
+			transfer_state = 622
+			transfer_state = 845
+			transfer_state = 856
+			transfer_state = 283
+			transfer_state = 613
+			transfer_state = 831
+			transfer_state = 830
+			transfer_state = 835
+			transfer_state = 749
+			transfer_state = 596
+			transfer_state = 600
+			transfer_state = 855
+			transfer_state = 854
+			transfer_state = 595
+			transfer_state = 848
+			transfer_state = 602
+			transfer_state = 847
+			transfer_state = 593
+			transfer_state = 839
+			transfer_state = 592
+			transfer_state = 838
+			transfer_state = 591
+			transfer_state = 599
+			transfer_state = 594
+			transfer_state = 753
+			transfer_state = 752
+			transfer_state = 751
+			transfer_state = 840
+			transfer_state = 605
+			transfer_state = 748
+			transfer_state = 846
+			transfer_state = 851
+			transfer_state = 603
+			transfer_state = 325
+			transfer_state = 747
+			transfer_state = 750
+		}
+		if = {
+			limit = {
+				MON = {
+					exists = yes
+				}
+			}
+			MON = {
+				transfer_state = 616
+				transfer_state = 756
+				transfer_state = 746
+				add_state_core = 616
+				add_state_core = 756
+				add_state_core = 746
+			}
+		}
+		if = {
+			limit = {
+				MON = {
+					exists = no
+				}
+			}
+				add_state_core = 616
+				add_state_core = 756
+				add_state_core = 746
+		}
+		TIB = {
+			transfer_state = 755
+			transfer_state = 754
+			transfer_state = 604
+			add_state_core = 755
+			add_state_core = 754
+			add_state_core = 604
+		}
+	}		
+}
+
+country_event = { #전쟁 선동
+	id = korea.40
+	title = korea.40.title
+	desc = korea.40.desc
+	picture = GFX_report_event_gathering_protest
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.40.a
+		add_war_support = 0.05
+		set_country_flag = FLAG_THE_QINGDAO_PROBLEM
+		complete_national_focus = kor_the_new_history
+	}
+}
+
+country_event = { #칭다오 도발
+	id = korea.41
+	title = korea.41.title
+	desc = korea.41.desc
+	picture = GFX_report_event_british_inspect_troops
+	
+	fire_only_once = yes
+	trigger = {
+		tag = KOR
+		has_completed_focus = kor_encouraging_patriotism_2
+		controls_state = 743
+	}
+	
+	option = { #젠장! 저 뙤놈새끼들!
+		name = korea.41.a 
+		set_country_flag = FLAG_THE_QINGDAO_PROBLEM_1
+		news_event = { id = kor_news.8 days = 2 }
+		ZLC = {
+			country_event = {
+				id = korea.42
+				days = 1
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = korea.40
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = { #청도사건 - 중민
+	id = korea.42
+	title = korea.42.title
+	desc = korea.42.desc
+	picture = GFX_report_event_hitler_handshake
+	 
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.42.a
+	}
+}
+country_event = { #청도사건 - 중민
+	id = korea.43
+	title = korea.43.title
+	desc = korea.43.desc
+	picture = GFX_report_event_hitler_handshake
+	 
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.43.a
+		add_ideas = KOR_embargo_us_2
+		remove_ideas = KOR_embargo_us
+	}
+}
+country_event = { #미국의 단독 점령
+	id = korea.44
+	title = korea.44.title
+	desc = korea.44.desc
+	picture = GFX_report_event_japanese_soldiers_03
+	 
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.44.a
+					USA = { #한국 괴뢰화, 만주민국 설립, 제주 해군기지 획득
+						puppet = KMN
+						puppet = KOR
+						transfer_state = 745
+						transfer_state = 813
+					}
+					KMN = { #만주민국 건설 wwww
+						transfer_state = 825
+						transfer_state = 824
+						transfer_state = 823
+						transfer_state = 717
+						transfer_state = 328
+						transfer_state = 716
+						transfer_state = 715
+						transfer_state = 610
+						transfer_state = 853
+						
+						transfer_state = 612
+						transfer_state = 611
+						transfer_state = 621
+						
+						transfer_state = 852
+						transfer_state = 714
+						transfer_state = 761
+					}
+					JAP = { #일본에게 조차지 돌려줌
+						transfer_state = 860
+						transfer_state = 858
+						transfer_state = 859
+					}
+	}
+}
+country_event = { #소련과의 공동 분할
+	id = korea.45
+	title = korea.45.title
+	desc = korea.45.desc
+	picture = GFX_report_event_japanese_soldiers_03
+	 
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.45.a
+		
+					USA = { #한국 괴뢰화, 만주민국 설립, 제주 해군기지 획득
+						puppet = KMN
+						puppet = KOR
+						transfer_state = 745
+						transfer_state = 813
+					}
+					KMN = { #만주민국 건설, 근데 분단을 섞은
+						transfer_state = 825
+						transfer_state = 824
+						transfer_state = 823
+						transfer_state = 717
+						transfer_state = 328
+						transfer_state = 716
+						transfer_state = 715
+						transfer_state = 610
+						transfer_state = 853
+						
+						transfer_state = 612
+						transfer_state = 611
+						transfer_state = 621
+						
+						#transfer_state = 852
+						#transfer_state = 714
+						#transfer_state = 761
+					}
+					JAP = { #일본에게 조차지 돌려줌
+						transfer_state = 860
+						transfer_state = 858
+						transfer_state = 859
+					}
+					SOV = { #쏘오련이 북만주 습득, 북반도 먹음. 한반도 반갈죽 ㅇㅇ..
+						puppet = PRK
+						puppet = MAN
+					}
+					MAN = {
+						transfer_state = 714
+						transfer_state = 852
+						transfer_state = 761
+						
+						add_state_core = 714
+						add_state_core = 852
+						add_state_core = 761
+						add_state_core = 825
+						add_state_core = 824
+						add_state_core = 823
+						add_state_core = 717
+						add_state_core = 328
+						add_state_core = 716
+						add_state_core = 715
+						add_state_core = 610
+						add_state_core = 853
+						add_state_core = 612
+						add_state_core = 611
+						add_state_core = 621
+					}
+	}
+}
+country_event = { #소련의 단독 점령
+	id = korea.46
+	title = korea.46.title
+	desc = korea.46.desc
+	picture = GFX_report_event_japanese_soldiers_03
+	 
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.46.a
+		
+					SOV = {
+						transfer_state = 813
+						transfer_state = 745
+						puppet = KOR
+						puppet = MAN
+					}
+					MAN = {
+						transfer_state = 825
+						transfer_state = 824
+						transfer_state = 823
+						transfer_state = 717
+						transfer_state = 328
+						transfer_state = 716
+						transfer_state = 715
+						transfer_state = 610
+						transfer_state = 853
+						
+						transfer_state = 612
+						transfer_state = 611
+						transfer_state = 621
+						
+						transfer_state = 852
+						transfer_state = 714
+						transfer_state = 761
+						
+						add_state_core = 611
+						add_state_core = 612
+						add_state_core = 621
+					}
+					every_state = {
+						limit = {
+							is_core_of = KMN
+						}
+						add_core_of = MAN
+					}
+					KOR = {
+						remove_ideas = KOR_yi_jin
+						remove_ideas = KOR_yi_jin_2
+						remove_unit_leader = 19363
+						remove_unit_leader = 19362
+						remove_unit_leader = 20100
+					}
+	}
+}
+country_event = { #소련의 미국과의 분할점령
+	id = korea.47
+	title = korea.47.title
+	desc = korea.47.desc
+	picture = GFX_report_event_japanese_soldiers_03
+	 
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.47.a
+					SOV = { #여순먹고 만주 괴뢰화
+						transfer_state = 745
+						puppet = MAN
+						puppet = PRK
+					}
+					MAN = {
+						transfer_state = 825
+						transfer_state = 824
+						transfer_state = 823
+						transfer_state = 717
+						transfer_state = 328
+						transfer_state = 716
+						transfer_state = 715
+						transfer_state = 610
+						transfer_state = 853
+						
+						transfer_state = 612
+						transfer_state = 611
+						transfer_state = 621
+						
+						transfer_state = 852
+						transfer_state = 714
+						transfer_state = 761
+						
+						add_state_core = 611
+						add_state_core = 612
+						add_state_core = 621
+					}
+					USA = {
+						transfer_state = 813
+						puppet = KOR
+					}
+					every_state = {
+						limit = {
+							is_core_of = KMN
+						}
+						add_core_of = MAN
+					}
+					PRK = { #북괴 형성
+						transfer_state = 527
+						transfer_state = 810
+						transfer_state = 812
+						transfer_state = 818
+						transfer_state = 816
+						transfer_state = 819
+						transfer_state = 817
+						
+					}
+					every_state = {
+						limit = {
+							is_core_of = KOR
+						}
+						add_core_of = PRK
+					}
+	}
+} 
+country_event = { #일본의 단독점령
+	id = korea.48
+	title = korea.48.title
+	desc = korea.48.desc
+	picture = GFX_report_event_japanese_soldiers_03
+	 
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.48.a
+		
+					JAP = { #일본이 한국 괴뢰국 세우고, 제주와 여순을 먹는다
+						puppet = KMN
+						puppet = KOR
+						transfer_state = 745
+						transfer_state = 813
+					}
+					KOR = { #한국은 북방 3도만 남기고 뒈짖한다
+						transfer_state = 825
+						transfer_state = 824
+						transfer_state = 823
+					}
+					KMN = { #만주 풀로 괴뢰국
+						transfer_state = 716
+						transfer_state = 328
+						transfer_state = 717
+						transfer_state = 714
+						transfer_state = 715
+						transfer_state = 610
+						transfer_state = 853
+						transfer_state = 852
+					}
+	}
+}
+country_event = { #대한제국의 상황
+	id = korea.49
+	title = korea.49.title
+	desc = korea.49.desc
+	picture = GFX_Korean_Red_Cross
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	 
+	option = { #
+		name = korea.49.a
+		hidden_effect = {
+			country_event = {
+				id = korea.50
+				days = 6
+			}
+		}
+	}
+}
+country_event = { #이강 - 중추원
+	id = korea.50
+	title = korea.50.title
+	desc = korea.50.desc
+	picture = GFX_국회침입
+	
+	fire_only_once = yes
+	
+    is_triggered_only = yes
+	 
+	option = { #
+		name = korea.50.a
+		country_event = {
+			id = korea.53
+		}
+	}
+}
+country_event = { #유괴
+	id = korea.51
+	title = korea.51.title
+	desc = korea.51.desc
+	picture = GFX_고원의_아이들
+	trigger = {
+		tag = KOR
+		date > 1936.4.2
+	}
+	fire_only_once = yes
+	 
+	option = { #
+		name = korea.51.a
+	}
+}
+country_event = { #군인
+	id = korea.52
+	title = korea.52.title
+	desc = korea.52.desc
+	picture = GFX_계엄군
+	fire_only_once = yes
+    is_triggered_only = yes
+	 
+	option = { #
+		name = korea.52.a
+	}
+}
+country_event = { #다짐
+	id = korea.53
+	title = korea.53.title
+	desc = korea.53.desc
+	picture = GFX_국회침입
+	fire_only_once = yes
+    is_triggered_only = yes
+	 
+	option = { #
+		name = korea.53.a
+	}
+}
+country_event = { #2.26 사건
+	id = korea.54
+	title = korea.54.title
+	desc = korea.54.desc
+	picture = GFX_TLE_korea_event_none
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { #법률안은 논란 속에서 통과되었다.
+		name = korea.54.a
+		trigger = {
+			NOT = {
+				has_country_flag = FLAG_CUTTING_ACCEPT_MONEY
+				has_country_flag = FLAG_CUTTING_ACCEPT_COMMUNITY
+			}
+		}
+		hidden_effect = { 
+			country_event = {
+				id = korea.25 
+				days = 8
+			}
+			hidden_effect = {
+				complete_national_focus = kor_monarchy
+			}
+		}
+	}	
+	option = { #
+		name = korea.54.b
+		trigger = {
+			has_country_flag = FLAG_CUTTING_ACCEPT_MONEY
+			has_country_flag = FLAG_CUTTING_ACCEPT_COMMUNITY
+		}
+		hidden_effect = {
+			complete_national_focus = KOR_use_the_anti-armed
+		}
+	}	
+}
+country_event = { #마지막 제국
+	id = korea.55
+	title = korea.55.title
+	desc = korea.55.desc
+	picture = GFX_report_event_usa_ne_hurricane
+	fire_only_once = yes
+	trigger = {
+		tag = KOR
+		KOR = {
+			has_country_leader = {
+				name = "Yi Kang"
+				ruling_only = yes
+			}
+			has_government = fascism
+		}
+		OR = {
+			USA = {
+				has_war_with = KOR
+				OR = {
+					divisions_in_state = {
+						state = 525
+						size > 0
+					}
+					divisions_in_state = {
+						state = 527
+						size > 0
+					}
+					divisions_in_state = {
+						state = 807
+						size > 0
+					}
+					divisions_in_state = {
+						state = 808
+						size > 0
+					}
+					divisions_in_state = {
+						state = 809
+						size > 0
+					}
+					divisions_in_state = {
+						state = 810
+						size > 0
+					}
+					divisions_in_state = {
+						state = 811
+						size > 0
+					}
+					divisions_in_state = {
+						state = 812
+						size > 0
+					}
+					divisions_in_state = {
+						state = 813
+						size > 0
+					}
+					divisions_in_state = {
+						state = 814
+						size > 0
+					}
+					divisions_in_state = {
+						state = 815
+						size > 0
+					}
+					divisions_in_state = {
+						state = 816
+						size > 0
+					}
+					divisions_in_state = {
+						state = 817
+						size > 0
+					}
+					divisions_in_state = {
+						state = 818
+						size > 0
+					}
+					divisions_in_state = {
+						state = 819
+						size > 0
+					}
+				}
+			}
+			SOV = {
+				has_war_with = KOR
+				OR = {
+					divisions_in_state = {
+						state = 525
+						size > 0
+					}
+					divisions_in_state = {
+						state = 527
+						size > 0
+					}
+					divisions_in_state = {
+						state = 807
+						size > 0
+					}
+					divisions_in_state = {
+						state = 808
+						size > 0
+					}
+					divisions_in_state = {
+						state = 809
+						size > 0
+					}
+					divisions_in_state = {
+						state = 810
+						size > 0
+					}
+					divisions_in_state = {
+						state = 811
+						size > 0
+					}
+					divisions_in_state = {
+						state = 812
+						size > 0
+					}
+					divisions_in_state = {
+						state = 813
+						size > 0
+					}
+					divisions_in_state = {
+						state = 814
+						size > 0
+					}
+					divisions_in_state = {
+						state = 815
+						size > 0
+					}
+					divisions_in_state = {
+						state = 816
+						size > 0
+					}
+					divisions_in_state = {
+						state = 817
+						size > 0
+					}
+					divisions_in_state = {
+						state = 818
+						size > 0
+					}
+					divisions_in_state = {
+						state = 819
+						size > 0
+					}
+				}
+			}
+			CHI = {
+				has_war_with = KOR
+				OR = {
+					divisions_in_state = {
+						state = 525
+						size > 0
+					}
+					divisions_in_state = {
+						state = 527
+						size > 0
+					}
+					divisions_in_state = {
+						state = 807
+						size > 0
+					}
+					divisions_in_state = {
+						state = 808
+						size > 0
+					}
+					divisions_in_state = {
+						state = 809
+						size > 0
+					}
+					divisions_in_state = {
+						state = 810
+						size > 0
+					}
+					divisions_in_state = {
+						state = 811
+						size > 0
+					}
+					divisions_in_state = {
+						state = 812
+						size > 0
+					}
+					divisions_in_state = {
+						state = 813
+						size > 0
+					}
+					divisions_in_state = {
+						state = 814
+						size > 0
+					}
+					divisions_in_state = {
+						state = 815
+						size > 0
+					}
+					divisions_in_state = {
+						state = 816
+						size > 0
+					}
+					divisions_in_state = {
+						state = 817
+						size > 0
+					}
+					divisions_in_state = {
+						state = 818
+						size > 0
+					}
+					divisions_in_state = {
+						state = 819
+						size > 0
+					}
+				}
+			}
+		}
+	}	
+	mean_time_to_happen = {
+		days = 19
+	}
+	 
+	option = { #
+		name = korea.55.a
+	}
+}
+####
+country_event = { #중국군의 승리
+	id = korea.56
+	title = korea.56.title
+	desc = korea.56.desc
+	picture = GFX_TLE_korea_event_none
+	fire_only_once = yes
+    is_triggered_only = yes
+	 
+	option = { #씨발
+		name = korea.56.a
+			transfer_state = 716
+			transfer_state = 328
+			transfer_state = 717
+			transfer_state = 714
+			transfer_state = 715
+			transfer_state = 610
+			transfer_state = 853
+			transfer_state = 852
+			transfer_state = 825
+			transfer_state = 824
+			transfer_state = 823
+			transfer_state = 745
+			puppet = KOR
+	}
+}
+######
+country_event = { #숙청
+	id = korea.57
+	title = korea.57.title
+	desc = korea.57.desc
+	picture = GFX_TLE_korea_event_none
+	fire_only_once = yes
+    is_triggered_only = yes
+	 
+	option = { #오, 천만세에 복록을!
+		name = korea.57.a
+	}
+}
+country_event = { #주먹밥 한덩이
+	id = korea.58
+	title = korea.58.title
+	desc = korea.58.desc
+	picture = GFX_TLE_korea_event_none
+	fire_only_once = yes
+	trigger = {
+		tag = KOR
+		OR = {
+			has_war_with = ZLC
+			has_war_with = CHI
+		}
+		controls_state = 608
+	}
+	mean_time_to_happen = {
+		months = 3
+	}
+	 
+	option = { #
+		name = korea.58.a
+	}
+}
+country_event = { #위안부
+	id = korea.59
+	title = korea.59.title
+	desc = korea.59.desc
+	picture = GFX_위안부
+	fire_only_once = yes
+	trigger = {
+		tag = KOR
+		has_war = yes
+		has_war_with = {
+			OR = {
+				has_war_with = ZLC
+				has_war_with = CHI
+				has_war_with = USA
+				has_war_with = WZC
+				has_war_with = SOV
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	 
+	option = { #못다 핀 꽃과 같이 졌다.
+		name = korea.59.a
+	}
+}
+
+country_event = { #안됨
+	id = korea.60
+	title = korea.60.desc
+	picture = GFX_TLE_korea_event_none
+	fire_only_once = yes
+    is_triggered_only = yes
+	 
+}
+
+country_event = { #
+	id = korea.61
+	title = korea.61.title
+	desc = korea.61.desc
+	picture = GFX_TLE_korea_event_none
+	fire_only_once = yes
+	is_triggered_only = yes
+	 
+	option = { #ㅗㅗ~
+		name = korea.61.a
+		trigger = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				OR = {
+					is_historical_focus_on = yes
+					has_game_rule = {
+						rule = KOR_ai_behavior
+						option = DEFAULT
+					}				
+					has_game_rule = {
+						rule = KOR_ai_behavior
+						option = FASCIST_HISTORICAL
+					}	
+					has_game_rule = {
+						rule = KOR_ai_behavior
+						option = RANDOM
+					}
+				}
+			}
+		}
+		custom_effect_tooltip = TOOLTIP_WILL_BE_SUPPORT_ARMY
+		add_war_support = 0.02
+	}
+	option = { #지지해~
+		name = korea.61.b
+		trigger = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				has_game_rule = {
+					rule = KOR_ai_behavior 
+					option = DEMOCRATIC
+				}
+			}
+		}
+		custom_effect_tooltip = TOOLTIP_WILL_BE_SUPPORT_DEMOCRATIST
+		hidden_effect = {
+			set_country_flag = FLAG_CUTTING_ACCEPT_MONEY
+		}
+		add_war_support = -0.05
+	}
+}
+#####
+country_event = { #수도방위군
+	id = korea.62
+	title = korea.62.title
+	desc = korea.62.desc
+	picture = GFX_TLE_korea_event_none
+	fire_only_once = yes
+	is_triggered_only = yes
+	 
+	option = { #
+		name = korea.62.a
+		load_oob = "KOR_seoul"
+	}
+}
+country_event = { #파나이호 사건 - 미국
+	id = korea.63
+	title = korea.63.title
+	desc = korea.63.desc
+	picture = GFX_TLE_korea_event_none
+	fire_only_once = yes
+	is_triggered_only = yes
+	 
+	option = { #
+		name = korea.63.a
+		country_event = {
+			id = korea.28
+			days = 15
+		}
+	}
+}
+country_event = { #파나이호 사건 - 조선
+	id = korea.64
+	title = korea.64.title
+	desc = korea.64.desc
+	picture = GFX_TLE_korea_event_none
+	fire_only_once = yes
+	is_triggered_only = yes
+	 
+	option = { #
+		name = korea.64.a
+	}
+}
+#############
+country_event = { #청소
+	id = korea.65
+	title = korea.65.title
+	desc = korea.65.desc
+	picture = GFX_TLE_korea_event_none
+	fire_only_once = yes
+	is_triggered_only = yes
+	 
+	option = { #
+		name = korea.65.a
+	}
+}
+country_event = { #
+	id = korea.66
+	title = korea.66.title
+	desc = korea.66.desc
+	picture = GFX_TLE_korea_event_none
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = korea.66.a
+		trigger = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				OR = {
+					is_historical_focus_on = yes
+					has_game_rule = {
+						rule = KOR_ai_behavior
+						option = DEFAULT
+					}				
+					has_game_rule = {
+						rule = KOR_ai_behavior
+						option = FASCIST_HISTORICAL
+					}	
+					has_game_rule = {
+						rule = KOR_ai_behavior
+						option = RANDOM
+					}
+				}
+			}
+		}
+		custom_effect_tooltip = TOOLTIP_WILL_BE_SUPPORT_ARMY
+		add_stability = 0.02
+	}
+	option = {
+		name = korea.66.b
+		trigger = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				has_game_rule = {
+					rule = KOR_ai_behavior 
+					option = DEMOCRATIC
+				}
+			}
+		}
+		custom_effect_tooltip = TOOLTIP_WILL_BE_SUPPORT_DEMOCRATIST
+		hidden_effect = {
+			set_country_flag = FLAG_CUTTING_ACCEPT_COMMUNITY
+		}
+		add_stability = -0.02
+	}
+}
+country_event = { #결론
+	id = korea.67
+	title = korea.67.title
+	desc = korea.67.desc
+	picture = GFX_법안상정
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.67.a
+		set_country_flag = FLAG_EULHAE_PACT_IS_END
+	}
+}
+country_event = { #결론
+	id = korea.68 
+	title = korea.68.title
+	desc = korea.68.desc
+	picture = GFX_윤봉길
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.68.a
+		set_country_flag = FLAG_THE_COMMUNISTS_TERROR_HAS_BEEN_STATED
+		custom_effect_tooltip = TOOLTIP_CAN_COMPLETE_FOCUS_KOR
+	}
+}
+country_event = { #결론
+	id = korea.69
+	title = korea.69.title
+	desc = korea.69.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.69.a
+		create_wargoal = {
+			target = KOR
+			type = puppet_wargoal_focus
+		}
+	}
+}
+####
+country_event = { #시국설명
+	id = korea.70
+	title = korea.70.title
+	desc = korea.70.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.70.a
+		
+	}
+}
+country_event = { #총리의 하야
+	id = korea.71
+	title = korea.71.title
+	desc = korea.71.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.71.a
+		
+	}
+}
+country_event = { #구악 일소
+	id = korea.72
+	title = korea.72.title
+	desc = korea.72.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.72.a
+		
+	}
+}
+country_event = { #중국으로
+	id = korea.73
+	title = korea.73.title
+	desc = korea.73.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.73.a
+		
+	}
+}
+country_event = { #환호
+	id = korea.74
+	title = korea.74.title
+	desc = korea.74.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.74.a
+		
+	}
+}
+##########
+country_event = { #결론
+	id = korea.777
+	title = korea.777.title
+	desc = korea.777.desc
+	picture = GFX_report_event_korean_war_march
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.777.a
+		country_event = {
+			id = korea.778
+		}
+	}
+}
+country_event = { #결론
+	id = korea.778
+	title = korea.778.title
+	desc = korea.778.desc
+	picture = GFX_report_event_korean_war_march
+	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.777.a
+		country_event = {
+			id = korea.779
+		}
+	} 
+}
+country_event = { #결론
+	id = korea.779
+	title = korea.779.title
+	desc = korea.779.desc
+	picture = GFX_report_event_korean_war_march
+	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.779.a
+	}
+	option = { #
+		name = korea.779.b
+		country_event = {
+			id = korea.780
+		} 
+	}
+}
+country_event = { #결론
+	id = korea.780
+	title = korea.780.title
+	desc = korea.780.desc
+	picture = GFX_report_event_korean_war_march
+	
+    is_triggered_only = yes
+	 
+	option = { #
+		name = korea.780.a
+		country_event = {
+			id = korea.781
+		}
+	}
+	option = { #
+		name = korea.780.b
+	}
+}
+country_event = { #결론
+	id = korea.781
+	title = korea.781.title
+	desc = korea.781.desc
+	picture = GFX_report_event_korean_war_march
+	
+    is_triggered_only = yes
+	 
+	option = { #
+		name = korea.781.a
+	}
+}
+country_event = { #결론
+	id = korea.782
+	title = korea.782.title
+	desc = korea.782.desc
+	picture = GFX_report_event_korean_war_march
+	
+    is_triggered_only = yes
+	 
+	option = { #
+		name = korea.782.a
+	}
+}

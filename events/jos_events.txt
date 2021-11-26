@@ -64,7 +64,7 @@ country_event = {
 			transfer_state = 803
 			transfer_state = 805
 			transfer_state = 806
-			transfer_state = 807
+			transfer_state = 835
 			
 			525 = {
 				create_unit = {
@@ -371,7 +371,7 @@ country_event = {
 		name = joseon.11.a
 		transfer_state = 800
 		transfer_state = 801
-		transfer_state = 807
+		transfer_state = 835
 		800 = {
 			create_unit = {
 				division = "name = \"지역의용군\" division_template = \"독립군\" start_experience_factor = 0.5 start_equipment_factor = 0.1"

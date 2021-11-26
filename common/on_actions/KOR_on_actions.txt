@@ -43,6 +43,76 @@ on_actions = {
 			}
 		}
 	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = ZLC
+					owns_state = 608
+					CHI = {
+						NOT = {
+							has_country_flag = FLAG_CHI_COSMETIC_CHINA
+						}
+						NOT = {
+							has_country_flag = FLAG_CHI_COSMETIC_CHINA
+						}
+						owns_state = 613
+					}
+				}
+				CHI = {
+					set_cosmetic_tag = CHI
+					set_country_flag = FLAG_CHI_COSMETIC_CHINA
+					save_global_event_target_as = WTT_current_china_leader
+					set_major = yes
+					if = {
+						limit = {
+							YUN = {
+								is_ai = yes
+							}
+						}
+						transfer_state = 879
+						transfer_state = 603
+						transfer_state = 874
+					}
+					if = {
+						limit = {
+							SZC = {
+								is_ai = yes
+							}
+						}
+						transfer_state = 868
+						transfer_state = 605
+						transfer_state = 748
+					}
+					if = {
+						limit = {
+							HNC = {
+								is_ai = yes
+							}
+						}
+						annex_country = {
+							target = HNC
+							transfer_troops = yes
+						}
+					}
+					if = {
+						limit = {
+							SND = {
+								is_ai = yes
+							}
+						}
+						annex_country = {
+							target = SND
+							transfer_troops = yes
+						}
+					}
+				}
+				ZLC = {
+					clear_global_event_targets = yes
+				}
+			}
+		}
+	}
 	on_declare_war = {
 		effect = {
 			if = {
@@ -108,19 +178,8 @@ on_actions = {
 			if = {
 				limit = {
 					FROM = {
-						OR = {
-							original_tag = ZLC
-							original_tag = WZC
-							original_tag = SHX
-							original_tag = XSM
-							original_tag = SND
-							original_tag = CHI
-							original_tag = HNC
-							original_tag = YUN
-							original_tag = SZC
-							original_tag = GXC
-							original_tag = SIK
-						}
+						
+					is_independent_china_or_warlord = yes
 					}
 					ROOT = {
 						original_tag = KOR
@@ -137,9 +196,55 @@ on_actions = {
 								has_country_flag = FLAG_UNITED_FRONT_ZLC
 							}
 						}
+						country_lock_all_division_template = no
+						hidden_effect = {
+							create_faction = FACTION_ZLC_UNITED_FRONT
+							set_rule = {
+								can_create_faction = yes
+							}	
+							
+							CHI = {
+								set_cosmetic_tag = CHI_nanking
+								set_country_flag = FLAG_CHI_COSMETIC_NANKING
+								set_capital = 613
+								add_ideas = CHI_army_corruption_1
+							}
+						if = {
+							limit = {
+								WZC = {
+									is_ai = yes
+									exists = yes
+								}
+							}
+							CHI = {
+								annex_country = {
+									target = WZC
+									transfer_troops = yes
+								}
+							}
+						}
+						if = {
+							limit = {
+								AHC = {
+									exists = yes
+									is_ai = yes
+								}
+							}
+							CHI = {
+								annex_country = {
+									target = AHC
+									transfer_troops = yes
+								}
+							}
+						}
+						CHI = {
+							set_major = yes
+						}
+						}
 						country_event = {
 							id = china.1093
 						}
+						
 						set_country_flag = FLAG_UNITED_FRONT_ZLC
 					}
 				}
@@ -267,7 +372,9 @@ on_actions = {
 			if = {
 				limit = {
 					tag = KOR #점령국 - 대한
-					FROM = { tag = CHI } #피점령국 - 중국
+					FROM = {
+						is_independent_china_or_warlord = yes
+						} #피점령국 - 중국
 					FROM.FROM = { state = 613 } #점령 주 - 난징
 				}
                 FROM.FROM = {
@@ -281,7 +388,7 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					tag = CHI #점령국 - 중국
+						is_independent_china_or_warlord = yes #점령국 - 중국
 					FROM = { tag = KOR } #피점령국 - 대한
 					FROM.FROM = { state = 613 } #점령 주 - 난징
 				}
@@ -297,7 +404,9 @@ on_actions = {
 			if = {
 				limit = {
 					tag = KOR #점령국 - 대한
-					FROM = { tag = CHI } #피점령국 - 중국
+					FROM = {
+						is_independent_china_or_warlord = yes
+						} #피점령국 - 중국
 					FROM.FROM = { state = 743 } #점령 주 - 칭다오
 				}
                 FROM.FROM = {
@@ -311,7 +420,7 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					tag = CHI #점령국 - 중국
+						is_independent_china_or_warlord = yes #점령국 - 중국
 					FROM = { tag = KOR } #피점령국 - 대한
 					FROM.FROM = { state = 743 } #점령 주 - 청도
 				}
@@ -327,8 +436,10 @@ on_actions = {
 			if = {
 				limit = {
 					tag = KOR #점령국 - 대한
-					FROM = { tag = CHI } #피점령국 - 중국
-					FROM.FROM = { state = 826 } #점령 주 - 톈진
+					FROM = { 
+						is_independent_china_or_warlord = yes
+					} #피점령국 - 중국
+					FROM.FROM = { state = 854 } #점령 주 - 톈진
 				}
                 FROM.FROM = {
 					set_state_name = "천진"
@@ -341,9 +452,9 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					tag = CHI #점령국 - 중국
+					is_independent_china_or_warlord = yes #점령국 - 중국
 					FROM = { tag = KOR } #피점령국 - 대한
-					FROM.FROM = { state = 826 } #점령 주 - 톈진
+					FROM.FROM = { state = 854 } #점령 주 - 톈진
 				}
                 FROM.FROM = {
 					set_state_name = "톈진"
@@ -358,13 +469,7 @@ on_actions = {
 				limit = {
 					tag = KOR #점령국 - 대한
 					FROM = { 	
-						OR = {
-							tag = ZLC 
-							tag = CHI 
-							tag = WZC 
-							tag = PRC 
-							tag = QIN 
-						}	
+						is_independent_china_or_warlord = yes
 					} #피점령국 - 중국
 					FROM.FROM = { state = 608 } #점령 주 - 북경
 				}
@@ -373,7 +478,7 @@ on_actions = {
 					
 				}
                 set_province_name = {
-                    id = 9843
+                    id = 9871
                     name = "북경"
                 }
 			}
@@ -381,13 +486,7 @@ on_actions = {
 				limit = {
 					tag = KOR #점령국 - 대한
 					FROM = { 	
-						OR = {
-							tag = ZLC 
-							tag = CHI 
-							tag = WZC 
-							tag = PRC 
-							tag = QIN 
-						}	
+						is_independent_china_or_warlord = yes
 					} #피점령국 - 중국
 					FROM.FROM = { state = 608 } #점령 주 - 북경
 					KOR = {
@@ -410,13 +509,7 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					OR = {
-						tag = ZLC 
-						tag = CHI 
-						tag = WZC 
-						tag = PRC 
-						tag = QIN 
-					}	 
+					is_independent_china_or_warlord = yes
 					#점령국 - 중국
 					FROM = { tag = KOR } #피점령국 - 대한
 					FROM.FROM = { state = 608 } #점령 주 - 북경
@@ -426,7 +519,7 @@ on_actions = {
 					
 				}
                 set_province_name = {
-                    id = 9843
+                    id = 9871
                     name = "베이징"
                 }
 			}
@@ -434,13 +527,8 @@ on_actions = {
 				limit = {
 					tag = KOR #점령국 - 대한
 					FROM = { 
-						OR = {
-							tag = ZLC 
-							tag = CHI 
-							tag = WZC 
-							tag = PRC 
-							tag = QIN 
-						}
+						
+						is_independent_china_or_warlord = yes
 					} #피점령국 - 중국
 					FROM.FROM = { state = 605 } #점령 주 - 중경
 				}
@@ -455,13 +543,7 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					OR = {
-						tag = ZLC 
-						tag = CHI 
-						tag = WZC 
-						tag = PRC 
-						tag = QIN
-					} #점령국 - 중국
+					is_independent_china_or_warlord = yes
 					FROM = { tag = KOR } #피점령국 - 대한
 					FROM.FROM = { state = 605 } #점령 주 - 중경
 				}
@@ -478,16 +560,11 @@ on_actions = {
 				limit = {
 					tag = KOR #점령국 - 대한
 					FROM = { 
-						OR = {
-							tag = ZLC 
-							tag = CHI 
-							tag = WZC 
-							tag = PRC 
-							tag = QIN
-						} 
+						
+						is_independent_china_or_warlord = yes
 						
 					} #피점령국 - 중국
-					FROM.FROM = { state = 841 } #점령 주 - 우한
+					FROM.FROM = { state = 869 } #점령 주 - 우한
 				}
                 FROM.FROM = {
 					set_state_name = "무한"
@@ -500,15 +577,9 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					OR = {
-						tag = ZLC 
-						tag = CHI 
-						tag = WZC 
-						tag = PRC 
-						tag = QIN
-					}  #점령국 - 중국
+						is_independent_china_or_warlord = yes
 					FROM = { tag = KOR } #피점령국 - 대한
-					FROM.FROM = { state = 841 } #점령 주 - 우한
+					FROM.FROM = { state = 869 } #점령 주 - 우한
 				}
                 FROM.FROM = {
 					set_state_name = "우한"
@@ -556,7 +627,7 @@ on_actions = {
 				limit = {
 					tag = KOR #점령국 - 대한
 					FROM = { tag = JAP } #피점령국 - 일본
-					FROM.FROM = { state = 857 } #점령 주 - 규슈
+					FROM.FROM = { state = 885 } #점령 주 - 규슈
 				}
                 FROM.FROM = {
 					set_state_name = "교송"
@@ -575,7 +646,7 @@ on_actions = {
 				limit = {
 					tag = JAP #점령국 - 일본
 					FROM = { tag = KOR } #피점령국 - 한국
-					FROM.FROM = { state = 857 } #점령 주 - 규슈
+					FROM.FROM = { state = 885 } #점령 주 - 규슈
 				}
                 FROM.FROM = {
 					set_state_name = "규슈"
@@ -624,7 +695,7 @@ on_actions = {
 				limit = {
 					tag = KOR #점령국 - 대한
 					FROM = { tag = JAP } #피점령국 - 일본
-					FROM.FROM = { state = 858 } #점령 주 - 시고쿠
+					FROM.FROM = { state = 886 } #점령 주 - 시고쿠
 				}
                 FROM.FROM = {
 					set_state_name = "서국"
@@ -639,7 +710,7 @@ on_actions = {
 				limit = {
 					tag = JAP #점령국 - 일본
 					FROM = { tag = KOR } #피점령국 - 한국
-					FROM.FROM = { state = 858 } #점령 주 - 시고쿠
+					FROM.FROM = { state = 886 } #점령 주 - 시고쿠
 				}
                 FROM.FROM = {
 					set_state_name = "시고쿠"
@@ -932,18 +1003,18 @@ on_actions = {
 					FROM = { tag = KOR } #피점령국 - 조선총독부
 					FROM.FROM = { 
 						OR = {
-							state = 813 
-							state = 808
-							state = 809 
-							state = 807 
-							state = 811 
-							state = 818 
-							state = 819 
-							state = 815 
-							state = 814 
-							state = 816 
-							state = 812 
-							state = 810 
+							state = 841 
+							state = 836
+							state = 837 
+							state = 835 
+							state = 839 
+							state = 846 
+							state = 847 
+							state = 843 
+							state = 842 
+							state = 844 
+							state = 840 
+							state = 838 
 							state = 527 
 						}	
 					} #점령 주 - 장단
@@ -965,18 +1036,18 @@ on_actions = {
 					FROM = { tag = KOR } #피점령국 - 조선총독부
 					FROM.FROM = { 
 						OR = {
-							state = 813 
-							state = 808
-							state = 809 
-							state = 807 
-							state = 811 
-							state = 818 
-							state = 819 
-							state = 815 
-							state = 814 
-							state = 816 
-							state = 812 
-							state = 810 
+							state = 841 
+							state = 836
+							state = 837 
+							state = 835 
+							state = 839 
+							state = 846 
+							state = 847 
+							state = 843 
+							state = 842 
+							state = 844 
+							state = 840 
+							state = 838 
 							state = 527 
 						}	
 					} #점령 주 - 장단
@@ -1028,6 +1099,7 @@ on_actions = {
 						}	
 						white_peace = KOR
 					}
+					set_cosmetic_tag = KOR_STATE
 				}
 				SOV = {
 					white_peace = KOR
@@ -1226,8 +1298,8 @@ on_actions = {
 						transfer_state = 555
 						transfer_state = 537
 						transfer_state = 655
-						transfer_state = 820
-						transfer_state = 821
+						transfer_state = 848
+						transfer_state = 849
 						transfer_state = 409
 						transfer_state = 408
 					}
@@ -1279,16 +1351,16 @@ on_actions = {
 				SOV = {
 					puppet = MON
 					transfer_state = 329
-					add_state_core = 821
-					add_state_core = 820
+					add_state_core = 849
+					add_state_core = 848
 					add_state_core = 555
 				}
 				
 				JAP = {
 					transfer_state = 528
-					transfer_state = 822
+					transfer_state = 850
 					transfer_state = 645
-					add_state_core = 822
+					add_state_core = 850
 					add_state_core = 645
 				}
 				USA = {
@@ -1417,7 +1489,7 @@ on_actions = {
 							tag = KOR
 						}
 					} #피점령국 - 조선총독부
-					FROM.FROM = { state = 820 } #점령 주 - 장단
+					FROM.FROM = { state = 848 } #점령 주 - 장단
 				}
                 FROM.FROM = {
 					set_state_name = "해삼위"
@@ -1435,7 +1507,7 @@ on_actions = {
 					FROM = { 
 							tag = KOR
 					} 
-					FROM.FROM = { state = 820 } #
+					FROM.FROM = { state = 848 } #
 				}
                 FROM.FROM = {
 					set_state_name = "블라디보스토크"
@@ -1451,7 +1523,7 @@ on_actions = {
 					FROM = { 
 						tag = KOR
 					} 
-					FROM.FROM = { state = 822 } #
+					FROM.FROM = { state = 850 } #
 				}
                 FROM.FROM = {
 					set_state_name = "쓰시마"
@@ -1461,7 +1533,7 @@ on_actions = {
                     name = "쓰시마"
                 }
 				JAP = {
-					add_state_core = 822
+					add_state_core = 850
 				}	
 			}
 			if = {
@@ -1470,7 +1542,7 @@ on_actions = {
 					FROM = { 
 						tag = JAP
 					} 
-					FROM.FROM = { state = 822 } #
+					FROM.FROM = { state = 850 } #
 				}
                 FROM.FROM = {
 					set_state_name = "대마도"
@@ -1516,51 +1588,10 @@ on_actions = {
 					add_war_support = 0.001
 				}
 			}
-			if = {
-				limit = {
-					tag = KOR
-					KOR = {
-						has_country_flag = FLAG_THE_QINGDAO_PROBLEM_1
-						NOT = {
-							has_country_flag = FLAG_THE_QINGDAO_PROBLEM
-						}
-					}
-					
-				}	
-				set_country_flag = FLAG_THE_QINGDAO_PROBLEM
-				complete_national_focus = kor_the_new_history
-			}
 		}
 	}
 	on_daily = {
 		effect = {
-			if = {
-				limit = {
-					OR = {
-						original_tag = CHI
-						original_tag = WZC
-						original_tag = SND
-						original_tag = HNC
-						original_tag = XSM
-						original_tag = SHX
-						original_tag = PRC
-						original_tag = SZC
-						original_tag = YUN
-						original_tag = GXC
-						original_tag = AHC
-						original_tag = SIK
-					}
-					has_country_flag = ZLC_ACCEPT_UNITED_FRONT
-					NOT = {
-						has_country_flag = ZLC_OWN_UNITED_FRONT
-					}
-				}
-				ZLC = {
-					add_to_faction = ROOT 
-					set_country_flag = ZLC_OWN_UNITED_FRONT
-				}
-				set_country_flag = ZLC_OWN_UNITED_FRONT
-			}
 			if = {
 				limit = {
 					KOR = {
@@ -1589,24 +1620,9 @@ on_actions = {
 					}
 				}
 				SOV = {
-					transfer_state = 637
-					transfer_state = 644
-					transfer_state = 562
-					transfer_state = 574
-					transfer_state = 565
-					transfer_state = 564
-					transfer_state = 563
-					transfer_state = 561
-					transfer_state = 657
-					transfer_state = 560
-					transfer_state = 555
-					transfer_state = 537
-					transfer_state = 655
-					transfer_state = 820
-					transfer_state = 821
 					transfer_state = 409
 					transfer_state = 408
-					}
+				}
 			}
 			if = {
 				limit = {
@@ -1696,7 +1712,7 @@ on_actions = {
 						has_war_with = CHI
 					}
 					KPL = {
-						owns_state = 829
+						owns_state = 857
 					}
 				}
 				KOR = {
@@ -1741,12 +1757,12 @@ on_actions = {
 					transfer_state = 596
 					transfer_state = 749
 					transfer_state = 613
-					transfer_state = 836
-					transfer_state = 837
-					transfer_state = 834
-					transfer_state = 835
-					transfer_state = 830
-					transfer_state = 831
+					transfer_state = 864
+					transfer_state = 865
+					transfer_state = 862
+					transfer_state = 863
+					transfer_state = 858
+					transfer_state = 859
 				}
 			}
 			if = {
@@ -1801,12 +1817,12 @@ on_actions = {
 					KPL = {
 						exists = no
 					}
-					829 = {
+					857 = {
 						is_core_of = KPL
 					}
 				}
 				KPL = {
-					remove_state_core = 829
+					remove_state_core = 857
 				}
 			}
 			if = {
@@ -1814,12 +1830,12 @@ on_actions = {
 					KPL = {
 						exists = yes
 					}
-					829 = {
+					857 = {
 						is_owned_by = KPL
 					}
 				}
 				KPL = {
-					add_state_core = 829
+					add_state_core = 857
 				}
 			}
 			if = {
@@ -1875,20 +1891,7 @@ on_actions = {
 				limit = {
 					tag = KOR
 					has_war_support > 0.85
-					OR = {
-						
-							original_tag = ZLC
-							original_tag = WZC
-							original_tag = SHX
-							original_tag = XSM
-							original_tag = SND
-							original_tag = CHI
-							original_tag = HNC
-							original_tag = YUN
-							original_tag = SZC
-							original_tag = GXC
-							original_tag = SIK
-					}
+					is_independent_china_or_warlord = yes
 					has_idea = KOR_not_go_outside_2
 				}
 				remove_ideas = KOR_not_go_outside_2
@@ -1901,7 +1904,7 @@ on_actions = {
 						has_country_flag = KOR_SHANGHAI_ATTACK
 					}
 					has_war_with = WZC
-					829 = {
+					857 = {
 						is_owned_by = KPL
 					}
 				}
@@ -2026,122 +2029,6 @@ on_actions = {
 			if = {
 				limit = {
 					tag = KOR
-					KOR = {
-						has_idea = KOR_divided_nation_1
-					}
-					controls_state = 716
-					controls_state = 328
-					controls_state = 717
-					controls_state = 745
-					controls_state = 825
-					controls_state = 824
-					controls_state = 823
-					controls_state = 821
-					controls_state = 820
-				}
-				KOR = {
-					swap_ideas = {
-						add_idea = KOR_divided_nation_2
-						remove_idea = KOR_divided_nation_1
-					}
-					add_state_core = 716
-					add_state_core = 328
-					add_state_core = 717
-					add_state_core = 745
-					add_state_core = 825
-					add_state_core = 824
-					add_state_core = 823
-					add_state_core = 821
-					add_state_core = 820
-				}
-				716 = {
-					set_state_name = "요동"
-				}
-				328 = {
-					set_state_name = "길림"
-				}
-				717 = {
-					set_state_name = "송강"
-				}
-				820 = {
-					set_state_name = "해삼위"
-				}
-				821 = {
-					set_state_name = "해위도"
-				}
-				set_province_name = {
-					id = 10433
-					name = "합성"
-				}
-				set_province_name = {
-					id = 4572
-					name = "장북"
-				}
-				set_province_name = {
-					id = 11771
-					name = "심양"
-				}
-				set_province_name = {
-					id = 957
-					name = "해삼위"
-				}
-			}
-			if = {
-				limit = {
-					tag = KOR
-					KOR = {
-						has_idea = KOR_divided_nation_2
-					}
-					controls_state = 716
-					controls_state = 328
-					controls_state = 717
-					controls_state = 745
-					controls_state = 825
-					controls_state = 824
-					controls_state = 823
-					controls_state = 821
-					controls_state = 408
-					controls_state = 409
-					controls_state = 820
-				}
-				KOR = {
-					swap_ideas = {
-						add_idea = KOR_divided_nation_3
-						remove_idea = KOR_divided_nation_2
-					}
-					add_state_core = 408
-					add_state_core = 409
-				}
-				408 = {
-					set_state_name = "영백남도"
-				}
-				409 = {
-					set_state_name = "영백북도"
-				}
-				set_province_name = {
-					id = 12189
-					name = "백주"
-				}
-				set_province_name = {
-					id = 664
-					name = "영주"
-				}
-				set_province_name = {
-					id = 957
-					name = "해삼위"
-				}
-				set_province_name = {
-					id = 6838
-					name = "복단"
-				}
-				set_province_name = {
-					id = 6961
-					name = "나철"
-				}
-			}
-			if = {
-				limit = {
-					tag = KOR
 					controls_state = 537
 					controls_state = 655
 				}
@@ -2156,45 +2043,6 @@ on_actions = {
 				set_province_name = {
 					id = 12446
 					name = "풍원"
-				}
-			}
-			if = {
-				limit = {
-					tag = KOR
-					KOR = {
-						has_idea = KOR_divided_nation_3
-					}
-					NOT = {
-						controls_state = 408
-						controls_state = 409
-					}
-				}
-				KOR = {
-					swap_ideas = {
-						add_idea = KOR_divided_nation_2
-						remove_idea = KOR_divided_nation_3
-					}
-				}
-			}
-			if = {
-				limit = {
-					tag = KOR
-					KOR = {
-						has_idea = KOR_divided_nation_2
-					}
-					NOT = {
-						controls_state = 716
-						controls_state = 328
-						controls_state = 717
-						controls_state = 745
-						controls_state = 820
-					}
-				}
-				KOR = {
-					swap_ideas = {
-						add_idea = KOR_divided_nation_1
-						remove_idea = KOR_divided_nation_2
-					}
 				}
 			}
 		}

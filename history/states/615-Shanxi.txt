@@ -3,6 +3,7 @@ state={
 	id=615
 	name="STATE_615"
 
+	local_supplies=0.0 
 	history={
 		owner = ZLC
 		add_core_of = ZLC

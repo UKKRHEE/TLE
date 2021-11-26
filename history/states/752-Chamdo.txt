@@ -2,6 +2,7 @@
 state={
 	id=752
 	name="STATE_752"
+	local_supplies=0.0 
 
 	history={
 		owner = SZC

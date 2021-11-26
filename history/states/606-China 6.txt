@@ -4,6 +4,7 @@ state={
 	resources={
 		steel=11.000
 	}
+	local_supplies=0.0 
 
 	history={
 		owner = WZC

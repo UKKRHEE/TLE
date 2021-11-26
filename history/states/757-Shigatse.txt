@@ -2,6 +2,7 @@
 state={
 	id=757
 	name="STATE_757"
+	local_supplies=0.0 
 
 	history={
 		owner = TIB

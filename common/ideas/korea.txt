@@ -1,5 +1,48 @@
 ideas = {
 	country = { #국민정신 
+		RUS_the_fight_to_the_democracy = {
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = -0.15	
+				social_democracy_drift = 0.001 
+				social_liberalism_drift = 0.001
+				national_liberalism_drift = 0.001
+			}
+		}
+		RUS_hard_threat_of_rightwing = {
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			modifier = {
+				stability_factor = -0.10
+				political_power_factor = -0.10
+				communism_drift = 0.001 #
+				authoritarian_socialism_drift = 0.001 
+				radical_socialism_drift = 0.001 
+				fascism_drift = 0.001 
+			}
+		}
+		RUS_siberia_has_fallen_behind = {
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			modifier = {
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.25
+				production_speed_buildings_factor = -0.3
+				industry_repair_factor = -0.3
+				economy_cost_factor = 0.5
+			}
+		}
 		KPL_is_cant_attack = {
 			allowed = {
 				always = no
@@ -254,43 +297,43 @@ ideas = {
 			}
 			targeted_modifier = {
                 tag = ZLC
-				attack_bonus_against = -0.3
+				attack_bonus_against = -0.35
 			}
 			targeted_modifier = {
                 tag = CHI
-				attack_bonus_against = -0.3
+				attack_bonus_against = -0.35
 			}
 			targeted_modifier = {
                 tag = WZC
-				attack_bonus_against = -0.3
+				attack_bonus_against = -0.35
 			}
 			targeted_modifier = {
                 tag = SND
-				attack_bonus_against = -0.3
+				attack_bonus_against = -0.35
 			}
 			targeted_modifier = {
                 tag = SHX
-				attack_bonus_against = -0.3
+				attack_bonus_against = -0.35
 			}
 			targeted_modifier = {
                 tag = HNC
-				attack_bonus_against = -0.3
+				attack_bonus_against = -0.35
 			}
 			targeted_modifier = {
                 tag = YUN
-				attack_bonus_against = -0.3
+				attack_bonus_against = -0.35
 			}
 			targeted_modifier = {
                 tag = XSM
-				attack_bonus_against = -0.3
+				attack_bonus_against = -0.35
 			}
 			targeted_modifier = {
                 tag = GXC
-				attack_bonus_against = -0.3
+				attack_bonus_against = -0.35
 			}
 			targeted_modifier = {
                 tag = SIK
-				attack_bonus_against = -0.3
+				attack_bonus_against = -0.35
 			}
 		}
 		KOR_failed_civilian_control_of_the_military = {
@@ -1303,479 +1346,28 @@ ideas = {
 	
 	#정치 고문
 	political_advisor = {
-        KOR_phillip_jaisohn = { #서재필
-    
-		    allowed = {
-		    	original_tag = KOR
-		    }
-			available = {
-			    has_completed_focus = KOR_use_the_anti-armed
-			}
-			
-		    traits = { democratic_reformer three_equalities }
-	
-		    do_effect = {
-			    NOT = {
-			    	has_government = democratic
-			    }
-	    	}
-		
-		    ai_will_do = {
-		    	factor = 0
-		    }
-	    }
-		
-		KOR_yi_dong_hwi = { #이동휘
-    
-		    allowed = {
-		    	original_tag = KOR
-		    }
-			
-			available = {
-			}
-			
-		    traits = { propaganda_expert }
-			
-			ai_will_do = {
-		    	factor = 0
-		    }
-	    }
-		
-		KOR_an_ho_sang = { #안호상
-    
-		    allowed = {
-		    	original_tag = KOR
-		    }
-			
-		    traits = { fascist_demagogue }
-	
-		    do_effect = {
-		    	NOT = {
-		    		has_government = fascism
-		    	}
-		    }
-		    available = {
-					has_completed_focus = kor_reform_korea
-			}	
-		
-		    ai_will_do = {
-		    	factor = 0
-		    }
-	    }
-
-        KOR_yi_un = { #영친왕 이은
-			
-		    allowed = {
-		    	original_tag = KOR
-            }
-
-		    available = {
-		    	has_completed_focus = KOR_power_up_to_imperial
-		    }
-			
-		    traits = { staunch_monarchist }
-	    }
-		
-        KOR_kim_koo = { #김구
-		   
-		    allowed = {
-		    	original_tag = KOR
-		    }
-			
-		    traits = { backroom_backstabber }
-
-		    ai_will_do = {
-		    	factor = 0
-		    }
-	    }
-    
-        KOR_park_sang_jin = { #박상진
-			
-		    allowed = {
-		    	original_tag = KOR
-		    }
-		    available = {
-		    	NOT = {
-					has_completed_focus = KOR_use_the_anti-armed
-				}
-			}	
-		
-	    	traits = { prince_of_terror }
-	    }
-    
-        KOR_lee_beom_seok = { #이범석
-			
-		    allowed = {
-		    	original_tag = KOR
-		    }
-		    available = {
-		    	NOT = {
-					has_completed_focus = KOR_use_the_anti-armed
-				}
-			}	
-		
-	    	traits = { militarian_fascist }
-	    }
-
-	    KOR_syngman_rhee = { #이승만
-
-		    allowed = {
-		    	original_tag = KOR
-		    }
-		
-		    traits = { smooth_talking_charmer }
-	    }
-
-	    KOR_yeounhyeong = { #여운형
-		
-		    allowed = {
-		    	original_tag = KOR
-		    }
-		
-		    traits = { silent_workhorse }
-	    }
-		
-		KOR_lee_byung-chul = {	#이병철
-
-		    allowed = {
-		    	original_tag = KOR
-		    }
-			
-			available = {
-			}
-			
-		    traits = { captain_of_industry }
-		    ai_will_do = {
-			    factor = 0
-	    	}
-        }
-		
-		KOR_song_jin_woo = { #송진우
-		
-		    allowed = {
-		    	original_tag = KOR
-		    }
-			
-			available = {
-			}
-		    
-		    traits = { war_industrialist }
-	    }
-       
-        KOR_kim_gyu_sik = { #김규식
-		
-		    allowed = {
-		    	original_tag = KOR
-		    }
-		
-		    traits = { fortification_engineer }
-	    }
-		
-		KOR_sin_ik_hui = { #신익희
-		
-			available = {
-				has_intelligence_agency = yes
-			}
-			
-			allowed = {
-				original_tag = KOR
-				has_dlc = "La Resistance" 
-			}
-			
-			traits = { head_of_intelligence }
-		}
     }
 	
 	#이론가
 	theorist = {
-		KOR_ji_chung_chun_2 = { #지청천
-
-		    allowed = {
-		    	original_tag = KOR
-		    }
-			
-		    research_bonus = {
-		    	land_doctrine = 0.07
-		    }
-			picture = KOR_ji_chung_chun
-			on_add = {
-				hidden_effect = {
-					country_event = {
-						id = korea.36
-					}
-				}
-			}
-			
-		    traits = { military_theorist }
-	    }
-
-	    KOR_shin_sung_mo = { #신성모
-
-		    allowed = {
-		    	original_tag = KOR
-		    }
-		
-		    research_bonus = {
-		    	naval_doctrine = 0.07
-		    }
-		
-		    traits = { naval_theorist }
-	    }
-
-	    KOR_choi_yong_duk_2 = { #최용덕
-			
-		    allowed = {
-		    	original_tag = KOR
-		    }
-		
-		    research_bonus = {
-		    	air_doctrine = 0.07
-		    }
-			picture = KOR_choi_yong_duk
-		
-		    traits = { air_warfare_theorist }
-	    }
-		
-		KOR_lee_tae_gyu = { #이태규
-			
-		    allowed = {
-		    	original_tag = KOR
-		    }
-			
-	    	research_bonus = {
-		    	rocketry = 0.10
-		    }
-		
-		    traits = { rocket_scientist }
-	    }
-
-        KOR_do_sang_log = { #도상록
-			
-		    allowed = {
-		    	original_tag = KOR
-		    }
-			
-		    research_bonus = {
-		    	nuclear = 0.10
-		    }
-	    	
-	    	traits = { nuclear_scientist }
-	    }
     }
 	
 	#육군참모총장
 	 army_chief = {
-	    KOR_kim_chwa_chin = { #김좌진
-	    		
-	    	allowed = {
-	    		original_tag = KOR
-	    	}
-			
-	    	traits = { army_chief_defensive_2 }
-			
-	    	ai_will_do = {
-	    		factor = 1
-	    	}
-	    }
-    
-	    KOR_lee_beom_seok_army = { #이범석
-			
-	    	allowed = {
-	    		original_tag = KOR
-	    	}
-			
-			available = {
-				
-			}
-		    available = {
-		    	NOT = {
-					has_completed_focus = kor_republic
-				}
-			}	
-			
-			picture = KOR_lee_beom_seok
-	    	traits = { army_chief_offensive_2 }
-			
-	    	ai_will_do = {
-	    		factor = 1
-	    	}
-	    }
 
-	    KOR_kim_hong_il = { #김홍일
-			
-		    allowed = {
-	    		original_tag = KOR
-		    }
-			
-	    	traits = { army_chief_organizational_2 }
-			
-		    ai_will_do = {
-		    	factor = 1
-		    }
-	    }
     }
 	
 	#해군참모총장
 	navy_chief = {
-	    KOR_sin_sun_sung = { #신순성
-		
-		    allowed = {
-		    	original_tag = KOR
-	    	}
-		    	
-		    traits = { navy_chief_decisive_battle_2 }
-			
-		    ai_will_do = {
-		    	factor = 1
-		    }
-	    }
-		
-		KOR_son_won_il = { #손원일
-		
-		    allowed = {
-		    	original_tag = KOR
-	    	}
-		    	
-		    traits = { navy_chief_naval_aviation_2 }
-			
-		    ai_will_do = {
-		    	factor = 1
-		    }
-	    }
     }
 	
 	#공군참모총장
 	air_chief = {
-    	KOR_no_baeg_lin = { #노백린
-		
-	    	allowed = {
-		    	original_tag = KOR
-		    }
-			
-		    traits = { air_chief_ground_support_2 }
-			
-		    ai_will_do = {
-		    	factor = 1
-		    }
-	    }          
     }
 	
 	#군 고위지휘관
 	high_command = {
-	    KOR_ji_chung_chun_high= { #지청천
-		
-		    allowed = {
-		    	original_tag = KOR
-		    }
-		
-		    traits = { army_infantry_3 }
-		
-		    ai_will_do = {
-		    	factor = 1
-		    }
-    	}
-	    KOR_yujin_kim= { #정일권
-		
-	    	allowed = {
-		    	original_tag = KOR
-	    	}
-		
-	    	traits = { army_armored_3 }
-		
-		    ai_will_do = {
-		    	factor = 1
-		    }
-	    }
 
-	    KOR_choi_yong_duk_high = { #최용덕
-		
-		    allowed = {
-		    	original_tag = KOR
-		    }
-		
-		    traits = { air_air_superiority_3 }
-		
-		    ai_will_do = {
-		    	factor = 1
-	    	}
-	    }
-		
-		KOR_no_baeg_lin_high = { #노백린
-		
-		    allowed = {
-		    	original_tag = KOR
-		    }
-		
-		    traits = { air_close_air_support_2 }
-		
-		    ai_will_do = {
-		    	factor = 1
-	    	}
-	    }
-
-	    KOR_son_won_il_high = { #손원일
-		
-		    allowed = {
-		    	original_tag = KOR
-		    }
-		
-		    traits = { navy_carrier_2 }
-		
-		    ai_will_do = {
-		    	factor = 1
-		    }
-	    }    
-	
-    	KOR_sin_sun_sung_high = { #신순성
-		
-	    	allowed = {
-	    		original_tag = KOR
-	    	}
-		
-	    	traits = { navy_capital_ship_2 }
-		
-	    	ai_will_do = {
-	    		factor = 1
-	    	}
-	    }
-
-	    KOR_yu_dong_yeol_high = { #유동열
-		
-	    	allowed = {
-	    		original_tag = KOR
-	    	}
-		
-		    traits = { army_cavalry_2 }
-		
-		    ai_will_do = {
-		    	factor = 1
-		    }
-	    }
-	    KOR_kim_jong_oh_high = { #김종오
-		
-	    	allowed = {
-	    		original_tag = KOR
-	    	}
-		
-		    traits = { army_logistics_2 }
-		
-		    ai_will_do = {
-		    	factor = 1
-		    }
-	    }
-	
-	    KOR_kim_hong_il_high = { #김홍일
-		
-	    	allowed = {
-		    	original_tag = KOR
-		    }
-		
-		    traits = { army_artillery_2 }
-		
-		    ai_will_do = {
-		    	factor = 1
-		    }
-	    }
 	}		
 	
 	#설계사

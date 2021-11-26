@@ -1,0 +1,28 @@
+state={
+	id=855
+	name="STATE_855"
+	provinces={
+		4205 10018 
+	}
+	local_supplies=0.0 
+	manpower=222000
+	state_category=city
+	buildings_max_level_factor=1.000
+	history={
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			4205 = {
+				naval_base = 3
+
+			}
+
+		}
+			owner = SND
+			add_core_of = SND
+			add_core_of = CHI
+			add_core_of = PRC
+			buildings = {
+			}
+		}
+}

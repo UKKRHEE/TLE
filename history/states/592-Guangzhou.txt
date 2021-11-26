@@ -8,6 +8,7 @@ state={
 		chromium=3.000
 	}
 
+	local_supplies=0.0 
 	history={
 		owner = CHI
 		add_core_of = GXC

@@ -1,0 +1,26 @@
+state={
+	id=865
+	name="STATE_865"
+	provinces={
+		7071 
+	}
+	local_supplies=0.0 
+	manpower=210000
+	state_category=city
+	buildings_max_level_factor=1.000
+	history={
+		buildings = {
+			infrastructure = 4
+			7071 = {
+				naval_base = 3
+
+			}
+		}
+			owner = WZC
+			add_core_of = WZC
+			add_core_of = CHI
+			add_core_of = PRC
+			buildings = {
+			}
+		}
+}

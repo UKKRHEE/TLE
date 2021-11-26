@@ -6,6 +6,7 @@ state={
 		chromium=20.000
 	}
 
+	local_supplies=0.0 
 	history={
 		owner = RUS
 		victory_points = {
@@ -26,7 +27,7 @@ state={
 
 		}
 		add_core_of = RUS
-		add_core_of = SOV
+		add_core_of = KOR
 
 	}
 

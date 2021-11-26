@@ -9,6 +9,7 @@ state={
 		chromium=15.000
 	}
 
+	local_supplies=0.0 
 	history={
 		owner = KOR
 		buildings = {

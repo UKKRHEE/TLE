@@ -1,0 +1,31 @@
+
+state={
+	id=872
+	name="STATE_872"
+
+	local_supplies=0.0 
+	history={
+		victory_points = {
+			7142 1 
+		}
+		buildings = {
+			infrastructure = 6
+
+		}
+		owner = WZC
+		add_core_of = WZC
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+
+		}
+
+	}
+
+	provinces={
+		4031 4082 4123 7142 9953 12067 
+	}
+	manpower=3000000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

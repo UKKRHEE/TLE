@@ -1,8 +1,8 @@
-﻿Zhang Tianran###########################
-# Chinese Events ##########
-###########################
-
-add_namespace = china
+﻿add_namespace = china
+add_namespace = ZLC
+add_namespace = SHX
+add_namespace = SZC
+add_namespace = YUN
 #Russian Advisors
 country_event = {
 	id = china.1000
@@ -636,14 +636,16 @@ country_event = {
 		name = china.1035.a  
 		kill_country_leader = yes
 		
-		create_country_leader = {
-			name = "Chao Kun"
-			portrait_path = "gfx/leaders/ZLC/Portrait_ZLC_Chao_kun.png"
-			desc = ""
-			traits = {
+		add_country_leader_role = {
+			Character = ZLC_chao_kun
+			Promote_leader = yes
+			Country_leader = {
+				ideology = despotism
+				expire = "1965.1.1"
+				traits = {
+				}
 			}
-			ideology = despotism
-		}	
+		}
         hidden_effect = { complete_national_focus = ZLC_chiang }
     }
 } 
@@ -660,14 +662,16 @@ country_event = {
 	option = {
 		name = china.1036.a
 		kill_country_leader = yes
-		create_country_leader = {
-			name = "Wang Huaiqing"
-			portrait_path = "gfx/leaders/ZLC/Portrait_QIE_Wang_Huaiqing.png"
-			desc = "QIE_WANG_HUAIQING_ARMY_DESC"
-			traits = {
+		add_country_leader_role = {
+			Character = ZLC_Wang_Huaiqing
+			Promote_leader = yes
+			Country_leader = {
+				ideology = despotism
+				expire = "1965.1.1"
+				traits = {
+				}
 			}
-			ideology = despotism
-		}	
+		}
         hidden_effect = { complete_national_focus = ZLC_left }
     }
 } 
@@ -685,14 +689,16 @@ country_event = {
 	name = china.1037.a
 	
 		kill_country_leader = yes
-		create_country_leader = {
-			name = "Jiang Baili"
-			portrait_path = "gfx/leaders/ZLC/Portrait_QIE_Jiang_Baili.png"
-			desc = "QIE_WANG_HUAIQING_ARMY_DESC"
-			traits = {
+		add_country_leader_role = {
+			Character = ZLC_Jiang_Baili
+			Promote_leader = yes
+			Country_leader = {
+				ideology = despotism
+				expire = "1965.1.1"
+				traits = {
+				}
 			}
-			ideology = despotism
-		}	
+		}
         hidden_effect = { complete_national_focus = ZLC_left }
 	}
 } 
@@ -1272,7 +1278,7 @@ country_event = {
 		set_country_flag  = FLAG_WZC_WAS_COLLAPESED
 		name = china.1089.a
 		remove_unit_leader = 91099
-		kill_country_leader = yes
+		retire_character = WZC_sun_chuanfang
 		hidden_effect = {
 		create_country_leader = {
 			name = "Qi Xieyuan"
@@ -1281,6 +1287,17 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = despotism
 		}
+		add_country_leader_role = {
+			Character = WZC_qi_xieyuan
+			Promote_leader = yes
+			Country_leader = {
+				ideology = despotism
+				expire = "1965.1.1"
+				traits = {
+					war_industrialist
+				}
+			}
+		}	
 		country_event = {
 			id = china.1091
 			days = 3
@@ -1301,6 +1318,7 @@ country_event = {
 		name = china.1090.a
 		remove_unit_leader = 91110
 		hidden_effect = {
+		retire_character = WZC_Chen_Tiaoyuan
 			
 			delete_unit_template_and_units = {
 				division_template = "Qibing Xie"
@@ -1333,19 +1351,25 @@ country_event = {
 			set_cosmetic_tag = WZC_nanzig_clique
 		AHC = {
 			transfer_state = 606
-			transfer_state = 833
-			transfer_state = 832
-			transfer_state = 844
+			transfer_state = 861
+			transfer_state = 860
+			transfer_state = 872
 			transfer_state = 598
 			add_state_core = 606
-			add_state_core = 833
-			add_state_core = 832
-			add_state_core = 844
+			add_state_core = 861
+			add_state_core = 860
+			add_state_core = 872
 			add_state_core = 598
+			every_state = {
+				limit = {
+					is_core_of = WZC
+				}
+				add_core_of = AHC
+			}
 			load_oob = "ANC_Collapse"
 			declare_war_on = {
-			target = WZC
-			type = annex_everything
+				target = WZC
+				type = annex_everything
 			}
 			WZC = {
 				load_oob = "LEP_collapse"
@@ -1355,10 +1379,10 @@ country_event = {
 			set_country_flag = FLAG_WZC_WAS_COLLAPESED
 		}
 		KPL = {
-			transfer_state = 829
-			add_state_core = 829
+			transfer_state = 857
+			add_state_core = 857
 		}
-		829 = {
+		857 = {
 			
 				set_demilitarized_zone = yes
 		}
@@ -1401,14 +1425,14 @@ country_event = {
 			AHC = { change_tag_from = WZC }
 		AHC = {
 			transfer_state = 606
-			transfer_state = 833
-			transfer_state = 832
-			transfer_state = 844
+			transfer_state = 861
+			transfer_state = 860
+			transfer_state = 872
 			transfer_state = 598
 			add_state_core = 606
-			add_state_core = 833
-			add_state_core = 832
-			add_state_core = 844
+			add_state_core = 861
+			add_state_core = 860
+			add_state_core = 872
 			add_state_core = 598
 			load_oob = "ANC_Collapse"
 			declare_war_on = {
@@ -1420,9 +1444,9 @@ country_event = {
 		set_country_flag = FLAG_WZC_WAS_COLLAPESED
 		}
 		KPL = {
-			transfer_state = 829
+			transfer_state = 857
 		}
-		829 = {
+		857 = {
 			
 				set_demilitarized_zone = yes
 		}
@@ -1446,15 +1470,15 @@ country_event = {
 			set_country_flag = FLAG_WZC_WAS_COLLAPESED
 			#complete_national_focus = CHC_victory
 		}
-		848 = {
+		876 = {
 			
 			set_demilitarized_zone = yes
 		}
-		854 = {
+		882 = {
 			
 			set_demilitarized_zone = yes
 		}
-		837 = {
+		865 = {
 			
 			set_demilitarized_zone = yes
 		}
@@ -1506,10 +1530,6 @@ country_event = {
 	is_triggered_only = yes
 	option = { 
 		name = china.1093.a
-		create_faction = FACTION_ZLC_UNITED_FRONT
-		set_rule = {
-			can_create_faction = yes
-		}	
 		ZLC = {
 			white_peace = CHI
 			white_peace = WZC
@@ -1525,20 +1545,12 @@ country_event = {
 		}
 		every_other_country = {
 			limit = {
-				OR = {
-					TAG = CHI
-					TAG = WZC
-					TAG = YUN
-					TAG = GXC
-					TAG = PRC
-					TAG = XSM
-					TAG = AHC
-					TAG = HNC 
-					TAG = SND
-					TAG = SZC
-					TAG = SIK
-				}
+				is_independent_china_or_warlord = yes
+				exists = yes
 			}	
+			country_event = {
+				id = generic.5
+			}
 			country_event = {
 				id = china.1094
 			}
@@ -1559,46 +1571,6 @@ country_event = {
 			factor = 100
 		}	
 		name = china.1094.a
-			if = {
-				limit = {
-					AHC = {
-						has_war_with = WZC
-					}
-				}		
-				AHC = {
-					white_peace = WZC
-				}
-			}
-			if = {
-				limit = {
-					CHI = {
-						has_war_with = WZC
-					}
-				}		
-				CHI = {
-					white_peace = WZC
-				}
-			}
-			if = {
-				limit = {
-					WZC = {
-						has_war_with = CHI
-					}
-				}		
-				WZC = {
-					white_peace = CHI
-				}
-			}
-			if = {
-				limit = {
-					WZC = {
-						has_war_with = AHC
-					}
-				}		
-				WZC = {
-					white_peace = AHC
-				}
-			}
 		ZLC = {
 			add_to_faction = ROOT 
 			country_event = {
@@ -1649,7 +1621,7 @@ country_event = {
 	option = { 
 		name = china.1097.a
 		PRC = {
-			transfer_state = 845
+			transfer_state = 873
 			declare_war_on = {
 				type = annex_everything 
 				target = SHX
@@ -1660,7 +1632,7 @@ country_event = {
 	option = { 
 		name = china.1097.b
 		PRC = {
-			transfer_state = 845
+			transfer_state = 873
 			declare_war_on = {
 				type = annex_everything 
 				target = SHX

@@ -1,0 +1,58 @@
+add_namespace = kor_world
+
+country_event = {
+	id = kor_world.1
+	title = kor_world.1.title
+	desc = kor_world.1.desc
+	picture = GFX_report_event_canada_treaty
+
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_world.1.a
+		ai_chance = {
+			base = 100
+		}
+		diplomatic_relation = {
+			country = KOR
+			relation = non_aggression_pact
+			active = yes
+		}
+		FROM = { country_event = { id = kor_world.2 days = 1 } }
+	}
+	option = {
+		name = kor_world.1.b
+		ai_chance = {
+			base = 100
+		}
+		FROM = { country_event = { id = kor_world.3 days = 1 } }
+	}
+}
+
+country_event = {
+	id = kor_world.2
+	title = kor_world.2.title
+	desc = kor_world.2.desc
+	picture = GFX_report_event_canada_treaty
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = {
+		name = kor_world.2.a
+	}
+}
+	
+country_event = {
+	id = kor_world.3
+	title = kor_world.3.title
+	desc = kor_world.3.desc
+	picture = GFX_report_event_canada_treaty
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = {
+		name = kor_world.3.a
+	}
+}

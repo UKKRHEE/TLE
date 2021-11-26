@@ -2,6 +2,14 @@ spriteTypes = {
 	
 	#국민정신
 	spriteType = {
+		name = "GFX_idea_KOR_yi_jin"    
+		texturefile = "gfx/interface/ideas/idea_KOR_yi_jin.png"  
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_yi_jin_2"    
+		texturefile = "gfx/interface/ideas/idea_KOR_yi_jin.png"  
+	}
+	spriteType = {
 		name = "GFX_idea_KOR_not_go_outside"    
 		texturefile = "gfx/interface/ideas/korea/억제된확장정책.png"  
 	}
@@ -78,7 +86,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/korea/진압된파업.png" 
 	}	
 	spriteType = {
-		name = "GFX_idea_Yi_Kang"
+		name = "GFX_idea_KOR_Yi_Kang"
 		texturefile = "gfx/interface/ideas/KOR/idea_KOR_yi_kang.dds"
 	}	
 	spriteType = {

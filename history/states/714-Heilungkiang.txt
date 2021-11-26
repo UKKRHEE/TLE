@@ -3,6 +3,7 @@ state={
 	id=714
 	name="STATE_714"
 
+	local_supplies=0.0 
 	history={
 		owner = KMN
 		add_core_of = CHI

@@ -1,0 +1,422 @@
+
+	shared_focus = {
+		id = TIB_start_to_war
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10.00
+		x = 5
+		y = 0
+		available = {
+			always = no
+		}
+		offset = {
+			x = 0
+			y = 6
+			trigger = {
+				tag = TIB
+			}
+		}	
+		completion_reward = {
+			add_political_power = 120
+			army_experience = 10
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = TIB
+					}
+					add_core_of = CHI
+					add_core_of = ZLC
+					add_core_of = QIN
+					add_core_of = WZC
+				}
+			}
+		}
+
+	}
+	shared_focus = {
+		id = TIB_win_in_qinghai
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10.00
+		relative_position_id = TIB_start_to_war
+		prerequisite = {
+			focus = TIB_start_to_war
+		}
+		mutually_exclusive = {
+			focus = TIB_lose_in_qinghai
+		}
+		available = {
+			has_country_flag = TIB_WIN_IN_THE_TSINGHAI
+		}
+		x = -3
+		y = 1
+		completion_reward = {
+			add_political_power = 300
+			add_stability = 0.2
+			add_state_core = 604 
+			add_state_core = 754
+			add_state_core = 755
+		}
+
+	}
+	shared_focus = {
+		id = TIB_restored_dalailama
+		icon = GFX_focus_hun_king_council
+		cost = 10.00
+		relative_position_id = TIB_start_to_war
+		prerequisite = {
+			focus = TIB_win_in_qinghai
+		}
+		x = -4
+		y = 2
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_political_power = 80
+			create_country_leader = {
+				name = "Tenzin Gyatso" # the real one, the other one hidden behind special event
+				desc = "POLITICS_JAMPHEL_YESHE_GYALTSEN_DESC"
+				picture = "Portrait_TIB_dalai_lama.dds" 
+				expire = "1965.1.1"
+				ideology = rexism
+				traits = {
+					fascist_demagogue
+					national_integralist
+					tenacious_negotiator
+					backroom_backstabber
+					silent_workhorse
+				}
+			}
+			create_country_leader = {
+				name = "Tenzin Gyatso" # the real one, the other one hidden behind special event
+				desc = "POLITICS_JAMPHEL_YESHE_GYALTSEN_DESC"
+				picture = "Portrait_TIB_dalai_lama.dds" 
+				expire = "1965.1.1"
+				ideology = despotism			
+				traits = {
+					fascist_demagogue
+					national_integralist
+					tenacious_negotiator
+					backroom_backstabber
+					silent_workhorse
+				}
+
+			}
+		}
+
+	}
+	shared_focus = {
+		id = TIB_go_sinkiang
+		icon = GFX_focus_aus_war
+		cost = 10.00
+		relative_position_id = TIB_start_to_war
+		prerequisite = {
+			focus = TIB_win_in_qinghai
+		}
+		x = -3
+		y = 3
+		completion_reward = {
+			add_state_claim = 287
+			add_state_claim = 759
+			add_state_claim = 619
+			add_state_claim = 617
+			add_state_claim = 760
+			add_state_claim = 618
+		}
+
+	}
+	shared_focus = {
+		id = TIB_war_with_sinkiang
+		icon = GFX_focus_hun_war_support
+		cost = 10.00
+		relative_position_id = TIB_start_to_war
+		prerequisite = {
+			focus = TIB_go_sinkiang
+		}
+		x = -4
+		y = 4
+		completion_reward = {
+			create_wargoal = {
+				target = SIK
+				type = annex_everything
+			}
+			add_war_support = 0.05
+		}
+			
+
+	}
+	shared_focus = {
+		id = TIB_lose_in_qinghai
+		icon = GFX_focus_prc_infiltration
+		cost = 10.00
+		relative_position_id = TIB_start_to_war
+		prerequisite = {
+			focus = TIB_start_to_war
+		}
+		mutually_exclusive = {
+			focus = TIB_win_in_qinghai
+		}
+		available = {
+			has_country_flag = TIB_LOSE_IN_THE_TSINGHAI
+		}
+		x = 3
+		y = 1
+		completion_reward = {
+			add_ideas = sour_loser
+		}
+
+	}
+	shared_focus = {
+		id = TIB_war_is_going_on
+		icon = GFX_focus_chi_compromise_warlords
+		cost = 10.00
+		relative_position_id = TIB_start_to_war
+		prerequisite = {
+			focus = TIB_lose_in_qinghai
+		}
+		x = 2
+		y = 2
+		completion_reward = {
+			add_war_support = 0.1
+		}
+
+	}
+	shared_focus = {
+		id = TIB_war_with_sichuan
+		icon = GFX_focus_chi_sichuan_unite
+		cost = 10.00
+		relative_position_id = TIB_start_to_war
+		prerequisite = {
+			focus = TIB_war_is_going_on
+			focus = TIB_win_in_qinghai
+		}
+		x = 0
+		y = 3
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SZC
+			}	
+		
+		}
+
+	}
+	shared_focus = {
+		id = TIB_war_with_himalaya
+		icon = GFX_focus_chi_capitalist
+		cost = 10.00
+		relative_position_id = TIB_start_to_war
+		prerequisite = {
+			focus = TIB_go_sinkiang
+			focus = TIB_war_with_sichuan
+		}
+		x = -2
+		y = 4 
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = BHU
+			}	
+			create_wargoal = {
+				type = annex_everything
+				target = NEP
+			}	
+		}	
+
+	}
+	shared_focus = {
+		id = TIB_attack_the_sanma
+		icon = GFX_focus_chi_ban_left
+		cost = 10.00
+		relative_position_id = TIB_start_to_war
+		prerequisite = {
+			focus = TIB_war_is_going_on
+		}
+		x = 2
+		y = 3
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = XSM
+			}	
+		}	
+
+	}
+	shared_focus = {
+		id = TIB_industry_uprising
+		icon = GFX_focus_jap_industry2
+		cost = 10.00
+		relative_position_id = TIB_start_to_war
+		prerequisite = {
+			focus = TIB_lose_in_qinghai
+		}
+		x = 4
+		y = 2
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	shared_focus = {
+		id = TIB_supported_by_korea
+		icon = GFX_focus_consentrated_industry
+		cost = 10.00
+		relative_position_id = TIB_start_to_war
+		prerequisite = {
+			focus = TIB_industry_uprising
+		}
+		x = 4
+		y = 4
+		completion_reward = {
+			
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	shared_focus = {
+		id = TIB_our_reich
+		icon = GFX_focus_chi_blue
+		cost = 10.00
+		relative_position_id = TIB_start_to_war
+		prerequisite = {
+			focus = TIB_attack_the_sanma
+		}
+		prerequisite = {
+			focus = TIB_supported_by_korea
+		}
+		x = 3
+		y = 5
+		completion_reward = {
+			
+				every_state = {
+					limit = {
+						is_core_of = XSM
+					}
+					add_core_of = TIB
+				}
+				every_state = {
+					limit = {
+						is_core_of = SIK
+					}
+					add_core_of = TIB
+				}
+				every_state = {
+					limit = {
+						is_core_of = SZC
+					}
+					add_core_of = TIB
+				}
+				every_state = {
+					limit = {
+						is_core_of = YUN
+					}
+					add_core_of = TIB
+				}
+				every_state = {
+					limit = {
+						is_core_of = MON
+					}
+					add_core_of = TIB
+				}
+				every_state = {
+					limit = {
+						is_core_of = BHU
+					}
+					add_core_of = TIB
+				}
+				every_state = {
+					limit = {
+						is_core_of = NEP
+					}
+					add_core_of = TIB
+				}
+		}
+
+	}
+	shared_focus = {
+		id = TIB_people_researchers
+		icon = GFX_focus_russian_republic
+		cost = 10.00
+		relative_position_id = TIB_start_to_war
+		prerequisite = {
+			focus = TIB_industry_uprising
+		}
+		x = 5
+		y = 3
+		completion_reward = {
+			add_research_slot = 1
+		}
+
+	}
+	shared_focus = {
+		id = TIB_greater_tibetian_reich
+		icon = GFX_focus_chi_yellow
+		cost = 10.00
+		prerequisite = {
+			focus = TIB_war_with_sinkiang
+		}
+		relative_position_id = TIB_start_to_war
+		prerequisite = {
+			focus = TIB_war_with_himalaya
+		}
+		x = -3
+		y = 5
+		completion_reward = {
+			
+				every_state = {
+					limit = {
+						is_core_of = CHI
+					}
+					add_core_of = TIB
+				}
+				set_cosmetic_tag = TIB_REICH
+		}
+
+	}

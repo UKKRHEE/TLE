@@ -1,0 +1,23 @@
+state={
+	id=843
+	name="STATE_843"
+	provinces={
+		12040 
+	}
+	local_supplies=0.0 
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			7221 = {
+				naval_base = 7
+
+			}
+		}
+		add_core_of = KOR
+	}
+	manpower=67000
+	state_category=city
+	buildings_max_level_factor=1.000
+}

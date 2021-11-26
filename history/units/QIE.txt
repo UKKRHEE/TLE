@@ -253,6 +253,72 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
+	division = {
+		location = 7109
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 7109
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 7109
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 7109
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 7109
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 7109
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 7109
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 7109
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 7109
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 7109
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 7109
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
 }
 
 air_wings = {

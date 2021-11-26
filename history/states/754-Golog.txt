@@ -2,6 +2,7 @@
 state={
 	id=754
 	name="STATE_754"
+	local_supplies=0.0 
 
 	history={
 		owner = XSM

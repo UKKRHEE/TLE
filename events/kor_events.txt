@@ -89,30 +89,10 @@ country_event = { #제 1대 대한제국 수상 선거
 	option = { #김구
 		name = korea.5.b
 		custom_effect_tooltip = kor.6.tt
-		create_country_leader = {
-			name = "백범 김구"
-			desc = ""
-			picture = "gfx/leaders/KOR/Portrait_KOR_Kim_Koo.dds"
-			expire = "1960.3.1"
-			ideology = conservatism
-			traits = {
-				stout_defender
-			}
-		}
 	}
 	option = { #이승만
 		name = korea.5.c
 		custom_effect_tooltip = kor.7.tt
-		create_country_leader = {
-			name = "Syngman Rhee"
-			desc = ""
-			picture = "gfx/leaders/KOR/Portrait_Korea_syngman.dds"
-			expire = "1965.7.1"
-			ideology = conservatism
-			traits = {
-				anti_communist
-			}
-		}
 	}
 }
 
@@ -134,7 +114,7 @@ country_event = { #대한제국 황실에게 도전한 입헌파
 				only_own_territory = no
 				capital = 527
 				states = { 
-					527 810 812 818 816 819 817
+					527 838 840 846 844 847 845
 				}
 				keep_unit_leaders = {
 					20100 20101 19361 19365 19366 19367 19368 19369 189390 19370 19371
@@ -144,10 +124,10 @@ country_event = { #대한제국 황실에게 도전한 입헌파
 				set_capital = 525
 			}
 			KPL = {
-				transfer_state = 821
-				transfer_state = 823
-				transfer_state = 824
-				transfer_state = 825
+				transfer_state = 849
+				transfer_state = 851
+				transfer_state = 852
+				transfer_state = 853
 			}
 			set_politics = { 
 				ruling_party = neutrality
@@ -186,31 +166,11 @@ country_event = { #제 1대 대한민국 대통령 선거
 	option = { #여운형
 		name = korea.8.b
 		custom_effect_tooltip = kor.9.tt
-		create_country_leader = {
-			name = "Lyuh Woon Hyung"
-			desc = ""
-			picture = "gfx/leaders/KOR/Portrait_Korea_Lyuh_Woon_hyung.dds"
-			expire = "1960.3.1"
-			ideology = conservatism
-			traits = {
-				#
-			}
-		}
 		complete_national_focus = kor_yeounhyeong
 	}
 	option = { #이승만
 		name = korea.8.c
 		custom_effect_tooltip = kor.7.tt
-		create_country_leader = {
-			name = "Syngman Rhee"
-			desc = ""
-			picture = "gfx/leaders/KOR/Portrait_Korea_syngman.dds"
-			expire = "1965.7.1"
-			ideology = conservatism
-			traits = {
-				anti_communist
-			}
-		}
 		complete_national_focus = kor_syngman_rhee
 	}
 }
@@ -230,16 +190,6 @@ country_event = { #새로운 황제는 누구?
 	option = { #영친왕 이은
 		name = korea.9.b
 		custom_effect_tooltip = kor.11.tt
-		create_country_leader = {
-			name = "Yi Un"
-			desc = ""
-			picture = "gfx/leaders/KOR/Portrait_KOR_Yi_Un.dds"
-			expire = "1960.3.1"
-			ideology = fascism_ideology
-			traits = {
-				emperor_yi
-			}
-		}
 	}
 }
 ######
@@ -474,12 +424,12 @@ country_event = { #간략한 설정
 		ai_chance = { factor = 100 }
 		name = korea.16.b
 		KOR = {
-			transfer_state = 821
+			transfer_state = 849
 			transfer_state = 408
 			transfer_state = 409
 			transfer_state = 655
 			transfer_state = 537
-			transfer_state = 820
+			transfer_state = 848
 		}	
 		hidden_effect = {
 		408 = {
@@ -516,7 +466,7 @@ country_event = { #간략한 설정
 			name = "해삼위"
 		}
 		set_province_name = {
-			id = 6838
+			id = 6866
 			name = "복단"
 		}
 		set_province_name = {
@@ -914,6 +864,10 @@ country_event = { #진압, 성공적,.
 		name = korea.26.a
 		set_country_flag = FLAG_the_fascist_is_won_in_pact
 		complete_national_focus = kor_korean_lebensraum
+		country_event = {
+			id = korea.71
+			hours = 3
+		}
 	}
 }
 country_event = { #
@@ -1173,13 +1127,14 @@ country_event = { #결론
 			communism = 14
 			democratic = 70
 		}
-		create_country_leader = {
-			name = "Kim Koo"
-			desc = ""
-			picture = "Portrait_Kim_Koo.dds"
-			expire = "1989.1.1"
-			ideology = conservatism
-			traits = {
+		add_country_leader_role = {
+			Character = KOR_kim_koo
+			Promote_leader = yes
+			Country_leader = {
+				ideology = conservatism
+				expire = "1965.1.1"
+				traits = {
+				}
 			}
 		}
 	}
@@ -1210,9 +1165,9 @@ country_event = { #상하이 공습
 	option = { #
 		name = korea.35.a
 		load_oob = "KOR_shanghai"
-		transfer_state = 829
-		add_state_core = 829
-		829 = {
+		transfer_state = 857
+		add_state_core = 857
+		857 = {
 			set_state_name = "상해"
 		}	
 		
@@ -1295,13 +1250,14 @@ country_event = { #근황파 쿠데타
 			communism = 0
 			democratic = 0
 		}
-		create_country_leader = {
-			name = "Yi Kang"
-			desc = ""
-			picture = "Portrait_yi_kang_old.png"
-			expire = "1989.1.1"
-			ideology = conservatism
-			traits = {
+		add_country_leader_role = {
+			Character = KOR_yi_kang
+			Promote_leader = yes
+			Country_leader = {
+				ideology = conservatism
+				expire = "1965.1.1"
+				traits = {
+				}
 			}
 		}
 		
@@ -1316,7 +1272,7 @@ country_event = { #근황파 쿠데타
 				only_own_territory = no
 				capital = 525
 				states = { 
-					527 810 812 818 816 819 817
+					527 838 840 846 844 847 845
 				}
 				keep_unit_leaders = {
 					20100 20101 19361 19365 19366 19367 19368 19369 189390 19370 19371
@@ -1361,11 +1317,11 @@ country_event = { #3분지계
 			transfer_state = 753
 			transfer_state = 752
 			transfer_state = 751
-			transfer_state = 840
+			transfer_state = 868
 			transfer_state = 605
 			transfer_state = 748
-			transfer_state = 846
-			transfer_state = 851
+			transfer_state = 874
+			transfer_state = 879
 			transfer_state = 603
 			transfer_state = 325
 			transfer_state = 747
@@ -1373,11 +1329,11 @@ country_event = { #3분지계
 			add_state_core = 753
 			add_state_core = 752
 			add_state_core = 751
-			add_state_core = 840
+			add_state_core = 868
 			add_state_core = 605
 			add_state_core = 748
-			add_state_core = 846
-			add_state_core = 851
+			add_state_core = 874
+			add_state_core = 879
 			add_state_core = 603
 			add_state_core = 325
 			add_state_core = 747
@@ -1402,42 +1358,42 @@ country_event = { #3분지계
 				}
 			}
 			transfer_state = 613
-			transfer_state = 831
-			transfer_state = 830
-			transfer_state = 835
+			transfer_state = 859
+			transfer_state = 858
+			transfer_state = 863
 			transfer_state = 749
 			transfer_state = 596
 			transfer_state = 600
-			transfer_state = 855
-			transfer_state = 854
+			transfer_state = 883
+			transfer_state = 882
 			transfer_state = 595
-			transfer_state = 848
+			transfer_state = 876
 			transfer_state = 602
-			transfer_state = 847
+			transfer_state = 875
 			transfer_state = 593
-			transfer_state = 839
+			transfer_state = 867
 			transfer_state = 592
-			transfer_state = 838
+			transfer_state = 866
 			transfer_state = 591
 			transfer_state = 599
 			transfer_state = 594
 			add_state_core = 613
-			add_state_core = 831
-			add_state_core = 830
-			add_state_core = 835
+			add_state_core = 859
+			add_state_core = 858
+			add_state_core = 863
 			add_state_core = 749
 			add_state_core = 596
 			add_state_core = 600
-			add_state_core = 855
-			add_state_core = 854
+			add_state_core = 883
+			add_state_core = 882
 			add_state_core = 595
-			add_state_core = 848
+			add_state_core = 876
 			add_state_core = 602
-			add_state_core = 847
+			add_state_core = 875
 			add_state_core = 593
-			add_state_core = 839
+			add_state_core = 867
 			add_state_core = 592
-			add_state_core = 838
+			add_state_core = 866
 			add_state_core = 591
 			add_state_core = 599
 			add_state_core = 594
@@ -1448,21 +1404,21 @@ country_event = { #3분지계
 			transfer_state = 614
 			transfer_state = 615
 			transfer_state = 597
-			transfer_state = 842
-			transfer_state = 828
+			transfer_state = 870
+			transfer_state = 856
 			transfer_state = 607
-			transfer_state = 850
+			transfer_state = 878
 			transfer_state = 744
-			transfer_state = 849
+			transfer_state = 877
 			transfer_state = 620
-			transfer_state = 841
+			transfer_state = 869
 			transfer_state = 606
-			transfer_state = 833
-			transfer_state = 844
+			transfer_state = 861
+			transfer_state = 872
 			transfer_state = 598
 			transfer_state = 622
-			transfer_state = 845
-			transfer_state = 856
+			transfer_state = 873
+			transfer_state = 884
 			transfer_state = 283
 		}
 		if = {
@@ -1522,48 +1478,48 @@ country_event = { #3분지계
 				}
 			}
 			transfer_state = 613
-			transfer_state = 831
-			transfer_state = 830
-			transfer_state = 835
+			transfer_state = 859
+			transfer_state = 858
+			transfer_state = 863
 			transfer_state = 749
 			transfer_state = 596
 			transfer_state = 600
-			transfer_state = 855
-			transfer_state = 854
+			transfer_state = 883
+			transfer_state = 882
 			transfer_state = 595
-			transfer_state = 848
+			transfer_state = 876
 			transfer_state = 602
-			transfer_state = 847
+			transfer_state = 875
 			transfer_state = 593
-			transfer_state = 839
+			transfer_state = 867
 			transfer_state = 592
-			transfer_state = 838
+			transfer_state = 866
 			transfer_state = 591
 			transfer_state = 599
 			transfer_state = 594
 			add_state_core = 613
-			add_state_core = 831
-			add_state_core = 830
-			add_state_core = 835
+			add_state_core = 859
+			add_state_core = 858
+			add_state_core = 863
 			add_state_core = 749
 			add_state_core = 596
 			add_state_core = 600
-			add_state_core = 855
-			add_state_core = 854
+			add_state_core = 883
+			add_state_core = 882
 			add_state_core = 595
-			add_state_core = 848
+			add_state_core = 876
 			add_state_core = 602
-			add_state_core = 847
+			add_state_core = 875
 			add_state_core = 593
-			add_state_core = 839
+			add_state_core = 867
 			add_state_core = 592
-			add_state_core = 838
+			add_state_core = 866
 			add_state_core = 591
 			add_state_core = 599
 			add_state_core = 594
 			transfer_state = 748
-			transfer_state = 846
-			transfer_state = 851
+			transfer_state = 874
+			transfer_state = 879
 			transfer_state = 603
 			transfer_state = 325
 			transfer_state = 747
@@ -1571,11 +1527,11 @@ country_event = { #3분지계
 			add_state_core = 753
 			add_state_core = 752
 			add_state_core = 751
-			add_state_core = 840
+			add_state_core = 868
 			add_state_core = 605
 			add_state_core = 748
-			add_state_core = 846
-			add_state_core = 851
+			add_state_core = 874
+			add_state_core = 879
 			add_state_core = 603
 			add_state_core = 325
 			add_state_core = 747
@@ -1587,26 +1543,26 @@ country_event = { #3분지계
 			transfer_state = 751
 			transfer_state = 753
 			transfer_state = 605
-			transfer_state = 840
+			transfer_state = 868
 			transfer_state = 608
 			transfer_state = 614
 			transfer_state = 615
 			transfer_state = 597
-			transfer_state = 842
-			transfer_state = 828
+			transfer_state = 870
+			transfer_state = 856
 			transfer_state = 607
-			transfer_state = 850
+			transfer_state = 878
 			transfer_state = 744
-			transfer_state = 849
+			transfer_state = 877
 			transfer_state = 620
-			transfer_state = 841
+			transfer_state = 869
 			transfer_state = 606
-			transfer_state = 833
-			transfer_state = 844
+			transfer_state = 861
+			transfer_state = 872
 			transfer_state = 598
 			transfer_state = 622
-			transfer_state = 845
-			transfer_state = 856
+			transfer_state = 873
+			transfer_state = 884
 			transfer_state = 283
 		}
 		if = {
@@ -1653,50 +1609,50 @@ country_event = { #3분지계
 			transfer_state = 614
 			transfer_state = 615
 			transfer_state = 597
-			transfer_state = 842
-			transfer_state = 828
+			transfer_state = 870
+			transfer_state = 856
 			transfer_state = 607
-			transfer_state = 850
+			transfer_state = 878
 			transfer_state = 744
-			transfer_state = 849
+			transfer_state = 877
 			transfer_state = 620
-			transfer_state = 841
+			transfer_state = 869
 			transfer_state = 606
-			transfer_state = 833
-			transfer_state = 844
+			transfer_state = 861
+			transfer_state = 872
 			transfer_state = 598
 			transfer_state = 622
-			transfer_state = 845
-			transfer_state = 856
+			transfer_state = 873
+			transfer_state = 884
 			transfer_state = 283
 			transfer_state = 613
-			transfer_state = 831
-			transfer_state = 830
-			transfer_state = 835
+			transfer_state = 859
+			transfer_state = 858
+			transfer_state = 863
 			transfer_state = 749
 			transfer_state = 596
 			transfer_state = 600
-			transfer_state = 855
-			transfer_state = 854
+			transfer_state = 883
+			transfer_state = 882
 			transfer_state = 595
-			transfer_state = 848
+			transfer_state = 876
 			transfer_state = 602
-			transfer_state = 847
+			transfer_state = 875
 			transfer_state = 593
-			transfer_state = 839
+			transfer_state = 867
 			transfer_state = 592
-			transfer_state = 838
+			transfer_state = 866
 			transfer_state = 591
 			transfer_state = 599
 			transfer_state = 594
 			transfer_state = 753
 			transfer_state = 752
 			transfer_state = 751
-			transfer_state = 840
+			transfer_state = 868
 			transfer_state = 605
 			transfer_state = 748
-			transfer_state = 846
-			transfer_state = 851
+			transfer_state = 874
+			transfer_state = 879
 			transfer_state = 603
 			transfer_state = 325
 			transfer_state = 747
@@ -1750,6 +1706,8 @@ country_event = { #전쟁 선동
 	option = { #
 		name = korea.40.a
 		add_war_support = 0.05
+		set_country_flag = FLAG_THE_QINGDAO_PROBLEM
+		complete_national_focus = kor_the_new_history
 	}
 }
 
@@ -1774,6 +1732,12 @@ country_event = { #칭다오 도발
 			country_event = {
 				id = korea.42
 				days = 1
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = korea.40
+				days = 10
 			}
 		}
 	}
@@ -1822,30 +1786,30 @@ country_event = { #미국의 단독 점령
 						puppet = KMN
 						puppet = KOR
 						transfer_state = 745
-						transfer_state = 813
+						transfer_state = 841
 					}
 					KMN = { #만주민국 건설 wwww
-						transfer_state = 825
-						transfer_state = 824
-						transfer_state = 823
+						transfer_state = 853
+						transfer_state = 852
+						transfer_state = 851
 						transfer_state = 717
 						transfer_state = 328
 						transfer_state = 716
 						transfer_state = 715
 						transfer_state = 610
-						transfer_state = 853
+						transfer_state = 881
 						
 						transfer_state = 612
 						transfer_state = 611
 						transfer_state = 621
 						
-						transfer_state = 852
+						transfer_state = 880
 						transfer_state = 714
 						transfer_state = 761
 					}
 					JAP = { #일본에게 조차지 돌려줌
-						transfer_state = 860
-						transfer_state = 858
+						transfer_state = 888
+						transfer_state = 886
 						transfer_state = 859
 					}
 	}
@@ -1866,30 +1830,30 @@ country_event = { #소련과의 공동 분할
 						puppet = KMN
 						puppet = KOR
 						transfer_state = 745
-						transfer_state = 813
+						transfer_state = 841
 					}
 					KMN = { #만주민국 건설, 근데 분단을 섞은
-						transfer_state = 825
-						transfer_state = 824
-						transfer_state = 823
+						transfer_state = 853
+						transfer_state = 852
+						transfer_state = 851
 						transfer_state = 717
 						transfer_state = 328
 						transfer_state = 716
 						transfer_state = 715
 						transfer_state = 610
-						transfer_state = 853
+						transfer_state = 881
 						
 						transfer_state = 612
 						transfer_state = 611
 						transfer_state = 621
 						
-						#transfer_state = 852
+						#transfer_state = 880
 						#transfer_state = 714
 						#transfer_state = 761
 					}
 					JAP = { #일본에게 조차지 돌려줌
-						transfer_state = 860
-						transfer_state = 858
+						transfer_state = 888
+						transfer_state = 886
 						transfer_state = 859
 					}
 					SOV = { #쏘오련이 북만주 습득, 북반도 먹음. 한반도 반갈죽 ㅇㅇ..
@@ -1898,21 +1862,21 @@ country_event = { #소련과의 공동 분할
 					}
 					MAN = {
 						transfer_state = 714
-						transfer_state = 852
+						transfer_state = 880
 						transfer_state = 761
 						
 						add_state_core = 714
-						add_state_core = 852
+						add_state_core = 880
 						add_state_core = 761
-						add_state_core = 825
-						add_state_core = 824
-						add_state_core = 823
+						add_state_core = 853
+						add_state_core = 852
+						add_state_core = 851
 						add_state_core = 717
 						add_state_core = 328
 						add_state_core = 716
 						add_state_core = 715
 						add_state_core = 610
-						add_state_core = 853
+						add_state_core = 881
 						add_state_core = 612
 						add_state_core = 611
 						add_state_core = 621
@@ -1932,27 +1896,27 @@ country_event = { #소련의 단독 점령
 		name = korea.46.a
 		
 					SOV = {
-						transfer_state = 813
+						transfer_state = 841
 						transfer_state = 745
 						puppet = KOR
 						puppet = MAN
 					}
 					MAN = {
-						transfer_state = 825
-						transfer_state = 824
-						transfer_state = 823
+						transfer_state = 853
+						transfer_state = 852
+						transfer_state = 851
 						transfer_state = 717
 						transfer_state = 328
 						transfer_state = 716
 						transfer_state = 715
 						transfer_state = 610
-						transfer_state = 853
+						transfer_state = 881
 						
 						transfer_state = 612
 						transfer_state = 611
 						transfer_state = 621
 						
-						transfer_state = 852
+						transfer_state = 880
 						transfer_state = 714
 						transfer_state = 761
 						
@@ -1992,21 +1956,21 @@ country_event = { #소련의 미국과의 분할점령
 						puppet = PRK
 					}
 					MAN = {
-						transfer_state = 825
-						transfer_state = 824
-						transfer_state = 823
+						transfer_state = 853
+						transfer_state = 852
+						transfer_state = 851
 						transfer_state = 717
 						transfer_state = 328
 						transfer_state = 716
 						transfer_state = 715
 						transfer_state = 610
-						transfer_state = 853
+						transfer_state = 881
 						
 						transfer_state = 612
 						transfer_state = 611
 						transfer_state = 621
 						
-						transfer_state = 852
+						transfer_state = 880
 						transfer_state = 714
 						transfer_state = 761
 						
@@ -2015,7 +1979,7 @@ country_event = { #소련의 미국과의 분할점령
 						add_state_core = 621
 					}
 					USA = {
-						transfer_state = 813
+						transfer_state = 841
 						puppet = KOR
 					}
 					every_state = {
@@ -2026,12 +1990,12 @@ country_event = { #소련의 미국과의 분할점령
 					}
 					PRK = { #북괴 형성
 						transfer_state = 527
-						transfer_state = 810
-						transfer_state = 812
-						transfer_state = 818
-						transfer_state = 816
-						transfer_state = 819
-						transfer_state = 817
+						transfer_state = 838
+						transfer_state = 840
+						transfer_state = 846
+						transfer_state = 844
+						transfer_state = 847
+						transfer_state = 845
 						
 					}
 					every_state = {
@@ -2058,12 +2022,12 @@ country_event = { #일본의 단독점령
 						puppet = KMN
 						puppet = KOR
 						transfer_state = 745
-						transfer_state = 813
+						transfer_state = 841
 					}
 					KOR = { #한국은 북방 3도만 남기고 뒈짖한다
-						transfer_state = 825
-						transfer_state = 824
-						transfer_state = 823
+						transfer_state = 853
+						transfer_state = 852
+						transfer_state = 851
 					}
 					KMN = { #만주 풀로 괴뢰국
 						transfer_state = 716
@@ -2072,8 +2036,8 @@ country_event = { #일본의 단독점령
 						transfer_state = 714
 						transfer_state = 715
 						transfer_state = 610
-						transfer_state = 853
-						transfer_state = 852
+						transfer_state = 881
+						transfer_state = 880
 					}
 	}
 }
@@ -2091,7 +2055,7 @@ country_event = { #대한제국의 상황
 		hidden_effect = {
 			country_event = {
 				id = korea.50
-				days = 15
+				days = 6
 			}
 		}
 	}
@@ -2217,55 +2181,55 @@ country_event = { #마지막 제국
 						size > 0
 					}
 					divisions_in_state = {
-						state = 807
+						state = 835
 						size > 0
 					}
 					divisions_in_state = {
-						state = 808
+						state = 836
 						size > 0
 					}
 					divisions_in_state = {
-						state = 809
+						state = 837
 						size > 0
 					}
 					divisions_in_state = {
-						state = 810
+						state = 838
 						size > 0
 					}
 					divisions_in_state = {
-						state = 811
+						state = 839
 						size > 0
 					}
 					divisions_in_state = {
-						state = 812
+						state = 840
 						size > 0
 					}
 					divisions_in_state = {
-						state = 813
+						state = 841
 						size > 0
 					}
 					divisions_in_state = {
-						state = 814
+						state = 842
 						size > 0
 					}
 					divisions_in_state = {
-						state = 815
+						state = 843
 						size > 0
 					}
 					divisions_in_state = {
-						state = 816
+						state = 844
 						size > 0
 					}
 					divisions_in_state = {
-						state = 817
+						state = 845
 						size > 0
 					}
 					divisions_in_state = {
-						state = 818
+						state = 846
 						size > 0
 					}
 					divisions_in_state = {
-						state = 819
+						state = 847
 						size > 0
 					}
 				}
@@ -2282,55 +2246,55 @@ country_event = { #마지막 제국
 						size > 0
 					}
 					divisions_in_state = {
-						state = 807
+						state = 835
 						size > 0
 					}
 					divisions_in_state = {
-						state = 808
+						state = 836
 						size > 0
 					}
 					divisions_in_state = {
-						state = 809
+						state = 837
 						size > 0
 					}
 					divisions_in_state = {
-						state = 810
+						state = 838
 						size > 0
 					}
 					divisions_in_state = {
-						state = 811
+						state = 839
 						size > 0
 					}
 					divisions_in_state = {
-						state = 812
+						state = 840
 						size > 0
 					}
 					divisions_in_state = {
-						state = 813
+						state = 841
 						size > 0
 					}
 					divisions_in_state = {
-						state = 814
+						state = 842
 						size > 0
 					}
 					divisions_in_state = {
-						state = 815
+						state = 843
 						size > 0
 					}
 					divisions_in_state = {
-						state = 816
+						state = 844
 						size > 0
 					}
 					divisions_in_state = {
-						state = 817
+						state = 845
 						size > 0
 					}
 					divisions_in_state = {
-						state = 818
+						state = 846
 						size > 0
 					}
 					divisions_in_state = {
-						state = 819
+						state = 847
 						size > 0
 					}
 				}
@@ -2347,55 +2311,55 @@ country_event = { #마지막 제국
 						size > 0
 					}
 					divisions_in_state = {
-						state = 807
+						state = 835
 						size > 0
 					}
 					divisions_in_state = {
-						state = 808
+						state = 836
 						size > 0
 					}
 					divisions_in_state = {
-						state = 809
+						state = 837
 						size > 0
 					}
 					divisions_in_state = {
-						state = 810
+						state = 838
 						size > 0
 					}
 					divisions_in_state = {
-						state = 811
+						state = 839
 						size > 0
 					}
 					divisions_in_state = {
-						state = 812
+						state = 840
 						size > 0
 					}
 					divisions_in_state = {
-						state = 813
+						state = 841
 						size > 0
 					}
 					divisions_in_state = {
-						state = 814
+						state = 842
 						size > 0
 					}
 					divisions_in_state = {
-						state = 815
+						state = 843
 						size > 0
 					}
 					divisions_in_state = {
-						state = 816
+						state = 844
 						size > 0
 					}
 					divisions_in_state = {
-						state = 817
+						state = 845
 						size > 0
 					}
 					divisions_in_state = {
-						state = 818
+						state = 846
 						size > 0
 					}
 					divisions_in_state = {
-						state = 819
+						state = 847
 						size > 0
 					}
 				}
@@ -2427,11 +2391,11 @@ country_event = { #중국군의 승리
 			transfer_state = 714
 			transfer_state = 715
 			transfer_state = 610
+			transfer_state = 881
+			transfer_state = 880
 			transfer_state = 853
 			transfer_state = 852
-			transfer_state = 825
-			transfer_state = 824
-			transfer_state = 823
+			transfer_state = 851
 			transfer_state = 745
 			puppet = KOR
 	}
@@ -2687,7 +2651,7 @@ country_event = { #결론
 	}
 }
 country_event = { #결론
-	id = korea.68
+	id = korea.68 
 	title = korea.68.title
 	desc = korea.68.desc
 	picture = GFX_윤봉길
@@ -2698,6 +2662,7 @@ country_event = { #결론
 	option = { #
 		name = korea.68.a
 		set_country_flag = FLAG_THE_COMMUNISTS_TERROR_HAS_BEEN_STATED
+		custom_effect_tooltip = TOOLTIP_CAN_COMPLETE_FOCUS_KOR
 	}
 }
 country_event = { #결론
@@ -2715,6 +2680,77 @@ country_event = { #결론
 			target = KOR
 			type = puppet_wargoal_focus
 		}
+	}
+}
+####
+country_event = { #시국설명
+	id = korea.70
+	title = korea.70.title
+	desc = korea.70.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.70.a
+		
+	}
+}
+country_event = { #총리의 하야
+	id = korea.71
+	title = korea.71.title
+	desc = korea.71.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.71.a
+		
+	}
+}
+country_event = { #구악 일소
+	id = korea.72
+	title = korea.72.title
+	desc = korea.72.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.72.a
+		
+	}
+}
+country_event = { #중국으로
+	id = korea.73
+	title = korea.73.title
+	desc = korea.73.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.73.a
+		
+	}
+}
+country_event = { #환호
+	id = korea.74
+	title = korea.74.title
+	desc = korea.74.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.74.a
+		
 	}
 }
 ##########

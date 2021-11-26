@@ -3,6 +3,7 @@ state={
 	id=597
 	name="STATE_597"
 
+	local_supplies=0.0 
 	history={
 		owner = SND
 		add_core_of = SND

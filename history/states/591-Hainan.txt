@@ -3,6 +3,7 @@ state={
 	id=591
 	name="STATE_591"
 
+	local_supplies=0.0 
 	history={
 		owner = CHI
 		add_core_of = GXC

@@ -38,15 +38,16 @@ KOR_historical_plan = {
 		KOR_the_day_which_very_long
 		kor_encouraging_patriotism_2
 		kor_forced_labor
+		kor_remove_strike
+		kor_military
 		kor_territory_expansion
 		KOR_plan_manchu
 		KOR_last_say_of_russia
+		kor_add
 		kor_tsushima
 		KOR_all_claim
 		KOR_dalian_attack
 		KOR_attack_colonial_territory
-		kor_military
-		kor_add
 		KOR_allied_with_russia
 		KOR_give_me_the_manchu
 		kor_threat_united_states

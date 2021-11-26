@@ -22,14 +22,5 @@ set_popularities = {
 add_ideas = {
 	KOR_yi_jin_2
 }
-
-create_country_leader = {
-	name = "Yi Geon"
-	picture = "gfx/leaders/KOR/yi_geon_old.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		dictator
-	}
-}
+recruit_character = KMN_yi_cheok
 

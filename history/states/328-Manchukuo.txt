@@ -5,6 +5,7 @@ state={
 	resources={
 		aluminium=7.000
 	}
+	local_supplies=0.0 
 
 	history={
 		owner = KOR

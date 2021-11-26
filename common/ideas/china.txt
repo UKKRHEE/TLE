@@ -36,11 +36,11 @@ ideas = {
 			}
 			modifier = {
 				stability_factor = -0.1
-				auto_despotism _drift = 0.0002
+				auto_despotism_drift = 0.0002
 				social_democracy_acceptance = -50
 				social_liberalism_acceptance = -50
 				national_liberalism_acceptance = -50
-				liberal_conservatism _acceptance = 25
+				liberal_conservatism_acceptance = 25
 				democratic_acceptance = 25
 				national_conservatism_acceptance = 25
 			}		
@@ -318,6 +318,7 @@ ideas = {
 			modifier = {
 				surrender_limit = 0.1
 				army_core_defence_factor = 0.15
+				army_core_attack_factor = 0.05
 			}
 		}
 		german_advisors = {

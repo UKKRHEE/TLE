@@ -295,84 +295,12 @@ KOR_the_three_countries_plan = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = TRIGGER_TOOLTIP_RULLED_CHINA
-				controls_state = 615
-				controls_state = 621
-				controls_state = 746
-				controls_state = 622
-				controls_state = 756
-				controls_state = 755
-				controls_state = 604
-				controls_state = 754
-				controls_state = 616
-				controls_state = 283
-				controls_state = 753
-				controls_state = 618
-				controls_state = 617
-				controls_state = 760
-				controls_state = 619
-				controls_state = 287
-				controls_state = 759
-				controls_state = 747
-				controls_state = 325
-				controls_state = 599
-				controls_state = 594
-				controls_state = 593
-				controls_state = 591
-				controls_state = 729
-				controls_state = 326
-				controls_state = 524
-				controls_state = 609
-				controls_state = 608
-				controls_state = 614
-				controls_state = 597
-				controls_state = 743
-				controls_state = 607
-				controls_state = 598
-				controls_state = 744
-				controls_state = 620
-				controls_state = 606
-				controls_state = 613
-				controls_state = 752
-				controls_state = 751
-				controls_state = 605
-				controls_state = 748
-				controls_state = 603
-				controls_state = 602
-				controls_state = 750
-				controls_state = 600
-				controls_state = 595
-				controls_state = 749
-				controls_state = 596
-				controls_state = 826
-				controls_state = 827
-				controls_state = 828
-				controls_state = 829
-				controls_state = 830
-				controls_state = 831
-				controls_state = 832
-				controls_state = 833
-				controls_state = 834
-				controls_state = 835
-				controls_state = 836
-				controls_state = 837
-				controls_state = 838
-				controls_state = 839
-				controls_state = 840
-				controls_state = 841
-				controls_state = 842
-				controls_state = 843
-				controls_state = 844
-				controls_state = 845
-				controls_state = 846
-				controls_state = 847
-				controls_state = 848
-				controls_state = 849
-				controls_state = 850
-				controls_state = 851
-				controls_state = 852
-				controls_state = 853
-				controls_state = 854
-				controls_state = 855
+				every_state = {
+					limit = {
+						is_core_of = CHI
+					}
+					is_controlled_by = KOR
+				}
 			}
 		}
 		complete_effect = {
@@ -401,10 +329,10 @@ KOR_the_three_countries_plan = {
 		}
 		custom_cost_trigger = {
 			command_power > 50
-			has_army_experience > 100
+			has_army_experience > 200
 		}
 		fire_only_once = yes
-		days_remove = 100
+		days_remove = 150
 		remove_effect = {
 			remove_ideas = KOR_not_planed_attack
 			army_experience = -150
@@ -1156,115 +1084,51 @@ KOR_reichskommissariat = {
 			CHI = { exists = no }
 			custom_trigger_tooltip = {
 				tooltip = form_country_korea_tt
-				controls_state = 525
-				controls_state = 527
-				controls_state = 807
-				controls_state = 808
-				controls_state = 809
-				controls_state = 810
-				controls_state = 811
-				controls_state = 812
-				controls_state = 813
-				controls_state = 814
-				controls_state = 815
-				controls_state = 816
-				controls_state = 817
-				controls_state = 818
-				controls_state = 819		
+				every_state = {
+					limit = {
+						is_core_of = KOR
+					}
+					is_controlled_by = KOR
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = form_country_manju_tt
-				controls_state = 328
-				controls_state = 610
-				controls_state = 714
-				controls_state = 715
-				controls_state = 716
-				controls_state = 717
-				controls_state = 761
+				every_state = {
+					limit = {
+						is_core_of = KMN
+					}
+					is_controlled_by = KOR
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = form_country_mongolia_tt
-				controls_state = 329
-				controls_state = 330
-				controls_state = 611
-				controls_state = 612
-				controls_state = 621
+				every_state = {
+					limit = {
+						is_core_of = MON
+					}
+					is_controlled_by = KOR
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = form_country_china_tt
-				controls_state = 615
-				controls_state = 621
-				controls_state = 746
-				controls_state = 622
-				controls_state = 756
-				controls_state = 755
-				controls_state = 604
-				controls_state = 754
-				controls_state = 616
-				controls_state = 283
-				controls_state = 753
-				controls_state = 618
-				controls_state = 617
-				controls_state = 760
-				controls_state = 619
-				controls_state = 287
-				controls_state = 759
-				controls_state = 747
-				controls_state = 325
-				controls_state = 599
-				controls_state = 594
-				controls_state = 593
-				controls_state = 591
-				controls_state = 729
-				controls_state = 326
-				controls_state = 524
-				controls_state = 609
-				controls_state = 608
-				controls_state = 614
-				controls_state = 597
-				controls_state = 743
-				controls_state = 607
-				controls_state = 598
-				controls_state = 744
-				controls_state = 620
-				controls_state = 606
-				controls_state = 613
-				controls_state = 601
-				controls_state = 752
-				controls_state = 751
-				controls_state = 605
-				controls_state = 748
-				controls_state = 603
-				controls_state = 602
-				controls_state = 750
-				controls_state = 600
-				controls_state = 595
-				controls_state = 749
-				controls_state = 609
-				controls_state = 596
+				every_state = {
+					limit = {
+						is_core_of = CHI
+					}
+					is_controlled_by = KOR
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = form_country_japan_tt
-				controls_state = 537
-				controls_state = 536
-				controls_state = 555
-				controls_state = 533
-				controls_state = 534
-				controls_state = 282
-				controls_state = 535
-				controls_state = 532
-				controls_state = 531
-				controls_state = 529
-				controls_state = 530
-				controls_state = 528
-				controls_state = 526
+				every_state = {
+					limit = {
+						is_core_of = JAP
+					}
+					is_controlled_by = KOR
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = form_state_gando_tt
-				controls_state = 821
-				controls_state = 823
-				controls_state = 824
-				controls_state = 825
 			}
 		}
 
@@ -1306,110 +1170,22 @@ KOR_reichskommissariat = {
 			JAP = { exists = no }
 			CHI = { exists = no }
 			custom_trigger_tooltip = {
-				tooltip = form_country_korea_tt
-				controls_state = 525
-				controls_state = 527
-				controls_state = 807
-				controls_state = 808
-				controls_state = 809
-				controls_state = 810
-				controls_state = 811
-				controls_state = 812
-				controls_state = 813
-				controls_state = 814
-				controls_state = 815
-				controls_state = 816
-				controls_state = 817
-				controls_state = 818
-				controls_state = 819		
-			}
-			custom_trigger_tooltip = {
-				tooltip = form_country_manju_tt
-				controls_state = 328
-				controls_state = 609
-				controls_state = 610
-				controls_state = 714
-				controls_state = 715
-				controls_state = 716
-				controls_state = 717
-				controls_state = 718
-				controls_state = 745
-			}
-			custom_trigger_tooltip = {
-				tooltip = form_country_mongolia_tt
-				controls_state = 329
-				controls_state = 330
-				controls_state = 611
-				controls_state = 612
-				controls_state = 621
-			}
-			custom_trigger_tooltip = {
 				tooltip = form_country_china_tt
-				controls_state = 615
-				controls_state = 621
-				controls_state = 746
-				controls_state = 622
-				controls_state = 756
-				controls_state = 755
-				controls_state = 604
-				controls_state = 754
-				controls_state = 616
-				controls_state = 283
-				controls_state = 753
-				controls_state = 618
-				controls_state = 617
-				controls_state = 760
-				controls_state = 619
-				controls_state = 287
-				controls_state = 759
-				controls_state = 747
-				controls_state = 325
-				controls_state = 599
-				controls_state = 594
-				controls_state = 593
-				controls_state = 591
-				controls_state = 729
-				controls_state = 326
-				controls_state = 524
-				controls_state = 609
-				controls_state = 608
-				controls_state = 614
-				controls_state = 597
-				controls_state = 743
-				controls_state = 607
-				controls_state = 598
-				controls_state = 744
-				controls_state = 620
-				controls_state = 606
-				controls_state = 613
-				controls_state = 601
-				controls_state = 752
-				controls_state = 751
-				controls_state = 605
-				controls_state = 748
-				controls_state = 603
-				controls_state = 602
-				controls_state = 750
-				controls_state = 600
-				controls_state = 595
-				controls_state = 749
-				controls_state = 596
+				every_state = {
+					limit = {
+						is_core_of = CHI
+					}
+					is_controlled_by = KOR
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = form_country_japan_tt
-				controls_state = 537
-				controls_state = 536
-				controls_state = 555
-				controls_state = 533
-				controls_state = 534
-				controls_state = 282
-				controls_state = 535
-				controls_state = 532
-				controls_state = 531
-				controls_state = 529
-				controls_state = 530
-				controls_state = 528
-				controls_state = 526
+				every_state = {
+					limit = {
+						is_core_of = JAP
+					}
+					is_controlled_by = KOR
+				}
 			}
 		}
 
@@ -1577,11 +1353,11 @@ KOR_nuke_surrend = {
 			factor = 10
 			modifier = {
 				NOT = {
-					controls_state = 820
-					controls_state = 821
-					controls_state = 823
-					controls_state = 824
-					controls_state = 825
+					controls_state = 848
+					controls_state = 849
+					controls_state = 851
+					controls_state = 852
+					controls_state = 853
 				}
 				factor = 10
 			}
@@ -1616,17 +1392,17 @@ KOR_nuke_surrend = {
 				OR = {
 					controls_state = 525
 					controls_state = 527
-					controls_state = 809
-					controls_state = 810
-					controls_state = 811
-					controls_state = 812
-					controls_state = 813
-					controls_state = 814
-					controls_state = 815
-					controls_state = 816
-					controls_state = 817
-					controls_state = 818
-					controls_state = 819
+					controls_state = 835
+					controls_state = 836
+					controls_state = 837
+					controls_state = 838
+					controls_state = 839
+					controls_state = 840
+					controls_state = 841
+					controls_state = 842
+					controls_state = 843
+					controls_state = 844
+					controls_state = 845
 				}
 			}
 		}

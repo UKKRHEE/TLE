@@ -1,0 +1,22 @@
+state={
+	id=866
+	name="STATE_866"
+	provinces={
+		4160 7135 
+	}
+	local_supplies=0.0 
+	manpower=135000
+	state_category=city
+	buildings_max_level_factor=1.000
+	history={
+		buildings = {
+			infrastructure = 2
+		}
+			owner = CHI
+			add_core_of = GXC
+			add_core_of = CHI
+			add_core_of = PRC
+			buildings = {
+			}
+		}
+}

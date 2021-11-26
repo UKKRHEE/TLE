@@ -1,9 +1,10 @@
 state={
 	id=613
-	name="STATE_831"
+	name="STATE_859"
 	provinces={
 		11913 
 	}
+	local_supplies=0.0 
 	manpower=1019667
 	state_category=large_city
 	buildings_max_level_factor=1.000

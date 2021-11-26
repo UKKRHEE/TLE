@@ -1,0 +1,32 @@
+
+state={
+	id=870
+	name="STATE_870"
+
+	local_supplies=0.0 
+	history={
+		victory_points = {
+			1184 1 
+		}
+		buildings = {
+			infrastructure = 4
+			dockyard = 1
+
+		}
+		owner = SND
+		add_core_of = SND
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+
+		}
+
+	}
+
+	provinces={
+		1124 1154 1184 4071 4157 4181 7055 7089 9971 12074 
+	}
+	manpower=3000000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

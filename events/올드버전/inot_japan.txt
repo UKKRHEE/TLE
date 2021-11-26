@@ -1,0 +1,370 @@
+﻿###########################
+# JaPaN EVENTS #########
+###########################
+
+add_namespace = japan
+
+#  AnnexationofKorea
+news_event = {
+	id = japan.1000
+	title = { 
+	text = japan.1000.t
+	trigger = { tag = JAP }
+	}
+	title = { 
+	text = japan.1000.t_other
+	trigger = { NOT = { tag = JAP } }
+	}
+	desc = { 
+	text = japan.1000.d
+	trigger = { tag = JAP }
+	}
+	desc = { 
+	text = japan.1000.d_other
+	trigger = { NOT = { tag = JAP } }
+	}
+	picture = GFX_news_event_japan_annexes_korea
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1000.a	
+		trigger = { tag = JAP }	
+  
+	}
+	option = {
+		name = japan.1000.b
+		trigger = { NOT = { tag = JAP } }		
+
+	}
+}	
+
+#EastHeibeiEvent
+country_event = {
+	id = japan.1001
+	title = japan.1001.t
+	desc = japan.1001.d
+	picture = GFX_report_event_JAP_east_heibei
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1001.a	
+        ai_chance = { factor = 0.75  }
+        remove_ideas = JAP_east_heibei
+		MAN = { set_state_owner = 609 } 
+
+	}
+
+	option = {
+		name = japan.1001.b	
+		ai_chance = { factor = 0.25  }
+        add_political_power = -75
+
+	}
+}
+
+#China-JapanWar
+news_event = {
+	id = japan.1002
+	title = { 
+	text = japan.1002.t
+	trigger = { tag = JAP }
+	}
+	title = { 
+	text = japan.1002.t_other
+	trigger = { NOT = { tag = JAP } }
+	}
+	desc = { 
+	text = japan.1002.d
+	trigger = { tag = JAP }
+	}
+	desc = { 
+	text = japan.1002.d_other
+	trigger = { NOT = { tag = JAP } }
+	}
+	picture = GFX_news_event_japan_attacks_china
+
+	trigger = { JAP = { has_offensive_war_with = CHI } }
+	fire_only_once = yes
+
+	option = {
+		name = japan.1002.a	
+		trigger = { tag = JAP }	
+  
+	}
+	option = {
+		name = japan.1002.b
+		trigger = { NOT = { tag = JAP } }		
+
+	}
+}	
+
+#Japan-WesternCoalitionWar
+news_event = {
+	id = japan.1003
+	title = { 
+	text = japan.1003.t
+	trigger = { tag = JAP }
+	}
+	title = { 
+	text = japan.1003.t_other
+	trigger = { NOT = { tag = JAP } }
+	}
+	desc = { 
+	text = japan.1003.d
+	trigger = { tag = JAP }
+	}
+	desc = { 
+	text = japan.1003.d_other
+	trigger = { NOT = { tag = JAP } }
+	}
+	picture = GFX_news_event_japan_attacks_allies
+
+	trigger = { JAP = { has_offensive_war_with = ENG } }
+	fire_only_once = yes
+
+	option = {
+		name = japan.1003.a	
+		trigger = { tag = JAP }	
+  
+	}
+	option = {
+		name = japan.1003.b
+		trigger = { NOT = { tag = JAP } }		
+
+	}
+}	
+
+#Japan-RussiaWar
+news_event = {
+	id = japan.1004
+	title = { 
+	text = japan.1004.t
+	trigger = { tag = JAP }
+	}
+	title = { 
+	text = japan.1004.t_other
+	trigger = { NOT = { tag = JAP } }
+	}
+	desc = { 
+	text = japan.1004.d
+	trigger = { tag = JAP }
+	}
+	desc = { 
+	text = japan.1004.d_other
+	trigger = { NOT = { tag = JAP } }
+	}
+	picture = GFX_news_event_japan_attacks_russia
+
+	trigger = { JAP = { has_offensive_war_with = RUS } }
+	fire_only_once = yes
+
+	option = {
+		name = japan.1004.a	
+		trigger = { tag = JAP }	
+  
+	}
+	option = {
+		name = japan.1004.b
+		trigger = { NOT = { tag = JAP } }		
+
+	}
+}
+
+#ARMYE
+country_event = {
+	id = japan.1005
+	title = japan.1005.t
+	desc = japan.1005.d
+	picture = GFX_report_event_jap_army
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1005.a	
+        ai_chance = { factor = 0.5  }
+		add_ideas = JAP_sea_invasion
+
+	}
+
+	option = {
+		name = japan.1005.b	
+		ai_chance = { factor = 0.5  }
+        add_ideas = JAP_jungle_combat
+
+	}
+}
+
+#Emporer
+country_event = {
+	id = japan.1006
+	title = japan.1006.t
+	desc = japan.1006.d
+	picture = GFX_report_event_jap_hirohito
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1006.a	
+        ai_chance = { factor = 0.5  }
+        add_political_power = 200
+	}
+
+	option = {
+		name = japan.1006.b	
+		ai_chance = { factor = 0.5  }
+        add_stability = -0.05 
+        create_country_leader = { name = "Tōjō Hideki" desc = "POLITICS_Tōjō_Hideki_DESC" picture = "tojo_hideki.dds" expire = "1965.1.1" ideology = fascism_ideology traits = { } }
+	}
+}
+
+#DemocraticTakeover
+news_event = {
+	id = japan.1007
+	title = { 
+	text = japan.1007.t
+	trigger = { tag = JAP }
+	}
+	title = { 
+	text = japan.1007.t_other
+	trigger = { NOT = { tag = JAP } }
+	}
+	desc = { 
+	text = japan.1007.d
+	trigger = { tag = JAP }
+	}
+	desc = { 
+	text = japan.1007.d_other
+	trigger = { NOT = { tag = JAP } }
+	}
+	picture = GFX_news_event_jap_civil
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1007.a	
+		trigger = { tag = JAP }	
+  
+	}
+	option = {
+		name = japan.1007.b
+		trigger = { NOT = { tag = JAP } }		
+
+	}
+}
+
+#Chinawantojoinfaction?
+country_event = {
+	id = japan.1008
+	title = japan.1008.t
+	desc = japan.1008.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1008.a	
+        ai_chance = { factor = 0.75  }
+        add_political_power = 100
+        country_event = { days = 1 id = japan.1010 }
+	}
+
+	option = {
+		name = japan.1008.b	
+		ai_chance = { factor = 0.25  }
+        add_stability = -0.05 
+        country_event = { days = 1 id = japan.1011 }
+	}
+}
+
+#Chinaaccepts
+country_event = {
+	id = japan.1010
+	title = japan.1010.t
+	desc = japan.1010.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1010.a	
+        add_to_faction = CHI
+        add_ideas = JAP_influence_us
+        add_opinion_modifier = { target = JAP modifier = improved_good }
+	}
+}
+
+#Chinadeclines
+country_event = {
+	id = japan.1011
+	title = japan.1011.t
+	desc = japan.1011.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1011.a	
+	}
+}
+
+#Japanwantsindochina
+country_event = {
+	id = japan.1009
+	title = japan.1009.t
+	desc = japan.1009.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1009.a	
+        ai_chance = { factor = 0.4  }
+        add_stability = 0.05 
+        country_event = { days = 1 id = japan.1012 }
+	}
+
+	option = {
+		name = japan.1009.b	
+		ai_chance = { factor = 0.6  }
+        add_stability = -0.05 
+        add_war_support = 0.15
+        country_event = { days = 1 id = japan.1013 }
+	}
+}
+
+#Franceaccpets
+country_event = {
+	id = japan.1012
+	title = japan.1012.t
+	desc = japan.1012.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1012.a	
+        JAP = { 
+		transfer_state = 671
+		transfer_state = 670
+		transfer_state = 286
+		transfer_state = 741
+		}
+	}
+}
+
+#Francedeclines
+country_event = {
+	id = japan.1013
+	title = japan.1013.t
+	desc = japan.1013.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1013.a	
+		declare_war_on = { target = FRA type = annex_everything } 
+	}
+}

@@ -1,0 +1,28 @@
+state={
+	id=856
+	name="STATE_856"
+	provinces={
+		1104 1200 4186 7105 
+	}
+	local_supplies=0.0 
+	manpower=7000000
+	state_category=city
+	buildings_max_level_factor=1.000
+	history={
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		victory_points = {
+			1200 1
+		}
+			owner = SND
+			add_core_of = SND
+			add_core_of = CHI
+			add_core_of = PRC
+			buildings = {
+			}
+		}
+}

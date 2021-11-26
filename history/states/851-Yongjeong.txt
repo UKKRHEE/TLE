@@ -1,0 +1,30 @@
+
+state={
+	id=851
+	name="STATE_851"
+
+	local_supplies=0.0 
+	history={
+		owner = KOR
+		add_core_of = CHI
+		add_core_of = KOR
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 3
+
+		}
+		#set_demilitarized_zone = yes
+		#1936.3.7 = {
+		#	set_demilitarized_zone = no
+		#
+		#}
+
+	}
+
+	provinces={
+		783 927 944 973 3929 3944 3947 6806 6964 9766 9883 9897 11823 11862 
+	}
+	manpower=2224174
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

@@ -1,0 +1,36 @@
+
+state={
+	id=848
+	name="STATE_848"
+	manpower = 680184
+	local_supplies=0.0 
+	resources={
+		chromium=20 # was: 28
+	}
+	
+	state_category = town
+
+	history={
+		owner = KOR
+		victory_points = {
+			957 20
+		}
+		buildings = {
+			infrastructure = 4
+			air_base = 1
+			arms_factory = 1
+			957 = {
+				naval_base = 8
+				coastal_bunker = 3
+			}
+		}
+		1936.5.1 = {
+			owner = KOR
+		}
+		add_core_of = KOR
+	}
+
+	provinces={
+		957
+	}
+}

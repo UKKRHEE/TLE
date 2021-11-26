@@ -1,0 +1,18 @@
+state={
+	id=846
+	name="STATE_846"
+	provinces={
+		4004 9981 11958
+	}
+	local_supplies=0.0 
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = KOR
+	}
+	manpower=138000
+	state_category=town
+	buildings_max_level_factor=1.000
+}

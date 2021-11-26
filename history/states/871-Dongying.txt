@@ -1,0 +1,35 @@
+
+state={
+	id=871
+	name="STATE_871"
+
+	local_supplies=0.0 
+	history={
+		victory_points = {
+			4089 1 
+		}
+		buildings = {
+			infrastructure = 3
+			4089 = {
+				naval_base = 2
+
+			}
+
+		}
+		owner = SND
+		add_core_of = SND
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+
+		}
+
+	}
+
+	provinces={
+		4089 
+	}
+	manpower=1400000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

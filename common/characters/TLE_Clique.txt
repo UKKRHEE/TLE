@@ -1,0 +1,578 @@
+characters={
+	CHI_chen_tiao_yuan={
+		name="Chen Tiaoyuan"
+		portraits={
+			civilian={
+				large="gfx/leaders/ANC/portrait_anc_chen_tiaoyuan.png"
+			}
+			army = {
+				large="gfx/leaders/ANC/portrait_anc_chen_tiaoyuan.png"
+			}
+		}
+		country_leader={
+			desc = ""
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			traits = {
+				politically_connected
+				old_guard
+				artillery_officer
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=-1
+		}
+	}
+	CHI_zhao_heng_ti={
+		name="Zhao Hengti"
+		portraits={
+			civilian={
+				large="gfx/leaders/HNC/Portrait_Hunan_Zhao_Hengti_Civilian.png"
+			}
+			army = {
+				large="gfx/leaders/HNC/Portrait_Hunan_Zhao_Hengti_Civilian.png"
+			}
+		}
+		country_leader={
+			desc = ""
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			traits = {
+				politically_connected
+				old_guard
+				artillery_officer
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=-1
+		}
+	}
+	MON_demchugdongrub={
+		name="박이제길특 덕목초극동노보"
+		portraits={
+			civilian={
+				large="GFX_portrait_men_demchugdongrub"
+			}
+			army = {
+				large="GFX_portrait_men_demchugdongrub"
+			}
+		}
+		country_leader={
+			desc = ""
+			ideology=rexism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc = ""
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=-1
+		}
+	}
+	QIN_puyi={
+		name="애신각라 부의"
+		portraits={
+			civilian={
+				large="gfx/leaders/QIN/Portrait_QIE_Puyi_Uniform.png"
+			}
+			army = {
+				large="gfx/leaders/QIN/Portrait_QIE_Puyi_Uniform.png"
+			}
+		}
+		country_leader={
+			desc = ""
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=-1
+		}
+	}
+	RUS_alexandr_kolchak = {
+		name="알렉산드르 콜차크"
+		portraits={
+			civilian={
+				large="gfx/leaders/RUS/Portrait_RUS_Aleksandr_Kolchak.tga"
+			}
+			army = {
+				large="gfx/leaders/RUS/Portrait_RUS_Aleksandr_Kolchak.tga"
+			}
+		}
+		country_leader={
+			desc = ""
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		navy_leader={
+			traits = { }
+			skill = 3
+			attack_skill = 5
+			defense_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 4
+			legacy_id=-1
+		}
+	}
+	RUS_pyotr_wrangel = {
+	
+		name="표트르 브란겔"
+		portraits={
+			civilian={
+				large="gfx/leaders/QIN/Portrait_QIE_Puyi_Uniform.png"
+			}
+			army = {
+				large="gfx/leaders/QIN/Portrait_QIE_Puyi_Uniform.png"
+			}
+		}
+		country_leader={
+			desc = ""
+			ideology=rexism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=-1
+		}
+	}
+	RUS_anton_denikin = {
+	
+		name="안톤 데니킨"
+		portraits={
+			civilian={
+				large="gfx/leaders/RUS/Portrait_RUS_Anton_Denikin.tga"
+			}
+			army = {
+				large="gfx/leaders/RUS/Portrait_RUS_Anton_Denikin.tga"
+			}
+		}
+		field_marshal={
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=-1
+		}
+	}
+	RYU_sho_hiroshi = {
+		name="상유"
+		portraits={
+			civilian={
+				large="gfx/leaders/RYU/RYU_herosee.dds"
+			}
+			army = {
+				large="gfx/leaders/RYU/RYU_herosee.dds"
+			}
+		}
+		country_leader={
+			desc = ""
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=-1
+		}
+	}
+	WZC_sun_chuanfang = {
+		name="Sun Chuanfang"
+		portraits={
+			civilian={
+				large="gfx/leaders/WZC/Portrait_LEP_Sun_Chuanfang.png"
+			}
+			army = {
+				large="gfx/leaders/WZC/Portrait_LEP_Sun_Chuanfang.png"
+			}
+		}
+		country_leader={
+			desc = ""
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=-1
+		}
+	}
+	WZC_Chen_Tiaoyuan = {
+		name="Chen Tiaoyuan"
+		portraits={
+			civilian={
+				large="gfx/leaders/ANC/portrait_anc_chen_tiaoyuan.png"
+			}
+			army = {
+				large="gfx/leaders/ANC/portrait_anc_chen_tiaoyuan.png"
+			}
+		}
+		field_marshal={
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=-1
+		}
+	}
+	WZC_qi_xieyuan = {
+		name="Qi Xieyuan"
+		portraits={
+			civilian={
+				large="gfx/leaders/WZC/Portrait_LEP_Qi_Xieyuan.png"
+			}
+			army = {
+				large="gfx/leaders/WZC/Portrait_LEP_Qi_Xieyuan.png"
+			}
+		}
+		field_marshal={
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=-1
+		}
+	}
+	WZC_chen_yi = {
+		name="Chen Yi"
+		portraits={
+			civilian={
+				large="gfx/leaders/WZC/Portrait_LEP_Chen_Yi.png"
+			}
+			army = {
+				large="gfx/leaders/WZC/Portrait_LEP_Chen_Yi.png"
+			}
+		}
+		corps_commander={
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=-1
+		}
+	}
+	WZC_Zheng_Junyan = {
+		name="Zheng Junyan"
+		portraits={
+			civilian={
+				large="gfx/leaders/WZC/Portrait_LEP_Chen_Yi.png"
+			}
+			army = {
+				large="gfx/leaders/WZC/Portrait_LEP_Chen_Yi.png"
+			}
+		}
+		corps_commander={
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=-1
+		}
+	}
+	WZC_Deng_Ruzuo = {
+		name="Deng Ruzuo"
+		portraits={
+			civilian={
+				large="gfx/leaders/WZC/Portrait_LEP_Deng_Ruzuo.png"
+			}
+			army = {
+				large="gfx/leaders/WZC/Portrait_LEP_Deng_Ruzuo.png"
+			}
+		}
+		corps_commander={
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=-1
+		}
+	}
+	WZC_Zhou_Yinren = {
+		name="Zhou Yinren"
+		portraits={
+			civilian={
+				large="gfx/leaders/WZC/Portrait_LEP_Zhou_Yinren.png"
+			}
+			army = {
+				large="gfx/leaders/WZC/Portrait_LEP_Zhou_Yinren.png"
+			}
+		}
+		corps_commander={
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=-1
+		}
+	}
+	WZC_Zhou_Fengqi = {
+		name="Zhou Fengqi"
+		portraits={
+			civilian={
+				large="gfx/leaders/WZC/Portrait_LEP_Zhou_Fengqi.png"
+			}
+			army = {
+				large="gfx/leaders/WZC/Portrait_LEP_Zhou_Fengqi.png"
+			}
+		}
+		corps_commander={
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=-1
+		}
+	}
+	WZC_Tang_Enbo = {
+		name="Tang Enbo"
+		portraits={
+			civilian={
+				large="gfx/leaders/WZC/Portrait_LEP_Tang_Enbo.png"
+			}
+			army = {
+				large="gfx/leaders/WZC/Portrait_LEP_Tang_Enbo.png"
+			}
+		}
+		corps_commander={
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=-1
+		}
+	}
+	WZC_Yang_Shuzhuang = {
+		name="Yang Shuzhuang"
+		portraits={
+			civilian={
+				large="gfx/leaders/WZC/Portrait_LEP_Yang_Shuzhuang.png"
+			}
+			army = {
+				large="gfx/leaders/WZC/Portrait_LEP_Yang_Shuzhuang.png"
+			}
+		}
+		navy_leader={
+			traits = { }
+			skill = 3
+			attack_skill = 5
+			defense_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 4
+			legacy_id=-1
+		}
+	}
+	
+	SND_Zhang_Zongchang = {
+		name="Zhang Zongchang"
+		portraits={
+			civilian={
+				large="gfx/leaders/SND/Portrait_Shandong_Zhang_Zongchang.tga"
+			}
+			army = {
+				large="gfx/leaders/SND/Portrait_Shandong_Zhang_Zongchang.tga"
+			}
+		}
+		country_leader={
+			desc = ""
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=-1
+		}
+	}
+	
+	SZC_liu_wen_hui = {
+		name="Liu Wenhui"
+		portraits={
+			civilian={
+				large="gfx/leaders/SZC/Portrait_SZC_Liu_Wenhui.tga"
+			}
+			army = {
+				large="gfx/leaders/SZC/Portrait_SZC_Liu_Wenhui.tga"
+			}
+		}
+		country_leader={
+			desc = ""
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=-1
+		}
+	}
+	ZLC_Wu_Peifu = {
+		name="Wu Peifu"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZLC/Portrait_QIE_Wu_Peifu.png"
+			}
+			army = {
+				large="gfx/leaders/ZLC/Portrait_QIE_Wu_Peifu.png"
+			}
+		}
+		country_leader={
+			desc = ""
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=-1
+		}
+	}
+	ZLC_chao_kun = {
+		name="Chao Kun"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZLC/Portrait_ZLC_Chao_kun.png"
+			}
+			army = {
+				large="gfx/leaders/ZLC/Portrait_ZLC_Chao_kun.png"
+			}
+		}
+		field_marshal={
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=-1
+		}
+	}
+	ZLC_Jiang_Baili = {
+		name="Jiang Baili"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZLC/Portrait_QIE_Jiang_Baili.png"
+			}
+			army = {
+				large="gfx/leaders/ZLC/Portrait_QIE_Jiang_Baili.png"
+			}
+		}
+		field_marshal={
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=-1
+		}
+	}
+	ZLC_Wang_Huaiqing = {
+		name="Wang Huaiqing"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZLC/Portrait_QIE_Wang_Huaiqing.png"
+			}
+			army = {
+				large="gfx/leaders/ZLC/Portrait_QIE_Wang_Huaiqing.png"
+			}
+		}
+		corps_commander={
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=-1
+		}
+	}
+}

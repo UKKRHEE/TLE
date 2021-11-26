@@ -54,15 +54,20 @@ add_equipment_to_stockpile = {
 	amount = 5000
 	producer = KOR
 }
+add_equipment_to_stockpile = {
+	type = train_equipment_1
+	amount = 30
+	producer = KOR
+}
 
 add_equipment_to_stockpile = {
-	type = support_equipment
+	type = support_equipment_1
 	amount = 1000
 	producer = KOR
 }
 
 add_equipment_to_stockpile = {
-	type = artillery_equipment_0
+	type = artillery_equipment_1
 	amount = 1000
 	producer = KOR
 }
@@ -210,6 +215,37 @@ if = {
 		autonomous_state = autonomy_wtt_imperial_protectorate
 	}
 }
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+		not = { has_dlc = "Waking the Tiger" }
+	}
+	set_autonomy = {
+		target = RUS
+		autonomous_state = autonomy_integrated_puppet
+	}
+}
+if = {
+	limit = { 
+		not = {
+			has_dlc = "Waking the Tiger"
+			has_dlc = "Together for Victory"
+		}
+	}
+	set_autonomy = {
+		target = RUS
+		autonomous_state = autonomy_puppet
+	}
+}
+if = {
+	limit = { 
+		has_dlc = "Waking the Tiger"
+	}
+	set_autonomy = {
+		target = RUS
+		autonomous_state = autonomy_wtt_imperial_protectorate
+	}
+}
 set_research_slots = 3
 set_stability = 0.5
 set_war_support = 0.15
@@ -221,9 +257,6 @@ set_technology = {
 	marines  = 1
 	
 	### 기갑 ###
-	gwtank = 1
-	basic_light_tank = 1
-	basic_heavy_tank = 1
 	
 	### 지원 ###
 	tech_support = 1		
@@ -250,6 +283,28 @@ set_technology = {
 	fuel_silos = 1
 	synth_oil_experiments = 1
 	fuel_refining = 1
+	
+	basic_train = 1
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+	set_oob = "KOR_1936"
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+	set_oob = "KOR_1936_nsb"
 }
 
 #해군(맨더건)"
@@ -273,10 +328,14 @@ if = {
 		basic_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
 		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
 		mtg_transport = 1
 		coastal_defense_ships = 1
 		basic_secondary_battery = 1
 		basic_depth_charges = 1
+		basic_cruiser_armor_scheme = 1
+		cruiser_submarines = 1
 	}
 	set_naval_oob = "KOR_1936_Naval"
 }
@@ -292,11 +351,22 @@ if = {
 		basic_light_cruiser = 1
 		early_heavy_cruiser = 1
 		basic_heavy_cruiser = 1
+		early_battleship = 1
 		basic_battleship = 1
 		early_battlecruiser = 1
+		early_carrier = 1
+		basic_carrier = 1
 		transport = 1
 	}
 	set_naval_oob = "KOR_1936_Naval_Legacy"
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
 }
 
 show_ideas_tooltip = {
@@ -322,8 +392,8 @@ add_ideas = {
 	low_economic_mobilisation
 	limited_conscription
 	limited_exports
-	confucian_press
-	age_18
+	#confucian_press
+	#age_18
 	#군부
 	KOR_interservice_rivalry_balanced #군부대립
 }
@@ -344,616 +414,119 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 46 #liberalism
-	fascism = 17 #nazism
-	communism = 14 #marxism
+	fascism = 27 #nazism
+	communism = 4 #marxism
 	neutrality = 23 #despotism
 }
+recruit_character = KOR_kim_hui_sun
+recruit_character = KOR_yi_byung_mu
+recruit_character = KOR_yi_kang
 
-create_country_leader = {
-	name = "Kim Hui Sun"
-	desc = "KIM_HUI_SUN_DESC"
-	picture = "gfx/leaders/KOR/Portrait_KOR_kim_hui_sun.png"
-	expire = "1951.1.5"
-	ideology = liberalism
-	traits = {
-		the_democratist
-	}
-}
-#create_country_leader = {
-#	name = "Kim Koo"
-#	desc = ""
-#	picture = "gfx/leaders/KOR/Portrait_Kim_Koo.png"
-#	expire = "1951.1.5"
-#	ideology = conservatism
-#	traits = {
-#	}
-#}
+recruit_character = KOR_emperor_yi_jin
+recruit_character = KOR_yu_dong_yeol
+recruit_character = KOR_song_ho_seong
+recruit_character = KOR_yi_won
+recruit_character = KOR_ji_cheong_cheon
+recruit_character = KOR_ji_cheong_cheon_2
+recruit_character = KOR_yujin_kim
 
-create_country_leader = {
-	name = "Yi Byung Mu" #이병무
-	desc = "KOR_YI_BYUNG_MU_DESC"
-	picture = "gfx/leaders/KOR/이병무.png"
-	expire = "1955.8.1"
-	ideology = despotism #권위주의
-	traits = {
-		leader_of_despotism #대전쟁의 영웅
-	}
-}
+recruit_character = KOR_kim_chwa_chin
+recruit_character = KOR_lee_beom_seok
+recruit_character = KOR_lee_beom_seok_2
+recruit_character = KOR_kim_hong_il
+recruit_character = KOR_hong_sa_ik
+recruit_character = KOR_kim_kyung_cheon
+recruit_character = KOR_sin_sun_seong
+recruit_character = KOR_son_won_ile
+recruit_character = KOR_shin_sung_mo
+recruit_character = KOR_shin_sung_mo_2
+recruit_character = KOR_shin_sung_mo_3
+recruit_character = KOR_no_baeg_lin
+recruit_character = KOR_no_baeg_lin_2
+recruit_character = KOR_lee_tae_gyu
+recruit_character = KOR_do_sang_log
+recruit_character = KOR_phillip_jaisohn
+recruit_character = KOR_yi_dong_hwi
+recruit_character = KOR_an_ho_sang
+recruit_character = KOR_yi_un
+recruit_character = KOR_kim_koo
+recruit_character = KOR_park_sang_jin
+recruit_character = KOR_syngman_rhee
+recruit_character = KOR_yeounhyeong
+recruit_character = KOR_lee_byung_chul
+recruit_character = KOR_song_jin_woo
+recruit_character = KOR_kim_gyu_sik
 
-create_country_leader = {
-	name = "Pak Hon Yong" #빨갱이
-	desc = ""
-	picture = "gfx/leaders/KOR/Portrait_KOR_Pak_Hon_yong.dds" #빨갱이
-	expire = "1965.1.1"
-	ideology = communism_subtype #빨갱이
-	traits = {
-		#
-	}
-}
-
-#create_country_leader = {
-#	name = "Lyuh Woon Hyung"
-#	desc = ""
-#	picture = "gfx/leaders/KOR/Portrait_Lyuh_Woonhyung.png"
-#	expire = "1965.1.1"
-#	ideology = socialist_subtype
-#	traits = {
-#		#
-#	}
-#}
-
-create_country_leader = {
-	name = "Yi Kang"
-	desc = "YI_KANG_DESC"
-	picture = "gfx/leaders/KOR/Portrait_yi_kang_old.png"
-	expire = "1972.5.11"
-	ideology = fascism_ideology
-	traits = {
-		dictator_kor
-	}
-}	
+recruit_character = KOR_yi_wu
+recruit_character = KOR_yi_geon
+recruit_character = KOR_kim_suk_won
+recruit_character = KOR_kim_won_bong
+recruit_character = KOR_kim_du_han
+recruit_character = KOR_kim_sung_ju
+recruit_character = KOR_yang_se_bong
+recruit_character = KOR_ryu_ja_myeong
+recruit_character = KOR_nam_il
+recruit_character = KOR_choe_yong_geon
 
 #육군(원수)
-create_field_marshal = { #계급 - 원수
-	name = "Yi Byung Mu" #장군 이름 
-	id = 12138 #장군 고유 id
-	portrait_path = "gfx/leaders/KOR/이병무.png" #포트레잇(사진)
-	traits = { #트레잇
-		old_guard #ㅄ파
-		infantry_officer 
-		infantry_leader
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
 	}
-	skill = 5 #레벨
-    attack_skill = 2 #공 
-    defense_skill = 4 #방
-    planning_skill = 2 #작전
-    logistics_skill = 4 #보급
-}
-create_field_marshal = {
-	name = "Yi Kang"
-	id = 12141
-	portrait_path = "gfx/leaders/KOR/Portrait_KOR_yi_kang_emperor.png"
-	traits = { 
-		KOR_imperial_family
-		infantry_officer
-		politically_connected
+	create_equipment_variant = {
+		name = "천리마"
+		type = light_tank_chassis_0
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 1
+			tank_nsb_armor_upgrade = 1
+		}
+		obsolete = yes
+		icon = "gfx/interface/technologies/JAP_basic_light_tank.dds"
 	}
-	skill = 4
-    attack_skill = 3
-    defense_skill = 3
-    planning_skill = 3
-    logistics_skill = 4
-}
-create_field_marshal = {
-	name = "Yu Dong Yeol"
-	id = 12139
-	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Yu_Dong_yeol.dds"
-	traits = { 
-		old_guard
-		cavalry_officer 
-		cavalry_leader
-		politically_connected
+	create_equipment_variant = {
+		name = "만리마"
+		type = medium_tank_chassis_0
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_close_support_gun
+			turret_type_slot = tank_medium_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 3
+			tank_nsb_armor_upgrade = 2
+		}
+		icon = "gfx/interface/technologies/JAP_basic_main_tank.dds"
 	}
-	skill = 4
-    attack_skill = 3
-    defense_skill = 3
-    planning_skill = 3
-    logistics_skill = 4
-}
-create_field_marshal = {
-	name = "Song Ho seong"
-	id = 12140
-	portrait_path = "gfx/leaders/KOR/Portrait_general_song_hoseong.dds"
-	traits = { 
-		old_guard
-		cavalry_officer 
-		defensive_doctrine
-		career_officer
+	create_equipment_variant = {
+		name = "흑표 제 1식"
+		type = light_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 2
+		}
+		icon = "gfx/interface/technologies/JAP_imp_light_tank.dds"
 	}
-	skill = 4
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
 }
-create_field_marshal = {
-	name = "Yi Jin"
-	id = 20100
-	portrait_path = "gfx/leaders/KOR/Portrait_Yi_Kang.dds"
-	traits = { KOR_emperor KOR_imperial_family politically_connected media_personality }
-	skill = 5
-    attack_skill = 2
-    defense_skill = 2
-    planning_skill = 3
-    logistics_skill = 4
-}
-create_field_marshal = {
-	name = "Yi Won"
-	id = 20101
-	portrait_path = "gfx/leaders/KOR/Portrait_general_lee_jongchan.dds"
-	traits = { KOR_imperial_family politically_connected }
-	skill = 3
-    attack_skill = 3
-    defense_skill = 2
-    planning_skill = 3
-    logistics_skill = 4
-}
-
-
-create_field_marshal = {
-	name = "Kim Chwa Chin"
-	id = 19361
-	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Kim_Chwa_chin.dds"
-	traits = { politically_connected inflexible_strategist trickster career_officer }
-	skill = 3
-    attack_skill = 3
-    defense_skill = 4
-    planning_skill = 3
-    logistics_skill = 5
-}
-
-create_field_marshal = {
-	name = "Yi Un"
-	id = 19362
-	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Yi_Un.dds"
-	traits = { KOR_imperial_family politically_connected defensive_doctrine media_personality }
-	skill = 2
-    attack_skill = 1
-    defense_skill = 3
-    planning_skill = 2
-    logistics_skill = 3
-}
-create_field_marshal = {
-	name = "Yujin Choi"
-	portrait_path = "gfx/leaders/KOR/Portrait_Future_Korea_Generic_Male_navy_5.dds"
-	traits = { defensive_doctrine inflexible_strategist trickster career_officer }
-	skill = 4
-    attack_skill = 3
-    defense_skill = 2
-    planning_skill = 2
-    logistics_skill = 4
-}
-
-#육군(대장)
-create_corps_commander = {
-	name = "Yi Wu"
-	id = 19363
-	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Yi_Wu.dds"
-	traits = { KOR_imperial_family politically_connected media_personality armor_officer trait_engineer }
-	skill = 2
-    attack_skill = 2
-    defense_skill = 1
-    planning_skill = 2
-    logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Yi Geon"
-	id = 19380
-	portrait_path = "gfx/leaders/KOR/Portrait_general_lee_geon.dds"
-	traits = { KOR_imperial_family politically_connected brilliant_strategist armor_officer }
-	skill = 2
-    attack_skill = 3
-    defense_skill = 2
-    planning_skill = 2
-    logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Lee Beom Seok"
-	id = 19364
-	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Lee_Beom_seok.dds"
-	traits = { KOR_imperial_family cavalry_officer brilliant_strategist politically_connected }
-	skill = 3
-    attack_skill = 4
-    defense_skill = 2
-    planning_skill = 3
-    logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Kim Kyung cheon"
-	id = 19365
-	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Kim_Kyung_cheon.dds"
-	traits = { cavalry_officer armor_officer panzer_leader career_officer }
-	skill = 3
-    attack_skill = 3
-    defense_skill = 3
-    planning_skill = 2
-    logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Ji Cheong Cheon"
-	id = 19366
-	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Ji_Cheong_cheon.dds"
-	traits = { inflexible_strategist infantry_officer defensive_doctrine }
-	skill = 3
-    attack_skill = 2
-    defense_skill = 4
-    planning_skill = 3
-    logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Hong Sa ik"
-	id = 19367
-	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Hong_Sa_ik.dds"
-	traits = { organizer career_officer brilliant_strategist }
-	skill = 2
-    attack_skill = 3
-    defense_skill = 2
-    planning_skill = 2
-    logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Kim Won Bong"
-	id = 19368
-	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Kim_Won_bong.dds"
-	traits = { commando trickster brilliant_strategist }
-	skill = 3
-    attack_skill = 4
-    defense_skill = 1
-    planning_skill = 3
-    logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Kim Suk won"
-	id = 19369
-	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Kim_Suk_won.dds"
-	traits = { infantry_officer brilliant_strategist career_officer }
-	skill = 3
-    attack_skill = 4
-    defense_skill = 2
-    planning_skill = 2
-    logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Eugene Kim"
-	id = 189390
-	portrait_path = "gfx/leaders/KOR/Portrait_USA_yujin_kim.dds"
-	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality armor_officer panzer_leader war_hero }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Kim Du Han"
-	portrait_path = "gfx/leaders/KOR/Portrait_4dollor2.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	name = "Kim Sung Ju"
-	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Kim_Il_sung.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	name = "Yang Se Bong"
-	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Yang_Se_bong.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	name = "Ryu Ja Meong"
-	portrait_path = "gfx/leaders/KOR/Portrait_ryu_ja_meog.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	name = "Kim Hong Il"
-	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Kim_Hong_il.dds"
-	skill = 1
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 1
-}
-create_corps_commander = {
-	name = "Nam Il"
-	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Nam_Il.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	name = "Choe Yong Geon"
-	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Choe_Yong_gon.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-#해군
-create_navy_leader = {
-	name = "Sin Sun seong"
-	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Sin_Sun_seong.dds"
-	traits = { naval_lineage battleship_adherent gunnery_expert ironside }
-	skill = 3
-	id = 19370
-	attack_skill = 5
-	defense_skill = 3
-	maneuvering_skill = 4
-	coordination_skill = 4
-}
-
-create_navy_leader = {
-	name = "Son Won Ile"
-	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Son_Won_il.dds"
-	traits = { bold aviation_enthusiast superior_tactician }
-	id = 19371
-	skill = 3
-	attack_skill = 5
-	defense_skill = 4
-	maneuvering_skill = 3
-	coordination_skill = 4
-}
-
-create_navy_leader = {
-	name = "Shin Sung mo"
-	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Shin_Sung_mo.dds"
-	id = 19372
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	maneuvering_skill = 1
-	coordination_skill = 1
-}
-create_navy_leader = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	maneuvering_skill = 1
-	coordination_skill = 1
-}
-create_navy_leader = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	maneuvering_skill = 1
-	coordination_skill = 1
-}
-create_navy_leader = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	maneuvering_skill = 1
-	coordination_skill = 1
-}
-create_navy_leader = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	maneuvering_skill = 1
-	coordination_skill = 1
-}
-create_navy_leader = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	maneuvering_skill = 1
-	coordination_skill = 1
-}
-create_navy_leader = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	maneuvering_skill = 1
-	coordination_skill = 1
-}
-create_navy_leader = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	maneuvering_skill = 1
-	coordination_skill = 1
-}
-create_navy_leader = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	maneuvering_skill = 1
-	coordination_skill = 1
-}
-create_navy_leader = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	maneuvering_skill = 1
-	coordination_skill = 1
-}
-create_navy_leader = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	maneuvering_skill = 1
-	coordination_skill = 1
-}
-create_navy_leader = {
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	maneuvering_skill = 1
-	coordination_skill = 1
-}
-
-
-
 if = {
 	limit = { has_dlc = "Man the Guns"}
 		#항모

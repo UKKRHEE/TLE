@@ -1,0 +1,27 @@
+state={
+	id=867
+	name="STATE_867"
+	provinces={
+		1047 
+	}
+	local_supplies=0.0 
+	manpower=1122600 
+	state_category=city
+	buildings_max_level_factor=1.000
+	history={
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			1047 = {
+				naval_base = 3
+
+			}
+		}
+			owner = CHI
+			add_core_of = GXC
+			add_core_of = CHI
+			add_core_of = PRC
+			buildings = {
+			}
+		}
+}

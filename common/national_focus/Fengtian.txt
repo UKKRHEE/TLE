@@ -1283,7 +1283,7 @@ focus_tree = {
 					create_wargoal = {
 							type = take_state_focus
 							target = KOR
-							generator = { 809 }
+							generator = { 837 }
 						}
 				}
 

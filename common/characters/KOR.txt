@@ -1,0 +1,1297 @@
+characters={
+	KMN_yi_cheok = {
+		name="이척"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_Yi_Cheok.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	KOR_kim_hui_sun={
+		name=KOR_kim_hui_sun
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_kim_hui_sun.png"
+			}
+		}
+		country_leader={
+			desc = "KIM_HUI_SUN_DESC"
+			ideology=liberalism
+			traits={ the_democratist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	KOR_yi_byung_mu={
+		name=KOR_yi_byung_mu
+		portraits={
+			civilian={
+				large="gfx/leaders/GER/Portrait_Germany_Konrad_Adenauer.dds"
+			}
+			army={
+				large="gfx/leaders/KOR/이병무.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc = "KOR_YI_BYUNG_MU_DESC"
+			traits = {
+				leader_of_despotism
+			}
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			traits = { #트레잇
+				old_guard #ㅄ파
+				infantry_officer 
+				infantry_leader
+			}
+			skill = 5 #레벨
+			attack_skill = 2 #공 
+			defense_skill = 4 #방
+			planning_skill = 2 #작전
+			logistics_skill = 4 #보급
+			legacy_id=12138
+		}
+	}
+	
+	KOR_emperor_yi_jin={
+		name=KOR_emperor_yi_jin
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_yi_jin.png"
+				small="GFX_idea_KOR_yi_jin"
+			}
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_yi_jin.png"
+				small="GFX_idea_KOR_yi_jin"
+			}
+		}
+		field_marshal={
+			traits = { KOR_emperor KOR_imperial_family politically_connected media_personality }
+			skill = 5
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id=20100
+		}
+	}
+
+	KOR_yi_kang={
+		name=KOR_yi_kang
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_yi_kang_emperor.png"
+			}
+			civilian={
+				large="gfx/leaders/KOR/Portrait_yi_kang_old.png"
+			}
+		}	
+		country_leader={
+			ideology=fascism_ideology
+			desc = "YI_KANG_DESC"
+			traits = {
+				dictator_kor
+			}
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+		field_marshal={
+			traits = { 
+				KOR_imperial_family
+				infantry_officer
+				politically_connected
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id=12141
+		}
+	}
+	
+	KOR_yu_dong_yeol={
+		name=KOR_yu_dong_yeol
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Yu_Dong_yeol.dds"
+				small="gfx/interface/ideas/KOR/idea_KOR_yu_dong_yeol.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = yu_dong_yeol
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			traits = {
+				army_armored_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 8.000
+			}
+		}
+		field_marshal={
+			traits = { 
+				old_guard
+				cavalry_officer 
+				cavalry_leader
+				politically_connected
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id=12139
+		}
+	}
+
+	KOR_song_ho_seong={
+		name=KOR_song_ho_seong
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_general_song_hoseong.dds"
+				small="gfx/interface/ideas/idea_fkr_armychief_song_hoseong.dds"
+			}
+		}
+		field_marshal={
+			traits = { 
+				old_guard
+				cavalry_officer 
+				defensive_doctrine
+				career_officer
+			}
+			skill = 4
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id=12140
+		}
+	}
+
+	KOR_yi_won={
+		name=KOR_yi_won
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_general_lee_jongchan.dds"
+			}
+		}
+		create_field_marshal={
+			traits={ KOR_imperial_family politically_connected }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id=20101
+		}
+	}
+
+	KOR_ji_cheong_cheon={
+		name=KOR_ji_cheong_cheon
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Ji_Cheong_cheon.dds"
+				small="GFX_idea_KOR_ji_chung_chun"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ji_cheong_cheon
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				#
+			}
+			traits = {
+				army_infantry_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 8.000
+			}
+		}
+		
+		corps_commander={
+			traits = { inflexible_strategist infantry_officer defensive_doctrine }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id=19366
+		}
+	}
+	KOR_ji_cheong_cheon_2={
+		name=KOR_ji_cheong_cheon
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Ji_Cheong_cheon.dds"
+				small="GFX_idea_KOR_ji_chung_chun"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = ji_cheong_cheon
+			ledger = army
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+		    research_bonus = {
+		    	land_doctrine = 0.07
+		    }
+			on_add = {
+				hidden_effect = {
+					country_event = {
+						id = korea.36
+					}
+				}
+			}
+			
+		    traits = { military_theorist }
+			cost = 200
+			ai_will_do = {
+				factor = 8.000
+			}
+		}
+		
+	}
+
+	KOR_yujin_kim={
+		name=KOR_yujin_kim
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_USA_yujin_kim.dds"
+				small="GFX_idea_KOR_yujin_kim"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = high_command
+			idea_token = ji_cheong_cheon
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_armored_3
+			}
+		}
+		
+		corps_commander={
+			traits = {  offensive_doctrine brilliant_strategist career_officer media_personality armor_officer panzer_leader war_hero }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 2
+			legacy_id=189390
+		}
+	}
+
+	KOR_kim_chwa_chin={
+		name=KOR_kim_chwa_chin
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Kim_Chwa_chin.dds"
+				small="GFX_idea_KOR_kim_chwa_chin"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = army_chief
+			idea_token = kim_chwa_chin
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+		}
+		
+		corps_commander={
+			traits = { politically_connected inflexible_strategist trickster career_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 5
+			legacy_id=19361
+		}
+	}
+
+	KOR_lee_beom_seok={
+		name=KOR_lee_beom_seok
+		portraits={
+			army={
+				small="GFX_idea_KOR_lee_beom_seok"
+			}
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Lee_Beom_seok.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = lee_beom_seok
+			allowed = {
+				original_tag = KOR
+			}
+		    available = {
+		    	NOT = {
+					has_completed_focus = kor_republic
+				}
+			}	
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			traits = { KOR_imperial_family cavalry_officer brilliant_strategist politically_connected }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id=19364
+		}
+	}
+	KOR_lee_beom_seok_2={
+		name=KOR_lee_beom_seok
+		portraits={
+			army={
+				small="GFX_idea_KOR_lee_beom_seok"
+			}
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Lee_Beom_seok.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = lee_beom_seok_2
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		    available = {
+		    	NOT = {
+					has_completed_focus = KOR_use_the_anti-armed
+				}
+			}	
+		
+	    	traits = { militarian_fascist }
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+		
+	}
+
+	KOR_kim_hong_il={
+		name=KOR_kim_hong_il
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Kim_Hong_il.dds"
+				small="GFX_idea_KOR_kim_hong_il"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = kim_hong_il
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious infantry_officer trait_engineer }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	KOR_hong_sa_ik={
+		name=KOR_hong_sa_ik
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Hong_Sa_ik.dds"
+				small="gfx/interface/ideas/idea_KOR_hong_sa_ik.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = hong_sa_ik
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_artillery_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits = { organizer career_officer brilliant_strategist }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id=19367
+		}
+	}
+
+	KOR_kim_kyung_cheon={
+		name=KOR_kim_kyung_cheon
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Kim_Kyung_cheon.dds"
+				small="gfx/interface/ideas/idea_KOR_kim_kyung_cheon.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = kim_kyung_cheon
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+		    traits = { army_logistics_2 }
+		
+		    ai_will_do = {
+		    	factor = 1
+		    }
+		}	
+		corps_commander={
+			traits = { cavalry_officer armor_officer panzer_leader career_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=19365
+		}
+	}
+
+	KOR_sin_sun_seong={
+		name=KOR_sin_sun_seong
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Sin_Sun_seong.dds"
+				small="gfx/interface/ideas/idea_KOR_sin_sun_sung.dds"
+			}
+			army={
+				small="GFX_idea_KOR_sin_sun_sung"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = sin_sun_seong
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+		
+		navy_leader={
+			traits = { naval_lineage battleship_adherent gunnery_expert ironside }
+			skill = 3
+			attack_skill = 5
+			defense_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 4
+			legacy_id=19370
+		}
+	}
+
+	KOR_son_won_ile={
+		name=KOR_son_won_ile
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Son_Won_il.dds"
+				small="gfx/interface/ideas/KOR/idea_KOR_son_won_il.dds"
+			}
+			army={
+				small="GFX_idea_KOR_son_won_il"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = son_won_ile
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				navy_chief_naval_aviation_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+		
+		navy_leader={
+			traits = { bold aviation_enthusiast superior_tactician }
+			legacy_id = 19371
+			skill = 3
+			attack_skill = 5
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 4
+		}
+	}
+
+	KOR_no_baeg_lin={
+		name=KOR_no_baeg_lin
+		portraits={
+			army={
+				small="GFX_idea_KOR_no_baeg_lin"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = no_baeg_lin
+	    	allowed = {
+		    	original_tag = KOR
+		    }
+			
+		    traits = { air_chief_ground_support_2 }
+			
+		    ai_will_do = {
+		    	factor = 1
+		    }
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+	}
+	KOR_no_baeg_lin_2={
+		name=KOR_no_baeg_lin
+		portraits={
+			army={
+				small="GFX_idea_KOR_no_baeg_lin"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = no_baeg_lin_2
+			ledger = air
+	    	allowed = {
+		    	original_tag = KOR
+		    }
+			
+		    traits = { air_close_air_support_2 }
+			
+		    ai_will_do = {
+		    	factor = 1
+		    }
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+	}
+	KOR_choi_yong_duk={
+		name=KOR_choi_yong_duk_2
+		portraits={
+			army={
+				small="GFX_idea_KOR_choi_yong_duk"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = no_baeg_lin_2
+			ledger = air
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		
+		    research_bonus = {
+		    	air_doctrine = 0.07
+		    }
+			picture = KOR_choi_yong_duk
+		
+		    traits = { air_warfare_theorist }
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+	}
+	KOR_choi_yong_duk_2={
+		name=KOR_choi_yong_duk_2
+		portraits={
+			army={
+				small="GFX_idea_KOR_choi_yong_duk"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = choi_yong_duk
+			ledger = air
+	    	allowed = {
+		    	original_tag = KOR
+		    }
+			
+		    traits = { air_air_superiority_3 }
+			
+		    ai_will_do = {
+		    	factor = 1
+		    }
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+	}
+	KOR_shin_sung_mo={
+		name=KOR_shin_sung_mo
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Shin_Sung_mo.dds"
+				small="gfx/interface/ideas/KOR/idea_KOR_shin_sung_mo.dds"
+			}
+			army={
+				small="GFX_idea_KOR_shin_sung_mo"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = shin_sung_mo
+			ledger = navy
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				navy_capital_ship_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+		
+		navy_leader={
+			legacy_id = 19372
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+	KOR_shin_sung_mo_2={
+		name=KOR_shin_sung_mo
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Shin_Sung_mo.dds"
+				small="gfx/interface/ideas/KOR/idea_KOR_shin_sung_mo.dds"
+			}
+			army={
+				small="GFX_idea_KOR_shin_sung_mo"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = shin_sung_mo_2
+			ledger = navy
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				navy_capital_ship_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+	}
+	KOR_shin_sung_mo_3={
+		name=KOR_shin_sung_mo
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Shin_Sung_mo.dds"
+				small="gfx/interface/ideas/KOR/idea_KOR_shin_sung_mo.dds"
+			}
+			army={
+				small="GFX_idea_KOR_shin_sung_mo"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = shin_sung_mo_3
+			ledger = navy
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		
+		    research_bonus = {
+		    	naval_doctrine = 0.07
+		    }
+		
+		    traits = { naval_theorist }
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+	}
+	##################
+	KOR_lee_tae_gyu = {
+		name = KOR_lee_tae_gyu
+		portraits = {
+			army = {
+				small= "GFX_idea_KOR_lee_tae_gyu"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = lee_tae_gyu
+			ledger = air
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+	    	research_bonus = {
+		    	rocketry = 0.10
+		    }
+		
+		    traits = { rocket_scientist }
+		}
+	}
+	KOR_do_sang_log = {
+		name = KOR_do_sang_log
+		portraits = {
+			army = {
+				small= "GFX_idea_KOR_do_sang_log"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = do_sang_log
+			ledger = army
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+		    research_bonus = {
+		    	nuclear = 0.10
+		    }
+	    	
+	    	traits = { nuclear_scientist }
+		}
+	}
+	KOR_kim_suk_won = {
+		name=KOR_kim_suk_won
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Kim_Suk_won.dds"
+			}
+		}
+		traits = { infantry_officer brilliant_strategist career_officer }
+		skill = 3
+		attack_skill = 4
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	KOR_kim_won_bong = {
+		name=KOR_kim_won_bong
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Kim_Won_bong.dds"
+			}
+		}
+		field_marshal={
+			traits = { commando trickster brilliant_strategist }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	KOR_kim_du_han = {
+		name=KOR_kim_du_han
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_4dollor2.dds"
+			}
+		}
+		field_marshal={
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	KOR_kim_sung_ju = {
+		name=KOR_kim_sung_ju
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Kim_Il_sung.dds"
+			}
+		}
+		field_marshal={
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	KOR_yang_se_bong = {
+		name=KOR_yang_se_bong
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Yang_Se_bong.dds"
+			}
+		}
+		field_marshal={
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	KOR_ryu_ja_myeong = {
+		name=KOR_ryu_ja_myeong
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_ryu_ja_meog.dds"
+			}
+		}
+		field_marshal={
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	KOR_nam_il = {
+		name=KOR_nam_il
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Nam_Il.dds"
+			}
+		}
+		field_marshal={
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	KOR_choe_yong_geon = {
+		name=KOR_choe_yong_geon
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Choe_Yong_gon.dds"
+			}
+		}
+		field_marshal={
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	##################
+	KOR_phillip_jaisohn = {
+		name=KOR_phillip_jaisohn
+		portraits={
+			army={
+				small="GFX_idea_KOR_phillip_jaisohn"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = phillip_jaisohn
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			available = {
+			    has_completed_focus = KOR_use_the_anti-armed
+			}
+			
+		    traits = { democratic_reformer three_equalities }
+	
+		    do_effect = {
+			    NOT = {
+			    	has_government = democratic
+			    }
+	    	}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+	KOR_yi_dong_hwi = {
+		name=KOR_yi_dong_hwi
+		portraits={
+			army={
+				small="GFX_idea_KOR_yi_dong_hwi"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = yi_dong_hwi
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+			available = {
+			}
+			
+		    traits = { propaganda_expert }
+			
+		    do_effect = {
+			    NOT = {
+			    	has_government = democratic
+			    }
+	    	}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+	KOR_an_ho_sang = {
+		name=KOR_an_ho_sang
+		portraits={
+			army={
+				small="GFX_idea_KOR_an_ho_sang"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = an_ho_sang
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+		    traits = { fascist_demagogue }
+	
+		    do_effect = {
+		    	NOT = {
+		    		has_government = fascism
+		    	}
+		    }
+		    available = {
+					has_completed_focus = kor_reform_korea
+			}	
+		
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	KOR_yi_un = {
+		name=KOR_yi_un
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Yi_Un.dds"
+				small="GFX_idea_KOR_yi_un"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = yi_un
+		    allowed = {
+		    	original_tag = KOR
+            }
+
+		    available = {
+		    	has_completed_focus = KOR_power_up_to_imperial
+		    }
+			
+		    traits = { staunch_monarchist }
+		
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+		field_marshal={
+			legacy_id = 19362
+			traits = { KOR_imperial_family politically_connected defensive_doctrine media_personality }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	KOR_yi_wu = {
+		name=KOR_yi_wu
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Yi_Wu.dds"
+				small="GFX_idea_KOR_yi_wu"
+			}
+		}
+		field_marshal={
+			legacy_id = 19363
+			traits = { KOR_imperial_family politically_connected media_personality armor_officer trait_engineer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	KOR_yi_geon = {
+		name=KOR_yi_geon
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Yi_Wu.dds"
+				small="GFX_idea_KOR_yi_geon"
+			}
+		}
+		field_marshal={
+			legacy_id = 19380
+			traits = { KOR_imperial_family politically_connected brilliant_strategist armor_officer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	KOR_kim_koo = {
+		name=KOR_kim_koo
+		portraits={
+			army={
+				small="GFX_idea_KOR_kim_koo"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = kim_koo
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+		    traits = { backroom_backstabber }
+
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+	KOR_park_sang_jin = {
+		name=KOR_park_sang_jin
+		portraits={
+			army={
+				small="GFX_idea_KOR_park_sang_jin"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = park_sang_jin
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		    available = {
+		    	NOT = {
+					has_completed_focus = KOR_use_the_anti-armed
+				}
+			}	
+		
+	    	traits = { prince_of_terror }
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	KOR_syngman_rhee = {
+		name=KOR_syngman_rhee
+		portraits={
+			army={
+				small="GFX_idea_KOR_syngman_rhee"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = syngman_rhee
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		
+		    traits = { smooth_talking_charmer }
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+	KOR_yeounhyeong = {
+		name=KOR_yeounhyeong
+		portraits={
+			army={
+				small="GFX_idea_KOR_yeounhyeong"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = yeounhyeong
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		
+		    traits = { silent_workhorse }
+			ai_will_do = {
+				factor = 4.000
+			}
+		}
+	}
+	KOR_lee_byung_chul = {
+		name=KOR_lee_byung-chul
+		portraits={
+			army={
+				small="GFX_idea_KOR_lee_byung-chul"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = lee_byung_chul
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+			available = {
+			}
+			
+		    traits = { captain_of_industry }
+			ai_will_do = {
+				factor = 4.000
+			}
+		}
+	}
+	KOR_song_jin_woo = {
+		name=KOR_song_jin_woo
+		portraits={
+			army={
+				small="GFX_idea_KOR_song_jin_woo"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = song_jin_woo
+		
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+			available = {
+			}
+		    
+		    traits = { war_industrialist }
+			ai_will_do = {
+				factor = 4.000
+			}
+		}
+	}
+	KOR_kim_gyu_sik = {
+		name=KOR_kim_gyu_sik
+		portraits={
+			army={
+				small="GFX_idea_KOR_kim_gyu_sik"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = kim_gyu_sik
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		
+		    traits = { fortification_engineer }
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+	KOR_sin_ik_hui = {
+		name=KOR_sin_ik_hui
+		portraits={
+			army={
+				small="GFX_idea_KOR_sin_ik_hui"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = sin_ik_hui
+			available = {
+				has_intelligence_agency = yes
+			}
+			
+			allowed = {
+				original_tag = KOR
+				has_dlc = "La Resistance" 
+			}
+			
+			traits = { head_of_intelligence }
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}	

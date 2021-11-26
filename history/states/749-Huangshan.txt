@@ -1,6 +1,7 @@
 
 state={
 	id=749
+	local_supplies=0.0 
 	name="STATE_749"
 
 	history={

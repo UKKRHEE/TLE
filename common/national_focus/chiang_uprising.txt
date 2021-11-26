@@ -23,16 +23,16 @@ focus_tree = {
 			has_country_flag = FLAG_WZC_WAS_COLLAPESED
         }
 		completion_reward = {
-			transfer_state = 848
-			transfer_state = 854
-			transfer_state = 837
-			848 = {
+			transfer_state = 876
+			transfer_state = 882
+			transfer_state = 865
+			876 = {
 				set_demilitarized_zone = no
 			}
-			854 = {
+			882 = {
 				set_demilitarized_zone = no
 			}
-			837 = {
+			865 = {
 				set_demilitarized_zone = no
 			}
 		}
@@ -125,7 +125,7 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			remove_ideas = CHI_failed_north_attack
-			add_state_core = 829
+			add_state_core = 857
 		}
 	}
 	focus = {
@@ -414,10 +414,10 @@ focus_tree = {
 					}
 					KOR = {
 						controls_state = 714
-						controls_state = 852
+						controls_state = 880
 						controls_state = 715
 						controls_state = 610
-						controls_state = 853
+						controls_state = 881
 					}
 				}
 				declare_war_on = {
@@ -562,7 +562,7 @@ focus_tree = {
 				}
 			}
 		}
-		848 = {
+		876 = {
 			if = {
 				limit = { is_controlled_by = CHI }
 				add_building_construction = {
@@ -572,7 +572,7 @@ focus_tree = {
 				}
 			}
 		}
-		854 = {
+		882 = {
 			if = {
 				limit = { is_controlled_by = CHI }
 				add_building_construction = {
@@ -1184,7 +1184,7 @@ focus_tree = {
 		x = 20
 		y = 2
 		completion_reward = {
-				829 = {
+				857 = {
 			if = {
 				limit = { is_controlled_by = ROOT }
 				add_building_construction = {

@@ -202,8 +202,8 @@ news_event = { #파나이 호 사건
     trigger = {
 		KOR = {
 			controls_state = 608
-			controls_state = 826
-			controls_state = 829
+			controls_state = 854
+			controls_state = 857
 			KOR = {
 				OR = {
 					has_war_with = CHI
@@ -216,7 +216,7 @@ news_event = { #파나이 호 사건
 				}
 			}
 		}
-		date > 1940.8.1
+		date > 1940.1.5
 	}
 	mean_time_to_happen = {
 		days = 14
@@ -315,7 +315,8 @@ news_event = { #청도 사건
 	fire_only_once = yes	
     is_triggered_only = yes
 	
-	
+	immediate = {
+	}
 	option = {
 		name = kor_news.8.a
 		trigger = {
@@ -367,9 +368,22 @@ news_event = { #청도 사건
 news_event = { #한중전쟁
 	id = kor_news.9
 	title = kor_news.9.t
-	desc = kor_news.9.desc
 	picture = GFX_news_event_prussia_nieder
 	
+	desc = {
+		text = kor_news.9.desc
+		trigger = {
+			original_tag = KOR
+		}
+	}
+	desc = {
+		text = kor_news.9.desc
+		trigger = {
+			NOT = {
+				original_tag = KOR
+			}
+		}
+	}
 	major = yes
 	fire_only_once = yes	
     is_triggered_only = yes

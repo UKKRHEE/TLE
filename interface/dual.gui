@@ -1,0 +1,946 @@
+guiTypes = {
+	containerWindowType = {
+		name = "double_leader_system_container"
+		position = { x = 0 y = 0 }
+		
+		buttonType = {
+			name = "view"
+			position = { x = 470 y = 241 }
+			spriteType = "GFX_idea_KOR_Weakening_the_kingship"
+			pdx_tooltip = "NAME_SECOND_LEADER"
+			pdx_tooltip_delayed = "테스트용2"
+		}
+		instantTextboxType = {
+				name = "view_dual"
+				position = { x = 379 y = 452 }
+				font = "hoi_20b"
+				text = ""
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+	}
+	containerWindowType = {
+		name = "double_leader_system_popup_ui_window"
+		position = { x = 540 y = 80 }
+		size = { width = 1000 height = 660 }
+		fade_time = 280
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+		show_sound = menu_open_window
+		
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+		
+		containerWindowType = {
+			name = "double_leader_system_popup_ui_window_test"
+			position = { x = -40 y = 0 }
+			
+			instantTextboxType = {
+				name = "THE_LAST_EMPIRE"
+				position = { x = 85 y = 20 }
+				font = "hoi_36header"
+				text = "대한제국 황실"
+				maxWidth = 210
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			iconType = {
+				name = "IMP_emp_1"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 100 y = 50 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_1_text"
+				position = { x = 110 y = 60 }
+				font = "hoi_20b"
+				text = "인조 이종"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "KOR_EMPEROR_INJO"
+				pdx_tooltip_delayed = "KOR_EMPEROR_INJO_DESC"
+			}
+			iconType = {
+				name = "IMP_emp_2"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 100 y = 100 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_2_text"
+				position = { x = 110 y = 110 }
+				font = "hoi_20b"
+				text = "효종 이호"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "KOR_EMPEROR_HYOJONG"
+				pdx_tooltip_delayed = "KOR_EMPEROR_HYOJONG_DESC"
+			}
+			iconType = {
+				name = "IMP_emp_3"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 100 y = 150 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_3_text"
+				position = { x = 110 y = 160 }
+				font = "hoi_20b"
+				text = "현종 이연"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "KOR_EMPEROR_HYEONJONG"
+				pdx_tooltip_delayed = "KOR_EMPEROR_HYEONJONG_DESC"
+			}
+			iconType = {
+				name = "IMP_emp_4"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 100 y = 200 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_4_text"
+				position = { x = 110 y = 210 }
+				font = "hoi_20b"
+				text = "숙종 이순"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "KOR_EMPEROR_SUKJONG"
+				pdx_tooltip_delayed = "KOR_EMPEROR_SUKJONG_DESC"
+			}
+			iconType = {
+				name = "IMP_emp_5"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 100 y = 250 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_5_text"
+				position = { x = 110 y = 260 }
+				font = "hoi_20b"
+				text = "경종 이윤"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "KOR_EMPEROR_KYEONGJONG"
+				pdx_tooltip_delayed = "KOR_EMPEROR_KYEONGJONG_DESC"
+			}
+			iconType = {
+				name = "IMP_emp_6"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 280 y = 250 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_6_text"
+				position = { x = 290 y = 260 }
+				font = "hoi_20b"
+				text = "영조 이금"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "KOR_EMPEROR_YEONGJO"
+				pdx_tooltip_delayed = "KOR_EMPEROR_YEONGJO_DESC"
+			}
+			iconType = {
+				name = "IMP_emp_7"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 280 y = 300 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_7_text"
+				position = { x = 290 y = 310 }
+				font = "hoi_20b"
+				text = "장조 의황제 이선"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "KOR_EMPEROR_SADO"
+				pdx_tooltip_delayed = "KOR_EMPEROR_SADO_DESC"
+			}
+			iconType = {
+				name = "IMP_emp_8"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 280 y = 350 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_8_text"
+				position = { x = 290 y = 360 }
+				font = "hoi_20b"
+				text = "정조 선황제 이성"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "KOR_EMPEROR_JEONGJO"
+				pdx_tooltip_delayed = "KOR_EMPEROR_JEONGJO_DESC"
+			}
+			iconType = {
+				name = "IMP_emp_9"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 280 y = 400 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_9_text"
+				position = { x = 290 y = 410 }
+				font = "hoi_20b"
+				text = "순조 숙황제 이공"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "KOR_EMPEROR_SUNJO"
+				pdx_tooltip_delayed = "KOR_EMPEROR_SUNJO_DESC"
+			}
+			iconType = {
+				name = "IMP_emp_10"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 280 y = 450 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_10_text"
+				position = { x = 290 y = 460 }
+				font = "hoi_20b"
+				text = "문조 익황제 이영"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "KOR_EMPEROR_MUNJO"
+				pdx_tooltip_delayed = "KOR_EMPEROR_MUNJO_DESC"
+			}
+			buttonType = {
+				name = "IMP_emp_11"
+				spriteType = "GFX_focus_completed_bg_2"
+				position = { x = 285 y = 490 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_11_text"
+				position = { x = 290 y = 510 }
+				font = "hoi_20b"
+				text = "고조 태황제 이환"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "KOR_EMPEROR_GOJO"
+				pdx_tooltip_delayed = "KOR_EMPEROR_GOJO_DESC"
+			}
+			buttonType = {
+				name = "IMP_emp_12"
+				spriteType = "GFX_focus_completed_bg_2"
+				position = { x = 285 y = 540 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_12_text"
+				position = { x = 290 y = 560 }
+				font = "hoi_20b"
+				text = "효헌태자 이정"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "KOR_EMPEROR_HYOHEON"
+				pdx_tooltip_delayed = "KOR_EMPEROR_HYOHEON_DESC"
+			}
+			iconType = {
+				name = "IMP_emp_13"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 460 y = 350 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_13_text"
+				position = { x = 470 y = 360 }
+				font = "hoi_20b"
+				text = "은언군 이인"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			iconType = {
+				name = "IMP_emp_14"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 460 y = 400 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_14_text"
+				position = { x = 470 y = 410 }
+				font = "hoi_20b"
+				text = "풍계군 이당"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			iconType = {
+				name = "IMP_emp_15"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 460 y = 450 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_15_text"
+				position = { x = 470 y = 460 }
+				font = "hoi_20b"
+				text = "익평대원군 이희"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			buttonType = {
+				name = "IMP_emp_16"
+				spriteType = "GFX_focus_completed_bg_2"
+				position = { x = 465 y = 490 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_16_text"
+				position = { x = 470 y = 510 }
+				font = "hoi_20b"
+				text = "고종 광황제 이천"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "KOR_EMPEROR_GOJONG"
+				pdx_tooltip_delayed = "KOR_EMPEROR_GOJONG_DESC"
+			}
+			buttonType = {
+				name = "IMP_emp_17"
+				spriteType = "GFX_focus_completed_bg_2"
+				position = { x = 465 y = 540 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_17_text"
+				position = { x = 470 y = 560 }
+				font = "hoi_20b"
+				text = "순종 이택"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "KOR_EMPEROR_SUNJONG"
+				pdx_tooltip_delayed = "KOR_EMPEROR_SUNJONG_DESC"
+			}
+			buttonType = {
+				name = "IMP_emp_18"
+				spriteType = "GFX_focus_can_start_bg_2"
+				position = { x = 645 y = 540 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_18_text"
+				position = { x = 650 y = 560 }
+				font = "hoi_20b"
+				text = "강명황제 이진"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "KOR_EMPEROR_KANGMYONG"
+				pdx_tooltip_delayed = "KOR_EMPEROR_KANGMYONG_DESC"
+			}
+			buttonType = {
+				name = "IMP_emp_19"
+				spriteType = "GFX_focus_unavailable_bg"
+				position = { x = 645 y = 590 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_19_text"
+				position = { x = 650 y = 610 }
+				font = "hoi_20b"
+				text = "황태자 이휼"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+					
+			iconType = {
+				name = "IMP_emp_20"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 850 y = 100 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_20_text"
+				position = { x = 860 y = 110 }
+				font = "hoi_20b"
+				text = "인평대군 이요"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			iconType = {
+				name = "IMP_emp_21"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 850 y = 150 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_21_text"
+				position = { x = 860 y = 160 }
+				font = "hoi_20b"
+				text = "복녕군 이욱"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			iconType = {
+				name = "IMP_emp_22"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 850 y = 200 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_22_text"
+				position = { x = 860 y = 210 }
+				font = "hoi_20b"
+				text = "의원군 이혁"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			iconType = {
+				name = "IMP_emp_23"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 850 y = 250 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_23_text"
+				position = { x = 860 y = 260 }
+				font = "hoi_20b"
+				text = "안흥군 이숙"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			iconType = {
+				name = "IMP_emp_24"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 850 y = 300 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_24_text"
+				position = { x = 860 y = 310 }
+				font = "hoi_20b"
+				text = "이진익"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			iconType = {
+				name = "IMP_emp_25"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 850 y = 350 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_25_text"
+				position = { x = 860 y = 360 }
+				font = "hoi_20b"
+				text = "이병원"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			iconType = {
+				name = "IMP_emp_26"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 850 y = 400 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_26_text"
+				position = { x = 860 y = 410 }
+				font = "hoi_20b"
+				text = "남연군 이구"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			iconType = {
+				name = "IMP_emp_27"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 850 y = 450 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_27_text"
+				position = { x = 860 y = 460 }
+				font = "hoi_20b"
+				text = "흥선군 이하응"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			iconType = {
+				name = "IMP_emp_28"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 850 y = 500 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_28_text"
+				position = { x = 860 y = 510 }
+				font = "hoi_20b"
+				text = "완경군 이재황"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			buttonType = {
+				name = "IMP_emp_29"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 850 y = 550 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_29_text"
+				position = { x = 860 y = 560 }
+				font = "hoi_20b"
+				text = "이강"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			buttonType = {
+				name = "IMP_emp_30"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 850 y = 600 }		
+				allwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "IMP_emp_30_text"
+				position = { x = 860 y = 610 }
+				font = "hoi_20b"
+				text = "이건"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_1_line"
+				position = { x = 110 y = 85 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_2_line"
+				position = { x = 110 y = 135 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_3_line"
+				position = { x = 110 y = 185 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_4_line"
+				position = { x = 110 y = 235 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_5_line"
+				position = { x = 173 y = 229 }
+				font = "hoi_20b"
+				text = "------------------------------------"
+				maxWidth = 210
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_5_line_2"
+				position = { x = 173 y = 229 }
+				font = "hoi_20b"
+				text = "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ"
+				maxWidth = 210
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_5_line_3"
+				position = { x = 290 y = 237 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_6_line"
+				position = { x = 290 y = 285 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_7_line"
+				position = { x = 290 y = 335 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_8_line"
+				position = { x = 290 y = 385 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_9_line"
+				position = { x = 290 y = 435 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_10_line"
+				position = { x = 290 y = 485 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_11_line"
+				position = { x = 290 y = 535 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_12_line"
+				position = { x = 351 y = 328 }
+				font = "hoi_20b"
+				text = "------------------------------------"
+				maxWidth = 210
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_12_line_2"
+				position = { x = 360 y = 328 }
+				font = "hoi_20b"
+				text = "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ"
+				maxWidth = 210
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_12_line_3"
+				position = { x = 470 y = 335 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_13_line"
+				position = { x = 470 y = 385 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_14_line"
+				position = { x = 470 y = 435 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_15_line"
+				position = { x = 470 y = 485 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_16_line"
+				position = { x = 470 y = 535 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_17_line"
+				position = { x = 531 y = 527 }
+				font = "hoi_20b"
+				text = "------------------------------------"
+				maxWidth = 210
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_17_line_2"
+				position = { x = 530 y = 527 }
+				font = "hoi_20b"
+				text = "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ"
+				maxWidth = 210
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_17_line_3"
+				position = { x = 649 y = 535 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_18_line"
+				position = { x = 649 y = 585 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_19_line"
+				position = { x = 61 y = 77 }
+				font = "hoi_20b"
+				text = "------------------------------------------------------------------------------------------------------------------------------------------------------"
+				maxWidth = 1000
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_19_line_2"
+				position = { x = 61 y = 77 }
+				font = "hoi_20b"
+				text = "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ"
+				maxWidth = 1000
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_19_line_3"
+				position = { x = 860 y = 85 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_20_line"
+				position = { x = 860 y = 135 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_21_line"
+				position = { x = 860 y = 185 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_22_line"
+				position = { x = 860 y = 235 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_23_line"
+				position = { x = 860 y = 285 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_24_line"
+				position = { x = 860 y = 335 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_25_line"
+				position = { x = 860 y = 385 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_26_line"
+				position = { x = 860 y = 435 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_27_line"
+				position = { x = 860 y = 485 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_28_line"
+				position = { x = 860 y = 535 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextboxType = {
+				name = "IMP_emp_29_line"
+				position = { x = 860 y = 585 }
+				font = "hoi_20b"
+				text = "ㅣ"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "close"
+				spriteType = "GFX_closebutton"
+				position = { x = 1000 y = 10 }
+				clicksound = click_close
+				pdx_tooltip = "닫기"
+				shortcut = "ESCAPE"
+			}
+		}
+	}
+}
