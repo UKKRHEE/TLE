@@ -1,6 +1,16 @@
 ideas = {
 	
 	country = {
+		JAP_showa_hirohito_2 = {
+			allowed = {
+				original_tag = JAP
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.1
+			}
+			picture = JAP_showa_hirohito
+		}
 		JAP_showa_hirohito = {
 			allowed = {
 				original_tag = JAP
@@ -12,7 +22,7 @@ ideas = {
 		}
 
 		JAP_war_spirit = {
-			
+			 
 			allowed = {
 				original_tag = JAP
 				always = no
@@ -216,12 +226,23 @@ ideas = {
 
 			picture = generic_victors_of_ww1
 			
+			on_remove = {
+				country_lock_all_division_template = no
+				
+			}
+			on_add = {
+				country_lock_all_division_template = yes
+			}
+				rule = {
+					can_not_declare_war = yes
+				}
 			modifier = {
 				stability_factor  = -0.25
 				political_power_gain = -0.3
 				war_support_factor = -0.5
 				offence = -0.5
 				defence = -0.5
+				custom_modifier_tooltip = BUL_army_restrictions_mobilization_law_tt
 			}
 		}
 		JAP_democratic_popularity_2 = {
@@ -239,12 +260,23 @@ ideas = {
 
 			picture = generic_victors_of_ww1
 			
+			on_remove = {
+				country_lock_all_division_template = no
+				
+			}
+			on_add = {
+				country_lock_all_division_template = yes
+			}
+				rule = {
+					can_not_declare_war = yes
+				}
 			modifier = {
 				stability_factor  = -0.15
 				political_power_gain = -0.15
 				war_support_factor = -0.4
 				offence = -0.3
 				defence = -0.3
+				custom_modifier_tooltip = BUL_army_restrictions_mobilization_law_tt
 			}
 		}
 		JAP_not_regulared_industry = {

@@ -1,1 +1,16 @@
 # Empty file to overwrite vanilla.
+JAP_dec_civil_war = {
+	allowed = {
+		OR = {
+			original_tag = JAP
+			original_tag = DKG
+		}
+	}
+	visible = {
+		OR = {
+			original_tag = JAP
+			original_tag = DKG
+		}
+	}
+	priority = 83
+}

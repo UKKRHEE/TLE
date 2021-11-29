@@ -1,0 +1,27 @@
+state={
+	id=890
+	name="STATE_890"
+	provinces={
+		998 7102 10032 
+	}
+	history={
+		owner = KGJ
+		add_core_of = KGJ
+		add_core_of = DKG
+		buildings = {
+			arms_factory = 1
+			industrial_complex = 1
+			infrastructure = 1
+			9859 = {
+				naval_base = 3
+
+			}
+
+		}
+
+	}
+	state_category=town
+	manpower=1196541
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

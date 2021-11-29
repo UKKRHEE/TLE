@@ -10,13 +10,13 @@ state={
 	buildings_max_level_factor=1.000
 	history={
 		buildings = {
-			infrastructure = 5
+			infrastructure = 3
 			11985 = {
 				naval_base = 8
 			}
 		}
 		owner = ENG
-		add_core_of = JAP
+		add_core_of = DKG
 		add_core_of = ENG
 	}
 }

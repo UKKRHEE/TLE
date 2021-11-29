@@ -9,6 +9,7 @@ state={
 
 	history={
 		owner = KOR
+		add_core_of = KOR
 		add_core_of = FSM
 		add_claim_by = KOR
 		buildings = {

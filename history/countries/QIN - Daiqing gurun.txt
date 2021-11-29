@@ -28,3 +28,13 @@ set_popularities = {
 	neutrality = 80
 }
 recruit_character = QIN_puyi
+add_country_leader_role = {
+	Character = QIN_puyi
+	Promote_leader = yes
+	Country_leader = {
+		ideology = rexism
+		expire = "1965.1.1"
+		traits = {
+		}
+    }
+}

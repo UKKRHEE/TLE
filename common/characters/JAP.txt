@@ -1,24 +1,25 @@
 characters={
-	JAP_dokugawa_yoshihisa = {
-		name = "Dokugawa Yoshihisa"
+	JAP_yamato_junta={
+		name=JAP_yamato_junta
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_JAP_Dokugawa_Yoshihisa.png"
+				large="gfx/leaders/JAP/JAP_yamato_junta.png"
 			}
 		}
 		country_leader={
-			desc = "POLITICS_Hirohito_DESC"
-			expire = "1989.1.1"
-			ideology = despotism
-			traits = {
-				the_shogun
-				national_integralist
-				tenacious_negotiator
-				retired_officer
-				warrior_code
-				#emperor_showa
-				#imperial_sanction
-			}
+			ideology=despotism
+			traits={ warrior_code }
+			expire="1989.1.1.1"
+			id=-1
+		}
+		corps_commander={
+			traits={ brilliant_strategist politically_connected }
+			skill=5
+			attack_skill=5
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
 		}
 	}
 	JAP_emperor_hirohito={
@@ -26,13 +27,27 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/JAP/Portrait_Japan_Hirohito.dds"
+				small="gfx/interface/ideas/JAP/idea_showa_hirohito.png"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Hirohito.dds"
+				small="gfx/interface/ideas/JAP/idea_showa_hirohito.png"
 			}
 		}
 		country_leader={
-			ideology=fascism_ideology
-			traits={ warrior_code emperor_showa imperial_sanction }
+			ideology=rexism
+			traits={ emperor_showa warrior_code }
 			expire="1989.1.1.1"
 			id=700
+		}
+		corps_commander={
+			traits={ brilliant_strategist politically_connected }
+			skill=5
+			attack_skill=5
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
 		}
 	}
 

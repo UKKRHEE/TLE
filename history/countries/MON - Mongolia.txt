@@ -69,3 +69,13 @@ set_popularities = {
 	communism = 20
 }
 recruit_character = MON_demchugdongrub
+add_country_leader_role = {
+	Character = MON_demchugdongrub
+	Promote_leader = yes
+	Country_leader = {
+		ideology = rexism
+		expire = "1965.1.1"
+		traits = {
+		}
+    }
+}

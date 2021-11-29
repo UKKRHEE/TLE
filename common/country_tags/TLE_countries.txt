@@ -1,0 +1,37 @@
+###Korea###
+PRK	= "countries/Korea.txt" #북괴
+KPL	= "countries/Korea.txt" #국제련합
+KMN = "countries/Korea.txt" #대한령 북만주
+###Korean Outer Land###
+TWC = "countries/China.txt" #대만
+RYU = "countries/China.txt" #유구
+###Chinese Clique###
+FNG = "countries/China.txt" #봉천 정부 #근데 뒤짐
+SND = "countries/China.txt" #산동 군벌
+SZC = "countries/China.txt" #사천 군벌
+GDC = "countries/China.txt" #광동 군벌
+KMK = "countries/China.txt" #쿠물 칸국
+ETS = "countries/China.txt" #동튀르케스탄 제1공화국
+MHB = "countries/China.txt" #마홍빈
+MHX = "countries/China.txt" #마후샨
+SZY = "countries/China.txt" #직예 군벌 반갈죽하는 숭저위안
+QIN = "countries/China.txt" #대청국 #대한령
+ZLC = "countries/China.txt" #직예군벌
+WZC = "countries/China.txt" #오성연군
+HNC = "countries/China.txt" #호남군벌
+AHC = "countries/China.txt" #호남군벌
+###Eastern Republic###
+RUS = "countries/Soviet Union.txt" #극동 공화국 #명복을 빌지.
+###Forigen Japanese Clique###
+KKS = "countries/Japan.txt" #규슈 총독부
+KHK = "countries/Japan.txt" #홋카이도
+EJP = "countries/Japan.txt" #영국령 일본
+FJP = "countries/Japan.txt" #프랑스령 일본
+###Dokugawa Japanese Clique###
+DKG = "countries/Japan.txt" #도쿠가와 막부(시작시점)
+###Honshu Japanese Cligue###
+TBJ = "countries/Japan.txt" #열번동맹
+NBJ = "countries/Japan.txt" #모리오카(난부 가문)
+SDJ = "countries/Japan.txt" #센다이
+KGJ = "countries/Japan.txt" #카가
+GJJ = "countries/Japan.txt" #고자이

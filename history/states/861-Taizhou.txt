@@ -6,7 +6,7 @@ state={
 	local_supplies=0.0 
 	history={
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 
 		}
 		owner = WZC

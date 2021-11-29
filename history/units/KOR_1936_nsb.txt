@@ -582,7 +582,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 12538
+		location = 12657
 		division_template = "보병 사단"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
@@ -592,7 +592,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 4728
+		location = 1730
 		division_template = "보병 사단"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
@@ -771,7 +771,7 @@ air_wings = {
 			amount = 20
 		}
 	}
-	809 = { #대구
+	837 = { #대구
 		fighter_equipment_0 = {
 			owner = "KOR" 
 			amount = 100
@@ -789,7 +789,7 @@ air_wings = {
 			amount = 40
 		}
 	}
-	808 = { #대구
+	836 = { #대구
 		fighter_equipment_0 = {
 			owner = "KOR" 
 			amount = 100
@@ -805,7 +805,6 @@ air_wings = {
 	}
 }
 instant_effect = {
-
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
@@ -815,7 +814,8 @@ instant_effect = {
 		progress = 0.1
 		efficiency = 100
 	}
-
+}
+instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
@@ -825,7 +825,8 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 100
 	}
-
+}
+instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_1
@@ -835,7 +836,20 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 100
 	}
-
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_chassis_1
+			creator = "KOR" 
+			version_name = "흑표 제 1식"
+		}
+		requested_factories = 4
+		progress = 0.4
+		efficiency = 50
+	}
+}
+instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
@@ -845,7 +859,8 @@ instant_effect = {
 		progress = 0.4
 		efficiency = 100
 	}
-
+}
+instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = train_equipment_1
@@ -855,6 +870,8 @@ instant_effect = {
 		progress = 0.15
 		efficiency = 100
 	}
+}
+instant_effect = {	
 	add_equipment_production = {
 		equipment = {
 			type = fighter_equipment_0
@@ -864,7 +881,8 @@ instant_effect = {
 		progress = 0.15
 		efficiency = 100
 	}
-
+}
+instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = CAS_equipment_0
@@ -874,6 +892,4 @@ instant_effect = {
 		progress = 0.2
 		efficiency = 100
 	}
-
-	
 }

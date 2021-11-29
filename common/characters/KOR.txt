@@ -130,9 +130,8 @@ characters={
 			}
 		}
 		advisor={
-			slot = high_command
+			slot = army_chief
 			idea_token = yu_dong_yeol
-			ledger = army
 			allowed = {
 				original_tag = KOR
 			}
@@ -142,7 +141,7 @@ characters={
 				}
 			}
 			traits = {
-				army_armored_3
+				army_chief_offensive_2
 			}
 			cost = 200
 			ai_will_do = {
@@ -173,7 +172,7 @@ characters={
 				small="gfx/interface/ideas/idea_fkr_armychief_song_hoseong.dds"
 			}
 		}
-		field_marshal={
+		corps_commander={
 			traits = { 
 				old_guard
 				cavalry_officer 
@@ -835,23 +834,27 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/KOR/Portrait_KOR_Kim_Suk_won.dds"
+				small="gfx/interface/ideas/KOR/idea_KOR_kim_suk_won.dds"
 			}
 		}
-		traits = { infantry_officer brilliant_strategist career_officer }
-		skill = 3
-		attack_skill = 4
-		defense_skill = 2
-		planning_skill = 2
-		logistics_skill = 2
+		corps_commander = {
+			traits = { infantry_officer brilliant_strategist career_officer }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
 	}
 	KOR_kim_won_bong = {
 		name=KOR_kim_won_bong
 		portraits={
 			army={
 				large="gfx/leaders/KOR/Portrait_KOR_Kim_Won_bong.dds"
+				small="gfx/interface/ideas/KOR/idea_KOR_kim_won_bong.dds"
 			}
 		}
-		field_marshal={
+		corps_commander={
 			traits = { commando trickster brilliant_strategist }
 			skill = 3
 			attack_skill = 4
@@ -867,7 +870,7 @@ characters={
 				large="gfx/leaders/KOR/Portrait_4dollor2.dds"
 			}
 		}
-		field_marshal={
+		corps_commander={
 			traits = {  }
 			skill = 1
 			attack_skill = 1
@@ -883,7 +886,7 @@ characters={
 				large="gfx/leaders/KOR/Portrait_KOR_Kim_Il_sung.dds"
 			}
 		}
-		field_marshal={
+		corps_commander={
 			traits = {  }
 			skill = 1
 			attack_skill = 1
@@ -899,7 +902,7 @@ characters={
 				large="gfx/leaders/KOR/Portrait_KOR_Yang_Se_bong.dds"
 			}
 		}
-		field_marshal={
+		corps_commander={
 			traits = {  }
 			skill = 1
 			attack_skill = 1
@@ -915,7 +918,7 @@ characters={
 				large="gfx/leaders/KOR/Portrait_ryu_ja_meog.dds"
 			}
 		}
-		field_marshal={
+		corps_commander={
 			traits = {  }
 			skill = 1
 			attack_skill = 1
@@ -931,7 +934,7 @@ characters={
 				large="gfx/leaders/KOR/Portrait_KOR_Nam_Il.dds"
 			}
 		}
-		field_marshal={
+		corps_commander={
 			traits = {  }
 			skill = 1
 			attack_skill = 1
@@ -947,7 +950,7 @@ characters={
 				large="gfx/leaders/KOR/Portrait_KOR_Choe_Yong_gon.dds"
 			}
 		}
-		field_marshal={
+		corps_commander={
 			traits = {  }
 			skill = 1
 			attack_skill = 1
@@ -1070,7 +1073,7 @@ characters={
 				factor = 0.000
 			}
 		}
-		field_marshal={
+		corps_commander={
 			legacy_id = 19362
 			traits = { KOR_imperial_family politically_connected defensive_doctrine media_personality }
 			skill = 2
@@ -1088,7 +1091,7 @@ characters={
 				small="GFX_idea_KOR_yi_wu"
 			}
 		}
-		field_marshal={
+		corps_commander={
 			legacy_id = 19363
 			traits = { KOR_imperial_family politically_connected media_personality armor_officer trait_engineer }
 			skill = 2
@@ -1102,11 +1105,11 @@ characters={
 		name=KOR_yi_geon
 		portraits={
 			army={
-				large="gfx/leaders/KOR/Portrait_KOR_Yi_Wu.dds"
+				large="gfx/leaders/KOR/Portrait_general_lee_geon.dds"
 				small="GFX_idea_KOR_yi_geon"
 			}
 		}
-		field_marshal={
+		corps_commander={
 			legacy_id = 19380
 			traits = { KOR_imperial_family politically_connected brilliant_strategist armor_officer }
 			skill = 2

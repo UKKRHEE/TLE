@@ -1,0 +1,27 @@
+characters={
+	DKG_dokugawa_yoshihisa = {
+		name = "도쿠가와 요시히사"
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Dokugawa_Yoshihisa.png"
+			}
+		}
+		country_leader={
+			desc = "POLITICS_Yoshihisa_DESC"
+			expire = "1989.1.1"
+			ideology = despotism
+			traits = {
+				the_shogun
+				warrior_code
+			}
+		}
+	}
+	DKG_dokugawa_yoshimitsu = {
+		name = "도쿠가와 요시미츠"
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Dokugawa_Yoshimitsu.png"
+			}
+		}
+	}
+}

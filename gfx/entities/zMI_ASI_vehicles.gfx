@@ -1,0 +1,53 @@
+
+objectTypes = {	
+	
+###################################
+### MOTORIZED - OPEL BLITZ BASE ###
+###################################
+
+	pdxmesh = {
+		name = "MI_SIA_motorized_mesh"
+		file = "gfx/models/units/vehicles/SIA_motorized_01_isuzu.mesh"
+		
+		animation = { id = "idle"			type = "GER_motorized_01_idle_animation" }
+		animation = { id = "move"			type = "GER_motorized_01_move_animation" }
+	}
+	
+###################################
+### MECHANIZED - SDKFZ 251 BASE ###
+###################################
+
+
+	pdxmesh = {
+		name = "MI_INS_mechanized_1_mesh"
+		file = "gfx/models/units/vehicles/INS_mechanized_01_sdkfz251.mesh"
+		
+		animation = { id = "idle"			type = "GER_mechanized_01_idle_animation" }
+		animation = { id = "move"			type = "GER_mechanized_01_move_animation" }
+		animation = { id = "attack"			type = "GER_mechanized_01_attack_animation" }
+	}
+
+
+	pdxmesh = {
+		name = "MI_INS_mechanized_2_mesh"
+		file = "gfx/models/units/vehicles/INS_mechanized_02_sdkfz251.mesh"
+		
+		animation = { id = "idle"			type = "GER_mechanized_01_idle_animation" }
+		animation = { id = "move"			type = "GER_mechanized_01_move_animation" }
+		animation = { id = "attack"			type = "GER_mechanized_01_attack_animation" }
+	}
+	
+#############################
+### MECHANIZED - K75 BASE ###
+#############################
+	
+	pdxmesh = {
+		name = "MI_PRK_mechanized_3_mesh"
+		file = "gfx/models/units/vehicles/PRK_mechanized_03_K75.mesh"
+		
+		animation = { id = "idle"			type = "SOV_light_armor_2_idle_animation" }
+		animation = { id = "move"			type = "SOV_light_armor_2_moving_animation" }
+#		animation = { id = "attack"			type = "SOV_light_armor_2_attack_animation" }
+	}
+
+}

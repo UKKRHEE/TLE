@@ -1,0 +1,32 @@
+﻿l_english:
+
+ #한국
+ KOR_asia_union1:0 "자유 아시아 연합"
+ KOR_asia_union2:0 "황실협의회"
+ KOR_asia_union3:0 "대아시아권"
+ KOR_asia_union4:0 "아시아 인민 해방 전선"
+ 
+ #중국
+ ROC_union_faction:0 "중화민국"
+ FACTION_ZLC_UNITED_FRONT:0 "중국 연합전선"
+ DKG_UNITED_JAPAN_KINGDOM:0 "일본 왕국"
+
+ custom_diff_strong_kor:0 "한국 강화"
+
+ KOR_AI_BEHAVIOR:0 "@KOR 한국"
+
+ RULE_KOR_FASCIST_HISTORICAL_AI_DESC:0 "한국 AI는 민족주의 광풍을 바탕삼아 온 동아시아를 석권하려는 것과 관련있는 국가적 중점 계통도를 따라 내려갈 것입니다."
+ RULE_OPTION_KOR_DEMOCRATIC_AI_DESC:0 "한국 AI는 개혁요구를 받아들이며 자유의 등불로 우뚝 서려는 것과 관련있는 국가적 중점 계통도를 따라 내려갈 것입니다."
+ RULE_OPTION_KOR_DEMOCRATIC_CONSERVETISM_AI_DESC:0 "한국 AI는 현 상황을 유지하며 아주의 등불로 우뚝 서려는 것과 관련있는 국가적 중점 계통도를 따라 내려갈 것입니다."
+ RULE_OPTION_KOR_COMMUNISM_AI_DESC:0 "한국 AI는 공산주의의 광풍을 받아들여 프롤레타리아의 나라를 만드려는 것과 관련있는 국가적 중점 계통도를 따라 내려갈 것입니다."
+ RULE_OPTION_KOR_COMMUNISM_EMPIRE_AI_DESC:0 "한국 AI는 황제를 보위하며 민중을 위해 부패한 정치인들을 척결하여 만민평등을 이뤄내는 것과 관련있는 국가적 중점 계통도를 따라 내려갈 것입니다."
+ RULE_OPTION_KOR_NEUTRALITY_AI_DESC:0 "한국 AI는 강명유신을 일으켜 대한제국을 온전한 황제의 나라로 만드려는 것과 관련있는 국가적 중점 계통도를 따라 내려갈 것입니다."
+
+ RULE_KOR_FASCIST_HISTORICAL:0 "마지막 제국"
+ RULE_OPTION_KOR_DEMOCRATIC:0 "자유주의적 논조"
+ RULE_OPTION_KOR_DEMOCRATIC_CONSERVETISM:0 "보수주의적 논조"
+ RULE_OPTION_KOR_COMMUNISM:0 "인민의 나라"
+ RULE_OPTION_KOR_COMMUNISM_EMPIRE:0 "사회주의 제국"
+ RULE_OPTION_KOR_NEUTRALITY:0 "강명유신"
+ 
+ RULE_KOR_CAN_NOT_RELEASE_NATION:0 "대한제국은 공화정이거나 대전쟁에서 패배해야만 식민지 해방이 가능합니다."

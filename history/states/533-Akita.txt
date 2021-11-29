@@ -1,40 +1,40 @@
 
 state={
 	id=533
-	name="STATE_533" # Tohoku
-	manpower = 6575000
-	state_category = town
+	name="STATE_533"
 	resources={
-		steel=27 # was: 35
+		steel=27.000
 	}
 
-	local_supplies=0.0 
 	history={
-		owner = JAP
-		add_core_of = JAP
+		owner = SDJ
+		add_core_of = SDJ
+		add_core_of = DKG
 		buildings = {
-		
 			industrial_complex = 1
 			fuel_silo = 1
-			infrastructure = 3
+			infrastructure = 1
 			air_base = 3
 			9859 = {
 				naval_base = 3
 
 			}
+
 		}
-		
 		victory_points = {
-			6994 5
+			6994 5 
 		}
-		
 		victory_points = {
-			7169 15
+			7169 15 
 		}
 
 	}
 
 	provinces={
-		1024 1063 1165 3848 4067 4118 4122 4153 6870 6873 6994 7169 9807 9859 9865 11847 12056 
+		1063 3848 4067 9865 12056 
 	}
+	manpower=2575000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

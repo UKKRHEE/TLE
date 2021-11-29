@@ -295,12 +295,31 @@ KOR_the_three_countries_plan = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = TRIGGER_TOOLTIP_RULLED_CHINA
-				every_state = {
-					limit = {
-						is_core_of = CHI
-					}
-					is_controlled_by = KOR
-				}
+				owns_state = 622
+				owns_state = 621
+				owns_state = 620
+				owns_state = 616
+				owns_state = 615
+				owns_state = 614
+				owns_state = 611
+				owns_state = 610
+				owns_state = 591
+				owns_state = 592
+				owns_state = 593
+				owns_state = 607
+				owns_state = 606
+				owns_state = 605
+				owns_state = 604
+				owns_state = 603
+				owns_state = 602
+				owns_state = 601
+				owns_state = 600
+				owns_state = 608
+				owns_state = 612
+				owns_state = 613
+				owns_state = 325
+				owns_state = 868
+				owns_state = 869
 			}
 		}
 		complete_effect = {
@@ -314,7 +333,7 @@ KOR_the_three_countries_plan = {
 		available = {
 			original_tag = KOR
 			has_idea = KOR_not_planed_attack
-			has_army_experience > 100
+			has_army_experience > 150
 			command_power > 50
 		}
 
@@ -326,10 +345,6 @@ KOR_the_three_countries_plan = {
 		}
 		allowed = {
 			original_tag = KOR
-		}
-		custom_cost_trigger = {
-			command_power > 50
-			has_army_experience > 200
 		}
 		fire_only_once = yes
 		days_remove = 150
@@ -1084,51 +1099,59 @@ KOR_reichskommissariat = {
 			CHI = { exists = no }
 			custom_trigger_tooltip = {
 				tooltip = form_country_korea_tt
-				every_state = {
-					limit = {
-						is_core_of = KOR
-					}
-					is_controlled_by = KOR
-				}
+				original_tag = KOR
 			}
 			custom_trigger_tooltip = {
 				tooltip = form_country_manju_tt
-				every_state = {
-					limit = {
-						is_core_of = KMN
-					}
-					is_controlled_by = KOR
-				}
+				owns_state = 328
+				owns_state = 715
+				owns_state = 714
 			}
 			custom_trigger_tooltip = {
 				tooltip = form_country_mongolia_tt
-				every_state = {
-					limit = {
-						is_core_of = MON
-					}
-					is_controlled_by = KOR
-				}
+				owns_state = 330
 			}
 			custom_trigger_tooltip = {
 				tooltip = form_country_china_tt
-				every_state = {
-					limit = {
-						is_core_of = CHI
-					}
-					is_controlled_by = KOR
-				}
+				owns_state = 622
+				owns_state = 621
+				owns_state = 620
+				owns_state = 616
+				owns_state = 615
+				owns_state = 614
+				owns_state = 611
+				owns_state = 610
+				owns_state = 591
+				owns_state = 592
+				owns_state = 593
+				owns_state = 607
+				owns_state = 606
+				owns_state = 605
+				owns_state = 604
+				owns_state = 603
+				owns_state = 602
+				owns_state = 601
+				owns_state = 600
+				owns_state = 608
+				owns_state = 612
+				owns_state = 613
+				owns_state = 325
+				owns_state = 868
+				owns_state = 869
+				owns_state = 857
+				owns_state = 854
+				owns_state = 867
 			}
 			custom_trigger_tooltip = {
 				tooltip = form_country_japan_tt
-				every_state = {
-					limit = {
-						is_core_of = JAP
-					}
-					is_controlled_by = KOR
-				}
+				owns_state = 891
+				owns_state = 282
 			}
 			custom_trigger_tooltip = {
 				tooltip = form_state_gando_tt
+				owns_state = 851
+				owns_state = 852
+				owns_state = 853
 			}
 		}
 
@@ -1148,6 +1171,7 @@ KOR_reichskommissariat = {
 				add_core_of = ROOT
 			}
 		}
+		fire_only_once = yes
 
 		ai_will_do = {
 			factor = 200
@@ -1164,6 +1188,7 @@ KOR_reichskommissariat = {
 		allowed = {
 			original_tag = KOR
 		}
+		fire_only_once = yes
 
 		available = {
 			is_subject = no
@@ -1171,21 +1196,39 @@ KOR_reichskommissariat = {
 			CHI = { exists = no }
 			custom_trigger_tooltip = {
 				tooltip = form_country_china_tt
-				every_state = {
-					limit = {
-						is_core_of = CHI
-					}
-					is_controlled_by = KOR
-				}
+				owns_state = 622
+				owns_state = 621
+				owns_state = 620
+				owns_state = 616
+				owns_state = 615
+				owns_state = 614
+				owns_state = 611
+				owns_state = 610
+				owns_state = 591
+				owns_state = 592
+				owns_state = 593
+				owns_state = 607
+				owns_state = 606
+				owns_state = 605
+				owns_state = 604
+				owns_state = 603
+				owns_state = 602
+				owns_state = 601
+				owns_state = 600
+				owns_state = 608
+				owns_state = 612
+				owns_state = 613
+				owns_state = 325
+				owns_state = 868
+				owns_state = 869
+				owns_state = 857
+				owns_state = 854
+				owns_state = 867
 			}
 			custom_trigger_tooltip = {
 				tooltip = form_country_japan_tt
-				every_state = {
-					limit = {
-						is_core_of = JAP
-					}
-					is_controlled_by = KOR
-				}
+				owns_state = 891
+				owns_state = 282
 			}
 		}
 

@@ -1,6 +1,6 @@
 ﻿capital = 219
 
-oob = "RUS_1936"
+#oob = "RUS_1936"
 
 give_military_access = KOR
 set_research_slots = 3
@@ -54,6 +54,41 @@ set_popularities = {
 	communism = 0
 	neutrality = 50
 }
+recruit_character = RUS_korean_council
 recruit_character = RUS_alexandr_kolchak
 recruit_character = RUS_pyotr_wrangel
-recruit_character = RUS_pyotr_wrangel
+create_corps_commander = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}

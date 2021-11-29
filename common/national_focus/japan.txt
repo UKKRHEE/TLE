@@ -4,7 +4,10 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = JAP
+			OR = {
+				tag = JAP
+				tag = DKG
+			}
 		}
 	}
 	default = no
@@ -18,13 +21,42 @@ focus_tree = {
 			focus = JAP_peaceful_rise
 		}
 		available = {
-		has_completed_focus = JAP_rising_sun
+			has_completed_focus = JAP_rising_sun
+			custom_trigger_tooltip = {
+				tooltip = TOOLTIP_JAP_COMPLETE_CIVIL_WAR
+				has_completed_focus = JAP_economic_policy
+				controls_state = 891
+				controls_state = 531
+				controls_state = 532
+				controls_state = 535
+				controls_state = 282
+				if = {
+					limit = {
+						original_tag = JAP
+					}
+					DKG = {
+						exists = no
+					}
+				}
+				if = {
+					limit = {
+						original_tag = DKG
+					}
+					JAP = {
+						exists = no
+					}
+				}
+			}
 		}
 		x = 16
 		y = 7
         completion_reward = {
 			add_threat = 1
 			add_political_power = 75
+			create_wargoal = {
+				target = NBJ
+				type = annex_everything
+			}
        } 
 	}
 	focus = {
@@ -37,35 +69,51 @@ focus_tree = {
 		available = {
 		has_completed_focus = JAP_liberalization_of_regime
 		has_idea = JAP_democratic_popularity_2
+			custom_trigger_tooltip = {
+				tooltip = TOOLTIP_JAP_COMPLETE_CIVIL_WAR
+				has_completed_focus = JAP_economic_policy
+				controls_state = 891
+				controls_state = 531
+				controls_state = 532
+				controls_state = 535
+				controls_state = 282
+				if = {
+					limit = {
+						original_tag = JAP
+					}
+					DKG = {
+						exists = no
+					}
+				}
+				if = {
+					limit = {
+						original_tag = DKG
+					}
+					JAP = {
+						exists = no
+					}
+				}
+			}
 		}
 		x = 13
 		y = 7
         completion_reward = {
-        add_popularity = { ideology = neutrality popularity = 0.15 } 
-        add_ideas = neutrality_influence
-		set_cosmetic_tag = JAP
+			add_popularity = { ideology = neutrality popularity = 0.15 } 
+			add_ideas = neutrality_influence
+			set_cosmetic_tag = DKG
 		
-		remove_ideas = JAP_democratic_popularity_2
-			create_country_leader = {
-				name = "Dokugawa Yoshihisa"
-				desc = "POLITICS_Hirohito_DESC"
-				picture = "Portrait_JAP_Dokugawa_Yoshihisa.png"
-				expire = "1989.1.1"
-				ideology = liberalism
-				traits = {
-					warrior_code
-					#emperor_showa
-					#imperial_sanction
-				}
-			}
+			remove_ideas = JAP_democratic_popularity_2
         }
 	}
 	focus = {
 		id = JAP_economic_policy
 		icon = GFX_focus_generic_self_management
-		cost = 5.00
+		cost = 1.00
 		x = 14
 		y = 0
+		available = {
+			has_country_flag = FLAG_JAP_AUTO_COMP
+		}
 		completion_reward = {
         add_political_power = 100
         }
@@ -238,6 +286,33 @@ focus_tree = {
 		}
 		x = 3
 		y = 0
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = TOOLTIP_JAP_COMPLETE_CIVIL_WAR
+				has_completed_focus = JAP_economic_policy
+				controls_state = 891
+				controls_state = 531
+				controls_state = 532
+				controls_state = 535
+				controls_state = 282
+				if = {
+					limit = {
+						original_tag = JAP
+					}
+					DKG = {
+						exists = no
+					}
+				}
+				if = {
+					limit = {
+						original_tag = DKG
+					}
+					JAP = {
+						exists = no
+					}
+				}
+			}
+		}
         completion_reward = {
         add_tech_bonus = {
 				name = industrial_bonus
@@ -336,7 +411,7 @@ focus_tree = {
 		y = 2
         completion_reward = {
         army_experience = 25
-		536 = {
+		535 = {
 		 add_extra_state_shared_building_slots = 2
 		 add_building_construction = {
 			 type = arms_factory
@@ -354,7 +429,7 @@ focus_tree = {
 		    }
 				
 		  }
-		525 = {
+		282 = {
 		 add_extra_state_shared_building_slots = 2
 		 add_building_construction = {
 			 type = arms_factory
@@ -363,7 +438,7 @@ focus_tree = {
 		    }
 				
 		  }    
-		 525 = {
+		 532 = {
 		 add_extra_state_shared_building_slots = 2
 		 add_building_construction = {
 			 type = arms_factory
@@ -528,12 +603,12 @@ focus_tree = {
 		ai_chance = {
 			factor = 100
 		}
+		available = {
+			has_country_flag = FLAG_JAP_AUTO_COMP
+		}
 		x = 10
 		y = 1
 		completion_reward = {
-		set_rule = {
-				can_create_factions = yes
-			}
 		swap_ideas = {
 			remove_idea = JAP_democratic_popularity
 			add_idea = JAP_democratic_popularity_2
@@ -542,7 +617,6 @@ focus_tree = {
 		add_popularity = { ideology = neutrality popularity = 0.15 } 
 		add_ideas = JAP_facist_unrest
 		add_political_power = -75
-		hidden_effect = { country_event = { id = japan.1007 } }
 
         }
 	}
@@ -555,6 +629,33 @@ focus_tree = {
 		}
 		x = 9
 		y = 2
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = TOOLTIP_JAP_COMPLETE_CIVIL_WAR
+				has_completed_focus = JAP_economic_policy
+				controls_state = 891
+				controls_state = 531
+				controls_state = 532
+				controls_state = 535
+				controls_state = 282
+				if = {
+					limit = {
+						original_tag = JAP
+					}
+					DKG = {
+						exists = no
+					}
+				}
+				if = {
+					limit = {
+						original_tag = DKG
+					}
+					JAP = {
+						exists = no
+					}
+				}
+			}
+			}
         completion_reward = {
         add_political_power = 100
         add_popularity = { ideology = neutrality popularity = 0.05 }
@@ -760,19 +861,17 @@ focus_tree = {
 		ai_chance = {
 			factor = 0
 		}
+		available = {
+			has_country_flag = FLAG_JAP_AUTO_COMP
+		}
 		x = 18
 		y = 1
         completion_reward = {
-		set_rule = {
+			set_rule = {
 				can_create_factions = yes
 			}
-			set_cosmetic_tag = JAP
-			set_politics = {
-				ruling_party = fascism
-				elections_allowed = no
-			}
-        add_political_power = 120
-        swap_ideas = { remove_idea = JAP_democratic_popularity add_idea = JAP_democratic_popularity_2 }
+			add_political_power = 120
+			swap_ideas = { remove_idea = JAP_democratic_popularity add_idea = JAP_democratic_popularity_2 }
         }
 	}
 	focus = {
@@ -791,23 +890,10 @@ focus_tree = {
 				add_idea = JAP_not_regulared_industry_2
 				remove_idea = JAP_not_regulared_industry
 			}
-        add_political_power = -120
-        add_resource = {
-        type = oil
-        amount = 15
-        state = 537
-        }
-        add_resource = {
-        type = steel
-        amount = 25
-        state = 535
-        }
-        add_resource = {
-        type = aluminium
-        amount = 25
-        state = 531
-        }
-        add_ideas = JAP_resource
+			annex_country = {
+				target = KGJ
+				transfer_troops = yes
+			}
  
 	}
 	}
@@ -830,7 +916,7 @@ focus_tree = {
 	focus = {
 		id = JAP_imperial_glory
 		icon = GFX_focus_jap_pacific_guardian
-		cost = 8.00
+		cost = 3
 		prerequisite = {
 			focus = JAP_rising_sun
 		}
@@ -843,7 +929,7 @@ focus_tree = {
 	focus = {
 		id = JAP_war_support
 		icon = GFX_focus_generic_japanese_imperial_glory
-		cost = 8.00
+		cost = 3
 		prerequisite = {
 			focus = JAP_rising_sun
 		}
@@ -856,7 +942,7 @@ focus_tree = {
 	focus = {
 		id = JAP_gain_political_support
 		icon = GFX_focus_generic_support_the_left_right
-		cost = 8.00
+		cost = 3
 		prerequisite = {
 			focus = JAP_rising_sun
 		}
@@ -864,6 +950,10 @@ focus_tree = {
 		y = 2
         completion_reward = {
         add_political_power = 150
+		annex_country = {
+			target = EJP
+			transfer_troops = yes
+		}
         }
 	}
 	focus = {
@@ -879,6 +969,10 @@ focus_tree = {
 		x = 18
 		y = 4
         completion_reward = {
+			create_wargoal = {
+				target = SDJ
+				type = annex_everything
+			}
         swap_ideas = { remove_idea = JAP_democratic_popularity_2 add_idea = JAP_silencing }
         swap_ideas = { remove_idea = JAP_slaves add_idea = JAP_slaves1 }
         swap_ideas = { remove_idea = JAP_resource add_idea = JAP_resource1 }
@@ -972,6 +1066,33 @@ focus_tree = {
 		cost = 7.15
 		x = 32
 		y = 0
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = TOOLTIP_JAP_COMPLETE_CIVIL_WAR
+				has_completed_focus = JAP_economic_policy
+				controls_state = 891
+				controls_state = 531
+				controls_state = 532
+				controls_state = 535
+				controls_state = 282
+				if = {
+					limit = {
+						original_tag = JAP
+					}
+					DKG = {
+						exists = no
+					}
+				}
+				if = {
+					limit = {
+						original_tag = DKG
+					}
+					JAP = {
+						exists = no
+					}
+				}
+			}
+		}
 		completion_reward = {
         army_experience = 15
         navy_experience = 15
@@ -1675,8 +1796,12 @@ focus_tree = {
 		x = 20
 		y = 9
         completion_reward = {
-        FRA = {
-		country_event = { id = japan.1009 }
+        #FRA = {
+		#country_event = { id = japan.1009 }
+		#}
+		transfer_state = 886
+		annex_country = {
+			target = FJP
 		}
 		}
 	}
@@ -1699,26 +1824,10 @@ focus_tree = {
 				}
 			}
 		}
-		bypass = { controls_state = 333
-		controls_state = 336 }
-		available = {
-		OR = {
-		ENG = { AND = {
-		controls_state = 336
-		controls_state = 333
-		}
-		}
-		MAL = { AND = {
-		controls_state = 336
-		controls_state = 333
-		}
-		}
-		}
-		}
+		bypass = { 
+		controls_state = 887 }
         completion_reward = {
-        create_wargoal = { type = annex_everything target = ENG }
-		add_state_claim = 336
-		add_state_claim = 333
+		transfer_state = 887
         }
 	}
 	focus = {
@@ -1775,7 +1884,7 @@ focus_tree = {
         completion_reward = {
         add_state_claim = 655
 		add_state_claim = 408
-		add_state_claim = 409s
+		add_state_claim = 409
         add_political_power = -50
         }
 	
@@ -1836,7 +1945,7 @@ focus_tree = {
 		x = 22
 		y = 9
         completion_reward = {
-        create_wargoal = { type = annex_everything target = USA }
+        transfer_state = 888
         }
 	}
 	focus = {
@@ -2015,7 +2124,30 @@ focus_tree = {
         set_rule = {
 			can_create_factions = yes
 		}	
-		
+		DKG = {
+			create_wargoal = {
+				target = EJP
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = FJP
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = SDJ
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = NBJ
+				type = annex_everything
+			}
+			annex_country = {
+				target = GJJ
+			}
+			annex_country = {
+				target = TBJ
+			}
+			}
         }
 	}
 

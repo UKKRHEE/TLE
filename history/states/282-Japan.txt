@@ -6,12 +6,11 @@ state={
 		aluminium=1.000
 	}
 
-	local_supplies=0.0 
 	history={
-		owner = JAP
-		add_core_of = JAP
+		owner = DKG
+		add_core_of = DKG
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			air_base = 4
 			industrial_complex = 2
 			arms_factory = 1
@@ -23,7 +22,25 @@ state={
 
 		}
 		victory_points = {
-			1182 50 
+			1182 40 
+		}
+		victory_points = {
+			4179 5 
+		}
+		victory_points = {
+			7212 5 
+		}
+		victory_points = {
+			7145 3
+		}
+		victory_points = {
+			1133 3
+		}
+		victory_points = {
+			1097 3
+		}
+		victory_points = {
+			7016 3
 		}
 		1939.1.1 = {
 			buildings = {
@@ -38,9 +55,10 @@ state={
 	}
 
 	provinces={
-		993 1097 1113 1182 4000 4100 4184 4188 7016 11908 
+		993 1097 1113 1182 4000 4100 7016 11908 11989 
 	}
 	manpower=13773000
 	buildings_max_level_factor=1.000
 	state_category=metropolis
+	local_supplies=0.000
 }

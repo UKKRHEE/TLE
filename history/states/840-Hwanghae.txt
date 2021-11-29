@@ -10,7 +10,7 @@ state={
 	history={
 		owner = KOR
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			industrial_complex = 3
 
 			7155 = {

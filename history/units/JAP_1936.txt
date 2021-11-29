@@ -14,19 +14,6 @@
 	}
 }
 division_template = {
-	name = "Dokuritsu Konsei Ryodan" 	# Independent Mixed Brigade: 5 infantry battalions (4k men total), 1 field artillery basttalion - abstracted into infantry,
-	division_names_group = JAP_IMB_01
-										# 1 engineering battalion
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		light_armor = { x= 1 y = 0 }
-		light_armor = { x= 1 y = 1 }
-	}
-	support = {
-	}
-}
-division_template = {
 	name = "Kihei Shidan" 			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment
 	division_names_group = JAP_CAV_01
 	regiments = {
@@ -36,38 +23,6 @@ division_template = {
 		cavalry = { x = 0 y = 3 }
 	}
 }
-division_template = {
-	name = "Jidousha Shidan" 			# Motorized divisions - 4 motorized infantry regiments (3k men each), 1 recon regiment, 
-	division_names_group = JAP_MOT_01
-										#1 engineer regiment, 1 mounted artillery regiment
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-	}
-	support = {
-		artillery = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Rikusentai"				#This template covers SNLF divisions; historically there were roughly 5 total, with 1 being paratroopers
-	division_names_group = JAP_MAR_01
-	regiments = {
-		marine = { x = 0 y = 0 }
-		marine = { x = 0 y = 1 }
-		marine = { x = 1 y = 0 }
-		marine = { x = 1 y = 1 }
-	}
-	support = {
-	}	
-	priority = 2
-}
-
-
-##### OOB #####
 units = {
 
 	division = { 
@@ -75,7 +30,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 1182
+		location = 4142
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
@@ -84,7 +39,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 1182
+		location = 1067
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
@@ -93,7 +48,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 4184
+		location = 1067
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
@@ -102,7 +57,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 7087
+		location = 11960
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
@@ -111,25 +66,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 10125
-		division_template = "Hohei Shidan"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 7072
-		division_template = "Hohei Shidan"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 7072
+		location = 11960
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
@@ -147,7 +84,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 7197
+		location = 1136
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
@@ -156,195 +93,24 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 1092
-		division_template = "Hohei Shidan"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 1025
-		division_template = "Hohei Shidan"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 4164
+		location = 11960
 		division_template = "Kihei Shidan"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 4198
-		division_template = "Kihei Shidan"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 7169
-		division_template = "Kihei Shidan"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 1117
-		division_template = "Hohei Shidan"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 1117
-		division_template = "Kihei Shidan"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 6994
-		division_template = "Kihei Shidan"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 11985
-		division_template = "Kihei Shidan"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 1025
-		division_template = "Kihei Shidan"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 4102
-		division_template = "Kihei Shidan"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 4102
-		division_template = "Dokuritsu Konsei Ryodan"
 		start_experience_factor = 0.3
 	}
 }
-
-
-
-
 #AIRCRAFT
 air_wings = {
-	### IJA Air Forces ###
-	# 1 Hikodan -- Tokyo
-	282 = { 
-		# 1 Hiko Rentai -- Kawasaki Ki-10
-		fighter_equipment_0 = {
-			owner = "JAP" 
-			amount = 130
-		}
-		# 16 Hiko Rentai -- Kawasaki Ki-10
-		fighter_equipment_0 = {
-			owner = "JAP" 
-			amount = 72
-		}
-		# 6 Hiko Rentai -- Mitsubishi Ki-2
-		CAS_equipment_1 =  {
-			owner = "JAP" 
-			amount = 54
-		}
-		# 9 Hiko Rentai -- Mitsubishi Ki-1
-		tac_bomber_equipment_0 =  {
-			owner = "JAP" 
-			amount = 54
-		}
-	}
 }
-
-
-#########################
-## STARTING PRODUCTION ##
-#########################
 instant_effect = 
 {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
+			type = infantry_equipment_0
 			creator = "JAP"
 		}
-		requested_factories = 3
+		requested_factories = 10
 		progress = 0.1
 		efficiency = 50
 	}
 
-	add_equipment_production = {
-		equipment = {
-			type = support_equipment_1
-			creator = "JAP" 
-		}
-		requested_factories = 1
-		progress = 0.3
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = artillery_equipment_1
-			creator = "JAP" 
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_0
-			creator = "JAP" 
-		}
-		requested_factories = 1
-		progress = 0.15
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = cv_nav_bomber_equipment_1
-			creator = "JAP" 
-		}
-		requested_factories = 1
-		progress = 0.2
-		efficiency = 50
-	}
 }

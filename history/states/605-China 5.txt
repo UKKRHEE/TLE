@@ -6,7 +6,7 @@ state={
 	local_supplies=0.0 
 	history={
 		buildings = {
-			infrastructure = 7
+			infrastructure = 2
 			industrial_complex = 1
 			arms_factory = 1
 

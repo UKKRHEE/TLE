@@ -7,10 +7,10 @@ state={
 
 	local_supplies=0.0 
 	history={
-		owner = JAP
-		add_core_of = JAP
+		owner = DKG
+		add_core_of = DKG
 		buildings = {
-			infrastructure = 7
+			infrastructure = 2
 			industrial_complex = 2
 		}
 		

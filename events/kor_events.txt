@@ -11,15 +11,33 @@ country_event = { #간략한 설정
 	
 	option = { #그래 시작해보자고
 		name = korea.1.a
-		set_major = yes
-		country_event = {
-			id = korea.777
+		if = {
+			limit = {
+				original_tag = KOR
+			}
+			country_event = {
+				id = korea.777
+			}
+			set_major = yes
+		}
+		if = {
+			limit = {
+				is_japan_clique = yes
+			}
+			country_event = {
+				id = TLE_japan.1
+			}
 		}
 	}
 	
 	option = { #그래 시작해보자고
 		name = korea.1.b
-		set_major = yes
+		if = {
+			limit = {
+				original_tag = KOR
+			}
+			set_major = yes
+		}
 	}
 }
 #######################################################################################
@@ -2128,8 +2146,10 @@ country_event = { #2.26 사건
 		name = korea.54.a
 		trigger = {
 			NOT = {
-				has_country_flag = FLAG_CUTTING_ACCEPT_MONEY
-				has_country_flag = FLAG_CUTTING_ACCEPT_COMMUNITY
+				OR = {
+					has_country_flag = FLAG_CUTTING_ACCEPT_MONEY
+					has_country_flag = FLAG_CUTTING_ACCEPT_COMMUNITY
+				}
 			}
 		}
 		hidden_effect = { 

@@ -10,7 +10,7 @@ state={
 
 	history={
 		owner = KOR
-		add_claim_by = JAP
+		add_claim_by = DKG
 		add_core_of = KOR
 		buildings = {
 			infrastructure = 2
@@ -28,7 +28,7 @@ state={
 				dockyard = 4
 				industrial_complex = 3
 			}
-		    owner = JAP
+		    owner = DKG
 		}
 
 	}

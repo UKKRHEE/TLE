@@ -4,7 +4,7 @@ bookmarks = {
 		desc = "GATHERING_STORM_DESC"
 		date = 1936.1.1.12
 		picture = "GFX_bookmark_TLE_logo"
-		default_country = "GER"
+		default_country = "KOR"
 		default = yes
 		
 		"FRA"={
@@ -174,7 +174,7 @@ bookmarks = {
 		}
 
 
-		"JAP"={
+		"DKG"={
 			history = "JAP_GATHERING_STORM_DESC"
 			minor = yes
 			ideology = neutrality

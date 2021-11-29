@@ -1,0 +1,29 @@
+
+state={
+	id=849
+	name="STATE_849"
+
+	local_supplies=0.0 
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			air_base = 2
+			arms_factory = 1
+
+		}
+		victory_points = {
+			3977 5 
+		}
+		add_core_of = KOR
+
+	}
+
+	provinces={
+		810 3787 3843 3977 5427 6684 6838 6989 11750 11879 
+	}
+	manpower=234560
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,11 +1,10 @@
-﻿capital = 282
+﻿capital = 891
 
 oob = "JAP_1936"
 
 set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
 set_war_support = 0.8
-set_cosmetic_tag = JAP_dokugawa
-set_research_slots = 4
+set_research_slots = 3
 set_fuel_ratio = 1.0
 add_ideas = {
 	JAP_showa_hirohito
@@ -114,6 +113,14 @@ create_import = {
 		exporter = USA
 }
 
+add_offsite_building = {
+	type = arms_factory
+	level = 4
+}
+add_offsite_building = {
+	type = industrial_complex
+	level = 3
+}
 
 set_convoys = 400
 
@@ -144,16 +151,16 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 47
-	fascism = 23
-	communism = 12
-	democratic = 18
+	neutrality = 100
+	fascism = 0
+	communism = 0
+	democratic = 0
 }
 
-recruit_character = JAP_dokugawa_yoshihisa
+recruit_character = JAP_yamato_junta
 recruit_character = JAP_tetsu_katayama
 recruit_character = JAP_kyuichi_tokuda
-recruit_character = JAP_emperor_hirohito
+#recruit_character = JAP_emperor_hirohito
 recruit_character = JAP_tomoyuki_yamashita
 recruit_character = JAP_hisaichi_terauchi
 recruit_character = JAP_shunroku_hata

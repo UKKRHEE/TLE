@@ -1,6 +1,14 @@
 spriteTypes = {
 
 	spriteType = {
+		name = "GFX_frontend_logo_TLE" 
+		textureFile = "gfx/interface/TLE_logo_game.dds"
+	}
+	spriteType = {
+		name = "GFX_bookmark_TLE_logo" 
+		textureFile = "gfx/interface/TLE_2.png"
+	}
+	spriteType = {
 		name = "GFX_ideology_neutrality_group"
 		texturefile = "gfx/interface/ideologies/neutrality_group.dds"
 	}	

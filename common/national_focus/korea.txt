@@ -1588,19 +1588,13 @@ focus_tree = {
 									target = RUS
 									transfer_troops = yes
 								}
+							annex_country = {
+									target = KHK
+									transfer_troops = yes
+								}
 								add_state_core = 657
 								add_state_core = 561
 								add_state_core = 560
-						}
-					SOV = {
-							transfer_state = 564
-							transfer_state = 563
-							transfer_state = 565
-							transfer_state = 574
-							transfer_state = 562
-							transfer_state = 644
-							transfer_state = 567
-							transfer_state = 637
 						}
 				}
 
@@ -1665,11 +1659,17 @@ focus_tree = {
 		}
 		x = 38
 		y = 9
+		available = {
+			DKG = {
+				exists = yes
+				controls_state = 282
+			}
+		}
 			completion_reward = {
 					KOR = {
-							give_military_access = JAP
+							give_military_access = DKG
 						}
-					JAP = {
+					DKG = {
 							give_military_access = KOR
 						}
 				}
@@ -1871,8 +1871,14 @@ focus_tree = {
 		}
 		x = 40
 		y = 9
+		available = {
+			DKG = {
+				exists = yes
+				controls_state = 282
+			}
+		}
 			completion_reward = {
-					JAP = {
+					DKG = {
 							give_guarantee = KOR
 						}
 				}
@@ -1892,12 +1898,18 @@ focus_tree = {
 		y = 10
 			available = {
 					is_faction_leader = yes
+			DKG = {
+				exists = yes
+				controls_state = 282
+			}
 				}
+		available = {
+		}
 			bypass = {
 
 }
 			completion_reward = {
-					JAP = {
+					DKG = {
 							country_event = {
 									id = generic.5
 								}
@@ -2688,7 +2700,7 @@ focus_tree = {
 							can_create_factions = yes
 						}
 					create_faction = "EASTASIAN_DEMOCRATICUNION"
-					RUS = {
+					CHI = {
 							country_event = {
 									id = generic.5
 								}
@@ -2719,6 +2731,12 @@ focus_tree = {
 		}
 		x = 18
 		y = 11
+		available = {
+			JAP = {
+				exists = yes
+				controls_state = 891
+			}
+		}
 			completion_reward = {
 					create_wargoal = {
 							target = JAP
@@ -3336,7 +3354,14 @@ focus_tree = {
 		y = 9
 			available = {
 					date > 1939.7.18
-				}
+			JAP = {
+				exists = yes
+				controls_state = 891
+			}
+			DKG = {
+				exists = no
+			}
+			}
 			completion_reward = {
 					create_wargoal = {
 							type = puppet_wargoal_focus
@@ -3441,11 +3466,11 @@ focus_tree = {
 					controls_state = 409
 				}
 			completion_reward = {
-					RUS = {
-							country_event = {
-									id = korea.16
-								}
+					KOR = {
+						annex_country = {
+							target = RUS
 						}
+					}	
 				}
 
 	}

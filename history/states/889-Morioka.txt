@@ -1,0 +1,27 @@
+state={
+	id=889
+	name="STATE_889"
+	provinces={
+		6870 6873 6994 9807 9859 11847 
+	}
+	history={
+		owner = NBJ
+		add_core_of = NBJ
+		add_core_of = DKG
+		buildings = {
+			arms_factory = 1
+			industrial_complex = 1
+			infrastructure = 1
+			9859 = {
+				naval_base = 3
+
+			}
+
+		}
+
+	}
+	state_category=town
+	manpower=1589867
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

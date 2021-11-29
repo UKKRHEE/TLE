@@ -1,7 +1,7 @@
 
 state={
 	id=408
-	name="로스치코"
+	name="STATE_408"
 	resources={
 		chromium=20.000
 	}
@@ -16,7 +16,7 @@ state={
 			6961 3 
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			dockyard = 1
 			air_base = 5
 			957 = {
@@ -26,6 +26,7 @@ state={
 			}
 
 		}
+		add_claim_by = SOV
 		add_core_of = RUS
 		add_core_of = KOR
 

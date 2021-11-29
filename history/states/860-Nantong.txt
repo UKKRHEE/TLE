@@ -17,7 +17,7 @@ state={
 				naval_base = 3
 
 			}
-			infrastructure = 3
+			infrastructure = 2
 		}
 			owner = WZC
 			add_core_of = WZC

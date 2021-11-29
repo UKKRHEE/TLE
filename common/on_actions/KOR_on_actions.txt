@@ -13,6 +13,25 @@ on_actions = {
 					days = 38
 				}
 			}
+			if = {
+				limit = {
+					is_japan_clique = yes
+				}
+                country_event = {
+                    id = korea.1
+                    days = 0
+      			}
+			}
+			DKG = {
+				country_event = {
+					id = japan.1014
+					days = 3
+				}
+				country_event = {
+					id = TLE_japan.4
+					hours = 5
+				}
+			}
 			KOR = {
                 country_event = {
                     id = korea.1
@@ -20,16 +39,8 @@ on_actions = {
       			}
                 country_event = {
                     id = korea.49
-                    days = 1
+                    hours = 5
       			}
-			}
-			if = {
-				every_state = {
-					limit = {
-						is_core_of = SOV
-					}
-					add_core_of = RUS
-				}
 			}
 			if = {
 				every_state = {
@@ -45,6 +56,20 @@ on_actions = {
 	}
 	on_capitulation = {
 		effect = {
+			if = {
+				limit = {
+					original_tag = FRA
+				}
+				every_country = {
+					limit = {
+						is_japan_clique = yes
+						owns_state = 282
+					}
+					transfer_state = 886
+					transfer_state = 887
+					transfer_state = 888
+				}
+			}
 			if = {
 				limit = {
 					original_tag = ZLC
@@ -371,6 +396,18 @@ on_actions = {
 			}
 			if = {
 				limit = {
+					tag = JAP #점령국 - 대한
+					FROM = {
+						tag = DKG
+						} #피점령국 - 중국
+					FROM.FROM = { state = 532 } #점령 주 - 난징
+				}
+				DKG = {
+					add_ideas = CHI_army_corruption_1
+				}
+			}
+			if = {
+				limit = {
 					tag = KOR #점령국 - 대한
 					FROM = {
 						is_independent_china_or_warlord = yes
@@ -385,6 +422,37 @@ on_actions = {
                     id = 11913
                     name = "남경"
                 }
+			}
+			if = {
+				limit = {
+					tag = CHI #점령국 - 대한
+					FROM = {
+						is_independent_china_or_warlord = yes
+						} #피점령국 - 중국
+					FROM.FROM = { state = 613 } #점령 주 - 난징
+					CHI = {
+						NOT = {
+							has_country_flag = FLAG_CHI_COSMETIC_NANKING
+						}
+					}
+				}
+				CHI = {
+					set_cosmetic_tag = CHI_nanking
+					set_country_flag = FLAG_CHI_COSMETIC_NANKING
+					set_capital = 613
+					add_ideas = CHI_army_corruption_1
+					transfer_state = 600
+					transfer_state = 595
+					transfer_state = 596
+					transfer_state = 749
+					transfer_state = 613
+					transfer_state = 864
+					transfer_state = 865
+					transfer_state = 862
+					transfer_state = 863
+					transfer_state = 858
+					transfer_state = 859
+				}
 			}
 			if = {
 				limit = {

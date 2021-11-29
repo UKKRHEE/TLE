@@ -1,0 +1,27 @@
+state={
+	id=893
+	name="STATE_893"
+	provinces={
+		4118 4122 4153 
+	}
+	history={
+		owner = TBJ
+		add_core_of = TBJ
+		add_core_of = DKG
+		buildings = {
+			arms_factory = 1
+			industrial_complex = 1
+			infrastructure = 1
+			9859 = {
+				naval_base = 3
+
+			}
+
+		}
+
+	}
+	state_category=town
+	manpower=1368962
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

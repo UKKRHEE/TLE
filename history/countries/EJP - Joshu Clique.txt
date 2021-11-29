@@ -1,0 +1,53 @@
+﻿capital = 282 #South Korea - Seoul or Busan
+
+oob = "TBJ_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
+}
+add_offsite_building = {
+	type = arms_factory
+	level = 3
+}
+add_offsite_building = {
+	type = industrial_complex
+	level = 2
+}
+
+create_country_leader = {
+	name = "마에다 토시나리"
+	desc = ""
+	picture = "gfx/leaders/JAP/Portrait_Japan_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "마에다 토시나리"
+	desc = ""
+	picture = "gfx/leaders/JAP/Portrait_Japan_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}

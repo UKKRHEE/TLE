@@ -230,8 +230,8 @@ SIA = {
 	color_ui = rgb { 222 247 198 }
 }
 SIK = {
-	color = rgb { 71 190 152 }
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 230 209 91 }
+	color_ui = rgb { 230 209 91 }
 }
 TIB = {
 	color = rgb { 80 115 45}
@@ -785,6 +785,14 @@ KOR = { #한국
 	color = rgb { 36  7  126 }
 	color_ui = rgb { 36  7  126 }
 }
+KKS = { #한국
+	color = rgb { 36  7  126 }
+	color_ui = rgb { 36  7  126 }
+}
+KHK = { #한국
+	color = rgb { 36  7  126 }
+	color_ui = rgb { 36  7  126 }
+}
 KMN = { #
 	color = rgb { 51  92  187 }
 	color_ui = rgb { 51  92  187 }
@@ -896,4 +904,36 @@ WZC = { #오성연군
 HNC = { #호남
 	color = rgb { 161 103 33 }
 	color_ui = rgb { 161 103 33 }
+}
+EJP = { #호남
+	color = rgb { 230 230 230 }
+	color_ui = rgb { 230 230 230 }
+}
+FJP = { #호남
+	color = rgb { 230 230 230 }
+	color_ui = rgb { 230 230 230 }
+}
+DKG = { #호남
+	color = rgb { 230 230 230 }
+	color_ui = rgb { 230 230 230 }
+}
+NBJ = { #호남
+	color = rgb { 230 230 230 }
+	color_ui = rgb { 230 230 230 }
+}
+SDJ = { #호남
+	color = rgb { 230 230 230 }
+	color_ui = rgb { 230 230 230 }
+}
+KGJ = { #호남
+	color = rgb { 230 230 230 }
+	color_ui = rgb { 230 230 230 }
+}
+GJJ = { #호남
+	color = rgb { 230 230 230 }
+	color_ui = rgb { 230 230 230 }
+}
+TBJ = { #호남
+	color = rgb { 230 230 230 }
+	color_ui = rgb { 230 230 230 }
 }

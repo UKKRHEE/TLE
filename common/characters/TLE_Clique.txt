@@ -73,13 +73,6 @@ characters={
 		}
 		country_leader={
 			desc = ""
-			ideology=rexism
-			traits={ }
-			expire="1965.1.1.1"
-			id=-1
-		}
-		country_leader={
-			desc = ""
 			ideology=despotism
 			traits={ }
 			expire="1965.1.1.1"
@@ -120,6 +113,24 @@ characters={
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id=-1
+		}
+	}
+	RUS_korean_council = {
+		name="관외 총독부"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_provicional_government.png"
+			}
+			army = {
+				large="gfx/leaders/KOR/Portrait_KOR_provicional_government.png"
+			}
+		}
+		country_leader={
+			desc = ""
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
 		}
 	}
 	RUS_alexandr_kolchak = {
@@ -188,7 +199,7 @@ characters={
 				large="gfx/leaders/RUS/Portrait_RUS_Anton_Denikin.tga"
 			}
 		}
-		field_marshal={
+		corps_commander={
 			traits = { }
 			skill = 1
 			attack_skill = 1

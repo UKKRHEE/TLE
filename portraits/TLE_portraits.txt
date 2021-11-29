@@ -1,0 +1,178 @@
+DKG = {
+	army = {
+		male = {
+			"GFX_Portrait_Japan_Generic_land_1"
+			"GFX_Portrait_Japan_Generic_land_2"
+			"GFX_Portrait_Japan_Generic_land_3"
+			"GFX_Portrait_Japan_Generic_land_4"
+			"GFX_Portrait_Japan_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Japan_Generic_navy_1"
+			"GFX_Portrait_Japan_Generic_navy_2"
+			"GFX_Portrait_Japan_Generic_navy_3"
+		}
+	}
+}
+SDJ = {
+	army = {
+		male = {
+			"GFX_Portrait_Japan_Generic_land_1"
+			"GFX_Portrait_Japan_Generic_land_2"
+			"GFX_Portrait_Japan_Generic_land_3"
+			"GFX_Portrait_Japan_Generic_land_4"
+			"GFX_Portrait_Japan_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Japan_Generic_navy_1"
+			"GFX_Portrait_Japan_Generic_navy_2"
+			"GFX_Portrait_Japan_Generic_navy_3"
+		}
+	}
+}
+
+GJJ = {
+	army = {
+		male = {
+			"GFX_Portrait_Japan_Generic_land_1"
+			"GFX_Portrait_Japan_Generic_land_2"
+			"GFX_Portrait_Japan_Generic_land_3"
+			"GFX_Portrait_Japan_Generic_land_4"
+			"GFX_Portrait_Japan_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Japan_Generic_navy_1"
+			"GFX_Portrait_Japan_Generic_navy_2"
+			"GFX_Portrait_Japan_Generic_navy_3"
+		}
+	}
+}
+
+KGJ = {
+	army = {
+		male = {
+			"GFX_Portrait_Japan_Generic_land_1"
+			"GFX_Portrait_Japan_Generic_land_2"
+			"GFX_Portrait_Japan_Generic_land_3"
+			"GFX_Portrait_Japan_Generic_land_4"
+			"GFX_Portrait_Japan_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Japan_Generic_navy_1"
+			"GFX_Portrait_Japan_Generic_navy_2"
+			"GFX_Portrait_Japan_Generic_navy_3"
+		}
+	}
+}
+
+TBJ = {
+	army = {
+		male = {
+			"GFX_Portrait_Japan_Generic_land_1"
+			"GFX_Portrait_Japan_Generic_land_2"
+			"GFX_Portrait_Japan_Generic_land_3"
+			"GFX_Portrait_Japan_Generic_land_4"
+			"GFX_Portrait_Japan_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Japan_Generic_navy_1"
+			"GFX_Portrait_Japan_Generic_navy_2"
+			"GFX_Portrait_Japan_Generic_navy_3"
+		}
+	}
+}
+
+EJP = {
+	army = {
+		male = {
+			"GFX_Portrait_Japan_Generic_land_1"
+			"GFX_Portrait_Japan_Generic_land_2"
+			"GFX_Portrait_Japan_Generic_land_3"
+			"GFX_Portrait_Japan_Generic_land_4"
+			"GFX_Portrait_Japan_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Japan_Generic_navy_1"
+			"GFX_Portrait_Japan_Generic_navy_2"
+			"GFX_Portrait_Japan_Generic_navy_3"
+		}
+	}
+}
+
+FJP = {
+	army = {
+		male = {
+			"GFX_Portrait_Japan_Generic_land_1"
+			"GFX_Portrait_Japan_Generic_land_2"
+			"GFX_Portrait_Japan_Generic_land_3"
+			"GFX_Portrait_Japan_Generic_land_4"
+			"GFX_Portrait_Japan_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Japan_Generic_navy_1"
+			"GFX_Portrait_Japan_Generic_navy_2"
+			"GFX_Portrait_Japan_Generic_navy_3"
+		}
+	}
+}
+
+KHK = {
+	army = {
+		male = {
+			"GFX_Portrait_Japan_Generic_land_1"
+			"GFX_Portrait_Japan_Generic_land_2"
+			"GFX_Portrait_Japan_Generic_land_3"
+			"GFX_Portrait_Japan_Generic_land_4"
+			"GFX_Portrait_Japan_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Japan_Generic_navy_1"
+			"GFX_Portrait_Japan_Generic_navy_2"
+			"GFX_Portrait_Japan_Generic_navy_3"
+		}
+	}
+}
+
+KKS = {
+	army = {
+		male = {
+			"GFX_Portrait_Japan_Generic_land_1"
+			"GFX_Portrait_Japan_Generic_land_2"
+			"GFX_Portrait_Japan_Generic_land_3"
+			"GFX_Portrait_Japan_Generic_land_4"
+			"GFX_Portrait_Japan_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Japan_Generic_navy_1"
+			"GFX_Portrait_Japan_Generic_navy_2"
+			"GFX_Portrait_Japan_Generic_navy_3"
+		}
+	}
+}

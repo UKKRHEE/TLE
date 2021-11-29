@@ -14,6 +14,20 @@
 # 
 #	THIS FILE IS FOR TRIGGERS SPECIFICALLY FOR THE CHI TAG
 
+is_japan_clique = { #Does not include sinkiang
+	OR = {
+		tag = JAP
+		tag = DKG
+		tag = TBJ
+		tag = SDJ
+		tag = NBJ
+		tag = KGJ
+		tag = GJJ
+		tag = EJP
+		tag = FJP
+	}
+	exists = yes
+}
 is_independent_china_or_warlord = { #Does not include sinkiang
 	OR = {
 		tag = CHI

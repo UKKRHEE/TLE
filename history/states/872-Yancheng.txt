@@ -9,7 +9,7 @@ state={
 			7142 1 
 		}
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 
 		}
 		owner = WZC

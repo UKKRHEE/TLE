@@ -1,0 +1,109 @@
+﻿division_template = {
+	name = "Hohei Shidan" 			# (Square) Infantry Division - 4 infantry regiments (3k men each), 1 field artillery regiment - abstracted into infantry,
+	division_names_group = JAP_INF_01
+									# 1 engineering regiment, 1 recon regiment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Kihei Shidan" 			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment
+	division_names_group = JAP_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+	}
+}
+
+##### OOB #####
+units = {
+
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10015
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1182
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11960
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7072
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4054
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4142
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.3
+	}
+}
+
+
+
+
+#AIRCRAFT
+air_wings = {
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = 
+{
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "JAP"
+		}
+		requested_factories = 10
+		progress = 0.1
+		efficiency = 50
+	}
+
+}
