@@ -512,9 +512,9 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "title"
-			position = { x = 120 y = 15 }
+			position = { x = 120 y = 14 }
 			textureFile = ""
-			font = "aldrich_20_outline"
+			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
 			text = "FE_SELECT_SCENARIO"
 			maxWidth = 340
@@ -563,8 +563,8 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "history_title"
-			position = { x = 110 y = 275 }
-			font = "aldrich_20_outline"
+			position = { x = 110 y = 274 }
+			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
 			text = "BM_HISTORY_TITLE"
 			maxWidth = 340
@@ -574,8 +574,8 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "bookmark_title"
-			position = { x = 25 y = 310 }
-			font = "nnmj_21"
+			position = { x = 25 y = 305 }
+			font = "hoi4_typewriter22"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 340
 			maxHeight = 30	
@@ -584,8 +584,8 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "bookmark_desc"
-			position = { x = 25 y = 340 }
-			font = "nnmj_16"
+			position = { x = 25 y = 330 }
+			font = "hoi4_typewriter16"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 540
 			maxHeight = 30	
@@ -597,7 +597,7 @@ guiTypes = {
 			position = { x = 30 y = -57 }
 			quadTextureSprite ="GFX_button_221x34"	
 			buttonText = "BACK"
-			buttonFont = "aldrich_20_outline"
+			buttonFont = "hoi_18mbs"
 			Orientation = "LOWER_LEFT"
 			clicksound = click_close
 			oversound = ui_menu_over
@@ -609,7 +609,7 @@ guiTypes = {
 			position = { x = -252 y = -57 }
 			quadTextureSprite ="GFX_button_221x34"
 			buttonText = "FE_SELECT_SCENARIO"
-			buttonFont = "aldrich_20_outline"
+			buttonFont = "hoi_18mbs"
 			Orientation = "LOWER_RIGHT"
 			clicksound = click_ok
 			oversound = ui_menu_over

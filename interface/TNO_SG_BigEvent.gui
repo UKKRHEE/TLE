@@ -79,7 +79,7 @@ guiTypes = {
 		}
 	}
 	
-#####################3
+#####################
 	containerWindowType = {
 		name = "TNO_SG_big_event_korea_ww_china"
 		size = { width = 580 height = 128 }
@@ -158,7 +158,7 @@ guiTypes = {
 			Orientation = lower_left
 		}
 	}
-#####################3
+#####################
 	containerWindowType = {
 		name = "TNO_SG_big_event_korea_war_with_usa"
 		size = { width = 580 height = 128 }

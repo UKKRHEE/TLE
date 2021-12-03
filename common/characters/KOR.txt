@@ -33,10 +33,11 @@ characters={
 		name=KOR_yi_byung_mu
 		portraits={
 			civilian={
-				large="gfx/leaders/GER/Portrait_Germany_Konrad_Adenauer.dds"
+				large="gfx/leaders/KOR/이병무.png"
 			}
 			army={
 				large="gfx/leaders/KOR/이병무.png"
+				small="gfx/interface/ideas/KOR/idea_KOR_yi_byung_mu.png"
 			}
 		}
 		country_leader={
@@ -91,6 +92,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/KOR/Portrait_KOR_yi_kang_emperor.png"
+				small="gfx/interface/ideas/KOR/idea_KOR_yi_kang.png"
 			}
 			civilian={
 				large="gfx/leaders/KOR/Portrait_yi_kang_old.png"
@@ -192,7 +194,8 @@ characters={
 		name=KOR_yi_won
 		portraits={
 			army={
-				large="gfx/leaders/KOR/Portrait_general_lee_jongchan.dds"
+				large="gfx/leaders/KOR/Portrait_KOR_yi_won.png"
+				small="gfx/interface/ideas/KOR/idea_KOR_yi_won.png"
 			}
 		}
 		create_field_marshal={

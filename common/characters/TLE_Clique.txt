@@ -7,6 +7,7 @@ characters={
 			}
 			army = {
 				large="gfx/leaders/ANC/portrait_anc_chen_tiaoyuan.png"
+				small="portrait_anc_chen_tiaoyuan"
 			}
 		}
 		country_leader={
@@ -38,6 +39,7 @@ characters={
 			}
 			army = {
 				large="gfx/leaders/HNC/Portrait_Hunan_Zhao_Hengti_Civilian.png"
+				small="CHI_zhao_heng_ti"
 			}
 		}
 		country_leader={
@@ -69,6 +71,7 @@ characters={
 			}
 			army = {
 				large="GFX_portrait_men_demchugdongrub"
+				small="GFX_portrait_men_demchugdongrub"
 			}
 		}
 		country_leader={
@@ -96,6 +99,7 @@ characters={
 			}
 			army = {
 				large="gfx/leaders/QIN/Portrait_QIE_Puyi_Uniform.png"
+				small="gfx/leaders/QIN/Portrait_QIE_Puyi_Uniform.png"
 			}
 		}
 		country_leader={
@@ -141,6 +145,7 @@ characters={
 			}
 			army = {
 				large="gfx/leaders/RUS/Portrait_RUS_Aleksandr_Kolchak.tga"
+				small="gfx/leaders/RUS/Portrait_RUS_Aleksandr_Kolchak.tga"
 			}
 		}
 		country_leader={
@@ -169,6 +174,7 @@ characters={
 			}
 			army = {
 				large="gfx/leaders/QIN/Portrait_QIE_Puyi_Uniform.png"
+				small="gfx/leaders/QIN/Portrait_QIE_Puyi_Uniform.png"
 			}
 		}
 		country_leader={
@@ -197,6 +203,7 @@ characters={
 			}
 			army = {
 				large="gfx/leaders/RUS/Portrait_RUS_Anton_Denikin.tga"
+				small="gfx/leaders/RUS/Portrait_RUS_Anton_Denikin.tga"
 			}
 		}
 		corps_commander={
@@ -217,6 +224,7 @@ characters={
 			}
 			army = {
 				large="gfx/leaders/RYU/RYU_herosee.dds"
+				small="gfx/leaders/RYU/RYU_herosee.dds"
 			}
 		}
 		country_leader={
@@ -244,6 +252,7 @@ characters={
 			}
 			army = {
 				large="gfx/leaders/WZC/Portrait_LEP_Sun_Chuanfang.png"
+				small="gfx/leaders/WZC/Portrait_LEP_Sun_Chuanfang.png"
 			}
 		}
 		country_leader={
@@ -271,6 +280,7 @@ characters={
 			}
 			army = {
 				large="gfx/leaders/ANC/portrait_anc_chen_tiaoyuan.png"
+				small="gfx/leaders/ANC/portrait_anc_chen_tiaoyuan.png"
 			}
 		}
 		field_marshal={
@@ -291,6 +301,7 @@ characters={
 			}
 			army = {
 				large="gfx/leaders/WZC/Portrait_LEP_Qi_Xieyuan.png"
+				small="gfx/leaders/WZC/Portrait_LEP_Qi_Xieyuan.png"
 			}
 		}
 		field_marshal={
@@ -311,6 +322,7 @@ characters={
 			}
 			army = {
 				large="gfx/leaders/WZC/Portrait_LEP_Chen_Yi.png"
+				small="gfx/leaders/WZC/Portrait_LEP_Chen_Yi.png"
 			}
 		}
 		corps_commander={
@@ -331,6 +343,7 @@ characters={
 			}
 			army = {
 				large="gfx/leaders/WZC/Portrait_LEP_Chen_Yi.png"
+				small="gfx/leaders/WZC/Portrait_LEP_Chen_Yi.png"
 			}
 		}
 		corps_commander={
@@ -351,6 +364,7 @@ characters={
 			}
 			army = {
 				large="gfx/leaders/WZC/Portrait_LEP_Deng_Ruzuo.png"
+				small="gfx/leaders/WZC/Portrait_LEP_Deng_Ruzuo.png"
 			}
 		}
 		corps_commander={
@@ -371,6 +385,7 @@ characters={
 			}
 			army = {
 				large="gfx/leaders/WZC/Portrait_LEP_Zhou_Yinren.png"
+				small="gfx/leaders/WZC/Portrait_LEP_Zhou_Yinren.png"
 			}
 		}
 		corps_commander={
@@ -391,6 +406,7 @@ characters={
 			}
 			army = {
 				large="gfx/leaders/WZC/Portrait_LEP_Zhou_Fengqi.png"
+				small="gfx/leaders/WZC/Portrait_LEP_Zhou_Fengqi.png"
 			}
 		}
 		corps_commander={
@@ -411,6 +427,7 @@ characters={
 			}
 			army = {
 				large="gfx/leaders/WZC/Portrait_LEP_Tang_Enbo.png"
+				small="gfx/leaders/WZC/Portrait_LEP_Tang_Enbo.png"
 			}
 		}
 		corps_commander={
@@ -431,6 +448,7 @@ characters={
 			}
 			army = {
 				large="gfx/leaders/WZC/Portrait_LEP_Yang_Shuzhuang.png"
+				small="gfx/leaders/WZC/Portrait_LEP_Yang_Shuzhuang.png"
 			}
 		}
 		navy_leader={
@@ -452,6 +470,7 @@ characters={
 			}
 			army = {
 				large="gfx/leaders/SND/Portrait_Shandong_Zhang_Zongchang.tga"
+				small="gfx/leaders/SND/Portrait_Shandong_Zhang_Zongchang.tga"
 			}
 		}
 		country_leader={
@@ -480,6 +499,7 @@ characters={
 			}
 			army = {
 				large="gfx/leaders/SZC/Portrait_SZC_Liu_Wenhui.tga"
+				small="gfx/leaders/SZC/Portrait_SZC_Liu_Wenhui.tga"
 			}
 		}
 		country_leader={
@@ -507,6 +527,7 @@ characters={
 			}
 			army = {
 				large="gfx/leaders/ZLC/Portrait_QIE_Wu_Peifu.png"
+				small="gfx/leaders/ZLC/Portrait_QIE_Wu_Peifu.png"
 			}
 		}
 		country_leader={
@@ -534,6 +555,7 @@ characters={
 			}
 			army = {
 				large="gfx/leaders/ZLC/Portrait_ZLC_Chao_kun.png"
+				small="gfx/leaders/ZLC/Portrait_ZLC_Chao_kun.png"
 			}
 		}
 		field_marshal={
@@ -554,6 +576,7 @@ characters={
 			}
 			army = {
 				large="gfx/leaders/ZLC/Portrait_QIE_Jiang_Baili.png"
+				small="gfx/leaders/ZLC/Portrait_QIE_Jiang_Baili.png"
 			}
 		}
 		field_marshal={
@@ -574,6 +597,7 @@ characters={
 			}
 			army = {
 				large="gfx/leaders/ZLC/Portrait_QIE_Wang_Huaiqing.png"
+				small="gfx/leaders/ZLC/Portrait_QIE_Wang_Huaiqing.png"
 			}
 		}
 		corps_commander={

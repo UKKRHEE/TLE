@@ -174,7 +174,7 @@ bookmarks = {
 
 
 		"DKG"={
-			history = "JAP_GATHERING_STORM_DESC"
+			history = "DKG_GATHERING_STORM_DESC"
 			minor = yes
 			ideology = neutrality
 			ideas = {

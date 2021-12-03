@@ -759,6 +759,12 @@ country_event = { #중국의 거절!
 		ai_chance = {
 			base = 99
 		}
+			every_state = {
+				limit = {
+					is_core_of = MON
+				}
+				add_core_of = KOR
+			}
 		KOR = {
 			transfer_state = 761
 			transfer_state = 612
@@ -781,6 +787,12 @@ country_event = { #중국의 거절!
 		ai_chance = {
 			base = 1
 		}
+			every_state = {
+				limit = {
+					is_core_of = MON
+				}
+				add_core_of = KOR
+			}
 			add_state_core = 612
 			add_state_core = 611
 			add_state_core = 621	
@@ -838,9 +850,9 @@ country_event = { #반란!
 		country_event = {
 			id = korea.26
 		}
-		remove_unit_leader = 19362 #이은
-		remove_unit_leader = 12140 #송호성
-		remove_unit_leader = 12138 #이병무
+		retire_character = KOR_yi_un #이은
+		retire_character = KOR_song_ho_seong #송호성
+		retire_character = KOR_yi_byung_mu #이병무
 	}	
 	option = { #근황파
 		name = korea.25.b
@@ -864,9 +876,12 @@ country_event = { #반란!
 		country_event = {
 			id = korea.27
 		}
-		remove_unit_leader = 12141 #이강
-		remove_unit_leader = 12139 #유동열
-		remove_unit_leader = 19364 #이범석
+		retire_character = KOR_yi_kang #이강
+		retire_character = KOR_yu_dong_yeol #유동열
+		retire_character = KOR_lee_beom_seok #이범석
+		hidden_effect = {
+			retire_character = KOR_lee_beom_seok_2
+		}
 	}
 }
 country_event = { #진압, 성공적,.
@@ -2145,11 +2160,9 @@ country_event = { #2.26 사건
 	option = { #법률안은 논란 속에서 통과되었다.
 		name = korea.54.a
 		trigger = {
-			NOT = {
-				OR = {
-					has_country_flag = FLAG_CUTTING_ACCEPT_MONEY
-					has_country_flag = FLAG_CUTTING_ACCEPT_COMMUNITY
-				}
+			OR = {
+				NOT = { has_country_flag = FLAG_CUTTING_ACCEPT_MONEY }
+				NOT = { has_country_flag = FLAG_CUTTING_ACCEPT_COMMUNITY }
 			}
 		}
 		hidden_effect = { 
@@ -2182,10 +2195,6 @@ country_event = { #마지막 제국
 	trigger = {
 		tag = KOR
 		KOR = {
-			has_country_leader = {
-				name = "Yi Kang"
-				ruling_only = yes
-			}
 			has_government = fascism
 		}
 		OR = {

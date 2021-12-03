@@ -142,19 +142,6 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					OR = {
-						FROM = { tag = SOV }
-						ROOT = { tag = SOV }
-					}
-					SOV = {
-						NOT = { has_country_flag = SOV_war_since_purge }
-						has_completed_focus = SOV_great_purge
-					}
-				}
-				SOV = { set_country_flag = SOV_war_since_purge }
-			}
-			if = {
-				limit = {
 					FROM = {
 						original_tag = KOR
 					}
@@ -223,6 +210,12 @@ on_actions = {
 						}
 						country_lock_all_division_template = no
 						hidden_effect = {
+							KOR = {
+								country_event = {
+									id = korea.35
+									days = 10
+								}
+							}
 							create_faction = FACTION_ZLC_UNITED_FRONT
 							set_rule = {
 								can_create_faction = yes
@@ -287,7 +280,6 @@ on_actions = {
 	    effect = {
 			if = { #부산
 				limit = {
-					tag = KOR
 					613 = { is_controlled_by = KOR }
 					613 = { 
 						OR = {
@@ -304,17 +296,9 @@ on_actions = {
 							has_war_with = WZC 
 							has_war_with = AHC 
 						}
+						divisions_in_state = { state = 613 size > 0 }
 					}
-					divisions_in_state = { state = 613 size > 0 }
 				} 
-				every_other_country = {
-					limit = {
-						NOT = {
-							original_tag = KOR
-						}	
-					}
-					news_event = { id = kor_news.3 hours = 12 }
-				}
 				news_event = { id = kor_news.3 hours = 1 trigger_for = controller }
 			} 
 		}
@@ -552,7 +536,6 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					tag = KOR #점령국 - 대한
 					FROM = { 	
 						is_independent_china_or_warlord = yes
 					} #피점령국 - 중국
@@ -565,14 +548,14 @@ on_actions = {
 				}
 				KOR = {
 					set_country_flag = FLAG_HAS_BEEN_EVENTED_PEKING
+					country_event = {
+						id = korea.65
+						days = 3
+					}
 				}
 				news_event = {
 					id = kor_news.4
 					hours = 3
-				}
-				country_event = {
-					id = korea.65
-					days = 3
 				}
 			}
 			if = {
@@ -1132,7 +1115,8 @@ on_actions = {
 			if = {
 				limit = {
 					OR = {
-						tag = JAP
+						is_japan_clique = yes
+						is_independent_china_or_warlord = yes
 						tag = SOV
 						tag = USA
 					}
@@ -1159,6 +1143,9 @@ on_actions = {
 					set_country_flag = fall_of_korea
 					set_country_flag = TLE_THE_WAR_IS_ENDED
 					add_ideas = KOR_not_go_outside
+					country_event = {
+						id = korea.782
+					}
 				}
 				KOR = {
 					every_other_country = {
@@ -1412,6 +1399,7 @@ on_actions = {
 						owns_state = 613
 					}
 					transfer_state = 524
+					transfer_state = 857
 				}
 				MON = {
 					transfer_state = 330
@@ -1424,16 +1412,25 @@ on_actions = {
 					add_state_core = 555
 				}
 				
-				JAP = {
+				every_country = {
+					limit = {
+						is_japan_clique = yes
+						owns_state = 282
+					}
+					transfer_state = 886
+					transfer_state = 887
+					transfer_state = 888
 					transfer_state = 528
 					transfer_state = 850
+					transfer_state = 885
+					transfer_state = 536
 					transfer_state = 645
+					add_state_core = 536
 					add_state_core = 850
 					add_state_core = 645
 				}
 				USA = {
 					transfer_state = 526
-					
 					transfer_state = 648
 					transfer_state = 633
 					transfer_state = 684
@@ -1441,37 +1438,9 @@ on_actions = {
 					transfer_state = 646
 				}
 				
-				every_other_country = {
-					limit = {
-						NOT = {
-							original_tag = KOR
-						}
-					}	
-					news_event = {
-						id = kor_news.4
-						hours = 3
-					}
-				}
-				every_other_country = {
-					limit = {
-						original_tag = KOR
-					}	
-					news_event = {
-						id = kor_news.4
-						hours = 3
-					}
-				}
 				KOR = {
 					remove_ideas = KOR_militarism
 					remove_ideas = KOR_Weakening_the_kingship
-					remove_unit_leader = 12141
-					remove_unit_leader = 12139
-					remove_unit_leader = 20101
-					remove_unit_leader = 19362
-					remove_unit_leader = 19380
-					remove_unit_leader = 19364
-					remove_unit_leader = 19365
-					remove_unit_leader = 19366
 				}
 			}
         }
@@ -1746,51 +1715,6 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					original_tag = KOR
-					if = {
-						limit = {
-							613 = {
-								is_owned_by = WZC
-							}
-						}
-						has_war_with = WZC
-					}
-					if = {
-						limit = {
-							613 = {
-								is_owned_by = ZLC
-							}
-						}
-						has_war_with = ZLC
-					}
-					if = {
-						limit = {
-							613 = {
-								is_owned_by = AHC
-							}
-						}
-						has_war_with = AHC
-					}
-					if = {
-						limit = {
-							613 = {
-								is_owned_by = CHI
-							}
-						}
-						has_war_with = CHI
-					}
-					KPL = {
-						owns_state = 857
-					}
-				}
-				KOR = {
-					country_event = {
-						id = korea.35
-					}
-				}
-			}
-			if = {
-				limit = {
 					original_tag = CHI
 					controls_state = 613
 					controls_state = 608
@@ -1964,23 +1888,6 @@ on_actions = {
 				}
 				remove_ideas = KOR_not_go_outside_2
 				
-			}
-			if = {
-				limit = {
-					tag = KOR
-					NOT = {
-						has_country_flag = KOR_SHANGHAI_ATTACK
-					}
-					has_war_with = WZC
-					857 = {
-						is_owned_by = KPL
-					}
-				}
-				KOR = {
-					country_event = {
-						id = korea.35
-					}
-				}	
 			}
 			if = {
 				limit = {

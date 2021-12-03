@@ -242,8 +242,8 @@
  PRK_DEF:0 "조선 사회주의 공화국"
  PRK_ADJ:0 "조선"
  
- JAP_dokugawa_fascism:0 "일본"
- JAP_dokugawa_fascism_DEF:0 "일본"
+ JAP_dokugawa_fascism:0 "일본국"
+ JAP_dokugawa_fascism_DEF:0 "일본국"
  JAP_dokugawa_democratic:0 "일본국"
  JAP_dokugawa_democratic_DEF:0 "일본국"
  JAP_dokugawa_communism:0 "일본 사회주의 공화국"

@@ -1,5 +1,0 @@
-NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 10000
-NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 10000
-NDefines.NMilitary.MAX_AIR_EXPERIENCE = 10000
-NDefines.NPolitics.NAVY_LEADER_COST = 0.5
-NDefines.NPolitics.ARMY_LEADER_COST = 0.5
