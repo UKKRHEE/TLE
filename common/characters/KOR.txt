@@ -174,7 +174,25 @@ characters={
 				small="gfx/interface/ideas/idea_fkr_armychief_song_hoseong.dds"
 			}
 		}
-		corps_commander={
+		advisor={
+			slot = high_command
+			idea_token = song_ho_seong
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				#
+			}
+			traits = {
+				army_infantry_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 8.000
+			}
+		}
+		field_marshal={
 			traits = { 
 				old_guard
 				cavalry_officer 
@@ -218,43 +236,6 @@ characters={
 			}
 		}
 		advisor={
-			slot = high_command
-			idea_token = ji_cheong_cheon
-			ledger = army
-			allowed = {
-				original_tag = KOR
-			}
-			available = {
-				#
-			}
-			traits = {
-				army_infantry_3
-			}
-			cost = 200
-			ai_will_do = {
-				factor = 8.000
-			}
-		}
-		
-		corps_commander={
-			traits = { inflexible_strategist infantry_officer defensive_doctrine }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 4
-			planning_skill = 3
-			logistics_skill = 3
-			legacy_id=19366
-		}
-	}
-	KOR_ji_cheong_cheon_2={
-		name=KOR_ji_cheong_cheon
-		portraits={
-			army={
-				large="gfx/leaders/KOR/Portrait_KOR_Ji_Cheong_cheon.dds"
-				small="GFX_idea_KOR_ji_chung_chun"
-			}
-		}
-		advisor={
 			slot = theorist
 			idea_token = ji_cheong_cheon
 			ledger = army
@@ -280,8 +261,16 @@ characters={
 			}
 		}
 		
+		corps_commander={
+			traits = { inflexible_strategist infantry_officer defensive_doctrine }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id=19366
+		}
 	}
-
 	KOR_yujin_kim={
 		name=KOR_yujin_kim
 		portraits={

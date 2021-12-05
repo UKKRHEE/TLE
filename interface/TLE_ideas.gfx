@@ -86,10 +86,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/korea/진압된파업.png" 
 	}	
 	spriteType = {
-		name = "GFX_idea_KOR_Yi_Kang"
-		texturefile = "gfx/interface/ideas/KOR/idea_KOR_yi_kang.dds"
-	}	
-	spriteType = {
 		name = "GFX_idea_KOR_we_korean"
 		texturefile = "gfx/interface/ideas/KOR/idea_Hwan-guk.dds"
 	}	
