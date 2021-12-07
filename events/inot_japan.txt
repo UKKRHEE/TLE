@@ -419,6 +419,150 @@ country_event = { #쿄토의 가장 어두운 밤
 	option = {
 		name = japan.1015.a	#일본 유신파로
 		hidden_effect = {
+			set_country_flag = JAP_Empire
+			country_event = {
+					id = japan.1017
+					hours = 10
+				}
+		}	
+	}
+	option = {
+		name = japan.1015.b	#도쿠가와
+		hidden_effect = {	
+			set_country_flag = JAP_Shogunate
+			country_event = {
+					id = japan.1018
+					hours = 10
+				}
+		}
+	}
+}
+country_event = { #천황의 운명
+	id = japan.1016
+	title = japan.1016.t
+	desc = japan.1016.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1016.a	#일본 유신파로
+		hidden_effect = {
+			#recruit_character = JAP_emperor_hirohito
+			add_ideas = JAP_showa_hirohito
+		}
+	}
+	#option = {
+	#	name = japan.1016.b	#도쿠가와
+	#	hidden_effect = {
+	#		
+	#	}
+	#}
+}
+country_event = { #쇼와 유신
+	id = japan.1017
+	title = japan.1017.t
+	desc = japan.1017.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1017.a	#덴노 헤이카 반자이!
+		hidden_effect = {
+			DKG = {
+				retire_character = DKG_dokugawa_yoshihisa
+				recruit_character = DKG_dokugawa_yoshimitsu
+				add_country_leader_role = {
+			    Character = DKG_dokugawa_yoshimitsu
+			    Promote_leader = yes
+			    Country_leader = {
+					ideology = despotism
+					expire = "1989.1.1"
+						traits={ warrior_code }
+				}
+			}
+		}
+			JAP = {
+				set_country_flag = FLAG_CIVIL_WAR_JAP
+			}
+			set_country_flag = FLAG_CIVIL_WAR_JAP
+		}
+	}
+}
+country_event = { #신 쇼군의 등극
+	id = japan.1018
+	title = japan.1018.t
+	desc = japan.1018.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1018.a	#쇼군 만세!
+		hidden_effect = {
+			DKG = {
+				retire_character = DKG_dokugawa_yoshihisa
+				recruit_character = DKG_dokugawa_yoshimitsu
+				add_country_leader_role = {
+			    Character = DKG_dokugawa_yoshimitsu
+			    Promote_leader = yes
+			    Country_leader = {
+					ideology = despotism
+					expire = "1989.1.1"
+						traits={ warrior_code }
+				}
+			}
+		}
+			set_country_flag = FLAG_CIVIL_WAR_JAP
+			complete_national_focus = JAP_liberalization_of_regime
+		}
+	} 
+}
+##
+country_event = { #내전 발발
+	id = japan.1019
+	title = japan.1019.t
+	desc = japan.1019.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1019.a	#유신파
+		trigger = {
+			has_country_flag = JAP_Empire
+		}
+		retire_character = JAP_yamato_junta
+		hidden_effect = {
+			JAP = {
+				create_faction = "유신파"
+			}
+			DKG = {
+				create_faction = "막부파"
+			}
+			if = {
+				limit = {
+					tag = DKG
+				}
+				declare_war_on = {
+					target = JAP
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					tag = JAP
+				}
+				declare_war_on = {
+					target = DKG
+					type = annex_everything
+				}
+			}
 			JAP = { change_tag_from = DKG }		
 			891 = {
 				set_demilitarized_zone = no
@@ -443,10 +587,6 @@ country_event = { #쿄토의 가장 어두운 밤
 				add_state_core = 889
 				add_state_core = 888
 				remove_ideas = JAP_showa_hirohito
-				country_event = {
-					id = japan.1016
-					hours = 5
-				}
 				every_state = {
 					limit = {
 						is_core_of = DKG
@@ -457,21 +597,59 @@ country_event = { #쿄토의 가장 어두운 밤
 				load_oob = "JAP_1936"
 				load_oob = "JAP_1936_naval"
 			}
-			DKG = {
-				country_event = {
-					id = japan.1018
-					hours = 5
+			JAP = {
+				recruit_character = JAP_emperor_hirohito
+				complete_national_focus = JAP_rising_sun
+				add_country_leader_role = {
+			    Character = JAP_emperor_hirohito
+			    Promote_leader = yes
+			    Country_leader = {
+					ideology = despotism
+					expire = "1989.1.1"
+						traits={ emperor_showa warrior_code }
 				}
+			}
+		}
+			DKG = {
 				remove_ideas = JAP_showa_hirohito
 				dismantle_faction = yes
 				set_capital = 282
 				complete_national_focus = JAP_economic_policy
 			}
-		}	
+			if = {
+				limit = {
+					tag = DKG
+				}
+				declare_war_on = {
+					target = JAP
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					tag = JAP
+				}
+				declare_war_on = {
+					target = DKG
+					type = annex_everything
+				}
+			}
+			set_country_flag = Japanese_civil_war
+		}
 	}
 	option = {
-		name = japan.1015.b	#도쿠가와
-		hidden_effect = {	
+		name = japan.1019.b	#막부
+		trigger = {
+			has_country_flag = JAP_Shogunate
+		}
+		retire_character = JAP_yamato_junta
+		hidden_effect = {
+			JAP = {
+				create_faction = "유신파"
+			}
+			DKG = {
+				create_faction = "막부파"
+			}
 			891 = {
 				set_demilitarized_zone = no
 			}
@@ -494,14 +672,7 @@ country_event = { #쿄토의 가장 어두운 밤
 				add_state_core = 892
 				add_state_core = 889
 				add_state_core = 888
-				load_oob = "JAP_1936"
-				load_oob = "JAP_1936_naval"
-				
 				remove_ideas = JAP_showa_hirohito
-				country_event = {
-					id = japan.1016
-					hours = 5
-				}
 				every_state = {
 					limit = {
 						is_core_of = DKG
@@ -509,69 +680,13 @@ country_event = { #쿄토의 가장 어두운 밤
 					add_core_of = JAP
 				}
 				complete_national_focus = JAP_economic_policy
+				load_oob = "JAP_1936"
+				load_oob = "JAP_1936_naval"
 			}
-			every_state = {
-				limit = {
-					is_core_of = DKG
-				}
-				add_core_of = JAP
-			}
-			DKG = {
-				country_event = {
-					id = japan.1018
-					hours = 5
-				}
-				remove_ideas = JAP_showa_hirohito
-				dismantle_faction = yes
-				set_capital = 282
-				complete_national_focus = JAP_economic_policy
-			}
-		}
-	}
-}
-country_event = { #천황의 운명
-	id = japan.1016
-	title = japan.1016.t
-	desc = japan.1016.d
-	picture = GFX_report_event_vienna_award_hungary
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {
-		name = japan.1016.a	#일본 유신파로
-		hidden_effect = {
-			#recruit_character = JAP_emperor_hirohito
-			country_event = {
-				id = japan.1017
-				hours = 2
-			}
-			add_ideas = JAP_showa_hirohito
-		}
-	}
-	#option = {
-	#	name = japan.1016.b	#도쿠가와
-	#	hidden_effect = {
-	#		
-	#	}
-	#}
-}
-country_event = { #쇼와 유신
-	id = japan.1017
-	title = japan.1017.t
-	desc = japan.1017.d
-	picture = GFX_report_event_vienna_award_hungary
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {
-		name = japan.1017.a	#덴노 헤이카 반자이!
-		retire_character = JAP_yamato_junta
-		hidden_effect = {
-			recruit_character = JAP_emperor_hirohito
-			complete_national_focus = JAP_rising_sun
-			add_country_leader_role = {
+			JAP = {
+				recruit_character = JAP_emperor_hirohito
+				complete_national_focus = JAP_rising_sun
+				add_country_leader_role = {
 			    Character = JAP_emperor_hirohito
 			    Promote_leader = yes
 			    Country_leader = {
@@ -580,55 +695,12 @@ country_event = { #쇼와 유신
 						traits={ emperor_showa warrior_code }
 				}
 			}
-			set_country_flag = FLAG_CIVIL_WAR_JAP
 		}
-	}
-}
-country_event = { #신 쇼군의 등극
-	id = japan.1018
-	title = japan.1018.t
-	desc = japan.1018.d
-	picture = GFX_report_event_vienna_award_hungary
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {
-		name = japan.1018.a	#덴노 헤이카 반자이!
-		hidden_effect = {
-			retire_character = DKG_dokugawa_yoshihisa
-			recruit_character = DKG_dokugawa_yoshimitsu
-			add_country_leader_role = {
-			    Character = DKG_dokugawa_yoshimitsu
-			    Promote_leader = yes
-			    Country_leader = {
-					ideology = despotism
-					expire = "1989.1.1"
-						traits={ warrior_code }
-				}
-			}
-			complete_national_focus = JAP_liberalization_of_regime
-		}
-	} 
-}
-##
-country_event = { #내전 발발
-	id = japan.1019
-	title = japan.1019.t
-	desc = japan.1019.d
-	picture = GFX_report_event_vienna_award_hungary
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {
-		name = japan.1019.a	#내전 발발
-		hidden_effect = {
-			JAP = {
-				create_faction = "유신파"
-			}
 			DKG = {
-				create_faction = "막부파"
+				remove_ideas = JAP_showa_hirohito
+				dismantle_faction = yes
+				set_capital = 282
+				complete_national_focus = JAP_economic_policy
 			}
 			if = {
 				limit = {

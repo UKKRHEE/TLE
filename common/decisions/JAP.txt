@@ -23,9 +23,9 @@ JAP_dec_civil_war = {
 		available = {
 			has_country_flag = Japanese_civil_war
 			hidden_trigger = {
-				OR = {
-					has_war_with = JAP
-					has_war_with = DKG
+					OR = {
+						has_war_with = JAP
+						has_war_with = DKG
 				}
 			}
 		}
@@ -89,6 +89,240 @@ JAP_dec_civil_war = {
 		} 
 		highlight_states = {
  		highlight_state_targets = { state = 529 } 
+		}
+		on_map_mode = map_and_decisions_view
+		days_remove = 15
+		fire_only_once = no
+		is_good = no
+	}
+	JAP_control_domain_of_KGJ = {
+		icon = generic_form_nation
+		allowed = {
+			OR = {
+				original_tag = JAP
+				original_tag = DKG
+			}
+			NOT = {
+				has_war_with = KGJ
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			NOT = {
+				has_war_with = KGJ
+			}
+		}
+		visible = {
+			OR = {
+				original_tag = JAP
+				original_tag = DKG
+			}
+			JAP = {
+				has_country_flag = FLAG_CIVIL_WAR_JAP
+			}
+			NOT = {
+				has_war_with = KGJ
+			}
+		} 
+		highlight_states = {
+ 		highlight_state_targets = { state = 890 } 
+		}
+		on_map_mode = map_and_decisions_view
+		days_remove = 15
+		fire_only_once = no
+		is_good = no
+	}
+	JAP_control_domain_of_SDJ = {
+		icon = generic_form_nation
+		allowed = {
+			OR = {
+				original_tag = JAP
+				original_tag = DKG
+			}
+			NOT = {
+				has_war_with = SDJ
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			NOT = {
+				has_war_with = SDJ
+			}
+		}
+		visible = {
+			OR = {
+				original_tag = JAP
+				original_tag = DKG
+			}
+			JAP = {
+				has_country_flag = FLAG_CIVIL_WAR_JAP
+			}
+			NOT = {
+				has_war_with = SDJ
+			}
+		} 
+		highlight_states = {
+ 		highlight_state_targets = { state = 892 } 
+		}
+		on_map_mode = map_and_decisions_view
+		days_remove = 15
+		fire_only_once = no
+		is_good = no
+	}
+	JAP_control_domain_of_NBJ = {
+		icon = generic_form_nation
+		allowed = {
+			OR = {
+				original_tag = JAP
+				original_tag = DKG
+			}
+			NOT = {
+				has_war_with = NBJ
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			NOT = {
+				has_war_with = NBJ
+			}
+		}
+		visible = {
+			OR = {
+				original_tag = JAP
+				original_tag = DKG
+			}
+			JAP = {
+				has_country_flag = FLAG_CIVIL_WAR_JAP
+			}
+			NOT = {
+				has_war_with = NBJ
+			}
+		} 
+		highlight_states = {
+ 		highlight_state_targets = { state = 889 } 
+		}
+		on_map_mode = map_and_decisions_view
+		days_remove = 15
+		fire_only_once = no
+		is_good = no
+	}
+	JAP_control_domain_of_GJJ = {
+		icon = generic_form_nation
+		allowed = {
+			OR = {
+				original_tag = JAP
+				original_tag = DKG
+			}
+			NOT = {
+				has_war_with = GJJ
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			NOT = {
+				has_war_with = GJJ
+			}
+		}
+		visible = {
+			OR = {
+				original_tag = JAP
+				original_tag = DKG
+			}
+			JAP = {
+				has_country_flag = FLAG_CIVIL_WAR_JAP
+			}
+			NOT = {
+				has_war_with = GJJ
+			}
+		} 
+		highlight_states = {
+ 		highlight_state_targets = { state = 894 } 
+		}
+		on_map_mode = map_and_decisions_view
+		days_remove = 15
+		fire_only_once = no
+		is_good = no
+	}
+	JAP_control_domain_of_TBJ = {
+		icon = generic_form_nation
+		allowed = {
+			OR = {
+				original_tag = JAP
+				original_tag = DKG
+			}
+			NOT = {
+				has_war_with = TBJ
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			NOT = {
+				has_war_with = TBJ
+			}
+		}
+		visible = {
+			OR = {
+				original_tag = JAP
+				original_tag = DKG
+			}
+			JAP = {
+				has_country_flag = FLAG_CIVIL_WAR_JAP
+			}
+			NOT = {
+				has_war_with = TBJ
+			}
+		} 
+		highlight_states = {
+ 		highlight_state_targets = { state = 534 } 
+		}
+		on_map_mode = map_and_decisions_view
+		days_remove = 15
+		fire_only_once = no
+		is_good = no
+	}
+	JAP_control_domain_of_FJP = {
+		icon = generic_form_nation
+		allowed = {
+			OR = {
+				original_tag = JAP
+				original_tag = DKG
+			}
+			NOT = {
+				has_war_with = FJP
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			NOT = {
+				has_war_with = FJP
+			}
+		}
+		visible = {
+			OR = {
+				original_tag = JAP
+				original_tag = DKG
+			}
+			JAP = {
+				has_country_flag = FLAG_CIVIL_WAR_JAP
+			}
+			NOT = {
+				has_war_with = FJP
+			}
+		} 
+		highlight_states = {
+ 		highlight_state_targets = { state = 530 } 
 		}
 		on_map_mode = map_and_decisions_view
 		days_remove = 60
