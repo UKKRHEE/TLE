@@ -648,6 +648,7 @@ country_event = { #내전 발발
 					type = annex_everything
 				}
 			}
+			set_country_flag = Japanese_civil_war
 		}
 	}
 }

@@ -10,12 +10,24 @@ JAP_dec_civil_war = {
 			JAP = {
 				has_country_flag = FLAG_CIVIL_WAR_JAP
 			}
+			NOT = {
+				OR = {
+					has_war_with = JAP
+					has_war_with = DKG
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 0
 		}
 		available = {
-			always = no
+			has_country_flag = Japanese_civil_war
+			hidden_trigger = {
+				OR = {
+					has_war_with = JAP
+					has_war_with = DKG
+				}
+			}
 		}
 		visible = {
 			OR = {
@@ -24,6 +36,12 @@ JAP_dec_civil_war = {
 			}
 			JAP = {
 				has_country_flag = FLAG_CIVIL_WAR_JAP
+			}
+			NOT = {
+				OR = {
+					has_war_with = JAP
+					has_war_with = DKG
+				}
 			}
 		} 
 		days_mission_timeout = 15
@@ -37,5 +55,44 @@ JAP_dec_civil_war = {
 				id = japan.1019
 			}
 		}
+	}
+	JAP_control_domain_of_EJP = {
+		icon = generic_form_nation
+		allowed = {
+			OR = {
+				original_tag = JAP
+				original_tag = DKG
+			}
+			NOT = {
+				has_war_with = EJP
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			NOT = {
+				has_war_with = EJP
+			}
+		}
+		visible = {
+			OR = {
+				original_tag = JAP
+				original_tag = DKG
+			}
+			JAP = {
+				has_country_flag = FLAG_CIVIL_WAR_JAP
+			}
+			NOT = {
+				has_war_with = EJP
+			}
+		} 
+		highlight_states = {
+ 		highlight_state_targets = { state = 529 } 
+		}
+		on_map_mode = map_and_decisions_view
+		days_remove = 60
+		fire_only_once = no
+		is_good = no
 	}
 }
