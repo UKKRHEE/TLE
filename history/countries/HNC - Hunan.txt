@@ -35,6 +35,9 @@ set_politics = {
 		PRC_government_corruption
 		CHI_ineffective_bureaucracy_warlord
 	}
+	add_ideas = {
+		CHI_era_of_chinese_warlords_1
+	}
 set_popularities = {
 	neutrality = 100
 	

@@ -1,6 +1,6 @@
-﻿capital = 606
+﻿capital = 602
 
-oob = "ANC"
+oob = "HNN_Collapse"
 
 set_technology = {
 	### Tanks ###
@@ -17,20 +17,10 @@ set_technology = {
 
 
 add_offsite_building = {
-	type = arms_factory
+	type = industrial_complex
 	level = 2
 }
 
-if = {
-	limit = {
-		has_dlc = "Waking the Tiger"
-	}
-	add_ideas = {
-		PRC_government_corruption
-		CHI_ineffective_bureaucracy_warlord
-	}
-}
-add_ideas = CHI_era_of_chinese_warlords_1
 set_research_slots = 2
 set_convoys = 10
 
@@ -41,6 +31,10 @@ set_politics = {
 	elections_allowed = no
 }
 
+	add_ideas = {
+		PRC_government_corruption
+		CHI_ineffective_bureaucracy_warlord
+	}
 set_popularities = {
 	neutrality = 100
 	
@@ -49,4 +43,4 @@ set_popularities = {
 add_ideas = {
 
 }
-recruit_character = CHI_chen_tiao_yuan
+recruit_character = CHI_zhao_heng_ti
