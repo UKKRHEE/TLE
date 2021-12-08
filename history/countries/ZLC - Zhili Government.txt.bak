@@ -26,9 +26,6 @@ add_ideas = {
 	CHI_disjointed_gov
 	CHI_factory_strikes
 }
-	add_ideas = {
-		CHI_era_of_chinese_warlords_1
-	}
 set_cosmetic_tag = ZLC_beiyang
 	add_ideas = {
 		CHI_nine_power_treaty
