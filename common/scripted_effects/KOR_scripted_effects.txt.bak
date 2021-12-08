@@ -69,7 +69,7 @@ KOR_interservice_rivalry_towards_navy = {
 	
 }
 
-TLE_warlord_idea = {
+TLE_warloard_idea = {
 	
 	hidden_effect = {
 		if = {

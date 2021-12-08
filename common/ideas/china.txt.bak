@@ -198,7 +198,6 @@ ideas = {
 				conversion_cost_civ_to_mil_factor= 0.4
 				conversion_cost_mil_to_civ_factor = 0.4
 				join_faction_tension = 3
-				#custom_modifier_tooltip = WI
 			}
 		}
 		CHI_era_of_chinese_warlords_2 = {

@@ -52,6 +52,7 @@ if = {
 	add_ideas = {
 		PRC_government_corruption
 		CHI_ineffective_bureaucracy_warlord
+		CHI_era_of_chinese_warlords_1
 	}
 add_ideas = {
 	#CHI_factory_strikes

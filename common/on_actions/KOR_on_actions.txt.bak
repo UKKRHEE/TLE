@@ -1703,7 +1703,7 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					date > 1940.8.15
+					date > 1940.7.1
 					has_idea = CHI_era_of_chinese_warlords_3
 				}
 				remove_ideas = CHI_era_of_chinese_warlords_3
