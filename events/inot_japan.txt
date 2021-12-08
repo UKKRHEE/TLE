@@ -422,7 +422,7 @@ country_event = { #쿄토의 가장 어두운 밤
 			set_country_flag = JAP_Empire
 			country_event = {
 					id = japan.1017
-					hours = 10
+					hours = 13
 				}
 		}	
 	}
@@ -432,7 +432,7 @@ country_event = { #쿄토의 가장 어두운 밤
 			set_country_flag = JAP_Shogunate
 			country_event = {
 					id = japan.1018
-					hours = 10
+					hours = 13
 				}
 		}
 	}
@@ -634,6 +634,9 @@ country_event = { #내전 발발
 					type = annex_everything
 				}
 			}
+			JAP = {
+				set_country_flag = Japanese_civil_war
+			}
 			set_country_flag = Japanese_civil_war
 		}
 	}
@@ -719,6 +722,9 @@ country_event = { #내전 발발
 					target = DKG
 					type = annex_everything
 				}
+			}
+			JAP = {
+				set_country_flag = Japanese_civil_war
 			}
 			set_country_flag = Japanese_civil_war
 		}
