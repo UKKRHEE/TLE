@@ -22,12 +22,6 @@ JAP_dec_civil_war = {
 		}
 		available = {
 			has_country_flag = Japanese_civil_war
-			hidden_trigger = {
-					OR = {
-						has_war_with = JAP
-						has_war_with = DKG
-				}
-			}
 		}
 		visible = {
 			OR = {
