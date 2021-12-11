@@ -1,5 +1,5 @@
 ﻿capital = 330
-
+set_cosmetic_tag = MON_AHC
 oob = "MON_1936"
 
 # Starting tech
@@ -8,53 +8,7 @@ set_technology = {
 }
 
 add_ideas = {
-	KOR_yi_jin
 	limited_conscription
-}
-
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = construction_effort_2
-	complete_national_focus = production_effort_2
-	complete_national_focus = infrastructure_effort
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "MON_1939"
-	set_technology = {
-		support_weapons = 1
-		gw_artillery = 1
-		
-		#doctrines
-		air_superiority = 1
-		
-		mass_assault = 1
-		pocket_defence = 1
-		defence_in_depth = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-	}
 }
 
 set_politics = {
@@ -64,18 +18,36 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 60
-	democratic = 20
-	communism = 20
+	neutrality = 100
+	democratic = 0
+	communism = 0
 }
-recruit_character = MON_demchugdongrub
-add_country_leader_role = {
-	Character = MON_demchugdongrub
-	Promote_leader = yes
-	Country_leader = {
-		ideology = rexism
-		expire = "1965.1.1"
-		traits = {
-		}
-    }
+create_country_leader = {
+	name = "돤치루이"
+	desc = ""
+	picture = "gfx/leaders/Asia/portrait_asia_generic_land_11.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "쉬수정"
+	desc = ""
+	picture = "gfx/leaders/Asia/portrait_asia_generic_land_13.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+create_corps_commander = {
+	name = "쉬수정"
+	portrait_path = "gfx/leaders/Asia/portrait_asia_generic_land_13.dds"
+	skill = 4 
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
 }

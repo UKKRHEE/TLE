@@ -28,6 +28,22 @@ is_japan_clique = { #Does not include sinkiang
 	}
 	exists = yes
 }
+is_chinese_clique = { #Does not include sinkiang
+	OR = {
+		tag = CHI
+		tag = PRC
+		tag = GXC
+		tag = YUN
+		tag = SHX
+		tag = XSM
+		tag = SIK
+		tag = WZC
+		tag = SND
+		tag = AHC
+		tag = HNC
+		tag = ZLC
+	}
+}
 is_independent_china_or_warlord = { #Does not include sinkiang
 	OR = {
 		tag = CHI
@@ -195,6 +211,22 @@ USA_will_support = {
 	}
 }
 JAP_will_support = {
+	KOR = {
+		exists = yes
+		has_capitulated = no
+		NOT = {
+			has_war_with = ROOT
+		}
+		OR = {
+			has_opinion = { target = ROOT value > 74 }
+			is_in_faction_with = ROOT
+			ROOT = {
+				is_subject_of = KOR
+			}
+		}
+	}
+}
+KOR_will_support = {
 	KOR = {
 		exists = yes
 		has_capitulated = no

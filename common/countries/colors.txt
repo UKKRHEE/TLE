@@ -794,20 +794,20 @@ KHK = { #한국
 	color_ui = rgb { 36  7  126 }
 }
 KMN = { #
-	color = rgb { 51  92  187 }
-	color_ui = rgb { 51  92  187 }
+	color = rgb { 36  7  126 }
+	color_ui = rgb { 36  7  126 }
 }
 YUN = {
 	color = rgb { 143 20 20 }
 	color_ui = rgb { 143 40 40 }
 }
 MON = {
-	color = rgb { 92 92 92 }
-	color_ui = rgb { 92 92 92 }
+	color = hsv { 0.18 0.6 0.9 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
 }
 MEN = {
-	color = rgb { 185  255  152 }
-	color_ui = rgb { 165  230  132 }
+	color = rgb { 38  44  145 }
+	color_ui = rgb { 38  44  145 }
 }
 TAN = {
 	color = rgb { 125 13 24 }

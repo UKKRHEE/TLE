@@ -2,6 +2,10 @@ spriteTypes = {
 	
 	#국민정신
 	spriteType = {
+		name = "GFX_idea_MEN_demchugdongrub"    
+		texturefile = "gfx/interface/ideas/idea_MEN_demchugdongrub.png"  
+	}
+	spriteType = {
 		name = "GFX_idea_KOR_yi_jin"    
 		texturefile = "gfx/interface/ideas/idea_KOR_yi_jin.png"  
 	}

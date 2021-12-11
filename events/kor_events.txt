@@ -738,10 +738,12 @@ country_event = { #중국의 거절!
 			}
 			}
 		}
+		hidden_effect = {
 			news_event = {
-				id = kor_news.9
+				id = eok_news.9
 				days = 1
 			}
+		}	
 		complete_national_focus = KOR_kwangtungjun
 	}
 }
@@ -761,7 +763,7 @@ country_event = { #중국의 거절!
 		}
 			every_state = {
 				limit = {
-					is_core_of = MON
+					is_core_of = MEN
 				}
 				add_core_of = KOR
 			}
@@ -770,14 +772,13 @@ country_event = { #중국의 거절!
 			transfer_state = 612
 			transfer_state = 611
 			transfer_state = 621	
-			transfer_state = 330	
 			add_state_core = 612
 			add_state_core = 611
 			add_state_core = 621	
 			add_state_core = 329
 			add_state_core = 330	
 			annex_country = {
-				target = MON
+				target = MEN
 				transfer_troops = yes
 			}
 		}
@@ -789,7 +790,7 @@ country_event = { #중국의 거절!
 		}
 			every_state = {
 				limit = {
-					is_core_of = MON
+					is_core_of = MEN
 				}
 				add_core_of = KOR
 			}
@@ -798,10 +799,10 @@ country_event = { #중국의 거절!
 			add_state_core = 621	
 			add_state_core = 329
 			add_state_core = 330	
-		end_puppet = MON
+		end_puppet = MEN
 		KOR = {
 			declare_war_on = {
-				target = MON 
+				target = MEN 
 				type = annex_everything
 			}
 		}
@@ -847,6 +848,7 @@ country_event = { #반란!
 				}
 			}
 		}
+		custom_effect_tooltip = TOOLTIP_IS_HISTORICAL_MOD
 		country_event = {
 			id = korea.26
 		}
@@ -873,6 +875,7 @@ country_event = { #반란!
 				}
 			}
 		}
+		custom_effect_tooltip = TOOLTIP_IS_NOT_MAKED
 		country_event = {
 			id = korea.27
 		}
@@ -1050,7 +1053,7 @@ country_event = { #결론
 		set_country_flag = FLAG_END_OF_THE_PANAY
 		custom_effect_tooltip = TOOLTIP_CAN_LOCKUP_IN_FOCUS
 		
-		news_event = { id = kor_news.7 hours = 12 }
+		news_event = { id = eok_news.7 hours = 12 }
 	} 
 	option = { #중국에서 물러선다
 		name = korea.29.a
@@ -1338,7 +1341,7 @@ country_event = { #3분지계
 		puppet = GXC
 		puppet = QIN
 		SZC = {
-			set_cosmetic_tag = SZC_shuhan
+			set_cosmetic_tag = SZC_KOR
 			create_country_leader = {
 				name = "Liu Chang"
 				desc = ""
@@ -1373,7 +1376,7 @@ country_event = { #3분지계
 			add_state_core = 750
 		}
 		GXC = {
-			set_cosmetic_tag = GXC_housong
+			set_cosmetic_tag = GXC_KOR
 			create_country_leader = {
 				name = "Kung Decheng"
 				desc = ""
@@ -1438,7 +1441,6 @@ country_event = { #3분지계
 			transfer_state = 615
 			transfer_state = 597
 			transfer_state = 870
-			transfer_state = 856
 			transfer_state = 607
 			transfer_state = 878
 			transfer_state = 744
@@ -1453,6 +1455,7 @@ country_event = { #3분지계
 			transfer_state = 873
 			transfer_state = 884
 			transfer_state = 283
+			transfer_state = 871
 		}
 		if = {
 			limit = {
@@ -1494,6 +1497,7 @@ country_event = { #3분지계
 		puppet = GXC
 		puppet = QIN
 		GXC = {
+			set_cosmetic_tag = QIN_KOR
 			create_country_leader = {
 				name = "Kung Decheng"
 				desc = ""
@@ -1582,7 +1586,6 @@ country_event = { #3분지계
 			transfer_state = 615
 			transfer_state = 597
 			transfer_state = 870
-			transfer_state = 856
 			transfer_state = 607
 			transfer_state = 878
 			transfer_state = 744
@@ -1643,7 +1646,6 @@ country_event = { #3분지계
 			transfer_state = 615
 			transfer_state = 597
 			transfer_state = 870
-			transfer_state = 856
 			transfer_state = 607
 			transfer_state = 878
 			transfer_state = 744
@@ -1760,7 +1762,7 @@ country_event = { #칭다오 도발
 	option = { #젠장! 저 뙤놈새끼들!
 		name = korea.41.a 
 		set_country_flag = FLAG_THE_QINGDAO_PROBLEM_1
-		news_event = { id = kor_news.8 days = 2 }
+		news_event = { id = eok_news.8 days = 2 }
 		ZLC = {
 			country_event = {
 				id = korea.42
@@ -2831,6 +2833,12 @@ country_event = { #결론
 			id = korea.780
 		} 
 	}
+	option = { #
+		name = korea.779.c
+		country_event = {
+			id = korea.783
+		} 
+	}
 }
 country_event = { #결론
 	id = korea.780
@@ -2848,6 +2856,12 @@ country_event = { #결론
 	}
 	option = { #
 		name = korea.780.b
+		country_event = {
+			id = korea.783
+		}
+	}
+	option = { #
+		name = korea.780.c
 	}
 }
 country_event = { #결론
@@ -2872,5 +2886,50 @@ country_event = { #결론
 	 
 	option = { #
 		name = korea.782.a
+	}
+}
+country_event = { #결론
+	id = korea.783
+	title = korea.783.title
+	desc = korea.783.desc
+	picture = GFX_report_event_korean_war_march
+	
+    is_triggered_only = yes
+	 
+	option = { #
+		name = korea.783.a
+	}
+}
+country_event = { #결론
+	id = korea.784
+	title = korea.784.title
+	desc = korea.784.desc
+	picture = GFX_report_event_korean_war_march
+	
+    is_triggered_only = yes
+	 
+	option = { #한국
+		name = korea.784.a
+		country_event = {
+			id = korea.777
+		}
+	}
+	option = { #일본
+		name = korea.784.b
+		country_event = {
+			id = TLE_japan.1
+		}
+	}
+	option = { #중국
+		name = korea.784.c
+		trigger = {
+			has_country_flag = TLE_CHINA_FLAG_FUCKU #아직 안만들었다는 표시. 나중에 지워라
+		}
+		country_event = {
+			id = korea.777
+		}
+	}
+	option = { #저 그냥 나갈래요
+		name = korea.784.d
 	}
 }

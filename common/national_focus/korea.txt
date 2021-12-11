@@ -35,8 +35,6 @@ focus_tree = {
 		x = 25
 		y = 0
 			available = {
-					is_puppet = no
-					has_war = no
 				}
 			completion_reward = {
 					add_political_power = 150
@@ -1234,7 +1232,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_plan_manchu
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_focus_jap_cast_the_die
 		cost = 8.00
 		prerequisite = {
 			focus = kor_territory_expansion
@@ -1264,13 +1262,17 @@ focus_tree = {
 		}
 		x = 31
 		y = 7
+		available = {
+			MEN = {
+				owns_state = 330
+			}
+		}
 			completion_reward = {
-					MON = {
-							country_event = {
-									id = korea.23
-								}
+					MEN = {
+						country_event = {
+							id = korea.23
 						}
-					recall_attache = MON
+					}
 				}
 
 	}
@@ -1284,29 +1286,7 @@ focus_tree = {
 		x = 33
 		y = 7
 			available = {
-					OR = {
-							AND = {
-									ZLC = {
-											controls_state = 608
-											controls_state = 614
-										}
-									if = {
-											limit = {
-													SND = {
-															exists = yes
-														}
-												}
-											SND = {
-													is_puppet_of = ZLC
-												}
-										}
-								}
-							CHI = {
-									controls_state = 608
-									controls_state = 614
-								}
-						}
-				}
+			}
 			bypass = {
 					ZLC = {
 							exists = no
@@ -1320,30 +1300,15 @@ focus_tree = {
 							add_ideas = spiritual_mobilization_idea
 						}
 					custom_effect_tooltip = KOR_tooltip_attack_china
-					if = {
-							limit = {
-									608 = {
-											is_owned_by = ZLC
-										}
-								}
-							ZLC = {
-									country_event = {
-											id = korea.14
-										}
-								}
+					every_other_country = {
+						limit = {
+							is_chinese_clique = yes
+							owns_state = 608
 						}
-					if = {
-							limit = {
-									608 = {
-											is_owned_by = CHI
-										}
-								}
-							CHI = {
-									country_event = {
-											id = korea.14
-										}
-								}
+						country_event = {
+							id = korea.14
 						}
+					}
 				}
 
 	}
@@ -1383,6 +1348,9 @@ focus_tree = {
 		x = 33
 		y = 9
 			available = {
+				custom_trigger_tooltip = {
+					tooltip = TOOLTIP_WAR_WITH_CHINA
+					
 					if = {
 							limit = {
 									CHI = {
@@ -1415,6 +1383,7 @@ focus_tree = {
 								}
 							has_war_with = ZLC
 						}
+				}
 				}
 			completion_reward = {
 					create_wargoal = {
@@ -1485,6 +1454,7 @@ focus_tree = {
 					set_rule = {
 							can_create_factions = yes
 						}
+						remove_ideas = KOR_not_go_outside_2
 					create_faction = TLE_COPERATION
 				}
 
@@ -1544,7 +1514,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_allied_with_russia
-		icon = GFX_focus_befriend_russia
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		cost = 5.00
 		prerequisite = {
 			focus = kor_territory_expansion
@@ -1569,7 +1539,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_give_me_the_manchu
-		icon = GFX_focus_befriend_russia
+		icon = GFX_focus_give_me_the_manchu
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_allied_with_russia
@@ -1592,6 +1562,11 @@ focus_tree = {
 									target = KHK
 									transfer_troops = yes
 								}
+							annex_country = {
+									target = KKS
+									transfer_troops = yes
+								}
+								add_state_core = 885
 								add_state_core = 657
 								add_state_core = 561
 								add_state_core = 560
@@ -1636,11 +1611,13 @@ focus_tree = {
 		x = 39
 		y = 8
 			available = {
-					NOT = {
-							has_government = communism
-							has_government = neutrality
-							has_government = democratic
-						}
+					DKG = {
+						exists = yes
+						controls_state = 282
+					}
+					JAP = {
+						exists = no
+					}
 				}
 			bypass = {
 
@@ -3345,7 +3322,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_attack_taiwan
-		icon = GFX_focus_attack_japan
+		icon = GFX_focus_break_japan
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_threat_up_of_east_asia
@@ -3379,7 +3356,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kor_control_asia
-		icon = GFX_focus_jap_cast_the_die
+		icon = GFX_focus_control_asia
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_attack_taiwan

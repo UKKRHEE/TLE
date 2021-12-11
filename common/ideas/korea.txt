@@ -1,5 +1,16 @@
 ideas = {
 	country = { #국민정신 
+		MEN_demchugdongrub = {
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
 		RUS_the_fight_to_the_democracy = {
 			
 			allowed = {
@@ -163,6 +174,9 @@ ideas = {
 		}		
 		KOR_not_go_outside_2 = {
 			picture = generic_victors_of_ww1
+			rule = {
+				can_join_factions = no
+			}	
 			targeted_modifier = {
 				tag = ZLC
 				generate_wargoal_tension_against = 0.75
@@ -217,6 +231,7 @@ ideas = {
 			}
 			rule = { 
 				can_not_declare_war = yes 
+				can_join_factions = no
 			}
 		}
 		KOR_pay_of_ww1 = { 
@@ -297,43 +312,43 @@ ideas = {
 			}
 			targeted_modifier = {
                 tag = ZLC
-				attack_bonus_against = -0.4
+				attack_bonus_against = -0.3
 			}
 			targeted_modifier = {
                 tag = CHI
-				attack_bonus_against = -0.4
+				attack_bonus_against = -0.3
 			}
 			targeted_modifier = {
                 tag = WZC
-				attack_bonus_against = -0.4
+				attack_bonus_against = -0.3
 			}
 			targeted_modifier = {
                 tag = SND
-				attack_bonus_against = -0.4
+				attack_bonus_against = -0.3
 			}
 			targeted_modifier = {
                 tag = SHX
-				attack_bonus_against = -0.4
+				attack_bonus_against = -0.3
 			}
 			targeted_modifier = {
                 tag = HNC
-				attack_bonus_against = -0.4
+				attack_bonus_against = -0.3
 			}
 			targeted_modifier = {
                 tag = YUN
-				attack_bonus_against = -0.4
+				attack_bonus_against = -0.3
 			}
 			targeted_modifier = {
                 tag = XSM
-				attack_bonus_against = -0.4
+				attack_bonus_against = -0.3
 			}
 			targeted_modifier = {
                 tag = GXC
-				attack_bonus_against = -0.4
+				attack_bonus_against = -0.3
 			}
 			targeted_modifier = {
                 tag = SIK
-				attack_bonus_against = -0.4
+				attack_bonus_against = -0.3
 			}
 		}
 		KOR_failed_civilian_control_of_the_military = {

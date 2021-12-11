@@ -4,7 +4,8 @@ state={
 
 	local_supplies=0.0 
 	history={
-		owner = MON
+		owner = MEN
+		add_core_of = MEN
 		add_core_of = MON
 		add_core_of = SHX
 		add_core_of = CHI

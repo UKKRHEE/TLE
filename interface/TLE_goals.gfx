@@ -1,6 +1,22 @@
 spriteTypes = {
 
 	SpriteType = {      
+		name = "GFX_focus_give_me_the_manchu"      
+		texturefile = "gfx/interface/goals/focus_give_me_the_manchu.png"   
+	} 
+	SpriteType = {      
+		name = "GFX_focus_befriend_with_korea"     
+		texturefile = "gfx/interface/goals/focus_befriend_with_korea.png"   
+	} 
+	SpriteType = {      
+		name = "GFX_focus_break_japan"     
+		texturefile = "gfx/interface/goals/focus_break_japan.png"   
+	} 
+	SpriteType = {      
+		name = "GFX_focus_control_asia"    
+		texturefile = "gfx/interface/goals/focus_control_asia.png"    
+	} 
+	SpriteType = {      
 		name = "GFX_focus_중국과의전쟁"    
 		texturefile = "gfx/interface/goals/중국과의전쟁.png"   
 	}

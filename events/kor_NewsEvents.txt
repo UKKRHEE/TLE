@@ -1,9 +1,9 @@
-add_namespace = kor_news
+add_namespace = eok_news
 
 news_event = { #전면적인 개혁을 선포한 황제
-	id = kor_news.1
-	title = kor_news.1.t
-	desc = kor_news.1.desc
+	id = eok_news.1
+	title = eok_news.1.t
+	desc = eok_news.1.desc
 	picture = news_event_ast_parliament_house
 	
 	major = yes
@@ -11,17 +11,17 @@ news_event = { #전면적인 개혁을 선포한 황제
 	is_triggered_only = yes
 	
 	option = {
-		name = kor_news.1.a
+		name = eok_news.1.a
 		trigger = {
 			TAG = KOR
-			name = kor_news.2.a
+			name = eok_news.2.a
 		}
 	}
 }
 news_event = { #황제의 전제군주제 선포
-	id = kor_news.2
-	title = kor_news.2.t
-	desc = kor_news.2.desc
+	id = eok_news.2
+	title = eok_news.2.t
+	desc = eok_news.2.desc
 	picture = news_event_ast_parliament_house
 	
 	major = yes
@@ -29,7 +29,7 @@ news_event = { #황제의 전제군주제 선포
 	is_triggered_only = yes
 	
 	option = {
-		name = kor_news.2.a
+		name = eok_news.2.a
 		trigger = {
 			TAG = KOR
 		}
@@ -37,30 +37,29 @@ news_event = { #황제의 전제군주제 선포
 }
 
 news_event = { #남경 폭동
-	id = kor_news.3
-	title = kor_news.3.t
-	desc = kor_news.3.desc
+	id = eok_news.3
+	title = eok_news.3.t
+	desc = eok_news.3.desc
 	picture = GFX_world_event_nanking
 	
 	major = yes
-	fire_only_once = yes	
     is_triggered_only = yes
 	
 	
 	option = {
-		name = kor_news.3.a
+		name = eok_news.3.a
 		trigger = {
 			TAG = KOR
 		}
 	}
 	option = {
-		name = kor_news.3.b
+		name = eok_news.3.b
 		trigger = {
 			TAG = CHI
 		}
 	}
 	option = {
-		name = kor_news.3.c
+		name = eok_news.3.c
 		trigger = {
 			NOT = {
 				OR = {
@@ -72,24 +71,23 @@ news_event = { #남경 폭동
 	}
 }
 news_event = { #페킹 함락
-	id = kor_news.4
-	title = kor_news.4.t
-	desc = kor_news.4.desc
+	id = eok_news.4
+	title = eok_news.4.t
+	desc = eok_news.4.desc
 	picture = GFX_news_event_japan_attacks_china
 	
 	major = yes
-	fire_only_once = yes	
     is_triggered_only = yes
 	
 	
 	option = {
-		name = kor_news.4.a
+		name = eok_news.4.a
 		trigger = {
 			TAG = KOR
 		}
 	}
 	option = {
-		name = kor_news.4.b
+		name = eok_news.4.b
 		trigger = {
 			OR = {
 				TAG = CHI
@@ -108,7 +106,7 @@ news_event = { #페킹 함락
 		}
 	}
 	option = {
-		name = kor_news.4.c
+		name = eok_news.4.c
 		trigger = {
 			NOT = {
 				OR = {
@@ -133,24 +131,23 @@ news_event = { #페킹 함락
 }
 
 news_event = { #아주 해방선언
-	id = kor_news.5
-	title = kor_news.5.t
-	desc = kor_news.5.desc
+	id = eok_news.5
+	title = eok_news.5.t
+	desc = eok_news.5.desc
 	picture = GFX_world_event_nanking
 	
 	major = yes
-	fire_only_once = yes	
     is_triggered_only = yes
 	
 	
 	option = {
-		name = kor_news.5.a
+		name = eok_news.5.a
 		trigger = {
 			TAG = KOR
 		}
 	}
 	option = {
-		name = kor_news.5.b
+		name = eok_news.5.b
 		trigger = {
 			OR = {
 				TAG = CHI
@@ -169,7 +166,7 @@ news_event = { #아주 해방선언
 		}
 	}
 	option = {
-		name = kor_news.5.c
+		name = eok_news.5.c
 		trigger = {
 			NOT = {
 				OR = {
@@ -192,52 +189,47 @@ news_event = { #아주 해방선언
 	}
 }
 news_event = { #파나이 호 사건
-	id = kor_news.6
-	title = kor_news.6.t
-	desc = kor_news.6.desc
+	id = eok_news.6
+	title = eok_news.6.t
+	desc = eok_news.6.desc
 	picture = GFX_news_event_panay_incident
 	
 	major = yes
-	fire_only_once = yes	
     trigger = {
 		KOR = {
 			controls_state = 608
-			controls_state = 854
 			controls_state = 857
-			KOR = {
-				OR = {
-					has_war_with = CHI
-					has_war_with = ZLC
-					has_war_with = WZC
-				}
-				NOT = {
-					has_government = democratic
-					has_government = communism
-				}
+			OR = {
+				has_war_with = CHI
+				has_war_with = ZLC
 			}
+			NOT = {
+				has_government = democratic
+				has_government = communism
+			}
+			has_country_flag = KOR_PANAI_PROBLEM
 		}
 		date > 1940.1.5
 	}
-	mean_time_to_happen = {
-		days = 14
-	}
 	immediate = {
-		USA = {
-			country_event = {
-				id = korea.63
+		hidden_effect = {
+			USA = {
+				country_event = {
+					id = korea.63
+				}
 			}
-		}
-		KOR = {
-			country_event = {
-				id = korea.64
+			KOR = {
+				country_event = {
+					id = korea.64
+				}
+				set_country_flag = KOR_PANAI_PROBLEM
 			}
-			set_country_flag = KOR_PANAI_PROBLEM
 		}
 	}		
 	
 	
 	option = {
-		name = kor_news.6.a
+		name = eok_news.6.a
 		trigger = {
 			TAG = KOR
 		}
@@ -246,13 +238,13 @@ news_event = { #파나이 호 사건
 		unlock_decision_tooltip = KOR_hunlian_in_pacific
 	}
 	option = {
-		name = kor_news.6.b
+		name = eok_news.6.b
 		trigger = {
 			TAG = USA
 		}
 	}
 	option = {
-		name = kor_news.6.c
+		name = eok_news.6.c
 		trigger = {
 			NOT = {
 				OR = {
@@ -270,30 +262,29 @@ news_event = { #파나이 호 사건
 	}
 }
 news_event = { #파나이 호 사건 - 2
-	id = kor_news.7
-	title = kor_news.7.t
-	desc = kor_news.7.desc
+	id = eok_news.7
+	title = eok_news.7.t
+	desc = eok_news.7.desc
 	picture = GFX_news_event_panay_incident
 	
 	major = yes
-	fire_only_once = yes	
 	is_triggered_only = yes
 	
 	
 	option = {
-		name = kor_news.7.a
+		name = eok_news.7.a
 		trigger = {
 			TAG = KOR
 		}
 	}
 	option = {
-		name = kor_news.7.b
+		name = eok_news.7.b
 		trigger = {
 			TAG = USA
 		}
 	}
 	option = {
-		name = kor_news.7.c
+		name = eok_news.7.c
 		trigger = {
 			NOT = {
 				OR = {
@@ -306,25 +297,24 @@ news_event = { #파나이 호 사건 - 2
 }
 
 news_event = { #청도 사건
-	id = kor_news.8
-	title = kor_news.8.t
-	desc = kor_news.8.desc
+	id = eok_news.8
+	title = eok_news.8.t
+	desc = eok_news.8.desc
 	picture = GFX_news_event_japan_annexes_korea
 	
 	major = yes
-	fire_only_once = yes	
     is_triggered_only = yes
 	
 	immediate = {
 	}
 	option = {
-		name = kor_news.8.a
+		name = eok_news.8.a
 		trigger = {
 			TAG = KOR
 		}
 	}
 	option = {
-		name = kor_news.8.b
+		name = eok_news.8.b
 		trigger = {
 			OR = {
 				TAG = CHI
@@ -343,7 +333,7 @@ news_event = { #청도 사건
 		}
 	}
 	option = {
-		name = kor_news.8.c
+		name = eok_news.8.c
 		trigger = {
 			NOT = {
 				OR = {
@@ -366,18 +356,18 @@ news_event = { #청도 사건
 	}
 }
 news_event = { #한중전쟁
-	id = kor_news.9
-	title = kor_news.9.t
+	id = eok_news.9
+	title = eok_news.9.t
 	picture = GFX_news_event_prussia_nieder
 	
 	desc = {
-		text = kor_news.9.desc
+		text = eok_news.1689.desc
 		trigger = {
 			original_tag = KOR
 		}
 	}
 	desc = {
-		text = kor_news.9.desc
+		text = eok_news.1689.desc
 		trigger = {
 			NOT = {
 				original_tag = KOR
@@ -385,18 +375,17 @@ news_event = { #한중전쟁
 		}
 	}
 	major = yes
-	fire_only_once = yes	
     is_triggered_only = yes
 	
 	
 	option = {
-		name = kor_news.9.a
+		name = eok_news.9.a
 		trigger = {
 			TAG = KOR
 		}
 	}
 	option = {
-		name = kor_news.9.b
+		name = eok_news.9.b
 		trigger = {
 			OR = {
 				TAG = CHI
@@ -415,7 +404,7 @@ news_event = { #한중전쟁
 		}
 	}
 	option = {
-		name = kor_news.9.c
+		name = eok_news.9.c
 		trigger = {
 			NOT = {
 				OR = {

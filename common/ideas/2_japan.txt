@@ -292,12 +292,13 @@ ideas = {
 			removal_cost = -1
 			picture = FRA_army_of_aggression_focus
 			modifier = {
-				industrial_capacity_factory = -0.35
-				industrial_capacity_dockyard = -0.3
-				production_speed_industrial_complex_factor = -0.15 
-				production_speed_arms_factory_factor = -0.15 
-				conversion_cost_civ_to_mil_factor= 0.2
-				conversion_cost_mil_to_civ_factor = 0.2
+				industrial_capacity_factory = -0.6
+				industrial_capacity_dockyard = -0.6
+				production_speed_industrial_complex_factor = -0.4 
+				production_speed_arms_factory_factor = -0.4 
+				conversion_cost_civ_to_mil_factor= 0.4
+				conversion_cost_mil_to_civ_factor = 0.4
+				consumer_goods_factor = 0.35
 			}
 		}
 		JAP_not_regulared_industry_2 = {
@@ -313,12 +314,13 @@ ideas = {
 			removal_cost = -1
 			picture = FRA_army_of_aggression_focus
 			modifier = {
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.1
-				production_speed_industrial_complex_factor = -0.05 
-				production_speed_arms_factory_factor = -0.05
-				conversion_cost_civ_to_mil_factor= 0.1
-				conversion_cost_mil_to_civ_factor = 0.1
+				industrial_capacity_factory = -0.35
+				industrial_capacity_dockyard = -0.35
+				production_speed_industrial_complex_factor = -0.2 
+				production_speed_arms_factory_factor = -0.2
+				conversion_cost_civ_to_mil_factor= 0.2
+				conversion_cost_mil_to_civ_factor = 0.2
+				consumer_goods_factor = 0.2
 			}
 		}
 		JAP_not_regulared_industry_3 = {
@@ -334,12 +336,9 @@ ideas = {
 			removal_cost = -1
 			picture = FRA_army_of_aggression_focus
 			modifier = {
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
-				production_speed_industrial_complex_factor = 0.05
-				production_speed_arms_factory_factor = 0.05
-				conversion_cost_civ_to_mil_factor= -0.05
-				conversion_cost_mil_to_civ_factor = -0.05
+				production_speed_industrial_complex_factor = 0.025
+				production_speed_industrial_complex_factor = 0.025
+				consumer_goods_factor = 0.05
 			}
 		}
 

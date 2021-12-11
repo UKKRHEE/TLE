@@ -333,12 +333,17 @@ KOR_the_three_countries_plan = {
 		available = {
 			original_tag = KOR
 			has_idea = KOR_not_planed_attack
-			has_army_experience > 200
-			command_power > 50
+			if = {
+				limit = {
+					is_ai = no
+				}
+				has_army_experience > 200
+				command_power > 50
+			}
 		}
 
 		ai_will_do = {
-			factor = 200
+			factor = 2000
 		}
 		visible = {
 			has_idea = KOR_not_planed_attack
@@ -347,7 +352,7 @@ KOR_the_three_countries_plan = {
 			original_tag = KOR
 		}
 		fire_only_once = yes
-		days_remove = 180
+		days_remove = 120
 		remove_effect = {
 			remove_ideas = KOR_not_planed_attack
 			army_experience = -200
@@ -794,6 +799,42 @@ KOR_the_problem_of_militaryship = {
 	
 }
 KOR_new_country_name = {
+	KOR_history_of_TLE_world = {
+
+		icon = generic_prepare_civil_war
+		
+		picture = GFX_decision_cat_national_assembly
+        
+		allowed = {
+		    OR = {
+			    original_tag = KOR 
+			    original_tag = JAP
+			    is_chinese_clique = yes 
+		    }
+		}
+		available = {
+		}
+
+		visible = {
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		
+		fire_only_once = no
+
+
+		modifier = {
+		}
+		
+
+		complete_effect = {
+			country_event = {
+				id = korea.784
+			}
+        }
+    }
 	KOR_goonsoo = {
 
 		icon = generic_prepare_civil_war
@@ -1243,7 +1284,7 @@ KOR_reichskommissariat = {
 				add_ideas = KOR_great_korea
 			}
 			hidden_effect = {
-				news_event = { id = kor_news.5 days = 1 }
+				news_event = { id = eok_news.5 days = 1 }
 			}
 			every_state = {
 				limit = {

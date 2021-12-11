@@ -877,6 +877,28 @@ characters={
 			army={
 				large="gfx/leaders/KOR/Portrait_KOR_Kim_Il_sung.dds"
 			}
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_Kim_Il_sung.dds"
+			}
+		}
+		corps_commander={
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	MEN_kim_sung_ju = {
+		name=KOR_kim_sung_ju
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Kim_Il_sung.dds"
+			}
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_Kim_Il_sung.dds"
+			}
 		}
 		corps_commander={
 			traits = {  }
