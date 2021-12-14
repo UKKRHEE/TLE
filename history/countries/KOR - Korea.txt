@@ -507,6 +507,7 @@ recruit_character = KOR_kim_kyung_cheon
 recruit_character = KOR_sin_sun_seong
 recruit_character = KOR_son_won_ile
 recruit_character = KOR_shin_sung_mo
+recruit_character = KOR_jang_deokchang
 recruit_character = KOR_shin_sung_mo_2
 recruit_character = KOR_ahn_chang_ho
 recruit_character = KOR_chang_myon
