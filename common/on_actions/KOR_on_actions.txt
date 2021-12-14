@@ -15,6 +15,19 @@ on_actions = {
 			}
 			if = {
 				limit = {
+					is_chinese_clique = yes
+				}
+                country_event = {
+                    id = korea.1
+                    days = 0
+      			}
+                country_event = {
+                    id = korea.787
+                    days = 0
+      			}
+			}
+			if = {
+				limit = {
 					is_japan_clique = yes
 				}
                 country_event = {
@@ -68,6 +81,18 @@ on_actions = {
 					transfer_state = 886
 					transfer_state = 887
 					transfer_state = 888
+				}
+				every_country = {
+					limit = {
+						owns_state = 671
+						owns_state = 286
+						owns_state = 741
+						owns_state = 670
+					}
+					country_event = {
+						id = japan.1009
+						days = 3
+					}
 				}
 			}
 			if = {
@@ -149,11 +174,25 @@ on_actions = {
 						original_tag = SOV
 					}
 				}
-				KOR = {
-					set_country_flag = russia_attack_korea
+				if = {
+					limit = {
+						KOR = {
+							is_ai = no
+						}
+					}
+					KOR = {
+						set_country_flag = russia_attack_korea
+					}
 				}
-				SOV = {
-					set_country_flag = russia_attack_korea
+				if = {
+					limit = {
+						SOV = {
+							is_ai = no
+						}
+					}
+					SOV = {
+						set_country_flag = russia_attack_korea
+					}
 				}
 			}
 			if = {
@@ -165,11 +204,85 @@ on_actions = {
 						original_tag = KOR
 					}
 				}
-				KOR = {
-					set_country_flag = russia_attack_korea
+				if = {
+					limit = {
+						KOR = {
+							is_ai = no
+						}
+					}
+					KOR = {
+						set_country_flag = russia_attack_korea
+					}
 				}
-				SOV = {
-					set_country_flag = russia_attack_korea
+				if = {
+					limit = {
+						SOV = {
+							is_ai = no
+						}
+					}
+					SOV = {
+						set_country_flag = russia_attack_korea
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = KOR
+					}
+					ROOT = {
+						original_tag = USA
+					}
+				}
+				if = {
+					limit = {
+						KOR = {
+							is_ai = no
+						}
+					}
+					KOR = {
+						set_country_flag = korea_war_with_usa
+					}
+				}
+				if = {
+					limit = {
+						USA = {
+							is_ai = no
+						}
+					}
+					USA = {
+						set_country_flag = korea_war_with_usa
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = USA
+					}
+					ROOT = {
+						original_tag = KOR
+					}
+				}
+				if = {
+					limit = {
+						KOR = {
+							is_ai = no
+						}
+					}
+					KOR = {
+						set_country_flag = korea_war_with_usa
+					}
+				}
+				if = {
+					limit = {
+						USA = {
+							is_ai = no
+						}
+					}
+					USA = {
+						set_country_flag = korea_war_with_usa
+					}
 				}
 			}
 			if = {
@@ -238,37 +351,37 @@ on_actions = {
 								set_capital = 613
 								add_ideas = CHI_army_corruption_1
 							}
-						if = {
-							limit = {
-								WZC = {
-									is_ai = yes
-									exists = yes
+							if = {
+								limit = {
+									WZC = {
+										is_ai = yes
+										exists = yes
+									}
+								}
+								CHI = {
+									annex_country = {
+										target = WZC
+										transfer_troops = yes
+									}
+								}
+							}
+							if = {
+								limit = {
+									AHC = {
+										exists = yes
+										is_ai = yes
+									}
+								}
+								CHI = {
+									annex_country = {
+										target = AHC
+										transfer_troops = yes
+									}
 								}
 							}
 							CHI = {
-								annex_country = {
-									target = WZC
-									transfer_troops = yes
-								}
+								set_major = yes
 							}
-						}
-						if = {
-							limit = {
-								AHC = {
-									exists = yes
-									is_ai = yes
-								}
-							}
-							CHI = {
-								annex_country = {
-									target = AHC
-									transfer_troops = yes
-								}
-							}
-						}
-						CHI = {
-							set_major = yes
-						}
 						}
 						country_event = {
 							id = china.1093
@@ -308,9 +421,34 @@ on_actions = {
 							has_war_with = AHC 
 						}
 						divisions_in_state = { state = 613 size > 0 }
+						NOT = {
+							has_country_flag = FLAG_KOR_NANKING_KILL
+						}
 					}
 				} 
 				news_event = { id = eok_news.3 hours = 1 }
+				KOR = {
+					set_country_flag = FLAG_KOR_NANKING_KILL
+				}
+				if = {
+					limit = {
+						ZLC = {
+							exists = yes
+						}
+						XSM = {
+							exists = yes
+							NOT = {
+								has_war_with = KOR
+							}
+						}
+					}
+					KOR = {
+						declare_war_on = {
+							target = XSM
+							type = annex_everything
+						}
+					}
+				}
 			} 
 		}
 		####중국 주 이름 변경######
@@ -560,6 +698,14 @@ on_actions = {
                     id = 9871
                     name = "북경"
                 }
+				if = {
+					limit = {
+						ZLC = {
+							owns_state = 608
+						}
+					}
+					set_capital = 869
+				}
 			}
 			if = {
 				limit = {
@@ -600,6 +746,14 @@ on_actions = {
                     id = 9871
                     name = "베이징"
                 }
+				if = {
+					limit = {
+						ZLC = {
+							owns_state = 608
+						}
+					}
+					set_capital = 608
+				}
 			}
 			if = {
 				limit = {
@@ -652,6 +806,49 @@ on_actions = {
                     id = 4619
                     name = "무한"
                 }
+				if = {
+					limit = {
+						KOR = {
+							controls_state = 608
+						}
+						ZLC = {
+							owns_state = 608
+							owns_state = 869
+						}
+					}
+					ZLC = {
+						annex_country = {
+							target = HNC
+							transfer_troops = yes
+						}
+						retire_character = ZLC_Wu_Peifu
+						retire_character = ZLC_chao_kun
+						retire_character = ZLC_Jiang_Baili
+						recruit_character = CHI_zhao_heng_ti
+						add_country_leader_role = {
+							Character = CHI_zhao_heng_ti
+							Promote_leader = yes
+							Country_leader = {
+								ideology = despotism
+								expire = "1965.1.1"
+								desc = ""
+								traits = {
+								}
+							}
+						}
+						add_country_leader_role = {
+							Character = CHI_zhao_heng_ti
+							Promote_leader = yes
+							Country_leader = {
+								ideology = rexism
+								expire = "1965.1.1"
+								desc = ""
+								traits = {
+								}
+							}
+						}
+					}	
+				}
 			}
 			if = {
 				limit = {
@@ -1292,42 +1489,47 @@ on_actions = {
 				}
 				if = { #중국이 서울 점령
 					limit = {
-						OR = {
-							tag = CHI
-							tag = ZLC
-							tag = SND
-							tag = SHX
-							tag = PRC
-							tag = WZC
-							tag = AHC
-							tag = GXC
-							tag = SZC
-							tag = YUN
-							tag = XSM
-							tag = SIK
-						}
+						tag = ZLC
 					}
-					every_other_country = {
-						limit = {
-							OR = {
-								TAG = CHI
-								TAG = WZC
-								TAG = ZLC
-								TAG = YUN
-								TAG = GXC
-								TAG = PRC
-								TAG = XSM
-								TAG = AHC
-								TAG = HNC
-								TAG = SND
-								TAG = SZC
-								TAG = SIK
-							}
-						}
+					ZLC = {
 						country_event = {
 							id = korea.56
 						}
 					}
+					transfer_state = 609
+				}
+				if = { #중국이 서울 점령
+					limit = {
+						tag = CHI
+					}
+					CHI = {
+						country_event = {
+							id = korea.56
+						}
+					}
+					transfer_state = 609
+				}
+				if = { #중국이 서울 점령
+					limit = {
+						tag = PRC
+					}
+					PRC = {
+						country_event = {
+							id = korea.56
+						}
+					}
+					transfer_state = 609
+				}
+				if = { #중국이 서울 점령
+					limit = {
+						tag = WZC
+					}
+					WZC = {
+						country_event = {
+							id = korea.56
+						}
+					}
+					transfer_state = 609
 				}
 				if = { #소련이 서울 점령
 					limit = {
@@ -1387,24 +1589,15 @@ on_actions = {
 				}
 				every_other_country = {
 					limit = {
-						OR = {
-							TAG = CHI
-							TAG = WZC
-							TAG = ZLC
-							TAG = YUN
-							TAG = GXC
-							TAG = PRC
-							TAG = XSM
-							TAG = AHC
-							TAG = HNC
-							TAG = SND
-							TAG = SZC
-							TAG = SIK
-						}
 						owns_state = 608
 					}
-					transfer_state = 609
 					transfer_state = 743
+					transfer_state = 611
+					transfer_state = 621
+					transfer_state = 612
+					annex_country = {
+						target = MEN
+					}
 				}
 				every_other_country = {
 					limit = {
@@ -1450,6 +1643,8 @@ on_actions = {
 					transfer_state = 408
 					add_state_core = 409
 					add_state_core = 408
+					transfer_state = 848
+					transfer_state = 849
 				}
 				
 				every_country = {
@@ -1479,8 +1674,93 @@ on_actions = {
 				}
 				
 				KOR = {
+					add_country_leader_role = {
+						Character = KOR_emperor_yi_jin
+						country_leader = {
+							expire = "1965.1.1"
+							ideology = despotism
+							desc="KOR_yi_jin_desc"
+							traits = {
+								korea_emperor
+							}
+						}
+						promote_leader = yes
+					}	
+					add_country_leader_role = {
+						Character = KOR_emperor_yi_jin
+						country_leader = {
+							expire = "1965.1.1"
+							ideology = liberalism
+							desc="KOR_yi_jin_desc"
+							traits = {
+								korea_emperor
+							}
+						}
+						promote_leader = yes
+					}	
+					add_country_leader_role = {
+						Character = KOR_emperor_yi_jin
+						country_leader = {
+							expire = "1965.1.1"
+							ideology = rexism
+							desc="KOR_yi_jin_desc"
+							traits = {
+								korea_emperor
+							}
+						}
+						promote_leader = yes
+					}	
 					remove_ideas = KOR_militarism
 					remove_ideas = KOR_Weakening_the_kingship
+					remove_ideas = KOR_political_officer
+					remove_ideas = KOR_not_go_outside
+					remove_ideas = KOR_not_go_outside_2
+					remove_ideas = KOR_yi_jin
+					add_ideas = KOR_yi_jin_2
+					remove_ideas = spiritual_mobilization_idea
+					set_cosmetic_tag = ROK_UNIFIED
+					add_ideas = KOR_law_the_5th
+					delete_unit_template_and_units = {
+						division_template = "보병 사단"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "전차 사단"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "후방 사단"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "기병 사단"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "해병대"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "시위대"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "보병 편제 1"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "민병대"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "수도방위군"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "상하이 진공군"
+						disband = yes #will refund equipment and manpower
+					}
+					load_oob = "KOR_jingcha"
 				}
 			}
         }
@@ -1669,6 +1949,62 @@ on_actions = {
 	}
 	on_daily = {
 		effect = {
+			if = {
+				limit = {
+					NBJ = {
+						is_puppet_of = JAP
+						exists = yes
+					}
+				}
+				JAP = {
+					annex_country = {
+						target = NBJ
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					SDJ = {
+						is_puppet_of = JAP
+						exists = yes
+					}
+				}
+				JAP = {
+					annex_country = {
+						target = SDJ
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					TBJ = {
+						is_puppet_of = JAP
+						exists = yes
+					}
+				}
+				JAP = {
+					annex_country = {
+						target = TBJ
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					GJJ = {
+						is_puppet_of = JAP
+						exists = yes
+					}
+				}
+				JAP = {
+					annex_country = {
+						target = GGJ
+						transfer_troops = yes
+					}
+				}
+			}
 			if = {
 				limit = {
 					OR = {

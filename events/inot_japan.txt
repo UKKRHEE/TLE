@@ -349,7 +349,7 @@ country_event = {
 
 	option = {
 		name = japan.1012.a	
-        JAP = { 
+        KOR = { 
 		transfer_state = 671
 		transfer_state = 670
 		transfer_state = 286
@@ -369,7 +369,7 @@ country_event = {
 
 	option = {
 		name = japan.1013.a	
-		declare_war_on = { target = FRA type = annex_everything } 
+		create_wargoal = { target = FROM type = annex_everything } 
 	}
 }
 ###############

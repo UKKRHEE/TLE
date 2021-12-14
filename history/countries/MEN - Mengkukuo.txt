@@ -84,6 +84,7 @@ add_country_leader_role = {
 		expire = "1965.1.1"
 		desc = "DESC_KIM_SUNG_JU"
 		traits = {
+			kim_sung_ju_trait
 		}
     }
 }

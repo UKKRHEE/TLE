@@ -1,5 +1,29 @@
 ideas = {
 	country = { #국민정신 
+		KOR_law_the_5th = {
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = -10
+				custom_modifier_tooltip = tooltip_bersaju_pact
+			}
+			rule = {
+				can_not_declare_war = yes
+				can_join_factions = no
+			}
+			on_remove = {
+				country_lock_all_division_template = no
+				
+			}
+			on_add = {
+				country_lock_all_division_template = yes
+			}
+			
+		}
 		MEN_demchugdongrub = {
 			
 			allowed = {
@@ -349,6 +373,53 @@ ideas = {
 			targeted_modifier = {
                 tag = SIK
 				attack_bonus_against = -0.3
+			}
+		}
+	    KOR_not_planed_attack_2 = {
+			picture = chi_warlord_integration5
+			modifier = {
+				custom_modifier_tooltip = IDEA_WILL_REMOVE_IN_DECISION
+				army_org_Factor = -0.2
+			}
+			targeted_modifier = {
+                tag = ZLC
+				attack_bonus_against = -0.5
+			}
+			targeted_modifier = {
+                tag = CHI
+				attack_bonus_against = -0.5
+			}
+			targeted_modifier = {
+                tag = WZC
+				attack_bonus_against = -0.5
+			}
+			targeted_modifier = {
+                tag = SND
+				attack_bonus_against = -0.5
+			}
+			targeted_modifier = {
+                tag = SHX
+				attack_bonus_against = -0.5
+			}
+			targeted_modifier = {
+                tag = HNC
+				attack_bonus_against = -0.5
+			}
+			targeted_modifier = {
+                tag = YUN
+				attack_bonus_against = -0.5
+			}
+			targeted_modifier = {
+                tag = XSM
+				attack_bonus_against = -0.5
+			}
+			targeted_modifier = {
+                tag = GXC
+				attack_bonus_against = -0.5
+			}
+			targeted_modifier = {
+                tag = SIK
+				attack_bonus_against = -0.5
 			}
 		}
 		KOR_failed_civilian_control_of_the_military = {

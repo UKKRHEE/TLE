@@ -1265,6 +1265,12 @@ focus_tree = {
 		available = {
 			MEN = {
 				owns_state = 330
+				date > 1939.8.15
+			}
+			KOR = {
+				controls_state = 608
+				controls_state = 613
+				controls_state = 869
 			}
 		}
 			completion_reward = {
@@ -1407,14 +1413,6 @@ focus_tree = {
 							type = annex_everything
 						}
 					create_wargoal = {
-							target = XSM
-							type = annex_everything
-						}
-					create_wargoal = {
-							target = SIK
-							type = annex_everything
-						}
-					create_wargoal = {
 							target = SHX
 							type = annex_everything
 						}
@@ -1533,6 +1531,11 @@ focus_tree = {
 						}
 					KOR = {
 							add_political_power = 100
+						diplomatic_relation = {
+							country = SOV
+							relation = non_aggression_pact
+							active = yes
+						}
 						}
 				}
 
@@ -2061,18 +2064,17 @@ focus_tree = {
 									long_name = "유교공산당"
 									name = "유교공산당"
 								}
-							KOR_emperor_yi_jin = {
-								add_country_leader_role = {
-									country_leader = {
-										expire = "1965.1.1"
-										ideology = despotism
-										traits = {
-											korea_emperor
-										}
-									}
-									promote_leader = yes
-								}
-							}	
+					add_country_leader_role = {
+						Character = KOR_emperor_yi_jin
+						country_leader = {
+							expire = "1965.1.1"
+							ideology = despotism
+							traits = {
+								korea_emperor
+							}
+						}
+						promote_leader = yes
+					}	
 						}
 				}
 
@@ -2162,7 +2164,7 @@ focus_tree = {
 		y = 6
 			completion_reward = {
 					add_stability = 0.05
-					remove_ideas = KOR_dead_strike
+					remove_ideas = KOR_striked_factories
 				}
 
 	}

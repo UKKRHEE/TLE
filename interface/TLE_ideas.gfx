@@ -78,6 +78,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_KOR_bersaju_pact_of_korea.png"
 	}	
 	spriteType = {
+		name = "GFX_idea_KOR_law_the_5th"
+		texturefile = "gfx/interface/ideas/idea_KOR_bersaju_pact_of_korea.png"
+	}	
+	spriteType = {
 		name = "GFX_idea_KOR_women_vote"
 		texturefile = "gfx/interface/ideas/idea_KOR_women_vote.png"
 	}	

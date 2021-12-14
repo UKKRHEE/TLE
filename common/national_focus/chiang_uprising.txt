@@ -46,7 +46,6 @@ focus_tree = {
 			focus = CHC_victory
 		}
 		available = {
-			has_country_leader = { name = "Chiang Kai-Shek" ruling_only = yes } 
         }
 		ai_will_do = {
 				factor = 100

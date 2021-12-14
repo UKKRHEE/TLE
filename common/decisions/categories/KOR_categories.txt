@@ -9,6 +9,23 @@ KOR_decision_eulhae_goonchuk = {
 	}
 	priority = 82
 }
+TLE_history_yes = {
+	allowed = {
+		OR = {
+			original_tag = KOR
+			is_chinese_clique = yes
+			is_japan_clique = yes
+		}
+	}
+	visible = {
+		OR = {
+			original_tag = KOR
+			is_chinese_clique = yes
+			is_japan_clique = yes
+		}
+	}
+	priority = 83
+}
 KOR_the_three_countries_plan = {
 	allowed = {
 		original_tag = KOR

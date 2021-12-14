@@ -319,8 +319,8 @@ ideas = {
 			}
 			picture = generic_volunteer_expedition_bonus
 			modifier = {
-				surrender_limit = 0.1
-				army_core_defence_factor = 0.15
+				surrender_limit = 0.15
+				army_core_defence_factor = 0.1
 				army_core_attack_factor = 0.05
 			}
 		}
@@ -529,6 +529,7 @@ ideas = {
 				army_attack_factor = -0.5
 				army_defence_factor = -0.5
 				mobilization_speed = -0.3
+				army_org_Factor = -0.2
 			}
 
 		}
@@ -553,6 +554,7 @@ ideas = {
 				army_attack_factor = -0.33
 				army_defence_factor = -0.33
 				mobilization_speed = -0.2
+				army_org_Factor = -0.15
 			}
 
 		}
@@ -577,6 +579,7 @@ ideas = {
 				army_attack_factor = -0.16
 				army_defence_factor = -0.16
 				mobilization_speed = -0.1
+				army_org_Factor = -0.1
 			}
 
 		}

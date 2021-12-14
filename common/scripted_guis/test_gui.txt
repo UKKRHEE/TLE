@@ -14,6 +14,12 @@ scripted_gui = {
 				has_country_flag = dual_leader
 				original_tag = KOR
 			}
+			KOR = {
+				NOT = {
+					has_government = communism
+				}
+				is_puppet = no
+			}
 		}
 		
 		triggers = {

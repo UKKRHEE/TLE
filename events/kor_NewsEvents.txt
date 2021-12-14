@@ -4,7 +4,7 @@ news_event = { #전면적인 개혁을 선포한 황제
 	id = eok_news.1
 	title = eok_news.1.t
 	desc = eok_news.1.desc
-	picture = news_event_ast_parliament_house
+	picture = GFX_news_event_prussia_nieder
 	
 	major = yes
 	
@@ -22,7 +22,7 @@ news_event = { #황제의 전제군주제 선포
 	id = eok_news.2
 	title = eok_news.2.t
 	desc = eok_news.2.desc
-	picture = news_event_ast_parliament_house
+	picture = GFX_news_event_CHI_Shanghai_militarised
 	
 	major = yes
 	
@@ -198,7 +198,7 @@ news_event = { #파나이 호 사건
     trigger = {
 		KOR = {
 			controls_state = 608
-			controls_state = 857
+			controls_state = 613
 			OR = {
 				has_war_with = CHI
 				has_war_with = ZLC
@@ -207,7 +207,9 @@ news_event = { #파나이 호 사건
 				has_government = democratic
 				has_government = communism
 			}
-			has_country_flag = KOR_PANAI_PROBLEM
+			NOT = {
+				has_country_flag = KOR_PANAI_PROBLEM
+			}
 		}
 		date > 1940.1.5
 	}

@@ -9,6 +9,11 @@ CHI_fight_with_korea = {
 			ROOT = {
 				has_war_with = KOR
 			}
+			KOR = {
+				controls_state = 613
+				controls_state = 608
+				controls_state = 869
+			}
 		}
 		visible = {
 			ROOT = {
@@ -23,7 +28,7 @@ CHI_fight_with_korea = {
 		complete_effect = {
 			add_timed_idea = {
 				idea = CHI_figth_in_core
-				days = 100
+				days = 120
 			}
 		}
 			

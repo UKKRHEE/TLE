@@ -1545,7 +1545,19 @@ country_event = {
 		}
 		every_other_country = {
 			limit = {
-				is_independent_china_or_warlord = yes
+				OR = {
+					original_tag = CHI
+					original_tag = WZC
+					original_tag = YUN
+					original_tag = GXC
+					original_tag = PRC
+					original_tag = AHC
+					original_tag = HNC 
+					original_tag = SND
+					original_tag = SZC
+					#original_tag = SIK
+					#original_tag = XSM
+				}
 				exists = yes
 			}	
 			country_event = {

@@ -1,3 +1,27 @@
 ﻿l_english:
  SOV_war_with_japan:0 "극동 수복"
  SOV_war_with_japan_desc:0 "적백내전기에, 우리를 침범한 한국군은 아직도 그 땅에서 물러날 기미가 보이지 않으며 그들의 괴뢰정부인 극동공화국은 아직도 잔존해있습니다. 이제 우리가 억지력을 행사할 유일한 길은 전쟁입니다. 그들은 붉은 군대의 발 아래 짓밟히고 뭉개지며, 우리의 '정당한'요구를 거부한 것을 후회하게 될 것입니다."
+ CHI_collaboration_with_the_japanese:0 "한국과의 협력"
+ SOV_reconcile_japan:0 "한국과의 화해"
+ SOV_japanese_overtures:0 "한국 서곡"
+ NSB_soviet_fascist_tsarist.25.t:0 "한성 조약"
+ 
+ MTG_naval_treaty.9.t:0 "제2차 런던 해군군축조약 서명"
+ MTG_naval_treaty.9.desc:0 "1935년 12월 영국, 프랑스, 이탈리아, 한국, 미국 대표단은 순양함과 잠수함의 수와 크기를 제한하는 최초의 런던 해군 조약의 갱신을 논의하기 위하여 만났습니다. 에티오피아에서의 이탈리아의 전쟁과 한국이 영국, 미국과 동등한 수준이 되는 희망에 대해서는 협상이 상당히 뜨거웠습니다.\n\n이제 협상이 끝나가며, 서명국들은 또 다른 파멸적인 군비 경쟁을 막기 위하여 전함과 항공모함의 크기에 대한 제한에 합의하였습니다."
+ 
+ TLE_history_yes:0 "마지막 제국"
+ TLE_history_yes_desc:0 "대한제국의 부흥과 일본의 몰락을 가져온 세계의 역사는 우리가 흔히 알고있는 것과 다릅니다. 이를 알아보는 것도, 좋은 선택일 것입니다."
+ 
+ TUR_realize_the_nightmare_of_meiji:0 "광무의 악몽 실현"
+ NZL_technology_sharing_with_japan:0 "한국과의 기술공유"
+ NZL_befriend_japan:0 "한국과의 친선"
+ GER_japan_friend:0 "한국과의 친선"
+ ENG_war_with_japan:0 "한국과의 전쟁"
+ AST_a_deal_with_japan:0 "한국과의 거래"
+ AST_japan_tech_sharing:0 "한국과의 기술공유"
+ AST_war_on_japan:0 "한국과의 전쟁"
+ HOL_placate_the_japanese:0 "한국 회유"
+ 
+ mtg_netherlands.11.t:0 "동인도제도에 관심을 가지는 한국"
+ 
+ RAJ_japanese_army_air_force_academy:0 "한국 육군항공사관학교"

@@ -29,6 +29,44 @@ KOR_decision_eulhae_goonchuk = {
 		}
 	}
 }
+TLE_history_yes = {
+	KOR_history_of_TLE_world = {
+
+		icon = generic_prepare_civil_war
+		
+		picture = GFX_decision_cat_national_assembly
+        
+		allowed = {
+			OR = {
+				original_tag = KOR
+				is_chinese_clique = yes
+				is_japan_clique = yes
+			}
+		}
+		available = {
+		}
+
+		visible = {
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		
+		fire_only_once = no
+
+
+		modifier = {
+		}
+		
+
+		complete_effect = {
+			country_event = {
+				id = korea.784
+			}
+        }
+    }
+}	
 KOR_kill_the_usa_plan = {
 	KOR_confiscation_of_US_assets = {
 		icon = ger_mefo_bills
@@ -332,7 +370,10 @@ KOR_the_three_countries_plan = {
 		icon = generic_prepare_civil_war 
 		available = {
 			original_tag = KOR
-			has_idea = KOR_not_planed_attack
+			OR = {
+				has_idea = KOR_not_planed_attack_2
+				has_idea = KOR_not_planed_attack
+			}
 			if = {
 				limit = {
 					is_ai = no
@@ -346,15 +387,29 @@ KOR_the_three_countries_plan = {
 			factor = 2000
 		}
 		visible = {
-			has_idea = KOR_not_planed_attack
+			OR = {
+				has_idea = KOR_not_planed_attack_2
+				has_idea = KOR_not_planed_attack
+			}
 		}
 		allowed = {
 			original_tag = KOR
 		}
 		fire_only_once = yes
-		days_remove = 120
+		days_remove = 150
 		remove_effect = {
-			remove_ideas = KOR_not_planed_attack
+			if = {
+				limit = {
+					has_idea = KOR_not_planed_attack
+				}
+				remove_ideas = KOR_not_planed_attack
+			}
+			if = {
+				limit = {
+					has_idea = KOR_not_planed_attack_2
+				}
+				remove_ideas = KOR_not_planed_attack_2
+			}
 			army_experience = -200
 		}
 	}
@@ -799,42 +854,6 @@ KOR_the_problem_of_militaryship = {
 	
 }
 KOR_new_country_name = {
-	KOR_history_of_TLE_world = {
-
-		icon = generic_prepare_civil_war
-		
-		picture = GFX_decision_cat_national_assembly
-        
-		allowed = {
-		    OR = {
-			    original_tag = KOR 
-			    original_tag = JAP
-			    is_chinese_clique = yes 
-		    }
-		}
-		available = {
-		}
-
-		visible = {
-		}
-		cost = 0
-		ai_will_do = {
-			factor = 0
-		}
-		
-		fire_only_once = no
-
-
-		modifier = {
-		}
-		
-
-		complete_effect = {
-			country_event = {
-				id = korea.784
-			}
-        }
-    }
 	KOR_goonsoo = {
 
 		icon = generic_prepare_civil_war
