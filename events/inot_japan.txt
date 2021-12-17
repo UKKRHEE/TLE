@@ -4,6 +4,7 @@
 
 add_namespace = japan
 add_namespace = TLE_japan
+add_namespace = Civilwar_of_Japan
 
 #  AnnexationofKorea
 news_event = {
@@ -62,6 +63,25 @@ country_event = {
 		ai_chance = { factor = 0.25  }
         add_political_power = -75
 
+	}
+}
+
+#조슈 번 통합
+country_event = {
+	id = Civilwar_of_Japan.1
+	title = Civilwar_of_Japan.1.t
+	desc = Civilwar_of_Japan.1.d
+	picture = GFX_report_event_JAP_east_heibei
+
+	is_triggered_only = yes
+
+	option = {
+		name = Civilwar_of_Japan.1.a	
+        ai_chance = { factor = 1.0  }
+        annex_country = {
+			target = EJP
+			transfer_troops = yes
+		}
 	}
 }
 

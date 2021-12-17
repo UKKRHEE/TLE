@@ -1,5 +1,6 @@
-#Category allowed for JAP
+#일본 내전
 JAP_dec_civil_war = {
+	#일본 내전 소요 시간 디시전
 	JAP_the_time_limit = {
 		icon = generic_form_nation
 		allowed = {
@@ -50,13 +51,17 @@ JAP_dec_civil_war = {
 			}
 		}
 	}
-	JAP_control_domain_of_EJP = {
+	#조슈 번/1회차
+	JAP_1th_control_domain_of_EJP = {
 		icon = generic_form_nation
 		allowed = {
-			OR = {
-				original_tag = JAP
-				original_tag = DKG
+			NOT = {
+				OR = {
+					has_country_flag = JAP_2th_EJP
+					has_country_flag = JAP_3th_EJP
+				}
 			}
+			tag = JAP
 			NOT = {
 				has_war_with = EJP
 			}
@@ -68,12 +73,21 @@ JAP_dec_civil_war = {
 			NOT = {
 				has_war_with = EJP
 			}
+			NOT = {
+				OR = {
+					has_country_flag = JAP_2th_EJP
+					has_country_flag = JAP_3th_EJP
+				}
+			}
 		}
 		visible = {
-			OR = {
-				original_tag = JAP
-				original_tag = DKG
+			NOT = {
+				OR = {
+					has_country_flag = JAP_2th_EJP
+					has_country_flag = JAP_3th_EJP
+				}
 			}
+			tag = JAP
 			JAP = {
 				has_country_flag = FLAG_CIVIL_WAR_JAP
 			}
@@ -85,10 +99,133 @@ JAP_dec_civil_war = {
  		highlight_state_targets = { state = 529 } 
 		}
 		on_map_mode = map_and_decisions_view
-		days_remove = 15
+		days_remove = 5
 		fire_only_once = no
 		is_good = no
+		remove_effect = {
+			custom_effect_tooltip = JAP_EJP_trigger_2th
+			set_country_flag = JAP_2th_EJP
+		}
 	}
+	#조슈 번 2회차
+	JAP_2th_control_domain_of_EJP = {
+		icon = generic_form_nation
+		allowed = {
+		has_country_flag = JAP_2th_EJP
+			NOT = {
+				OR = {
+					has_country_flag = JAP_3th_EJP
+				}
+			}
+			tag = JAP
+			NOT = {
+				has_war_with = EJP
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+		has_country_flag = JAP_2th_EJP
+			NOT = {
+				has_war_with = EJP
+			}
+			NOT = {
+				OR = {
+					has_country_flag = JAP_3th_EJP
+				}
+			}
+		}
+		visible = {
+		has_country_flag = JAP_2th_EJP
+			NOT = {
+				OR = {
+					has_country_flag = JAP_3th_EJP
+				}
+			}
+			tag = JAP
+			JAP = {
+				has_country_flag = FLAG_CIVIL_WAR_JAP
+			}
+			NOT = {
+				has_war_with = EJP
+			}
+		} 
+		highlight_states = {
+ 		highlight_state_targets = { state = 529 } 
+		}
+		on_map_mode = map_and_decisions_view
+		days_remove = 5
+		fire_only_once = no
+		is_good = no
+		remove_effect = {
+			custom_effect_tooltip = JAP_EJP_trigger_3th
+			set_country_flag = JAP_3th_EJP
+			clr_country_flag = JAP_2th_EJP
+		}
+	}
+	#조슈 번 3회차
+	JAP_3th_control_domain_of_EJP = {
+		icon = generic_form_nation
+		allowed = {
+		has_country_flag = JAP_3th_EJP
+			NOT = {
+				OR = {
+					has_country_flag = JAP_2th_EJP
+				}
+			}
+			tag = JAP
+			NOT = {
+				has_war_with = EJP
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+		has_country_flag = JAP_3th_EJP
+			NOT = {
+				has_war_with = EJP
+			}
+			NOT = {
+				OR = {
+					has_country_flag = JAP_2th_EJP
+				}
+			}
+		}
+		visible = {
+		has_country_flag = JAP_3th_EJP
+			NOT = {
+				OR = {
+					has_country_flag = JAP_2th_EJP
+				}
+			}
+			tag = JAP
+			JAP = {
+				has_country_flag = FLAG_CIVIL_WAR_JAP
+			}
+			NOT = {
+				has_war_with = EJP
+			}
+		} 
+		highlight_states = {
+ 		highlight_state_targets = { state = 529 } 
+		}
+		on_map_mode = map_and_decisions_view
+		days_remove = 5
+		fire_only_once = no
+		is_good = no
+		remove_effect = {
+			custom_effect_tooltip = JAP_EJP_trigger_end
+			hidden_effect = {
+				country_event = {
+					id = Civilwar_of_Japan.1
+				}
+				clr_country_flag = JAP_3th_EJP
+			}
+		}
+	}
+	#
 	JAP_control_domain_of_KGJ = {
 		icon = generic_form_nation
 		allowed = {
@@ -322,5 +459,174 @@ JAP_dec_civil_war = {
 		days_remove = 60
 		fire_only_once = no
 		is_good = no
+	}
+	###################################################################막부
+	#조슈 번/1회차
+	DKG_1th_control_domain_of_EJP = {
+		icon = generic_form_nation
+		allowed = {
+			NOT = {
+				OR = {
+					has_country_flag = DKG_2th_EJP
+					has_country_flag = DKG_3th_EJP
+				}
+			}
+			tag = DKG
+			NOT = {
+				has_war_with = EJP
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			NOT = {
+				has_war_with = EJP
+			}
+			NOT = {
+				OR = {
+					has_country_flag = DKG_2th_EJP
+					has_country_flag = DKG_3th_EJP
+				}
+			}
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = DKG_2th_EJP
+					has_country_flag = DKG_3th_EJP
+				}
+			}
+			tag = DKG
+			JAP = {
+				has_country_flag = FLAG_CIVIL_WAR_JAP
+			}
+			NOT = {
+				has_war_with = EJP
+			}
+		} 
+		highlight_states = {
+ 		highlight_state_targets = { state = 529 } 
+		}
+		on_map_mode = map_and_decisions_view
+		days_remove = 5
+		fire_only_once = no
+		is_good = no
+		remove_effect = {
+			custom_effect_tooltip = DKG_EJP_trigger_2th
+			set_country_flag = DKG_2th_EJP
+		}
+	}
+	#조슈 번 2회차
+	DKG_2th_control_domain_of_EJP = {
+		icon = generic_form_nation
+		allowed = {
+		has_country_flag = DKG_2th_EJP
+			NOT = {
+				OR = {
+					has_country_flag = DKG_3th_EJP
+				}
+			}
+			tag = DKG
+			NOT = {
+				has_war_with = EJP
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+		has_country_flag = DKG_2th_EJP
+			NOT = {
+				has_war_with = EJP
+			}
+			NOT = {
+				OR = {
+					has_country_flag = DKG_3th_EJP
+				}
+			}
+		}
+		visible = {
+		has_country_flag = DKG_2th_EJP
+			NOT = {
+				OR = {
+					has_country_flag = DKG_3th_EJP
+				}
+			}
+			tag = DKG
+			JAP = {
+				has_country_flag = FLAG_CIVIL_WAR_JAP
+			}
+			NOT = {
+				has_war_with = EJP
+			}
+		} 
+		highlight_states = {
+ 		highlight_state_targets = { state = 529 } 
+		}
+		on_map_mode = map_and_decisions_view
+		days_remove = 5
+		fire_only_once = no
+		is_good = no
+		remove_effect = {
+			custom_effect_tooltip = DKG_EJP_trigger_3th
+			set_country_flag = DKG_3th_EJP
+		}
+	}
+	#조슈 번 3회차
+	DKG_2th_control_domain_of_EJP = {
+		icon = generic_form_nation
+		allowed = {
+		has_country_flag = DKG_3th_EJP
+			NOT = {
+				OR = {
+					has_country_flag = DKG_2th_EJP
+				}
+			}
+			tag = DKG
+			NOT = {
+				has_war_with = EJP
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+		has_country_flag = DKG_3th_EJP
+			NOT = {
+				has_war_with = EJP
+			}
+			NOT = {
+				OR = {
+					has_country_flag = DKG_2th_EJP
+				}
+			}
+		}
+		visible = {
+		has_country_flag = DKG_3th_EJP
+			NOT = {
+				OR = {
+					has_country_flag = DKG_2th_EJP
+				}
+			}
+			tag = DKG
+			JAP = {
+				has_country_flag = FLAG_CIVIL_WAR_JAP
+			}
+			NOT = {
+				has_war_with = EJP
+			}
+		} 
+		highlight_states = {
+ 		highlight_state_targets = { state = 529 } 
+		}
+		on_map_mode = map_and_decisions_view
+		days_remove = 5
+		fire_only_once = no
+		is_good = no
+		remove_effect = {
+			custom_effect_tooltip = DKG_EJP_trigger_end
+			set_country_flag = DKG_end_of_EJP
+		}
 	}
 }
