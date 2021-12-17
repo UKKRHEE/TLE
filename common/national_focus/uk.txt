@@ -2466,7 +2466,7 @@ focus_tree = {
 				OR = {
 					has_completed_focus = ENG_global_defense
 					has_country_leader = {
-					    name = "Winston Churchill"
+					    character = ENG_winston_churchill
 					    ruling_only = yes
 					}
 				}
@@ -7297,14 +7297,14 @@ focus_tree = {
 		prerequisite = { focus = ENG_global_defense }
 		available = { 
 			has_country_leader =  {
-				name = "Neville Chamberlain"
+				character = ENG_neville_chamberlain
 				ruling_only = yes
 			}
 		}
 		bypass = {
 			OR = {
 				has_country_leader =  {
-					name = "Winston Churchill"
+					character = ENG_winston_churchill
 					ruling_only = yes
 				}
 				has_country_leader =  {
@@ -10257,7 +10257,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		search_filters = {FOCUS_FILTER_STABILITY}	
+		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
 			add_stability = 0.05
 			dismantle_faction = yes
@@ -10265,7 +10265,7 @@ focus_tree = {
 			hidden_effect = { news_event = { id = mtg_news.36 days = 1 } }
 			if = {
 				limit = {
-					has_country_leader = { name = "Harry Pollitt" ruling_only = yes }
+					has_country_leader = { character = ENG_harry_pollitt ruling_only = yes }
 				}
 				retire_country_leader = yes
 				create_country_leader = {

@@ -288,6 +288,15 @@ ideas = {
 				political_power_cost = 0.3
 			}
 		}
+		CHI_embargo_korea = {
+			picture = generic_goods_red_bonusofficers_purged
+			modifier = {
+				consumer_goods_factor = 0.1
+				war_support_factor = -0.05
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+			}
+		}
 		KOR_embargo_us = {
 			picture = generic_goods_red_bonusofficers_purged
 			modifier = {
@@ -379,7 +388,7 @@ ideas = {
 			picture = chi_warlord_integration5
 			modifier = {
 				custom_modifier_tooltip = IDEA_WILL_REMOVE_IN_DECISION
-				army_org_Factor = -0.2
+				army_org_Factor = -0.3
 			}
 			targeted_modifier = {
                 tag = ZLC

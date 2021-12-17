@@ -16,8 +16,12 @@ add_offsite_building = {
 	level = 10
 }
 add_offsite_building = {
+	type = dockyard
+	level = 10
+}
+add_offsite_building = {
 	type = industrial_complex
-	level = 70
+	level = 80
 }
 
 set_research_slots = 4

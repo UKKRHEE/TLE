@@ -1,0 +1,96 @@
+music_station = "Portuguese_radio"
+
+music = {
+	song = "POR1"
+	chance = { modifier = { factor = 1 } }
+}
+
+music = {
+	song = "POR2"
+	chance = { modifier = { factor = 1 } }
+}
+
+music = {
+	song = "POR3"
+	chance = { modifier = { factor = 1 } }
+}
+
+music = {
+	song = "POR4"
+	chance = { modifier = { factor = 1 } }
+}
+
+music = {
+	song = "POR5"
+	chance = { modifier = { factor = 1 } }
+}
+
+music = {
+	song = "POR6"
+	chance = { modifier = { factor = 1 } }
+}
+
+music = {
+	song = "POR7"
+	chance = { modifier = { factor = 1 } }
+}
+
+music = {
+	song = "POR8"
+	chance = { modifier = { factor = 1 } }
+}
+
+music = {
+	song = "POR9"
+	chance = { modifier = { factor = 1 } }
+}
+
+music = {
+	song = "POR10"
+	chance = { modifier = { factor = 1 } }
+}
+
+music = {
+	song = "POR11"
+	chance = { modifier = { factor = 1 } }
+}
+
+music = {
+	song = "POR12"
+	chance = { modifier = { factor = 1 } }
+}
+
+music = {
+	song = "POR13"
+	chance = { modifier = { factor = 1 } }
+}
+
+music = {
+	song = "POR14"
+	chance = { modifier = { factor = 1 } }
+}
+
+music = {
+	song = "POR15"
+	chance = { modifier = { factor = 1 } }
+}
+
+music = {
+	song = "POR16"
+	chance = { modifier = { factor = 1 } }
+}
+
+music = {
+	song = "POR17"
+	chance = { modifier = { factor = 1 } }
+}
+
+music = {
+	song = "POR18"
+	chance = { modifier = { factor = 1 } }
+}
+
+music = {
+	song = "POR19"
+	chance = { modifier = { factor = 1 } }
+}

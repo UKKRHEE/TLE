@@ -317,19 +317,34 @@ bookmarks = {
 				YUG_dissolve_serbia
 			}
 		}
-		"CHI"={
+		"ZLC"={
 			minor = yes
-			history = "CHI_GATHERING_STORM_DESC"
+			history = "ZLC_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
 				CHI_army_corruption_1
 				CHI_hyper_inflation_1
-				CHI_nine_power_treaty
+				CHI_risk_of_famine
 			}
 			focuses = {
 				CHI_united_front
 				CHI_army_reform
 				CHI_invite_the_flying_tigers
+			}
+		}
+		"CHI"={
+			minor = yes
+			history = "CHI_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				CHI_kuomintang
+				CHI_legacy_of_sun_wen
+				CHI_failed_north_attack
+			}
+			focuses = {
+				CHC_victory
+				CHC_constitution
+				CHC_unite_campaign
 			}
 		}
 		"PRC"={
@@ -345,21 +360,6 @@ bookmarks = {
 				PRC_infiltration
 				PRC_maoism
 				PRC_anti_japanese_expedition
-			}
-		}
-		"MAN"={
-			minor = yes
-			history = "MAN_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				MAN_banditry
-				MAN_kwantung_veto
-				MAN_low_legitimacy_5
-			}
-			focuses = {
-				MAN_obedience
-				MAN_independence_war
-				MAN_claim_the_mandate_of_heaven
 			}
 		}
 		

@@ -333,31 +333,40 @@ KOR_the_three_countries_plan = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = TRIGGER_TOOLTIP_RULLED_CHINA
-				owns_state = 622
-				owns_state = 621
-				owns_state = 620
-				owns_state = 616
-				owns_state = 615
-				owns_state = 614
-				owns_state = 611
-				owns_state = 610
-				owns_state = 591
-				owns_state = 592
-				owns_state = 593
-				owns_state = 607
-				owns_state = 606
-				owns_state = 605
-				owns_state = 604
-				owns_state = 603
-				owns_state = 602
-				owns_state = 601
-				owns_state = 600
-				owns_state = 608
-				owns_state = 612
-				owns_state = 613
-				owns_state = 325
-				owns_state = 868
-				owns_state = 869
+				OR = {
+					AND = {
+						owns_state = 622
+						owns_state = 621
+						owns_state = 620
+						owns_state = 616
+						owns_state = 615
+						owns_state = 614
+						owns_state = 611
+						owns_state = 610
+						owns_state = 591
+						owns_state = 592
+						owns_state = 593
+						owns_state = 607
+						owns_state = 606
+						owns_state = 605
+						owns_state = 604
+						owns_state = 603
+						owns_state = 602
+						owns_state = 600
+						owns_state = 608
+						owns_state = 612
+						owns_state = 613
+						owns_state = 325
+						owns_state = 868
+						owns_state = 869
+					}	
+					AND = {
+						owns_state = 608
+						WZC = {
+							is_puppet_of = KOR
+						}
+					}
+				}	
 			}
 		}
 		complete_effect = {
@@ -370,27 +379,41 @@ KOR_the_three_countries_plan = {
 		icon = generic_prepare_civil_war 
 		available = {
 			original_tag = KOR
-			OR = {
 				has_idea = KOR_not_planed_attack_2
-				has_idea = KOR_not_planed_attack
-			}
-			if = {
-				limit = {
-					is_ai = no
-				}
 				has_army_experience > 200
 				command_power > 50
-			}
 		}
 
 		ai_will_do = {
 			factor = 2000
 		}
 		visible = {
-			OR = {
 				has_idea = KOR_not_planed_attack_2
-				has_idea = KOR_not_planed_attack
-			}
+		}
+		allowed = {
+			original_tag = KOR
+		}
+		fire_only_once = yes
+		days_remove = 180
+		complete_effect = { 
+			army_experience = -200
+		}
+		remove_effect = {
+			remove_ideas = KOR_not_planed_attack_2
+		}
+	}
+	KOR_the_war_plan_Z_ai = {
+		icon = generic_prepare_civil_war 
+		available = {
+			original_tag = KOR
+			has_idea = KOR_not_planed_attack
+		}
+
+		ai_will_do = {
+			factor = 2000
+		}
+		visible = {
+			has_idea = KOR_not_planed_attack
 		}
 		allowed = {
 			original_tag = KOR
@@ -398,22 +421,166 @@ KOR_the_three_countries_plan = {
 		fire_only_once = yes
 		days_remove = 150
 		remove_effect = {
-			if = {
-				limit = {
-					has_idea = KOR_not_planed_attack
-				}
-				remove_ideas = KOR_not_planed_attack
-			}
-			if = {
-				limit = {
-					has_idea = KOR_not_planed_attack_2
-				}
-				remove_ideas = KOR_not_planed_attack_2
-			}
-			army_experience = -200
+			remove_ideas = KOR_not_planed_attack
 		}
 	}
 }
+KOR_first_plan_lightning = {
+	KOR_attack_shandong = {
+		icon = generic_tank 
+		available = {
+			original_tag = KOR
+			ZLC = {
+				controls_state = 608
+			}
+			KOR = {
+				controls_state = 743
+			}
+			has_war_with = ZLC
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+			has_war_with = ZLC
+		}
+		allowed = {
+			original_tag = KOR
+		}
+		fire_only_once = yes
+		days_remove = 15
+		modifier = {
+			army_armor_attack_factor = 0.1
+			army_armor_speed_factor = 0.1
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				army_attack_factor = 0.1
+			}
+		}
+		remove_effect = {
+		}
+	}
+}	
+KOR_second_plan_tent = {
+	KOR_save_the_qi_xieyean = {
+		icon = generic_form_nation 
+		available = {
+			original_tag = KOR
+			has_war_with = ZLC
+			WZC = {
+				exists = no
+			}
+			has_war_with = ZLC
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			has_war_with = ZLC
+		}
+		allowed = {
+			original_tag = KOR
+		}
+		cost = 100
+		days_remove = 15
+		fire_only_once = yes
+		complete_effect = {
+		}
+		modifier = {
+		
+		}
+		remove_effect = {
+			custom_effect_tooltip = TOOLTIP_QI_WILL_PUPPET
+			hidden_effect = {
+				set_country_flag = FLAG_QI_PUPPET
+			}
+		}
+	}
+	KOR_sea_blockade = {
+		icon = generic_naval 
+		available = {
+			original_tag = KOR
+			has_war_with = ZLC
+			NOT = {
+				has_decision = KOR_save_the_qi_xieyean
+			}
+			has_war_with = ZLC
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		visible = {
+			has_war_with = ZLC
+		}
+		allowed = {
+			original_tag = KOR
+		}
+		days_remove = -1
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			every_country = {
+				limit = {
+					is_chinese_clique = yes
+				}
+				add_ideas = CHI_embargo_korea
+			}
+		}
+		modifier = {
+			naval_coordination = 0.1
+		}
+		remove_effect = {
+			
+		}
+	}
+	KOR_make_puppet_government = {
+		icon = generic_form_nation 
+		available = {
+			original_tag = KOR
+			owns_state = 613
+			owns_state = 858
+			owns_state = 859
+			owns_state = 749
+			owns_state = 863
+			owns_state = 596
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			has_country_flag = FLAG_QI_PUPPET
+		}
+		allowed = {
+			original_tag = KOR
+		}
+		#days_remove = 25
+		fire_only_once = yes
+		complete_effect = {
+			KOR = {
+				puppet = WZC
+			}
+			WZC = {
+				set_cosmetic_tag = ZLC
+				transfer_state = 613
+				transfer_state = 858
+				transfer_state = 859
+				transfer_state = 749
+				transfer_state = 863
+				transfer_state = 596
+			}
+		}
+		modifier = {
+		}
+		remove_effect = {
+		}
+	}
+}	
 KOR_interservice_rivalry = {
 	KOR_steel_for_guns = { 
 
@@ -1428,7 +1595,7 @@ KOR_nuke_surrend = {
 			has_global_flag = KOR_nuke_2
 			OR = {
 				has_army_size = { size < 100 }
-				has_navy_size = { size < 30 }
+				has_navy_size = { size < 200 }
 			}	
 			NOT = {
 				controls_state = 524

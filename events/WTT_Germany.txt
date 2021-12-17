@@ -985,7 +985,7 @@ country_event = {
 		original_tag = GER
 		has_government = neutrality
 		date > 1939.1.1
-		has_country_leader = { ruling_only = yes name = "Wilhelm II" }
+		has_country_leader = { ruling_only = yes character = GER_wilhelm_ii }
 	}
 
 	mean_time_to_happen = {
@@ -1024,7 +1024,7 @@ country_event = {
 		tag = GER
 		has_government = neutrality
 		date > 1940.1.1
-		has_country_leader = { ruling_only = yes name = "August von Mackensen" }
+		has_country_leader = { ruling_only = yes character = GER_august_von_mackensen }
 	}
 
 	mean_time_to_happen = {

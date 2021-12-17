@@ -1354,6 +1354,9 @@ country_event = { #3분지계
 	
 	option = { #3분할(위촉오 판도)
 		name = korea.39.a
+		ai_chance = {
+			factor = 100
+		}
 		release_puppet = SIK
 		puppet = SZC
 		puppet = GXC
@@ -1454,7 +1457,6 @@ country_event = { #3분지계
 			set_capital = 613
 		}
 		QIN = {
-			transfer_state = 608
 			transfer_state = 614
 			transfer_state = 615
 			transfer_state = 597
@@ -1597,9 +1599,9 @@ country_event = { #3분지계
 			transfer_state = 752
 			transfer_state = 751
 			transfer_state = 753
+			transfer_state = 871
 			transfer_state = 605
 			transfer_state = 868
-			transfer_state = 608
 			transfer_state = 614
 			transfer_state = 615
 			transfer_state = 597
@@ -1659,9 +1661,9 @@ country_event = { #3분지계
 		release_puppet = SIK
 		QIN = {
 			
-			transfer_state = 608
 			transfer_state = 614
 			transfer_state = 615
+			transfer_state = 871
 			transfer_state = 597
 			transfer_state = 870
 			transfer_state = 607

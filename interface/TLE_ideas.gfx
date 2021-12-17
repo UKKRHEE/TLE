@@ -144,7 +144,7 @@ spriteTypes = {
 	}	
 	spriteType = {
 		name = "GFX_idea_KOR_militarism"
-		texturefile = "gfx/interface/ideas/korea/idea_kor_danilminjok.dds"
+		texturefile = "gfx/interface/ideas/korea/군국주의.png"
 	}	
 	
 	spriteType = {

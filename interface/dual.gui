@@ -343,7 +343,7 @@ guiTypes = {
 				name = "IMP_emp_17_text"
 				position = { x = 470 y = 560 }
 				font = "hoi_20b"
-				text = "순종 이택"
+				text = "순종 효황제 이택"
 				maxWidth = 155
 				maxHeight = 20
 				format = center
@@ -384,6 +384,8 @@ guiTypes = {
 				maxHeight = 20
 				format = center
 				vertical_alignment = center
+				pdx_tooltip = "KOR_EMPEROR_HEONMOON"
+				pdx_tooltip_delayed = "KOR_EMPEROR_HEONMOON_DESC"
 			}
 					
 			iconType = {

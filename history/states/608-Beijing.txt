@@ -16,6 +16,7 @@ state={
 			air_base = 3
 			10068 = {
 				naval_base = 2
+				bunker = 3
 
 			}
 			4196 = {
@@ -33,6 +34,15 @@ state={
 			7191 = {
 				naval_base = 3
 
+			}
+			9843 = {
+				bunker = 5
+			}
+			11761 = {
+				bunker = 3
+			}
+			4140 = {
+				bunker = 3
 			}
 
 		}

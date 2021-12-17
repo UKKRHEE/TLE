@@ -44,19 +44,19 @@ focus_tree = {
 							days = 3
 						}
 							add_ace = {
-									name = "Cheonsae"
-									surname = "Lee"
+									name = "천세"
+									surname = "이"
 									callsign = "Skyage"
 									type = fighter_genius
 									is_female = no
 								}
 							create_navy_leader = {
-									name = "Samuel D. Lewis"
-									skill = 4
-									attack_skill = 4
-									defense_skill = 4
-									maneuvering_skill = 3
-									coordination_skill = 4
+									name = "새뮤얼 D. 루이스"
+									skill = 1
+									attack_skill = 1
+									defense_skill = 1
+									maneuvering_skill = 1
+									coordination_skill = 1
 								}
 						}
 				}
@@ -1356,39 +1356,7 @@ focus_tree = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = TOOLTIP_WAR_WITH_CHINA
-					
-					if = {
-							limit = {
-									CHI = {
-											owns_state = 613
-										}
-								}
-							has_war_with = CHI
-						}
-					if = {
-							limit = {
-									WZC = {
-											owns_state = 613
-										}
-								}
-							has_war_with = WZC
-						}
-					if = {
-							limit = {
-									ZLC = {
-											owns_state = 608
-										}
-								}
-							has_war_with = ZLC
-						}
-					if = {
-							limit = {
-									CHI = {
-											owns_state = 608
-										}
-								}
-							has_war_with = ZLC
-						}
+					has_war_with = ZLC
 				}
 				}
 			completion_reward = {
@@ -1423,6 +1391,12 @@ focus_tree = {
 					create_wargoal = {
 							target = PRC
 							type = annex_everything
+						}
+						every_state = {
+							limit = {
+								is_core_of = CHI
+							}
+							add_claim_by = KOR
 						}
 				}
 

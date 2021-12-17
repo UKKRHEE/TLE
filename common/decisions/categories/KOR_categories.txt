@@ -1,14 +1,4 @@
-KOR_decision_eulhae_goonchuk = {
-	allowed = {
-		original_tag = KOR
-	}
-	visible = {
-		original_tag = KOR
-		
-		has_completed_focus = kor_reform_korea
-	}
-	priority = 82
-}
+
 TLE_history_yes = {
 	allowed = {
 		OR = {
@@ -24,7 +14,38 @@ TLE_history_yes = {
 			is_japan_clique = yes
 		}
 	}
+	priority = 85
+}
+KOR_decision_eulhae_goonchuk = {
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		original_tag = KOR
+		 
+		has_completed_focus = kor_reform_korea
+	}
+	priority = 84
+}
+KOR_first_plan_lightning = {
+	picture = GFX_descision_KOR_plan_lightning
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		original_tag = KOR
+	}
 	priority = 83
+}
+KOR_second_plan_tent = {
+	picture = GFX_descision_KOR_plan_tent
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		original_tag = KOR
+	}
+	priority = 82
 }
 KOR_the_three_countries_plan = {
 	allowed = {
@@ -66,6 +87,7 @@ KOR_new_country_name = {
 	priority = 78
 }
 KOR_reichskommissariat = {
+	picture = GFX_descision_KOR_hwan
 
 	allowed = {
 		original_tag = KOR

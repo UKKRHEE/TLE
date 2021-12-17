@@ -4,6 +4,18 @@ spriteTypes = {
 	
 
 	spriteType = {
+		name = "GFX_descision_KOR_hwan"
+		texturefile = "gfx/interface/decisions/descision_KOR_hwan.png"
+	}
+	spriteType = {
+		name = "GFX_descision_KOR_plan_lightning"
+		texturefile = "gfx/interface/decisions/descision_KOR_plan_lightning.png"
+	}
+	spriteType = {
+		name = "GFX_descision_KOR_plan_tent"
+		texturefile = "gfx/interface/decisions/descision_KOR_plan_tent.png"
+	}
+	spriteType = {
 		name = "GFX_decision_cat_generic_pink_map"
 		texturefile = "gfx/interface/decisions/decision_cat_generic_pink_map.dds"
 	}

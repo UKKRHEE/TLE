@@ -91,11 +91,11 @@ characters={
 		name=KOR_yi_kang
 		portraits={
 			army={
-				large="gfx/leaders/KOR/Portrait_KOR_yi_kang_emperor.png"
-				small="gfx/interface/ideas/KOR/idea_KOR_yi_kang.png"
+				large="gfx/leaders/KOR/Portrait_KOR_yi_kang_general.png"
+				small="gfx/interface/ideas/KOR/idea_KOR_yi_kang_advisor.png"
 			}
 			civilian={
-				large="gfx/leaders/KOR/Portrait_yi_kang_old.png"
+				large="gfx/leaders/KOR/portrait_KOR_yi_kang_old.png"
 			}
 		}	
 		country_leader={
@@ -229,7 +229,7 @@ characters={
 			}
 			cost = 100
 		}
-		create_field_marshal={
+		field_marshal={
 			traits={ KOR_imperial_family politically_connected }
 			skill = 3
 			attack_skill = 3
@@ -653,7 +653,7 @@ characters={
 			}
 		}
 		advisor={
-			slot = high_command
+			slot = theorist
 			idea_token = choi_yong_duk
 			ledger = air
 		    allowed = {
@@ -1043,7 +1043,7 @@ characters={
 			available = {
 			}
 			
-		    traits = { propaganda_expert syncretic_revanchist }
+		    traits = { propaganda_expert }
 			
 		    do_effect = {
 			    NOT = {
@@ -1161,6 +1161,7 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_KOR_kim_koo"
+				large="gfx/leaders/KOR/z_Kim_Koo.dds"
 			}
 		}
 		advisor={
@@ -1396,7 +1397,7 @@ characters={
 			available = {
 			}
 			traits = {
-				three_equalities
+				syncretic_revanchist
 			}
 			ai_will_do = {
 				factor = 1

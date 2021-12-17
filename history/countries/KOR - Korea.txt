@@ -522,6 +522,7 @@ recruit_character = KOR_phillip_jaisohn
 recruit_character = KOR_yi_dong_hwi
 recruit_character = KOR_an_ho_sang
 recruit_character = KOR_yi_un
+recruit_character = KOR_choi_yong_duk
 recruit_character = KOR_kim_koo
 recruit_character = KOR_park_sang_jin
 recruit_character = KOR_syngman_rhee
