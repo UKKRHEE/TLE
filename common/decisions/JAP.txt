@@ -39,7 +39,7 @@ JAP_dec_civil_war = {
 				}
 			}
 		} 
-		days_mission_timeout = 15
+		days_mission_timeout = 30
 		
 		fixed_random_seed = no
 
