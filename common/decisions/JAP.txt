@@ -61,6 +61,13 @@ JAP_dec_civil_war = {
 					has_country_flag = JAP_3th_EJP
 				}
 			}
+			EJP = { exists = yes }
+			NOT = {
+				OR = {
+					has_country_flag = JAP_2th_EJP
+					has_country_flag = JAP_3th_EJP
+				}
+			}
 			tag = JAP
 			NOT = {
 				has_war_with = EJP
@@ -70,6 +77,7 @@ JAP_dec_civil_war = {
 			factor = 0
 		}
 		available = {
+			EJP = { exists = yes }
 			NOT = {
 				has_war_with = EJP
 			}
@@ -81,6 +89,7 @@ JAP_dec_civil_war = {
 			}
 		}
 		visible = {
+			EJP = { exists = yes }
 			NOT = {
 				OR = {
 					has_country_flag = JAP_2th_EJP
@@ -111,6 +120,7 @@ JAP_dec_civil_war = {
 	JAP_2th_control_domain_of_EJP = {
 		icon = generic_form_nation
 		allowed = {
+		EJP = { exists = yes }
 		has_country_flag = JAP_2th_EJP
 			NOT = {
 				OR = {
@@ -126,6 +136,7 @@ JAP_dec_civil_war = {
 			factor = 0
 		}
 		available = {
+			EJP = { exists = yes }
 		has_country_flag = JAP_2th_EJP
 			NOT = {
 				has_war_with = EJP
@@ -137,6 +148,7 @@ JAP_dec_civil_war = {
 			}
 		}
 		visible = {
+			EJP = { exists = yes }
 		has_country_flag = JAP_2th_EJP
 			NOT = {
 				OR = {
@@ -168,6 +180,7 @@ JAP_dec_civil_war = {
 	JAP_3th_control_domain_of_EJP = {
 		icon = generic_form_nation
 		allowed = {
+			EJP = { exists = yes }
 		has_country_flag = JAP_3th_EJP
 			NOT = {
 				OR = {
@@ -183,6 +196,7 @@ JAP_dec_civil_war = {
 			factor = 0
 		}
 		available = {
+			EJP = { exists = yes }
 		has_country_flag = JAP_3th_EJP
 			NOT = {
 				has_war_with = EJP
@@ -194,6 +208,7 @@ JAP_dec_civil_war = {
 			}
 		}
 		visible = {
+			EJP = { exists = yes }
 		has_country_flag = JAP_3th_EJP
 			NOT = {
 				OR = {
@@ -226,9 +241,187 @@ JAP_dec_civil_war = {
 		}
 	}
 	#
+	#
+	#도사 번/1회차
+	JAP_1th_control_domain_of_FJP = {
+		icon = generic_form_nation
+		allowed = {
+			NOT = {
+				OR = {
+					has_country_flag = JAP_2th_FJP
+					has_country_flag = JAP_3th_FJP
+				}
+			}
+			FJP = { exists = yes }
+			tag = JAP
+			NOT = {
+				has_war_with = FJP
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			FJP = { exists = yes }
+			NOT = {
+				has_war_with = FJP
+			}
+			NOT = {
+				OR = {
+					has_country_flag = JAP_2th_FJP
+					has_country_flag = JAP_3th_FJP
+				}
+			}
+		}
+		visible = {
+			FJP = { exists = yes }
+			tag = JAP
+			JAP = {
+				has_country_flag = FLAG_CIVIL_WAR_JAP
+			}
+			NOT = {
+				has_war_with = FJP
+			}
+			NOT = {
+				OR = {
+					has_country_flag = JAP_2th_FJP
+					has_country_flag = JAP_3th_FJP
+				}
+			}
+		} 
+		highlight_states = {
+ 		highlight_state_targets = { state = 530 } 
+		}
+		on_map_mode = map_and_decisions_view
+		days_remove = 5
+		fire_only_once = no
+		is_good = no
+		remove_effect = {
+			custom_effect_tooltip = JAP_FJP_trigger_2th
+			hidden_effect = {
+				set_country_flag = JAP_2th_FJP
+			}
+		}
+	}
+	#도사 번 2회차
+	JAP_2th_control_domain_of_FJP = {
+		icon = generic_form_nation
+		allowed = {
+			has_country_flag = JAP_2th_FJP
+			NOT = {
+				has_country_flag = JAP_3th_FJP
+			}
+			FJP = { exists = yes }
+			tag = JAP
+			NOT = {
+				has_war_with = FJP
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			has_country_flag = JAP_2th_FJP
+			FJP = { exists = yes }
+			NOT = {
+				has_war_with = FJP
+			}
+			NOT = {
+				has_country_flag = JAP_3th_FJP
+			}
+		}
+		visible = {
+			has_country_flag = JAP_2th_FJP
+			FJP = { exists = yes }
+			tag = JAP
+			JAP = {
+				has_country_flag = FLAG_CIVIL_WAR_JAP
+			}
+			NOT = {
+				has_war_with = FJP
+			}
+			NOT = {
+				has_country_flag = JAP_3th_FJP
+			}
+		} 
+		highlight_states = {
+ 		highlight_state_targets = { state = 530 } 
+		}
+		on_map_mode = map_and_decisions_view
+		days_remove = 5
+		fire_only_once = no
+		is_good = no
+		remove_effect = {
+			custom_effect_tooltip = JAP_FJP_trigger_3th
+			hidden_effect = {
+				set_country_flag = JAP_3th_FJP
+				clr_country_flag = JAP_2th_FJP
+			}
+		}
+	}
+	#도사 번 3회차
+	JAP_3th_control_domain_of_FJP = {
+		icon = generic_form_nation
+		allowed = {
+			has_country_flag = JAP_3th_FJP
+			NOT = {
+				has_country_flag = JAP_2th_FJP
+			}
+			FJP = { exists = yes }
+			tag = JAP
+			NOT = {
+				has_war_with = FJP
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			has_country_flag = JAP_3th_FJP
+			FJP = { exists = yes }
+			NOT = {
+				has_war_with = FJP
+			}
+			NOT = {
+				has_country_flag = JAP_2th_FJP
+			}
+		}
+		visible = {
+			has_country_flag = JAP_3th_FJP
+			FJP = { exists = yes }
+			tag = JAP
+			JAP = {
+				has_country_flag = FLAG_CIVIL_WAR_JAP
+			}
+			NOT = {
+				has_war_with = FJP
+			}
+			NOT = {
+				has_country_flag = JAP_2th_FJP
+			}
+		} 
+		highlight_states = {
+ 		highlight_state_targets = { state = 530 } 
+		}
+		on_map_mode = map_and_decisions_view
+		days_remove = 5
+		fire_only_once = no
+		is_good = no
+		remove_effect = {
+			custom_effect_tooltip = JAP_FJP_trigger_end
+			hidden_effect = {
+				country_event = {
+					id = Civilwar_of_Japan.2
+				}
+			}
+		}
+	}
+	#
+	#
 	JAP_control_domain_of_KGJ = {
 		icon = generic_form_nation
 		allowed = {
+			KGJ = { exists = yes }
 			OR = {
 				original_tag = JAP
 				original_tag = DKG
@@ -241,11 +434,13 @@ JAP_dec_civil_war = {
 			factor = 0
 		}
 		available = {
+			KGJ = { exists = yes }
 			NOT = {
 				has_war_with = KGJ
 			}
 		}
 		visible = {
+			KGJ = { exists = yes }
 			OR = {
 				original_tag = JAP
 				original_tag = DKG
@@ -268,6 +463,7 @@ JAP_dec_civil_war = {
 	JAP_control_domain_of_SDJ = {
 		icon = generic_form_nation
 		allowed = {
+			SDJ = { exists = yes }
 			OR = {
 				original_tag = JAP
 				original_tag = DKG
@@ -280,11 +476,13 @@ JAP_dec_civil_war = {
 			factor = 0
 		}
 		available = {
+			SDJ = { exists = yes }
 			NOT = {
 				has_war_with = SDJ
 			}
 		}
 		visible = {
+			SDJ = { exists = yes }
 			OR = {
 				original_tag = JAP
 				original_tag = DKG
@@ -307,6 +505,7 @@ JAP_dec_civil_war = {
 	JAP_control_domain_of_NBJ = {
 		icon = generic_form_nation
 		allowed = {
+			NBJ = { exists = yes }
 			OR = {
 				original_tag = JAP
 				original_tag = DKG
@@ -319,11 +518,13 @@ JAP_dec_civil_war = {
 			factor = 0
 		}
 		available = {
+			NBJ = { exists = yes }
 			NOT = {
 				has_war_with = NBJ
 			}
 		}
 		visible = {
+			NBJ = { exists = yes }
 			OR = {
 				original_tag = JAP
 				original_tag = DKG
@@ -346,6 +547,7 @@ JAP_dec_civil_war = {
 	JAP_control_domain_of_GJJ = {
 		icon = generic_form_nation
 		allowed = {
+			GJJ = { exists = yes }
 			OR = {
 				original_tag = JAP
 				original_tag = DKG
@@ -358,11 +560,13 @@ JAP_dec_civil_war = {
 			factor = 0
 		}
 		available = {
+			GJJ = { exists = yes }
 			NOT = {
 				has_war_with = GJJ
 			}
 		}
 		visible = {
+			GJJ = { exists = yes }
 			OR = {
 				original_tag = JAP
 				original_tag = DKG
@@ -385,6 +589,7 @@ JAP_dec_civil_war = {
 	JAP_control_domain_of_TBJ = {
 		icon = generic_form_nation
 		allowed = {
+			TBJ = { exists = yes }
 			OR = {
 				original_tag = JAP
 				original_tag = DKG
@@ -397,11 +602,13 @@ JAP_dec_civil_war = {
 			factor = 0
 		}
 		available = {
+			TBJ = { exists = yes }
 			NOT = {
 				has_war_with = TBJ
 			}
 		}
 		visible = {
+			TBJ = { exists = yes }
 			OR = {
 				original_tag = JAP
 				original_tag = DKG
@@ -421,50 +628,12 @@ JAP_dec_civil_war = {
 		fire_only_once = no
 		is_good = no
 	}
-	JAP_control_domain_of_FJP = {
-		icon = generic_form_nation
-		allowed = {
-			OR = {
-				original_tag = JAP
-				original_tag = DKG
-			}
-			NOT = {
-				has_war_with = FJP
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		available = {
-			NOT = {
-				has_war_with = FJP
-			}
-		}
-		visible = {
-			OR = {
-				original_tag = JAP
-				original_tag = DKG
-			}
-			JAP = {
-				has_country_flag = FLAG_CIVIL_WAR_JAP
-			}
-			NOT = {
-				has_war_with = FJP
-			}
-		} 
-		highlight_states = {
- 		highlight_state_targets = { state = 530 } 
-		}
-		on_map_mode = map_and_decisions_view
-		days_remove = 60
-		fire_only_once = no
-		is_good = no
-	}
 	###################################################################막부
 	#조슈 번/1회차
 	DKG_1th_control_domain_of_EJP = {
 		icon = generic_form_nation
 		allowed = {
+			EJP = { exists = yes }
 			NOT = {
 				OR = {
 					has_country_flag = DKG_2th_EJP
@@ -480,6 +649,7 @@ JAP_dec_civil_war = {
 			factor = 0
 		}
 		available = {
+			EJP = { exists = yes }
 			NOT = {
 				has_war_with = EJP
 			}
@@ -491,6 +661,7 @@ JAP_dec_civil_war = {
 			}
 		}
 		visible = {
+			EJP = { exists = yes }
 			NOT = {
 				OR = {
 					has_country_flag = DKG_2th_EJP
@@ -521,6 +692,7 @@ JAP_dec_civil_war = {
 	DKG_2th_control_domain_of_EJP = {
 		icon = generic_form_nation
 		allowed = {
+			EJP = { exists = yes }
 		has_country_flag = DKG_2th_EJP
 			NOT = {
 				OR = {
@@ -536,6 +708,7 @@ JAP_dec_civil_war = {
 			factor = 0
 		}
 		available = {
+			EJP = { exists = yes }
 		has_country_flag = DKG_2th_EJP
 			NOT = {
 				has_war_with = EJP
@@ -547,6 +720,7 @@ JAP_dec_civil_war = {
 			}
 		}
 		visible = {
+			EJP = { exists = yes }
 		has_country_flag = DKG_2th_EJP
 			NOT = {
 				OR = {
@@ -577,6 +751,7 @@ JAP_dec_civil_war = {
 	DKG_2th_control_domain_of_EJP = {
 		icon = generic_form_nation
 		allowed = {
+			EJP = { exists = yes }
 		has_country_flag = DKG_3th_EJP
 			NOT = {
 				OR = {
@@ -592,6 +767,7 @@ JAP_dec_civil_war = {
 			factor = 0
 		}
 		available = {
+			EJP = { exists = yes }
 		has_country_flag = DKG_3th_EJP
 			NOT = {
 				has_war_with = EJP
@@ -603,6 +779,7 @@ JAP_dec_civil_war = {
 			}
 		}
 		visible = {
+			EJP = { exists = yes }
 		has_country_flag = DKG_3th_EJP
 			NOT = {
 				OR = {
@@ -628,5 +805,44 @@ JAP_dec_civil_war = {
 			custom_effect_tooltip = DKG_EJP_trigger_end
 			set_country_flag = DKG_end_of_EJP
 		}
+	}
+	#
+	#
+	#막부 도사번/1회차
+	DKG_1th_control_domain_of_FJP = {
+		icon = generic_form_nation
+		allowed = {
+			FJP = { exists = yes }
+			tag = DKG
+			NOT = {
+				has_war_with = FJP
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			FJP = { exists = yes }
+			NOT = {
+				has_war_with = FJP
+			}
+		}
+		visible = {
+			FJP = { exists = yes }
+			tag = DKG
+			JAP = {
+				has_country_flag = FLAG_CIVIL_WAR_JAP
+			}
+			NOT = {
+				has_war_with = FJP
+			}
+		} 
+		highlight_states = {
+ 		highlight_state_targets = { state = 530 } 
+		}
+		on_map_mode = map_and_decisions_view
+		days_remove = 5
+		fire_only_once = no
+		is_good = no
 	}
 }

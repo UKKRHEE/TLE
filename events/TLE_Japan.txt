@@ -66,7 +66,7 @@ country_event = {
 	}
 }
 
-#조슈 번 통합
+#조슈 번 통합/제국
 country_event = {
 	id = Civilwar_of_Japan.1
 	title = Civilwar_of_Japan.1.t
@@ -80,6 +80,24 @@ country_event = {
         ai_chance = { factor = 1.0  }
         annex_country = {
 			target = EJP
+			transfer_troops = yes
+		}
+	}
+}
+#도사 번 통합/제국
+country_event = {
+	id = Civilwar_of_Japan.2
+	title = Civilwar_of_Japan.2.t
+	desc = Civilwar_of_Japan.2.d
+	picture = GFX_report_event_JAP_east_heibei
+
+	is_triggered_only = yes
+
+	option = {
+		name = Civilwar_of_Japan.2.a	
+        ai_chance = { factor = 1.0  }
+        annex_country = {
+			target = FJP
 			transfer_troops = yes
 		}
 	}
