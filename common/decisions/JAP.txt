@@ -51,6 +51,7 @@ JAP_dec_civil_war = {
 			}
 		}
 	}
+	
 	#조슈 번/1회차
 	JAP_1th_control_domain_of_EJP = {
 		icon = generic_form_nation

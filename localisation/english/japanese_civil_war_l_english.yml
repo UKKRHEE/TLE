@@ -1,5 +1,11 @@
 ﻿l_english:
  #내전 디시전
+ JAP_dec_civil_war:0 "니혼나이센 (일본 내전)"
+ JAP_dec_civil_war_desc:0 "일본 근대화의 처참한 실패 이후, 쌓이고 쌓인 모순이 드디어 폭발하기 직전까지 왔습니다. 비록 그 시발점은 요시히사 전 국왕의 사망이라지만, 언제고 일어날 수 있는 일입니다. \n\n이제, 전 일본을 불태울 내전이 다시 시작되려 하고 있습니다.\n\n§C아와지 조약 4개국들의 반응§!\n\n@ENG영국은 @JAP§Y일본 제국§!을 지지하고 있음\n@KOR한국은 @DKG§Y일본 왕국§!을 지지하고 있음\n@USA미국은 사건을 §Y중립적§!으로 바라보고 있음\n@FRA프랑스는 사건을 §Y중립적§!으로 바라보고 있음"
+ JAP_the_time_limit:0 "남은 기간"
+
+ JAP_Shinpu_dec:0 "작전명: 카미카제 (신풍)"
+
  Japanese_civil_war:0 "일본 내전이 일어남"
  JAP_1th_control_domain_of_EJP:0 "조슈 연합과의 접촉"
  JAP_2th_control_domain_of_EJP:0 "조슈 연합과의 협치"
@@ -57,6 +63,9 @@
  FLAG_JAP_AUTO_COMP:0 "자동으로 통과될 것입니다."
  JAP_2th_EJP:0 "§Y조슈 연합과 접촉함§!"
  JAP_3th_EJP:0 "§Y조슈 연합과 행정을 통합함§!"
+
+ JAP_2th_FJP:0 "§Y도사 번과 접촉함§!"
+ JAP_3th_FJP:0 "§Y조슈 번과 행정을 통합함§!"
 
  JAP_FJP_trigger_2th:0 "§Y우리는 도사 번과 접촉을 이어나갈 것입니다.§!"
  JAP_FJP_trigger_3th:0 "§Y우리는 도사 번과 협치할 것입니다.§!"
