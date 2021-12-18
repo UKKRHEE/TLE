@@ -111,19 +111,6 @@ bookmarks = {
 				GER_ussr_war_goal
 			}
 		}
-		"ITA"={
-			history = "ITA_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				vittoria_mutilata
-				victor_emmanuel
-			}	
-			focuses = {
-				ITA_pact_of_steel
-				ITA_spanish_italian_faction
-				ITA_italy_first
-			}		
-		}
 		"KOR"={
 			history = "KOREA_GATHERING_STORM_DESC"
 			ideology = democratic
@@ -137,7 +124,21 @@ bookmarks = {
 				kor_korean_lebensraum
 				KOR_use_the_anti-armed
 			}
-		}	
+		}
+		"DKG"={
+			history = "DKG_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				JAP_showa_hirohito
+				JAP_democratic_popularity
+				JAP_army_planning
+			}	
+			focuses = {
+				JAP_rising_sun
+				JAP_new_rework
+				JAP_liberalization_of_regime
+			}			
+		}
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
@@ -173,21 +174,19 @@ bookmarks = {
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
 
-
-		"DKG"={
-			history = "DKG_GATHERING_STORM_DESC"
+		"ITA"={
+			history = "ITA_GATHERING_STORM_DESC"
 			minor = yes
-			ideology = neutrality
+			ideology = fascism
 			ideas = {
-				JAP_showa_hirohito
-				JAP_democratic_popularity
-				JAP_army_planning
+				vittoria_mutilata
+				victor_emmanuel
 			}	
 			focuses = {
-				JAP_rising_sun
-				JAP_new_rework
-				JAP_liberalization_of_regime
-			}			
+				ITA_pact_of_steel
+				ITA_spanish_italian_faction
+				ITA_italy_first
+			}		
 		}
 		# minors from DLC ####
 		"CAN"={
