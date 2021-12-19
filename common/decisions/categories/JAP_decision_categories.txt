@@ -12,5 +12,5 @@ JAP_dec_civil_war = {
 			original_tag = DKG
 		}
 	}
-	priority = 83
+	priority = 100
 }

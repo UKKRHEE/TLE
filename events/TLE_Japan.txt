@@ -102,6 +102,35 @@ country_event = {
 		}
 	}
 }
+#도쿄로 개칭
+country_event = {
+	id = Civilwar_of_Japan.3
+	title = Civilwar_of_Japan.3.t
+	desc = Civilwar_of_Japan.3.d
+	picture = GFX_report_event_JAP_east_heibei
+
+	is_triggered_only = yes
+
+	option = {
+		name = Civilwar_of_Japan.3.a	
+        ai_chance = { factor = 0.93 }
+		JAP = {
+			set_capital = 282
+		}
+		add_political_power = 75
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+	option = {
+		name = Civilwar_of_Japan.3.b	
+        ai_chance = { factor = 0.07  }
+		add_stability = 0.1
+		set_province_name = {
+			id = 1182
+			name = "도시마"
+		}
+	}
+}
 
 #China-JapanWar
 news_event = {

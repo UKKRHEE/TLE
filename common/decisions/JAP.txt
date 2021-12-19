@@ -109,7 +109,7 @@ JAP_dec_civil_war = {
  		highlight_state_targets = { state = 529 } 
 		}
 		on_map_mode = map_and_decisions_view
-		days_remove = 5
+		days_remove = 15
 		fire_only_once = no
 		is_good = no
 		remove_effect = {
@@ -168,7 +168,7 @@ JAP_dec_civil_war = {
  		highlight_state_targets = { state = 529 } 
 		}
 		on_map_mode = map_and_decisions_view
-		days_remove = 5
+		days_remove = 15
 		fire_only_once = no
 		is_good = no
 		remove_effect = {
@@ -228,7 +228,7 @@ JAP_dec_civil_war = {
  		highlight_state_targets = { state = 529 } 
 		}
 		on_map_mode = map_and_decisions_view
-		days_remove = 5
+		days_remove = 15
 		fire_only_once = no
 		is_good = no
 		remove_effect = {
@@ -294,7 +294,7 @@ JAP_dec_civil_war = {
  		highlight_state_targets = { state = 530 } 
 		}
 		on_map_mode = map_and_decisions_view
-		days_remove = 5
+		days_remove = 15
 		fire_only_once = no
 		is_good = no
 		remove_effect = {
@@ -349,7 +349,7 @@ JAP_dec_civil_war = {
  		highlight_state_targets = { state = 530 } 
 		}
 		on_map_mode = map_and_decisions_view
-		days_remove = 5
+		days_remove = 15
 		fire_only_once = no
 		is_good = no
 		remove_effect = {
@@ -405,7 +405,7 @@ JAP_dec_civil_war = {
  		highlight_state_targets = { state = 530 } 
 		}
 		on_map_mode = map_and_decisions_view
-		days_remove = 5
+		days_remove = 15
 		fire_only_once = no
 		is_good = no
 		remove_effect = {

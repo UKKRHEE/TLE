@@ -58,6 +58,11 @@
  Civilwar_of_Japan.2.t:0 "도사 번 통합"
  Civilwar_of_Japan.2.d:0 "제국은 도사 번과 통합하기로 결정했습니다. 센코쿠 시대를 지나, 비열한 막부 놈들을 거쳐 일본은 덴노 헤이카를 중심으로 통일 운동을 진행한지 어느 덧 50년이 지난 가운데, 일본은 다시 통일을 위해 나아가고 있습니다. \n\n덴노 헤이카 반자이!"
  Civilwar_of_Japan.2.a:0 "천황 폐하 만세!"
+ 
+ Civilwar_of_Japan.3.t:0 "천도"
+ Civilwar_of_Japan.3.d:0 "설정 작성중"
+ Civilwar_of_Japan.3.a:0 "천황 폐하 만세!"
+ Civilwar_of_Japan.3.b:0 "전통을 지킬 것이다!"
  #툴팁
  TOOLTIP_JAP_COMPLETE_CIVIL_WAR:0 "일본 내전이 끝났다."
  FLAG_JAP_AUTO_COMP:0 "자동으로 통과될 것입니다."

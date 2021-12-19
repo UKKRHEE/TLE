@@ -1,0 +1,26 @@
+on_actions = {
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					tag = JAP #점령국 - 유신 정부
+					FROM = { 
+						tag = DKG
+					} #피점령국 - 막부
+					FROM.FROM = { state = 282 } #점령 주 - 톈진
+				}
+                set_province_name = {
+                    id = 1182
+                    name = "도쿄"
+                }
+				country_event = {
+					id = Civilwar_of_Japan.3
+				}
+				annex_country = {
+					target = DKG
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+}
