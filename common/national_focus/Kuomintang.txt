@@ -12,15 +12,19 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 2000 }
 	focus = {
 		id = CHI_restore_the_chinag
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_prc_remove_chiang_kai_shek
+		cost = 3
 		x = 16
+		search_filters = { FOCUS_FILTER_STABILITY }
 		y = 0
+		completion_reward = {
+			add_political_power = 150
+		}
 
 	}
 	focus = {
 		id = CHI_sanminzuyi_reconfirm
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_national_unity
 		cost = 10.00
 		prerequisite = {
 			focus = CHI_restore_the_chinag
@@ -28,16 +32,27 @@ focus_tree = {
 		x = 5
 		y = 1
 
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_stability = 0.05
+		}
+
 	}
 	focus = {
-		id = CHI_new_life_movement
-		icon = GFX_goal_unknown
+		id = CHI_new_life_movement_chiang		
+		icon = GFX_goal_generic_propaganda
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_sanminzuyi_reconfirm
+			focus = CHI_sanminzuyi_reconfirm 
 		}
 		x = 4
 		y = 2
+
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		completion_reward = {
+			add_war_support = 0.1
+			CHI_hyper_inflation_level_up = yes
+		}
 
 	}
 	focus = {
@@ -45,10 +60,14 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_new_life_movement
+			focus = CHI_new_life_movement_chiang
 		}
 		x = 4
 		y = 4
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_stability = 0.1
+		}
 
 	}
 	focus = {
@@ -60,6 +79,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 2
+		completion_reward = {
+			remove_ideas = CHI_ineffective_bureaucracy_warlord
+		}
 
 	}
 	focus = {
@@ -67,11 +89,15 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = CHI_new_life_movement
+			focus = CHI_new_life_movement_chiang
 			focus = CHI_administrative_reorganization
 		}
 		x = 5
 		y = 3
+		completion_reward = {
+			add_political_power = 120
+			add_stability = -0.05
+		}
 
 	}
 	focus = {
@@ -83,6 +109,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 4
+		completion_reward = {
+			remove_ideas = PRC_government_corruption
+		}
 
 	}
 	focus = {
@@ -97,6 +126,10 @@ focus_tree = {
 		}
 		x = 3
 		y = 5
+		search_filters = { FOCUS_FILTER_CHI_INFLATION }
+		completion_reward = {
+			CHI_hyper_inflation_level_down = yes
+		}
 
 	}
 	focus = {
@@ -108,6 +141,12 @@ focus_tree = {
 		}
 		x = 2
 		y = 6
+		search_filters = { FOCUS_FILTER_CHI_INFLATION FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_stability = 0.05
+			CHI_hyper_inflation_level_down = yes
+			
+		}
 
 	}
 	focus = {
@@ -120,6 +159,15 @@ focus_tree = {
 		x = 4
 		y = 6
 
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = CHI_unified_industrial_planning
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+		}
 	}
 	focus = {
 		id = CHI_maintain_discipline
@@ -195,13 +243,24 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_north_expedition
-		icon = GFX_goal_unknown
+		icon = GFX_focus_war_with_wuxing
 		cost = 10.00
 		prerequisite = {
 			focus = CHI_restore_the_chinag
 		}
 		x = 16
 		y = 1
+		completion_reward = {
+			army_experience = 30
+			declare_war_on = {
+				type = annex_everything 
+				target = WZC
+			}	
+			declare_war_on = {
+				type = annex_everything 
+				target = AHC
+			}	
+		}
 
 	}
 	focus = {
@@ -677,6 +736,10 @@ focus_tree = {
 		}
 		x = 4
 		y = 7
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_research_slot = 1
+		}
 
 	}
 	focus = {

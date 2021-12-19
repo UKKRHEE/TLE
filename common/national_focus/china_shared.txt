@@ -45,8 +45,7 @@ shared_focus = {
 			limit = {
 				original_tag = CHI
 			}
-			has_completed_focus = CHC_chiang
-		}
+	}
 	}
 	offset = {
 		x = -6
@@ -63,7 +62,7 @@ shared_focus = {
 		}
 	}
 	offset = {
-		x = 4
+		x = 3
 		y = 0
 		trigger = {
 			tag = CHI
@@ -74,7 +73,6 @@ shared_focus = {
 		y = 0
 		trigger = {
 			OR = {
-				tag = ZLC
 				tag = SND
 				tag = SHX
 				tag = SZC
