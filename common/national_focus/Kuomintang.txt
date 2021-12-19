@@ -1099,6 +1099,9 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_restore_the_chinag
 		}
+		available = {
+			has_completed_focus = CHI_north_expedition
+		}
 		x = 27
 		y = 1
 		completion_reward = {

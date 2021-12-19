@@ -45,7 +45,8 @@ shared_focus = {
 			limit = {
 				original_tag = CHI
 			}
-	}
+			has_completed_focus = CHI_north_expedition
+		}
 	}
 	offset = {
 		x = -6
