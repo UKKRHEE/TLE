@@ -7,7 +7,7 @@ on_actions = {
 					FROM = { 
 						tag = DKG
 					} #피점령국 - 막부
-					FROM.FROM = { state = 282 } #점령 주 - 톈진
+					FROM.FROM = { state = 282 } #점령 주 - 도쿄
 				}
                 set_province_name = {
                     id = 1182
