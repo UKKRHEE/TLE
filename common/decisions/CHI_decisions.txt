@@ -1,4 +1,30 @@
-
+CHI_plan_2nd_beifa = {
+	CHI_plan_2nd_beifa = {
+		
+		available = {
+			ZLC = {
+				owns_state = 608
+			}
+		}
+		visible = {
+			ZLC = {
+				owns_state = 608
+			}
+		}
+		days = 10
+		ai_will_do = {
+			factor = 1000
+		}
+		fire_only_once = yes
+		cost = 60
+		remove_effect = {
+			declare_war_on = {
+				target = ZLC
+				type = annex_everything
+			}
+		}
+	}
+}
 CHI_fight_with_korea = {
 	
 	CHI_fight_in_our_land = {
@@ -18,6 +44,12 @@ CHI_fight_with_korea = {
 		visible = {
 			ROOT = {
 				has_war_with = KOR
+			}
+			if = {
+				limit = {
+					original_tag = CHI
+				}
+				has_completed_focus = CHI_kangqian
 			}
 		}
 		ai_will_do = {
@@ -48,8 +80,7 @@ CHI_fight_with_korea = {
 			}
 		}
 		custom_cost_trigger = {
-			command_power > 50
-			has_army_experience > 100
+			#command_power = 100
 		}
 		ai_will_do = {
 			factor = 1000
@@ -132,6 +163,12 @@ CHI_army_reform = {
 				has_idea = CHI_army_corruption_1
 				has_idea = CHI_army_corruption_2
 				has_idea = CHI_army_corruption_3
+			}
+			if = {
+				limit = {
+					original_tag = CHI
+				}
+				has_completed_focus = CHI_military_modernization
 			}
 		}
 		remove_effect = {

@@ -3085,7 +3085,7 @@ focus_tree = {
 		x = 7
 		y = 9
 			completion_reward = {
-					navy_experience = 15
+					navy_experience = 100
 				}
 
 	}

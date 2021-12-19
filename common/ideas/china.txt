@@ -1,5 +1,24 @@
 ideas = {
 	country = {
+		CHI_ineffective_bureaucracy_1 = { 
+
+			picture = generic_disjointed_gov
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.35
+			}
+
+		}
 		CHI_bloody_yangzi = { #핏빛 장강
 			picture = CHI_bloody_yangzi
 			allowed = {
@@ -266,8 +285,19 @@ ideas = {
 				always = no
 			}
 			modifier = {
+				neutrality_drift = 0.1
+				drift_defence_factor = 0.15
+			}
+		}
+		CHI_legacy_of_sun_wen_2 = {
+			picture = CHI_legacy_of_sun_wen
+			allowed = {
+				always = no
+			}
+			modifier = {
 				neutrality_drift = 0.2
 				drift_defence_factor = 0.3
+				stability_factor = -0.05
 			}
 		}
 		CHI_failed_north_attack = {
@@ -1057,8 +1087,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-			    conscription_factor = -0.25
-				production_speed_buildings_factor = 0.10
+			    conscription_factor = 0.15
+				production_speed_buildings_factor = 0.15
 			}
 
 		}

@@ -73,6 +73,7 @@ shared_focus = {
 		y = 0
 		trigger = {
 			OR = {
+				tag = NEP
 				tag = SND
 				tag = SHX
 				tag = SZC

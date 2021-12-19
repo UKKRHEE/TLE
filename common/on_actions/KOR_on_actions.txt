@@ -58,11 +58,22 @@ on_actions = {
 			if = {
 				every_state = {
 					limit = {
-						is_core_of = CHI
+						is_core_of = PRC
 					}
 					add_core_of = ZLC
 					add_core_of = QIN
 					add_core_of = WZC
+				}
+			}
+			if = {
+				every_state = {
+					limit = {
+						is_core_of = CHI
+						NOT = {
+							is_owned_by = CHI
+						}
+					}
+					remove_core_of = CHI
 				}
 			}
 		}

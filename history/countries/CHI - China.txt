@@ -19,6 +19,9 @@ add_ideas = {
 	CHI_legacy_of_sun_wen
 	CHI_failed_north_attack
 	CHI_era_of_chinese_warlords_1
+	CHI_ineffective_bureaucracy_1
+		PRC_government_corruption
+		CHI_ineffective_bureaucracy_warlord
 }
 	add_ideas = {
 		PRC_government_corruption
