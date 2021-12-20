@@ -1477,7 +1477,7 @@ on_actions = {
 				}	
 				ITA = {
 					white_peace = KOR
-				}	
+				}
 				set_country_flag = TLE_THE_WAR_IS_ENDED
 				if = { #미국이 서울 입성했을 때
 					limit = { #평양에 소련군 없어야 함
@@ -1628,6 +1628,12 @@ on_actions = {
 					annex_country = {
 						target = MEN
 					}
+				}
+				every_country = {
+					limit = {
+						is_chinese_clique = yes
+					}
+					leave_faction = yes
 				}
 				every_other_country = {
 					limit = {
