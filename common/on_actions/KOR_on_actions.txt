@@ -466,6 +466,18 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					tag = CHI #점령국 - 대한
+					FROM = { 	
+						is_independent_china_or_warlord = yes
+					} #피점령국 - 중국
+					FROM.FROM = { is_core_of = ZLC is_claim_by = CHI } #점령 주 - 북경
+				}
+                FROM.FROM = {
+					add_core_of = CHI
+				}
+			}
+			if = {
+				limit = {
 					tag = PRC
 					NOT = {
 						has_country_flag = PRC_LOSE_IN_THE_TSINGHAI
@@ -572,7 +584,7 @@ on_actions = {
 					tag = CHI #점령국 - 대한
 					FROM = {
 						is_independent_china_or_warlord = yes
-						} #피점령국 - 중국
+					} #피점령국 - 중국
 					FROM.FROM = { state = 613 } #점령 주 - 난징
 					CHI = {
 						NOT = {
@@ -596,6 +608,13 @@ on_actions = {
 					transfer_state = 863
 					transfer_state = 858
 					transfer_state = 859
+				}
+				ZLC = {
+					transfer_state = 606
+					transfer_state = 861
+					transfer_state = 598
+					transfer_state = 872
+					transfer_state = 860
 				}
 			}
 			if = {

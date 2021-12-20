@@ -1094,6 +1094,12 @@
 						tag = SHX
 						tag = XSM
 						tag = SIK
+						tag = HNC
+						tag = SND
+						tag = SZC
+						tag = AHC
+						tag = WZC
+						tag = CHI
 					}
 				}
 				country_event = { id = wtt_china.1 }

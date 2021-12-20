@@ -298,6 +298,9 @@ focus_tree = {
 		y = 1
 		available = {
 			has_country_flag = FLAG_WZC_WAS_COLLAPESED
+			AHC = {
+				exists = yes
+			}
         }
 		completion_reward = {
 			army_experience = 30
@@ -317,7 +320,7 @@ focus_tree = {
 						is_owned_by = AHC	
 					}
 				}
-				add_state_core = CHI
+				add_core_of = CHI
 			}
 		}
 
@@ -402,7 +405,7 @@ focus_tree = {
 					is_core_of = YUN
 					is_owned_by = YUN
 				}
-				add_state_core = CHI
+				add_core_of = CHI
 			}
 		}
 
@@ -423,21 +426,21 @@ focus_tree = {
 					is_core_of = KOR
 					is_core_of = ZLC
 				}
-				add_state_core = CHI
+				add_core_of = CHI
 			}
 			every_state = {
 				limit = {
 					is_core_of = KMN
 					is_core_of = ZLC
 				}
-				add_state_core = CHI
+				add_core_of = CHI
 			}
 			every_state = {
 				limit = {
 					is_core_of = MEN
 					is_core_of = ZLC
 				}
-				add_state_core = CHI
+				add_core_of = CHI
 			}
 		}
 
@@ -451,6 +454,11 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = CHI_to_peace
+		}
+		available = {
+			KOR = {
+				has_government = fascism
+			}
 		}
 		x = 13
 		y = 6
@@ -514,7 +522,7 @@ focus_tree = {
 					is_core_of = GXC
 					is_owned_by = GXC
 				}
-				add_state_core = CHI
+				add_core_of = CHI
 			}
 		}
 
@@ -684,19 +692,19 @@ focus_tree = {
 				limit = {
 					is_owned_by = ZLC
 				}
-				add_state_claim = CHI
+				add_claim_by = CHI
 			}
 			every_state = {
 				limit = {
 					is_owned_by = SND
 				}
-				add_state_core = CHI
+				add_core_of = CHI
 			}
 			every_state = {
 				limit = {
 					is_owned_by = HNC
 				}
-				add_state_core = CHI
+				add_core_of = CHI
 			}
 		}
 
@@ -931,7 +939,7 @@ focus_tree = {
 				limit = {
 					is_core_of = RUS
 				}
-				add_state_core = CHI
+				add_core_of = CHI
 			}
 		}
 
@@ -976,7 +984,7 @@ focus_tree = {
 					is_core_of = SZC
 					is_owned_by = SZC
 				}
-				add_state_core = CHI
+				add_core_of = CHI
 			}
 		}
 
@@ -1028,7 +1036,7 @@ focus_tree = {
 						is_core_of = CHI
 					}
 				}
-				add_state_core = CHI
+				add_core_of = CHI
 			}
 			add_political_power = 150
 			ZLC = {

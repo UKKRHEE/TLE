@@ -342,9 +342,9 @@ bookmarks = {
 				CHI_failed_north_attack
 			}
 			focuses = {
-				CHC_victory
-				CHC_constitution
-				CHC_unite_campaign
+				CHI_restore_the_chinag
+				CHI_north_expedition
+				CHI_the_last_empire
 			}
 		}
 		"PRC"={
