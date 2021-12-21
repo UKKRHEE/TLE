@@ -1,6 +1,6 @@
 characters={
 	CHI_chen_tiao_yuan={
-		name="Chen Tiaoyuan"
+		name="천탸오위안"
 		portraits={
 			civilian={
 				large="gfx/leaders/ANC/portrait_anc_chen_tiaoyuan.png"
@@ -32,7 +32,7 @@ characters={
 		}
 	}
 	CHI_zhao_heng_ti={
-		name="Zhao Hengti"
+		name="자오헝티"
 		portraits={
 			civilian={
 				large="gfx/leaders/HNC/Portrait_Hunan_Zhao_Hengti_Civilian.png"
@@ -245,7 +245,7 @@ characters={
 		}
 	}
 	WZC_sun_chuanfang = {
-		name="Sun Chuanfang"
+		name="쑨촨팡"
 		portraits={
 			civilian={
 				large="gfx/leaders/WZC/Portrait_LEP_Sun_Chuanfang.png"
@@ -273,7 +273,7 @@ characters={
 		}
 	}
 	WZC_Chen_Tiaoyuan = {
-		name="Chen Tiaoyuan"
+		name="천탸오위안"
 		portraits={
 			civilian={
 				large="gfx/leaders/ANC/portrait_anc_chen_tiaoyuan.png"
@@ -294,7 +294,7 @@ characters={
 		}
 	}
 	WZC_qi_xieyuan = {
-		name="Qi Xieyuan"
+		name="치셰위안"
 		portraits={
 			civilian={
 				large="gfx/leaders/WZC/Portrait_LEP_Qi_Xieyuan.png"
@@ -315,7 +315,7 @@ characters={
 		}
 	}
 	WZC_chen_yi = {
-		name="Chen Yi"
+		name="천이"
 		portraits={
 			civilian={
 				large="gfx/leaders/WZC/Portrait_LEP_Chen_Yi.png"
@@ -336,7 +336,7 @@ characters={
 		}
 	}
 	WZC_Zheng_Junyan = {
-		name="Zheng Junyan"
+		name="정준옌"
 		portraits={
 			civilian={
 				large="gfx/leaders/WZC/Portrait_LEP_Chen_Yi.png"
@@ -357,7 +357,7 @@ characters={
 		}
 	}
 	WZC_Deng_Ruzuo = {
-		name="Deng Ruzuo"
+		name="덩루줘"
 		portraits={
 			civilian={
 				large="gfx/leaders/WZC/Portrait_LEP_Deng_Ruzuo.png"
@@ -378,7 +378,7 @@ characters={
 		}
 	}
 	WZC_Zhou_Yinren = {
-		name="Zhou Yinren"
+		name="저우인런"
 		portraits={
 			civilian={
 				large="gfx/leaders/WZC/Portrait_LEP_Zhou_Yinren.png"
@@ -399,7 +399,7 @@ characters={
 		}
 	}
 	WZC_Zhou_Fengqi = {
-		name="Zhou Fengqi"
+		name="저우펑치"
 		portraits={
 			civilian={
 				large="gfx/leaders/WZC/Portrait_LEP_Zhou_Fengqi.png"
@@ -420,7 +420,7 @@ characters={
 		}
 	}
 	WZC_Tang_Enbo = {
-		name="Tang Enbo"
+		name="탕은보"
 		portraits={
 			civilian={
 				large="gfx/leaders/WZC/Portrait_LEP_Tang_Enbo.png"
@@ -441,7 +441,7 @@ characters={
 		}
 	}
 	WZC_Yang_Shuzhuang = {
-		name="Yang Shuzhuang"
+		name="양수좡"
 		portraits={
 			civilian={
 				large="gfx/leaders/WZC/Portrait_LEP_Yang_Shuzhuang.png"
@@ -463,7 +463,7 @@ characters={
 	}
 	
 	SND_Zhang_Zongchang = {
-		name="Zhang Zongchang"
+		name="장쭝창"
 		portraits={
 			civilian={
 				large="gfx/leaders/SND/Portrait_Shandong_Zhang_Zongchang.tga"
@@ -492,7 +492,7 @@ characters={
 	}
 	
 	SZC_liu_wen_hui = {
-		name="Liu Wenhui"
+		name="류원후이"
 		portraits={
 			civilian={
 				large="gfx/leaders/SZC/Portrait_SZC_Liu_Wenhui.tga"
@@ -520,7 +520,7 @@ characters={
 		}
 	}
 	ZLC_Wu_Peifu = {
-		name="Wu Peifu"
+		name="우페이푸"
 		portraits={
 			civilian={
 				large="gfx/leaders/ZLC/Portrait_QIE_Wu_Peifu.png"
@@ -548,7 +548,7 @@ characters={
 		}
 	}
 	ZLC_chao_kun = {
-		name="Chao Kun"
+		name="차오쿤"
 		portraits={
 			civilian={
 				large="gfx/leaders/ZLC/Portrait_ZLC_Chao_kun.png"
@@ -569,7 +569,7 @@ characters={
 		}
 	}
 	ZLC_Jiang_Baili = {
-		name="Jiang Baili"
+		name="장바이리"
 		portraits={
 			civilian={
 				large="gfx/leaders/ZLC/Portrait_QIE_Jiang_Baili.png"
@@ -590,7 +590,7 @@ characters={
 		}
 	}
 	ZLC_Wang_Huaiqing = {
-		name="Wang Huaiqing"
+		name="왕화이칭"
 		portraits={
 			civilian={
 				large="gfx/leaders/ZLC/Portrait_QIE_Wang_Huaiqing.png"

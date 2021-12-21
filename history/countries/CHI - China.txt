@@ -19,11 +19,23 @@ add_ideas = {
 	CHI_legacy_of_sun_wen
 	CHI_failed_north_attack
 	CHI_era_of_chinese_warlords_1
+	CHI_ineffective_bureaucracy_1
+		PRC_government_corruption
+		CHI_ineffective_bureaucracy_warlord
 }
 	add_ideas = {
 		PRC_government_corruption
-	CHI_hyper_inflation_none
+	CHI_hyper_inflation_1
 	}
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+	}
+	add_ideas = {
+		PRC_government_corruption
+		CHI_ineffective_bureaucracy_warlord
+	}
+}
 set_research_slots = 3
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }

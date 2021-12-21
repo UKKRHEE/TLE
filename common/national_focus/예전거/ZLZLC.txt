@@ -1,0 +1,2283 @@
+focus_tree = {
+	id = china_nationalist_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NEP
+		}
+	}
+
+	default = no
+	shared_focus = CHI_invite_foreign_investors
+
+	continuous_focus_position = { x = 50 y = 1200 }
+	########################################################################
+	focus = {
+		id = ZLC_constitution
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		x = 3
+		y = 0
+		available = {
+		has_completed_focus = ZLC_stay_on_course
+		}
+		completion_reward = {
+		add_political_power = 120
+		}
+	}
+	focus = {
+		id = ZLC_rebuild
+		icon = GFX_focus_generic_little_entente
+		cost = 10.00
+		x = 15
+		y = 0
+		completion_reward = {
+		army_experience = 10
+		navy_experience = 10
+		air_experience = 10
+		}
+	}
+	#Politics
+	focus = {
+		id = ZLC_stay_on_course
+		icon = GFX_focus_generic_china1
+		cost = 1.50
+		x = 39
+		y = 0
+		bypass = {
+			NOT = {
+				original_tag = ZLC
+			}
+		}
+		completion_reward = {
+		add_stability = 0.01
+		country_event = { id = china.1021 }
+		}
+	}
+	###############################################################################################################################
+	focus = {
+		id = ZLC_chiang
+		icon = GFX_focus_prc_remove_chiang_kai_shek
+		cost = 5.00
+		prerequisite = {
+			focus = ZLC_stay_on_course
+		}
+		mutually_exclusive = {
+			focus = ZLC_left
+		}
+		bypass = {
+			NOT = {
+				original_tag = ZLC
+			}
+		}
+		available = {	
+			if = {
+				limit = {
+					original_tag = ZLC
+				}
+		    has_country_leader = { name = "Wu Peifu" ruling_only = yes }
+			}
+			if = {
+				limit = {
+					NOT = {
+						original_tag = ZLC
+					}
+				}
+				has_political_power > 1
+			}
+        }
+		x = 29
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ZLC_invite_military_members
+		icon = GFX_chi_mil_gov
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_chiang
+		}
+		x = 28
+		y = 2
+		completion_reward = {
+		add_war_support = 0.05
+		add_popularity = { ideology = neutrality popularity = 0.05 } 
+		}
+	}
+	focus = {
+		id = ZLC_restrict_the_party
+		icon = GFX_chi_restrict_party
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_chiang
+		}
+		x = 30
+		y = 2
+		completion_reward = {
+		add_political_power = 100
+		add_stability = -0.05
+		}
+	}
+	focus = {
+		id = ZLC_war_propaganda
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+		focus = ZLC_restrict_the_party
+		focus = ZLC_invite_military_members
+		}
+		x = 28
+		y = 4
+		completion_reward = {
+		add_war_support = 0.10
+		add_popularity = { ideology = neutrality popularity = 0.10 } 
+		}
+	}
+	focus = {
+		id = ZLC_remilitarize_shangai
+		icon = GFX_goal_generic_military_sphere
+		cost = 2.00
+		prerequisite = {
+		focus = ZLC_invite_military_members
+		focus = ZLC_restrict_the_party
+		}
+		x = 29
+		y = 3
+		completion_reward = {
+			if = {
+				limit = {
+					WZC = {
+						exists = yes
+					}
+				}
+				create_wargoal = {
+					type = annex_everything 
+					target = WZC
+				}
+			}	
+			if = {
+				limit = {
+					HNC = {
+						exists = yes
+					}
+				}
+				create_wargoal = {
+					type = annex_everything 
+					target = HNC
+				}
+			}	
+		}
+	}
+	focus = {
+		id = ZLC_absolute_controll
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10.00
+		prerequisite = {
+		focus = ZLC_restrict_the_party
+		focus = ZLC_invite_military_members
+		}
+		x = 30
+		y = 4
+		completion_reward = {
+		add_ideas = CHI_absolut_control
+		remove_ideas = CHI_disjointed_gov
+		}
+	}
+	focus = {
+		id = ZLC_new_problem
+		icon = GFX_focus_chi_country_side
+		cost = 10.00
+		prerequisite = {
+		focus = ZLC_absolute_controll	
+		}
+		x = 31
+		y = 5
+		completion_reward = {
+		add_stability = -0.05
+		country_event = { id = china.1058 }
+		}
+	}
+	focus = {
+		id = ZLC_new_life
+		icon = GFX_focus_chi_new_life
+		cost = 10.00
+		prerequisite = {
+		focus = ZLC_war_propaganda
+		}
+		x = 27
+		y = 5
+		completion_reward = {
+		 country_event = { id = china.1059 }
+		}
+	}
+	focus = {
+		id = ZLC_unite_campaign
+		icon = GFX_chi_blue
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_war_propaganda
+			focus = ZLC_absolute_controll
+		}
+		x = 29
+		y = 5
+		completion_reward = {
+		add_timed_idea = { idea = CHI_unite_morale  days = 1000 }
+		}
+	}
+	focus = {
+		id = ZLC_work_longer
+		icon = GFX_goal_generic_construction2
+		cost = 5.00
+		prerequisite = {
+			focus = ZLC_unite_campaign
+		}
+		x = 28
+		y = 6
+		completion_reward = {
+		add_ideas = CHI_longer_workshifts
+		}
+	}
+	focus = {
+		id = ZLC_militarian_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5.00
+		prerequisite = {
+			focus = ZLC_unite_campaign
+		}
+		x = 30
+		y = 6
+		completion_reward = {
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 3
+		 add_building_construction = {
+			 type = arms_factory
+			 level = 3
+			 instant_build = yes
+		    }
+		   } 
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 3
+		 add_building_construction = {
+			 type = arms_factory
+			 level = 3
+			 instant_build = yes
+		    }
+		   }   
+		}
+	}
+	focus = {
+		id = ZLC_west_warlord
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 5.00
+		prerequisite = {
+			focus = ZLC_unite_campaign
+		}
+		x = 27
+		y = 7
+		available = {
+		has_army_manpower = {
+        size > 150000
+           } 
+        YUN  = { exists = yes }
+        NOT = { has_non_aggression_pact_with = YUN }
+        NOT = { is_in_faction_with = YUN }
+		}
+        will_lead_to_war_with = YUN
+		completion_reward = {
+		declare_war_on = {
+        target = YUN
+        type = annex_everything
+        }
+		declare_war_on = {
+        target = SZC
+        type = annex_everything
+        }
+		}
+	}
+	focus = {
+		id = ZLC_north_campaign
+		icon = GFX_chi_kill_emp
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_unite_campaign
+		}
+		x = 29
+		y = 7
+		available = {
+		has_army_manpower = {
+        size > 250000
+           } 
+        CHI  = { exists = yes }
+        NOT = { has_non_aggression_pact_with = CHI }
+        NOT = { is_in_faction_with = CHI }
+		}
+		will_lead_to_war_with = CHI
+		completion_reward = {
+		add_war_support = 0.05
+		create_wargoal = {
+        type = annex_everything
+        target = CHI
+           } 
+		create_wargoal = {
+        type = annex_everything
+        target = GXC
+           } 
+		}
+	}
+	focus = {
+		id = ZLC_root_out_communist
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_unite_campaign
+		}
+		x = 31
+		y = 7
+		available = {
+		has_army_manpower = {
+        size > 350000
+           } 
+        PRC = { exists = yes }
+        NOT = { has_non_aggression_pact_with = PRC }
+        NOT = { is_in_faction_with = PRC }
+		}
+		will_lead_to_war_with = PRC
+		completion_reward = {
+		declare_war_on = {
+        target = PRC
+        type = annex_everything
+        }
+		declare_war_on = {
+        target = XSM
+        type = annex_everything
+        }
+		declare_war_on = {
+        target = SIK
+        type = annex_everything
+        }
+		}
+	}
+	focus = {
+		id = ZLC_re_manchu
+		icon = GFX_focus_jap_cast_the_die
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_west_warlord
+			focus = ZLC_north_campaign
+			focus = ZLC_root_out_communist
+		}
+		x = 29
+		y = 8
+		available = {
+		has_army_manpower = {
+        size > 500000
+           } 
+        KOR = { exists = yes }
+        NOT = { has_non_aggression_pact_with = KOR }
+        NOT = { is_in_faction_with = KOR }
+		}
+		will_lead_to_war_with = KOR
+		will_lead_to_war_with = KMN
+		completion_reward = {
+		declare_war_on = {
+        target = KOR
+        type = annex_everything
+        }
+		}
+	}
+	focus = {
+		id = ZLC_silence_the_left
+		icon = GFX_goal_demand_sudetenland
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_chiang
+		}
+		x = 26
+		y = 2
+		completion_reward = {
+		add_stability = -0.025
+		add_popularity = { ideology = democratic popularity = -0.05 } 
+		}
+	}
+	focus = {
+		id = ZLC_ban_members
+		icon = GFX_chi_ban_left
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_silence_the_left
+		}
+		x = 26
+		y = 3
+		completion_reward = {
+		add_stability = -0.025
+        add_popularity = { ideology = democratic popularity = -0.10 } 
+		}
+	}
+	focus = {
+		id = ZLC_purge_socialist_and_communist
+		icon = GFX_chi_socialist_purge
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_ban_members
+		}
+		x = 26
+		y = 4
+		completion_reward = {
+		add_stability = -0.025
+		add_popularity = { ideology = democratic popularity = -0.10 } 
+		add_popularity = { ideology = communism popularity = -0.10 } 
+		}
+	}
+	focus = {
+		id = ZLC_attack_capitalists
+		icon = GFX_chi_capitalist
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_chiang
+		}
+		x = 32
+		y = 2
+		completion_reward = {
+		add_political_power = 50
+		add_popularity = { ideology = democratic popularity = -0.025 } 
+		}
+	}
+	focus = {
+		id = ZLC_seize_assets
+		icon = GFX_chi_seize
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_government_controlled_industry
+		}
+		x = 32
+		y = 3
+		completion_reward = {
+		add_ideas = CHI_seized_assets
+		add_popularity = { ideology = democratic popularity = -0.025 } 
+		}
+	}
+	focus = {
+		id = ZLC_government_controlled_industry
+		icon = GFX_chi_state_controlled
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_attack_capitalists
+		}
+		x = 32
+		y = 4
+		completion_reward = {
+		add_ideas = CHI_controlled_industry
+		add_popularity = { ideology = democratic popularity = -0.1 } 
+		}
+	}
+	#####################################################################################################################################
+	focus = {
+		id = ZLC_left
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_stay_on_course
+		}
+		mutually_exclusive = {
+			focus = ZLC_chiang
+		}
+		available = {
+		NOT = { has_country_leader = { name = "Wu Peifu" ruling_only = yes } }
+		original_tag = ZLC
+        }
+		x = 49
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ZLC_attract_investors
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_left
+		}
+		x = 46
+		y = 2
+		completion_reward = {
+		add_ideas = CHI_new_investors
+		}
+	}
+	focus = {
+		id = ZLC_unite_the_party
+		icon = GFX_goal_generic_major_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_left
+		}
+		x = 52
+		y = 2
+		completion_reward = {
+		add_political_power = -200
+		}
+	}
+	focus = {
+		id = ZLC_deal_with_chiang
+		icon = GFX_focus_chi_deal_chiang
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_unite_the_party
+		}
+		x = 51
+		y = 3
+		completion_reward = {
+		CHI = {
+		country_event = { id = china.1086 }
+		}
+		}
+	}
+	focus = {
+		id = ZLC_regain_trust_of_warlords
+		icon = GFX_focus_chi_compromise_warlords
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_unite_the_party
+		}
+		x = 53
+		y = 3
+		completion_reward = {
+		add_stability = -0.1
+		swap_ideas = {
+        remove_idea = CHI_risk_of_famine
+        add_idea = CHI_risk_of_famine_1
+        }
+		
+		}
+	}
+	focus = {
+		id = ZLC_land_reforms
+		icon = GFX_focus_chi_land_reform
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_regain_trust_of_warlords
+		}
+		x = 54
+		y = 4
+		completion_reward = {
+		add_stability = 0.05
+		remove_ideas = CHI_risk_of_famine_1
+        
+        325 = {
+		remove_building = {
+        type = industrial_complex
+        level = 2
+        }
+        }
+        613 = {
+        remove_building = {
+        type = industrial_complex
+        level = 1
+        }
+        }
+        592 = {
+        remove_building = {
+        type = industrial_complex
+        level = 1
+        }
+        }
+		}
+	}
+	focus = {
+		id = ZLC_trial_the_military
+		icon = GFX_focus_chi_control_army
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_deal_with_chiang
+		}
+		x = 50
+		y = 4
+		completion_reward = {
+		add_stability = 0.025
+		add_command_power = -100
+		}
+	}
+	focus = { 
+		id = ZLC_root_out_corruption
+		icon = GFX_focus_chi_corruption
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_land_reforms
+		}
+		prerequisite = {
+			focus = ZLC_trial_the_military
+		}
+		prerequisite = {
+			focus = ZLC_regain_trust_of_warlords
+		}
+		prerequisite = {
+			focus = ZLC_deal_with_chiang
+		}
+		x = 52
+		y = 5
+		completion_reward = {
+		add_stability = 0.1
+		remove_ideas = CHI_disjointed_gov
+		every_other_country = {
+			limit = {
+				is_puppet_of = ROOT
+				OR = {
+					original_tag = CHI
+					original_tag = SHX
+					original_tag = XSM 
+					original_tag = WZC
+					original_tag = HNC
+					original_tag = SIK
+					original_tag = SZC
+					original_tag = SND
+					original_tag = YUN
+					original_tag = GXC
+				}
+			}
+			country_event = {
+				id = china.1088
+			}
+		}
+		}
+	}
+	focus = {
+		id = ZLC_infrastructure_brings_more_workers
+		icon = GFX_chi_left_infraproject
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_attract_investors
+		}
+		x = 46
+		y = 3
+		completion_reward = {
+		add_stability = 0.05
+		613 = {
+			if = {
+				limit = { is_controlled_by = CHI }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		592 = {
+			if = {
+				limit = { is_controlled_by = CHI }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		594 = {
+			if = {
+				limit = { is_controlled_by = CHI }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+	}
+	focus = {
+		id = ZLC_harbors
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_attract_investors
+		}
+		x = 48
+		y = 3
+		completion_reward = {
+		613 = {
+        add_building_construction = {
+        type = dockyard
+        level = 1
+        instant_build = yes
+        }	
+        add_building_construction = {
+        type = naval_base
+        level = 2
+        instant_build = yes
+        }
+		}
+		592 = {
+        add_building_construction = {
+        type = dockyard
+        level = 1
+        instant_build = yes
+        }
+        add_building_construction = {
+        type = naval_base
+        level = 2
+        instant_build = yes
+        }	
+		}
+		}
+	}	
+	focus = {
+		id = ZLC_resources
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_attract_investors
+		}
+		x = 44
+		y = 3
+		completion_reward = {
+		add_resource = {
+        type = oil
+        amount = 4
+        state = 747
+        }   
+        add_resource = {
+        type = oil
+        amount = 10
+        state = 748
+        } 
+        add_resource = {
+        type = aluminium
+        amount = 8
+        state = 600
+        } 
+        add_resource = {
+        type = tungsten
+        amount = 8
+        state = 599
+        }
+        add_resource = {
+        type = tungsten
+        amount = 8
+        state = 593
+        }
+		}
+	}		
+	focus = {
+		id = ZLC_backlands_work
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_infrastructure_brings_more_workers
+		}
+		x = 46
+		y = 4
+		completion_reward = {
+		603 = {
+		 add_extra_state_shared_building_slots = 1
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 1
+			 instant_build = yes
+		    }
+		  }
+		747 = {
+		 add_extra_state_shared_building_slots = 1
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 1
+			 instant_build = yes
+		    }
+		  }  
+		596 = {
+		 add_extra_state_shared_building_slots = 1
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 1
+			 instant_build = yes
+		    }
+		  }  
+	    }
+	}
+	focus = {
+		id = ZLC_future_of_china
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 7.2
+		prerequisite = {
+			focus = ZLC_left
+		}
+		x = 49
+		y = 5
+		completion_reward = {
+		add_political_power = 120
+		add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ZLC_the_real_threat
+		icon = GFX_focus_AST_war_japan
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_future_of_china
+		}
+		available = {
+		JAP = { has_completed_focus = JAP_rising_sun }
+		}
+		x = 45
+		y = 6
+		completion_reward = {
+		add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = ZLC_defensive_alliance
+		icon = GFX_goal_generic_national_unity
+		cost = 5.00
+		prerequisite = {
+			focus = ZLC_the_real_threat
+		}
+		x = 44
+		y = 7
+		completion_reward = {
+		PRC = { country_event = { id = china.1039 } }
+		SHX = { country_event = { id = china.1040 } }
+		}
+	}
+	focus = {
+		id = ZLC_coastal_defenses
+		icon = GFX_focus_generic_coastal_fort
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_the_real_threat
+		}
+		x = 46
+		y = 7
+		completion_reward = {
+		593 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 1047
+					instant_build = yes
+				  }		
+				}
+		    }
+		613 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 7014
+					instant_build = yes
+				  }		
+				}
+		    }    
+		613 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 7014
+					instant_build = yes
+				  }		
+				}
+		    }
+		591 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 1070^^
+					instant_build = yes
+				  }		
+				}
+		    }         
+		}
+	}
+	focus = {
+		id = ZLC_buying_ships
+		icon = GFX_focus_generic_destroyer
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_coastal_defenses
+		}
+		x = 46
+		y = 8
+	completion_reward = {
+    add_equipment_to_stockpile = {
+    type = destroyer
+    amount = 15
+    producer = USA
+    }
+    add_timed_idea = {
+    idea = CHI_payments
+    days = 250
+       }  
+      }
+	}
+	focus = {
+		id = ZLC_yunnan
+		icon = GFX_focus_chi_sichuan_unite
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_future_of_china
+		}
+		x = 49
+		y = 6
+		completion_reward = {
+			YUN = {
+				country_event = { id = china.1045 }
+			}
+		}
+	}
+	focus = {
+		id = ZLC_secret_alliance
+		icon = GFX_focus_prc_social_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_yunnan
+		}
+		x = 49
+		y = 7
+		completion_reward = {
+		PRC = { country_event = { id = china.1050 } }
+		}
+	}
+	focus = {
+		id = ZLC_old_goal
+		icon = GFX_focus_chi_qing
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_secret_alliance
+		}
+		x = 49
+		y = 8
+		will_lead_to_war_with = SHX
+		completion_reward = {
+		SHX = { country_event = { id = china.1053 } }
+		}
+	}
+	focus = {
+		id = ZLC_unify
+		icon = GFX_focus_chi_united_front
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_old_goal
+		}
+		available = {
+        NOT = { has_completed_focus = ZLC_betray }
+		}
+		x = 48
+		y = 9
+		completion_reward = {
+		PRC = { country_event = { id = china.1055 } }
+		add_stability = -0.1
+		}
+	}
+	focus = {
+		id = ZLC_betray
+		icon = GFX_focus_prc_infiltration
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_old_goal
+		}
+		x = 50
+		y = 9
+		will_lead_to_war_with = PRC
+		completion_reward = {
+		create_wargoal = {
+        type = annex_everything
+        target = PRC
+        }
+		}
+	}
+	focus = {
+		id = ZLC_bear
+		icon = GFX_focus_rus_russiantsar
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_future_of_china
+		}
+		available = {
+		country_exists = RUS
+		NOT = { RUS = { has_government = democratic } }
+		}
+		x = 53
+		y = 6
+		completion_reward = {
+		add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = ZLC_our_lands
+		icon = GFX_focus_generic_provoke_border_clashes
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_bear
+		}
+		available = {
+		country_exists = RUS
+		NOT = { RUS = { has_government = democratic } }
+		}
+		x = 53
+		y = 7
+		completion_reward = {
+		RUS = { country_event = { id = china.1046 } }
+		}
+	}
+	focus = {
+		id = ZLC_demand
+		icon = GFX_goal_generic_political_pressure
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_our_lands
+		}
+		available = {
+		country_exists = RUS
+		NOT = { RUS = { has_government = democratic } }
+		NOT = { country_exists = PRC country_exists = SHX }
+		}
+		x = 53
+		y = 8
+		completion_reward = {
+		RUS = { country_event = { id = china.1049 } }
+		}
+	}
+	focus = {
+		id = ZLC_western_support
+		icon = GFX_focus_generic_license_production
+		cost = 20.00
+		prerequisite = {
+			focus = ZLC_demand
+		}
+		x = 53
+		y = 9
+		completion_reward = {
+		add_equipment_to_stockpile = {
+        type = infantry_equipment
+        amount = 5000
+        producer = ENG
+        }
+        add_equipment_to_stockpile = {
+        type = artillery_equipment_1
+        amount = 2000
+        producer = FRA
+        }
+        add_equipment_to_stockpile = {
+        type = medium_tank_equipment
+        amount = 1000
+        producer = USA
+        }
+		}
+	}
+	##################################################################################################################################################
+		focus = {
+		id = ZLC_defence_fond
+		icon = GFX_goal_generic_military_sphere
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_rebuild
+		}
+		available = {
+		has_completed_focus = ZLC_stay_on_course
+		}
+		x = 15
+		y = 1
+		completion_reward = {
+		add_ideas = RUS_fortification_focus
+		}
+	}
+	focus = {
+		id = ZLC_defend_JAP
+		icon = GFX_goal_generic_fortify_city
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_defence_fond
+		}
+		x = 14
+		y = 2
+		completion_reward = {
+				613 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 7014
+					instant_build = yes
+				  }
+				 add_building_construction = {
+					type = bunker
+					level = 4
+					province = 11913
+					instant_build = yes
+				  }
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 996
+					instant_build = yes
+				  }
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 10076
+					instant_build = yes
+				  }
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 11986
+					instant_build = yes
+				  }
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 10034
+					instant_build = yes
+				  }	
+				  
+					
+		         }	
+				}
+	}
+	}
+	focus = {
+		id = ZLC_coastal_def
+		icon = GFX_goal_generic_construct_military
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_defence_fond
+		}
+		x = 16
+		y = 2
+        completion_reward = {
+				595 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = coastal_bunker
+					level = 5
+					province = 4196
+					instant_build = yes
+				  }		
+				}
+				}
+		592 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = coastal_bunker
+					level = 5
+					province = 1047
+					instant_build = yes	
+				  }		
+				}
+				}	
+		613 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = coastal_bunker
+					level = 5
+					province = 7014
+					instant_build = yes
+				  }		
+				  
+					
+		         }	
+				}
+	}
+	}
+	focus = {
+		id = ZLC_stabilize_economy
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_infrastructure
+		}
+		x = 2
+		y = 2
+		completion_reward = {
+		add_political_power = 100
+		add_stability = 0.05
+		
+		}
+	}
+	focus = {
+		id = ZLC_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_constitution
+		}
+		x = 2
+		y = 1
+		completion_reward = {
+			750 = {
+			if = {
+				limit = { is_controlled_by = CHI }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		748 = {
+			if = {
+				limit = { is_controlled_by = CHI }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		603 = {
+			if = {
+				limit = { is_controlled_by = CHI }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}			
+			}
+		}
+	}	
+	focus = {
+		id = ZLC_slot2
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_dockyard_effort
+			focus = ZLC_radars
+		}
+		available = {
+			num_of_factories > 75
+		}
+		x = 3
+		y = 6
+		completion_reward = {
+		add_research_slot = 1 
+		}
+	}
+	focus = {
+		id = ZLC_industrial_effort1
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_stabilize_economy
+			focus = ZLC_slot1
+		}
+		x = 3
+		y = 3
+		completion_reward = {
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 2
+			 instant_build = yes
+		    }
+		  }
+	    }
+	}
+	focus = {
+		id = ZLC_industrial_effort2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_industrial_effort1
+		}
+		x = 2
+		y = 4
+		completion_reward = {
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = arms_factory
+			 level = 2
+			 instant_build = yes
+		    }
+		  }
+	    }
+	}	
+	focus = {
+		id = ZLC_dockyard_effort
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_industrial_effort2
+		}
+		x = 2
+		y = 5
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}			
+		}
+	}
+	focus = {
+		id = ZLC_school_reform
+		icon = GFX_goal_generic_defence
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_constitution
+		}
+		x = 4
+		y = 1
+		completion_reward = { 
+		add_ideas = CHI_edu_reform
+		}
+	}
+	focus = {
+		id = ZLC_slot1
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_school_reform
+		}
+		x = 4
+		y = 2
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+	focus = {
+		id = ZLC_sprite
+		icon = GFX_goal_generic_cavalry
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_industrial_effort1
+		}
+		x = 4
+		y = 4
+		completion_reward = {
+		add_ideas = CHI_new_labour	
+		}
+	}
+	focus = {
+		id = ZLC_radars
+		icon = GFX_goal_generic_radar
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_sprite
+		}
+		x = 4
+		y = 5
+        completion_reward = {
+		air_experience = 15
+        add_tech_bonus = {
+				name = electronic_bonus
+				bonus = 1.0
+				uses = 1
+				category = electronics
+			}
+		}
+	}
+	focus = {
+		id = ZLC_army_path
+		icon = GFX_focus_chi_whampoa_military_academy
+		cost = 8.00
+		prerequisite = {
+			focus = ZLC_rebuild
+		}
+		x = 9
+		y = 1
+		completion_reward = {
+			country_event = { id = china.1025 }
+		}
+	}
+	focus = {
+		id = ZLC_inf_equipment
+		icon = GFX_chi_type_24
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_army_path
+		}
+		x = 7
+		y = 2
+		completion_reward = {
+
+        add_tech_bonus = {
+        bonus = 1.0
+        uses = 1
+        technology = infantry_weapons1
+        }
+
+        add_equipment_to_stockpile = {
+        type = infantry_equipment
+        amount = 1000
+        producer = CHI
+        }
+		}
+	}
+	focus = {
+		id = ZLC_inf_equipment_hard_buy
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_inf_equipment
+		}
+		x = 7
+		y = 3
+		completion_reward = {
+		add_equipment_to_stockpile = {
+        type = infantry_equipment
+        amount = 7500
+        producer = ENG
+        }
+	    add_timed_idea = { idea = CHI_weapon_payment days = 100 }
+	    ENG = { add_timed_idea = { idea = CHI_weapon_payment_eng days = 100 } }
+		}
+	}
+	focus = {
+		id = ZLC_artillery
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_army_path
+		}
+		x = 10
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.0
+				uses = 2
+				#category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = ZLC_air
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 2.0
+		prerequisite = {
+			focus = ZLC_rebuild
+		}
+		x = 21
+		y = 1
+		completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		}
+	}
+	focus = {
+		id = ZLC_air_warfare
+		icon = GFX_focus_chi_air_question
+		cost = 5.00
+		prerequisite = {
+			focus = ZLC_air
+		}
+		x = 18
+		y = 2
+		completion_reward = {
+        country_event = { days = 1 id = china.1085 }
+	 }
+	}
+	focus = {
+		id = ZLC_fighter
+		icon = GFX_focus_chi_flying_tigers
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_air_warfare
+		}
+		x = 18
+		y = 3
+		completion_reward = {
+		air_experience = 10
+		add_equipment_to_stockpile = {
+        type = fighter_equipment
+        amount = 150
+        producer = USA
+        }
+        set_technology = {
+        fighter1 = 1
+        }
+		}
+	}
+	focus = {
+		id = ZLC_new_fighter
+		icon = GFX_goal_generic_air_fighter
+		cost = 7.20
+		prerequisite = {
+			focus = ZLC_fighter
+		}
+		x = 16
+		y = 4
+		available = {
+		has_tech = force_rotation
+		}
+		completion_reward = {
+		air_experience = 10
+			add_tech_bonus = {
+				name = figher_bonus
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+			}
+		}
+	}
+	focus = {
+		id = ZLC_cas
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 7.20
+		prerequisite = {
+			focus = ZLC_fighter
+		}
+		x = 18
+		y = 4
+		available = {
+		has_tech = formation_flying
+		}
+		completion_reward = {
+		air_experience = 10
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 1.0
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+	focus = {
+		id = ZLC_bomber
+		icon = GFX_goal_generic_air_bomber
+		cost = 7.20
+		prerequisite = {
+			focus = ZLC_fighter
+		}
+		available = {
+		has_tech = air_superiority	
+		}
+		x = 20
+		y = 4
+		completion_reward = {
+		air_experience = 10
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 1
+				#technology = strategic_bomber1
+				#technology = strategic_bomber2
+				#technology = strategic_bomber3
+				category = tactical_bomber
+				category = cat_strategic_bomber
+			}
+		}
+	}
+	focus = {
+		id = ZLC_air_school
+		icon = GFX_focus_chi_air_school
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_new_fighter
+			focus = ZLC_cas
+			focus = ZLC_bomber
+		}
+		x = 18
+		y = 5
+		completion_reward = {
+		air_experience = 50
+        add_ideas = CHI_air_training
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = ZLC_medium_tank
+		icon = GFX_goal_generic_army_tanks
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_support
+		}
+		available = {
+			has_army_experience > 450
+		}
+		x = 13
+		y = 3
+		completion_reward = {
+		add_tech_bonus = {
+			name = med_armor_bonus
+			ahead_reduction = 1
+			uses = 2
+			category = armor
+		}
+		
+		}
+	}
+	focus = {
+		id = ZLC_support
+		icon = GFX_focus_generic_combined_arms
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_army_path
+		}
+		available = {
+			has_army_experience > 75
+		}
+		x = 12
+		y = 2
+		completion_reward = {
+		add_tech_bonus = {
+			name = med_armor_bonus
+			ahead_reduction = 1
+			uses = 1
+			category = support_tech
+		}
+		
+		}
+	}
+	focus = {
+		id = ZLC_motorized
+		icon = GFX_focus_chi_trucks
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_support
+		}
+		available = {
+			has_army_experience > 125
+		}
+		x = 11
+		y = 3
+		completion_reward = {
+		add_tech_bonus = {
+			name = motorized_bonus
+			ahead_reduction = 1
+			uses = 1
+			category = motorized_equipment
+		}
+		add_equipment_to_stockpile = {
+        type = motorized_equipment
+        amount = 1000
+        producer = USA
+        }
+		}
+	}
+	focus = {
+		id = ZLC_begin_sea
+		icon = GFX_goal_generic_build_navy
+		cost = 5.00
+		prerequisite = {
+			focus = ZLC_air
+		}
+		x = 23
+		y = 2
+	   completion_reward = {
+		navy_experience = 5
+	    add_equipment_to_stockpile = {
+        type = convoy
+        amount = 100
+       }
+     }
+	}
+	focus = {
+		id = ZLC_fleet_in_being
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_begin_sea
+		}
+		mutually_exclusive = {
+			focus = ZLC_flex_navy
+		}
+		x = 22
+		y = 3
+		completion_reward = {
+		navy_experience = 25
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 1.0
+				uses = 2
+				category = fleet_in_being_tree
+			}
+		}
+	}
+	focus = {
+		id = ZLC_models
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 5.00
+		prerequisite = {
+			focus = ZLC_fleet_in_being
+		}
+		x = 22
+		y = 4
+		completion_reward = {
+		navy_experience = 15
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 1.0
+				uses = 2
+				category = bb_tech
+				category = cl_tech
+			}
+		}
+	}	
+	focus = {
+		id = ZLC_navy_equip
+		icon = GFX_goal_continuous_naval_production
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_models
+		}
+		x = 22
+		y = 5
+		completion_reward = {
+		navy_experience = 5
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 1.0
+				uses = 4
+				category = naval_equipment
+			}
+		}
+	}
+	focus = {
+		id = ZLC_flex_navy
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_begin_sea
+		}
+		mutually_exclusive = {
+			focus = ZLC_fleet_in_being
+		}
+		x = 24
+		y = 3
+		completion_reward = {
+		navy_experience = 25
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 2
+				category = cat_trade_interdiction
+			}
+		}
+	}
+	focus = {
+		id = ZLC_submarine_models
+		icon = GFX_goal_generic_navy_submarine
+		cost = 7.20
+		prerequisite = {
+			focus = ZLC_flex_navy
+		}
+		x = 24
+		y = 4
+		completion_reward = {
+		navy_experience = 15
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 2
+				category = ss_tech
+			}
+		}
+	}
+	focus = {
+		id = ZLC_naval_bombers
+		icon = GFX_focus_usa_escort_fighters
+		cost = 5.00
+		prerequisite = {
+			focus = ZLC_submarine_models
+		}
+		x = 24
+		y = 5
+		completion_reward = {
+		navy_experience = 5
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
+	focus = {
+		id = ZLC_army_developing
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_army_path
+		}
+		x = 9
+		y = 3
+		completion_reward = {
+		army_experience = 10
+		add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = ZLC_army_developing_foreign
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_army_developing
+		}
+		x = 9
+		y = 4
+		completion_reward = {
+		GER = { country_event = { days = 1 id = china.1026 } }
+		ENG = { country_event = { days = 1 id = china.1026 } }
+		}
+	}
+	focus = {
+		id = ZLC_army_stable
+		icon = GFX_focus_chi_army_reform
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_army_developing_foreign
+		}
+		available = {
+			has_army_experience > 350
+		}
+		x = 9
+		y = 5
+		completion_reward = {
+		army_experience = 30
+		add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = ZLC_diplomacy
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 5.00
+		prerequisite = {
+			focus = ZLC_stay_on_course
+		}
+		available = {
+		  	OR = {	has_completed_focus = ZLC_left has_completed_focus = ZLC_chiang }
+		}
+		x = 39
+		y = 3
+		completion_reward = {
+		add_political_power = 100
+		}
+	}
+	focus = {
+		id = ZLC_imperial
+		icon = GFX_goal_generic_CAS
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_diplomacy
+		}
+		mutually_exclusive = {
+			focus = ZLC_peace
+		}
+		available = {
+		  	has_completed_focus = ZLC_chiang 
+		}
+		x = 37
+		y = 4
+		completion_reward = {
+		add_political_power = 120
+		}
+	}
+	focus = {
+		id = ZLC_peace
+		icon = GFX_goal_generic_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_diplomacy
+		}
+		mutually_exclusive = {
+			focus = ZLC_imperial
+		}
+		available = {
+		  	has_completed_focus = ZLC_left
+		}
+		x = 41
+		y = 4
+		completion_reward = {
+		add_political_power = 120
+		}
+	}
+	focus = {
+		id = ZLC_approach_ENG
+		icon = GFX_focus_chi_british_cooperation
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_peace
+		}
+		mutually_exclusive = {
+			focus = ZLC_approach_FRA
+		}
+		available = {
+		ENG = { exists = yes }
+		}
+		x = 40
+		y = 5
+		completion_reward = {
+		ENG = {
+					add_opinion_modifier = { target = CHI modifier = improved_good }
+				}
+			}
+		}
+	focus = {
+		id = ZLC_joint_research
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_approach_ENG
+		}
+		available = {
+		ENG = { exists = yes }
+		}
+		x = 40
+		y = 6
+		completion_reward = {
+		    add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = ZLC_approach_FRA
+		icon = GFX_focus_chi_reach_out_to_france
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_peace
+		}
+		mutually_exclusive = {
+			focus = ZLC_approach_ENG
+		}
+		available = {
+		FRA = { exists = yes }
+		}
+		x = 42
+		y = 5
+		completion_reward = {
+		FRA = {
+					add_opinion_modifier = { target = CHI modifier = improved_good }
+				}
+			}
+		}
+	focus = {
+		id = ZLC_french_advisors
+		icon = GFX_goal_demand_sudetenland
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_approach_FRA
+		}
+		x = 42
+		y = 6
+		available = {
+		FRA = { exists = yes }
+		NOT = { FRA = { has_war = yes } }
+		}
+		completion_reward = {
+		FRA = {
+		country_event = { days = 1 id = china.1001 }
+		}
+		
+		}
+	}
+	focus = {
+		id = ZLC_join_ENG
+		icon = GFX_goal_anschluss
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_french_advisors
+			focus = ZLC_joint_research
+		}
+		x = 41
+		y = 7
+		bypass = { is_in_faction_with = ENG }
+		available = {
+		is_in_faction = no  
+		NOT = { has_war_with = ENG }
+		is_puppet = no 
+		ENG = { exists = yes } }
+		completion_reward = { 
+		ENG = {
+		country_event = { days = 1 id = generic.2 }
+		}
+		}
+	}
+	focus = {
+		id = ZLC_western_colonies
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_french_advisors
+			focus = ZLC_joint_research
+		}
+		x = 42
+		y = 8
+		bypass = { is_in_faction_with = ENG }
+		available = { 
+		NOT = { has_war_with = ENG }
+		is_puppet = no 
+		ENG = { exists = yes } }
+		completion_reward = { 
+		ENG = {
+		country_event = { days = 1 id = china.1013 }
+		}
+		}
+	}
+	focus = {
+		id = ZLC_mission_RUS
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_imperial
+		}
+		mutually_exclusive = {
+			focus = ZLC_approach_GER
+		}
+		x = 36
+		y = 5
+		available = { RUS = { exists = yes
+		NOT = { has_war_with = CHI }
+		}
+		}
+		completion_reward = {
+		RUS = {
+					add_opinion_modifier = { target = CHI modifier = improved_good }
+				}
+			}
+	}
+	focus = {
+		id = ZLC_naval_research
+		icon = GFX_goal_demand_sudetenland
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_mission_RUS
+		}
+		x = 36
+		y = 6
+		available = {
+		RUS = { exists = yes }
+		NOT = { RUS = { has_war = yes } }
+		}
+		completion_reward = {
+		RUS = {
+		country_event = { days = 1 id = china.1000 }
+		}
+		
+		}
+	}
+	focus = {
+		id = ZLC_join_RUS
+		icon = GFX_goal_anschluss
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_naval_research
+		}
+		x = 36
+		y = 7
+		bypass = { is_in_faction_with = RUS }
+		available = { 
+		NOT = { has_war_with = RUS }
+		is_puppet = no 
+		RUS = { exists = yes } }
+		completion_reward = { 
+		RUS = {
+		country_event = { days = 1 id = generic.2 }
+		}
+		}
+	}
+	focus = {
+		id = ZLC_Sinkiang_issue
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_join_RUS
+		}
+		x = 36
+		y = 8
+		bypass = { is_in_faction_with = RUS }
+		available = { 
+		NOT = { has_war_with = RUS }
+		is_puppet = no 
+		SIK = { exists = yes }
+		RUS = { exists = yes } }
+		completion_reward = { 
+		RUS = {
+		country_event = { days = 1 id = china.1016 }
+		}
+		}
+	}
+	focus = {
+		id = ZLC_improve_equipment
+		icon = GFX_goal_generic_military_sphere
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_approach_GER
+		}
+		available = { 
+		GER = { exists = yes }
+		}
+		x = 38
+		y = 6
+		completion_reward = {
+		add_equipment_to_stockpile = {
+        type = infantry_equipment
+        amount = 5000
+        producer = GER
+        }
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = ZLC_approach_GER
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_imperial
+		}
+		mutually_exclusive = {
+			focus = ZLC_mission_RUS
+		}
+		available = {
+		GER = { exists = yes 
+		}
+		}
+		x = 38
+		y = 5
+		completion_reward = {
+		GER =  {
+						add_opinion_modifier = {
+							target = CHI
+							modifier = improved_good
+						}
+					
+		}
+		}
+	}
+	focus = {
+		id = ZLC_inv_GER
+		icon = GFX_goal_anschluss
+		cost = 10.00
+		prerequisite = {
+			focus = ZLC_improve_equipment
+		}
+		x = 38
+		y = 7
+		bypass = { is_in_faction_with = GER }
+		available = { 
+		NOT = { has_war_with = GER }
+		is_puppet = no 
+		GER = { exists = yes } }
+		completion_reward = { 
+		GER = {
+		country_event = { days = 1 id = generic.2 }
+		}
+		}
+	}
+

@@ -40,14 +40,26 @@ CHI_nationalist_historical_plan = {
 	}
 
 	ai_national_focuses = {
-		CHC_victory
-		CHC_chiang
-		CHC_invite_military_members
-		CHC_war_propaganda
-		CHC_unite_campaign
-		CHC_restrict_the_party
-		CHC_absolute_controll
-		CHC_constitution
+		CHI_restore_the_chinag
+		CHI_north_expedition
+		CHI_go_north
+		CHI_go_west
+		CHI_threat_the_korea
+		CHI_preparation_war_with_korea
+		CHI_military_modernization
+		CHI_the_time_to_go_west
+		CHI_government_once
+		CHI_sanminzuyi_reconfirm
+		CHI_administrative_reorganization
+		CHI_new_life_movement_chiang
+		CHI_rural_development_policy
+		CHI_meritocratic_government
+		CHI_economic_problem
+		CHI_maintain_discipline
+		CHI_guangzhou_armed
+		CHI_nanzing_line
+		CHI_xiechi_with_sichuan
+		CHI_peace_with_sichuan
 	}
 
 	research = {

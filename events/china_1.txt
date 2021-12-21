@@ -1467,8 +1467,11 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		CHI = {
-			set_country_flag = FLAG_WZC_WAS_COLLAPESED
 			#complete_national_focus = CHC_victory
+			country_event = {
+				id = china.1102
+				days = 5
+			}
 		}
 		876 = {
 			
@@ -1486,7 +1489,7 @@ country_event = {
 		
 		country_event = {
 			id = china.1090
-			days = 11
+			days = 6
 		}
     }
 }
@@ -1653,5 +1656,47 @@ country_event = {
 		}
 			PRC = { change_tag_from = SHX }
 		
+    }
+}
+country_event = {
+	id = china.1101
+	title = china.1101.t
+	desc = china.1101.d
+    
+    picture = GFX_report_event_chi_great_war
+
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = china.1101.a
+    }
+}
+country_event = {
+	id = china.1102
+	title = china.1102.t
+	desc = china.1102.d
+    
+    picture = GFX_report_event_chi_great_war
+
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = china.1102.a
+			set_country_flag = FLAG_WZC_WAS_COLLAPESED
+			transfer_state = 876
+			transfer_state = 882
+			transfer_state = 865
+			add_state_core = 865
+			add_state_core = 882
+			add_state_core = 876
+			876 = {
+				set_demilitarized_zone = no
+			}
+			882 = {
+				set_demilitarized_zone = no
+			}
+			865 = {
+				set_demilitarized_zone = no
+			}
     }
 }

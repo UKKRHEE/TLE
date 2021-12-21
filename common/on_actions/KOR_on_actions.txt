@@ -58,11 +58,22 @@ on_actions = {
 			if = {
 				every_state = {
 					limit = {
-						is_core_of = CHI
+						is_core_of = PRC
 					}
 					add_core_of = ZLC
 					add_core_of = QIN
 					add_core_of = WZC
+				}
+			}
+			if = {
+				every_state = {
+					limit = {
+						is_core_of = CHI
+						NOT = {
+							is_owned_by = CHI
+						}
+					}
+					remove_core_of = CHI
 				}
 			}
 		}
@@ -455,6 +466,18 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					tag = CHI #점령국 - 대한
+					FROM = { 	
+						is_independent_china_or_warlord = yes
+					} #피점령국 - 중국
+					FROM.FROM = { is_core_of = ZLC is_claim_by = CHI } #점령 주 - 북경
+				}
+                FROM.FROM = {
+					add_core_of = CHI
+				}
+			}
+			if = {
+				limit = {
 					tag = PRC
 					NOT = {
 						has_country_flag = PRC_LOSE_IN_THE_TSINGHAI
@@ -561,7 +584,7 @@ on_actions = {
 					tag = CHI #점령국 - 대한
 					FROM = {
 						is_independent_china_or_warlord = yes
-						} #피점령국 - 중국
+					} #피점령국 - 중국
 					FROM.FROM = { state = 613 } #점령 주 - 난징
 					CHI = {
 						NOT = {
@@ -585,6 +608,13 @@ on_actions = {
 					transfer_state = 863
 					transfer_state = 858
 					transfer_state = 859
+				}
+				ZLC = {
+					transfer_state = 606
+					transfer_state = 861
+					transfer_state = 598
+					transfer_state = 872
+					transfer_state = 860
 				}
 			}
 			if = {
@@ -1447,7 +1477,7 @@ on_actions = {
 				}	
 				ITA = {
 					white_peace = KOR
-				}	
+				}
 				set_country_flag = TLE_THE_WAR_IS_ENDED
 				if = { #미국이 서울 입성했을 때
 					limit = { #평양에 소련군 없어야 함
@@ -1598,6 +1628,12 @@ on_actions = {
 					annex_country = {
 						target = MEN
 					}
+				}
+				every_country = {
+					limit = {
+						is_chinese_clique = yes
+					}
+					leave_faction = yes
 				}
 				every_other_country = {
 					limit = {
