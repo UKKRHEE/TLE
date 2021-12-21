@@ -1,13 +1,10 @@
 focus_tree = {
-	id = japan
+	id = DKG_Japan
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
-			OR = {
-				tag = JAP
-				tag = DKG
-			}
+			tag = DKG
 		}
 	}
 	default = no
