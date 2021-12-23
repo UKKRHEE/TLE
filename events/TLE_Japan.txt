@@ -114,9 +114,7 @@ country_event = {
 	option = {
 		name = Civilwar_of_Japan.3.a	
         ai_chance = { factor = 0.93 }
-		JAP = {
-			set_capital = 282
-		}
+		set_capital = { state = 282 }
 		add_political_power = 75
 		add_stability = 0.05
 		add_war_support = 0.05

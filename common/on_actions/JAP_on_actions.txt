@@ -20,6 +20,14 @@ on_actions = {
 					target = DKG
 					transfer_troops = yes
 				}
+				white_peace = { 
+					OR = {
+						tag = DKG
+						tag = TBJ
+						tag = GJJ
+					}
+   					message = JAP_win
+				}
 			}
 		}
 	}
