@@ -606,6 +606,7 @@ country_event = { #내전 발발
 		}
 		retire_character = JAP_yamato_junta
 		hidden_effect = {
+			set_country_flag = JAP_superevent_of_cw
 			JAP = {
 				create_faction = "유신파"
 			}
@@ -703,8 +704,10 @@ country_event = { #내전 발발
 			}
 			JAP = {
 				set_country_flag = Japanese_civil_war
+				set_country_flag = Japanese_civil_war_sp
 			}
 			set_country_flag = Japanese_civil_war
+			set_country_flag = Japanese_civil_war_sp
 		}
 	}
 	option = {
@@ -792,8 +795,10 @@ country_event = { #내전 발발
 			}
 			JAP = {
 				set_country_flag = Japanese_civil_war
+				set_country_flag = Japanese_civil_war_sp
 			}
 			set_country_flag = Japanese_civil_war
+			set_country_flag = Japanese_civil_war_sp
 		}
 	}
 }

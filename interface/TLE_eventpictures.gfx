@@ -75,4 +75,8 @@ spriteTypes = {
 		name = "GFX_fall_of_korea"
 		textureFile = "gfx/superevent_pictures/fall_of_korea.dds"
 	}
+	spriteType = {
+		name = "GFX_japan_cw"
+		textureFile = "gfx/superevent_pictures/japan_cw.png"
+	}
 }

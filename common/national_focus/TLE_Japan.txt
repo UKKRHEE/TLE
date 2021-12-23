@@ -1,9 +1,9 @@
 focus_tree = {
-	id = TLE_Japan
+	id = civilwar_japan
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 15
 			tag = JAP
 		}
 	}

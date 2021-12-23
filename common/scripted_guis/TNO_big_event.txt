@@ -118,7 +118,7 @@ scripted_gui = {
 			}
 		}
 	}
-	##한소전쟁##
+	##마지막 제국##
 	TNO_SG_big_event_fall_of_korea = { 
 		context_type = player_context
 		window_name = "TNO_SG_big_event_fall_of_korea"
@@ -145,6 +145,37 @@ scripted_gui = {
 					is_ai = yes
 				}
 				clr_country_flag = fall_of_korea
+			}
+		}
+	}
+
+	#일본 내전
+	TNO_SG_big_event_japan_cw = { 
+		context_type = player_context
+		window_name = "TNO_SG_big_event_japan_cw"
+
+		visible = {
+			has_country_flag = Japanese_civil_war_sp
+		}
+	}
+
+	TNO_SG_big_event_frame_japan_cw = {
+		context_type = player_context
+		window_name = "TNO_SG_big_event_frame_japan_cw"
+
+		visible = {
+			has_country_flag = Japanese_civil_war_sp
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = Japanese_civil_war_sp
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				clr_country_flag = Japanese_civil_war_sp
 			}
 		}
 	}

@@ -23,3 +23,8 @@ sound = {
 	file = "menu/tno_se_fall_of_korea.wav"
 	always_load = no
 }
+sound = {
+	name = "tno_se_2th_japan_cw"
+	file = "menu/tno_se_japan_cw.wav"
+	always_load = no
+}

@@ -33,3 +33,10 @@ soundeffect = {
 	}
 	volume = 55
 }
+soundeffect = {
+	name = tno_se_2th_japan_cw
+	sounds = {
+		sound = tno_se_2th_japan_cw
+	}
+	volume = 55
+}
