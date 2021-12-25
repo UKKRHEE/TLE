@@ -3,7 +3,7 @@
 music = {
 	name = "maintheme"
 	file = "kim_kwang_seok/letter_private.ogg"
-	volume = 1
+	volume = 0.8
 }
 
 # Anthem

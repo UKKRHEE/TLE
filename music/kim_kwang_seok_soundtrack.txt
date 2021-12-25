@@ -3,17 +3,8 @@ music_station = "kim_kwang_seok"
 
 # Peace Song
 
-music = {
-	song = "Though_I_Loved_You"
-	
-	chance = {
-		modifier = {
-			factor = 2
-			has_war = no
-		}
-	}
-}
 
+}
 music = {
 	song = "the_days"
 	

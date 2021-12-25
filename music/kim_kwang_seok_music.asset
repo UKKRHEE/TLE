@@ -2,13 +2,6 @@
 # MAIN THEME
 
 # Peace Song
-
-music = {
-	name = "Though_I_Loved_You"
-	file = "kim_kwang_seok/Though_I_Loved_You.ogg"
-	volume = 1.0
-}
-
 music = {
 	name = "the_days"
 	file = "kim_kwang_seok/the_days.ogg"
