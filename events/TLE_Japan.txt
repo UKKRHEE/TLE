@@ -702,10 +702,14 @@ country_event = { #내전 발발
 			}
 			JAP = {
 				set_country_flag = Japanese_civil_war
-				set_country_flag = Japanese_civil_war_sp
 			}
 			set_country_flag = Japanese_civil_war
-			set_country_flag = Japanese_civil_war_sp
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = Japanese_civil_war_sp
+			}
 		}
 	}
 	option = {
@@ -793,10 +797,14 @@ country_event = { #내전 발발
 			}
 			JAP = {
 				set_country_flag = Japanese_civil_war
-				set_country_flag = Japanese_civil_war_sp
 			}
 			set_country_flag = Japanese_civil_war
-			set_country_flag = Japanese_civil_war_sp
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = Japanese_civil_war_sp
+			}
 		}
 	}
 }
