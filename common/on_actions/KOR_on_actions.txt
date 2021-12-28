@@ -1391,7 +1391,7 @@ on_actions = {
 						id = korea.782
 					}
 				}
-				set_country_flag = fall_of_korea
+                                set_country_flag = fall_of_korea
 				KOR = {
 					set_country_flag = fall_of_korea
 					set_country_flag = TLE_THE_WAR_IS_ENDED
@@ -1400,6 +1400,22 @@ on_actions = {
 						id = korea.782
 					}
 				}
+                                if = {
+                                    limit = {
+                                        KOR = {
+            owns_state = 671
+            owns_state = 286
+            owns_state = 741
+            owns_state = 670
+                                        }
+    }
+    FRA = {
+        transfer_state = 286
+        transfer_state = 741
+        transfer_state = 670
+        transfer_state = 671
+    }
+}
 				KOR = {
 					every_other_country = {
 						limit = {
