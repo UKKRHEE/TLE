@@ -394,12 +394,42 @@ KOR_the_three_countries_plan = {
 			original_tag = KOR
 		}
 		fire_only_once = yes
+		days_remove = 150
+		complete_effect = { 
+			army_experience = -200
+		}
+		remove_effect = {
+			swap_ideas = {
+				add_idea = KOR_not_planed_attack_3
+				remove_idea = KOR_not_planed_attack_2
+			}
+		}
+	}
+	KOR_the_war_plan_Z_2 = {
+		icon = generic_prepare_civil_war 
+		available = {
+			original_tag = KOR
+				has_idea = KOR_not_planed_attack_3
+				has_army_experience > 200
+				command_power > 50
+		}
+
+		ai_will_do = {
+			factor = 2000
+		}
+		visible = {
+				has_idea = KOR_not_planed_attack_3
+		}
+		allowed = {
+			original_tag = KOR
+		}
+		fire_only_once = yes
 		days_remove = 180
 		complete_effect = { 
 			army_experience = -200
 		}
 		remove_effect = {
-			remove_ideas = KOR_not_planed_attack_2
+			remove_ideas = KOR_not_planed_attack_3
 		}
 	}
 	KOR_the_war_plan_Z_ai = {
@@ -437,6 +467,9 @@ KOR_first_plan_lightning = {
 				controls_state = 743
 			}
 			has_war_with = ZLC
+			NOT = {
+				has_country_flag = FLAG_HAS_BEEN_OPPERATED_SHANDONG
+			}
 		}
 
 		ai_will_do = {
@@ -448,7 +481,7 @@ KOR_first_plan_lightning = {
 		allowed = {
 			original_tag = KOR
 		}
-		fire_only_once = yes
+		#fire_only_once = yes
 		days_remove = 15
 		modifier = {
 			army_armor_attack_factor = 0.1
@@ -461,6 +494,7 @@ KOR_first_plan_lightning = {
 			}
 		}
 		remove_effect = {
+			set_country_flag = FLAG_HAS_BEEN_OPPERATED_SHANDONG
 		}
 	}
 }	
@@ -542,12 +576,12 @@ KOR_second_plan_tent = {
 		icon = generic_form_nation 
 		available = {
 			original_tag = KOR
-			owns_state = 613
-			owns_state = 858
-			owns_state = 859
-			owns_state = 749
-			owns_state = 863
-			owns_state = 596
+			controls_state = 613
+			controls_state = 858
+			controls_state = 859
+			controls_state = 749
+			controls_state = 863
+			controls_state = 596
 		}
 
 		ai_will_do = {
@@ -562,6 +596,7 @@ KOR_second_plan_tent = {
 		#days_remove = 25
 		fire_only_once = yes
 		complete_effect = {
+			set_country_flag = FLAG_WZC_PUPPET_KOR
 			KOR = {
 				puppet = WZC
 			}
@@ -1312,102 +1347,102 @@ KOR_new_country_name = {
 KOR_reichskommissariat = {
 	
 	
-	KOR_daehwan_empire = { #대환제국
-		icon = generic_form_nation
+	#KOR_daehwan_empire = { #대환제국
+	#	icon = generic_form_nation
+	#
+	#	allowed = {
+	#		original_tag = KOR
+	#	}
 
-		allowed = {
-			original_tag = KOR
-		}
+	#	available = {
+	#		has_country_flag = CHINA_KOREA
+	#		is_subject = no
+	#		JAP = { exists = no }
+	#		CHI = { exists = no }
+	#		custom_trigger_tooltip = {
+	#			tooltip = form_country_korea_tt
+	#			original_tag = KOR
+	#		}
+	#		custom_trigger_tooltip = {
+	#			tooltip = form_country_manju_tt
+	#			owns_state = 328
+	#			owns_state = 715
+	#			owns_state = 714
+	#		}
+	#		custom_trigger_tooltip = {
+	#			tooltip = form_country_mongolia_tt
+	#			owns_state = 330
+	#		}
+	#		custom_trigger_tooltip = {
+	#			tooltip = form_country_china_tt
+	#			owns_state = 622
+	#			owns_state = 621
+	#			owns_state = 620
+	#			owns_state = 616
+	#			owns_state = 615
+	#			owns_state = 614
+	#			owns_state = 611
+	#			owns_state = 610
+	#			owns_state = 591
+	#			owns_state = 592
+	#			owns_state = 593
+	#			owns_state = 607
+	#			owns_state = 606
+	#			owns_state = 605
+	#			owns_state = 604
+	#			owns_state = 603
+	#			owns_state = 602
+	#			owns_state = 601
+	#			owns_state = 600
+	#			owns_state = 608
+	#			owns_state = 612
+	#			owns_state = 613
+	#			owns_state = 325
+	#			owns_state = 868
+	#			owns_state = 869
+	#			owns_state = 857
+	#			owns_state = 854
+	#			owns_state = 867
+	#		}
+	#		custom_trigger_tooltip = {
+	#			tooltip = form_country_japan_tt
+	#			owns_state = 891
+	#			owns_state = 282
+	#		}
+	#		custom_trigger_tooltip = {
+	#			tooltip = form_state_gando_tt
+	#			owns_state = 851
+	#			owns_state = 852
+	#			owns_state = 853
+	#		}
+	#	}
 
-		available = {
-			has_country_flag = CHINA_KOREA
-			is_subject = no
-			JAP = { exists = no }
-			CHI = { exists = no }
-			custom_trigger_tooltip = {
-				tooltip = form_country_korea_tt
-				original_tag = KOR
-			}
-			custom_trigger_tooltip = {
-				tooltip = form_country_manju_tt
-				owns_state = 328
-				owns_state = 715
-				owns_state = 714
-			}
-			custom_trigger_tooltip = {
-				tooltip = form_country_mongolia_tt
-				owns_state = 330
-			}
-			custom_trigger_tooltip = {
-				tooltip = form_country_china_tt
-				owns_state = 622
-				owns_state = 621
-				owns_state = 620
-				owns_state = 616
-				owns_state = 615
-				owns_state = 614
-				owns_state = 611
-				owns_state = 610
-				owns_state = 591
-				owns_state = 592
-				owns_state = 593
-				owns_state = 607
-				owns_state = 606
-				owns_state = 605
-				owns_state = 604
-				owns_state = 603
-				owns_state = 602
-				owns_state = 601
-				owns_state = 600
-				owns_state = 608
-				owns_state = 612
-				owns_state = 613
-				owns_state = 325
-				owns_state = 868
-				owns_state = 869
-				owns_state = 857
-				owns_state = 854
-				owns_state = 867
-			}
-			custom_trigger_tooltip = {
-				tooltip = form_country_japan_tt
-				owns_state = 891
-				owns_state = 282
-			}
-			custom_trigger_tooltip = {
-				tooltip = form_state_gando_tt
-				owns_state = 851
-				owns_state = 852
-				owns_state = 853
-			}
-		}
+	#	visible = {
+	#		original_tag = KOR
+	#		is_subject = no
+	#	}
 
-		visible = {
-			original_tag = KOR
-			is_subject = no
-		}
+	#	complete_effect = {
+	#		KOR = {
+	#		    set_cosmetic_tag = DWE_UNIFIED
+	#		}
+	#		hidden_effect = {
+	#			news_event = { id = wtk_news.2 days = 1 }
+	#		}
+	#		every_state = {
+	#			add_core_of = ROOT
+	#		}
+	#	}
+	#	fire_only_once = yes
 
-		complete_effect = {
-			KOR = {
-			    set_cosmetic_tag = DWE_UNIFIED
-			}
-			hidden_effect = {
-				news_event = { id = wtk_news.2 days = 1 }
-			}
-			every_state = {
-				add_core_of = ROOT
-			}
-		}
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 200
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-	}
+	#	ai_will_do = {
+	#		factor = 200
+	#		modifier = {
+	#			factor = 0
+	#			is_historical_focus_on = yes
+	#		}
+	#	}
+	#}
 	
 	KOR_asia_union = { #아시아 연방
 		icon = generic_form_nation

@@ -33,10 +33,10 @@ characters={
 		name=KOR_yi_byung_mu
 		portraits={
 			civilian={
-				large="gfx/leaders/KOR/이병무.png"
+				large="gfx/leaders/KOR/Portrait_KOR_yi_byung_mu.png"
 			}
 			army={
-				large="gfx/leaders/KOR/이병무.png"
+				large="gfx/leaders/KOR/Portrait_KOR_yi_byung_mu.png"
 				small="gfx/interface/ideas/KOR/idea_KOR_yi_byung_mu.png"
 			}
 		}
@@ -295,7 +295,7 @@ characters={
 		advisor={
 			cost = 50
 			slot = high_command
-			idea_token = ji_cheong_cheon
+			idea_token = yujin_kim
 			ledger = army
 			allowed = {
 				original_tag = KOR
@@ -401,10 +401,13 @@ characters={
 		    	original_tag = KOR
 		    }
 		    available = {
+				has_war_support > 0.5
+			}	
+			visible = {
 		    	NOT = {
 					has_completed_focus = KOR_use_the_anti-armed
 				}
-			}	
+			}
 		
 	    	traits = { militarian_fascist }
 			ai_will_do = {
@@ -548,7 +551,7 @@ characters={
 		
 		navy_leader={
 			traits = { naval_lineage battleship_adherent gunnery_expert ironside }
-			skill = 3
+			skill = 4
 			attack_skill = 5
 			defense_skill = 3
 			maneuvering_skill = 4
@@ -569,14 +572,18 @@ characters={
 			}
 		}
 		advisor={
-			slot = navy_chief
+			slot = theorist
 			idea_token = son_won_ile
-			allowed = {
-				original_tag = KOR
-			}
-			traits = {
-				navy_chief_naval_aviation_2
-			}
+			ledger = navy
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		
+		    research_bonus = {
+		    	naval_doctrine = 0.07
+		    }
+		
+		    traits = { naval_theorist }
 			cost = 100
 			ai_will_do = {
 				factor = 0.100
@@ -584,7 +591,7 @@ characters={
 		}
 		
 		navy_leader={
-			traits = { bold aviation_enthusiast superior_tactician }
+			traits = { navy_career_officer seawolf superior_tactician }
 			id = 19371
 			skill = 3
 			attack_skill = 5
@@ -646,7 +653,7 @@ characters={
 		}
 	}
 	KOR_choi_yong_duk={
-		name=KOR_choi_yong_duk_2
+		name=KOR_choi_yong_duk
 		portraits={
 			army={
 				small="GFX_idea_KOR_choi_yong_duk"
@@ -723,28 +730,25 @@ characters={
 		
 		navy_leader={
 			id = 19372
-			traits = { }
-			skill = 1
+			traits = { battleship_adherent naval_lineage }
+			skill = 2
 			attack_skill = 1
-			defense_skill = 1
+			defense_skill = 2
 			maneuvering_skill = 1
-			coordination_skill = 1
+			coordination_skill = 2
 		}
 	}
-	KOR_shin_sung_mo_2={
-		name=KOR_shin_sung_mo
+	KOR_min_kwang_sik={
+		name=KOR_min_kwang_sik
 		portraits={
 			army={
-				large="gfx/leaders/KOR/Portrait_KOR_Shin_Sung_mo.dds"
-				small="gfx/interface/ideas/idea_KOR_shin_sung_mo.dds"
-			}
-			army={
-				small="GFX_idea_KOR_shin_sung_mo"
+				large="gfx/leaders/KOR/Portrait_Future_Korea_Generic_Male_navy_1.dds"
+				small="gfx/interface/ideas/idea_KOR_min_kwang_sik.png"
 			}
 		}
 		advisor={
 			slot = high_command
-			idea_token = shin_sung_mo_2
+			idea_token = min_kwang_sik
 			ledger = navy
 			allowed = {
 				original_tag = KOR
@@ -757,6 +761,14 @@ characters={
 				factor = 0.100
 			}
 		}
+		navy_leader={
+			traits = { battleship_adherent superior_tactician spotter }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
 	}
 	KOR_park_ok_kyu={
 		name=KOR_park_ok_kyu
@@ -767,22 +779,26 @@ characters={
 			}
 		}
 		advisor={
-			slot = theorist
+			slot = navy_chief
 			idea_token = park_ok_kyu
-			ledger = navy
-		    allowed = {
-		    	original_tag = KOR
-		    }
-		
-		    research_bonus = {
-		    	naval_doctrine = 0.07
-		    }
-		
-		    traits = { naval_theorist }
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				navy_chief_naval_aviation_2
+			}
 			cost = 100
 			ai_will_do = {
 				factor = 0.100
 			}
+		}
+		navy_leader={
+			traits = { bold aviation_enthusiast fly_swatter }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 3
 		}
 	}
 	##################
@@ -1011,7 +1027,14 @@ characters={
 		    	original_tag = KOR
 		    }
 			available = {
-			    has_completed_focus = KOR_use_the_anti-armed
+				NOT = {
+					has_government = fascism
+				}
+			}
+			visible = {
+		    	NOT = {
+					has_completed_focus = KOR_the_day_which_very_long
+				}
 			}
 			
 		    traits = { democratic_reformer three_equalities }
@@ -1099,11 +1122,17 @@ characters={
 		    allowed = {
 		    	original_tag = KOR
             }
-
-		    available = {
-		    	has_completed_focus = KOR_power_up_to_imperial
-		    }
 			
+			available = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			visible = {
+		    	NOT = {
+					has_completed_focus = KOR_the_day_which_very_long
+				}
+			}
 		    traits = { staunch_monarchist }
 		
 			ai_will_do = {
@@ -1143,7 +1172,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/KOR/Portrait_KOR_yi_geon.png"
-				small="gfx/interface/ideas/KOR/idea_KOR_yi_geon.png"
+				small="gfx/interface/ideas/idea_KOR_yi_geon.png"
 			}
 		}
 		corps_commander={
@@ -1216,6 +1245,16 @@ characters={
 		    allowed = {
 		    	original_tag = KOR
 		    }
+			available = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			visible = {
+		    	NOT = {
+					has_completed_focus = KOR_the_day_which_very_long
+				}
+			}
 		
 		    traits = { social_reformer }
 			ai_will_do = {
@@ -1266,6 +1305,29 @@ characters={
 			}
 		}
 	}
+	KOR_kim_gap_sun = {
+		name=KOR_kim_gap_sun
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_KOR_kim_gap_sun.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = kim_gap_sun
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			
+			available = {
+			}
+			
+		    traits = { war_industrialist }
+			ai_will_do = {
+				factor = 4.000
+			}
+		}
+	}
 	KOR_song_jin_woo = {
 		name=KOR_song_jin_woo
 		portraits={
@@ -1284,7 +1346,7 @@ characters={
 			available = {
 			}
 		    
-		    traits = { war_industrialist }
+		    traits = { compassionate_gentleman }
 			ai_will_do = {
 				factor = 4.000
 			}
@@ -1305,6 +1367,26 @@ characters={
 		    }
 		
 		    traits = { fortification_engineer }
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+	KOR_hyun_jun_ho = {
+		name=KOR_hyun_jun_ho
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_KOR_hyun_jun_ho.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = hyun_jun_ho
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		
+		    traits = { financial_expert }
 			ai_will_do = {
 				factor = 0.000
 			}
@@ -1395,9 +1477,12 @@ characters={
 				original_tag = KOR
 			}
 			available = {
+				has_government = democratic
+			}
+			visible = {
 			}
 			traits = {
-				syncretic_revanchist
+				national_integralist
 			}
 			ai_will_do = {
 				factor = 1

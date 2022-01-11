@@ -3,7 +3,6 @@ state={
 	id=859
 	name="STATE_613"
 
-	local_supplies=0.0 
 	history={
 		owner = WZC
 		add_core_of = WZC
@@ -43,4 +42,5 @@ state={
 	manpower=8575100
 	buildings_max_level_factor=1.000
 	state_category=large_city
+	local_supplies=0.000
 }

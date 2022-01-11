@@ -1354,6 +1354,11 @@ country_event = { #3분지계
 	
 	option = { #3분할(위촉오 판도)
 		name = korea.39.a
+		trigger = {
+			NOT = {
+				has_country_flag = FLAG_WZC_PUPPET_KOR
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}
@@ -1479,11 +1484,11 @@ country_event = { #3분지계
 		}
 		if = {
 			limit = {
-				MON = {
+				MEN = {
 					exists = yes
 				}
 			}
-			MON = {
+			MEN = {
 				transfer_state = 616
 				transfer_state = 756
 				transfer_state = 746
@@ -1494,7 +1499,7 @@ country_event = { #3분지계
 		}
 		if = {
 			limit = {
-				MON = {
+				MEN = {
 					exists = no
 				}
 			}
@@ -1513,6 +1518,11 @@ country_event = { #3분지계
 	}		
 	option = { #2분할(남북국)
 		name = korea.39.b
+		trigger = {
+			NOT = {
+				has_country_flag = FLAG_WZC_PUPPET_KOR
+			}
+		}
 		release_puppet = SIK
 		puppet = GXC
 		puppet = QIN
@@ -1538,6 +1548,8 @@ country_event = { #3분지계
 			transfer_state = 859
 			transfer_state = 858
 			transfer_state = 863
+			transfer_state = 865
+			transfer_state = 864
 			transfer_state = 749
 			transfer_state = 596
 			transfer_state = 600
@@ -1623,11 +1635,11 @@ country_event = { #3분지계
 		}
 		if = {
 			limit = {
-				MON = {
+				MEN = {
 					exists = yes
 				}
 			}
-			MON = {
+			MEN = {
 				transfer_state = 616
 				transfer_state = 756
 				transfer_state = 746
@@ -1638,7 +1650,7 @@ country_event = { #3분지계
 		}
 		if = {
 			limit = {
-				MON = {
+				MEN = {
 					exists = no
 				}
 			}
@@ -1659,6 +1671,7 @@ country_event = { #3분지계
 		name = korea.39.c
 		puppet = QIN
 		release_puppet = SIK
+		release_puppet = TIB
 		QIN = {
 			
 			transfer_state = 614
@@ -1669,6 +1682,8 @@ country_event = { #3분지계
 			transfer_state = 607
 			transfer_state = 878
 			transfer_state = 744
+			transfer_state = 865
+			transfer_state = 864
 			transfer_state = 877
 			transfer_state = 620
 			transfer_state = 869
@@ -1715,11 +1730,11 @@ country_event = { #3분지계
 		}
 		if = {
 			limit = {
-				MON = {
+				MEN = {
 					exists = yes
 				}
 			}
-			MON = {
+			MEN = {
 				transfer_state = 616
 				transfer_state = 756
 				transfer_state = 746
@@ -1730,7 +1745,7 @@ country_event = { #3분지계
 		}
 		if = {
 			limit = {
-				MON = {
+				MEN = {
 					exists = no
 				}
 			}
@@ -1743,6 +1758,149 @@ country_event = { #3분지계
 			transfer_state = 754
 			transfer_state = 604
 			add_state_core = 755
+			add_state_core = 754
+			add_state_core = 604
+		}
+	}		
+	option = { #쑹저위안의 남중국
+		name = korea.39.d
+		release_puppet = SIK
+		puppet = SZC
+		puppet = GXC
+		puppet = QIN
+		SZC = {
+			set_cosmetic_tag = SZC_KOR
+			create_country_leader = {
+				name = "류창"
+				desc = ""
+				expire = "1965.7.1"
+				ideology = fascism_ideology
+				traits = {
+				}
+			}
+			transfer_state = 753
+			transfer_state = 752
+			transfer_state = 751
+			transfer_state = 868
+			transfer_state = 605
+			transfer_state = 748
+			transfer_state = 874
+			transfer_state = 879
+			transfer_state = 603
+			transfer_state = 325
+			transfer_state = 747
+			transfer_state = 750
+			add_state_core = 753
+			add_state_core = 752
+			add_state_core = 751
+			add_state_core = 868
+			add_state_core = 605
+			add_state_core = 748
+			add_state_core = 874
+			add_state_core = 879
+			add_state_core = 603
+			add_state_core = 325
+			add_state_core = 747
+			add_state_core = 750
+		}
+		WZC = {
+			transfer_state = 613
+			transfer_state = 865
+			transfer_state = 864
+			transfer_state = 859
+			transfer_state = 858
+			transfer_state = 863
+			transfer_state = 749
+			transfer_state = 596
+			transfer_state = 600
+			transfer_state = 883
+			transfer_state = 882
+			transfer_state = 595
+			transfer_state = 876
+			transfer_state = 602
+			transfer_state = 875
+			transfer_state = 593
+			transfer_state = 867
+			transfer_state = 592
+			transfer_state = 866
+			transfer_state = 591
+			transfer_state = 599
+			transfer_state = 594
+			add_state_core = 613
+			add_state_core = 859
+			add_state_core = 858
+			add_state_core = 863
+			add_state_core = 749
+			add_state_core = 596
+			add_state_core = 600
+			add_state_core = 883
+			add_state_core = 882
+			add_state_core = 595
+			add_state_core = 876
+			add_state_core = 602
+			add_state_core = 875
+			add_state_core = 593
+			add_state_core = 867
+			add_state_core = 592
+			add_state_core = 866
+			add_state_core = 591
+			add_state_core = 599
+			add_state_core = 594
+			set_capital = 613
+		}
+		QIN = {
+			transfer_state = 614
+			transfer_state = 615
+			transfer_state = 597
+			transfer_state = 870
+			transfer_state = 607
+			transfer_state = 878
+			transfer_state = 744
+			transfer_state = 877
+			transfer_state = 620
+			transfer_state = 869
+			transfer_state = 606
+			transfer_state = 861
+			transfer_state = 872
+			transfer_state = 598
+			transfer_state = 622
+			transfer_state = 873
+			transfer_state = 884
+			transfer_state = 283
+			transfer_state = 871
+		}
+		if = {
+			limit = {
+				MEN = {
+					exists = yes
+				}
+			}
+			MEN = {
+				transfer_state = 616
+				transfer_state = 756
+				transfer_state = 746
+				add_state_core = 616
+				add_state_core = 756
+				add_state_core = 746
+			}
+		}
+		if = {
+			limit = {
+				MEN = {
+					exists = no
+				}
+			}
+				add_state_core = 616
+				add_state_core = 756
+				add_state_core = 746
+		}
+		TIB = {
+			transfer_state = 755
+			transfer_state = 754
+			transfer_state = 604
+			transfer_state = 601
+			add_state_core = 755
+			add_state_core = 601
 			add_state_core = 754
 			add_state_core = 604
 		}
@@ -2848,6 +3006,159 @@ country_event = { #환호
 	
 	option = { #
 		name = korea.74.a
+		
+	}
+}
+##중국 이벤트##
+country_event = { #직예
+	id = korea.75
+	title = korea.75.title
+	desc = korea.75.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.75.a
+		614 = {
+			add_manpower = -60000
+		}
+	}
+}
+country_event = { #지난
+	id = korea.76
+	title = korea.76.title
+	desc = korea.76.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.76.a
+		597 = {
+			add_manpower = -15000
+		}
+		
+	}
+}
+country_event = { #카이펑
+	id = korea.77
+	title = korea.77.title
+	desc = korea.77.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.77.a
+		607 = {
+			add_manpower = -15000
+		}
+		
+	}
+}
+country_event = { #뤄양
+	id = korea.78
+	title = korea.78.title
+	desc = korea.78.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.78.a
+		878 = {
+			add_manpower = -15000
+		}
+		
+	}
+}
+country_event = { #쑤이저우
+	id = korea.79
+	title = korea.79.title
+	desc = korea.79.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.79.a
+		620 = {
+			add_manpower = -15000
+		}
+		
+	}
+}
+country_event = { #시안
+	id = korea.80
+	title = korea.80.title
+	desc = korea.80.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.80.a
+		744 = {
+			add_manpower = -15000
+		}
+		
+	}
+}
+country_event = { #우한
+	id = korea.81
+	title = korea.81.title
+	desc = korea.81.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.81.a
+		869 = {
+			add_manpower = -15000
+		}
+		
+	}
+}
+country_event = { #충칭
+	id = korea.82
+	title = korea.82.title
+	desc = korea.82.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.82.a
+		605 = {
+			add_manpower = -15000
+		}
+		
+	}
+}
+country_event = { #광저우
+	id = korea.83
+	title = korea.83.title
+	desc = korea.83.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.83.a
+		867 = {
+			add_manpower = -52000
+		}
 		
 	}
 }

@@ -179,16 +179,12 @@ add_ideas = {
 		CHI_era_of_chinese_warlords_1
 	}
 
-if = {
-	limit = {
-		has_dlc = "Waking the Tiger"
-	}
 	add_ideas = {
-		PRC_the_long_march_1
+		#PRC_the_long_march_1
 		PRC_low_popular_support_3
 		PRC_power_struggles
-		PRC_red_army_weakened
+		#PRC_red_army_weakened
 	}
-}
+
 
 add_opinion_modifier = { target = CHI modifier = hostile_status }

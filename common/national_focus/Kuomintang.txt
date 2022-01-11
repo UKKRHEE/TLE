@@ -312,12 +312,17 @@ focus_tree = {
 				type = annex_everything 
 				target = AHC
 			}	
+				declare_war_on = {
+					type = annex_everything 
+					target = PRC
+				}
 			every_state = {
 				limit = {
 					is_core_of = WZC
 					OR = {
 						is_owned_by = WZC	
 						is_owned_by = AHC	
+						is_owned_by = PRC	
 					}
 				}
 				add_core_of = CHI
@@ -398,6 +403,7 @@ focus_tree = {
 			YUN = {
 				country_event = {
 					id = china.1092
+					days = 0
 				}
 			}
 			every_state = {
@@ -976,7 +982,8 @@ focus_tree = {
 		completion_reward = {
 			SZC = {
 				country_event = {
-					id = china.1045
+					id = china.1092
+					days = 0
 				}
 			}	
 			every_state = {

@@ -1553,7 +1553,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_threat_up_of_east_asia
-		icon = GFX_focus_secret_rearmament
+		icon = GFX_focus_bav_anti_air
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_attack_colonial_territory
@@ -1991,7 +1991,16 @@ focus_tree = {
 		x = 41
 		y = 6
 			available = {
-					has_idea = KOR_yi_un
+					OR = {
+						has_country_leader = {
+							ruling_only = yes
+							character = KOR_yi_byung_mu
+						}
+						has_country_leader = {
+							ruling_only = yes
+							name = "EOK Military Junta"
+						}
+					}
 					is_puppet = no
 					has_war = no
 				}
@@ -3314,6 +3323,11 @@ focus_tree = {
 			DKG = {
 				exists = no
 			}
+			}
+			bypass = {
+				JAP = {
+					exists = no
+				}
 			}
 			completion_reward = {
 					create_wargoal = {

@@ -5,18 +5,22 @@ CHI_plan_2nd_beifa = {
 			ZLC = {
 				owns_state = 608
 			}
-		}
-		visible = {
-			ZLC = {
-				owns_state = 608
+			NOT = {
+				has_war_with = KOR
 			}
 		}
-		days = 10
+		visible = {
+			has_completed_focus = CHI_decision_to_beiyang
+		}
+		days = 5
 		ai_will_do = {
 			factor = 1000
 		}
 		fire_only_once = yes
 		cost = 60
+		complete_effect = {
+			leave_faction = yes
+		}
 		remove_effect = {
 			declare_war_on = {
 				target = ZLC

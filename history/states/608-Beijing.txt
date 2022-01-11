@@ -36,13 +36,16 @@ state={
 
 			}
 			9843 = {
-				bunker = 5
+				bunker = 10
 			}
 			11761 = {
-				bunker = 3
+				bunker = 8
+			}
+			1137 = {
+				bunker = 8
 			}
 			4140 = {
-				bunker = 3
+				bunker = 8
 			}
 
 		}

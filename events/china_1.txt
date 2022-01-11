@@ -1318,6 +1318,17 @@ country_event = {
 		name = china.1090.a
 		remove_unit_leader = 91110
 		hidden_effect = {
+			PRC = {
+				
+				declare_war_on = {
+					type = annex_everything 
+					target = AHC
+				}
+				declare_war_on = {
+					type = annex_everything 
+					target = WZC
+				}
+			}
 		retire_character = WZC_Chen_Tiaoyuan
 			
 			delete_unit_template_and_units = {
@@ -1392,6 +1403,17 @@ country_event = {
 		name = china.1090.b
 		custom_effect_tooltip = PLAY_WILL_ANHUI
 		hidden_effect = {
+			PRC = {
+				
+				declare_war_on = {
+					type = annex_everything 
+					target = AHC
+				}
+				declare_war_on = {
+					type = annex_everything 
+					target = WZC
+				}
+			}
 			delete_unit_template_and_units = {
 				division_template = "Qibing Xie"
 				disband = yes
@@ -1500,10 +1522,12 @@ country_event = {
     
     picture = GFX_report_event_chi_great_war
 
-    fire_only_once = yes
 	is_triggered_only = yes
 	option = { 
 		name = china.1092.a
+		ai_chance = {
+			factor = 70
+		}
 		CHI = {
 			annex_country = {
 				target = PREV
@@ -1513,6 +1537,9 @@ country_event = {
     }
 	option = {
 		name = china.1092.b
+		ai_chance = {
+			factor = 30
+		}
 		CHI = {
 			create_wargoal = {
 				target = PREV
@@ -1641,6 +1668,8 @@ country_event = {
 				type = annex_everything 
 				target = SHX
 			}
+			add_ideas = PRC_the_long_march_1 
+			add_ideas = PRC_red_army_weakened 
 			load_oob = "PRC_shanxi"
 		}
     }

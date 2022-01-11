@@ -10,10 +10,7 @@ CHI_anti_imperialism = {
 CHI_plan_2nd_beifa = {
 	icon = generic_independence
 	allowed = {
-		has_completed_focus = CHI_decision_to_beiyang
-	}
-	visible = {
-		has_completed_focus = CHI_decision_to_beiyang
+		tag = CHI
 	}
 }
 

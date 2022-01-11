@@ -203,47 +203,47 @@ ideas = {
 			}	
 			targeted_modifier = {
 				tag = ZLC
-				generate_wargoal_tension_against = 0.75
+				generate_wargoal_tension_against = 2
 			}		
 			targeted_modifier = {
 				tag = CHI
-				generate_wargoal_tension_against = 0.75
+				generate_wargoal_tension_against = 2
 			}		
 			targeted_modifier = {
 				tag = WZC
-				generate_wargoal_tension_against = 0.75
+				generate_wargoal_tension_against = 2
 			}		
 			targeted_modifier = {
 				tag = SHX
-				generate_wargoal_tension_against = 0.75
+				generate_wargoal_tension_against = 2
 			}		
 			targeted_modifier = {
 				tag = XSM
-				generate_wargoal_tension_against = 0.75
+				generate_wargoal_tension_against = 2
 			}		
 			targeted_modifier = {
 				tag = SZC
-				generate_wargoal_tension_against = 0.75
+				generate_wargoal_tension_against = 2
 			}		
 			targeted_modifier = {
 				tag = GXC
-				generate_wargoal_tension_against = 0.75
+				generate_wargoal_tension_against = 2
 			}		
 			targeted_modifier = {
 				tag = YUN
-				generate_wargoal_tension_against = 0.75
+				generate_wargoal_tension_against = 2
 			}		
 			targeted_modifier = {
 				tag = HNC
-				generate_wargoal_tension_against = 0.75
+				generate_wargoal_tension_against = 2
 			}		
 			targeted_modifier = {
 				tag = SND
-				generate_wargoal_tension_against = 0.75
+				generate_wargoal_tension_against = 2
 			}		
 			targeted_modifier = {
 				tag = SIK
-				generate_wargoal_tension_against = 0.75
+				generate_wargoal_tension_against = 2
 			}		
 		}
 		KOR_not_go_outside = {
@@ -388,47 +388,98 @@ ideas = {
 			picture = chi_warlord_integration5
 			modifier = {
 				custom_modifier_tooltip = IDEA_WILL_REMOVE_IN_DECISION
-				army_org_Factor = -0.3
+				army_org_Factor = -0.5
+				army_morale_factor = -0.5
+				army_org_regain = -0.175
 			}
 			targeted_modifier = {
                 tag = ZLC
-				attack_bonus_against = -0.5
+				attack_bonus_against = -0.65
 			}
 			targeted_modifier = {
                 tag = CHI
-				attack_bonus_against = -0.5
+				attack_bonus_against = -0.65
 			}
 			targeted_modifier = {
                 tag = WZC
-				attack_bonus_against = -0.5
+				attack_bonus_against = -0.65
 			}
 			targeted_modifier = {
                 tag = SND
-				attack_bonus_against = -0.5
+				attack_bonus_against = -0.65
 			}
 			targeted_modifier = {
                 tag = SHX
-				attack_bonus_against = -0.5
+				attack_bonus_against = -0.65
 			}
 			targeted_modifier = {
                 tag = HNC
-				attack_bonus_against = -0.5
+				attack_bonus_against = -0.65
 			}
 			targeted_modifier = {
                 tag = YUN
-				attack_bonus_against = -0.5
+				attack_bonus_against = -0.65
 			}
 			targeted_modifier = {
                 tag = XSM
-				attack_bonus_against = -0.5
+				attack_bonus_against = -0.65
 			}
 			targeted_modifier = {
                 tag = GXC
-				attack_bonus_against = -0.5
+				attack_bonus_against = -0.65
 			}
 			targeted_modifier = {
                 tag = SIK
-				attack_bonus_against = -0.5
+				attack_bonus_against = -0.65
+			}
+		}
+	    KOR_not_planed_attack_3 = {
+			picture = chi_warlord_integration5
+			modifier = {
+				custom_modifier_tooltip = IDEA_WILL_REMOVE_IN_DECISION
+				army_org_Factor = -0.25
+				army_morale_factor = -0.25
+				army_org_regain = -0.1
+			}
+			targeted_modifier = {
+                tag = ZLC
+				attack_bonus_against = -0.4
+			}
+			targeted_modifier = {
+                tag = CHI
+				attack_bonus_against = -0.4
+			}
+			targeted_modifier = {
+                tag = WZC
+				attack_bonus_against = -0.4
+			}
+			targeted_modifier = {
+                tag = SND
+				attack_bonus_against = -0.4
+			}
+			targeted_modifier = {
+                tag = SHX
+				attack_bonus_against = -0.4
+			}
+			targeted_modifier = {
+                tag = HNC
+				attack_bonus_against = -0.4
+			}
+			targeted_modifier = {
+                tag = YUN
+				attack_bonus_against = -0.4
+			}
+			targeted_modifier = {
+                tag = XSM
+				attack_bonus_against = -0.4
+			}
+			targeted_modifier = {
+                tag = GXC
+				attack_bonus_against = -0.4
+			}
+			targeted_modifier = {
+                tag = SIK
+				attack_bonus_against = -0.4
 			}
 		}
 		KOR_failed_civilian_control_of_the_military = {
