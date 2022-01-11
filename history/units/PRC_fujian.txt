@@ -21,7 +21,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 4174
+		location = 1138
 		division_template = "Balujun"
 		start_experience_factor = 1
 		start_equipment_factor = 0.6
@@ -31,7 +31,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 4074
+		location = 4113
 		division_template = "Balujun"
 		start_experience_factor = 1
 		start_equipment_factor = 0.6
@@ -41,7 +41,17 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 10367
+		location = 10042
+		division_template = "Balujun"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10084
 		division_template = "Balujun"
 		start_experience_factor = 1
 		start_equipment_factor = 0.6
