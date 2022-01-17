@@ -1,6 +1,6 @@
 add_namespace = eok_news
 
-news_event = { #전면적인 개혁을 선포한 황제
+news_event = { #강명제를 향한 테러
 	id = eok_news.1
 	title = eok_news.1.t
 	desc = eok_news.1.desc
@@ -18,7 +18,7 @@ news_event = { #전면적인 개혁을 선포한 황제
 		}
 	}
 }
-news_event = { #황제의 전제군주제 선포
+news_event = { #이강 집권
 	id = eok_news.2
 	title = eok_news.2.t
 	desc = eok_news.2.desc
@@ -30,13 +30,16 @@ news_event = { #황제의 전제군주제 선포
 	
 	option = {
 		name = eok_news.2.a
-		trigger = {
-			TAG = KOR
-		}
+		if = {
+			limit = {
+				is_ai = no
+			}
+			set_country_flag = korea_the_yi_kang
+		}	
 	}
 }
 
-news_event = { #남경 폭동
+news_event = { #남경 대학살
 	id = eok_news.3
 	title = eok_news.3.t
 	desc = eok_news.3.desc
@@ -199,10 +202,15 @@ news_event = { #파나이 호 사건
 		KOR = {
 			controls_state = 608
 			controls_state = 613
+			has_war = yes
 			OR = {
-				has_war_with = CHI
-				has_war_with = ZLC
-			}
+				ZLC = {
+					exists = yes
+				}
+				CHI = {
+					exists = yes
+				}
+			}	
 			NOT = {
 				has_government = democratic
 				has_government = communism
@@ -226,6 +234,12 @@ news_event = { #파나이 호 사건
 				}
 				set_country_flag = KOR_PANAI_PROBLEM
 			}
+		}
+		USA = {
+			add_opinion_modifier = { target = KOR modifier = panay_inc2_opinion_modifier }
+		}
+		ENG = {
+			add_opinion_modifier = { target = KOR modifier = panay_inc2_opinion_modifier }
 		}
 	}		
 	
@@ -254,12 +268,6 @@ news_event = { #파나이 호 사건
 					TAG = USA
 				}
 			}			
-		}
-		USA = {
-			add_opinion_modifier = { target = KOR modifier = panay_inc2_opinion_modifier }
-		}
-		ENG = {
-			add_opinion_modifier = { target = KOR modifier = panay_inc2_opinion_modifier }
 		}
 	}
 }

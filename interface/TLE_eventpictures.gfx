@@ -55,9 +55,11 @@ spriteTypes = {
 		name = "GFX_world_event_nanking"
 		texturefile = "gfx/event_pictures/GFX_world_event_nanking.png"
 	}
+	
+	###sp
 	spriteType = {
 		name = "GFX_superevent_korea_the_yi_kang"
-		textureFile = "gfx/superevent_pictures/korea_the_yi_kang.dds"
+		textureFile = "gfx/superevent_pictures/yikangs_election.png"
 	}
 	spriteType = {
 		name = "GFX_superevent_korea_ww_china"

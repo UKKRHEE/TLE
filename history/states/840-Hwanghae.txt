@@ -3,7 +3,6 @@ state={
 	id=840
 	name="STATE_840"
 	resources={
-		aluminium=5.000
 	}
 	local_supplies=0.0 
 

@@ -80,11 +80,14 @@ on_actions = {
 					NOT = {
 						has_idea = PRC_the_long_march_1
 					}
+						SHX = {
+							exists = yes
+						}
 				}
 				SHX = {
 					country_event = {
 						id = china.1097
-						days = 25
+						days = 145
 					}
 				}
 				if = {

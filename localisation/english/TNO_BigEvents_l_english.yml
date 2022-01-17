@@ -1,7 +1,7 @@
 ﻿l_english:
 TNO_SG_big_event_korea_the_yi_kang_T:0 "이강의 집권"
 TNO_SG_big_event_korea_the_yi_kang_D:0 "나는 우리나라가 세계에서 가장 아름다운 나라가 되기를 원한다.\n내가 남의 침략에 가슴이 아팠으니\n내 나라가 남을 침략하는 것을 원치 않는다.\n오직 한없이 가지고 싶은 것은 높은 문화의 힘이다\n-백범 김구"
-TNO_SG_big_event_korea_the_yi_kang_A:0 "대한제국 만세."
+TNO_SG_big_event_korea_the_yi_kang_A:0 "빛이 보였다."
 
 TNO_SG_big_event_korea_ww_china_T:0 "한중전쟁"
 TNO_SG_big_event_korea_ww_china_D:0 "중국이 제국주의에 의해서 망한다면\n중국인은 망국노로 살아가게 될 것이다.\n그러나 중국이 공산주의에 의해서 망한다면\n중국인은 노예로도 살아갈 수 없을 것이다.\n-장개석"
@@ -18,6 +18,14 @@ TNO_SG_big_event_russia_attack_korea_A:0 "곰과 호랑이의 싸움."
 TNO_SG_big_event_fall_of_korea_T:0 "한국의 종말"
 TNO_SG_big_event_fall_of_korea_D:0 "남을 너그럽게 받아들이는 사람은\n사람들의 마음을 얻고\n위엄과 무력으로 엄하게 다스리는 자는\n사람들의 노여움을 사게 된다\n-조선 세종"
 TNO_SG_big_event_fall_of_korea_A:0 "오, 대한이여."
+
+TNO_SG_big_event_won_in_china_T:0 "대아전쟁의 승리"
+TNO_SG_big_event_won_in_china_D:0 "백성에게 해가 된다면 공자가 돌아와도 용서치 않겠다.\n-흥선군 이하응"
+TNO_SG_big_event_won_in_china_A:0 "대한제국 만세!"
+
+TNO_SG_big_event_2nd_northattack_T:0 "국민당의 2차 북벌"
+TNO_SG_big_event_2nd_northattack_D:0 "혁명은 성공하지 못했다. 동지들이여 아직도 노력해야 한다.\n-쑨원"
+TNO_SG_big_event_2nd_northattack_A:0 "노병은 죽지 않는다."
 
 ##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
 

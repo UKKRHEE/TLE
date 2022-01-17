@@ -180,6 +180,68 @@ scripted_gui = {
 		}
 	}
 
+	#2차 북벌
+	TNO_SG_big_event_2nd_northattack = { 
+		context_type = player_context
+		window_name = "TNO_SG_big_event_2nd_northattack"
+
+		visible = {
+			has_country_flag = 2nd_northattack_sp
+		}
+	}
+
+	TNO_SG_big_event_frame_2nd_northattack = {
+		context_type = player_context
+		window_name = "TNO_SG_big_event_frame_2nd_northattack"
+
+		visible = {
+			has_country_flag = 2nd_northattack_sp
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = 2nd_northattack_sp
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				clr_country_flag = 2nd_northattack_sp
+			}
+		}
+	}
+
+	#대아전쟁에서의 승리
+	TNO_SG_big_event_won_in_china = { 
+		context_type = player_context
+		window_name = "TNO_SG_big_event_won_in_china"
+
+		visible = {
+			has_country_flag = won_in_china_sp
+		}
+	}
+
+	TNO_SG_big_event_frame_won_in_china = {
+		context_type = player_context
+		window_name = "TNO_SG_big_event_frame_won_in_china"
+
+		visible = {
+			has_country_flag = won_in_china_sp
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = won_in_china_sp
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				clr_country_flag = won_in_china_sp
+			}
+		}
+	}
+
 	##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
 
 }

@@ -28,6 +28,22 @@ is_japan_clique = { #Does not include sinkiang
 	}
 	exists = yes
 }
+TLE_has_war_on_china = { #Does not include sinkiang
+	OR = {
+		has_war_with = CHI
+		has_war_with = PRC
+		has_war_with = GXC
+		has_war_with = YUN
+		has_war_with = SHX
+		has_war_with = XSM
+		has_war_with = SIK
+		has_war_with = WZC
+		has_war_with = SND
+		has_war_with = AHC
+		has_war_with = HNC
+		has_war_with = ZLC
+	}
+}
 is_chinese_clique = { #Does not include sinkiang
 	OR = {
 		tag = CHI
