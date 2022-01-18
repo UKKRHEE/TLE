@@ -24,9 +24,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "청풍군 이해승"
+	name = "의양군 이재각"
 	desc = ""
-	picture = "gfx/leaders/Asia/portrait_asia_generic_land_7.dds"
+	picture = "gfx/leaders/KOR/Portrait_KOR_yi_je_gak.png"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -34,9 +34,9 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-	name = "청풍군 이해승"
+	name = "의양군 이재각"
 	desc = ""
-	picture = "gfx/leaders/Asia/portrait_asia_generic_land_7.dds"
+	picture = "gfx/leaders/KOR/Portrait_KOR_yi_je_gak.png"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

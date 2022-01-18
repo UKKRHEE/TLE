@@ -2,6 +2,7 @@
 
 oob = "DKG_1936"
 
+country_lock_all_division_template = yes
 set_stability = 0.05 #baseline, THE EMPEROR PROTECTS
 set_war_support = 0.1
 set_cosmetic_tag = JAP_dokugawa

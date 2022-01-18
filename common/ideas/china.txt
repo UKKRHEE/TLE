@@ -204,13 +204,13 @@ ideas = {
 			}
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.6
+					build_cost_ic = -0.75
 					reliability = -0.5
 					instant = yes
 				}
 			}	
 			modifier = {
-				industrial_capacity_factory = -0.3
+				industrial_capacity_factory = -0.2
 				industrial_capacity_dockyard = -0.5
 				production_speed_industrial_complex_factor = -0.3 
 				production_speed_arms_factory_factor = -0.3 
@@ -230,13 +230,13 @@ ideas = {
 			}
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.3
+					build_cost_ic = -0.6
 					reliability = -0.4
 					instant = yes
 				}
 			}	
 			modifier = {
-				industrial_capacity_factory = -0.2
+				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.3
 				production_speed_industrial_complex_factor = -0.15 
 				production_speed_arms_factory_factor = -0.15
@@ -255,13 +255,13 @@ ideas = {
 			}
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.15 
+					build_cost_ic = -0.3 
 					reliability = -0.25
 					instant = yes
 				}
 			}	
 			modifier = {
-				industrial_capacity_factory = -0.1
+				industrial_capacity_factory = -0.05
 				industrial_capacity_dockyard = -0.15
 				production_speed_industrial_complex_factor = -0.05 
 				production_speed_arms_factory_factor = -0.05 
@@ -330,13 +330,18 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = WZC
-				attack_bonus_against = 1
-				defense_bonus_against = 1
+				attack_bonus_against = 1.5
+				defense_bonus_against = 1.5
 			}
 			targeted_modifier = {
 				tag = AHC
-				attack_bonus_against = 1
-				defense_bonus_against = 1
+				attack_bonus_against = 1.5
+				defense_bonus_against = 1.5
+			}
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = 1.5
+				defense_bonus_against = 1.5
 			}
 			modifier = {
 				cavalry_speed_factor = 0.5
