@@ -620,7 +620,6 @@ if = {
 				fixed_ship_secondaries_slot = empty
 				mid_1_custom_slot = ship_deck_space
 			}
-			obsolete = yes
 		}
 		create_equipment_variant = {
 			name = "태조대제급"
@@ -636,7 +635,6 @@ if = {
 				fixed_ship_secondaries_slot = ship_secondaries_1
 				mid_1_custom_slot = ship_deck_space
 			}
-			obsolete = yes
 		}
 		#전함
 		create_equipment_variant = {

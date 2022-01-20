@@ -186,7 +186,7 @@ scripted_gui = {
 		window_name = "TNO_SG_big_event_2nd_northattack"
 
 		visible = {
-			has_country_flag = 2nd_northattack_sp
+			has_country_flag = TLE_2nd_northattack_sp
 		}
 	}
 
@@ -195,18 +195,18 @@ scripted_gui = {
 		window_name = "TNO_SG_big_event_frame_2nd_northattack"
 
 		visible = {
-			has_country_flag = 2nd_northattack_sp
+			has_country_flag = TLE_2nd_northattack_sp
 		}
 
 		effects = {
 			Option_click = {
-				clr_country_flag = 2nd_northattack_sp
+				clr_country_flag = TLE_2nd_northattack_sp
 			}
 			if = {
 				limit = {
 					is_ai = yes
 				}
-				clr_country_flag = 2nd_northattack_sp
+				clr_country_flag = TLE_2nd_northattack_sp
 			}
 		}
 	}

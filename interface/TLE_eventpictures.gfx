@@ -80,5 +80,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_japan_cw"
 		textureFile = "gfx/superevent_pictures/japan_cw.png"
+	} 
+	spriteType = {
+		name = "GFX_won_in_china"
+		textureFile = "gfx/superevent_pictures/won_in_china.png"
+	}
+	spriteType = {
+		name = "GFX_2nd_northattack"
+		textureFile = "gfx/superevent_pictures/2nd_northattack.png"
 	}
 }

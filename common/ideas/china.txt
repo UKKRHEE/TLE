@@ -345,7 +345,8 @@ ideas = {
 			}
 			modifier = {
 				cavalry_speed_factor = 0.5
-
+				infantry_speed_factor = 0.2
+				
 			}
 		}
 		CHI_fight_with_korea = {

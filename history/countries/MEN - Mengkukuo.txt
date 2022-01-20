@@ -1,6 +1,6 @@
 ﻿capital = 330
 
-oob = "MON_1936"
+oob = "MEN_1936"
 set_cosmetic_tag = MEN_KOREA
 # Starting tech
 set_technology = {

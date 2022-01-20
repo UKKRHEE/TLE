@@ -204,6 +204,55 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					
+					FROM = {
+						original_tag = CHI
+					}
+					ROOT = {
+						original_tag = WZC
+					}
+					CHI = {
+						NOT = {
+							has_country_flag = TLE_has_supper_evented_beifa
+						}
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					set_country_flag = TLE_2nd_northattack_sp
+				}
+				CHI = {
+					set_country_flag = TLE_has_supper_evented_beifa
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = WZC
+					}
+					ROOT = {
+						original_tag = CHI
+					}
+					CHI = {
+						NOT = {
+							has_country_flag = TLE_has_supper_evented_beifa
+						}
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					set_country_flag = TLE_2nd_northattack_sp
+				}
+				CHI = {
+					set_country_flag = TLE_has_supper_evented_beifa
+				}
+			}
+			if = {
+				limit = {
 					FROM = {
 						original_tag = KOR
 					}
@@ -382,10 +431,12 @@ on_actions = {
 								can_create_faction = yes
 							}	
 							
+							613 = {
+								set_capital = CHI
+							}
 							CHI = {
 								set_cosmetic_tag = CHI_nanking
 								set_country_flag = FLAG_CHI_COSMETIC_NANKING
-								set_capital = 613
 								add_ideas = CHI_army_corruption_1
 							}
 							if = {
@@ -618,10 +669,12 @@ on_actions = {
 						}
 					}
 				}
+				613 = {
+					set_capital = CHI
+				}
 				CHI = {
 					set_cosmetic_tag = CHI_nanking
 					set_country_flag = FLAG_CHI_COSMETIC_NANKING
-					set_capital = 613
 					add_ideas = CHI_army_corruption_1
 					transfer_state = 600
 					transfer_state = 595
@@ -760,7 +813,9 @@ on_actions = {
 							owns_state = 608
 						}
 					}
-					set_capital = 869
+					878 = {
+						set_capital = ZLC
+					}
 				}
 			}
 			if = {

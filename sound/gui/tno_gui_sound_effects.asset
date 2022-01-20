@@ -40,3 +40,19 @@ soundeffect = {
 	}
 	volume = 55
 }
+
+soundeffect = {
+	name = tno_se_won_in_china
+	sounds = {
+		sound = tno_se_won_in_china
+	}
+	volume = 55
+}
+
+soundeffect = {
+	name = tno_se_war_in_china_kor
+	sounds = {
+		sound = tno_se_war_in_china_kor
+	}
+	volume = 55
+}

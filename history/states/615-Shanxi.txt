@@ -17,6 +17,9 @@ state={
 			infrastructure = 2
 			industrial_complex = 1
 
+			10480 = {
+				bunker = 8
+			}
 		}
 		1938.10.25 = {
 			owner = PRC

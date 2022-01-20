@@ -28,3 +28,13 @@ sound = {
 	file = "menu/tno_se_japan_cw.wav"
 	always_load = no
 }
+sound = {
+	name = "tno_se_won_in_china"
+	file = "menu/tno_se_won_in_china.wav"
+	always_load = no
+}
+sound = {
+	name = "tno_se_war_in_china_kor"
+	file = "menu/tno_se_war_in_china_kor.wav"
+	always_load = no
+}

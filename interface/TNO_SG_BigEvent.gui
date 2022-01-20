@@ -87,7 +87,7 @@ guiTypes = {
 		Orientation = center
 		Origo = center
 		clipping = no
-		show_sound = tno_se_korea_ww_china
+		show_sound = tno_se_war_in_china_kor
 
 		background = {
 			name = "Background"
@@ -484,7 +484,7 @@ guiTypes = {
 		Orientation = center
 		Origo = center
 		clipping = no
-		show_sound = tno_se_2nd_northattack
+		show_sound = tno_se_korea_ww_china
 
 		background = {
 			name = "Background"

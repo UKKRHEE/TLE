@@ -12,7 +12,7 @@ state= {
 	history= {
 		owner = KOR
 		add_core_of = KOR
-		add_core_of = SOV
+		add_claim_by = SOV
 		add_core_of = RUS
 		
 		buildings = {

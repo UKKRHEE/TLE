@@ -341,7 +341,6 @@ KOR_the_three_countries_plan = {
 						owns_state = 616
 						owns_state = 615
 						owns_state = 614
-						owns_state = 611
 						owns_state = 610
 						owns_state = 591
 						owns_state = 592
@@ -354,7 +353,6 @@ KOR_the_three_countries_plan = {
 						owns_state = 602
 						owns_state = 600
 						owns_state = 608
-						owns_state = 612
 						owns_state = 613
 						owns_state = 325
 						owns_state = 868
@@ -373,6 +371,7 @@ KOR_the_three_countries_plan = {
 			country_event = {
 				id = korea.39
 			}
+			set_country_flag = won_in_china_sp
 		}
 	}
 	KOR_the_war_plan_Z = {
