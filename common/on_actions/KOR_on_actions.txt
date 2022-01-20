@@ -117,18 +117,8 @@ on_actions = {
 					transfer_state = 888
 				}
 				KOR = {
-					every_country = {
-						limit = {
-							owns_state = 671
-							owns_state = 286
-							owns_state = 741
-							owns_state = 670
-						}
-						
-						country_event = {
-							id = japan.1009
-							days = 3
-						}
+					country_event = {
+						id = korea.6
 					}
 				}
 			}

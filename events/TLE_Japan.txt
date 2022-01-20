@@ -390,16 +390,20 @@ country_event = {
 	option = {
 		name = japan.1009.a	
         ai_chance = { factor = 0.4  }
-        add_stability = 0.05 
-        country_event = { days = 1 id = japan.1012 }
+        add_stability = -0.05 
+        KOR = { 
+			country_event = { days = 1 id = japan.1012 }
+		}
 	}
 
 	option = {
 		name = japan.1009.b	
 		ai_chance = { factor = 0.6  }
         add_stability = -0.05 
-        add_war_support = 0.15
-        country_event = { days = 1 id = japan.1013 }
+        add_war_support = -0.15
+        KOR = { 
+			country_event = { days = 1 id = japan.1013 }
+		}
 	}
 }
 
@@ -415,10 +419,10 @@ country_event = {
 	option = {
 		name = japan.1012.a	
         KOR = { 
-		transfer_state = 671
-		transfer_state = 670
-		transfer_state = 286
-		transfer_state = 741
+			transfer_state = 671
+			transfer_state = 670
+			transfer_state = 286
+			transfer_state = 741
 		}
 	}
 }

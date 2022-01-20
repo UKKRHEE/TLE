@@ -14,7 +14,7 @@ TLE_history_yes = {
 			is_japan_clique = yes
 		}
 	}
-	priority = 85
+	priority = 9999
 }
 KOR_decision_eulhae_goonchuk = {
 	allowed = {
@@ -25,7 +25,7 @@ KOR_decision_eulhae_goonchuk = {
 		 
 		has_completed_focus = kor_reform_korea
 	}
-	priority = 84
+	priority = 85
 }
 KOR_first_plan_lightning = {
 	picture = GFX_descision_KOR_plan_lightning
@@ -35,9 +35,19 @@ KOR_first_plan_lightning = {
 	visible = {
 		original_tag = KOR
 	}
-	priority = 83
+	priority = 84
 }
 KOR_second_plan_tent = {
+	picture = GFX_descision_KOR_plan_tent
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		original_tag = KOR
+	}
+	priority = 83
+}
+KOR_third_plan_doryun = {
 	picture = GFX_descision_KOR_plan_tent
 	allowed = {
 		original_tag = KOR

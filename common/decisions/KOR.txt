@@ -615,6 +615,9 @@ KOR_second_plan_tent = {
 		}
 	}
 }	
+KOR_third_plan_doryun = {
+	
+}
 KOR_interservice_rivalry = {
 	KOR_steel_for_guns = { 
 
@@ -1052,7 +1055,183 @@ KOR_interservice_rivalry = {
 	}
 }
 KOR_the_problem_of_militaryship = {
+		
+	KOR_attack_siam = { #태국에게 통첩
+		icon = generic_army
+		allowed = {
+		    OR = {
+			    original_tag = KOR 
+			    original_tag = MKR
+		    }
+		}
+		available = {
+			SIA = { exists = yes }
+			controls_state = 671
+			controls_state = 286
+			controls_state = 741
+			controls_state = 670
+			has_war_support > 0.5	
+        }
+		visible = {
+			OR = {
+				has_completed_focus = kor_threat_united_states
+				OR = {
+					has_country_flag = FLAG_USA_FUCK_TO_KOREA
+					has_war_with = USA
+				}	
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 3
+		ai_will_do = {
+			factor = 1000
+		}
+		complete_effect = {
+			SIA = {
+				country_event = {
+					id = korea.3
+				}
+			}	
+		}
+		remove_effect = {
+            create_wargoal = {
+		        target = SIA
+		        type = puppet_wargoal_focus
+	        }
+		}
+	}
+	KOR_attack_malay = {
+		icon = generic_army
+		allowed = {
+		    OR = {
+			    original_tag = KOR 
+			    original_tag = MKR
+		    }
+		}
+		available = {
+			MAL = { exists = yes }
+			has_war_support > 0.5
+        }
+		visible = {
+			OR = {
+				has_completed_focus = kor_threat_united_states
+				OR = {
+					has_country_flag = FLAG_USA_FUCK_TO_KOREA
+					has_war_with = USA
+				}	
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 45
+		ai_will_do = {
+			factor = 30
+		}
+		
+		remove_effect = {
+            declare_war_on = {
+		        target = RAJ
+		        type = puppet_wargoal_focus
+	        }
+            declare_war_on = {
+		        target = ENG
+		        type = puppet_wargoal_focus
+	        }
+            declare_war_on = {
+		        target = AST
+		        type = puppet_wargoal_focus
+	        }
+            declare_war_on = {
+		        target = NZL
+		        type = puppet_wargoal_focus
+	        }
+		}
+	}
+	KOR_attack_indonesia = {
+		icon = generic_army
+		allowed = {
+		    OR = {
+			    original_tag = KOR 
+			    original_tag = MKR
+		    }
+		}
+		available = {
+			INS = { exists = yes }
+			has_war_support > 0.5
+        }
+		visible = {
+			OR = {
+				has_completed_focus = kor_threat_united_states
+				OR = {
+					has_country_flag = FLAG_USA_FUCK_TO_KOREA
+					has_war_with = USA
+				}	
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 45
+		ai_will_do = {
+			factor = 20
+		}
+
+		remove_effect = {
+            declare_war_on = {
+		        target = INS
+		        type = puppet_wargoal_focus
+	        }
+		}
+	}
 	
+	####
+	KOR_attack_japanese_empire = {
+		icon = generic_army
+		allowed = {
+		    OR = {
+			    original_tag = KOR 
+			    original_tag = MKR
+		    }
+		}
+		available = {
+			JAP = { exists = yes }
+			NOT = {
+				has_idea = KOR_not_go_outside
+			}
+			has_completed_focus = KOR_all_claim
+			custom_trigger_tooltip = {
+				tooltip = TRIGGER_TOOLTIP_WAR_IN_CHINA
+				OR = {
+					has_war_with = CHI
+					has_war_with = ZLC
+					has_war_with = WZC
+					has_war_with = USA
+				}
+			}
+			
+        }
+
+		fire_only_once = yes
+
+		cost = 0
+		days_remove = 45
+		ai_will_do = {
+			factor = 1000
+		}
+
+		remove_effect = {
+            declare_war_on = {
+		        target = JAP
+		        type = puppet_wargoal_focus
+	        }
+		}
+	}
 }
 KOR_new_country_name = {
 	KOR_goonsoo = {
@@ -1540,80 +1719,7 @@ KOR_reichskommissariat = {
 			}
 		}
 	}
-	
-	KOR_attack_siam = {
-		icon = generic_industry
-		allowed = {
-		    OR = {
-			    original_tag = KOR 
-			    original_tag = MKR
-		    }
-		}
-		available = {
-			SIA = { exists = yes }
-			NOT = {
-				has_idea = KOR_not_go_outside
-			}
-			has_completed_focus = KOR_all_claim
-			has_war_support > 0.5
-        }
 
-		fire_only_once = yes
-
-		cost = 50
-		days_remove = 45
-		ai_will_do = {
-			factor = 0
-		}
-
-		remove_effect = {
-            declare_war_on = {
-		        target = SIA
-		        type = puppet_wargoal_focus
-	        }
-		}
-	}
-	KOR_attack_japanese_empire = {
-		icon = generic_industry
-		allowed = {
-		    OR = {
-			    original_tag = KOR 
-			    original_tag = MKR
-		    }
-		}
-		available = {
-			JAP = { exists = yes }
-			NOT = {
-				has_idea = KOR_not_go_outside
-			}
-			has_completed_focus = KOR_all_claim
-			custom_trigger_tooltip = {
-				tooltip = TRIGGER_TOOLTIP_WAR_IN_CHINA
-				OR = {
-					has_war_with = CHI
-					has_war_with = ZLC
-					has_war_with = WZC
-					has_war_with = USA
-				}
-			}
-			
-        }
-
-		fire_only_once = yes
-
-		cost = 50
-		days_remove = 45
-		ai_will_do = {
-			factor = 0
-		}
-
-		remove_effect = {
-            declare_war_on = {
-		        target = JAP
-		        type = puppet_wargoal_focus
-	        }
-		}
-	}
 }
 KOR_nuke_surrend = {
 
