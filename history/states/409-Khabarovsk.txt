@@ -8,7 +8,7 @@ state={
 	local_supplies=0.0 
 
 	history={
-		owner = RUS
+		owner = KYH
 		victory_points = {
 			12189 1 
 		}
@@ -24,7 +24,7 @@ state={
 
 		}
 		add_claim_by = SOV
-		add_core_of = RUS
+		add_core_of = KYH
 		add_core_of = KOR
 
 	}

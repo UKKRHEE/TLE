@@ -1729,3 +1729,139 @@ country_event = {
 			}
     }
 }
+country_event = {
+	id = china.1103
+	title = china.1103.t
+	desc = china.1103.d
+    
+    picture = GFX_report_event_chi_great_war
+
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = china.1103.a
+		add_political_power = 150
+		add_stability = 0.05
+    }
+}
+country_event = {
+	id = china.1104
+	title = china.1104.t
+	desc = china.1104.d
+    
+    picture = GFX_report_event_chi_great_war
+
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = china.1104.a
+		ai_chance = {
+			factor 100
+		}
+		declare_war_on = {
+			target = AHC
+			type = annex_everything
+		}
+    }
+	option = { 
+		name = china.1104.b
+		ai_chance = {
+			factor 0
+		}
+		create_wargoal = {
+			target = AHC
+			type = annex_everything
+		}
+    }
+}
+country_event = {
+	id = china.1105
+	title = china.1105.t
+	desc = china.1105.d
+    
+    picture = GFX_report_event_chi_great_war
+
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = china.1105.a
+		army_experience = 30
+		declare_war_on = {
+			type = annex_everything 
+			target = WZC
+		}	
+		declare_war_on = {
+			type = annex_everything 
+			target = AHC
+		}	
+		declare_war_on = {
+			type = annex_everything 
+			target = PRC
+		}
+		every_state = {
+			limit = {
+				is_core_of = WZC
+				OR = {
+					is_owned_by = WZC	
+					is_owned_by = AHC	
+					is_owned_by = PRC	
+				}
+			}
+			add_core_of = CHI
+		}
+    }
+}
+country_event = {
+	id = china.1106
+	title = china.1106.t
+	desc = china.1106.d
+     
+    picture = GFX_report_event_chi_great_war
+
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = china.1106.a
+		remove_ideas = PRC_government_corruption
+		add_stability = 0.05
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+    }
+}
+country_event = {
+	id = china.1107
+	title = china.1107.t
+	desc = china.1107.d
+    
+    picture = GFX_report_event_chi_great_war
+
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = china.1107.a
+		add_war_support = 0.05
+			every_state = {
+				limit = {
+					is_core_of = KOR
+					is_core_of = ZLC
+				}
+				add_core_of = CHI
+			}
+			every_state = {
+				limit = {
+					is_core_of = KMN
+					is_core_of = ZLC
+				}
+				add_core_of = CHI
+			}
+			every_state = {
+				limit = {
+					is_core_of = MEN
+					is_core_of = ZLC
+				}
+				add_core_of = CHI
+			}
+    }
+}

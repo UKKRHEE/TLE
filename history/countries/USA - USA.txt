@@ -11,22 +11,11 @@ if = {
 		set_naval_oob = "USA_1936_naval_legacy"
 	}
 }
-add_offsite_building = {
-	type = arms_factory
-	level = 10
-}
-add_offsite_building = {
-	type = dockyard
-	level = 10
-}
-add_offsite_building = {
-	type = industrial_complex
-	level = 80
-}
 
 set_research_slots = 4
 set_stability = 0.75
 set_war_support = 0
+add_command_power = 50
 set_variable = { var = senators_support value = 48 }
 set_variable = { var = senators_total value = 96 }
 set_variable = { var = representatives_support value = 218 }
@@ -365,7 +354,6 @@ recruit_character = USA_arleigh_burke
 recruit_character = USA_charles_m_cooke_jr
 recruit_character = USA_carnot_wheeler
 recruit_character = USA_robert_goddard
-recruit_character = USA_raymond_spruance
 recruit_character = USA_robert_oppenheimer
 recruit_character = USA_curtis_lemay
 recruit_character = USA_thomas_kinkaid
@@ -374,7 +362,6 @@ recruit_character = USA_dewitt_clinton_ramsey
 recruit_character = USA_harold_mcclelland
 recruit_character = USA_charles_lindbergh
 recruit_character = USA_george_kenney
-recruit_character = USA_william_halsey
 recruit_character = USA_john_cannon
 recruit_character = USA_george_marshall
 recruit_character = USA_carl_spaatz
@@ -527,7 +514,7 @@ if = {
 			tank_nsb_armor_upgrade = 2
 			tank_nsb_engine_upgrade = 5
 		}
-		icon = "gfx/interface/technologies/USA_basic_light_tank.dds"
+		icon = "GFX_USA_basic_light_tank_medium"
 	}
 	create_equipment_variant = {
 		name = "M2A2"
@@ -546,7 +533,7 @@ if = {
 			tank_nsb_armor_upgrade = 2
 			tank_nsb_engine_upgrade = 5
 		}
-		icon = "gfx/interface/technologies/USA_basic_light_tank.dds"
+		icon = "GFX_USA_basic_light_tank_medium"
 	}
 }
 if = {

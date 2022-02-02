@@ -7,6 +7,7 @@ tags={
 }
 dependencies={
 	"Korean Language (Europa)"
+	"Youjo Senki l KR"
 }
 name="THE LAST EMPIRE"
 supported_version="1.11.*"

@@ -14,11 +14,17 @@
  KOR_three_divided_china:0 "천하삼분지계"
  TRIGGER_TOOLTIP_RULLED_CHINA:0 "§Y만주§!, §Y청도§!, §Y대만§!, §Y몽골령 중국§!을 제외한 모든 중국 전토를 점령하고 있다."
  KOR_the_war_plan_Z:0 "§Y전쟁계획 '천명'§!"
+ KOR_the_war_plan_Z_2:0 "§R'대륙타통작전'§!"
  
  KOR_kill_the_usa_plan:0 "미국과의 분쟁"
  KOR_confiscation_of_US_assets:0 "주한 미국 기업 국유화"
  KOR_not_say_the_panay:0 "파나이에 대해 사과한다"
  KOR_hunlian_in_pacific:0 "태평양에서의 훈련"
+ KOR_war_with_usa_dec:0 "모든 경제제재 해제"
+ 
+ KOR_political_officer_kill:0 "군부 완전통제"
+ KOR_political_officer_kill_desc:0 "대전쟁에서의 완전한 승리로, 이제 군부를 통제할 때가 되었습니다. 한때 갑작스런 중국 침공으로 제국의 운명을 휘청이게 했던 그들을, 이제는 반드시 목줄을 잡아야겠습니다."
+ won_in_china:0 ""천하삼분지계"를 실현시킴."
  
  KOR_first_plan_lightning:0 "일번작계 뇌격"
  KOR_first_plan_lightning_desc:0 "북경에 대한 적괴 무리의 방비가 든든함은 공공연한 비밀이오, 적괴의 두목이 소굴의 방위를 등한시할 정도로 어리석은 자가 아닐지니, 이를 타계하기 위한 계책은 청도에 치중을 쌓고 정예한 군사를 가려 뽑아 산동의 적괴 무리를 빠르게 쳐부수고, 산동 반도를 장악하여 낙뢰와 같이 군을 몰아 북경을 감싸는 것이오.\n\n수도와 수괴를 사로잡는다면 적괴 무리는 사분오열하여 우리 군에 대적할 생각도 못할 것이며, 남쪽의 군소 토비 무리는 그 정예함이 왜의 농민만도 못한 오합지졸 나부랭이이니 근심을 할 이유가 없음이라, 대한의 유일한 근심거리는 오롯이 대한이 피로서 쟁취한 것을 탐하는 귀축영미의 이리 떼 분이라."

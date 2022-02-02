@@ -51,7 +51,7 @@ oob = "KOR_1936"
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 5000
+	amount = 6500
 	producer = KOR
 }
 add_equipment_to_stockpile = {
@@ -62,7 +62,7 @@ add_equipment_to_stockpile = {
 
 add_equipment_to_stockpile = {
 	type = support_equipment_1
-	amount = 1000
+	amount = 2500
 	producer = KOR
 }
 
@@ -72,7 +72,7 @@ add_equipment_to_stockpile = {
 	producer = KOR
 }
 #set_autonomy = {
-#	target = RUS
+#	target = KYH
 #	autonomous_state = autonomy_puppet
 #}
 add_offsite_building = {
@@ -83,13 +83,13 @@ add_offsite_building = {
 	type = industrial_complex
 	level = 4
 }
-1935.10.12 = {
+1912.10.12 = {
 	declare_war_on = {
 		target = MON
 		type = annex_everything
 	}
 }
-give_guarantee = RUS
+give_guarantee = KYH
 
 if = {
 	limit = {
@@ -227,7 +227,7 @@ if = {
 		not = { has_dlc = "Waking the Tiger" }
 	}
 	set_autonomy = {
-		target = RUS
+		target = KYH
 		autonomous_state = autonomy_integrated_puppet
 	}
 }
@@ -239,7 +239,7 @@ if = {
 		}
 	}
 	set_autonomy = {
-		target = RUS
+		target = KYH
 		autonomous_state = autonomy_puppet
 	}
 }
@@ -248,7 +248,7 @@ if = {
 		has_dlc = "Waking the Tiger"
 	}
 	set_autonomy = {
-		target = RUS
+		target = KYH
 		autonomous_state = autonomy_wtt_imperial_protectorate
 	}
 }
@@ -472,7 +472,7 @@ create_import = {
 }
 
 #country_lock_all_division_template = yes
-set_convoys = 250
+set_convoys = 400
 
 set_politics = {
 	ruling_party = democratic

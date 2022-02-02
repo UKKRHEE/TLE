@@ -881,7 +881,7 @@ KPL = {
 	color = rgb { 204 204 204 }
 	color_ui = rgb { 204 204 204 }
 }
-RUS = {
+KYH = {
 	color = rgb { 36  7  126 }
 	color_ui = rgb { 36  7  126 }
 }

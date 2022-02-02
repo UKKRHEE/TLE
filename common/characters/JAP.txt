@@ -12,21 +12,12 @@ characters={
 			expire="1989.1.1.1"
 			id=-1
 		}
-		corps_commander={
-			traits={ brilliant_strategist politically_connected }
-			skill=5
-			attack_skill=5
-			defense_skill=5
-			planning_skill=3
-			logistics_skill=5
-			legacy_id=-1
-		}
 	}
 	JAP_emperor_hirohito={
 		name=JAP_emperor_hirohito
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_Japan_Hirohito.dds"
+				large="gfx/leaders/JAP/Portrait_JAP_hirohito.png"
 				small="gfx/interface/ideas/JAP/idea_showa_hirohito.png"
 			}
 			army={

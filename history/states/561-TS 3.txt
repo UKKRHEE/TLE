@@ -1,25 +1,26 @@
 
 state={
-	id = 561
-	name = "STATE_561" # Amur
-	manpower = 454281
-	
-	state_category = rural
+	id=561
+	name="STATE_561"
 
-	history = {
-		owner = RUS
+	history={
+		owner = KYH
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
+
 		}
-		add_core_of = RUS
+		add_core_of = KYH
 		add_core_of = SOV
 		add_core_of = FER
+
 	}
 
-	provinces = {
-		1730 1739 1845 4731 4847 7691 7754 7785 7851 10678 12543 12591 12657 12660 
+	provinces={
+		1730 1739 1845 4731 4832 4847 7754 7851 10678 12543 12591 12657 12660 
 	}
-
-	local_supplies = 6.0 
+	manpower=454281
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
 }

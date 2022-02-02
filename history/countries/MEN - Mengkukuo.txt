@@ -12,7 +12,7 @@ add_ideas = {
 	MEN_demchugdongrub
 	limited_conscription
 }
-1935.10.12 = {
+1912.10.12 = {
 	declare_war_on = {
 		target = MON
 		type = annex_everything

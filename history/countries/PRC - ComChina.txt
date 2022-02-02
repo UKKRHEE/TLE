@@ -188,3 +188,8 @@ add_ideas = {
 
 
 add_opinion_modifier = { target = CHI modifier = hostile_status }
+
+add_offsite_building = {
+	type = industrial_complex
+	level = 1
+}

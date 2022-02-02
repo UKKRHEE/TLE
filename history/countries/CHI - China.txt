@@ -36,6 +36,25 @@ if = {
 		CHI_ineffective_bureaucracy_warlord
 	}
 }
+add_offsite_building = {
+	type = arms_factory
+	level = 2
+}
+
+add_offsite_building = {
+	type = industrial_complex
+	level = 2
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 8500
+	producer = CHI
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 6000
+	producer = ENG
+}
 set_research_slots = 3
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }

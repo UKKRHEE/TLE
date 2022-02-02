@@ -27,6 +27,7 @@ country_event = { #간략한 설정
 			country_event = {
 				id = TLE_japan.1
 			}
+			set_major = no
 		}
 		if = {
 			limit = {
@@ -155,10 +156,80 @@ country_event = { #자원입대한 군인들
 	
 	option = { #좋았어!
 		name = korea.7.a
+		if = {
+			limit = {
+				original_tag = SOV
+			}
+			KOR = {
+				release = CHI
+			}
+			SOV = {
+				puppet = CHI
+			}
+		}
+		if = {
+			limit = {
+				original_tag = USA
+			}
+			KOR = {
+				release = CHI
+			}
+			USA = {
+				puppet = CHI
+			}
+		}
+		if = {
+			limit = {
+				WZC = {
+					is_puppet_of = KOR
+				}
+			}
+			end_puppet = WZC
+			WZC = {
+				declare_war_on = {
+					target = CHI
+					type = annex_everything
+				}	
+			}
+		}
+		if = {
+			limit = {
+				original_tag = USA
+				JAP = {
+					exists = no
+				}
+				DKG = {
+					exists = no
+				}
+			}
+			KOR = {
+				release = JAP
+			}
+			USA = {
+				puppet = JAP
+			}
+		}	
+		if = {
+			limit = {
+				original_tag = SOV
+				JAP = {
+					exists = no
+				}
+				DKG = {
+					exists = no
+				}
+			}
+			KOR = {
+				release = JAP
+			}
+			SOV = {
+				puppet = JAP
+			}
+		}	
 	}
 }
 
-country_event = { #제 1대 대한민국 대통령 선거
+country_event = { #
 	id = korea.8
 	title = korea.8.title
 	desc = korea.8.desc
@@ -170,16 +241,6 @@ country_event = { #제 1대 대한민국 대통령 선거
 		name = korea.8.a
 		custom_effect_tooltip = kor.5.tt
 		complete_national_focus = kor_phillip_jaisohn
-	}
-	option = { #여운형
-		name = korea.8.b
-		custom_effect_tooltip = kor.9.tt
-		complete_national_focus = kor_yeounhyeong
-	}
-	option = { #이승만
-		name = korea.8.c
-		custom_effect_tooltip = kor.7.tt
-		complete_national_focus = kor_syngman_rhee
 	}
 }
 
@@ -212,7 +273,7 @@ country_event = { #남만주 요구
 	
 	option = { #그래 시작해보자고
 		name = korea.10.a
-		RUS = {
+		KYH = {
 		    country_event = {
 				id = FNG.1
 			}
@@ -484,7 +545,7 @@ country_event = { #간략한 설정
 		RMN = {
 			transfer_state = 761
 		}
-		RUS = {
+		KYH = {
 			puppet = RMN
 		}
 		JAP = {
@@ -1745,7 +1806,10 @@ country_event = { #3분지계
 		}
 	}		
 	option = { #쑹저위안의 남중국
-		name = korea.39.d
+		name = korea.39.a
+		trigger = {
+				has_country_flag = FLAG_WZC_PUPPET_KOR
+		}
 		release_puppet = SIK
 		puppet = SZC
 		puppet = GXC
@@ -1977,6 +2041,9 @@ country_event = { #미국의 단독 점령
 	
 	option = { #
 		name = korea.44.a
+			country_event = {
+				id = korea.7
+			}	
 			KOR = {
 			transfer_navy = {
 				target = ROOT
@@ -2026,7 +2093,9 @@ country_event = { #소련과의 공동 분할
 	
 	option = { #
 		name = korea.45.a
-		
+			country_event = {
+				id = korea.7
+			}	
 					USA = { #한국 괴뢰화, 만주민국 설립, 제주 해군기지 획득
 						puppet = KMN
 						puppet = KOR
@@ -2102,6 +2171,9 @@ country_event = { #소련의 단독 점령
 	option = { #
 		name = korea.46.a
 		
+			country_event = {
+				id = korea.7
+			}	
 					SOV = {
 						transfer_state = 841
 						transfer_state = 745
@@ -2164,6 +2236,9 @@ country_event = { #소련의 미국과의 분할점령
 	
 	option = { #
 		name = korea.47.a
+			country_event = {
+				id = korea.7
+			}	
 			KOR = {
 			transfer_navy = {
 				target = ROOT
@@ -2238,7 +2313,19 @@ country_event = { #일본의 단독점령
 	
 	option = { #
 		name = korea.48.a
-		
+			country_event = {
+				id = korea.7
+			}	
+		if = {
+			limit = {
+				ZLC = {
+					exists = no
+				}
+				CHI = {
+					exists = no
+				}
+			}
+		}
 					JAP = { #일본이 한국 괴뢰국 세우고, 제주와 여순을 먹는다
 						puppet = KMN
 						puppet = KOR
@@ -2683,14 +2770,11 @@ country_event = { #위안부
 			OR = {
 				has_war_with = ZLC
 				has_war_with = CHI
-				has_war_with = USA
-				has_war_with = WZC
-				has_war_with = SOV
 			}
 		}
 	}
 	mean_time_to_happen = {
-		months = 1
+		months = 8
 	}
 	 
 	option = { #못다 핀 꽃과 같이 졌다.
@@ -3144,6 +3228,44 @@ country_event = { #광저우
 		
 	}
 }
+country_event = { #난징
+	id = korea.84
+	title = korea.84.title
+	desc = korea.84.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.84.a
+		613 = {
+			add_manpower = -41320
+		}
+		hidden_effect = {
+			country_event = {
+				id = korea.85
+				days = 42
+			}
+		}
+	}
+}
+country_event = { #난징
+	id = korea.85
+	title = korea.85.title
+	desc = korea.85.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.85.a
+		613 = {
+			add_manpower = -73220
+		}
+	}
+}
 ##########
 country_event = { #결론
 	id = korea.777
@@ -3158,6 +3280,26 @@ country_event = { #결론
 		name = korea.777.a
 		country_event = {
 			id = korea.778
+		}
+	}
+	option = { #
+		name = korea.777.b
+		trigger = {
+			has_idea = KOR_yi_jin
+			has_idea = KOR_samsung_pacific
+			has_idea = KOR_posco
+		}
+		add_offsite_building = {
+			type = arms_factory
+			level = 2
+		}
+		add_offsite_building = {
+			type = dockyard
+			level = 2
+		}
+		add_offsite_building = {
+			type = industrial_complex
+			level = 2
 		}
 	}
 }
@@ -3327,5 +3469,44 @@ country_event = { #결론
 	 
 	option = { #한국
 		name = korea.787.a
+	}
+}
+country_event = { #결론
+	id = korea.788
+	title = korea.788.title
+	desc = korea.788.desc
+	picture = GFX_TLE_korea_event_none
+	
+    is_triggered_only = yes
+	 
+	option = { #한국
+		name = korea.788.a
+		add_offsite_building = {
+			type = arms_factory
+			level = 20
+		}
+		add_offsite_building = {
+			type = dockyard
+			level = 20
+		}
+		add_offsite_building = {
+			type = industrial_complex
+			level = 20
+		}
+		hidden_effect = {
+		USA_add_factories_TLE = yes
+		USA_add_factories_TLE = yes
+		USA_add_factories_TLE = yes
+		USA_add_factories_TLE = yes
+		USA_add_factories_TLE = yes
+		USA_add_factories_TLE = yes
+		USA_add_factories_TLE = yes
+		USA_add_factories_TLE = yes
+		USA_add_factories_TLE = yes
+		USA_add_factories_TLE = yes
+		USA_add_factories_TLE = yes
+		USA_add_factories_TLE = yes
+		
+		}
 	}
 }

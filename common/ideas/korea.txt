@@ -300,11 +300,16 @@ ideas = {
 		KOR_embargo_us = {
 			picture = generic_goods_red_bonusofficers_purged
 			modifier = {
-				consumer_goods_factor = 0.2
-				stability_factor = -0.1
-				war_support_factor = -0.05
-				industrial_capacity_factory = -0.25
-				industrial_capacity_dockyard = -0.25
+				army_org_Factor = -0.2
+				army_morale_factor = -0.2
+				consumer_goods_factor = 0.3
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				industrial_capacity_factory = -0.4
+				industrial_capacity_dockyard = -0.4
+				planning_speed = -0.1
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = 0.3
 			}
 			targeted_modifier = {
 				tag = USA
@@ -329,6 +334,46 @@ ideas = {
 				trade_opinion_factor = -1.0
 				license_armor_purchase_cost = 1.0
 				improve_relations_maintain_cost_factor = 9.99
+			}
+			targeted_modifier = {
+                tag = ZLC
+				attack_bonus_against = -0.5
+			}
+			targeted_modifier = {
+                tag = CHI
+				attack_bonus_against = -0.5
+			}
+			targeted_modifier = {
+                tag = WZC
+				attack_bonus_against = -0.5
+			}
+			targeted_modifier = {
+                tag = SND
+				attack_bonus_against = -0.5
+			}
+			targeted_modifier = {
+                tag = SHX
+				attack_bonus_against = -0.5
+			}
+			targeted_modifier = {
+                tag = HNC
+				attack_bonus_against = -0.5
+			}
+			targeted_modifier = {
+                tag = YUN
+				attack_bonus_against = -0.5
+			}
+			targeted_modifier = {
+                tag = XSM
+				attack_bonus_against = -0.5
+			}
+			targeted_modifier = {
+                tag = GXC
+				attack_bonus_against = -0.5
+			}
+			targeted_modifier = {
+                tag = SIK
+				attack_bonus_against = -0.5
 			}
 		}
 		KOR_embargo_us_2 = {
@@ -737,9 +782,12 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = -0.10
+				stability_factor = -0.2
 				political_power_cost = 0.15
-				planning_speed = 0.05	
+				planning_speed = -0.15	
+				resistance_damage_to_garrison = 0.25 
+				foreign_subversive_activites = 0.3
+				non_core_manpower = -0.02
 			}
 		}
 		kor_han_river = {

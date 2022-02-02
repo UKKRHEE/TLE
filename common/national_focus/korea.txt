@@ -1302,9 +1302,6 @@ focus_tree = {
 						}
 				}
 			completion_reward = {
-					hidden_effect = {
-							add_ideas = spiritual_mobilization_idea
-						}
 					custom_effect_tooltip = KOR_tooltip_attack_china
 					every_other_country = {
 						limit = {
@@ -1532,7 +1529,7 @@ focus_tree = {
 			completion_reward = {
 					KOR = {
 							annex_country = {
-									target = RUS
+									target = KYH
 									transfer_troops = yes
 								}
 							annex_country = {
@@ -3435,7 +3432,7 @@ focus_tree = {
 			completion_reward = {
 					KOR = {
 						annex_country = {
-							target = RUS
+							target = KYH
 						}
 					}	
 				}

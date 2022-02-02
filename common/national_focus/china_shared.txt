@@ -1630,6 +1630,7 @@ shared_focus = {
 			}
 			remove_ideas = CHI_factory_strikes
 		}
+		remove_ideas = CHI_nine_power_treaty
 	}
 }
 

@@ -351,7 +351,7 @@ characters={
 		name=KOR_an_jung_geun
 		portraits={
 			army={
-				large="gfx/leaders/KOR/Ann_jung_gun_2.dds"
+				large="gfx/leaders/KOR/Portrait_KOR_ahn_junggeun.png"
 				small="gfx/interface/ideas/idea_ahn_jung_geun.dds"
 			}
 		}

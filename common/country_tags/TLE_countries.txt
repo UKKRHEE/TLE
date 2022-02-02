@@ -21,7 +21,7 @@ WZC = "countries/China.txt" #오성연군
 HNC = "countries/China.txt" #호남군벌
 AHC = "countries/China.txt" #호남군벌
 ###Eastern Republic###
-RUS = "countries/Soviet Union.txt" #극동 공화국 #명복을 빌지.
+KYH = "countries/Soviet Union.txt" #극동 공화국 #명복을 빌지.
 ###Forigen Japanese Clique###
 KKS = "countries/Japan.txt" #규슈 총독부
 KHK = "countries/Japan.txt" #홋카이도

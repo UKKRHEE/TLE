@@ -49,6 +49,12 @@ on_actions = {
                     hours = 5
       			}
 			}
+			USA = {
+                country_event = {
+                    id = korea.788
+                    days = 0
+      			}
+			}
 			if = {
 				every_state = {
 					limit = {
@@ -100,6 +106,11 @@ on_actions = {
 						}
 					}
 					SHX = { change_tag_from = PRC }
+				}
+				ZLC = {
+					country_event = {
+						id = china.1104
+					}
 				}
 				
 			}
@@ -330,6 +341,10 @@ on_actions = {
 						set_country_flag = korea_war_with_usa
 					}
 				}
+				KOR = {
+					add_ideas = KOR_embargo_us
+					add_war_support = -0.6
+				}
 			}
 			if = {
 				limit = {
@@ -359,6 +374,10 @@ on_actions = {
 					USA = {
 						set_country_flag = korea_war_with_usa
 					}
+				}
+				KOR = {
+					add_ideas = KOR_embargo_us
+					add_war_support = -0.6
 				}
 			}
 			if = {
@@ -505,6 +524,9 @@ on_actions = {
 					}
 				} 
 				news_event = { id = eok_news.3 hours = 1 }
+				country_event = {
+					id = korea.84
+				}
 				KOR = {
 					set_country_flag = FLAG_KOR_NANKING_KILL
 				}
@@ -1151,7 +1173,7 @@ on_actions = {
 					FROM.FROM = { state = 885 } #점령 주 - 규슈
 				}
                 FROM.FROM = {
-					set_state_name = "교송"
+					set_state_name = "구주"
 					
 				}
                 set_province_name = {
@@ -1692,7 +1714,7 @@ on_actions = {
 				KMN = {
 					white_peace = KOR
 				}	
-				RUS = {
+				KYH = {
 					white_peace = KOR
 				}	
 				ENG = {
@@ -1826,7 +1848,7 @@ on_actions = {
 				if = { #소련이 극동공화국과 전쟁할 때
 					limit = {
 						SOV = {
-							has_war_with = RUS
+							has_war_with = KYH
 						}
 					}
 					SOV = {
@@ -1948,6 +1970,18 @@ on_actions = {
 				}
 				
 				KOR = {
+					retire_character = KOR_an_jung_geun 
+					retire_character = KOR_yi_wu 
+					retire_character = KOR_yi_geon 
+					retire_character = KOR_kim_sung_ju 
+					retire_character = KOR_yu_dong_yeol 
+					retire_character = KOR_mae_ji_rang 
+					retire_character = KOR_choe_yong_geon 
+					retire_character = KOR_kim_du_han 
+					retire_character = KOR_yi_won 
+					retire_character = KOR_yi_kang 
+					retire_character = KOR_lee_beom_seok 
+					retire_character = KOR_kim_chwa_chin 
 					add_country_leader_role = {
 						Character = KOR_emperor_yi_jin
 						country_leader = {
@@ -1961,17 +1995,15 @@ on_actions = {
 						promote_leader = yes
 					}	
 					add_country_leader_role = {
-						Character = KOR_emperor_yi_jin
-						country_leader = {
+						Character = KOR_kim_koo
+						Promote_leader = yes
+						Country_leader = {
+							ideology = conservatism
 							expire = "1965.1.1"
-							ideology = liberalism
-							desc="KOR_yi_jin_desc"
 							traits = {
-								korea_emperor
 							}
 						}
-						promote_leader = yes
-					}	
+					}
 					add_country_leader_role = {
 						Character = KOR_emperor_yi_jin
 						country_leader = {
@@ -2020,6 +2052,42 @@ on_actions = {
 					}
 					delete_unit_template_and_units = {
 						division_template = "보병 편제 1"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "보병 편제 2"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "보병 편제 3"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "보병 편제 4"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "보병 편제 5"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "보병 편제 6"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "보병 편제 7"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "보병 편제 8"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "보병 편제 9"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "보병 편제 10"
 						disband = yes #will refund equipment and manpower
 					}
 					delete_unit_template_and_units = {
@@ -2225,6 +2293,22 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					date < 1937.9.4
+					original_tag = KOR
+					has_government = fascism
+					NOT = {
+						has_country_flag = FLAG_LEE_BYUNG_MU_DEAD
+					}
+				}	
+				KOR = {
+					set_country_flag = FLAG_LEE_BYUNG_MU_DEAD
+					country_event = {
+						id = korea.8
+					}
+				}
+			}
+			if = {
+				limit = {
 					has_idea = CHI_embargo_korea
 					NOT = {
 						has_war_with = KOR
@@ -2331,7 +2415,7 @@ on_actions = {
 					KOR = {
 						has_country_flag = TLE_THE_WAR_IS_ENDED
 					}
-					RUS = {
+					KYH = {
 						exists = yes
 						NOT = {
 							has_war_with = SOV
