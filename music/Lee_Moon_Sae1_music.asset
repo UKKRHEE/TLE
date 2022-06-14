@@ -127,6 +127,11 @@ music = {
 	volume = 1.0
 }
 music = {
+	name = "old_love"
+	file = "Lee_Moon_Sae1/old_love.ogg"
+	volume = 1.5
+}
+music = {
 	name = "sound_of_your_laughter"
 	file = "kim_kwang_seok/sound_of_your_laughter.ogg"
 	volume = 1.0

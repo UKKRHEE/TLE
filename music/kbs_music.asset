@@ -75,11 +75,6 @@ music = {
 	volume = 0.8
 }
 
-music = {
-	name = "old_love"
-	file = "kbs/old_love.ogg"
-	volume = 1.5
-}
 
 music = {
 	name = "Dont_worry"

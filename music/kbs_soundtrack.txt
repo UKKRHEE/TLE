@@ -125,16 +125,6 @@ music = {
 }
 
 music = {
-	song = "old_love"
-	chance = {
-		modifier = {
-			factor = 2
-			has_war = no
-		}
-	}
-}
-
-music = {
 	song = "Dont_worry"
 	
 	chance = {
