@@ -1,0 +1,15 @@
+focus_tree = {
+	id = korean_government
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			OR = {
+				tag = KKS
+				tag = KYH
+				tag = KMN
+				tag = KHK
+			}
+		}
+	}
+}	

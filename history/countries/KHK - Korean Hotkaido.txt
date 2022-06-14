@@ -8,6 +8,10 @@ set_technology = {
 	mass_assault = 1
 }
 
+add_opinion_modifier = {
+	target = KOR
+	modifier = TLE_general_government_opinion
+}
 set_convoys = 5
 
 set_politics = {
@@ -23,6 +27,10 @@ set_popularities = {
 	neutrality = 100
 }
 
+add_ideas = {
+	KOR_yi_jin
+	KOR_the_country_of_korea
+}
 create_country_leader = {
 	name = "의양군 이재각"
 	desc = ""

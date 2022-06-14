@@ -5,7 +5,8 @@ state={
 
 	local_supplies=0.0 
 	history={
-		owner = QIN
+		owner = ZLC
+		add_core_of = ZLC
 		add_core_of = CHI
 		add_core_of = PRC
 		add_core_of = KMN
@@ -15,9 +16,17 @@ state={
 			infrastructure = 1
 			arms_factory = 1
 			industrial_complex = 1
-			3900 = {
-				naval_base = 2
-
+			6969 = {
+				bunker = 1
+			}
+			900 = {
+				bunker = 1
+			}
+			1052 = {
+				bunker = 1
+			}
+			881 = {
+				bunker = 1
 			}
 
 		}

@@ -1,5 +1,7 @@
 ﻿capital = 839 # Nanjing
 
+save_global_event_target_as = WTT_communist_china
+
 oob = "CHI_guangdong"
 set_cosmetic_tag = CHI_guangdung
 set_stability = 0.27
@@ -14,11 +16,14 @@ set_technology = {
 	mass_assault = 1
 	fleet_in_being = 1
 }
+add_opinion_modifier = {
+	target = KOR
+	modifier = TLE_fight_opinion
+}
 add_ideas = {
 	CHI_kuomintang
 	CHI_legacy_of_sun_wen
 	CHI_failed_north_attack
-	CHI_era_of_chinese_warlords_1
 	CHI_ineffective_bureaucracy_1
 		PRC_government_corruption
 		CHI_ineffective_bureaucracy_warlord
@@ -47,13 +52,13 @@ add_offsite_building = {
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 8500
-	producer = CHI
+	amount = 1500
+	producer = FRA
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 6000
-	producer = ENG
+	amount = 1000
+	producer = SOV
 }
 set_research_slots = 3
 if = {
@@ -93,7 +98,6 @@ recruit_character = CHI_hu_zongnan
 recruit_character = CHI_gu_zhutong
 recruit_character = CHI_wei_lihuang
 recruit_character = CHI_fu_zuoyi
-recruit_character = CHI_zhang_xueliang
 recruit_character = CHI_fang_zeyi
 recruit_character = CHI_zhu_de
 recruit_character = CHI_chen_cheng
@@ -117,6 +121,34 @@ recruit_character = CHI_chen_yi
 recruit_character = CHI_soong_mei_ling
 recruit_character = CHI_random_prince_of_terror
 recruit_character = CHI_lin_sen
+recruit_character = PRC_zhu_de
+recruit_character = PRC_chen_yi
+recruit_character = PRC_peng_dehuai
+recruit_character = PRC_lin_biao
+recruit_character = PRC_kwong_hu
+recruit_character = PRC_luo_zhao
+recruit_character = PRC_liang_ma
+recruit_character = PRC_ma_jin
+recruit_character = PRC_ziao_jingguang
+recruit_character = PRC_nie_rongzhen
+recruit_character = PRC_su_yu
+recruit_character = PRC_liu_bocheng
+recruit_character = PRC_chen_geng
+recruit_character = PRC_gao_qiu
+recruit_character = PRC_liang_shen
+recruit_character = PRC_otto_braun
+recruit_character = PRC_gao_gang
+recruit_character = PRC_fang_zeyi
+recruit_character = PRC_xu_xiangqian
+recruit_character = PRC_deng_ye_peng
+recruit_character = PRC_ye_jianying
+recruit_character = PRC_hsia_tian
+recruit_character = PRC_zhang_wei
+recruit_character = PRC_zhou_enlai
+recruit_character = PRC_liu_shaoqi
+recruit_character = PRC_lin_bojiu
+recruit_character = PRC_dong_biwu
+recruit_character = PRC_he_yuandang
 
 set_politics = {
 	ruling_party = neutrality

@@ -1,6 +1,6 @@
 ﻿capital = 534 #South Korea - Seoul or Busan
 
-oob = "TBJ_1936"
+oob = "KGJ"
 
 # Starting tech
 set_technology = {
@@ -32,9 +32,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "마에다 토시나리"
+	name = "마에다 도시나리"
 	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_Japan_Generic_2.dds"
+	picture = "gfx/leaders/JAP/Portrait_JAP_maeda_toshinari.png"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -42,9 +42,9 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-	name = "마에다 토시나리"
+	name = "마에다 도시나리"
 	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_Japan_Generic_2.dds"
+	picture = "gfx/leaders/JAP/Portrait_JAP_maeda_toshinari.png"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

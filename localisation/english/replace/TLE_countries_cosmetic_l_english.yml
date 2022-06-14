@@ -1,12 +1,70 @@
 ﻿l_english:
 
- QIN_KOR:0 "중화 왕국"
- QIN_KOR_DEF:0 "중화 왕국"
- QIN_KOR_ADJ:0 "중화"
+ CHI_KOR:0 "중화민국 유신정부"
+ CHI_KOR_DEF:0 "중화민국 유신정부"
+ CHI_KOR_ADJ:0 "중국"
+ 
+ GXC_KOR:0 "광서"
+ GXC_KOR_DEF:0 "광서"
+ GXC_KOR_ADJ:0 "광서"
+ SZC_KOR:0 "사천"
+ SZC_KOR_DEF:0 "사천"
+ SZC_KOR_ADJ:0 "사천"
+ XSM_KOR:0 "마가군벌"
+ XSM_KOR_DEF:0 "마가군벌"
+ XSM_KOR_ADJ:0 "마가"
+ SHX_KOR:0 "산서"
+ SHX_KOR_DEF:0 "산서"
+ SHX_KOR_ADJ:0 "산서"
+ YUN_KOR:0 "운남"
+ YUN_KOR_DEF:0 "운남"
+ YUN_KOR_ADJ:0 "운남"
+ SIK_KOR:0 "신강"
+ SIK_KOR_DEF:0 "신강"
+ SIK_KOR_ADJ:0 "신강"
+ HNC_KOR:0 "호남"
+ HNC_KOR_DEF:0 "호남"
+ HNC_KOR_ADJ:0 "호남"
+ 
+ GDC_KOR:0 "광동"
+ GDC_KOR_DEF:0 "광동"
+ GDC_KOR_ADJ:0 "광동"
+ 
+ GDC:0 "광동군벌"
+ GDC_DEF:0 "광동군벌"
+ GDC_ADJ:0 "광동"
+
+ SHX_ZLC:0 "섬서군벌"
+ SHX_ZLC_DEF:0 "섬서군벌"
+ SHX_ZLC_ADJ:0 "섬서"
+ 
+ QIN_KOR:0 "대청"
+ QIN_KOR_DEF:0 "대청"
+ QIN_KOR_ADJ:0 "대청"
 
  GXC_KOR:0 "후명"
  GXC_KOR_DEF:0 "후명"
  GXC_KOR_ADJ:0 "후명"
+
+ KOR_FJP:0 "고지도호부"
+ KOR_FJP_DEF:0 "고지도호부"
+ KOR_FJP_ADJ:0 "고지"
+
+ KOR_DKG:0 "관서도독부"
+ KOR_DKG_DEF:0 "관서도독부"
+ KOR_DKG_ADJ:0 "관서"
+ 
+ CHI_PRC:0 "복건 국민당"
+ CHI_PRC_DEF:0 "복건 국민당"
+ CHI_PRC_ADJ:0 "국민당"
+ 
+ KOR_TBJ:0 "화령국"
+ KOR_TBJ_DEF:0 "화령국"
+ KOR_TBJ_ADJ:0 "화령"
+ 
+ KOR_NBJ:0 "하이국"
+ KOR_NBJ_DEF:0 "하이국"
+ KOR_NBJ_ADJ:0 "하이"
  
  SZC_KOR:0 "파촉 왕국"
  SZC_KOR_DEF:0 "파촉 왕국"
@@ -94,6 +152,19 @@
  JOS_UNIFIED_democratic_ADJ:0 "조선"
  JOS_UNIFIED_fascism_ADJ:0 "조선"
  
+ KMN_REP_neutrality:0 "만주 친왕국"
+ KMN_REP_neutrality_DEF:0 "만주 친왕국"
+ KMN_REP_fascism:0 "대만주제국"
+ KMN_REP_fascism_DEF:0 "대만주제국"
+ KMN_REP_democratic:0 "만주민국"
+ KMN_REP_democratic_DEF:0 "만주민국"
+ KMN_REP_communism:0 "만주사회주의인민공화국"
+ KMN_REP_communism_DEF:0 "만주사회주의인민공화국"
+ KMN_REP_neutrality_ADJ:0 "만주"
+ KMN_REP_communism_ADJ:0 "만주"
+ KMN_REP_democratic_ADJ:0 "만주"
+ KMN_REP_fascism_ADJ:0 "만주"
+ 
  MOK_UNIFIED_neutrality:0 "대한제국"
  MOK_UNIFIED_neutrality_DEF:0 "대한제국"
  MOK_UNIFIED_fascism:0 "대한제국"
@@ -158,5 +229,18 @@
  KOR_revolutionary_communism_ADJ:0 "대한"
  KOR_revolutionary_democratic_ADJ:0 "대한"
  KOR_revolutionary_fascism_ADJ:0 "대한"
+ 
+ JAP_great_japan_neutrality:0 "대일본제국"
+ JAP_great_japan_neutrality_DEF:0 "대일본제국"
+ JAP_great_japan_fascism:0 "대일본제국"
+ JAP_great_japan_fascism_DEF:0 "대일본제국"
+ JAP_great_japan_democratic:0 "대일본제국"
+ JAP_great_japan_democratic_DEF:0 "대일본제국"
+ JAP_great_japan_communism:0 "대일본제국"
+ JAP_great_japan_communism_DEF:0 "대일본제국"
+ JAP_great_japan_neutrality_ADJ:0 "일본"
+ JAP_great_japan_communism_ADJ:0 "일본"
+ JAP_great_japan_democratic_ADJ:0 "일본"
+ JAP_great_japan_fascism_ADJ:0 "일본"
  
  

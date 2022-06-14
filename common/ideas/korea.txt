@@ -1,5 +1,95 @@
 ideas = {
 	country = { #국민정신 
+		KOR_neutrality_start = {
+			 
+			allowed = {
+				original_tag = KOR
+			}
+			
+			modifier = {
+				join_faction_tension = 3
+				guarantee_tension = 3
+				guarantee_cost = 3
+			}
+		}
+		KOR_the_country_of_korea = {
+			 
+			allowed = {
+				original_tag = KOR
+			}
+			
+			modifier = {
+				neutrality_drift = 1
+				political_power_factor = 0.2
+				stability_factor = 0.1
+			}
+		}
+		KOR_the_first_army = {
+			 
+			allowed = {
+				original_tag = KOR
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				stability_factor = -0.1
+				political_power_cost = 0.35
+				resistance_damage_to_garrison = 0.10 
+				foreign_subversive_activites = 0.10
+				non_core_manpower = -0.02
+			}
+			
+		}
+		KOR_political_officer = { #정치장교
+			picture = german_advisors
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = -0.2
+				political_power_cost = 0.15
+				planning_speed = -0.15	
+				resistance_damage_to_garrison = 0.25 
+				foreign_subversive_activites = 0.3
+				non_core_manpower = -0.02
+			}
+		}
+		KOR_purged_government = {
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			modifier = {
+				political_power_factor = -0.25
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				surrender_limit = -0.1
+				drift_defence_factor = -0.15
+			}
+			
+		}
+		KOR_the_chaebol = {
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				war_support_factor = -0.05
+				research_speed_factor = 0.1
+			}
+			
+		}
 		KOR_law_the_5th = {
 			
 			allowed = {
@@ -24,7 +114,7 @@ ideas = {
 			}
 			
 		}
-		MEN_demchugdongrub = {
+		MEN_demchugdongrub_king = {
 			
 			allowed = {
 				original_tag = KOR
@@ -289,7 +379,7 @@ ideas = {
 			}
 		}
 		CHI_embargo_korea = {
-			picture = generic_goods_red_bonusofficers_purged
+			picture = generic_economic_increase
 			modifier = {
 				consumer_goods_factor = 0.1
 				war_support_factor = -0.05
@@ -298,7 +388,7 @@ ideas = {
 			}
 		}
 		KOR_embargo_us = {
-			picture = generic_goods_red_bonusofficers_purged
+			picture = generic_economic_increase
 			modifier = {
 				army_org_Factor = -0.2
 				army_morale_factor = -0.2
@@ -308,8 +398,7 @@ ideas = {
 				industrial_capacity_factory = -0.4
 				industrial_capacity_dockyard = -0.4
 				planning_speed = -0.1
-				industrial_capacity_factory = -0.3
-				industrial_capacity_dockyard = 0.3
+				production_speed_buildings_factor = -0.3
 			}
 			targeted_modifier = {
 				tag = USA
@@ -377,65 +466,75 @@ ideas = {
 			}
 		}
 		KOR_embargo_us_2 = {
-			picture = generic_goods_red_bonusofficers_purged
+			picture = generic_economic_increase
 			modifier = {
 				consumer_goods_factor = 0.2
 				war_support_factor = -0.6
 			}
 		}
+		KOR_embargo_us_3 = {
+			picture = generic_economic_increase
+			modifier = {
+				consumer_goods_factor = -0.15
+				stability_factor = 0.1
+			}
+		}
 	    KOR_not_planed_attack = {
 			picture = chi_warlord_integration5
 			modifier = {
-				custom_modifier_tooltip = IDEA_WILL_REMOVE_IN_DECISION
+				custom_modifier_tooltip = TOOLTIP_ATTACK_CHINA_REMOVE
+				army_org_Factor = 0.2
+				army_morale_factor = 0.4
+				planning_speed = 0.3
+				army_attack_factor = 0.1
 			}
 			targeted_modifier = {
                 tag = ZLC
-				attack_bonus_against = -0.3
+				attack_bonus_against = 0.65
 			}
 			targeted_modifier = {
                 tag = CHI
-				attack_bonus_against = -0.3
+				attack_bonus_against = 0.5
 			}
 			targeted_modifier = {
                 tag = WZC
-				attack_bonus_against = -0.3
+				attack_bonus_against = 0.3
 			}
 			targeted_modifier = {
                 tag = SND
-				attack_bonus_against = -0.3
+				attack_bonus_against = 0.3
 			}
 			targeted_modifier = {
                 tag = SHX
-				attack_bonus_against = -0.3
+				attack_bonus_against = 0.3
 			}
 			targeted_modifier = {
                 tag = HNC
-				attack_bonus_against = -0.3
+				attack_bonus_against = 0.3
 			}
 			targeted_modifier = {
                 tag = YUN
-				attack_bonus_against = -0.3
+				attack_bonus_against = 0.3
 			}
 			targeted_modifier = {
                 tag = XSM
-				attack_bonus_against = -0.3
+				attack_bonus_against = 0.3
 			}
 			targeted_modifier = {
                 tag = GXC
-				attack_bonus_against = -0.3
+				attack_bonus_against = 0.3
 			}
 			targeted_modifier = {
                 tag = SIK
-				attack_bonus_against = -0.3
+				attack_bonus_against = 0.3
 			}
 		}
 	    KOR_not_planed_attack_2 = {
 			picture = chi_warlord_integration5
 			modifier = {
 				custom_modifier_tooltip = IDEA_WILL_REMOVE_IN_DECISION
-				army_org_Factor = -0.5
-				army_morale_factor = -0.5
-				army_org_regain = -0.175
+				army_org_Factor = -0.65
+				army_morale_factor = -0.65
 			}
 			targeted_modifier = {
                 tag = ZLC
@@ -482,9 +581,10 @@ ideas = {
 			picture = chi_warlord_integration5
 			modifier = {
 				custom_modifier_tooltip = IDEA_WILL_REMOVE_IN_DECISION
-				army_org_Factor = -0.25
-				army_morale_factor = -0.25
-				army_org_regain = -0.1
+				army_org_Factor = -0.45
+				army_morale_factor = -0.45
+				army_org_regain = -0.15
+				war_support_factor = 0.4
 			}
 			targeted_modifier = {
                 tag = ZLC
@@ -766,28 +866,6 @@ ideas = {
 	   		targeted_modifier = {
                 tag = SOV			
 				attack_bonus_against = 0.05
-			}
-		}
-		
-		KOR_political_officer = { #정치장교
-			picture = german_advisors
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				stability_factor = -0.2
-				political_power_cost = 0.15
-				planning_speed = -0.15	
-				resistance_damage_to_garrison = 0.25 
-				foreign_subversive_activites = 0.3
-				non_core_manpower = -0.02
 			}
 		}
 		kor_han_river = {
@@ -1460,6 +1538,10 @@ ideas = {
 				#stability_factor = 0.15
 			}
 			traits = {
+				emperor_of_korea
+				han_of_manchuria
+				khan_of_mongolia
+				protecter_of_asia
 				young_monarchist
 			}
 		}
@@ -1483,6 +1565,64 @@ ideas = {
 				stability_factor = 0.15
 			}
 			traits = {
+				emperor_of_korea
+				#khan_of_mongolia
+				#han_of_manchuria
+				#protecter_of_asia
+				#young_monarchist
+			}
+		}
+		KOR_yi_hyul = { #헌문제 이휼
+		
+			allowed = {
+			original_tag = KOR
+			}
+			
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+			}
+			
+			picture = Yi_Kang
+			
+			removal_cost = 0
+			
+			modifier = {
+				stability_factor = 0.15
+			}
+			traits = {
+				emperor_of_korea
+				#khan_of_mongolia
+				#han_of_manchuria
+				#protecter_of_asia
+				#young_monarchist
+			}
+		}
+		KOR_yi_gon = { #광영제 이곤
+		
+			allowed = {
+			original_tag = KOR
+			}
+			
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+			}
+			
+			picture = KOR_yi_jin
+			
+			removal_cost = 0
+			
+			modifier = {
+				stability_factor = 0.15
+			}
+			traits = {
+				emperor_of_korea
+				#khan_of_mongolia
+				#han_of_manchuria
+				#protecter_of_asia
 				#young_monarchist
 			}
 		}

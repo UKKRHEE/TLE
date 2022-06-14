@@ -5,7 +5,6 @@ state={
 	resources={
 		tungsten=1.000
 	}
-	local_supplies=0.0 
 
 	history={
 		owner = XSM
@@ -38,9 +37,10 @@ state={
 	}
 
 	provinces={
-		531 556 1630 1985 2022 3742 3745 4313 4888 5025 6638 7270 7397 7911 8081 11448 12797 12882 
+		531 556 1630 1985 2022 3745 4313 4888 5025 6638 7270 7397 7911 8081 11448 12797 12882 
 	}
 	manpower=3705400
 	buildings_max_level_factor=1.000
 	state_category=rural
+	local_supplies=0.000
 }

@@ -3,7 +3,6 @@ state={
 	id=603
 	name="STATE_603"
 
-	local_supplies=0.0 
 	history={
 		owner = YUN
 		add_core_of = YUN
@@ -32,9 +31,10 @@ state={
 	}
 
 	provinces={
-		1884 4192 4504 4532 10616 
+		1884 4192 4504 4532 8095 10616 
 	}
 	manpower=4543200
 	buildings_max_level_factor=1.000
 	state_category=town
+	local_supplies=0.000
 }

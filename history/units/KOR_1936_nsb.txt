@@ -362,7 +362,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 11822
+		location = 11801
 		division_template = "보병 사단"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
@@ -512,7 +512,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 12043
+		location = 9905
 		division_template = "보병 사단"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
@@ -522,7 +522,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 3900
+		location = 6937
 		division_template = "보병 사단"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0

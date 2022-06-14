@@ -73,14 +73,14 @@ units = {
 	}
 	division = {
 		name = "1. Manzu Qibing Zhen"
-		location = 9905
+		location = 3900
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "2. Manzu Qibing Zhen"
-		location = 9905
+		location = 10068
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
@@ -115,21 +115,21 @@ units = {
 	}
 	division = {
 		name = "1. Zhangyuan Bubing Zhen"
-		location = 10397
+		location = 4140
 		division_template = "Zhili Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "2. Zhangyuan Bubing Zhen"
-		location = 10397
+		location = 1137
 		division_template = "Zhili Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "3. Zhangyuan Bubing Zhen"
-		location = 10397
+		location = 10480
 		division_template = "Zhili Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
@@ -156,121 +156,211 @@ units = {
 		start_equipment_factor = 1.0
 	}
 	division = {
-		location = 7109
+		location = 4089
 		division_template = "Zhili Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
-		location = 7109
+		location = 1184
 		division_template = "Zhili Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
-		location = 7109
+		location = 1200
 		division_template = "Zhili Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
-		location = 7109
+		location = 4205
 		division_template = "Zhili Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
-		location = 7109
+		location = 4144
 		division_template = "Zhili Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
-		location = 7109
+		location = 9958
 		division_template = "Zhili Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
-		location = 7109
+		location = 7656
 		division_template = "Zhili Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
-		location = 7109
+		location = 1519
 		division_template = "Zhili Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
-		location = 7109
+		location = 11931
 		division_template = "Zhili Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
-		location = 7109
+		location = 4519
 		division_template = "Zhili Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
-		location = 7109
+		location = 4009
 		division_template = "Zhili Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
-		location = 7109
+		location = 7580
 		division_template = "Zhili Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
-		location = 7109
+		location = 1612
 		division_template = "Zhili Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
-		location = 7109
+		location = 7418
 		division_template = "Zhili Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
-		location = 7109
+		location = 2006
 		division_template = "Zhili Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
-		location = 7109
+		location = 7637
 		division_template = "Zhili Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
-		location = 7109
+		location = 10434
 		division_template = "Zhili Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
-		location = 7109
+		location = 7126
 		division_template = "Zhili Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
-		location = 7109
+		location = 9995
 		division_template = "Zhili Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
-		location = 7109
+		location = 10043
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 1124
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 9843
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 9843
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 4032
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 4190
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 1069
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 4066
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 9969
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 6969
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 12043
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 10421
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 7101
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 7201
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 7167
+		division_template = "Zhili Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 5092
 		division_template = "Zhili Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
@@ -278,63 +368,63 @@ units = {
 	
 	division = {
 		name = "1. Guofang Jun Bubing Zhen"
-		location = 7109
+		location = 12012
 		division_template = "Jingyu Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "2. Guofang Jun Bubing Zhen"
-		location = 7109
+		location = 4190
 		division_template = "Jingyu Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "3. Guofang Jun Bubing Zhen"
-		location = 7109
+		location = 1154
 		division_template = "Jingyu Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "4. Guofang Jun Bubing Zhen"
-		location = 7109
+		location = 7019
 		division_template = "Jingyu Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "5. Guofang Jun Bubing Zhen"
-		location = 7109
+		location = 7948
 		division_template = "Jingyu Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "6. Guofang Jun Bubing Zhen"
-		location = 7109
+		location = 1603
 		division_template = "Jingyu Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "7. Guofang Jun Bubing Zhen"
-		location = 7109
+		location = 12026
 		division_template = "Jingyu Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "1. Guofang Jun Qibing Zhen"
-		location = 7109
+		location = 7000
 		division_template = "Jingyu Cavalry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "2. Guofang Jun Qibing Zhen"
-		location = 7109
+		location = 1137
 		division_template = "Jingyu Cavalry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0

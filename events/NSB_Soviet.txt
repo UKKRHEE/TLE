@@ -3861,7 +3861,16 @@ country_event = {
 		}
 
 		add_opinion_modifier = { target = SOV modifier = border_conflict_reconciled }
-		transfer_state = 655
+		SOV = {
+					remove_state_claim = 655
+					remove_state_claim = 537
+					remove_state_claim = 409
+					remove_state_claim = 408
+					remove_state_claim = 555
+					remove_state_core = 560
+					remove_state_core = 657
+					remove_state_core = 561
+		}
 		diplomatic_relation = {
 			country = SOV
 			relation = non_aggression_pact
@@ -3916,12 +3925,22 @@ country_event = {
 		effect_tooltip = {
 			FROM = {
 				add_opinion_modifier = { target = ROOT modifier = border_conflict_reconciled }
-				transfer_state = 655
 				diplomatic_relation = {
 					country = SOV
 					relation = non_aggression_pact
 					active = yes
 				}
+			}
+			SOV = {
+				
+					remove_state_claim = 655
+					remove_state_claim = 537
+					remove_state_claim = 409
+					remove_state_claim = 408
+					remove_state_claim = 555
+					remove_state_core = 560
+					remove_state_core = 657
+					remove_state_core = 561
 			}
 		}
 	}

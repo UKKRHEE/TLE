@@ -77,11 +77,11 @@ add_equipment_to_stockpile = {
 #}
 add_offsite_building = {
 	type = arms_factory
-	level = 3
+	level = 1
 }
 add_offsite_building = {
 	type = industrial_complex
-	level = 4
+	level = 2
 }
 1912.10.12 = {
 	declare_war_on = {
@@ -99,95 +99,47 @@ if = {
 }
 if = {
 	limit = {
-		has_dlc = "Together for Victory"
-		not = { has_dlc = "Waking the Tiger" }
+		original_tag = KOR
 	}
 	set_autonomy = {
 		target = KMN
-		autonomous_state = autonomy_integrated_puppet
-	}
-}
-if = {
-	limit = { 
-		not = {
-			has_dlc = "Waking the Tiger"
-			has_dlc = "Together for Victory"
-		}
-	}
-	set_autonomy = {
-		target = KMN
-		autonomous_state = autonomy_puppet
-	}
-}
-if = {
-	limit = { 
-		has_dlc = "Waking the Tiger"
-	}
-	set_autonomy = {
-		target = KMN
-		autonomous_state = autonomy_wtt_imperial_protectorate
+		autonomous_state = korean_general_government
 	}
 }
 if = {
 	limit = {
-		has_dlc = "Together for Victory"
-		not = { has_dlc = "Waking the Tiger" }
+		original_tag = KOR
 	}
 	set_autonomy = {
-		target = MEN
-		autonomous_state = autonomy_integrated_puppet
-	}
-}
-if = {
-	limit = { 
-		not = {
-			has_dlc = "Waking the Tiger"
-			has_dlc = "Together for Victory"
-		}
-	}
-	set_autonomy = {
-		target = MEN
-		autonomous_state = autonomy_puppet
-	}
-}
-if = {
-	limit = { 
-		has_dlc = "Waking the Tiger"
-	}
-	set_autonomy = {
-		target = MEN
-		autonomous_state = autonomy_wtt_imperial_protectorate
+		target = KKS
+		autonomous_state = korean_general_government
 	}
 }
 if = {
 	limit = {
-		has_dlc = "Together for Victory"
-		not = { has_dlc = "Waking the Tiger" }
+		original_tag = KOR
 	}
 	set_autonomy = {
-		target = QIN
-		autonomous_state = autonomy_integrated_puppet
+		target = KHK
+		autonomous_state = korean_general_government
 	}
 }
 if = {
-	limit = { 
-		not = {
-			has_dlc = "Waking the Tiger"
-			has_dlc = "Together for Victory"
-		}
+	limit = {
+		original_tag = KOR
 	}
 	set_autonomy = {
-		target = QIN
-		autonomous_state = autonomy_puppet
+		target = KYH
+		autonomous_state = korean_general_government
 	}
 }
 if = {
-	limit = { 
-		has_dlc = "Waking the Tiger"
+	limit = {
+		original_tag = KOR
 	}
 	set_autonomy = {
-		target = QIN
-		autonomous_state = autonomy_wtt_imperial_protectorate
+		target = MEN
+		autonomous_state = korean_confederation
 	}
 }
 if = {
@@ -218,104 +170,11 @@ if = {
 	}
 	set_autonomy = {
 		target = RYU
-		autonomous_state = autonomy_wtt_imperial_protectorate
-	}
-}
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-		not = { has_dlc = "Waking the Tiger" }
-	}
-	set_autonomy = {
-		target = KYH
-		autonomous_state = autonomy_integrated_puppet
-	}
-}
-if = {
-	limit = { 
-		not = {
-			has_dlc = "Waking the Tiger"
-			has_dlc = "Together for Victory"
-		}
-	}
-	set_autonomy = {
-		target = KYH
-		autonomous_state = autonomy_puppet
-	}
-}
-if = {
-	limit = { 
-		has_dlc = "Waking the Tiger"
-	}
-	set_autonomy = {
-		target = KYH
-		autonomous_state = autonomy_wtt_imperial_protectorate
-	}
-}
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-		not = { has_dlc = "Waking the Tiger" }
-	}
-	set_autonomy = {
-		target = KHK
-		autonomous_state = autonomy_integrated_puppet
-	}
-}
-if = {
-	limit = { 
-		not = {
-			has_dlc = "Waking the Tiger"
-			has_dlc = "Together for Victory"
-		}
-	}
-	set_autonomy = {
-		target = KHK
-		autonomous_state = autonomy_puppet
-	}
-}
-if = {
-	limit = { 
-		has_dlc = "Waking the Tiger"
-	}
-	set_autonomy = {
-		target = KHK
-		autonomous_state = autonomy_wtt_imperial_protectorate
-	}
-}
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-		not = { has_dlc = "Waking the Tiger" }
-	}
-	set_autonomy = {
-		target = KKS
-		autonomous_state = autonomy_integrated_puppet
-	}
-}
-if = {
-	limit = { 
-		not = {
-			has_dlc = "Waking the Tiger"
-			has_dlc = "Together for Victory"
-		}
-	}
-	set_autonomy = {
-		target = KKS
-		autonomous_state = autonomy_puppet
-	}
-}
-if = {
-	limit = { 
-		has_dlc = "Waking the Tiger"
-	}
-	set_autonomy = {
-		target = KKS
 		autonomous_state = autonomy_wtt_imperial_protectorate
 	}
 }
 set_research_slots = 4
-set_stability = 0.5
+set_stability = 0.6 #시작시 11퍼, 전쟁 끝나도 21퍼;;
 set_war_support = 0.15
 set_technology = {
 	### 보병 ###
@@ -536,13 +395,17 @@ recruit_character = KOR_yi_wu
 recruit_character = KOR_yi_geon
 recruit_character = KOR_kim_suk_won
 recruit_character = KOR_kim_won_bong
-recruit_character = KOR_kim_du_han
+recruit_character = KOR_lee_eungjun
+recruit_character = KOR_ahn_changnam
 recruit_character = KOR_kim_sung_ju
 recruit_character = KOR_yang_se_bong
 recruit_character = KOR_ryu_ja_myeong
 recruit_character = KOR_nam_il
 recruit_character = KOR_choe_yong_geon
 recruit_character = KOR_shin_pal_gyun
+recruit_character = KOR_yi_je_gak
+recruit_character = KOR_yi_hae_chang
+recruit_character = KOR_hong_bum_do
 
 #육군(원수)
 
@@ -566,7 +429,7 @@ if = {
 			tank_nsb_armor_upgrade = 1
 		}
 		obsolete = yes
-		icon = "gfx/interface/technologies/JAP_basic_light_tank.dds"
+		icon = "gfx/interface/technologies/FKR_basic_light_tank.dds"
 	}
 	create_equipment_variant = {
 		name = "만리마"
@@ -583,7 +446,7 @@ if = {
 			tank_nsb_engine_upgrade = 3
 			tank_nsb_armor_upgrade = 2
 		}
-		icon = "gfx/interface/technologies/JAP_basic_main_tank.dds"
+		icon = "gfx/interface/technologies/FKR_basic_main_tank.dds"
 	}
 	create_equipment_variant = {
 		name = "흑표 제 1식"
@@ -600,7 +463,7 @@ if = {
 			tank_nsb_engine_upgrade = 2
 			tank_nsb_armor_upgrade = 2
 		}
-		icon = "gfx/interface/technologies/JAP_imp_light_tank.dds"
+		icon = "gfx/interface/technologies/FKR_imp_light_tank.dds"
 	}
 }
 if = {

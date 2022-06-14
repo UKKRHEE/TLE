@@ -64,28 +64,28 @@ BAL_UNIFIED = {
 }
 
 OTT_UNIFIED = { #WTT
-	color = rgb { 26 138 4 }
-	color_ui = rgb { 26 138 4 }
+	color = rgb { 169 17 1 }
+	color_ui = rgb { 169 17 1 }
 }
 
 OTT_UNIFIED_communism = { #BftB
-	color = rgb { 26 138 4 }
-	color_ui = rgb { 26 138 4 }
+	color = rgb { 169 17 1 }
+	color_ui = rgb { 169 17 1 }
 }
 
 OTT_UNIFIED_democratic = { #BftB
-	color = rgb { 26 138 4 }
-	color_ui = rgb { 26 138 4 }
+	color = rgb { 169 17 1 }
+	color_ui = rgb { 169 17 1 }
 }
 
 OTT_UNIFIED_fascism = { #BftB
-	color = rgb { 26 138 4 }
-	color_ui = rgb { 26 138 4 }
+	color = rgb { 169 17 1 }
+	color_ui = rgb { 169 17 1 }
 }
 
 OTT_UNIFIED_neutrality = { #BftB
-	color = rgb { 26 138 4 }
-	color_ui = rgb { 26 138 4 }
+	color = rgb { 169 17 1 }
+	color_ui = rgb { 169 17 1 }
 }
 
 SYR_EYALET = {
@@ -805,19 +805,84 @@ RUS = {
     color = rgb { 241 241 230 }
     color_ui = rgb { 241 241 230 }
 }
-KOR_socialist_empire = { #조선인민공화국
+KOR_socialist_empire = { #사회주의 제국
 	color = rgb { 204 0 0 }
 	color_ui = rgb { 204 0 0 }
 }
-KOR_revolutionary = { #조선인민공화국
+KOR_revolutionary = { #
 	color = rgb { 204 0 0 }
 	color_ui = rgb { 204 0 0 }
 }
-CHI = { #조선인민공화국
+CHI = { #
 	color = rgb { 51 102 153 }
 	color_ui = rgb { 51 102 153 }
 }
-ZLC = { #조선인민공화국
+ZLC = { #
 	color = rgb { 51 102 153 }
 	color_ui = rgb { 51 102 153 }
+}
+SHX_ZLC = { #
+	color = rgb { 161 103 33 }
+	color_ui = rgb { 161 103 33 }
+}
+CHI_PRC = { #
+	color = rgb { 0  51  153 }
+	color_ui = rgb { 0  51  153 }
+}
+KOR_FJP = { #한국
+	color = rgb { 36  7  126 }
+	color_ui = rgb { 36  7  126 }
+}
+KOR_TBJ = { #한국
+	color = rgb { 36  7  126 }
+	color_ui = rgb { 36  7  126 }
+}
+KOR_DKG = { #한국
+	color = rgb { 36  7  126 }
+	color_ui = rgb { 36  7  126 }
+}
+KOR_NBJ = { #한국
+	color = rgb { 36  7  126 }
+	color_ui = rgb { 36  7  126 }
+}
+KMN_REP = { #한국
+	color = rgb { 66  135  129 }
+	color_ui = rgb { 66  135  129 }
+}
+
+GXC_KOR = { #한국
+	color = rgb { 46  60  126 }
+	color_ui = rgb { 46  60  126 }
+}
+GDC_KOR = { #한국
+	color = rgb { 46  60  126 }
+	color_ui = rgb { 46  60  126 }
+}
+SZC_KOR = { #한국
+	color = rgb { 46  60  126 }
+	color_ui = rgb { 46  60  126 }
+}
+SHX_KOR = { #한국
+	color = rgb { 46  60  126 }
+	color_ui = rgb { 46  60  126 }
+}
+XSM_KOR = { #한국
+	color = rgb { 46  60  126 }
+	color_ui = rgb { 46  60  126 }
+}
+YUN_KOR = { #한국
+	color = rgb { 46  60  126 }
+	color_ui = rgb { 46  60  126 }
+}
+HNC_KOR = { #한국
+	color = rgb { 46  60  126 }
+	color_ui = rgb { 46  60  126 }
+}
+QIN_KOR = { #한국
+	color = rgb { 52  39  126 }
+	color_ui = rgb { 52  39  126 }
+}
+CHI_KOR = { #한국
+	color = rgb { 53  56  126 }
+	color_ui = rgb { 53  56  126 }
 }

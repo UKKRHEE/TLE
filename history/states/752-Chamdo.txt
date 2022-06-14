@@ -2,7 +2,6 @@
 state={
 	id=752
 	name="STATE_752"
-	local_supplies=0.0 
 
 	history={
 		owner = SZC
@@ -28,9 +27,10 @@ state={
 	}
 
 	provinces={
-		1882 1918 1999 4999 7988 8104 10726 10817 10903 12724 12837 
+		1918 1999 4999 7988 8104 10726 12724 12837 
 	}
 	manpower=300000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
+	local_supplies=0.000
 }

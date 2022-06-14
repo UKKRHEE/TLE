@@ -16,7 +16,7 @@ state={
 		}
 		owner = USA
 		add_core_of = DKG
-		add_core_of = USA
+		#add_core_of = USA
 	}
 	local_supplies=0.0 
 }

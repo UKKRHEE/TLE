@@ -20,6 +20,7 @@ state={
 		}
 			owner = SND
 			add_core_of = SND
+			add_core_of = ZLC
 			add_core_of = CHI
 			add_core_of = PRC
 			buildings = {

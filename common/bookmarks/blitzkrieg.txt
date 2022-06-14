@@ -5,7 +5,6 @@ bookmarks = {
 		date = 1936.1.1.12
 		picture = "GFX_TLE_korea_event_none"
 		default_country = "KOR"
-		default = yes
 		
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
@@ -139,6 +138,19 @@ bookmarks = {
 				JAP_liberalization_of_regime
 			}			
 		}
+		"ITA"={
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				vittoria_mutilata
+				victor_emmanuel
+			}	
+			focuses = {
+				ITA_pact_of_steel
+				ITA_spanish_italian_faction
+				ITA_italy_first
+			}		
+		}
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
@@ -170,24 +182,6 @@ bookmarks = {
 			}	
 		}
 
-		"---"={
-			history = "OTHER_GATHERING_STORM_DESC"
-		}
-
-		"ITA"={
-			history = "ITA_GATHERING_STORM_DESC"
-			minor = yes
-			ideology = fascism
-			ideas = {
-				vittoria_mutilata
-				victor_emmanuel
-			}	
-			focuses = {
-				ITA_pact_of_steel
-				ITA_spanish_italian_faction
-				ITA_italy_first
-			}		
-		}
 		# minors from DLC ####
 		"CAN"={
 			minor = yes
@@ -341,9 +335,9 @@ bookmarks = {
 				CHI_failed_north_attack
 			}
 			focuses = {
-				CHC_victory
-				CHC_constitution
-				CHC_unite_campaign
+				CHI_restore_the_chinag
+				CHI_north_expedition
+				CHI_the_last_empire
 			}
 		}
 		"PRC"={

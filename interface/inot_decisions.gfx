@@ -19,5 +19,20 @@ spriteTypes = {
 		name = "GFX_decision_cat_generic_pink_map"
 		texturefile = "gfx/interface/decisions/decision_cat_generic_pink_map.dds"
 	}
+	spriteType = {
+		name = "GFX_decision_showa_yushin"  
+		texturefile = "gfx/interface/decisions/decision_showa_yushin.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_pbch"  
+		texturefile = "gfx/interface/decisions/decision_pbch.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_ra"  
+		texturefile = "gfx/interface/decisions/decision_ra.png"
+		legacy_lazy_load = no
+	}
 
 }

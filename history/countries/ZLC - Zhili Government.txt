@@ -18,16 +18,15 @@ if = {
 		set_naval_oob = "CHI_1936_naval_legacy"
 	}
 }
-
+add_ideas = ZLC_Wu_Peifu
 add_ideas = {
 	german_advisors
-	CHI_risk_of_famine
+	#CHI_risk_of_famine
 	CHI_dictatorship_idea
 	CHI_disjointed_gov
 	CHI_factory_strikes
 }
 	add_ideas = {
-		CHI_era_of_chinese_warlords_1
 	}
 set_cosmetic_tag = ZLC_beiyang
 	add_ideas = {
@@ -37,7 +36,9 @@ set_cosmetic_tag = ZLC_beiyang
 		CHI_incompetent_officers
 		free_trade
 		CHI_hyper_inflation_1
+		#정치고문#
 	}
+	
 save_global_event_target_as = WTT_current_china_leader
 QIE_start_naval_variant = yes
 
@@ -109,20 +110,19 @@ set_war_support = 0.40
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 23000
+	amount = 1000
 	producer = ZLC
 }
-
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 200
-	producer = ZLC
+	amount = 20
+	producer = ENG
 }
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 200
-	producer = ZLC
+	amount = 20
+	producer = ENG
 }
 
 
@@ -161,6 +161,27 @@ recruit_character = ZLC_Wu_Peifu
 recruit_character = ZLC_chao_kun
 recruit_character = ZLC_Jiang_Baili
 recruit_character = ZLC_Wang_Huaiqing
+recruit_character = CHI_zhang_xueliang
+recruit_character = ZLC_Guo_Songling
+recruit_character = ZLC_Zhang_Dengxuan
+recruit_character = ZLC_Tang_Shengzhi
+recruit_character = ZLC_Zhang_Xiaozhun
+recruit_character = ZLC_Jiang_Zhugui
+recruit_character = ZLC_Zhang_Shaozeng
+recruit_character = ZLC_Liu_Menggeng
+recruit_character = ZLC_Xiao_Yaonan
+recruit_character = ZLC_Cai_Chengxun
+recruit_character = ZLC_Zhang_Qihuang
+recruit_character = ZLC_Sa_Zhenbing
+recruit_character = ZLC_Du_Xigui
+
+recruit_character = ZLC_kung_xinzhan
+recruit_character = ZLC_hu_shi
+recruit_character = ZLC_li_huang
+recruit_character = ZLC_sun_danlin
+recruit_character = ZLC_liang_xeyi
+recruit_character = ZLC_wang_wenbao
+recruit_character = ZLC_huang_yenpei
 
 ### Field Marshals
 

@@ -105,7 +105,6 @@
 				}
 			}
             ship = { name = "IKN 태조 고황제" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOR version_name = "광무황제급" } } }
-            ship = { name = "IKN 근초고왕" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOR version_name = "광무황제급" } } }
 		    ship = { name = "IKN 영락대왕" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "태종대왕급" } } }
 		    ship = { name = "IKN 송시열" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "태종대왕급" } } }
 		    ship = { name = "IKN 김춘추" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "태종대왕급" } } }
@@ -189,9 +188,8 @@
 					cv_nav_bomber_equipment_1 =  { owner = "KOR" amount = 36 } 	# historical 36
 				}
 			}
-            ship = { name = "IKN 성종" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOR version_name = "광무황제급" } } }
 		    ship = { name = "IKN 목조" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "태종대왕급" } } }
-		    ship = { name = "IKN 필승" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "태종대왕급" } } }
+		    ship = { name = "IKN 성종" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "태종대왕급" } } }
 		    ship = { name = "IKN 선조" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "태종대왕급" } } }
 		    ship = { name = "IKN 장길" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "영조대왕급" } } }
 		    ship = { name = "IKN 목계" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "영조대왕급" } } }

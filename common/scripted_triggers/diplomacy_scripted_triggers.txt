@@ -120,9 +120,12 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_KOR_CAN_NOT_RELEASE_NATION
-			NOT = {
-				has_idea = KOR_militarism
-				has_idea = KOR_yi_jin
+			OR = {
+				NOT = {
+					has_ideas = KOR_yi_jin
+					has_ideas = KOR_yi_jin_2
+				}
+				has_country_flag = TLE_THE_WAR_IS_ENDED
 			}
 		}
 	}

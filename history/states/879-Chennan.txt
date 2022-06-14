@@ -2,12 +2,10 @@
 state={
 	id=879
 	name="STATE_879"
-	local_supplies=0.0 
-	provinces={
-		1474 7521 7549 7577 8095 
-	}
+
 	history={
-		owner = YUN
+		owner = HNC
+		add_core_of = HNC
 		add_core_of = YUN
 		add_core_of = CHI
 		add_core_of = PRC
@@ -31,7 +29,12 @@ state={
 		}
 
 	}
+
+	provinces={
+		1474 7521 7549 7577 
+	}
 	manpower=3412468
 	buildings_max_level_factor=1.000
 	state_category=town
+	local_supplies=0.000
 }

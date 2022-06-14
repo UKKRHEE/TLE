@@ -7,6 +7,7 @@ state={
 	history={
 		owner = SND
 		add_core_of = SND
+		add_core_of = ZLC
 		add_core_of = CHI
 		add_core_of = PRC
 		victory_points = {
@@ -34,7 +35,7 @@ state={
 	provinces={
 		1069 4037 10043 10072 10102 12015 12045 12069 
 	}
-	manpower=26751200
+	manpower=18504521
 	buildings_max_level_factor=1.000
 	state_category=town
 }

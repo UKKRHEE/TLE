@@ -1,0 +1,13 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_korean_confederation_icon"
+		textureFile = "gfx/interface/autonomy/korean_confederation.png"
+	}
+	spriteType = {
+		name = "GFX_korean_general_government_icon"
+		textureFile = "gfx/interface/autonomy/korean_general_government.png"
+	}
+	
+}
+ 

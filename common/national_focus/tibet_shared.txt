@@ -72,7 +72,7 @@
 			add_war_support = 0.05
 			add_political_power = 80
 			create_country_leader = {
-				name = "Tenzin Gyatso" # the real one, the other one hidden behind special event
+				name = "텐진 가초" # the real one, the other one hidden behind special event
 				desc = "POLITICS_JAMPHEL_YESHE_GYALTSEN_DESC"
 				picture = "Portrait_TIB_dalai_lama.dds" 
 				expire = "1965.1.1"
@@ -86,7 +86,7 @@
 				}
 			}
 			create_country_leader = {
-				name = "Tenzin Gyatso" # the real one, the other one hidden behind special event
+				name = "텐진 가초" # the real one, the other one hidden behind special event
 				desc = "POLITICS_JAMPHEL_YESHE_GYALTSEN_DESC"
 				picture = "Portrait_TIB_dalai_lama.dds" 
 				expire = "1965.1.1"
@@ -110,6 +110,9 @@
 		relative_position_id = TIB_start_to_war
 		prerequisite = {
 			focus = TIB_win_in_qinghai
+		}
+		available = {
+			is_ai = no
 		}
 		x = -3
 		y = 3
@@ -190,6 +193,9 @@
 		}
 		x = 0
 		y = 3
+		available = {
+			is_ai = no
+		}
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
@@ -232,6 +238,9 @@
 		}
 		x = 2
 		y = 3
+		available = {
+			is_ai = no
+		}
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything

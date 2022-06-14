@@ -1,0 +1,38 @@
+defined_text = {
+    name = JAP_YUSHIN_STATE
+    text = {
+        trigger = {
+            tag = JAP
+			has_idea = JAP_anti_yushin_level_none
+        }
+        localization_key = LOC_HAS_LEVEL_NONE
+    }
+    text = {
+        trigger = {
+            tag = JAP
+			has_idea = JAP_anti_yushin_level_1
+        }
+        localization_key = LOC_HAS_LEVEL_1
+    }
+    text = {
+        trigger = {
+            tag = JAP
+			has_idea = JAP_anti_yushin_level_2
+        }
+        localization_key = LOC_HAS_LEVEL_2
+    }
+    text = {
+        trigger = {
+            tag = JAP
+			has_idea = JAP_anti_yushin_level_3
+        }
+        localization_key = LOC_HAS_LEVEL_3
+    }
+    text = {
+        trigger = {
+            tag = JAP
+			has_idea = JAP_anti_yushin_level_4
+        }
+        localization_key = LOC_HAS_LEVEL_4
+    }
+}

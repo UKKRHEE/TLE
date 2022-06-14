@@ -23,14 +23,13 @@
 
  Seoul_Central_Radio_Station_1:0 "서울 중앙 방송국 라디오 방송 1"
 
- maintheme:0 "이등병의 편지"
+ maintheme:0 "THE LAST EMPIRE 메인 테마 - 이등병의 편지"
  guanghwamun:0 "광화문 연가"
 
  # Kim Kwang Seok Anthem Playlist
- kim_kwang_seok_TITLE:0 "김광석 - 다시 부르기 1"
- letter_private:0 "이등병의 편지"
+ kim_kwang_seok_TITLE:0 "김광석"
+ letter_private_2:0 "이등병의 편지"
  on_the_grounds_of_love:0 "사랑이라는 이유로"
- Though_I_Loved_You:0 "사랑했지만"
  the_days:0 "그날들"
  to_you:0 "너에게"
  sad_song:0 "슬픈노래"
@@ -42,8 +41,21 @@
  sound_of_your_laughter:0 "그대 웃음소리"
  in_the_wilderness:0 "광야에서"
  
+ i_loved_you:0 "사랑했지만"
+ a_love_that_hurts_so_much_wasnt_love:0 "너무 아픈 사랑은 사랑이 아니었음을"
+ a_story_of_an_old_couple_in_their_60s:0 "어느 60대 노부부의 이야기"
+ my_man:0 "내 사람"
+ standup:0 "일어나"
+ with_a_burning_thirst:0 "타는 목마름으로"
+ where_the_wind_blows:0 "바람이 불어오는 곳"
+ my_song:0 "나의 노래"
+ become_dust:0 "먼지가 되어"
+ two_wheeled_car:0 "두 바퀴로 가는 자동차"
+ unlucky_guy:0 "불행아"
+ alone_night:0 "혼자 남은 밤"
+ 
  # Lee Moon Sae1 Anthem Playlist
- Lee_Moon_Sae1_TITLE:0 "이문세 3집 - 난 아직 모르잖아요"
+ Lee_Moon_Sae1_TITLE:0 "이문세"
  I_couldnt_say_anything:0 "할말을 하지 못했죠"
  I_dont_know_yet:0 "난 아직 모르잖아요"
  Wild_horse:0 "야생마"
@@ -53,6 +65,12 @@
  A_Girl:0 "소녀"
  white_feeling:0 "하얀 느낌"
  You_and_forever:0 "그대와 영원히"
+ #
+ red_sunset:0 "붉은 노을"
+ only_her_laughter:0 "그녀의 웃음소리뿐"
+ standing_under_the_shades_of_a_street_tree:0 "가로수 그늘아래 서면"
+ flying_through_the_night:0 "깊은 밤을 날아서"
+ when_love_passes:0 "사랑이 지나가면"
  
  CHI_seek_japanese_support:0 "한국의 지원 모색"
  CHI_approach_japan:0 "한국 가입 요청"

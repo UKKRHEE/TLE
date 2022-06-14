@@ -7,10 +7,10 @@ units = {
 	#Yokosuka (Tokyo)
 	fleet = {
 		name = "Dai 1 Kantai"			
-		naval_base = 9998  #Yokosuka
+		naval_base = 7072  #Yokosuka
 		task_force = {
 			name = "1 Kantai"
-			location = 9998  #Yokosuka
+			location = 7072  #Yokosuka
 			#Dai 1 Sentai
 			ship = { name = "Yamato"  pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = JAP version_name = "Nagato Class" } } }
 			ship = { name = "Ieyasu" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = JAP version_name = "Nagato Class" } } }
@@ -26,7 +26,7 @@ units = {
 		}
 		task_force = {
 			name = "1 Suirai Sentai" #A part of "Dai 1 Kantai"
-			location = 9998  #Yokosuka
+			location = 7072  #Yokosuka
 			#Flagship
 			ship = { name = "Edo" definition = light_cruiser start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = JAP version_name = "Okinoshima Class" } } }
 			ship = { name = "Naka" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Okinoshima Class"} } }
@@ -48,33 +48,11 @@ units = {
 			ship = { name = "Gyorai-tei-2" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
 			ship = { name = "Gyorai-tei-3" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
 			ship = { name = "Gyorai-tei-4" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
-			ship = { name = "Gyorai-tei-5" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
-			ship = { name = "Gyorai-tei-6" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
-			ship = { name = "Gyorai-tei-7" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
-			ship = { name = "Gyorai-tei-8" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
-			ship = { name = "Gyorai-tei-9" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
-			ship = { name = "Gyorai-tei-10" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
-			ship = { name = "Gyorai-tei-11" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
-			ship = { name = "Gyorai-tei-12" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
-			ship = { name = "Gyorai-tei-13" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
-			ship = { name = "Gyorai-tei-14" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
-			ship = { name = "Gyorai-tei-15" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
 		}
 		task_force = {
 			name = "1 Sensui Sentai" # A part of "Dai 1 Kantai"
-			location = 9998  #Yokosuka
+			location = 7072  #Yokosuka
 			#Kaidai-class Submarines
-			ship = { name = "Ro-51" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Ro-26 Classs"} } }
-			ship = { name = "Ro-152" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Ro-26 Classs"} } }		
-			ship = { name = "Ro-153" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Ro-26 Classs"} } }			
-			ship = { name = "Ro-154" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Ro-26 Classs"} } }	
-			ship = { name = "Ro-155" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Ro-26 Classs"} } }	
-			ship = { name = "Ro-156" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Ro-26 Classs"} } }
-			ship = { name = "Ro-157" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Ro-26 Classs"} } }	
-			ship = { name = "Ro-158" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Ro-26 Classs"} } }
-			ship = { name = "Ro-159" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Ro-26 Classs"} } }
-			ship = { name = "Ro-60" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Ro-26 Classs"} } }
-			ship = { name = "Ro-61" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Ro-26 Classs"} } }
 			ship = { name = "Ro-26" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Ro-26 Class"} } }
 			ship = { name = "Ro-27" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Ro-26 Class"} } }
 			ship = { name = "Ro-28" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Ro-26 Class"} } }

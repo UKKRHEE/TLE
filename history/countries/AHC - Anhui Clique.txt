@@ -30,7 +30,6 @@ if = {
 		CHI_ineffective_bureaucracy_warlord
 	}
 }
-add_ideas = CHI_era_of_chinese_warlords_1
 set_research_slots = 2
 set_convoys = 10
 

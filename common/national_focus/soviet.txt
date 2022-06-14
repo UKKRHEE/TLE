@@ -14346,7 +14346,7 @@ ai_will_do = {
 
 	focus = {
 		id = SOV_prepare_a_war_with_japan
-		icon = GFX_focus_AST_war_japan
+		icon = GFX_focus_c45_reject
 		prerequisite = { focus = SOV_the_gobi_gambit focus = SOV_two_red_flags focus = SOV_support_the_kuomintang }
 		x = 1
 		y = 1
@@ -14516,7 +14516,7 @@ ai_will_do = {
 
 	focus = {
 		id = SOV_recover_the_kuril_islands
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_focus_국민주의광풍
 		prerequisite = { focus = SOV_prepare_a_war_with_japan }
 		x = 1
 		y = 1
@@ -14627,11 +14627,20 @@ ai_will_do = {
 				custom_effect_tooltip = if_they_accept
 				effect_tooltip = {
 					add_opinion_modifier = { target = SOV modifier = border_conflict_reconciled }
-					transfer_state = 655
 					diplomatic_relation = {
 						country = SOV
 						relation = non_aggression_pact
 						active = yes
+					}
+					SOV = {
+					remove_state_claim = 655
+					remove_state_claim = 537
+					remove_state_claim = 409
+					remove_state_claim = 408
+					remove_state_claim = 555
+					remove_state_core = 560
+					remove_state_core = 657
+					remove_state_core = 561
 					}
 				}
 			}

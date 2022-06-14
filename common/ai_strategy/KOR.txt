@@ -298,7 +298,7 @@ southern_expansion = {
 		original_tag = KOR
 	}
 	enable = {
-		has_completed_focus = KOR_strike_south_doctrine
+		has_completed_focus = KOR_the_plan_south
 		OR = {
 			country_exists = HOL
 			country_exists = ENG
@@ -349,7 +349,7 @@ chinese_war = {
 		original_tag = KOR
 	}
 	enable = {
-		has_completed_focus = KOR_intervene_in_china
+		has_completed_focus = kor_tsushima
 		country_exists = CHI
 	}
 	abort = {
@@ -370,7 +370,7 @@ strike_usa = {
 		original_tag = KOR
 	}
 	enable = {
-		has_completed_focus = KOR_secure_the_philippines
+		has_idea = KOR_embargo_us
 		country_exists = USA
 	}
 	abort = {
@@ -640,7 +640,7 @@ all_china_must_prosper_in_my_prosperity_sphere_SIK = {
 			AND = {
 				OR = {
 					AND = {
-						has_global_flag = SOV_soviet_KORanese_reconciliation_flag
+						has_global_flag = SOV_soviet_japanese_reconciliation_flag
 						NOT = { has_war_with = SOU }
 					}
 					has_non_aggression_pact_with = SOU
@@ -668,7 +668,7 @@ all_china_must_prosper_in_my_prosperity_sphere_SIK = {
 			AND = {
 				OR = {
 					AND = {
-						has_global_flag = SOV_soviet_KORanese_reconciliation_flag
+						has_global_flag = SOV_soviet_japanese_reconciliation_flag
 						NOT = { has_war_with = SOU }
 					}
 					has_non_aggression_pact_with = SOU

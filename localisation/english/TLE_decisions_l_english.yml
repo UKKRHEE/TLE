@@ -13,18 +13,19 @@
  KOR_the_three_countries_plan:0 "천하삼분지계"
  KOR_three_divided_china:0 "천하삼분지계"
  TRIGGER_TOOLTIP_RULLED_CHINA:0 "§Y만주§!, §Y청도§!, §Y대만§!, §Y몽골령 중국§!을 제외한 모든 중국 전토를 점령하고 있다."
+ KOR_the_war_plan_Z_ai:0 "§Y전쟁계획 '천명'§!"
  KOR_the_war_plan_Z:0 "§Y전쟁계획 '천명'§!"
  KOR_the_war_plan_Z_2:0 "§R'대륙타통작전'§!"
  
  KOR_kill_the_usa_plan:0 "미국과의 분쟁"
  KOR_confiscation_of_US_assets:0 "주한 미국 기업 국유화"
  KOR_not_say_the_panay:0 "파나이에 대해 사과한다"
- KOR_hunlian_in_pacific:0 "태평양에서의 훈련"
+ KOR_hunlian_in_pacific:0 "미영 연합함대 요격"
  KOR_war_with_usa_dec:0 "모든 경제제재 해제"
  
  KOR_political_officer_kill:0 "군부 완전통제"
  KOR_political_officer_kill_desc:0 "대전쟁에서의 완전한 승리로, 이제 군부를 통제할 때가 되었습니다. 한때 갑작스런 중국 침공으로 제국의 운명을 휘청이게 했던 그들을, 이제는 반드시 목줄을 잡아야겠습니다."
- won_in_china:0 ""천하삼분지계"를 실현시킴."
+ won_in_china:0 "중국 전선에서 §C승리§!를 거머쥐다"
  
  KOR_first_plan_lightning:0 "일번작계 뇌격"
  KOR_first_plan_lightning_desc:0 "북경에 대한 적괴 무리의 방비가 든든함은 공공연한 비밀이오, 적괴의 두목이 소굴의 방위를 등한시할 정도로 어리석은 자가 아닐지니, 이를 타계하기 위한 계책은 청도에 치중을 쌓고 정예한 군사를 가려 뽑아 산동의 적괴 무리를 빠르게 쳐부수고, 산동 반도를 장악하여 낙뢰와 같이 군을 몰아 북경을 감싸는 것이오.\n\n수도와 수괴를 사로잡는다면 적괴 무리는 사분오열하여 우리 군에 대적할 생각도 못할 것이며, 남쪽의 군소 토비 무리는 그 정예함이 왜의 농민만도 못한 오합지졸 나부랭이이니 근심을 할 이유가 없음이라, 대한의 유일한 근심거리는 오롯이 대한이 피로서 쟁취한 것을 탐하는 귀축영미의 이리 떼 분이라."
@@ -39,6 +40,15 @@
  KOR_third_plan_doryun:0 "삼번작계 도련"
  KOR_third_plan_doryun_desc:0 "한때 동방의 은둔의 국가였던 조선에서 벗어나 기계문명을 받아들인 이후, 동아 문명의 제일방패가 되어 전 아주를 호령하게 되었으니 십이억 황인들은 아 제국의 밝은 미래를 축복하였습니다. 그러나 아주 황인들의 자주와 공영을 침범하려는 서역 코쟁이들의 음모가 아직도 이 대륙 안에 남아있으니, 이 간악한 음모를 해쳐내고 전 아주인의 문명을 이 대한의 손으로 다시금 건설해낼 것입니다.\n\n도련 계획은 예로부터 육군에 치중된 군에서 전함을 가질 능력이 없는 해군의 대안으로 내놓아진 작계로, 넓디 넓은 태평양에 존재하는 불침항모, 즉 섬들을 전부 장악하여 이 제국과 아주독립을 위한 전진기지로 삼는 것이옵니다. 첫번째 대전쟁에서는 독일 제국의 손아귀에 있던 남아시아의 아주인들을 구원하였으니 두번째 대전쟁에서는 귀축영미의 손에 시름하는 비율빈, 천축국, 인도니서아, 태국 등을 구원하여 도련작전과 아주독립이라는 두 계획을 이뤄내는 것이 제국에게도, 전 아주인에게도 옳바를 것입니다.\n\n반드시, 올바르게 만들 것이고도 하고요."
  
+ KOR_start_the_doryun:0 "국민정신 총동원"
+ 
+ TOOLTIP_THE_DORYUN_TIP:0 "§C도련작전을 시작할 경우 "
+ KOR_KILL_NOSESE:0 "제국 내 미국자산 압류를 실시하였다"
+ TLE_USA_GO_EXPERIENCE:0 "미국이 연합함대와 훈련을 실시하였다"
+ 
+ TOOLTIP_WILL_CAN_DEFENCE:0 "§C미국의 대만 침공 위협에서 벗어날 수 있습니다.§!\n\n결정 탭에서 §C미영 연합함대§! 요격을 누르시면 확실하게 전쟁의 위협에서 멀어질 것입니다."
+ TOOLTIP_WILL_CANT_DEFENCE:0 "§R미국이 대한제국을 기습할 것입니다.§!"
+ 
  KOR_save_the_qi_xieyean:0 "제섭원 포섭"
  KOR_sea_blockade:0 "해상봉쇄"
  KOR_make_puppet_government:0 "유신정부 건설"
@@ -48,7 +58,7 @@
  
  KOR_attack_siam:0 "태국에게 최후통첩" 
  KOR_attack_siam_desc:0 "문명개화의 발끝이나마 따라올 수 있던 태국은 이제 대한의 동아질서에 협력하거나, 아니면 저 귀축영미와 함께 멸망하거나 둘 중 하나만 남아있습니다." 
- KOR_attack_japanese_empire:0 "일본 공격"
+ KOR_attack_japanese_empire:0 "구주에서의 충돌"
  KOR_attack_japanese_empire_desc:0 "유신이라는 명목 하에 동아질서의 한 축이던 덕천가문을 몰아내고 집권을 한 저 적궁유인과 그 무리들은 대한의 순국선열들이 피땀흘려 얻어낸 강역을 호시탐탐 노리고 귀축영미, 그 중에서도 미제와 큰 협력을 하여 이 제국을 무너뜨리려 하고 있습니다. 언제 공격당할지 전전긍긍하고 있을 바에, 저들에게 적법한 지배자- 덕천가문의 복귀와 오직 대한에게 천명이 있음을 알려줍시다."
  KOR_attack_indonesia:0 "인도니서아 해방작전"
  KOR_attack_indonesia_desc:0 "[INS.GetName]은 동아등불인 아주의 빛을 원하고 있습니다. 우리는 저들에게 질서를 알려줄 것입니다."
@@ -65,7 +75,7 @@
  KOR_raiding_regiments:0 "§R육군 특전대§!"
  KOR_special_air_landing_force:0 "§C해군 특전대§!"
  KOR_decision_eulhae_goonchuk:0 "을해 제국법안"
- KOR_decision_eulhae_goonchuk_desc:0 "-§G중추원§!-\n\n§Y민주당§!: §C매우 높은 지지를 표함§!\n§Y신민당§!: §W평범한 지지를 표함§!\n§Y사회당§!: §R낮은 지지를 표함§!\n\n-§R군부§!-\n\n§Y통제파§!: §G높은 지지를 표함§!\n§Y황도파§!: §W평범한 지지를 표함§!"
+ KOR_decision_eulhae_goonchuk_desc:0 "-§G중추원§!-\n\n§Y민주당§!: §G법안 발의 정당§!\n§Y대한당§!: §R낮은 지지를 표함§!\n§Y신민당§!: §C높은 지지를 표함§!\n§Y사회당§!: §R낮은 지지를 표함§!\n\n-§R군부§!-\n\n§Y통제파§!: §C높은 지지를 표함§!\n§Y근황파§!: §W평범한 지지를 표함§!"
  KOR_the_time_limit:0 "을해 제국법안 상정"
  KOR_the_time_limit_desc:0 "대공황으로 인한 사회주의 세력이 제국 곳곳에 존재하고 있습니다. 물론 이들이 대한의 민중들에게 지지를 받는 것은 아니지만, 계속 놓아두다가는 황상폐하와 황실에도 큰 피해를 입힐 수 있습니다. 이번 법안으 통해서, 이 세력의 기를 꺾어놓고 또 제국의 여러 문제를 '개혁'하는 것이 좋겠습니다."
  
@@ -99,3 +109,94 @@
  CHI_fight_with_korea:0 "한국과의 전쟁"
  CHI_fight_in_our_land:0 "중원에서의 항전"
  CHI_fight_in_our_land_desc:0 "저들은 강하고, 우리 영 내로 진입하고 있습니다. @KOR한국의 공세를 막을 수는 없지만, 우리 중화인민의 힘으로 저들의 진공을 최대한 늦출 수는 있을 것입니다."
+ 
+ 
+ ##############
+ JAP_the_plan_rework_japan:0 "쇼와 유신"
+ JAP_the_plan_rework_japan_desc:0 "\n\n\n\n\n\n£GFX_decision_showa_yushin\n\n\n\n\n\n\n\n\n\n                                 §R대일본제국의 적법하신 주인, 쇼와 천황폐하 만세!§!\n\n1860년대에 일어난 유신의 불씨는 끝내 살아남아 메이지 천황 시절 이루지 못하였던 것을 그의 손자인 쇼와 천황 대에 이르러 환히 불타오르고 있습니다. \n지금, 열도는 분열되어 있고, 옛 도쿠가와 씨족들이 장악한 구역은 유신의 불에 뒤덮였다 한들, 아직 많은 구역들은 갈라져 서로에게 총부리를 겨누고 있고, 일본은 서방의 조선과 비교하면 많은 부분에서 부족합니다. 우리 제국은, 급진적인 개혁이 필요합니다. 천황 폐하 또한 직접 정국에 손을 대시어 신일본을 만드시는데 일조하신다 하니 우리의 개혁은 어느정도 순조로울 것입니다. \n\n하지만 아직 반 유신 세력이 곳곳에 남아있습니다. 북부의 번주들은 일본의 개혁을 두려워하고 있으며 우리 내부 또한 아직 안정된 것은 아닙니다. 우리가 틈을 보이면, 저들은 우리를 내부에서부터 급습할 것입니다.\n\n현재 유신에 대한 반대는 [JAP_YUSHIN_STATE]"
+ 
+ LOC_HAS_LEVEL_NONE:0 "§C존재하지 않습니다.§!"
+ LOC_HAS_LEVEL_1:0 "§G미약합니다.§!"
+ LOC_HAS_LEVEL_2:0 "§Y보통입니다.§!"
+ LOC_HAS_LEVEL_3:0 "§O높습니다.§!"
+ LOC_HAS_LEVEL_4:0 "§R매우 높습니다.§! §C유신에 대한 반대가 한 단계 더 올라갈 경우, 3번째 내전이 있을 것입니다..§!"
+ 
+ TOOLTIP_JAP_YUSHIN_NONE:0 "쇼와 유신 국민정신입니다. 현재 반발 단계는 §R0단계§! 입니다."
+ TOOLTIP_JAP_YUSHIN_1:0 "쇼와 유신 국민정신입니다. 현재 반발 단계는 §R1단계§! 입니다."
+ TOOLTIP_JAP_YUSHIN_2:0 "쇼와 유신 국민정신입니다. 현재 반발 단계는 §R2단계§! 입니다."
+ TOOLTIP_JAP_YUSHIN_3:0 "쇼와 유신 국민정신입니다. 현재 반발 단계는 §R3단계§! 입니다."
+ TOOLTIP_JAP_YUSHIN_4:0 "쇼와 유신 국민정신입니다. 현재 반발 단계는 §R4단계§! 입니다."
+ 
+ JAP_punch_the_dokugawas:0 "도쿠가와 추방"
+ JAP_save_the_dokugawas:0 "도쿠가와 포용"
+ JAP_constitution_promulgation:0 "쇼와헌법 공표"
+ JAP_prliament_reorganization:0 "의회 재정비"
+ JAP_promote_the_use_of_hiragana:0 "히라가나 사용 촉진"
+ JAP_illiteracy_eradication_movement:0 "문맹 퇴치 운동"
+ JAP_eradication_of_canonical_adhesions:0 "정경유착 근절"
+ JAP_the_decision_of_landlords:0 "토지 조사 사업"
+ JAP_dimension_maintenance_business:0 "치수 정비 사업"
+ JAP_road_maintenance:0 "철도 정비"
+ JAP_issuance_of_government_bonds:0 "국채 발행"
+ 
+ JAP_closed_bunchi_county:0 "유신에 대한 반발"
+ JAP_closed_bunchi_county_desc:0 "\n\n\n£GFX_decision_pbch\n\n\n\n\n\n\n\n도쿠가와를 몰아낸 2차 보신전쟁이 적법한 대일본의 주인이신 천황폐하와 그 분의 충성스러운 신민의 승리로 끝난 이후에도, 아직 막부시절의 잔재가 여러 곳에서 산재하여 있습니다. \n\n천황 폐하의 명을 받들어, 유신을 방해하는 이 간악한 매국노들을 싸그리 몰아냅시다.\n\n현재 유신에 대한 반대는 [JAP_YUSHIN_STATE]"
+ JAP_samurai_dismantling:0 "사무라이들의 종말"
+ JAP_abolition_of_enlistment:0 "사병 철폐"
+ JAP_administrative_division_discussion:0 "행정구역 논의"
+ JAP_closed_bunchi_county_dec:0 "§R폐번치현§!"
+ JAP_lord_conciliation:0 "상경 명령"
+ JAP_military_control:0 "군대 연설"
+ JAP_swoop_to_warlords:0 "번주 급습"
+ JAP_warlords_anger:0 "유신에 대한 반대"
+ 
+ JAP_dec_war_FJP:0 "도사번 복속"
+ JAP_dec_war_SDJ:0 "센다이 습격"
+ JAP_dec_war_NBJ:0 "난부씨 제압"
+ JAP_dec_war_TBJ:0 "열번의 종말"
+ JAP_dec_war_GJJ:0 "조자이 병합"
+ 
+ state_shintoism:0 "신토"
+ state_shintoism_desc:0 ""
+ 
+ TOOLTIP_JAP_WILL_BE_DECISION:0 "§Y쇼와유신 관련 결정이 해금될 것입니다.§!"
+ 
+ FLAG_STEEL_PLAN_OPEN:0 "제 1차 철강생산 계획이 완료됨"
+ 
+ JAP_the_army:0 "군제 개혁"
+ JAP_the_army_desc:0 "\n\n\n\n\n\n£GFX_decision_ra\n\n\n\n\n\n\n\n\n\n아와지 조약 이후, 일본은 제대로 된 서구식 군대를 가지는데 큰 에로사항을 얻게 되었습니다. 장교라는 자들은 전부 정부 요인들의 친인척이나 측근들로 채워져 있어 군대의 꼴을 제대로 갖추지도 못했고, 녹봉 또한 수도를 지키는 병력과 각 번주들의 사병에게만 제대로 돌아가는 수준이었습니다. \n\n그리하여, 어찌저찌 군을 다 끌어모은다 해도 지금으로서는 5만이 최대일 것입니다. 우리는 이 상황을 충분히 인지하고 있고, 이 상황을 타파하여 강적들에게 대항할 수 있는 제대로 된 군대를 갖추기 위한 개혁을 시행할 것입니다."
+ JAP_the_30_division_plan:0 "30사단 계획"
+ JAP_japanese_army_school:0 "쇼와 사관학교 설립"
+ JAP_the_88_plan:0 "88계획"
+ JAP_naval_steel_plan:0 "조선산업 양성"
+ JAP_steel_plan:0 "제 1차 철강증산 계획"
+ JAP_steel_plan_2:0 "대약진운동"
+ 
+ JAP_defense_the_country:0 "항전"
+ JAP_the_war_industry:0 "전시경제 전환"
+ JAP_gold_collecting_exercise:0 "금 모으기 운동"
+ JAP_tenno_voice_broadcasting_1:0 "최초의 옥음방송"
+ JAP_tenno_voice_broadcasting_2:0 "두번째 옥음방송"
+ JAP_tenno_voice_broadcasting_3:0 "최후의 옥음방송"
+ 
+ TOOLTIP_CLOSED_BUNCHI_WILL_OPEN:0 "결정 §Y폐번치현§!이 활성화됩니다. §Y폐번치현§!은 유신에 대한 불만도가 0단계고, 도쿠가와 처우부터 치수정비사업까지 모든 유신작업을 끝내야 실행할 수 있습니다."
+ TOOLTIP_THE_BONDS_WILL_NOT_YUSHIN:0 "§Y국채 발행§! 결정은 다른 쇼와 유신 디시전과 §R병용§!할 수 있습니다."
+ FLAG_HAS_COMPLETED_DECISION_GENBO:0 "§Y쇼와헌법§!이 공표되다"
+ FLAG_CLICK_SHOWA_YUSHIN:0 "다른 §Y쇼와유신§! 결정이 선택되지 않음"
+ FLAG_HAS_COMPLETED_DECISION_SAMURAI:0 "§Y사무라이 계급§!을 실질적으로 §R철폐§!했다"
+ 
+ #유신에 대한 반대파
+ JAP_anti_yushin_level_none:0 "유신에 대한 반발"
+ JAP_anti_yushin_level_1:0 "유신에 대한 반발"
+ JAP_anti_yushin_level_2:0 "유신에 대한 반발"
+ JAP_anti_yushin_level_3:0 "유신에 대한 반발"
+ JAP_anti_yushin_level_4:0 "유신에 대한 반발"
+ 
+ JAP_anti_yushin_level_down_triple:0 "§Y유신에 대한 반발§!이 §Y3단계§! §G감소§!합니다"
+ JAP_anti_yushin_level_down_double:0 "§Y유신에 대한 반발§!이 §Y2단계§! §G감소§!합니다"
+ JAP_anti_yushin_level_up_tt:0 "§Y유신에 대한 반발§!이 §R증가§!합니다"
+ JAP_anti_yushin_level_down_tt:0 "§Y유신에 대한 반발§!이 §G감소§!합니다"
+ 
+ FLAG_KICK_THE_DOKUGAWAS:0 "도쿠가와가 추방되다"
+ FLAG_SAVE_THE_DOKUGAWAS:0 "도쿠가와가 포용되다"
+ 

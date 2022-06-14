@@ -10,6 +10,10 @@ set_technology = {
 set_stability = 0.6
 set_war_support = 0.7
 
+add_opinion_modifier = {
+	target = KOR
+	modifier = TLE_fight_opinion
+}
 recruit_character = PRC_mao_zedong
 recruit_character = PRC_zhu_de
 recruit_character = PRC_chen_yi
@@ -39,10 +43,6 @@ recruit_character = PRC_liu_shaoqi
 recruit_character = PRC_lin_bojiu
 recruit_character = PRC_dong_biwu
 recruit_character = PRC_he_yuandang
-
-
-save_global_event_target_as = WTT_communist_china
-
 
 1939.1.1 = {
 
@@ -176,7 +176,6 @@ add_ideas = {
 	partial_economic_mobilisation
 }
 	add_ideas = {
-		CHI_era_of_chinese_warlords_1
 	}
 
 	add_ideas = {

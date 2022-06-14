@@ -43,5 +43,60 @@ leader_traits = {
 			factor = 0
 		}
 	}
+	ZLC_chaokun = { 
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				tag = ZLC
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	ZLC_wu_peifu = { 
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				tag = ZLC
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	ZLC_xiaozhang = { 
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				tag = ZLC
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
 
 }

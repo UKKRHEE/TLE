@@ -2,7 +2,6 @@
 state={
 	id=874
 	name="STATE_874"
-	local_supplies=0.0 
 
 	history={
 		owner = YUN
@@ -15,15 +14,16 @@ state={
 
 		}
 		victory_points = {
-			10763 1
+			10763 1 
 		}
 
 	}
 
 	provinces={
-		4325 10763 11972 
+		1010 4325 10763 11972 
 	}
 	manpower=1368987
 	buildings_max_level_factor=1.000
 	state_category=pastoral
+	local_supplies=0.000
 }

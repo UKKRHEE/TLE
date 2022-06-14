@@ -17,7 +17,21 @@ CHI_plan_2nd_beifa = {
 CHI_army_reform = {
 	icon = army_reform
 	allowed = {
-		is_literally_china = yes
+		OR = {
+			tag = CHI
+			tag = PRC
+			tag = GXC
+			tag = YUN
+			tag = SHX
+			tag = XSM
+			tag = SIK
+			tag = SND
+			tag = ZLC
+			tag = WZC
+			tag = SZC
+			tag = HNC
+			tag = AHC
+		}
 	}
 
 	visible = {

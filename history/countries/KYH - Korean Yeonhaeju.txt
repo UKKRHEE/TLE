@@ -2,6 +2,10 @@
 
 #oob = "KYH_1936"
 
+add_opinion_modifier = {
+	target = KOR
+	modifier = TLE_general_government_opinion
+}
 give_military_access = KOR
 set_research_slots = 3
 set_stability = 0.25
@@ -32,7 +36,7 @@ set_technology = {
 set_convoys = 50
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 12500
+	amount = 3000
 	producer = KOR
 }
 add_manpower = 700000
@@ -43,10 +47,14 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 24
-	fascism = 26
+	democratic = 0
+	fascism = 0
 	communism = 0
-	neutrality = 50
+	neutrality = 100
+}
+add_ideas = {
+	KOR_yi_jin
+	KOR_the_country_of_korea
 }
 recruit_character = RUS_korean_council
 recruit_character = RUS_alexandr_kolchak

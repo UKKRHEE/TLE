@@ -9,7 +9,6 @@ state={
 		add_core_of = TBJ
 		add_core_of = DKG
 		buildings = {
-			arms_factory = 1
 			infrastructure = 1
 			9859 = {
 				naval_base = 3

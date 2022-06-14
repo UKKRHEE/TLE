@@ -1,0 +1,27 @@
+state={
+	id=895
+	name="STATE_895"
+	provinces={
+		1139 4114 4144 4606 7074 
+	}
+	history={
+		owner = ZLC
+		add_core_of = ZLC
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			4144 1 
+		}
+
+	}
+
+	manpower=3289800
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

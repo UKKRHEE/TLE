@@ -1,13 +1,339 @@
 ideas = {
 	
 	country = {
+		MON_fallen_government = {
+
+			picture = chi_army_corruption
+
+			#name = CHI_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = -0.1
+			}
+
+		}
+		WZC_not_surrender = {
+
+			picture = chi_army_corruption
+
+			#name = CHI_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = 0.3
+			}
+
+		}
+		JAP_shogunate_lose = {
+
+			picture = chi_army_corruption
+
+			#name = CHI_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.5
+				army_defence_factor = -0.5
+				mobilization_speed = -0.3
+				army_org_Factor = -0.9
+				surrender_limit = -0.3
+			}
+
+		}
+		JAP_the_japanese_infrastruction = {
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
+		JAP_poor_navy = {
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+			modifier = {
+				industrial_capacity_dockyard = -0.2
+				experience_gain_navy_unit_factor = -0.3
+				naval_critical_score_chance_factor = -0.3
+				naval_critical_effect_factor = 0.3
+				naval_damage_factor = -0.1
+				naval_defense_factor = -0.1
+				naval_detection = -0.15
+				naval_speed_factor = -0.1
+			}
+		}
+		JAP_pre_modern_army = {
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+			on_remove = {
+				country_lock_all_division_template = no
+				
+			}
+			on_add = {
+				country_lock_all_division_template = yes
+			}
+			rule = {
+				can_not_declare_war = yes
+				can_join_factions = no
+			}
+			modifier = {
+				war_support_factor = -0.4
+				army_attack_factor = -0.25
+				army_org_factor = -0.2
+				army_org_regain = -0.2
+				custom_modifier_tooltip = BUL_army_restrictions_mobilization_law_tt
+			}
+		}
+		JAP_high_illiteracy_rate_2 = {
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+			modifier = {
+				research_speed_factor = -0.15
+				political_power_factor = -0.05
+			}
+		}
+		JAP_high_illiteracy_rate = {
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+			modifier = {
+				research_speed_factor = -0.3
+				political_power_factor = -0.1
+			}
+		}
+		JAP_anti_yushin_level_none = {
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				consumer_goods_factor = -0.05
+				political_power_gain = 0.05
+				surrender_limit = 0.05
+				custom_modifier_tooltip = TOOLTIP_JAP_YUSHIN_NONE
+			}
+		}
+		JAP_anti_yushin_level_1 = {
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				consumer_goods_factor = 0.1
+				political_power_gain = -0.05
+				surrender_limit = -0.1
+				army_morale_factor = -0.05
+				army_org_Factor = -0.05
+				custom_modifier_tooltip = TOOLTIP_JAP_YUSHIN_1
+			}
+		}
+		JAP_anti_yushin_level_2 = {
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				consumer_goods_factor = 0.1
+				political_power_gain = -0.15
+				surrender_limit = -0.15
+				army_morale_factor = -0.1
+				army_org_Factor = -0.1
+				custom_modifier_tooltip = TOOLTIP_JAP_YUSHIN_2
+			}
+		}
+		JAP_anti_yushin_level_3 = {
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.25
+				consumer_goods_factor = 0.1
+				political_power_gain = -0.25
+				surrender_limit = -0.25
+				army_morale_factor = -0.25
+				army_org_Factor = -0.25
+				custom_modifier_tooltip = TOOLTIP_JAP_YUSHIN_3
+			}
+		}
+		JAP_anti_yushin_level_4 = {
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.35
+				war_support_factor = -0.35
+				consumer_goods_factor = 0.15
+				political_power_gain = -0.35
+				surrender_limit = -0.35
+				army_morale_factor = -0.35
+				army_org_Factor = -0.35
+				custom_modifier_tooltip = TOOLTIP_JAP_YUSHIN_4
+			}
+		}
+		
+		JAP_showa_military_school = { #쇼와 군관학교
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_war_preparation
+			
+			modifier = {
+				max_planning = 0.25
+				planning_speed = 0.25
+			}
+		}
+		
+		JAP_democratic_popularity = { #아와지 조약의 여파
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+			modifier = {
+				stability_factor  = -0.25
+				industrial_capacity_factory = -0.34
+			}
+		}
+		JAP_democratic_popularity_2 = { #아와지 조약의 여파
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+			modifier = {
+				stability_factor  = -0.15
+				industrial_capacity_factory = -0.2
+			}
+		}
+		JAP_not_regulared_industry = {
+			allowed = {
+				original_tag = JAP
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = FRA_army_of_aggression_focus
+			modifier = {
+				conscription_factor = -0.6
+				consumer_goods_factor = 0.15
+			}
+		}
+		JAP_not_regulared_industry_2 = {
+			allowed = {
+				original_tag = JAP
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = FRA_army_of_aggression_focus
+			modifier = {
+				conscription_factor = -0.45
+				consumer_goods_factor = 0.15
+			}
+		}
+		JAP_not_regulared_industry_3 = {
+			allowed = {
+				original_tag = JAP
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = FRA_army_of_aggression_focus
+			modifier = {
+				production_speed_industrial_complex_factor = 0.025
+				production_speed_industrial_complex_factor = 0.025
+				consumer_goods_factor = 0.05
+			}
+		}
 		JAP_showa_hirohito_2 = {
 			allowed = {
 				original_tag = JAP
 				always = yes
 			}
-			modifier = {
-				stability_factor = 0.1
+			traits = {
+				tenno_heikka
 			}
 			picture = JAP_showa_hirohito
 		}
@@ -17,7 +343,11 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				stability_factor = 0.3
+				
+			}
+			traits = {
+				tenno_heikka
+				the_light_of_japan
 			}
 		}
 
@@ -39,27 +369,6 @@ ideas = {
 			modifier = {
 				army_morale_factor = 0.1
 				army_attack_factor = 0.1
-			}
-		}
-
-		JAP_army_planning = {
-			
-			allowed = {
-				original_tag = JAP
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			picture = generic_war_preparation
-			
-			modifier = {
-				max_planning = 0.25
-				planning_speed = 0.25
 			}
 		}
 
@@ -211,137 +520,6 @@ ideas = {
 			}
 		}
 
-		JAP_democratic_popularity = {
-			
-			allowed = {
-				original_tag = JAP
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			picture = generic_victors_of_ww1
-			
-			on_remove = {
-				country_lock_all_division_template = no
-				
-			}
-			on_add = {
-				country_lock_all_division_template = yes
-			}
-				rule = {
-					can_not_declare_war = yes
-				}
-			modifier = {
-				stability_factor  = -0.25
-				political_power_gain = -0.3
-				war_support_factor = -0.5
-				offence = -0.5
-				defence = -0.5
-				custom_modifier_tooltip = BUL_army_restrictions_mobilization_law_tt
-			}
-		}
-		JAP_democratic_popularity_2 = {
-			
-			allowed = {
-				original_tag = JAP
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			picture = generic_victors_of_ww1
-			
-			on_remove = {
-				country_lock_all_division_template = no
-				
-			}
-			on_add = {
-				country_lock_all_division_template = yes
-			}
-				rule = {
-					can_not_declare_war = yes
-				}
-			modifier = {
-				stability_factor  = -0.15
-				political_power_gain = -0.15
-				war_support_factor = -0.4
-				offence = -0.3
-				defence = -0.3
-				custom_modifier_tooltip = BUL_army_restrictions_mobilization_law_tt
-			}
-		}
-		JAP_not_regulared_industry = {
-			allowed = {
-				original_tag = JAP
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			picture = FRA_army_of_aggression_focus
-			modifier = {
-				industrial_capacity_factory = -0.6
-				industrial_capacity_dockyard = -0.6
-				production_speed_industrial_complex_factor = -0.4 
-				production_speed_arms_factory_factor = -0.4 
-				conversion_cost_civ_to_mil_factor= 0.4
-				conversion_cost_mil_to_civ_factor = 0.4
-				consumer_goods_factor = 0.35
-			}
-		}
-		JAP_not_regulared_industry_2 = {
-			allowed = {
-				original_tag = JAP
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			picture = FRA_army_of_aggression_focus
-			modifier = {
-				industrial_capacity_factory = -0.35
-				industrial_capacity_dockyard = -0.35
-				production_speed_industrial_complex_factor = -0.2 
-				production_speed_arms_factory_factor = -0.2
-				conversion_cost_civ_to_mil_factor= 0.2
-				conversion_cost_mil_to_civ_factor = 0.2
-				consumer_goods_factor = 0.2
-			}
-		}
-		JAP_not_regulared_industry_3 = {
-			allowed = {
-				original_tag = JAP
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			picture = FRA_army_of_aggression_focus
-			modifier = {
-				production_speed_industrial_complex_factor = 0.025
-				production_speed_industrial_complex_factor = 0.025
-				consumer_goods_factor = 0.05
-			}
-		}
-
 		JAP_democratic_outburst = {
 			
 			allowed = {
@@ -463,10 +641,10 @@ ideas = {
 			picture = generic_deal_with_the_devil
 			
 			modifier = {
-			    industrial_capacity_factory =0.10
-			    production_speed_buildings_factor = 0.10
-				stability_factor  = -0.10
-				political_power_gain = -0.05
+			    industrial_capacity_factory =0.15
+			    production_speed_buildings_factor = 0.15
+				stability_factor  = -0.05
+				political_power_factor = -0.1
 			}
 		}
 
@@ -488,7 +666,7 @@ ideas = {
 			modifier = {
 			    industrial_capacity_factory =0.10
 			    production_speed_buildings_factor = 0.10
-				stability_factor  = -0.025
+				stability_factor  = -0.05
 			}
 		}
 
@@ -551,9 +729,9 @@ ideas = {
 			picture = state_shintoism
 			
 			modifier = {
-			    political_power_gain = 0.25
-			    war_support_factor = 0.1
-				stability_factor  = 0.10
+			    political_power_factor = 0.05
+				stability_factor  = 0.05
+				ai_desired_divisions_factor = 1.2
 			}
 		}
 

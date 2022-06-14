@@ -1,7 +1,6 @@
 
 state={
 	id=748
-	local_supplies=0.0 
 	name="STATE_748"
 
 	history={
@@ -28,9 +27,10 @@ state={
 	}
 
 	provinces={
-		1010 4141 4431 9939 
+		4141 4431 9939 
 	}
 	manpower=1100000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
+	local_supplies=0.000
 }

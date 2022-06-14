@@ -198,10 +198,18 @@ news_event = { #파나이 호 사건
 	picture = GFX_news_event_panay_incident
 	
 	major = yes
-    trigger = {
-		KOR = {
+    trigger = {	
+		every_country = {
+			limit = {
+				OR = {
+					is_puppet_of = KOR
+					original_tag = KOR
+				}
+			}
 			controls_state = 608
 			controls_state = 613
+		}
+		KOR = {
 			has_war = yes
 			OR = {
 				ZLC = {
@@ -393,6 +401,17 @@ news_event = { #한중전쟁
 		trigger = {
 			TAG = KOR
 		}
+		if = {
+			limit = {
+				is_ai = no
+			}
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+			set_country_flag = korea_ww_china
+			}
+		}	
 	}
 	option = {
 		name = eok_news.9.b
@@ -412,6 +431,17 @@ news_event = { #한중전쟁
 				TAG = SZC
 			}	
 		}
+		if = {
+			limit = {
+				is_ai = no
+			}
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+			set_country_flag = korea_ww_china
+			}
+		}	
 	}
 	option = {
 		name = eok_news.9.c
@@ -434,5 +464,16 @@ news_event = { #한중전쟁
 				}
 			}			
 		}
+		if = {
+			limit = {
+				is_ai = no
+			}
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+			set_country_flag = korea_ww_china
+			}
+		}	
 	}
 }

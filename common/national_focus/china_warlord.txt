@@ -99,7 +99,7 @@
 
 	focus = {
 		id = CHI_cooperation_with_the_nationalists
-		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		icon = GFX_focus_북양정부화해
 		prerequisite = { focus = CHI_secure_internal_politics }
 		mutually_exclusive = { focus = CHI_cooperation_with_the_communists focus = CHI_opposition }
 		x = -5
@@ -138,7 +138,7 @@
 
 		completion_reward = {
 			custom_effect_tooltip = CHI_cooperation_with_the_nationalists_effect_tooltip
-			CHI = { add_opinion_modifier = { modifier = CHI_cooperation_with_the_nationalists_positive target = ROOT } }
+			ZLC = { add_opinion_modifier = { modifier = CHI_cooperation_with_the_nationalists_positive target = ROOT } }
 			PRC = { add_opinion_modifier = { modifier = CHI_cooperation_with_the_nationalists_negative target = ROOT } }
 		}
 	}
@@ -245,9 +245,9 @@
 			if = {
 				limit = {
 					NOT = {
-						CHI = { is_in_tech_sharing_group = CHI_technological_cooperation_tech_group } }
+						ZLC = { is_in_tech_sharing_group = CHI_technological_cooperation_tech_group } }
 				}
-				CHI = { add_to_tech_sharing_group = CHI_technological_cooperation_tech_group }
+				ZLC = { add_to_tech_sharing_group = CHI_technological_cooperation_tech_group }
 			}
 			add_to_tech_sharing_group = CHI_technological_cooperation_tech_group
 		}
@@ -504,7 +504,7 @@
 
 		completion_reward = {
 			load_focus_tree = china_nationalist_focus
-			set_cosmetic_tag = CHI_warlord_leader
+			set_cosmetic_tag = CHI
 			every_state = {
 				limit = {
 					is_core_of = CHI
@@ -520,7 +520,7 @@
 
 	focus = {
 		id = CHI_cooperation_with_the_communists
-		icon = GFX_focus_chi_cooperation_with_the_communists
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
 		prerequisite = { focus = CHI_secure_internal_politics }
 		mutually_exclusive = { focus = CHI_cooperation_with_the_nationalists focus = CHI_opposition }
 		x = 0
@@ -898,7 +898,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			CHI = { add_opinion_modifier = { modifier = CHI_opposition target = ROOT } }
+			#CHI = { add_opinion_modifier = { modifier = CHI_opposition target = ROOT } }
 			ZLC = { add_opinion_modifier = { modifier = CHI_opposition target = ROOT } }
 			if = {
 				limit = {
@@ -1103,7 +1103,7 @@
 
 	focus = {
 		id = CHI_seek_japanese_support
-		icon = GFX_focus_chi_collaboration_with_the_japanese
+		icon = GFX_focus_befriend_with_korea
 		prerequisite = { focus = CHI_war_taxes }
 		x = -2
 		y = 1

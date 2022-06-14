@@ -1,0 +1,104 @@
+﻿l_english:
+
+ #그리스-터키
+ Constantinople:0 "콘스탄티노플"
+ Thessalonica:0 "테살로니카"
+ Strymon:0 "스트리몬"
+ Thracia:0 "트라키아" #부르사
+ Prusa:0 "푸르사" #부르사
+ Samos:0 "사모스" #이즈미르
+ Smyrna:0 "스미르나" #이즈미르
+ Cibyrrhaeot:0 "키비레오테스" #안탈리아
+ Attaleia:0 "앗달리아" #안탈리아 Ἀττάλεια
+ Thrakesion:0 "트로키시온" #아피온
+ Nicopolis:0 "니코폴리스" #아피온
+ Attouda:0 "아뚜다" #데니즐리 #확실 X
+ Optimaton:0 "옵티마티" #이즈미트
+ Nikomedeia:0 "니코메디아" #이즈미트
+ Pontoheraclea:0 "포토이라키아" #아다파자리 #확실x
+ Bukellarion:0 "부켈라리온" #앙카라
+ Ancyra:0 "안키라" #앙카라
+ Dorylaion:0 "도릴레온" #에스키셰히르
+ Anatolikon:0 "아나톨리콘" #코니아
+ Ikonion:0 "이코니온" #승점 없음 #확실x 나무위키 코니온/ Ikónion=Kónio(n)
+ Seleucia:0 "셀레우키아" #메르신
+ Hadrianopolis:0 "하드리아노폴리스" #메르신
+ Paphlagonia:0 "파플라고니아" #카스타모누
+ Sinope:0 "시노페" #시노프
+ Kastamone:0 "카스타몬" #카스타모누 #확실x
+ Cappadocia:0 "카페도키아" #카이세리
+ Caesarea:0 "카이사레아" #카이세리
+ Cilicia:0 "킬리키아" #아다나
+ Tarsus:0 "타르수스" #아다나
+ Germanicia:0 "게르마니키아" #승점 없음 #확식x
+ Ravanda:0 "라벤더" #가지안테프 #확실x
+ Armeniakon:0 "아르메니아콘" #삼순
+ Amisos:0 "아미소스" #삼순
+ Koloneia:0 "콜로네이아" #시바스
+ Sebasteia:0 "세베스티아" #시바스
+ Carsiano:0 "카르시아노" #아마시아 #확실x
+ Amaseia:0 "아마세이아" #아마시아
+ Taouion:0 "타우이온" #요즈가트 #확실x
+ Melitene:0 "멜리티니" #말라티아
+ Justinopolis:0 "저스티노폴리스" #샨리우르파 #확실x
+ Amida:0 "아미다" #디야르바키르 #확실x
+ Chaldia:0 "칼디아" #트라브존
+ Trebizond:0 "트라페준타" #트라브존
+ Manzikert:0 "만지케르트" #툰젤리
+ Theodosiopolis:0 "테오도시오폴리스" #에르주룸
+ Hubushkia:0 "후우쉬키아" #하카리 #확실x
+ Kondylis:0 "콘딜리스" #하카리 #확실x
+ Vaspurakan:0 "바스푸라칸" #반
+ Eua:0 "에바" #반 #확실x
+ Antioch:0 "안티오크" #하타이
+ Antiochia:0 "안티오키아" #안타키아
+
+ #그리스-알바니아
+ Illyria:0 "일리리아" #알바니아
+ Kastrioti:0 "카스트이로티" #티라나
+ Aulon:0 "아울론" #블로러
+ Dyrrhachion:0 "뒤라키움" #몬테네그로
+ Dyrrhachium:0 "뒤라키움" #포드고리차 #Dyrrhachium(그리스어)=Dyrrhachion(고대그리스어)
+ Argyrokastro:0 "아르지로카스트로" #지로카스터르 #확실x
+
+ #그리스-루마니아
+ Pannonia:0 "판노니아" #파노니아
+ Wallachia:0 "왈라키아" #소피아
+ Pelendava:0 "펠렌다바" #크라이오바 #확실x
+ Paristrion:0 "파리스트리온" #문테니아 #확실x
+ Kosmidis:0 "코스미디스" #부쿠레슈티
+ Tarnovo:0 "터르노보" #문테니아
+ Anchialus:0 "앙키알로스" #도브루자
+ Mesembria:0 "메셈브리아" #도브리치
+ Silistra:0 "실리스트라" #남베사라비아
+ Velissarios:0 "벨리사리오스" #체타테아알버 #확실x
+
+ #그리스-불가리아
+ Philippopolis:0 "필리포폴리스"
+ Serdica:0 "세르디카" #소피아
+ Pyrgos:0 "피르고스" #부르가스
+ Poros:0 "포루스" #부르가스
+ Odessos:0 "오데소스" #바르나
+ Boulgarias:0 "불가리아스" #마케도니아 #확실x
+ Scupi:0 "스쿠피" #스코페
+ Macedonia:0 "마케도니아" #중앙 마케도니아
+
+ #그리스-유고슬라비아
+ Spalatum:0 "스팔라툼" #스플리트
+ Venizelos:0 "베니젤로스" #자그래브
+ Bosona:0 "보소나" #보스니아
+ Sirmium:0 "시르미움" #세르비아
+ Belograd:0 "벨로그라드" #베오그라드
+ Pizren:0 "피즈렌" #모라바 #확실x
+ Naissus:0 "나이수스" #니시
+
+ #그리스-터키
+ Prousa:0 "푸르사" #부르사
+ Palaeokastron:0 "팔레오카스트론" #부르사
+ Thrace:0 "트라키" #에디르네 Thrace=트라키=Thrake=트라케
+ Adrianople:0 "아드리아노플" #에디르네
+ Eastern Macedonia:0 "동 마케도니아" #트라키아
+ Smyrni:0 "스미르니" #이즈미르
+ Magnesia:0 "마그니시아" #마니사 #확실 x
+ Kieros:0 "키에로스" #아다파자리 #확실x
+ Attalis:0 "아탈리스" #안탈리아 #확실x

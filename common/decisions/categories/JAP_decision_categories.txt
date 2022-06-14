@@ -14,3 +14,41 @@ JAP_dec_civil_war = {
 	}
 	priority = 100
 }
+JAP_the_plan_rework_japan = {
+	#picture = GFX_decision_showa_yushin
+	allowed = {
+		original_tag = JAP
+	}
+	visible = {
+		original_tag = JAP
+	}
+	priority = 99
+}
+JAP_closed_bunchi_county = {
+	#picture = GFX_decision_showa_yushin
+	allowed = {
+		original_tag = JAP
+	}
+	visible = {
+		original_tag = JAP
+	}
+	priority = 98
+}
+JAP_the_army = {
+	allowed = {
+		original_tag = JAP
+	}
+	visible = {
+		original_tag = JAP
+	}
+	priority = 97
+}
+JAP_defense_the_country = {
+	allowed = {
+		original_tag = JAP
+	}
+	visible = {
+		original_tag = JAP
+	}
+	priority = 96
+}

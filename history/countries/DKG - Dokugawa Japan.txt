@@ -9,18 +9,16 @@ set_cosmetic_tag = JAP_dokugawa
 set_research_slots = 2
 set_fuel_ratio = 1.0
 add_ideas = {
-	JAP_showa_hirohito
-	#state_shintoism
-	limited_exports
-	limited_conscription
-	partial_economic_mobilisation
-
-	#JAP_zaibatsus
-	#JAP_militarism
+	free_trade
+	#####
+	JAP_showa_hirohito_2
+	state_shintoism
+	#####
 	JAP_not_regulared_industry
-	#JAP_army_planning
 	JAP_democratic_popularity
-	#JAP_duplicate_research_efforts
+	JAP_high_illiteracy_rate
+	JAP_pre_modern_army
+	JAP_poor_navy
 }
 
 create_faction = DKG_UNITED_JAPAN_KINGDOM
@@ -229,6 +227,7 @@ if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
 	}
+	set_naval_oob = "JAP_1936_naval"
 ### VARIANTS ###
 	# 1936 Start #
 		### Carrier Variants
@@ -335,6 +334,7 @@ if = {
 }
 if = {
 	limit = { has_dlc = "Man the Guns"}
+	set_naval_oob = "JAP_1936_naval"
 	### VARIANTS ###
 	# 1936 Start #
 		### Carrier Variants

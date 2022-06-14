@@ -70,6 +70,13 @@ shared_focus = {
 		}
 	}
 	offset = {
+		x = 6
+		y = 0
+		trigger = {
+			tag = ZLC
+		}
+	}
+	offset = {
 		x = 28
 		y = 0
 		trigger = {

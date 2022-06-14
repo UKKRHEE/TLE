@@ -4,6 +4,14 @@ music_station = "kim_kwang_seok"
 # Peace Song
 
 
+
+music = {
+	song = "letter_private_2"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
 }
 music = {
 	song = "the_days"
@@ -106,6 +114,127 @@ music = {
 
 music = {
 	song = "in_the_wilderness"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+###
+music = {
+	song = "i_loved_you"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "a_love_that_hurts_so_much_wasnt_love"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "a_story_of_an_old_couple_in_their_60s"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "my_man"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "standup"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "with_a_burning_thirst"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "where_the_wind_blows"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "my_song"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "become_dust"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "two_wheeled_car"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "unlucky_guy"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "alone_night"
 	
 	chance = {
 		modifier = {

@@ -1280,30 +1280,67 @@ country_event = {
 		remove_unit_leader = 91099
 		retire_character = WZC_sun_chuanfang
 		hidden_effect = {
-		create_country_leader = {
-			name = "Qi Xieyuan"
-			desc = "POLITICS_LEP_QI_XIEYUAN_ARMY_DESC"
-			picture = "Portrait_LEP_Qi_Xieyuan.png"
-			expire = "1965.1.1"
-			ideology = despotism
-		}
-		add_country_leader_role = {
-			Character = WZC_qi_xieyuan
-			Promote_leader = yes
-			Country_leader = {
-				ideology = despotism
-				expire = "1965.1.1"
-				traits = {
-					war_industrialist
+			add_country_leader_role = {
+				Character = WZC_qi_xieyuan
+				Promote_leader = yes
+				Country_leader = {
+					ideology = despotism
+					expire = "1965.1.1"
+					traits = {
+						war_industrialist
+					}
 				}
+			}	
+			country_event = {
+				id = china.1091
+				days = 3
 			}
-		}	
-		country_event = {
-			id = china.1091
-			days = 3
-		}
+			PRC = {
+				transfer_state = 595
+			}
+			595 = {
+				set_demilitarized_zone = no
+			}
+			PRC = {
+				load_oob = "PRC_fujian"
+				set_cosmetic_tag = CHI_PRC
+			}
 		}
     }
+	option = {
+		set_country_flag  = FLAG_WZC_WAS_COLLAPESED
+		name = china.1089.b
+		remove_unit_leader = 91099
+		retire_character = WZC_sun_chuanfang
+		hidden_effect = {
+			add_country_leader_role = {
+				Character = WZC_qi_xieyuan
+				Promote_leader = yes
+				Country_leader = {
+					ideology = despotism
+					expire = "1965.1.1"
+					traits = {
+						war_industrialist
+					}
+				}
+			}	
+			country_event = {
+				id = china.1091
+				days = 3
+			}
+			PRC = {
+				transfer_state = 595
+			}
+			595 = {
+				set_demilitarized_zone = no
+			}
+			PRC = { change_tag_from = WZC }
+			PRC = {
+				load_oob = "PRC_fujian"
+				set_cosmetic_tag = CHI_PRC
+			}
+		}
+	}
 }
 country_event = {
 	id = china.1090
@@ -1318,6 +1355,9 @@ country_event = {
 		name = china.1090.a
 		remove_unit_leader = 91110
 		hidden_effect = {
+			WZC = {
+				add_ideas = WZC_not_surrender
+			}	
 			PRC = {
 				
 				declare_war_on = {
@@ -1403,6 +1443,9 @@ country_event = {
 		name = china.1090.b
 		custom_effect_tooltip = PLAY_WILL_ANHUI
 		hidden_effect = {
+			WZC = {
+				add_ideas = WZC_not_surrender
+			}	
 			PRC = {
 				
 				declare_war_on = {
@@ -1762,6 +1805,11 @@ country_event = {
 			target = AHC
 			type = annex_everything
 		}
+		AHC = {
+			white_peace = WZC
+			white_peace = CHI
+			white_peace = PRC
+		}
     }
 	option = { 
 		name = china.1104.b
@@ -1771,6 +1819,11 @@ country_event = {
 		create_wargoal = {
 			target = AHC
 			type = annex_everything
+		}
+		AHC = {
+			white_peace = WZC
+			white_peace = CHI
+			white_peace = PRC
 		}
     }
 }
@@ -1794,10 +1847,21 @@ country_event = {
 			type = annex_everything 
 			target = AHC
 		}	
-		declare_war_on = {
-			type = annex_everything 
-			target = PRC
+		ZLC = {
+			country_event = {
+				id = china.1104
+				days = 6
+			}
 		}
+		#create_faction = CHI_CHIANGS_NORTHERN_EXPANTION
+		CHI = {
+			add_to_faction = PRC
+			puppet = PRC
+		}
+		#declare_war_on = {
+		#	type = annex_everything 
+		#	target = PRC
+		#}
 		every_state = {
 			limit = {
 				is_core_of = WZC
@@ -1808,6 +1872,17 @@ country_event = {
 				}
 			}
 			add_core_of = CHI
+		}
+		PRC = {
+			set_politics = {
+				ruling_party = communism
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				communism = 100
+			}
 		}
     }
 }
@@ -1845,7 +1920,9 @@ country_event = {
 			every_state = {
 				limit = {
 					is_core_of = KOR
-					is_core_of = ZLC
+					is_owned_by = KOR
+					is_owned_by = KOR
+					is_claimed_by = ZLC
 				}
 				add_core_of = CHI
 			}
@@ -1863,5 +1940,39 @@ country_event = {
 				}
 				add_core_of = CHI
 			}
+    }
+}
+country_event = {
+	id = china.1108
+	title = china.1108.t
+	desc = china.1108.d
+    
+    picture = GFX_report_event_chi_great_war
+
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = china.1108.a
+		add_ideas = CHI_era_of_chinese_warlords_1
+    }
+}
+country_event = {
+	id = china.1109
+	title = china.1109.t
+	desc = china.1109.d
+    
+    picture = GFX_report_event_chi_great_war
+
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = china.1109.a
+			CHI = { change_tag_from = PRC }
+		CHI = {
+			annex_country = {
+				target = PRC
+				transfer_troops = yes
+			}
+		}
     }
 }

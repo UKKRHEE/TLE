@@ -1,18 +1,10 @@
 
 TLE_history_yes = {
 	allowed = {
-		OR = {
-			original_tag = KOR
-			is_chinese_clique = yes
-			is_japan_clique = yes
-		}
+		is_ai = no
 	}
 	visible = {
-		OR = {
-			original_tag = KOR
-			is_chinese_clique = yes
-			is_japan_clique = yes
-		}
+		is_ai = no
 	}
 	priority = 9999
 }

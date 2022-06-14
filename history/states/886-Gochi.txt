@@ -15,7 +15,7 @@ state={
 		}
 		owner = FRA
 		add_core_of = DKG
-		add_core_of = FRA
+		#add_core_of = FRA
 
 	}
 

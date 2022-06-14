@@ -15,6 +15,56 @@
  KOR_emperor:0 "대한국 태황"
  KOR_emperor_desc:0 "동방의 호랑이,대한국 태황입니다."
  
+ #정치고문
+ KOR_phillip_jaisohn:0 "서재필"
+ KOR_yi_dong_hwi:0 "이동휘"
+ KOR_an_ho_sang:0 "안호상"
+ KOR_yi_un:0 "이은"
+ KOR_yi_un_desc:0 ""
+ KOR_kim_koo:0 "김구"
+ KOR_park_sang_jin:0 "박상진"
+ KOR_lee_beom_seok:0 "이범석"
+ KOR_lee_beom_seok_army:0 "이범석"
+ KOR_lee_byung-chul:0 "이병철"
+ KOR_syngman_rhee:0 "이승만"
+ KOR_yeounhyeong:0 "여운형"
+ KOR_kim_gyu_sik:0 "김규식"
+ KOR_song_jin_woo:0 "송진우"
+ KOR_sin_ik_hui:0 "신익희"
+ 
+ #이론가
+ KOR_ji_chung_chun_2:0 "지청천"
+ KOR_ji_chung_chun:0 "지청천"
+ KOR_shin_sung_mo:0 "신성모"
+ KOR_choi_yong_duk:0 "최용덕"
+ KOR_choi_yong_duk_2:0 "최용덕"
+ KOR_lee_tae_gyu:0 "이태규"
+ KOR_do_sang_log:0 "도상록"
+ 
+ #육군참모총장
+ KOR_kim_chwa_chin:"김좌진"
+ KOR_kim_hong_il:0 "김홍일"
+ 
+ #해군참모총장
+ KOR_sin_sun_sung:0 "신순성"
+ KOR_son_won_il:0 "손원일"
+ 
+ #공군참모총장
+ KOR_no_baeg_lin:0 "노백린"
+ 
+ #군 고위지휘관
+ KOR_yu_dong_yeol_high:0 "유동열"
+ KOR_ji_chung_chun_high:0 "지청천"
+ KOR_Chung_il_kwon_high:0 "정일권"
+ KOR_choi_yong_duk_high:0 "최용덕"
+ KOR_kim_jong_oh_high:0 "김종오"
+ KOR_no_baeg_lin_high:0 "노백린"
+ KOR_son_won_il_high:0 "손원일"
+ KOR_sin_sun_sung_high:0 "신순성"
+ KOR_kim_hong_il_high:0 "김홍일"
+ KOR_yujin_kim:0 "김유진"
+ 
+ #국가 지도자
  KOR_kim_hui_sun:0 "김희선"
  KOR_yi_byung_mu:0 "이병무"
  KOR_yi_kang:0 "이강"
@@ -27,6 +77,8 @@
  KOR_hong_sa_ik:0 "홍사익"
  KOR_yi_wu:0 "이우"
  KOR_yi_geon:0 "이건"
+ KOR_yi_je_gak:0 "이재각"
+ KOR_yi_hae_chang:0 "이해창"
  KOR_kim_suk_won:0 "김석원"
  KOR_kim_won_bong:0 "김원봉"
  KOR_kim_du_han:0 "김두한"
@@ -47,6 +99,11 @@
  KOR_choi_yong_duk:0 "최용덕"
  KOR_kim_gap_sun:0 "김갑순"
  KOR_hyun_jun_ho:0 "현준호"
+ KOR_hong_bum_do:0 "홍범도"
+ KOR_lee_eungjun:0 "이응준"
+ KOR_ahn_changnam:0 "안창남"
+ 
+ KMM_yi_cheok:0 "이척"
  
  JAP_yamato_junta:0 "유신파"
  KOR_min_kwang_sik:0 "민광식"

@@ -64,3 +64,145 @@ music = {
 	file = "kbs/Gwanghwamun_love_song.ogg"
 	volume = 1.0
 }
+##
+music = {
+	name = "red_sunset"
+	file = "Lee_Moon_Sae1/red_sunset.ogg"
+	volume = 1.0
+}
+music = {
+	name = "only_her_laughter"
+	file = "Lee_Moon_Sae1/only_her_laughter.ogg"
+	volume = 1.0
+}
+music = {
+	name = "standing_under_the_shades_of_a_street_tree"
+	file = "Lee_Moon_Sae1/standing_under_the_shades_of_a_street_tree.ogg"
+	volume = 1.0
+}
+music = {
+	name = "flying_through_the_night"
+	file = "Lee_Moon_Sae1/flying_through_the_night.ogg"
+	volume = 1.0
+}
+music = {
+	name = "when_love_passes"
+	file = "Lee_Moon_Sae1/when_love_passes.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "to_you"
+	file = "kim_kwang_seok/to_you.ogg"
+	volume = 1.0
+}
+music = {
+	name = "sad_song"
+	file = "kim_kwang_seok/sad_song.ogg"
+	volume = 1.0
+}
+music = {
+	name = "on_the_street"
+	file = "kim_kwang_seok/on_the_street.ogg"
+	volume = 1.0
+}
+music = {
+	name = "My_love_I_couldnt_tell_you"
+	file = "kim_kwang_seok/My_love_I_couldnt_tell_you.ogg"
+	volume = 1.0
+}
+music = {
+	name = "a_stump"
+	file = "kim_kwang_seok/a_stump.ogg"
+	volume = 1.0
+}
+music = {
+	name = "Please_wait_for_me"
+	file = "kim_kwang_seok/Please_wait_for_me.ogg"
+	volume = 1.0
+}
+music = {
+	name = "Write_letter_cloudy_autumn_sky"
+	file = "kim_kwang_seok/Write_letter_cloudy_autumn_sky.ogg"
+	volume = 1.0
+}
+music = {
+	name = "sound_of_your_laughter"
+	file = "kim_kwang_seok/sound_of_your_laughter.ogg"
+	volume = 1.0
+}
+music = {
+	name = "in_the_wilderness"
+	file = "kim_kwang_seok/in_the_wilderness.ogg"
+	volume = 1.0
+}
+music = {
+	name = "i_loved_you"
+	file = "kim_kwang_seok/i_loved_you.ogg"
+	volume = 1.0
+}
+music = {
+	name = "a_love_that_hurts_so_much_wasnt_love"
+	file = "kim_kwang_seok/a_love_that_hurts_so_much_wasnt_love.ogg"
+	volume = 1.0
+}
+music = {
+	name = "a_story_of_an_old_couple_in_their_60s"
+	file = "kim_kwang_seok/a_story_of_an_old_couple_in_their_60s.ogg"
+	volume = 1.0
+}
+music = {
+	name = "my_man"
+	file = "kim_kwang_seok/my_man.ogg"
+	volume = 1.0
+}
+music = {
+	name = "standup"
+	file = "kim_kwang_seok/standup.ogg"
+	volume = 1.0
+}
+music = {
+	name = "with_a_burning_thirst"
+	file = "kim_kwang_seok/with_a_burning_thirst.ogg"
+	volume = 1.0
+}
+music = {
+	name = "where_the_wind_blows"
+	file = "kim_kwang_seok/where_the_wind_blows.ogg"
+	volume = 1.0
+}
+music = {
+	name = "my_song"
+	file = "kim_kwang_seok/my_song.ogg"
+	volume = 1.0
+}
+music = {
+	name = "become_dust"
+	file = "kim_kwang_seok/become_dust.ogg"
+	volume = 1.0
+}
+music = {
+	name = "two_wheeled_car"
+	file = "kim_kwang_seok/two_wheeled_car.ogg"
+	volume = 1.0
+}
+music = {
+	name = "unlucky_guy"
+	file = "kim_kwang_seok/unlucky_guy.ogg"
+	volume = 1.0
+}
+music = {
+	name = "alone_night"
+	file = "kim_kwang_seok/alone_night.ogg"
+	volume = 1.0
+}
+music = {
+	name = "letter_private_2"
+	file = "kim_kwang_seok/letter_private_2.ogg"
+	volume = 1.0
+}
+music = {
+	name = "the_days"
+	file = "kim_kwang_seok/the_days.ogg"
+	volume = 1.0
+}

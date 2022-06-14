@@ -1,4 +1,8 @@
 on_actions = {
+	on_startup = {
+		effect = {
+		}
+	}
 	on_state_control_changed = {
 		effect = {
 			if = {
@@ -31,4 +35,30 @@ on_actions = {
 			}
 		}
 	}
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = JAP
+					}
+					ROOT = {
+						original_tag = DKG
+					}
+				}	
+				TBJ = {
+					declare_war_on = {
+						target = JAP
+						type = annex_everything
+					}
+				}
+				GJJ = {
+					declare_war_on = {
+						target = JAP
+						type = annex_everything
+					}
+				}
+			}
+		}
+	}	
 }

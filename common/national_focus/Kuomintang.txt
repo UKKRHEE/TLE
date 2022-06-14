@@ -4,7 +4,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = CHI
+			original_tag = CHI
 		}
 	}
 	default = no
@@ -362,6 +362,11 @@ focus_tree = {
 		}
 		x = 10
 		y = 4
+		available = {
+			599 = {
+				is_owned_by = CHI
+			}
+		}
 		completion_reward = {
 			create_wargoal = {
 				target = YUN
@@ -379,6 +384,11 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = CHI_war_with_yunnanC
+		}
+		available = {
+			599 = {
+				is_owned_by = CHI
+			}
 		}
 		x = 12
 		y = 4
@@ -670,13 +680,13 @@ focus_tree = {
 				limit = {
 					is_owned_by = SND
 				}
-				add_core_of = CHI
+				add_claim_by = CHI
 			}
 			every_state = {
 				limit = {
 					is_owned_by = HNC
 				}
-				add_core_of = CHI
+				add_claim_by = CHI
 			}
 		}
 
@@ -926,6 +936,9 @@ focus_tree = {
 		}
 		x = 21
 		y = 3
+		available = {
+			
+		}
 		completion_reward = {
 			SZC = {
 				add_stability = -0.05
@@ -946,6 +959,25 @@ focus_tree = {
 		}
 		x = 20
 		y = 4
+		available = {
+			OR = {
+				750 = {
+					is_owned_by = CHI
+				}
+				879 = {
+					is_owned_by = CHI
+				}
+				874 = {
+					is_owned_by = CHI
+				}
+				325 = {
+					is_owned_by = CHI
+				}
+				747 = {
+					is_owned_by = CHI
+				}
+			}
+		}
 		completion_reward = {
 			SZC = {
 				country_event = {
@@ -975,6 +1007,25 @@ focus_tree = {
 		}
 		x = 22
 		y = 4
+		available = {
+			OR = {
+				750 = {
+					is_owned_by = CHI
+				}
+				879 = {
+					is_owned_by = CHI
+				}
+				874 = {
+					is_owned_by = CHI
+				}
+				325 = {
+					is_owned_by = CHI
+				}
+				747 = {
+					is_owned_by = CHI
+				}
+			}
+		}
 		completion_reward = {
 			create_wargoal = {
 				target = SZC
@@ -1362,6 +1413,11 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = CHI_the_end_of_the_warlord_era
+		}
+		available = {
+			KOR = {
+				has_country_flag = TLE_THE_WAR_IS_ENDED
+			}
 		}
 		x = 16
 		y = 10

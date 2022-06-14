@@ -37,11 +37,7 @@ TLE_history_yes = {
 		picture = GFX_decision_cat_national_assembly
         
 		allowed = {
-			OR = {
-				original_tag = KOR
-				is_chinese_clique = yes
-				is_japan_clique = yes
-			}
+			is_ai = no
 		}
 		available = {
 		}
@@ -74,7 +70,7 @@ KOR_kill_the_usa_plan = {
 			original_tag = KOR
 		}
 		ai_will_do = {
-			factor = 100
+			factor = 100000
 		}
 		available = {
 			has_country_flag = FLAG_USA_FUCK_TO_KOREA
@@ -82,10 +78,10 @@ KOR_kill_the_usa_plan = {
 				has_country_flag = FLAG_SAY_SORRY_TO_USA
 			}
 			not = {
-				OR = {
-					has_decision = KOR_hunlian_in_pacific
-					has_decision = KOR_not_say_the_panay
-				}	
+				has_decision = KOR_not_say_the_panay
+			}
+			NOT = {
+				has_country_flag = KOR_KILL_NOSESE
 			}
 		}
 		visible = {
@@ -98,6 +94,7 @@ KOR_kill_the_usa_plan = {
 		fire_only_once = yes
 		remove_effect = {
 			custom_effect_tooltip = TOOLTIP_IT_WILL_BE_DISASTER_MOON
+			set_country_flag = KOR_KILL_NOSESE
 			hidden_effect = {
 				USA = {
 					country_event = {
@@ -281,35 +278,31 @@ KOR_kill_the_usa_plan = {
 			original_tag = KOR
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
 		available = {
-			has_country_flag = KOR_PANAI_PROBLEM
-			NOT = {
-				has_country_flag = FLAG_SAY_SORRY_TO_USA
-			}
-			not = {
-				OR = {
-					has_decision = KOR_confiscation_of_US_assets
-					has_decision = KOR_not_say_the_panay
-				}
-			}
+			has_country_flag = TLE_USA_GO_EXPERIENCE
 		}
 		visible = {
-			has_country_flag = KOR_PANAI_PROBLEM
-			NOT = {
-				has_country_flag = FLAG_SAY_SORRY_TO_USA
-			}
+			has_country_flag = TLE_USA_GO_EXPERIENCE
 		}		
 		
-		fire_only_once = yes
-		complete_effect = {
-			army_experience = 5
-			navy_experience = 15
+		days_remove = 13
+		fire_only_once = yes		
+		remove_effect = {
+			army_experience = 20
+			navy_experience = 20
 			threat = 5
 			add_war_support = 0.05
-			USA = {
-				add_war_support = 0.1
+			hidden_effect = {
+				USA = {
+					add_war_support = 0.1
+				}
+				KOR = {
+					country_event = {
+						id = korea.16
+					}
+				}
 			}
 		}
 		timeout_effect = {
@@ -401,7 +394,6 @@ KOR_the_three_countries_plan = {
 				OR = {
 					AND = {
 						owns_state = 622
-						owns_state = 621
 						owns_state = 620
 						owns_state = 616
 						owns_state = 615
@@ -436,7 +428,14 @@ KOR_the_three_countries_plan = {
 			country_event = {
 				id = korea.39
 			}
-			set_country_flag = won_in_china_sp
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = won_in_china
+					}
+				}
+				set_country_flag = won_in_china_sp
+			}
 			set_country_flag = won_in_china
 		}
 	}
@@ -514,7 +513,15 @@ KOR_the_three_countries_plan = {
 			original_tag = KOR
 		}
 		fire_only_once = yes
-		days_remove = 150
+		days_remove = 360
+		complete_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				army_experience = -200
+			}
+		}
 		remove_effect = {
 			remove_ideas = KOR_not_planed_attack
 		}
@@ -683,13 +690,53 @@ KOR_second_plan_tent = {
 }	
 KOR_third_plan_doryun = {
 	
+	KOR_start_the_doryun = { #
+		icon = generic_form_nation
+		allowed = {
+		    original_tag = KOR
+		}
+		available = {
+			has_idea = KOR_embargo_us
+			has_completed_focus = KOR_the_plan_south
+			OR = {
+				has_completed_focus = kor_threat_united_states
+				OR = {
+					has_country_flag = FLAG_USA_FUCK_TO_KOREA
+					has_war_with = USA
+				}	
+			}
+        }
+		visible = {
+			has_completed_focus = KOR_the_plan_south
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			planning_speed = 0.9
+			war_support_factor = 0.5
+			army_org_Factor = 0.2
+			army_morale_factor = 0.2
+			consumer_goods_factor = -0.15
+		}
+		days_remove = 365
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100000
+				has_war_with = USA
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = TOOLTIP_THE_DORYUN_TIP
+		}
+		remove_effect = {
+		}
+	}
 	KOR_attack_siam = { #태국에게 통첩
 		icon = generic_army
 		allowed = {
-		    OR = {
-			    original_tag = KOR 
-			    original_tag = MKR
-		    }
+		    original_tag = KOR
 		}
 		available = {
 			SIA = { exists = yes }
@@ -698,15 +745,14 @@ KOR_third_plan_doryun = {
 			controls_state = 741
 			controls_state = 670
 			has_war_support > 0.5	
+			has_completed_focus = kor_threat_united_states
+			OR = {
+				has_country_flag = FLAG_USA_FUCK_TO_KOREA
+				has_war_with = USA
+			}	
         }
 		visible = {
-			OR = {
-				has_completed_focus = kor_threat_united_states
-				OR = {
-					has_country_flag = FLAG_USA_FUCK_TO_KOREA
-					has_war_with = USA
-				}	
-			}
+			has_completed_focus = KOR_the_plan_south
 		}
 
 		fire_only_once = yes
@@ -733,23 +779,22 @@ KOR_third_plan_doryun = {
 	KOR_attack_malay = {
 		icon = generic_army
 		allowed = {
-		    OR = {
-			    original_tag = KOR 
-			    original_tag = MKR
-		    }
+		    original_tag = KOR
 		}
 		available = {
 			MAL = { exists = yes }
-			has_war_support > 0.5
-        }
-		visible = {
+			has_war_support > 0.6
 			OR = {
-				has_completed_focus = kor_threat_united_states
+				has_completed_focus = KOR_the_malay_focus
+				has_completed_focus = KOR_the_plan_south
 				OR = {
 					has_country_flag = FLAG_USA_FUCK_TO_KOREA
 					has_war_with = USA
 				}	
 			}
+        }
+		visible = {
+			has_completed_focus = KOR_the_plan_south
 		}
 
 		fire_only_once = yes
@@ -757,7 +802,11 @@ KOR_third_plan_doryun = {
 		cost = 10
 		days_remove = 45
 		ai_will_do = {
-			factor = 30
+			base = 0
+			modifier = {
+				add = 100
+				has_war_with = USA
+			}
 		}
 		
 		remove_effect = {
@@ -782,23 +831,22 @@ KOR_third_plan_doryun = {
 	KOR_attack_indonesia = {
 		icon = generic_army
 		allowed = {
-		    OR = {
-			    original_tag = KOR 
-			    original_tag = MKR
-		    }
+		    original_tag = KOR
 		}
 		available = {
 			INS = { exists = yes }
-			has_war_support > 0.5
-        }
-		visible = {
+			has_war_support > 0.6
 			OR = {
-				has_completed_focus = kor_threat_united_states
+				has_completed_focus = KOR_the_ins_focus
+				has_completed_focus = KOR_the_plan_south
 				OR = {
 					has_country_flag = FLAG_USA_FUCK_TO_KOREA
 					has_war_with = USA
 				}	
 			}
+        }
+		visible = {
+			has_completed_focus = KOR_the_plan_south
 		}
 
 		fire_only_once = yes
@@ -806,7 +854,11 @@ KOR_third_plan_doryun = {
 		cost = 10
 		days_remove = 45
 		ai_will_do = {
-			factor = 20
+			base = 0
+			modifier = {
+				add = 100
+				has_war_with = USA
+			}
 		}
 
 		remove_effect = {
@@ -821,28 +873,30 @@ KOR_third_plan_doryun = {
 	KOR_attack_japanese_empire = {
 		icon = generic_army
 		allowed = {
-		    OR = {
-			    original_tag = KOR 
-			    original_tag = MKR
-		    }
+		    original_tag = KOR
 		}
 		available = {
-			JAP = { exists = yes }
-			NOT = {
-				has_idea = KOR_not_go_outside
-			}
-			has_completed_focus = KOR_all_claim
-			custom_trigger_tooltip = {
-				tooltip = TRIGGER_TOOLTIP_WAR_IN_CHINA
-				OR = {
-					has_war_with = CHI
-					has_war_with = ZLC
-					has_war_with = WZC
-					has_war_with = USA
+			JAP = { exists = yes owns_state = 282 }
+			has_completed_focus = KOR_attack_taiwan
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = TRIGGER_TOOLTIP_WAR_IN_CHINA
+					OR = {
+						has_war_with = CHI
+						has_war_with = ZLC
+						has_war_with = WZC
+						has_war_with = USA
+					}
 				}
+				has_country_flag = won_in_china
 			}
-			
         }
+		visible = {
+			OR = {
+			has_completed_focus = KOR_attack_taiwan
+			has_completed_focus = KOR_the_plan_south
+			}
+		}
 
 		fire_only_once = yes
 
@@ -851,12 +905,17 @@ KOR_third_plan_doryun = {
 		ai_will_do = {
 			factor = 1000
 		}
+		complete_effect = {
+			custom_effect_tooltip = TOOLTIP_WILL_BE_WAR_JAP
+		}
+		
 
 		remove_effect = {
-            declare_war_on = {
-		        target = JAP
-		        type = puppet_wargoal_focus
-	        }
+			JAP = {
+				country_event = {
+					id = korea.86
+				}
+			}
 		}
 	}
 }
@@ -1698,17 +1757,15 @@ KOR_reichskommissariat = {
 
 		available = {
 			is_subject = no
-			JAP = { exists = no }
+			#JAP = { exists = no }
 			CHI = { exists = no }
 			custom_trigger_tooltip = {
 				tooltip = form_country_china_tt
 				owns_state = 622
-				owns_state = 621
 				owns_state = 620
 				owns_state = 616
 				owns_state = 615
 				owns_state = 614
-				owns_state = 611
 				owns_state = 610
 				owns_state = 591
 				owns_state = 592
@@ -1722,7 +1779,6 @@ KOR_reichskommissariat = {
 				owns_state = 601
 				owns_state = 600
 				owns_state = 608
-				owns_state = 612
 				owns_state = 613
 				owns_state = 325
 				owns_state = 868
@@ -1731,11 +1787,11 @@ KOR_reichskommissariat = {
 				owns_state = 854
 				owns_state = 867
 			}
-			custom_trigger_tooltip = {
-				tooltip = form_country_japan_tt
-				owns_state = 891
-				owns_state = 282
-			}
+			#custom_trigger_tooltip = {
+			#	tooltip = form_country_japan_tt
+			#	owns_state = 891
+			#	owns_state = 282
+			#}
 		}
 
 		visible = {
@@ -1751,24 +1807,6 @@ KOR_reichskommissariat = {
 			hidden_effect = {
 				news_event = { id = eok_news.5 days = 1 }
 			}
-			every_state = {
-				limit = {
-					is_core_of = JAP
-				}
-				add_core_of = ROOT
-			}
-			every_state = {
-				limit = {
-					is_core_of = ZLC
-				}
-				add_core_of = ROOT
-			}
-			every_state = {
-				limit = {
-					is_core_of = SIA
-				}
-				add_core_of = ROOT
-			
 		}
 
 		ai_will_do = {
@@ -1799,15 +1837,6 @@ KOR_nuke_surrend = {
 			}	
 			NOT = {
 				controls_state = 524
-				controls_state = 743
-			}
-			MAN = {
-				NOT = {
-				    controls_state = 714
-					controls_state = 761
-					controls_state = 715
-					controls_state = 610
-				}
 			}
 		}
 

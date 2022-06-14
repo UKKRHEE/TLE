@@ -39,7 +39,10 @@ JAP_dec_civil_war = {
 				}
 			}
 		} 
-		days_mission_timeout = 30
+		activation = {
+			has_country_flag = DEC_YOSHIHISA_DEAD
+		}
+		days_mission_timeout = 20
 		
 		fixed_random_seed = no
 
@@ -100,6 +103,9 @@ JAP_dec_civil_war = {
 			tag = JAP
 			JAP = {
 				has_country_flag = FLAG_CIVIL_WAR_JAP
+				NOT = {
+					owns_state = 282
+				}
 			}
 			NOT = {
 				has_war_with = EJP
@@ -159,6 +165,9 @@ JAP_dec_civil_war = {
 			tag = JAP
 			JAP = {
 				has_country_flag = FLAG_CIVIL_WAR_JAP
+				NOT = {
+					owns_state = 282
+				}
 			}
 			NOT = {
 				has_war_with = EJP
@@ -219,6 +228,9 @@ JAP_dec_civil_war = {
 			tag = JAP
 			JAP = {
 				has_country_flag = FLAG_CIVIL_WAR_JAP
+				NOT = {
+					owns_state = 282
+				}
 			}
 			NOT = {
 				has_war_with = EJP
@@ -279,6 +291,9 @@ JAP_dec_civil_war = {
 			tag = JAP
 			JAP = {
 				has_country_flag = FLAG_CIVIL_WAR_JAP
+				NOT = {
+					owns_state = 282
+				}
 			}
 			NOT = {
 				has_war_with = FJP
@@ -337,6 +352,9 @@ JAP_dec_civil_war = {
 			tag = JAP
 			JAP = {
 				has_country_flag = FLAG_CIVIL_WAR_JAP
+				NOT = {
+					owns_state = 282
+				}
 			}
 			NOT = {
 				has_war_with = FJP
@@ -393,6 +411,9 @@ JAP_dec_civil_war = {
 			tag = JAP
 			JAP = {
 				has_country_flag = FLAG_CIVIL_WAR_JAP
+				NOT = {
+					owns_state = 282
+				}
 			}
 			NOT = {
 				has_war_with = FJP
@@ -448,6 +469,9 @@ JAP_dec_civil_war = {
 			}
 			JAP = {
 				has_country_flag = FLAG_CIVIL_WAR_JAP
+				NOT = {
+					owns_state = 282
+				}
 			}
 			NOT = {
 				has_war_with = KGJ
@@ -490,6 +514,9 @@ JAP_dec_civil_war = {
 			}
 			JAP = {
 				has_country_flag = FLAG_CIVIL_WAR_JAP
+				NOT = {
+					owns_state = 282
+				}
 			}
 			NOT = {
 				has_war_with = SDJ
@@ -532,6 +559,9 @@ JAP_dec_civil_war = {
 			}
 			JAP = {
 				has_country_flag = FLAG_CIVIL_WAR_JAP
+				NOT = {
+					owns_state = 282
+				}
 			}
 			NOT = {
 				has_war_with = NBJ
@@ -574,6 +604,9 @@ JAP_dec_civil_war = {
 			}
 			JAP = {
 				has_country_flag = FLAG_CIVIL_WAR_JAP
+				NOT = {
+					owns_state = 282
+				}
 			}
 			NOT = {
 				has_war_with = GJJ
@@ -616,6 +649,9 @@ JAP_dec_civil_war = {
 			}
 			JAP = {
 				has_country_flag = FLAG_CIVIL_WAR_JAP
+				NOT = {
+					owns_state = 282
+				}
 			}
 			NOT = {
 				has_war_with = TBJ
@@ -672,6 +708,9 @@ JAP_dec_civil_war = {
 			tag = DKG
 			JAP = {
 				has_country_flag = FLAG_CIVIL_WAR_JAP
+				NOT = {
+					owns_state = 282
+				}
 			}
 			NOT = {
 				has_war_with = EJP
@@ -731,6 +770,9 @@ JAP_dec_civil_war = {
 			tag = DKG
 			JAP = {
 				has_country_flag = FLAG_CIVIL_WAR_JAP
+				NOT = {
+					owns_state = 282
+				}
 			}
 			NOT = {
 				has_war_with = EJP
@@ -790,6 +832,9 @@ JAP_dec_civil_war = {
 			tag = DKG
 			JAP = {
 				has_country_flag = FLAG_CIVIL_WAR_JAP
+				NOT = {
+					owns_state = 282
+				}
 			}
 			NOT = {
 				has_war_with = EJP
@@ -833,6 +878,9 @@ JAP_dec_civil_war = {
 			tag = DKG
 			JAP = {
 				has_country_flag = FLAG_CIVIL_WAR_JAP
+				NOT = {
+					owns_state = 282
+				}
 			}
 			NOT = {
 				has_war_with = FJP
@@ -845,5 +893,1791 @@ JAP_dec_civil_war = {
 		days_remove = 5
 		fire_only_once = no
 		is_good = no
+	}
+}
+#################쇼와 유신########################
+JAP_the_plan_rework_japan = {
+	JAP_punch_the_dokugawas = { #도쿠가와 추방
+		icon = generic_political_discourse
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			    original_tag = JAP
+			}
+		ai_will_do = {
+			factor = 1000
+		}	
+		
+		available = {
+			owns_state = 282
+			NOT = {
+				has_idea = JAP_anti_yushin_level_4
+			}
+		}
+
+		#days_remove = 100
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+        
+		
+		is_good = yes
+
+		activation = {
+			
+		}
+		
+		visible = {
+			original_tag = JAP
+			NOT = {
+				has_country_flag = FLAG_SAVE_THE_DOKUGAWAS
+			}
+        }	
+		complete_effect = {
+			set_country_flag = FLAG_KICK_THE_DOKUGAWAS
+			add_stability = 0.05
+			JAP_anti_yushin_level_up = yes
+			hidden_effect = {
+				#country_event = {
+				#	id = 
+				#	days = 
+				#}
+			}
+		}	
+
+		remove_effect = {
+		}
+	}
+	JAP_save_the_dokugawas = { #도쿠가와 포용
+		icon = generic_political_discourse
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			    original_tag = JAP
+		}
+		ai_will_do = {
+			factor = 1000
+		}	
+		
+		available = {
+			owns_state = 282
+		}
+
+		#days_remove = 100
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+        
+		
+		is_good = yes
+
+		activation = {
+			
+		}
+		
+		visible = {
+			original_tag = JAP
+			NOT = {
+				has_country_flag = FLAG_KICK_THE_DOKUGAWAS
+			}
+        }	
+		complete_effect = {
+			set_country_flag = FLAG_SAVE_THE_DOKUGAWAS
+			add_stability = -0.15
+			JAP_anti_yushin_level_down = yes
+		}	
+
+		remove_effect = {
+		}
+		
+	}
+	JAP_constitution_promulgation = { #쇼와헌법 공표
+		icon = none
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			    original_tag = JAP
+		}
+		ai_will_do = {
+			factor = 1000
+		}	
+		
+		available = {
+			has_completed_focus = JAP_war_support
+			OR = {
+				has_country_flag = FLAG_KICK_THE_DOKUGAWAS
+				has_country_flag = FLAG_SAVE_THE_DOKUGAWAS
+			}	
+			NOT = {
+				has_idea = JAP_anti_yushin_level_4
+			}
+			NOT = {
+				has_country_flag = FLAG_CLICK_SHOWA_YUSHIN
+			}
+		}
+
+		days_remove = 30
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+        
+		
+		is_good = yes
+
+		activation = {
+			
+		}
+		
+		visible = {
+			original_tag = JAP
+        }	
+		complete_effect = {
+			JAP_anti_yushin_level_up = yes
+			set_country_flag = FLAG_CLICK_SHOWA_YUSHIN
+		}	
+
+		remove_effect = {
+			add_stability = 0.05
+			add_political_power = 80
+			set_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			clr_country_flag = FLAG_CLICK_SHOWA_YUSHIN
+			country_event = {
+				id = japan.1035
+			}
+		}
+		
+	}
+	JAP_prliament_reorganization = { #의회 재정비공표
+		icon = none
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			    original_tag = JAP
+		}
+		ai_will_do = {
+			factor = 1000
+		}	
+		
+		available = {
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			NOT = {
+				has_idea = JAP_anti_yushin_level_4
+			}
+			NOT = {
+				has_country_flag = FLAG_CLICK_SHOWA_YUSHIN
+			}
+		}
+
+		days_remove = 20
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+        
+		
+		is_good = yes
+
+		activation = {
+			
+		}
+		
+		visible = {
+			original_tag = JAP
+        }	
+		complete_effect = {
+			JAP_anti_yushin_level_up = yes
+			set_country_flag = FLAG_CLICK_SHOWA_YUSHIN
+			country_event = {
+				id = japan.1036
+			}
+		}	
+
+		remove_effect = {
+			add_political_power = 60
+			add_stability = 0.025
+			clr_country_flag = FLAG_CLICK_SHOWA_YUSHIN
+			hidden_effect = {
+				country_event = {
+					id = japan.1038
+				}
+			}
+		}
+		
+	}
+	JAP_promote_the_use_of_hiragana = { #히라가나 사용 촉진
+		icon = none
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = JAP
+		}
+		ai_will_do = {
+			factor = 1000
+		}	
+		
+		available = {
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			has_political_power > 149
+			NOT = {
+				has_idea = JAP_anti_yushin_level_4
+			}
+			NOT = {
+				has_country_flag = FLAG_CLICK_SHOWA_YUSHIN
+			}
+		}
+
+		days_remove = 90
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+        
+		
+		is_good = yes
+
+		activation = {
+			
+		}
+		
+		visible = {
+			original_tag = JAP
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+        }	
+		complete_effect = {
+			JAP_anti_yushin_level_up = yes
+			add_political_power = -150
+			set_country_flag = FLAG_CLICK_SHOWA_YUSHIN
+		}	
+
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = JAP_high_illiteracy_rate
+				add_idea = JAP_high_illiteracy_rate_2
+			}
+			set_country_flag = FLAG_HAS_COMPLETED_DECISION_HIRAGANA
+			clr_country_flag = FLAG_CLICK_SHOWA_YUSHIN
+				country_event = {
+					id = japan.1037
+				}
+		}
+		
+	}
+	JAP_illiteracy_eradication_movement = { #문맹 퇴치 운동
+		icon = none
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = JAP
+		}
+		ai_will_do = {
+			factor = 50
+		}	
+		
+		available = {
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			NOT = {
+				has_idea = JAP_anti_yushin_level_4
+			}
+			NOT = {
+				has_country_flag = FLAG_CLICK_SHOWA_YUSHIN
+			}
+		}
+
+		days_remove = 120
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+        
+		
+		is_good = yes
+
+		modifier = {
+			political_power_gain = -0.3
+		}
+		
+		visible = {
+			original_tag = JAP
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_HIRAGANA
+        }	
+		complete_effect = {
+			JAP_anti_yushin_level_up = yes
+			set_country_flag = FLAG_CLICK_SHOWA_YUSHIN
+		}	
+
+		remove_effect = {
+			remove_ideas = JAP_high_illiteracy_rate_2
+			clr_country_flag = FLAG_CLICK_SHOWA_YUSHIN
+		}
+	}
+	JAP_eradication_of_canonical_adhesions = { #정경유착 근절
+		icon = none
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = JAP
+		}
+		ai_will_do = {
+			factor = 40
+		}	
+		
+		available = {
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			NOT = {
+				has_idea = JAP_anti_yushin_level_4
+			}
+			NOT = {
+				has_country_flag = FLAG_CLICK_SHOWA_YUSHIN
+			}
+		}
+
+		days_remove = 45
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+        
+		
+		is_good = yes
+
+		modifier = {
+			political_power_gain = 0.2
+			stability_weekly = 0.005
+		}
+		
+		visible = {
+			original_tag = JAP
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+        }	
+		complete_effect = {
+			JAP_anti_yushin_level_up = yes
+			set_country_flag = FLAG_CLICK_SHOWA_YUSHIN
+		}	
+
+		remove_effect = {
+			clr_country_flag = FLAG_CLICK_SHOWA_YUSHIN
+		}
+		
+	}
+	JAP_the_decision_of_landlords = { #토지 조사 사업
+		icon = none
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = JAP
+		}
+		ai_will_do = {
+			factor = 30
+		}	
+		
+		available = {
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			NOT = {
+				has_idea = JAP_anti_yushin_level_4
+			}
+			NOT = {
+				has_country_flag = FLAG_CLICK_SHOWA_YUSHIN
+			}
+			has_political_power > 89
+		}
+
+		days_remove = 70
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+        
+		
+		is_good = yes
+
+		modifier = {
+			conscription_factor = 0.15
+		}
+		
+		visible = {
+			original_tag = JAP
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+        }	
+		complete_effect = {
+			JAP_anti_yushin_level_up = yes
+			add_political_power = -90
+			set_country_flag = FLAG_CLICK_SHOWA_YUSHIN
+		}	
+
+		remove_effect = {
+			add_political_power = 150
+			clr_country_flag = FLAG_CLICK_SHOWA_YUSHIN
+			set_country_flag = FLAG_HAS_COMPLETED_DECISION_TOJI
+				country_event = {
+					id = japan.1039
+				}
+		}
+		
+	}
+	JAP_dimension_maintenance_business = { #치수 정비 사업
+		icon = none
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = JAP
+		}
+		ai_will_do = {
+			factor = 30
+		}	
+		
+		available = {
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			NOT = {
+				has_idea = JAP_anti_yushin_level_4
+			}
+			NOT = {
+				has_country_flag = FLAG_CLICK_SHOWA_YUSHIN
+			}
+			has_political_power > 89
+		}
+
+		days_remove = 70
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+        
+		
+		is_good = yes
+
+		modifier = {
+			conscription_factor = 0.15
+		}
+		
+		visible = {
+			original_tag = JAP
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_TOJI
+        }	
+		complete_effect = {
+			JAP_anti_yushin_level_up = yes
+			set_country_flag = FLAG_CLICK_SHOWA_YUSHIN
+		}	
+
+		remove_effect = {
+			add_ideas = JAP_the_japanese_infrastruction
+			clr_country_flag = FLAG_CLICK_SHOWA_YUSHIN
+		}
+		
+	}
+	JAP_road_maintenance = { #철도 정비 (여러번 가능)
+		icon = none
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = JAP
+		}
+		ai_will_do = {
+			factor = 0
+		}	
+		
+		available = {
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			NOT = {
+				has_idea = JAP_anti_yushin_level_4
+			}
+			NOT = {
+				has_country_flag = FLAG_CLICK_SHOWA_YUSHIN
+			}
+			has_political_power > 50
+		}
+
+		days_remove = 50
+		
+		fixed_random_seed = no
+
+		fire_only_once = no
+		
+		is_good = yes
+
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+		
+		visible = {
+			original_tag = JAP
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+        }	
+		complete_effect = {
+			#JAP_anti_yushin_level_up = yes
+			add_political_power = -50
+			set_country_flag = FLAG_CLICK_SHOWA_YUSHIN
+		}	
+
+		remove_effect = {
+			clr_country_flag = FLAG_CLICK_SHOWA_YUSHIN
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+	}
+	JAP_issuance_of_government_bonds = { #국채 발행 (여러번 가능)사업
+		icon = ger_mefo_bills
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = JAP
+		}
+		ai_will_do = {
+			factor = 0
+		}	
+		
+		available = {
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			NOT = {
+				has_idea = JAP_anti_yushin_level_4
+			}
+			has_political_power > 40
+		}
+
+		days_remove = 50
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+        
+		
+		is_good = yes
+
+		modifier = {
+			consumer_goods_factor = -0.1
+			industrial_capacity_factory = -0.025
+			industrial_capacity_dockyard = -0.025
+		}
+		
+		visible = {
+			original_tag = JAP
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+        }	
+		complete_effect = {
+			add_political_power = -40
+			custom_effect_tooltip = TOOLTIP_THE_BONDS_WILL_NOT_YUSHIN
+		}	
+
+		remove_effect = {
+		}
+	}
+}
+#################폐번치현########################
+JAP_closed_bunchi_county = {
+	JAP_samurai_dismantling = { #칼을 집어넣어라 (사무라이 계급 철폐)
+		icon = generic_industry
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			    original_tag = JAP
+			}
+		ai_will_do = {
+			factor = 1000
+		}	
+		
+		available = {
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			OR = {
+				has_idea = JAP_anti_yushin_level_1
+				has_idea = JAP_anti_yushin_level_2
+				has_idea = JAP_anti_yushin_level_3
+				has_idea = JAP_anti_yushin_level_4
+			}
+		}
+
+		days_remove = 30
+		
+		fire_only_once = yes
+		
+		is_good = yes
+
+		modifier = {
+			war_support_factor = -0.15
+			stability_factor = -0.05
+			surrender_limit = -0.2
+		}
+
+		visible = {
+			original_tag = JAP			
+			is_subject = no
+        }	
+		complete_effect = {
+		}	
+
+		remove_effect = {
+			JAP_anti_yushin_level_down = yes
+			set_country_flag = FLAG_HAS_COMPLETED_DECISION_SAMURAI
+		}
+		
+	}	
+	JAP_abolition_of_enlistment = { #사병 철폐
+		icon = generic_prepare_civil_war
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			    original_tag = JAP
+			}
+		ai_will_do = {
+			factor = 1000
+		}	
+		
+		available = {
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			OR = {
+				has_idea = JAP_anti_yushin_level_1
+				has_idea = JAP_anti_yushin_level_2
+				has_idea = JAP_anti_yushin_level_3
+				has_idea = JAP_anti_yushin_level_4
+			}
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_SAMURAI
+		}
+
+		days_remove = 21
+		
+		fire_only_once = yes
+		
+		is_good = yes
+
+		modifier = {
+			war_support_factor = -0.15
+			stability_factor = -0.05
+			surrender_limit = -0.2
+		}
+
+		visible = {
+			original_tag = JAP			
+			is_subject = no
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_SAMURAI
+        }	
+		complete_effect = {
+		}	
+
+		remove_effect = {
+			JAP_anti_yushin_level_down = yes
+		}
+		
+	}
+	JAP_administrative_division_discussion = { #행정구역 논의
+		icon = generic_political_discourse
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			    original_tag = JAP
+			}
+		ai_will_do = {
+			factor = 1000
+		}	
+		
+		available = {
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			OR = {
+				has_idea = JAP_anti_yushin_level_1
+				has_idea = JAP_anti_yushin_level_2
+				has_idea = JAP_anti_yushin_level_3
+				has_idea = JAP_anti_yushin_level_4
+			}
+			has_political_power > 100
+		}
+
+		days_remove = 100
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+        
+		
+		is_good = yes
+
+		activation = {
+			
+		}
+		
+		visible = {
+			original_tag = JAP
+			is_subject = no
+        }	
+		complete_effect = {
+			add_political_power = -100
+		}	
+
+		remove_effect = {
+			add_political_power = 100
+			army_experience = 90
+			set_country_flag = FLAG_CLOSED_BUNCHI_COUNTRY
+			custom_effect_tooltip = TOOLTIP_CLOSED_BUNCHI_WILL_OPEN
+		}
+		
+	}
+	JAP_closed_bunchi_county_dec = { #"폐번치현" (스택이 0일 때 가능)
+		icon = generic_form_nation
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			    original_tag = JAP
+			}
+		ai_will_do = {
+			factor = 1000
+		}	
+		
+		available = {
+			has_idea = JAP_anti_yushin_level_none
+			has_political_power > 300
+			NOT = {
+				has_idea = JAP_high_illiteracy_rate
+				has_idea = JAP_high_illiteracy_rate_2
+			}
+			has_idea = JAP_the_japanese_infrastruction
+		}
+
+		days_remove = 100
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+        
+		
+		is_good = yes
+
+		activation = {
+			
+		}
+		
+		visible = {
+			original_tag = JAP
+			is_subject = no
+			has_country_flag = FLAG_CLOSED_BUNCHI_COUNTRY
+        }	
+		complete_effect = {
+			add_political_power = -300
+		}	
+
+		remove_effect = {
+			remove_ideas = JAP_anti_yushin_level_none
+			remove_ideas = JAP_anti_yushin_level_1
+			remove_ideas = JAP_anti_yushin_level_2
+			remove_ideas = JAP_anti_yushin_level_3
+			remove_ideas = JAP_anti_yushin_level_4
+			set_country_flag = FLAG_END_OF_NAISEN
+		}
+	}
+	#########
+	JAP_dec_war_SDJ = { #전쟁
+		icon = generic_tank
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			    original_tag = JAP
+			}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1000
+				owns_state = 534
+			}
+		}	
+		
+		available = {
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			has_completed_focus = JAP_expansionism
+			OR = {
+				has_idea = JAP_anti_yushin_level_none
+				has_idea = JAP_anti_yushin_level_1
+				has_idea = JAP_anti_yushin_level_2
+			}
+			has_political_power > 50
+			not = {
+				has_decision = JAP_dec_war_FJP
+				has_decision = JAP_dec_war_NBJ
+			}
+		}
+
+		days_remove = 15
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+        
+		visible = {
+			original_tag = JAP			
+			is_subject = no
+			SDJ = {
+				exists = yes
+			}
+        }	
+		highlight_states = {
+			highlight_state_targets = { state = 892 } 
+		}
+		on_map_mode = map_and_decisions_view
+		complete_effect = {
+			add_political_power = -50
+		}	
+
+		remove_effect = {
+			declare_war_on = {
+				target = SDJ
+				type = annex_everything
+			}
+		}	
+		
+	}	
+	JAP_dec_war_NBJ = { #전쟁
+		icon = generic_tank
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			    original_tag = JAP
+			}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				owns_state = 892
+				add = 1000
+			}
+		}	
+		
+		available = {
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			has_completed_focus = JAP_expansionism
+			OR = {
+				has_idea = JAP_anti_yushin_level_none
+				has_idea = JAP_anti_yushin_level_1
+				has_idea = JAP_anti_yushin_level_2
+			}
+			has_political_power > 50
+			not = {
+				has_decision = JAP_dec_war_FJP
+				has_decision = JAP_dec_war_SDJ
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 889 } 
+		}
+		on_map_mode = map_and_decisions_view
+
+		days_remove = 15
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+        
+		visible = {
+			original_tag = JAP			
+			is_subject = no
+			NBJ = {
+				exists = yes
+			}
+        }	
+		complete_effect = {
+			add_political_power = -50
+		}	
+
+		remove_effect = {
+			declare_war_on = {
+				target = NBJ
+				type = annex_everything
+			}
+		}	
+		
+	}	
+	JAP_dec_war_FJP = { #전쟁
+		icon = generic_tank
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			    original_tag = JAP
+			}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				owns_state = 889
+				add = 1000
+			}
+		}	
+		
+		available = {
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			has_completed_focus = JAP_expansionism
+			OR = {
+				has_idea = JAP_anti_yushin_level_none
+				has_idea = JAP_anti_yushin_level_1
+				has_idea = JAP_anti_yushin_level_2
+			}
+			has_political_power > 50
+			not = {
+				has_decision = JAP_dec_war_NBJ
+				has_decision = JAP_dec_war_SDJ
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 530 } 
+		}
+		on_map_mode = map_and_decisions_view
+		days_remove = 15
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+        
+		visible = {
+			original_tag = JAP
+			is_subject = no
+			FJP = {
+				exists = yes
+			}
+        }	
+		complete_effect = {
+			add_political_power = -50
+		}	
+
+		remove_effect = {
+			declare_war_on = {
+				target = FJP
+				type = annex_everything
+			}
+		}	
+		
+	}	
+	JAP_dec_war_TBJ = { #전쟁
+		icon = generic_tank
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			    original_tag = JAP
+			}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				owns_state = 894
+				add = 1000
+			}
+		}	
+		
+		available = {
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			has_completed_focus = JAP_expansionism
+			OR = {
+				has_idea = JAP_anti_yushin_level_none
+				has_idea = JAP_anti_yushin_level_1
+				has_idea = JAP_anti_yushin_level_2
+			}
+			has_political_power > 50
+			not = {
+				has_decision = JAP_dec_war_NBJ
+				has_decision = JAP_dec_war_SDJ
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 534 } 
+		}
+		on_map_mode = map_and_decisions_view
+		days_remove = 15
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+        
+		visible = {
+			original_tag = JAP
+			is_subject = no
+			TBJ = {
+				exists = yes
+			}
+        }	
+		complete_effect = {
+			add_political_power = -50
+		}	
+
+		remove_effect = {
+			declare_war_on = {
+				target = TBJ
+				type = annex_everything
+			}
+		}	
+		
+	}	
+	JAP_dec_war_GJJ = { #전쟁
+		icon = generic_tank
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			    original_tag = JAP
+			}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				owns_state = 282
+				add = 1000
+			}
+		}	
+		
+		available = {
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			has_completed_focus = JAP_expansionism
+			OR = {
+				has_idea = JAP_anti_yushin_level_none
+				has_idea = JAP_anti_yushin_level_1
+				has_idea = JAP_anti_yushin_level_2
+			}
+			has_political_power > 50
+			not = {
+				has_decision = JAP_dec_war_NBJ
+				has_decision = JAP_dec_war_SDJ
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 894 } 
+		}
+		on_map_mode = map_and_decisions_view
+		days_remove = 15
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+        
+		visible = {
+			original_tag = JAP
+			is_subject = no
+			GJJ = {
+				exists = yes
+			}
+        }	
+		complete_effect = {
+			add_political_power = -50
+		}	
+
+		remove_effect = {
+			declare_war_on = {
+				target = GJJ
+				type = annex_everything
+			}
+		}	
+		
+	}	
+	######
+	JAP_lord_conciliation = { #상경 명령 (여러번 가능)
+		icon = generic_political_discourse
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			    original_tag = JAP
+			}
+		ai_will_do = {
+			factor = 1000
+		}	
+		
+		available = {
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			OR = {
+				has_idea = JAP_anti_yushin_level_1
+				has_idea = JAP_anti_yushin_level_2
+				has_idea = JAP_anti_yushin_level_3
+				has_idea = JAP_anti_yushin_level_4
+			}
+			has_political_power > 80
+			not = {
+				has_decision = JAP_military_control
+				has_decision = JAP_swoop_to_warlords
+			}
+		}
+
+		days_remove = 15
+		
+		fixed_random_seed = no
+
+		fire_only_once = no
+        
+		
+		is_good = yes
+
+		activation = {
+			
+		}
+
+		visible = {
+			original_tag = JAP			
+			is_subject = no
+			NOT = {
+				has_country_flag = FLAG_END_OF_NAISEN
+			}
+        }	
+		complete_effect = {
+			add_political_power = -80
+		}	
+
+		remove_effect = {
+			JAP_anti_yushin_level_down = yes
+		}
+		
+	}	
+	JAP_military_control = { #군대 연설 (여러번 가능)
+		icon = generic_prepare_civil_war
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			    original_tag = JAP
+			}
+		ai_will_do = {
+			factor = 1000
+		}	
+		
+		available = {
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			has_idea = JAP_anti_yushin_level_2
+			has_political_power > 150
+			not = {
+				has_decision = JAP_swoop_to_warlords
+				has_decision = JAP_lord_conciliation
+			}
+		}
+
+		days_remove = 30
+		
+		fixed_random_seed = no
+
+		fire_only_once = no
+        
+		
+		is_good = yes
+
+		activation = {
+			
+		}
+
+		visible = {
+			original_tag = JAP			
+			is_subject = no
+			NOT = {
+				has_country_flag = FLAG_END_OF_NAISEN
+			}
+        }	
+		complete_effect = {
+			add_political_power = -150
+		}	
+
+		remove_effect = {
+			custom_effect_tooltip = JAP_anti_yushin_level_down_double
+			hidden_effect = {
+				JAP_anti_yushin_level_down = yes
+				JAP_anti_yushin_level_down = yes
+			}
+		}
+		
+	}
+	JAP_swoop_to_warlords = { #번벌 급습 (여러번 가능)
+		icon = generic_prepare_civil_war
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			    original_tag = JAP
+			}
+		ai_will_do = {
+			factor = 1000
+		}	
+		
+		available = {
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			OR = {
+				has_idea = JAP_anti_yushin_level_3
+				has_idea = JAP_anti_yushin_level_4
+			}
+			has_political_power > 200
+			not = {
+				has_decision = JAP_military_control
+				has_decision = JAP_lord_conciliation
+			}
+		}
+
+		days_remove = 45
+		
+		fixed_random_seed = no
+
+		fire_only_once = no
+        
+		
+		is_good = yes
+
+		activation = {
+			
+		}
+
+		visible = {
+			original_tag = JAP			
+			is_subject = no
+			NOT = {
+				has_country_flag = FLAG_END_OF_NAISEN
+			}
+        }	
+		complete_effect = {
+			add_political_power = -200
+		}	
+
+		remove_effect = {
+			custom_effect_tooltip = JAP_anti_yushin_level_down_triple
+			hidden_effect = {
+				JAP_anti_yushin_level_down = yes
+				JAP_anti_yushin_level_down = yes
+				JAP_anti_yushin_level_down = yes
+			}
+		}
+	}
+	JAP_warlords_anger = { #유신에 대한 반대 (80일마다 스택 1 증가. 스택이 4가 될 경우 2차 내전)
+		icon = generic_civil_support
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = JAP
+			NOT = {
+				has_idea = JAP_anti_yushin_level_none
+			}
+		}	
+		
+		available = {
+			NOT = {
+				has_idea = JAP_anti_yushin_level_none
+				has_idea = JAP_anti_yushin_level_1
+				has_idea = JAP_anti_yushin_level_2
+				has_idea = JAP_anti_yushin_level_3
+				has_idea = JAP_anti_yushin_level_4
+			}
+		}
+
+		days_mission_timeout = 45
+		
+		fixed_random_seed = no
+
+		fire_only_once = no
+        
+		
+		is_good = no
+
+		activation = {
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			is_ai = no
+			NOT = {
+				has_country_flag = FLAG_END_OF_NAISEN
+			}
+		}
+
+		visible = {
+			original_tag = JAP
+			OR = {
+				has_idea = JAP_anti_yushin_level_1
+				has_idea = JAP_anti_yushin_level_2
+				has_idea = JAP_anti_yushin_level_3
+				has_idea = JAP_anti_yushin_level_4
+			}	
+			NOT = {
+				has_idea = JAP_anti_yushin_level_none
+			}
+        }	
+
+		timeout_effect = {
+			JAP_anti_yushin_level_up = yes
+		}
+		
+	}
+}
+#################군대 재건########################
+JAP_the_army = {
+	JAP_the_30_division_plan = { #30사단 계획
+		icon = generic_tank
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = JAP
+		}	
+		
+		available = {
+			has_completed_focus = JAP_army_reform
+			command_power > 30
+			OR = {
+				has_idea = JAP_anti_yushin_level_none
+				has_idea = JAP_anti_yushin_level_1
+				has_idea = JAP_anti_yushin_level_2
+			}
+		}
+
+		days_remove = 50
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+		
+		activation = {
+		}
+
+		visible = {
+			original_tag = JAP
+        }	
+		complete_effect = { 
+			add_command_power = -30
+			
+		}
+		remove_effect = {
+			remove_ideas = JAP_pre_modern_army
+			country_lock_all_division_template = no
+		}
+		
+	}
+	JAP_japanese_army_school = { #쇼와 군관학교
+		icon = generic_tank
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = JAP
+		}	
+		
+		available = {
+			has_completed_focus = JAP_military
+			has_political_power > 99
+			OR = {
+				has_idea = JAP_anti_yushin_level_none
+				has_idea = JAP_anti_yushin_level_1
+				has_idea = JAP_anti_yushin_level_2
+			}
+		}
+
+		days_remove = 50
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+		
+		activation = {
+		}
+
+		visible = {
+			original_tag = JAP
+        }	
+		complete_effect = { 
+			army_experience = 60
+			add_political_power = -100
+		}
+		remove_effect = {
+			add_ideas = JAP_showa_military_school
+		}
+		
+	}
+	JAP_the_88_plan = { #88계획 (8순양전함 8경순양함 계획)
+		icon = generic_naval
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = JAP
+		}	
+		
+		available = {
+			has_completed_focus = JAP_navy
+			has_political_power > 99
+			has_navy_experience > 60
+			OR = {
+				has_idea = JAP_anti_yushin_level_none
+				has_idea = JAP_anti_yushin_level_1
+				has_idea = JAP_anti_yushin_level_2
+			}
+		}
+
+		days_remove = 50
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+		
+		activation = {
+		}
+
+		visible = {
+			original_tag = JAP
+        }	
+		complete_effect = { 
+			navy_experience = -60
+			add_political_power = -100
+		}
+		remove_effect = {
+			remove_ideas = JAP_poor_navy
+		}
+		
+	}
+	JAP_naval_steel_plan = { #일본 조선산업 양성
+		icon = generic_naval
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = JAP
+		}	
+		
+		available = {
+			has_political_power > 150
+			OR = {
+				has_idea = JAP_anti_yushin_level_none
+				has_idea = JAP_anti_yushin_level_1
+				has_idea = JAP_anti_yushin_level_2
+			}
+		}
+
+		days_remove = -1
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+		
+		modifier = {
+			industrial_capacity_dockyard = 0.3
+		}
+
+		visible = {
+			original_tag = JAP
+        }	
+		complete_effect = { 
+			add_political_power = -150
+		}
+		remove_effect = {
+		}
+	}
+	JAP_steel_plan = { #일본 조선산업 양성
+		icon = generic_naval
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = JAP
+		}	
+		
+		available = {
+			has_political_power > 150
+			OR = {
+				has_idea = JAP_anti_yushin_level_none
+				has_idea = JAP_anti_yushin_level_1
+				has_idea = JAP_anti_yushin_level_2
+			}
+		}
+
+		days_remove = 70
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+		
+		modifier = {
+			consumer_goods_factor = -0.1
+		}
+
+		visible = {
+			original_tag = JAP
+        }	
+		complete_effect = { 
+			add_political_power = -150
+		}
+		remove_effect = {
+			add_resource = {
+				type = steel
+				amount = 10
+				state = 282
+			}
+			set_country_flag = FLAG_STEEL_PLAN_OPEN
+		}
+	}
+	JAP_steel_plan_2 = { #일본 조선산업 양성
+		icon = generic_naval
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = JAP
+		}	
+		
+		available = {
+			has_political_power > 200
+			OR = {
+				has_idea = JAP_anti_yushin_level_none
+				has_idea = JAP_anti_yushin_level_1
+				has_idea = JAP_anti_yushin_level_2
+			}
+			has_country_flag = FLAG_STEEL_PLAN_OPEN
+		}
+
+		days_remove = 150
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+		
+		modifier = {
+			consumer_goods_factor = -0.15
+		}
+
+		visible = {
+			original_tag = JAP
+        }	
+		complete_effect = { 
+			add_political_power = -200
+		}
+		remove_effect = {
+			add_resource = {
+				type = steel
+				amount = 20
+				state = 282
+			}
+		}
+	}
+}
+#################항전########################
+JAP_defense_the_country = {
+	JAP_the_war_industry = { #전쟁경제
+		icon = generic_civil_support
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = JAP
+		}	
+		
+		available = {
+			has_war_with = KOR
+		}
+		days_remove = 30
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+		
+		modifier = {
+			stability_factor = 0.05
+			war_support_factor = 0.05
+			consumer_goods_factor = -0.025
+		}
+
+		visible = {
+			original_tag = JAP
+			has_war_with = KOR
+        }	
+		complete_effect = { 
+		}
+		remove_effect = {
+			add_ideas = war_economy
+		}
+	
+	}
+	JAP_gold_collecting_exercise = { #금모으기 운동
+		icon = generic_civil_support
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = JAP
+		}	
+		
+		available = {
+			has_political_power > 50
+		}
+		days_remove = 360
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+		
+		modifier = {
+			consumer_goods_factor = -0.15
+		}
+
+		visible = {
+			original_tag = JAP
+			has_war_with = KOR
+        }	
+		complete_effect = { 
+		}
+		remove_effect = {
+		}
+		
+	}
+	JAP_tenno_voice_broadcasting_1 = { #최초의 옥음방송
+		icon = generic_civil_support
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = JAP
+		}	
+		
+		available = {
+		
+		}
+		days_remove = 14
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+		
+		modifier = {
+			war_support_factor = 0.1
+		}
+
+		visible = {
+			original_tag = JAP
+			has_war_with = KOR
+        }	
+		complete_effect = { 
+		}
+		remove_effect = {
+			country_event = {
+				id = japan.1030
+			}
+			set_country_flag = FLAG_THE_NEXT_BROADCAST
+		}
+	}
+	JAP_tenno_voice_broadcasting_2 = { #두번째 옥음방송
+		icon = generic_civil_support
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = JAP
+		}	
+		
+		available = {
+			has_country_flag = FLAG_THE_NEXT_BROADCAST
+		}
+		days_remove = 21
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+		
+		modifier = {
+			war_support_factor = 0.15
+		}
+
+		visible = {
+			original_tag = JAP
+			has_war_with = KOR
+        }	
+		complete_effect = { 
+		}
+		remove_effect = {
+			country_event = {
+				id = japan.1031
+			}
+		}
+	}
+	JAP_tenno_voice_broadcasting_3 = { #최후의 옥음방송
+		icon = generic_civil_support
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = JAP
+		}	
+		
+		available = {
+			has_country_flag = FLAG_THE_NEXT_BROADCAST
+		}
+		days_remove = 35
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+		
+		modifier = {
+			war_support_factor = 0.2
+		}
+
+		visible = {
+			original_tag = JAP
+			has_war_with = KOR
+        }	
+		complete_effect = { 
+		}
+		remove_effect = {
+			country_event = {
+				id = japan.1032
+			}
+		}
 	}
 }

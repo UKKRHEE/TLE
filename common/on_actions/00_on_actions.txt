@@ -201,6 +201,33 @@ on_actions = {
 				}
 				set_global_flag = KOR_nuke_1
 			}
+			if = {
+				limit = {
+					FROM = {
+						is_core_of = USA
+					}
+				}
+				set_global_flag = USA_IS_NUKE_DROPPED
+				USA = {
+					add_war_support = -1
+				}	
+				if = {
+					limit = {	
+						USA = {
+							has_war_with = KOR
+						}
+					}
+					USA = {
+						country_event = {
+							id = korea.9
+							hours = 6
+						}
+					}
+					KOR = {
+						complete_national_focus = KOR_the_new_order
+					}
+				}
+			}
 			
 			news_event = { id = nuke_dropped.2 days = 1}
 			news_event = { id = nuke_dropped.3 days = 1}

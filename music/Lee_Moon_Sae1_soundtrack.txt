@@ -106,3 +106,54 @@ music = {
 		}
 	}
 }
+#
+music = {
+	song = "red_sunset"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "only_her_laughter"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "standing_under_the_shades_of_a_street_tree"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "flying_through_the_night"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "when_love_passes"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}

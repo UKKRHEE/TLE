@@ -139,6 +139,19 @@ bookmarks = {
 				JAP_liberalization_of_regime
 			}			
 		}
+		"ITA"={
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				vittoria_mutilata
+				victor_emmanuel
+			}	
+			focuses = {
+				ITA_pact_of_steel
+				ITA_spanish_italian_faction
+				ITA_italy_first
+			}		
+		}
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
@@ -168,25 +181,6 @@ bookmarks = {
 				SOV_father_of_nations
 				SOV_the_supreme_soviet
 			}	
-		}
-
-		"---"={
-			history = "OTHER_GATHERING_STORM_DESC"
-		}
-
-		"ITA"={
-			history = "ITA_GATHERING_STORM_DESC"
-			minor = yes
-			ideology = fascism
-			ideas = {
-				vittoria_mutilata
-				victor_emmanuel
-			}	
-			focuses = {
-				ITA_pact_of_steel
-				ITA_spanish_italian_faction
-				ITA_italy_first
-			}		
 		}
 
 		# minors from DLC ####

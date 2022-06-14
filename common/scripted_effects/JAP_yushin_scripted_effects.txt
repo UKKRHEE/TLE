@@ -1,0 +1,90 @@
+
+JAP_anti_yushin_level_up = { #유신 반대 증가
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = JAP_anti_yushin_level_up_tt
+	if = {
+		limit = { has_idea = JAP_anti_yushin_level_4 }
+		country_event = {
+			id = japan.1029
+		}
+	}
+	else_if = {
+		limit = { has_idea = JAP_anti_yushin_level_3 }
+		swap_ideas = {
+			remove_idea = JAP_anti_yushin_level_3
+			add_idea = JAP_anti_yushin_level_4
+		}
+		country_event = {
+			id = japan.1034
+		}
+	}
+	else_if = {
+		limit = { has_idea = JAP_anti_yushin_level_2 }
+		swap_ideas = {
+			remove_idea = JAP_anti_yushin_level_2
+			add_idea = JAP_anti_yushin_level_3
+		}
+		country_event = {
+			id = japan.1034
+		}
+	}
+	else_if = {
+		limit = { has_idea = JAP_anti_yushin_level_1 }
+		swap_ideas = {
+			remove_idea = JAP_anti_yushin_level_1
+			add_idea = JAP_anti_yushin_level_2
+		}		
+		country_event = {
+			id = japan.1034
+		}
+	}
+	else_if = {
+		limit = { has_idea = JAP_anti_yushin_level_none }
+		swap_ideas = {
+			remove_idea = JAP_anti_yushin_level_none
+			add_idea = JAP_anti_yushin_level_1
+		}	
+		country_event = {
+			id = japan.1034
+		}	
+	}
+}
+
+
+JAP_anti_yushin_level_down = { #부패도 감소
+custom_effect_tooltip = JAP_anti_yushin_level_down_tt
+	if = {
+		limit = { has_idea = JAP_anti_yushin_level_none }
+		country_event = {
+			id = japan.1033
+		}
+	}
+	else_if = {
+		limit = { has_idea = JAP_anti_yushin_level_1 }
+		swap_ideas = {
+			remove_idea = JAP_anti_yushin_level_1
+			add_idea = JAP_anti_yushin_level_none
+		}
+	}
+	else_if = {
+		limit = { has_idea = JAP_anti_yushin_level_2 }
+		swap_ideas = {
+			remove_idea = JAP_anti_yushin_level_2
+			add_idea = JAP_anti_yushin_level_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = JAP_anti_yushin_level_3 }
+		swap_ideas = {
+			remove_idea = JAP_anti_yushin_level_3
+			add_idea = JAP_anti_yushin_level_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = JAP_anti_yushin_level_4 }
+		swap_ideas = {
+			remove_idea = JAP_anti_yushin_level_4
+			add_idea = JAP_anti_yushin_level_3
+		}
+	}
+}

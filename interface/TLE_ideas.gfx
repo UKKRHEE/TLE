@@ -1,8 +1,84 @@
 spriteTypes = {	
 	
+	spriteType = {
+		name = "GFX_idea_KOR_neutrality_start"
+		texturefile = "gfx/interface/ideas/idea_hol_the_foundations_of_defense.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_the_chaebol"
+		texturefile = "gfx/interface/ideas/idea_jap_zaibatsu_ally.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_showa_military_school"
+		texturefile = "gfx/interface/ideas/idea_JAP_showa_military_school.png"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_the_japanese_infrastruction"
+		texturefile = "gfx/interface/ideas/idea_generic_build_infrastructure.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_JAP_anti_yushin_level_none"
+		texturefile = "gfx/interface/ideas/idea_jap_militarism_showa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_JAP_anti_yushin_level_1"
+		texturefile = "gfx/interface/ideas/idea_jap_militarism_showa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_JAP_anti_yushin_level_2"
+		texturefile = "gfx/interface/ideas/idea_jap_militarism_showa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_JAP_anti_yushin_level_3"
+		texturefile = "gfx/interface/ideas/idea_jap_militarism_showa.dds"
+	} 
+	SpriteType = {
+		name = "GFX_idea_JAP_anti_yushin_level_4"
+		texturefile = "gfx/interface/ideas/idea_jap_militarism_showa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_JAP_democratic_popularity"
+		texturefile = "gfx/interface/ideas/idea_ger_mefo_bills.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_JAP_high_illiteracy_rate"
+		texturefile = "gfx/interface/ideas/idea_jap_duplicate_research.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_JAP_high_illiteracy_rate_2"
+		texturefile = "gfx/interface/ideas/idea_jap_duplicate_research.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_JAP_poor_navy"
+		texturefile = "gfx/interface/ideas/RUS_imperial_navy.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_JAP_democratic_popularity_2"
+		texturefile = "gfx/interface/ideas/idea_ger_mefo_bills.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_JAP_pre_modern_army" 
+		texturefile = "gfx/interface/ideas/idea_tfv_can_conscription_crisis.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_JAP_imperial_glory"  
+		texturefile = "gfx/interface/ideas/jap_idea_democratic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_not_regulared_industry"
+		texturefile = "gfx/interface/ideas/idea_generic_agrarian_society.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_JAP_not_regulared_industry_2"
+		texturefile = "gfx/interface/ideas/idea_generic_agrarian_society.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_JAP_not_regulared_industry_3"
+		texturefile = "gfx/interface/ideas/idea_man_five_year_plan_industry.dds"
+	}
 	#국민정신
 	spriteType = {
-		name = "GFX_idea_MEN_demchugdongrub"    
+		name = "GFX_idea_MEN_demchugdongrub_king"    
 		texturefile = "gfx/interface/ideas/idea_MEN_demchugdongrub.png"  
 	}
 	spriteType = {
@@ -19,6 +95,10 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_confucian_press"    
+		texturefile = "gfx/interface/ideas/korea/royal_charity.dds"  
+	}	
+	spriteType = {
+		name = "GFX_idea_KOR_the_country_of_korea"    
 		texturefile = "gfx/interface/ideas/korea/royal_charity.dds"  
 	}	
 	spriteType = {
@@ -47,6 +127,10 @@ spriteTypes = {
 	}	
 	spriteType = {
 		name = "GFX_idea_KOR_political_officer"    
+		texturefile = "gfx/interface/ideas/korea/idea_kor_Internet_censorship.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_KOR_the_first_army"    
 		texturefile = "gfx/interface/ideas/korea/idea_kor_Internet_censorship.dds" 
 	}	
 	spriteType = {
@@ -56,6 +140,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_KOR_military_organization_youth"   
 		texturefile = "gfx/interface/ideas/idea_KOR_military_organization_youth.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_KOR_purged_government"   
+		texturefile = "gfx/interface/ideas/idea_KOR_divided_politics.png"
 	}	
 	spriteType = {
 		name = "GFX_idea_KOR_divided_politics"  

@@ -1,0 +1,71 @@
+﻿#편제
+division_template = {
+	name = "보병"
+	division_names_group = JAP_INF_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+	}
+	support = {
+	}
+}
+
+units = {
+#국내군
+	#특수 사단
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7169
+		division_template = "보병"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4067
+		division_template = "보병"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1063
+		division_template = "보병"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3848
+		division_template = "보병"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+	}
+}
+
+#공군
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "EJP"
+		}
+		requested_factories = 10
+		progress = 0.50
+		efficiency = 100
+	}
+}

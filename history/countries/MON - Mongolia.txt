@@ -9,6 +9,7 @@ set_technology = {
 
 add_ideas = {
 	limited_conscription
+	MON_fallen_government
 }
 
 set_politics = {

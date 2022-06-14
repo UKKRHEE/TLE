@@ -580,6 +580,10 @@ country_event = {
 		add_state_core = 85
 		add_state_core = 86
 		add_state_core = 762
+		807 = { set_state_name = "West-Preussen" }
+		set_province_name = { id = 9263 name = "Gdingen" }
+		set_province_name = { id = 279 name = "Bromberg" }
+		set_province_name = { id = 3295 name = "Thorn" }
 		86 = { set_state_name = "Posen" }
 		set_province_name = { id = 6558 name = "Posen" }
 		762 = { set_state_name = "Kattowitz" }

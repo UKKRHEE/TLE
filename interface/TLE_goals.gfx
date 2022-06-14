@@ -1,6 +1,66 @@
 spriteTypes = {
 
 	SpriteType = {       
+		name = "GFX_focus_goal_조곤"  
+		texturefile = "gfx/interface/goals/조곤.png"     
+	}  
+	SpriteType = {       
+		name = "GFX_focus_goal_오패부" 
+		texturefile = "gfx/interface/goals/오패부.png"     
+	} 
+	SpriteType = {       
+		name = "GFX_focus_북양정부화해"  
+		texturefile = "gfx/interface/goals/북양정부화해.png"     
+	} 
+	SpriteType = {       
+		name = "GFX_focus_TLELOGO" 
+		texturefile = "gfx/interface/goals/TLELOGO.png"     
+	} 
+	SpriteType = {       
+		name = "GFX_focus_TNO"
+		texturefile = "gfx/interface/goals/TNO.png"     
+	} 
+	SpriteType = {       
+		name = "GFX_focus_이강퐅2"         
+		texturefile = "gfx/interface/goals/이강퐅2.png"    
+	} 
+	SpriteType = {       
+		name = "GFX_focus_만고의충신"        
+		texturefile = "gfx/interface/goals/만고의충신.png"    
+	} 
+	SpriteType = {       
+		name = "GFX_focus_자원입대"        
+		texturefile = "gfx/interface/goals/자원입대.png"   
+	} 
+	SpriteType = {       
+		name = "GFX_focus_하나회관련자처벌"        
+		texturefile = "gfx/interface/goals/하나회관련자처벌.png"    
+	} 
+	SpriteType = {       
+		name = "GFX_focus_지식인층탄압"        
+		texturefile = "gfx/interface/goals/지식인층탄압.png"    
+	} 
+	SpriteType = {       
+		name = "GFX_focus_자유국가"        
+		texturefile = "gfx/interface/goals/자유국가.png"    
+	} 
+	SpriteType = {       
+		name = "GFX_focus_자위대와협상"        
+		texturefile = "gfx/interface/goals/자위대와협상.png"   
+	} 
+	SpriteType = {       
+		name = "GFX_focus_군제개혁"        
+		texturefile = "gfx/interface/goals/군제개혁.png"   
+	} 
+	SpriteType = {       
+		name = "GFX_focus_국민단결"        
+		texturefile = "gfx/interface/goals/국민단결.png"   
+	} 
+	SpriteType = {       
+		name = "GFX_focus_노조탄압"        
+		texturefile = "gfx/interface/goals/노조탄압.png"   
+	} 
+	SpriteType = {       
 		name = "GFX_focus_war_with_wuxing"       
 		texturefile = "gfx/interface/goals/focus_war_with_wuxing.png"   
 	} 

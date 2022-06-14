@@ -7,9 +7,13 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+add_opinion_modifier = {
+	target = KOR
+	modifier = TLE_federal_government_opinion
+}
 add_ideas = {
 	KOR_yi_jin
-	MEN_demchugdongrub
+	MEN_demchugdongrub_king
 	limited_conscription
 }
 1912.10.12 = {

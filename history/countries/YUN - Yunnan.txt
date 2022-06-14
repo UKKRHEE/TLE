@@ -15,7 +15,6 @@ if = {
 	}
 }
 	add_ideas = {
-		CHI_era_of_chinese_warlords_1
 	}
 
 recruit_character = YUN_long_yun

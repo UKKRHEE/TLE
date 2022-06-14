@@ -6,6 +6,10 @@ set_technology = {
 	infantry_weapons = 1
 	tech_mountaineers = 1
 }
+add_opinion_modifier = {
+	target = KOR
+	modifier = TLE_general_government_opinion
+}
 
 set_politics = {
 	ruling_party = neutrality
@@ -20,7 +24,8 @@ set_popularities = {
 }
 
 add_ideas = {
-	KOR_yi_jin_2
+	KOR_yi_jin
+	KOR_the_country_of_korea
 }
 recruit_character = KMN_yi_cheok
 

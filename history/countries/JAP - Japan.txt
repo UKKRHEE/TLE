@@ -1,24 +1,33 @@
 ﻿capital = 891
-
+country_lock_all_division_template = yes
 oob = "JAP_1936"
-
-set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
-set_war_support = 0.8
+set_cosmetic_tag = JAP_showa
+set_stability = 0.15 #baseline, THE EMPEROR PROTECTS
+set_war_support = 0.3
 set_research_slots = 3
 set_fuel_ratio = 1.0
 add_ideas = {
+	free_trade
+	#####
 	JAP_showa_hirohito
-	#state_shintoism
-	limited_exports
-	limited_conscription
-	partial_economic_mobilisation
-
-	#JAP_zaibatsus
-	#JAP_militarism
+	state_shintoism
+	#####
 	JAP_not_regulared_industry
-	JAP_army_planning
 	JAP_democratic_popularity
-	JAP_duplicate_research_efforts
+	JAP_high_illiteracy_rate
+	JAP_pre_modern_army
+	JAP_poor_navy
+	JAP_anti_yushin_level_2
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 2400
+	producer = ENG
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 1000
+	producer = JAP
 }
 
 
@@ -122,7 +131,7 @@ add_offsite_building = {
 	level = 1
 }
 
-set_convoys = 400
+set_convoys = 30
 
 if = {
 	limit = {
@@ -160,7 +169,7 @@ set_popularities = {
 recruit_character = JAP_yamato_junta
 recruit_character = JAP_tetsu_katayama
 recruit_character = JAP_kyuichi_tokuda
-#recruit_character = JAP_emperor_hirohito
+recruit_character = JAP_emperor_hirohito
 recruit_character = JAP_tomoyuki_yamashita
 recruit_character = JAP_hisaichi_terauchi
 recruit_character = JAP_shunroku_hata

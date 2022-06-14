@@ -52,6 +52,7 @@ KOR_historical_plan = {
 		KOR_give_me_the_manchu
 		kor_threat_united_states
 		KOR_threat_up_of_east_asia
+		KOR_kyushu_colonism_up
 		KOR_attack_taiwan
 		kor_control_asia
 	}				

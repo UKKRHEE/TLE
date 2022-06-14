@@ -6,6 +6,9 @@ scripted_gui = {
 
 		visible = {
 			has_country_flag = korea_the_yi_kang
+			NOT = {
+				has_country_flag = TLE_CANT_SEE_SP_EVENT
+			}
 		}
 	}
 
@@ -15,6 +18,9 @@ scripted_gui = {
 
 		visible = {
 			has_country_flag = korea_the_yi_kang
+			NOT = {
+				has_country_flag = TLE_CANT_SEE_SP_EVENT
+			}
 		}
 
 		effects = {
@@ -35,6 +41,9 @@ scripted_gui = {
 
 		visible = {
 			has_country_flag = korea_ww_china
+			NOT = {
+				has_country_flag = TLE_CANT_SEE_SP_EVENT
+			}
 		}
 	}
 
@@ -44,6 +53,9 @@ scripted_gui = {
 
 		visible = {
 			has_country_flag = korea_ww_china
+			NOT = {
+				has_country_flag = TLE_CANT_SEE_SP_EVENT
+			}
 		}
 
 		effects = {
@@ -65,6 +77,9 @@ scripted_gui = {
 
 		visible = {
 			has_country_flag = korea_war_with_usa
+			NOT = {
+				has_country_flag = TLE_CANT_SEE_SP_EVENT
+			}
 		}
 	}
 
@@ -74,6 +89,9 @@ scripted_gui = {
 
 		visible = {
 			has_country_flag = korea_war_with_usa
+			NOT = {
+				has_country_flag = TLE_CANT_SEE_SP_EVENT
+			}
 		}
 
 		effects = {
@@ -95,6 +113,9 @@ scripted_gui = {
 
 		visible = {
 			has_country_flag = russia_attack_korea
+			NOT = {
+				has_country_flag = TLE_CANT_SEE_SP_EVENT
+			}
 		}
 	}
 
@@ -104,6 +125,9 @@ scripted_gui = {
 
 		visible = {
 			has_country_flag = russia_attack_korea
+			NOT = {
+				has_country_flag = TLE_CANT_SEE_SP_EVENT
+			}
 		}
 
 		effects = {
@@ -125,6 +149,9 @@ scripted_gui = {
 
 		visible = {
 			has_country_flag = fall_of_korea
+			NOT = {
+				has_country_flag = TLE_CANT_SEE_SP_EVENT
+			}
 		}
 	}
 
@@ -134,6 +161,9 @@ scripted_gui = {
 
 		visible = {
 			has_country_flag = fall_of_korea
+			NOT = {
+				has_country_flag = TLE_CANT_SEE_SP_EVENT
+			}
 		}
 
 		effects = {
@@ -156,6 +186,9 @@ scripted_gui = {
 
 		visible = {
 			has_country_flag = Japanese_civil_war_sp
+			NOT = {
+				has_country_flag = TLE_CANT_SEE_SP_EVENT
+			}
 		}
 	}
 
@@ -165,6 +198,9 @@ scripted_gui = {
 
 		visible = {
 			has_country_flag = Japanese_civil_war_sp
+			NOT = {
+				has_country_flag = TLE_CANT_SEE_SP_EVENT
+			}
 		}
 
 		effects = {
@@ -187,6 +223,9 @@ scripted_gui = {
 
 		visible = {
 			has_country_flag = TLE_2nd_northattack_sp
+			NOT = {
+				has_country_flag = TLE_CANT_SEE_SP_EVENT
+			}
 		}
 	}
 
@@ -196,6 +235,9 @@ scripted_gui = {
 
 		visible = {
 			has_country_flag = TLE_2nd_northattack_sp
+			NOT = {
+				has_country_flag = TLE_CANT_SEE_SP_EVENT
+			}
 		}
 
 		effects = {
@@ -218,6 +260,9 @@ scripted_gui = {
 
 		visible = {
 			has_country_flag = won_in_china_sp
+			NOT = {
+				has_country_flag = TLE_CANT_SEE_SP_EVENT
+			}
 		}
 	}
 
@@ -227,6 +272,9 @@ scripted_gui = {
 
 		visible = {
 			has_country_flag = won_in_china_sp
+			NOT = {
+				has_country_flag = TLE_CANT_SEE_SP_EVENT
+			}
 		}
 
 		effects = {

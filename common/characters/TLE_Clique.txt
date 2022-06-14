@@ -519,6 +519,7 @@ characters={
 			legacy_id=-1
 		}
 	}
+###########우페이푸 계열#################	
 	ZLC_Wu_Peifu = {
 		name="우페이푸"
 		portraits={
@@ -527,26 +528,90 @@ characters={
 			}
 			army = {
 				large="gfx/leaders/ZLC/Portrait_QIE_Wu_Peifu.png"
-				small="gfx/leaders/ZLC/Portrait_QIE_Wu_Peifu.png"
+				small="gfx/interface/ideas/ZLC/idea_ZLC_wu_peifu.png"
 			}
 		}
-		country_leader={
-			desc = ""
-			ideology=despotism
-			traits={ }
-			expire="1965.1.1.1"
-			id=-1
+		advisor={
+			slot = political_advisor
+			idea_token = ZLC_Wu_Peifu
+		    allowed = {
+		    	original_tag = ZLC
+		    }
+		    available = {
+			}	
+			visible = {
+			}
+			removal_cost = -1
+		
+	    	traits = { confucian_general }
+			ai_will_do = {
+				factor = 0.000
+			}
 		}
 		field_marshal={
-			traits = { }
+			traits = { ZLC_wu_peifu }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	ZLC_Zhang_Qihuang = {
+		name="장치황"
+		portraits={
+			civilian={
+			}
+			army = {
+				large="gfx/leaders/ZLC/Portrait_QIE_Zhang_Qihuang.png"	
+			}
+		}
+		corps_commander={
+			traits = { ZLC_wu_peifu }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			legacy_id=-1
 		}
 	}
+	ZLC_Cai_Chengxun = {
+		name="차이청쉰"
+		portraits={
+			civilian={
+			}
+			army = {
+				large="gfx/leaders/ZLC/Portrait_QIE_Cai_Chengxun.png"	
+			}
+		}
+		corps_commander={
+			traits = { ZLC_wu_peifu }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ZLC_Xiao_Yaonan = {
+		name="샤오야오난"
+		portraits={
+			civilian={
+			}
+			army = {
+				large="gfx/leaders/ZLC/Portrait_QIE_Xiao_Yaonan.png"
+			}
+		}
+		corps_commander={
+			traits = { ZLC_wu_peifu }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	##############################
 	ZLC_chao_kun = {
 		name="차오쿤"
 		portraits={
@@ -555,38 +620,59 @@ characters={
 			}
 			army = {
 				large="gfx/leaders/ZLC/Portrait_ZLC_Chao_kun.png"
-				small="gfx/leaders/ZLC/Portrait_ZLC_Chao_kun.png"
+				small="gfx/interface/ideas/ZLC/idea_ZLC_chao_kun.png"
 			}
 		}
+		country_leader={
+			desc = ""
+			ideology=despotism
+			traits={ generallissimo }
+			expire="1965.1.1.1"
+			id=-1
+		}
 		field_marshal={
-			traits = { }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id=-1
+			traits = { ZLC_chaokun }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
 		}
 	}
-	ZLC_Jiang_Baili = {
-		name="장바이리"
+	ZLC_Liu_Menggeng = {
+		name="류멍겅"
 		portraits={
 			civilian={
-				large="gfx/leaders/ZLC/Portrait_QIE_Jiang_Baili.png"
 			}
 			army = {
-				large="gfx/leaders/ZLC/Portrait_QIE_Jiang_Baili.png"
-				small="gfx/leaders/ZLC/Portrait_QIE_Jiang_Baili.png"
+				large="gfx/leaders/ZLC/Portrait_QIE_Liu_Menggeng.png"
 			}
 		}
-		field_marshal={
-			traits = { }
+		corps_commander={
+			traits = { ZLC_chaokun }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			legacy_id=-1
+		}
+	}
+	ZLC_Zhang_Shaozeng = {
+		name="장샤오정"
+		portraits={
+			civilian={
+			}
+			army = {
+				large="gfx/leaders/ZLC/Portrait_QIE_Zhang_Shaozeng.png"
+			}
+		}
+		corps_commander={
+			traits = { ZLC_chaokun }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
 		}
 	}
 	ZLC_Wang_Huaiqing = {
@@ -601,6 +687,36 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = { ZLC_chaokun }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=-1
+		}
+	}
+	#########소장파########
+	
+	ZLC_Jiang_Baili = {
+		name="장바이리"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZLC/Portrait_QIE_Jiang_Baili.png"
+			}
+			army = {
+				large="gfx/leaders/ZLC/Portrait_QIE_Jiang_Baili.png"
+				small="gfx/leaders/ZLC/Portrait_QIE_Jiang_Baili.png"
+			}
+		}
+		country_leader={
+			desc = ""
+			ideology=rexism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal={
 			traits = { }
 			skill = 1
 			attack_skill = 1
@@ -608,6 +724,308 @@ characters={
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id=-1
+		}
+	}
+	ZLC_Guo_Songling = {
+		name="궈쑹링"
+		portraits={
+			civilian={
+			}
+			army = {
+			}
+		}
+		corps_commander={
+			traits = { ZLC_xiaozhang }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ZLC_Zhang_Dengxuan = {
+		name="장덩쉬안"
+		portraits={
+			civilian={
+			}
+			army = {
+			}
+		}
+		corps_commander={
+			traits = { ZLC_xiaozhang }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ZLC_Tang_Shengzhi = {
+		name="탕성즈"
+		portraits={
+			civilian={
+			}
+			army = {
+				large="gfx/leaders/HNC/Portrait_Hunan_Tang_Shengzhi.png"
+			}
+		}
+		corps_commander={
+			traits = { ZLC_xiaozhang }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ZLC_Zhang_Xiaozhun = {
+		name="장샤오준"
+		portraits={
+			civilian={
+			}
+			army = {
+			}
+		}
+		corps_commander={
+			traits = { ZLC_xiaozhang }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ZLC_Jiang_Zhugui = {
+		name="장준구이"
+		portraits={
+			civilian={
+			}
+			army = {
+			}
+		}
+		corps_commander={
+			traits = { ZLC_xiaozhang }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	#해군 아쎄이
+	ZLC_Du_Xigui = {
+		name="두시구이"
+		portraits={
+			civilian={
+			}
+			army = {
+				large="gfx/leaders/ZLC/Portrait_QIE_Du_Xigui.png"
+				#small="gfx/leaders/ZLC/Portrait_QIE_Du_Xigui.png"
+			}
+		}
+		navy_leader={
+			traits = {  }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 2
+			coordination_skill = 4
+		}
+	}
+	ZLC_Sa_Zhenbing = {
+		name="사전빙"
+		portraits={
+			civilian={
+			}
+			army = {
+			}
+		}
+		navy_leader={
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
+	##정치고문들##
+	ZLC_kung_xinzhan = {
+		name="궁신잔"
+		portraits={
+			civilian={
+			}
+			army = {
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = kung_xinzhan
+		    allowed = {
+		    	original_tag = ZLC
+		    }
+			
+			available = {
+			}
+			
+		    traits = { captain_of_industry }
+			ai_will_do = {
+				factor = 4.000
+			}
+		}
+	}
+	ZLC_hu_shi = {
+		name="후스"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/ZLC/idea_ZLC_hu_shi.png"
+			}
+			army = {
+			}
+		}
+		country_leader={
+			desc = ""
+			ideology=socialism
+			traits={ democratic_reformer }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = hu_shi
+		    allowed = {
+		    	original_tag = ZLC
+		    }
+			
+			available = {
+			}
+			
+		    traits = { democratic_reformer }
+			ai_will_do = {
+				factor = 4.000
+			}
+		}
+	}
+	ZLC_li_huang = {
+		name="리황"
+		portraits={
+			civilian={
+				#small="gfx/interface/ideas/ZLC/idea_ZLC_hu_shi.png"
+			}
+			army = {
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = li_huang
+		    allowed = {
+		    	original_tag = ZLC
+		    }
+			
+			available = {
+			}
+			
+		    traits = { fascist_demagogue }
+			ai_will_do = {
+				factor = 4.000
+			}
+		}
+	}
+	ZLC_sun_danlin = {
+		name="쑨단린"
+		portraits={
+			civilian={
+				#small="gfx/interface/ideas/ZLC/idea_ZLC_hu_shi.png"
+			}
+			army = {
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = sun_danlin
+			available = {
+				has_intelligence_agency = yes
+			}
+			
+			allowed = {
+				original_tag = ZLC
+				has_dlc = "La Resistance" 
+			}
+			
+			traits = { head_of_intelligence }
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	ZLC_liang_xeyi = {
+		name="량스이"
+		portraits={
+			civilian={
+				#small="gfx/interface/ideas/ZLC/idea_ZLC_hu_shi.png"
+			}
+			army = {
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = liang_xeyi
+		    allowed = {
+		    	original_tag = ZLC
+		    }
+		
+		    traits = { financial_expert }
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+	ZLC_wang_wenbao = {
+		name="왕원바오"
+		portraits={
+			civilian={
+				#small="gfx/interface/ideas/ZLC/idea_ZLC_hu_shi.png"
+			}
+			army = {
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = wang_wenbao
+		    allowed = {
+		    	original_tag = ZLC
+		    }
+		    available = {
+			}	
+		
+	    	traits = { prince_of_terror }
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	ZLC_huang_yenpei = {
+		name="황옌페이"
+		portraits={
+			civilian={
+				#small="gfx/interface/ideas/ZLC/idea_ZLC_hu_shi.png"
+			}
+			army = {
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ZLC_huang_yenpei
+		    allowed = {
+		    	original_tag = ZLC
+		    }
+		    available = {
+			}	
+		
+	    	traits = { silent_workhorse }
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 }

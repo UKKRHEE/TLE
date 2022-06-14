@@ -1,6 +1,6 @@
 characters={
 	KMN_yi_cheok = {
-		name="이척"
+		name="KMM_yi_cheok"
 		portraits={
 			civilian={
 				large="gfx/leaders/KOR/Portrait_KOR_Yi_Cheok.dds"
@@ -69,11 +69,11 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/KOR/Portrait_KOR_yi_jin.png"
-				small="GFX_idea_KOR_yi_jin"
+				small="gfx/interface/ideas/idea_KOR_yi_jin_advisor.png"
 			}
 			army={
 				large="gfx/leaders/KOR/Portrait_KOR_yi_jin.png"
-				small="GFX_idea_KOR_yi_jin"
+				small="gfx/interface/ideas/idea_KOR_yi_jin_advisor.png"
 			}
 		}
 		field_marshal={
@@ -320,7 +320,7 @@ characters={
 		name=KOR_kim_chwa_chin
 		portraits={
 			army={
-				large="gfx/leaders/KOR/Portrait_KOR_Kim_Chwa_chin.dds"
+				large="gfx/leaders/KOR/Portrait_KOR_kim_chwa_jin.png"
 				small="GFX_idea_KOR_kim_chwa_chin"
 			}
 		}
@@ -375,10 +375,10 @@ characters={
 				war_hero
 				offensive_doctrine
 			}
-			skill = 3
+			skill = 5
 			attack_skill = 4
-			defense_skill = 2
-			planning_skill = 3
+			defense_skill = 5
+			planning_skill = 4
 			logistics_skill = 3
 			id=-1
 		}
@@ -449,11 +449,11 @@ characters={
 		}
 		corps_commander={
 			traits={ trait_cautious infantry_officer trait_engineer }
-			skill = 1
-			attack_skill = 2
-			defense_skill = 2
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
 			planning_skill = 2
-			logistics_skill = 1
+			logistics_skill = 2
 		}
 	}
 
@@ -606,6 +606,7 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_KOR_no_baeg_lin"
+				large="gfx/leaders/KOR/Portrait_KOR_Shin_Sung_mo.dds"
 			}
 		}
 		advisor={
@@ -807,6 +808,7 @@ characters={
 		portraits = {
 			army = {
 				small= "GFX_idea_KOR_lee_tae_gyu"
+				large="gfx/leaders/KOR/Portrait_KOR_Lee_Tae_Gyu.dds"
 			}
 		}
 		advisor={
@@ -830,6 +832,7 @@ characters={
 		portraits = {
 			army = {
 				small= "GFX_idea_KOR_do_sang_log"
+				large="gfx/leaders/KOR/Portrait_KOR_Do_Sang_log.dds"
 			}
 		}
 		advisor={
@@ -970,7 +973,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { infantry_leader }
+			traits = { infantry_officer }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -987,7 +990,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { infantry_leader }
+			traits = { infantry_officer }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -1004,7 +1007,41 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { infantry_leader }
+			traits = { infantry_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	KOR_yi_je_gak = {
+		name=KOR_yi_je_gak
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_yi_je_gak.png"
+				small="gfx/interface/ideas/idea_KOR_yi_je_gak.png"
+			}
+		}
+		corps_commander={
+			traits = { KOR_imperial_family }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	KOR_yi_hae_chang = {
+		name=KOR_yi_hae_chang
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_yi_hae_chang.png"
+				small="gfx/interface/ideas/idea_KOR_yi_hae_chang.png"
+			}
+		}
+		corps_commander={
+			traits = { KOR_imperial_family }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -1018,6 +1055,7 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_KOR_phillip_jaisohn"
+				large = "gfx/leaders/KOR/Portrait_Korea_Philip_Jason.dds"
 			}
 		}
 		advisor={
@@ -1185,6 +1223,57 @@ characters={
 			logistics_skill = 1
 		}
 	}
+	KOR_hong_bum_do = {
+		name=KOR_hong_bum_do
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Hong_Bum_do.png"
+				small="gfx/interface/ideas/idea_KOR_hong_bum_do.png"
+			}
+		}
+		corps_commander={
+			traits = { brilliant_strategist infantry_leader infantry_officer }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	KOR_lee_eungjun = {
+		name=KOR_lee_eungjun
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_general_lee_eungjoon.dds"
+				small="gfx/interface/ideas/idea_fkr_armychief_lee_eungjoon.dds"
+			}
+		}
+		corps_commander={
+			traits = { infantry_officer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	KOR_ahn_changnam = {
+		name=KOR_ahn_changnam
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_ahn_changnam.png"
+				small="gfx/interface/ideas/idea_KOR_ahn_changnam.png"
+			}
+		}
+		corps_commander={
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
 	KOR_kim_koo = {
 		name=KOR_kim_koo
 		portraits={
@@ -1237,6 +1326,7 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_KOR_syngman_rhee"
+				large = "gfx/leaders/KOR/Portrait_KOR_syngman_rhee_2.png"
 			}
 		}
 		advisor={
@@ -1267,6 +1357,7 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_KOR_yeounhyeong"
+				large = "gfx/leaders/KOR/Portrait_KOR_Lyuh_Woon_hyung.dds"
 			}
 		}
 		advisor={
@@ -1310,6 +1401,7 @@ characters={
 		portraits={
 			army={
 				small="gfx/interface/ideas/idea_KOR_kim_gap_sun.png"
+				large = "gfx/leaders/KOR/Portrait_KOR_kim_gap_sun.png"
 			}
 		}
 		advisor={
@@ -1357,6 +1449,7 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_KOR_kim_gyu_sik"
+				large = "gfx/leaders/KOR/Portrait_Kim_Kyusik.png"
 			}
 		}
 		advisor={
@@ -1377,6 +1470,7 @@ characters={
 		portraits={
 			army={
 				small="gfx/interface/ideas/idea_KOR_hyun_jun_ho.png"
+				large = "gfx/leaders/KOR/Portrait_KOR_hyun_jun_ho.png"
 			}
 		}
 		advisor={
@@ -1422,6 +1516,7 @@ characters={
 		portraits={
 			army={
 				small="gfx/interface/ideas/KOR/idea_KOR_ahn_chang_ho.dds"
+				large = "gfx/leaders/KOR/Portrait_KOR_Ahn_Changho.dds"
 			}
 		}
 		advisor={
@@ -1445,6 +1540,7 @@ characters={
 		portraits={
 			army={
 				small="gfx/interface/ideas/KOR/idea_KOR_chang_myon.dds"
+				large = "gfx/leaders/KOR/Portrait_KOR_Chang_Myon.dds"
 			}
 		}
 		advisor={
@@ -1468,6 +1564,7 @@ characters={
 		portraits={
 			civilian={
 				small="gfx/interface/ideas/KOR/idea_KOR_jo_so_ang.dds"
+				large = "gfx/leaders/KOR/Portrait_Cho_Soang.png"
 			}
 		}
 		advisor={

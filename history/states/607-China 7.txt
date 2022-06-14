@@ -3,7 +3,6 @@ state={
 	id=607
 	name="STATE_607"
 
-	local_supplies=0.0 
 	history={
 		owner = ZLC
 		add_core_of = ZLC
@@ -48,9 +47,10 @@ state={
 	}
 
 	provinces={
-		1139 4010 4066 4114 4144 7074 7085 7126 7129 7656 9958 9995 10098 10364 
+		4010 4066 7085 7126 7129 7656 9958 9995 10098 10364 
 	}
 	manpower=21289800
 	buildings_max_level_factor=1.000
 	state_category=town
+	local_supplies=0.000
 }

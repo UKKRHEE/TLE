@@ -14,6 +14,7 @@ state={
 
 		}
 		owner = SND
+		add_core_of = ZLC
 		add_core_of = SND
 		add_core_of = CHI
 		add_core_of = PRC
@@ -26,7 +27,7 @@ state={
 	provinces={
 		1124 1154 1184 4071 4157 4181 7055 7089 9971 12074 
 	}
-	manpower=3000000
+	manpower=11773453
 	buildings_max_level_factor=1.000
 	state_category=city
 }
