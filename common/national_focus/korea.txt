@@ -1254,7 +1254,16 @@ focus_tree = {
 							target = QIN
 							transfer_troops = yes
 						}
+						hidden_effect = {
 					transfer_state = 761
+					every_state = {
+						limit = {
+							is_core_of = KMN
+						}
+						remove_core_of = KMN
+						add_claim_by = KMN
+					}
+					}
 				}
 
 	}

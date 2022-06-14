@@ -149,6 +149,17 @@ on_actions = {
 				}
 			}
 			if = {
+				every_state = {
+					limit = {
+						is_core_of = KYH
+						is_core_of = FER
+						is_owned_by = KYH
+					}
+					remove_core_of = FER
+					add_claim_by = FER
+				}
+			}
+			if = {
 				limit = {
 					LIT = {
 						is_ai = yes
@@ -285,6 +296,12 @@ on_actions = {
 						add_state_core = 612
 						add_state_core = 621
 						add_state_core = 612
+					}
+					every_state = {
+						limit = {
+							is_claim_by = KMN
+						}
+						add_core_of = KMN
 					}
 				
 				KOR = {
@@ -1129,7 +1146,13 @@ on_actions = {
 									days = 10
 								}
 							}
-							create_faction = FACTION_ZLC_UNITED_FRONT
+							if = {
+								limit = {
+									is_in_faction = no
+								}
+								
+								create_faction = FACTION_ZLC_UNITED_FRONT
+							}
 							set_rule = {
 								can_create_faction = yes
 							}	
@@ -3057,6 +3080,28 @@ on_actions = {
 	}
 	on_daily = {
 		effect = {
+			if= {
+				limit = {
+					KOR = {
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_ENDED
+						}
+					}
+					has_completed_focus = KOR_last_say_of_russia
+					NOT = {
+						330 = {
+							is_core_of = KOR
+						}
+					}
+				}
+				KOR = {
+					add_state_core = 612
+					add_state_core = 611
+					add_state_core = 621	
+					add_state_core = 329
+					add_state_core = 330	
+				}
+			}
 			if = {
 				limit = {
 					tag = PRC

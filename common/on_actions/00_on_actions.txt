@@ -204,7 +204,10 @@ on_actions = {
 			if = {
 				limit = {
 					FROM = {
-						is_core_of = USA
+						OR = {
+							is_core_of = USA
+							is_core_of = HAW
+						}	
 					}
 				}
 				set_global_flag = USA_IS_NUKE_DROPPED
