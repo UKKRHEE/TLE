@@ -57,9 +57,9 @@ characters={
 			}
 			skill = 5 #레벨
 			attack_skill = 2 #공 
-			defense_skill = 4 #방
-			planning_skill = 2 #작전
-			logistics_skill = 4 #보급
+			defense_skill = 3 #방
+			planning_skill = 4 #작전
+			logistics_skill = 3 #보급
 			id=12138
 		}
 	}
@@ -81,8 +81,8 @@ characters={
 			skill = 5
 			attack_skill = 2
 			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
 			id=20100
 		}
 	}
@@ -116,9 +116,9 @@ characters={
 			}
 			skill = 4
 			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
 			id=12141
 		}
 	}
@@ -158,10 +158,10 @@ characters={
 				politically_connected
 			}
 			skill = 4
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 4
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
 			id=12139
 		}
 	}
@@ -201,7 +201,7 @@ characters={
 			}
 			skill = 4
 			attack_skill = 1
-			defense_skill = 2
+			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 2
 			id=12140
@@ -234,8 +234,8 @@ characters={
 			skill = 3
 			attack_skill = 3
 			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
 			id=20101
 		}
 	}
@@ -261,8 +261,16 @@ characters={
 		    }
 			on_add = {
 				hidden_effect = {
-					country_event = {
-						id = korea.36
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = TLE_EUGENE_KIM_RULE
+								option = KIM_YES
+							}
+						}
+						country_event = {
+							id = korea.36
+						}
 					}
 				}
 			}
@@ -277,10 +285,10 @@ characters={
 		corps_commander={
 			traits = { inflexible_strategist infantry_officer defensive_doctrine }
 			skill = 3
-			attack_skill = 2
-			defense_skill = 4
+			attack_skill = 3
+			defense_skill = 3
 			planning_skill = 3
-			logistics_skill = 3
+			logistics_skill = 2
 			id=19366
 		}
 	}
@@ -303,12 +311,24 @@ characters={
 			traits = {
 				army_armored_3
 			}
+			visible = {
+				has_game_rule = {
+					rule = TLE_EUGENE_KIM_RULE
+					option = KIM_YES
+				}
+			}
 		}
 		
 		corps_commander={
+			visible = {
+				has_game_rule = {
+					rule = TLE_EUGENE_KIM_RULE
+					option = KIM_YES
+				}
+			}
 			traits = {  offensive_doctrine brilliant_strategist career_officer media_personality armor_officer panzer_leader war_hero }
 			skill = 2
-			attack_skill = 2
+			attack_skill = 4
 			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 2
@@ -340,9 +360,9 @@ characters={
 			traits = { politically_connected inflexible_strategist trickster career_officer }
 			skill = 3
 			attack_skill = 3
-			defense_skill = 4
-			planning_skill = 3
-			logistics_skill = 5
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
 			id=19361
 		}
 	}
@@ -376,7 +396,7 @@ characters={
 				offensive_doctrine
 			}
 			skill = 5
-			attack_skill = 4
+			attack_skill = 3
 			defense_skill = 5
 			planning_skill = 4
 			logistics_skill = 3
@@ -418,10 +438,10 @@ characters={
 		corps_commander={
 			traits = { KOR_imperial_family cavalry_officer brilliant_strategist politically_connected }
 			skill = 3
-			attack_skill = 4
+			attack_skill = 3
 			defense_skill = 2
 			planning_skill = 3
-			logistics_skill = 3
+			logistics_skill = 2
 			id=19364
 		}
 	}
@@ -450,8 +470,8 @@ characters={
 		corps_commander={
 			traits={ trait_cautious infantry_officer trait_engineer }
 			skill = 3
-			attack_skill = 1
-			defense_skill = 3
+			attack_skill = 3
+			defense_skill = 4
 			planning_skill = 2
 			logistics_skill = 2
 		}
@@ -482,9 +502,9 @@ characters={
 		}
 		corps_commander={
 			traits = { organizer career_officer brilliant_strategist }
-			skill = 2
+			skill = 3
 			attack_skill = 3
-			defense_skill = 2
+			defense_skill = 3
 			planning_skill = 2
 			logistics_skill = 3
 			id=19367
@@ -516,9 +536,9 @@ characters={
 			traits = { cavalry_officer armor_officer panzer_leader career_officer }
 			skill = 3
 			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 2
-			logistics_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
 			id=19365
 		}
 	}
@@ -551,11 +571,11 @@ characters={
 		
 		navy_leader={
 			traits = { naval_lineage battleship_adherent gunnery_expert ironside }
-			skill = 4
-			attack_skill = 5
-			defense_skill = 3
-			maneuvering_skill = 4
-			coordination_skill = 4
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 2
 			id=19370
 		}
 	}
@@ -591,13 +611,13 @@ characters={
 		}
 		
 		navy_leader={
-			traits = { navy_career_officer seawolf superior_tactician }
+			traits = { seawolf superior_tactician }
 			id = 19371
-			skill = 3
-			attack_skill = 5
-			defense_skill = 4
-			maneuvering_skill = 3
-			coordination_skill = 4
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
 		}
 	}
 
@@ -733,9 +753,9 @@ characters={
 			id = 19372
 			traits = { battleship_adherent naval_lineage }
 			skill = 2
-			attack_skill = 1
+			attack_skill = 2
 			defense_skill = 2
-			maneuvering_skill = 1
+			maneuvering_skill = 2
 			coordination_skill = 2
 		}
 	}
@@ -765,9 +785,9 @@ characters={
 		navy_leader={
 			traits = { battleship_adherent superior_tactician spotter }
 			skill = 3
-			attack_skill = 4
-			defense_skill = 2
-			maneuvering_skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			maneuvering_skill = 3
 			coordination_skill = 2
 		}
 	}
@@ -862,10 +882,10 @@ characters={
 		corps_commander = {
 			traits = { infantry_officer brilliant_strategist career_officer }
 			skill = 3
-			attack_skill = 4
+			attack_skill = 1
 			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
 		}
 	}
 	KOR_kim_won_bong = {
@@ -879,10 +899,10 @@ characters={
 		corps_commander={
 			traits = { commando trickster brilliant_strategist }
 			skill = 3
-			attack_skill = 4
+			attack_skill = 2
 			defense_skill = 1
-			planning_skill = 3
-			logistics_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
 		}
 	}
 	KOR_kim_du_han = {
@@ -893,7 +913,13 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = {  }
+			visible = {
+				has_game_rule = {
+					rule = TLE_EUGENE_KIM_RULE
+					option = KIM_YES
+				}
+			}
+			traits = { trickster }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -912,7 +938,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = {  }
+			traits = { commando }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -935,9 +961,9 @@ characters={
 				trait_engineer
 			}
 			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
 			logistics_skill = 2
 			id=-1
 		}
@@ -957,10 +983,10 @@ characters={
 				trickster
 			}
 			skill = 3
-			attack_skill = 3
-			defense_skill = 3
+			attack_skill = 1
+			defense_skill = 2
 			planning_skill = 2
-			logistics_skill = 2
+			logistics_skill = 1
 			id=-1
 		}
 	}
@@ -1024,9 +1050,9 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { KOR_imperial_family }
-			skill = 1
-			attack_skill = 1
+			traits = { KOR_imperial_family politically_connected infantry_officer }
+			skill = 3
+			attack_skill = 3
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
@@ -1041,11 +1067,11 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { KOR_imperial_family }
-			skill = 1
+			traits = { KOR_imperial_family politically_connected }
+			skill = 3
 			attack_skill = 1
 			defense_skill = 1
-			planning_skill = 1
+			planning_skill = 2
 			logistics_skill = 1
 		}
 	}
@@ -1201,8 +1227,8 @@ characters={
 			skill = 2
 			attack_skill = 2
 			defense_skill = 1
-			planning_skill = 2
-			logistics_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
 		}
 	}
 	KOR_yi_geon = {
@@ -1217,10 +1243,10 @@ characters={
 			id = 19380
 			traits = { KOR_imperial_family politically_connected brilliant_strategist armor_officer }
 			skill = 2
-			attack_skill = 3
+			attack_skill = 1
 			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
 		}
 	}
 	KOR_hong_bum_do = {
@@ -1234,10 +1260,10 @@ characters={
 		corps_commander={
 			traits = { brilliant_strategist infantry_leader infantry_officer }
 			skill = 3
-			attack_skill = 4
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 1
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
 		}
 	}
 	KOR_lee_eungjun = {
@@ -1250,7 +1276,7 @@ characters={
 		}
 		corps_commander={
 			traits = { infantry_officer }
-			skill = 2
+			skill = 3
 			attack_skill = 1
 			defense_skill = 2
 			planning_skill = 2

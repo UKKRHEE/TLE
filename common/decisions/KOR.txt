@@ -257,9 +257,9 @@ KOR_kill_the_usa_plan = {
 		
 		fire_only_once = yes
 		complete_effect = {
-			add_stability = -0.25
-			add_war_support = -0.25
-			add_political_power = -300
+			add_stability = -0.5
+			add_war_support = -1
+			add_political_power = -600
 			set_country_flag = FLAG_SAY_SORRY_TO_USA
 			USA = {
 				add_political_power = 120
@@ -458,7 +458,7 @@ KOR_the_three_countries_plan = {
 			original_tag = KOR
 		}
 		fire_only_once = yes
-		days_remove = 150
+		days_remove = 200
 		complete_effect = { 
 			army_experience = -200
 		}
@@ -488,7 +488,7 @@ KOR_the_three_countries_plan = {
 			original_tag = KOR
 		}
 		fire_only_once = yes
-		days_remove = 180
+		days_remove = 200
 		complete_effect = { 
 			army_experience = -200
 		}

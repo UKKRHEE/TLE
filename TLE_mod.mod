@@ -6,6 +6,7 @@ tags={
 	"Sound"
 }
 dependencies={
+	"Korean Language"
 	"Korean Language (Europa)"
 	"Youjo Senki l KR"
 }

@@ -1,0 +1,14 @@
+TLE_EUGENE_KIM_RULE = {
+	name = "TLE_EUGENE_KIM_RULE"
+	group = "RULE_TLE_EUGENE_KIM_EXIST"
+	default = {
+		name = KIM_NOT
+		text = "RULE_OPTION_KIM_NOT"
+		desc = "RULE_OPTION_KIM_NOT_EXIST_DESC"
+	}
+	option = {
+		name = KIM_YES
+		text = "RULE_OPTION_KIM_YES"
+		desc = "RULE_OPTION_KIM_YES_DESC"
+		allow_achievements = no
+}

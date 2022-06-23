@@ -1,0 +1,5 @@
+﻿ l_english:
+ RULE_OPTION_KIM_NOT:0 "역사적 장교진"
+ RULE_OPTION_KIM_NOT_EXIST_DESC:0 "대한제국의 장교진과 참모진들은 역사적 사실을 따라갈 것입니다."
+ RULE_OPTION_KIM_YES:0 "특별한 손님"
+ RULE_OPTION_KIM_YES_DESC:0 "대한제국의 장교진에 특별한 인물들이 추가되고, 이벤트를 통해 최대 두개의 교리를 선택할 수 있게 됩니다."

@@ -288,6 +288,13 @@ ideas = {
 		}		
 		KOR_not_go_outside_2 = {
 			picture = generic_victors_of_ww1
+			modifier = {
+				war_support_factor = -0.05
+				justify_war_goal_time = 0.2
+				generate_wargoal_tension = 0.3
+				experience_gain_army_factor = -0.5
+				experience_gain_navy_factor = -0.5
+			}
 			rule = {
 				can_join_factions = no
 			}	

@@ -649,6 +649,7 @@ country_event = { #중국의 거절!
 	option = { #거절
 		name = korea.22.a
 		KOR = {
+			remove_ideas = KOR_not_go_outside_2
 			if = {
 				limit = {
 					608 = {
@@ -3542,6 +3543,86 @@ country_event = {
 			promote_leader = yes
 		}	
 		set_capital = 525
+	}
+}
+country_event = { 
+	id = korea.90 #미국과의 전쟁
+	title = korea.90.title
+	desc = korea.90.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.90.a
+		custom_effect_tooltip = TOOLTIP_WARNING_WAR_USA_KOR
+		hidden_effect = {
+			add_ideas = KOR_embargo_us
+			add_war_support = -0.6
+		}
+	}
+}
+country_event = { 
+	id = korea.91 #이강의 권력 약화
+	title = korea.90.title
+	desc = korea.90.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.90.a
+		custom_effect_tooltip = TOOLTIP_WARNING_WAR_USA_KOR
+		hidden_effect = {
+			add_ideas = KOR_embargo_us
+			add_war_support = -0.6
+		}
+	}
+}
+country_event = { 
+	id = korea.92 #이강의 퇴진
+	title = korea.90.title
+	desc = korea.90.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.90.a
+		custom_effect_tooltip = TOOLTIP_WARNING_WAR_USA_KOR
+		hidden_effect = {
+			add_ideas = KOR_embargo_us
+			add_war_support = -0.6
+		}
+	}
+}
+country_event = { 
+	id = korea.93 #이강의 죽음
+	title = korea.93.title
+	desc = korea.93.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.93.a
+	}
+}
+country_event = { 
+	id = korea.94 #이강의 죽음과 내전
+	title = korea.94.title
+	desc = korea.94.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.94.a
 	}
 }
 ##########

@@ -407,6 +407,8 @@ recruit_character = KOR_yi_je_gak
 recruit_character = KOR_yi_hae_chang
 recruit_character = KOR_hong_bum_do
 
+recruit_character = KOR_kim_du_han
+
 #육군(원수)
 
 if = {

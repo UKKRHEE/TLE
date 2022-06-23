@@ -1315,10 +1315,12 @@ focus_tree = {
 				}
 			completion_reward = {
 					custom_effect_tooltip = KOR_tooltip_attack_china
-					country_event = {
+					hidden_effect = {
+						country_event = {
 							id = korea.22
 							days = 10
 						}
+					}	
 				}
 
 	}
@@ -1430,7 +1432,6 @@ focus_tree = {
 					set_rule = {
 							can_create_factions = yes
 						}
-					remove_ideas = KOR_not_go_outside_2
 					create_faction = TLE_COPERATION
 				}
 

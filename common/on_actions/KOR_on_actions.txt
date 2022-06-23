@@ -3080,6 +3080,37 @@ on_actions = {
 	}
 	on_daily = {
 		effect = {
+			if = {
+				limit = {
+				}
+			}	
+			if = {
+				limit = {
+					KOR = {
+						has_government = fascism
+						has_war_with = USA
+						NOT = {
+							has_idea = KOR_embargo_us
+						}
+					}
+				}
+				if = {
+					limit = {
+						KOR = {
+							NOT = {
+								has_country_flag = FLAG_PURGE_KOREAN_WAR_SUPPORT
+							}
+						}
+					}
+					KOR = {
+						set_country_flag = FLAG_PURGE_KOREAN_WAR_SUPPORT
+						country_event = {
+							days = 7
+							id = 
+						}
+					}
+				}
+			}
 			if= {
 				limit = {
 					KOR = {
