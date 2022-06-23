@@ -1037,7 +1037,15 @@ KOR_interservice_rivalry = {
 			factor = 1
 		}
 		modifier = {
-			conscription = 0.02
+				conscription_factor = 0.3
+			if = {
+				limit = {
+					KOR = {
+						is_ai = yes
+					}
+				}
+				conscription = 0.02
+			}
 		}
 		complete_effect = {
 			set_country_flag = { flag = KOR_war_conferences_cd value = 1 days = 180 }
