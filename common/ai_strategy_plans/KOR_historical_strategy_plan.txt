@@ -42,10 +42,10 @@ KOR_historical_plan = {
 		kor_military
 		kor_territory_expansion
 		KOR_plan_manchu
+		KOR_all_claim
+		kor_tsushima
 		KOR_last_say_of_russia
 		kor_add
-		kor_tsushima
-		KOR_all_claim
 		KOR_dalian_attack
 		KOR_attack_colonial_territory
 		KOR_allied_with_russia
