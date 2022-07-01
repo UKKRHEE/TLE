@@ -463,9 +463,23 @@ KOR_the_three_countries_plan = {
 			army_experience = -200
 		}
 		remove_effect = {
-			swap_ideas = {
-				add_idea = KOR_not_planed_attack_3
-				remove_idea = KOR_not_planed_attack_2
+			if = {
+				limit = {
+					has_idea = KOR_not_planed_attack_2
+				}
+				swap_ideas = {
+					add_idea = KOR_not_planed_attack_3
+					remove_idea = KOR_not_planed_attack_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = KOR_not_planed_attack_4
+				}
+				swap_ideas = {
+					add_idea = KOR_not_planed_attack_5
+					remove_idea = KOR_not_planed_attack_4
+				}
 			}
 		}
 	}
@@ -493,7 +507,18 @@ KOR_the_three_countries_plan = {
 			army_experience = -200
 		}
 		remove_effect = {
-			remove_ideas = KOR_not_planed_attack_3
+			if = {
+				limit = {
+					has_idea = KOR_not_planed_attack_3
+				}
+				remove_ideas = KOR_not_planed_attack_3
+			}
+			if = {
+				limit = {
+					has_idea = KOR_not_planed_attack_5
+				}
+				remove_ideas = KOR_not_planed_attack_5
+			}
 		}
 	}
 	KOR_the_war_plan_Z_ai = {

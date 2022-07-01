@@ -12,3 +12,18 @@ TLE_EUGENE_KIM_RULE = {
 		desc = "RULE_OPTION_KIM_YES_DESC"
 		allow_achievements = no
 }
+TLE_KOREA_HARDCORE_RULE = {
+	name = "TLE_KOREA_HARDCORE_RULE"
+	group = "RULE_TLE_EUGENE_KIM_EXIST"
+	default = {
+		name = TLE_HARDCORE
+		text = "RULE_OPTION_TLE_HARDCORE"
+		desc = "RULE_OPTION_TLE_HARDCORE_DESC"
+	}
+	option = {
+		name = TLE_LIGHT
+		text = "RULE_OPTION_TLE_LIGHT"
+		desc = "RULE_OPTION_TLE_LIGHT_DESC"
+		allow_achievements = no
+	}
+}	

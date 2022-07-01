@@ -1166,7 +1166,24 @@ country_event = { #난항에 빠진 공세
 					}
 				}
 			}
-			add_ideas = KOR_not_planed_attack_2
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = TLE_KOREA_HARDCORE_RULE
+						option = TLE_HARDCORE
+					}
+				}
+				add_ideas = KOR_not_planed_attack_2
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = TLE_KOREA_HARDCORE_RULE
+						option = TLE_LIGHT
+					}
+				}
+				add_ideas = KOR_not_planed_attack_4
+			}
 		}
 	}
 }

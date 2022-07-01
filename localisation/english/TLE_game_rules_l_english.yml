@@ -1,5 +1,13 @@
 ﻿ l_english:
+ RULE_TLE_EUGENE_KIM_EXIST:0 "마지막 제국 커스텀 게임 규칙"
+ TLE_EUGENE_KIM_RULE:0 "먼 과거의 이야기"
  RULE_OPTION_KIM_NOT:0 "역사적 장교진"
  RULE_OPTION_KIM_NOT_EXIST_DESC:0 "대한제국의 장교진과 참모진들은 역사적 사실을 따라갈 것입니다."
  RULE_OPTION_KIM_YES:0 "특별한 손님"
  RULE_OPTION_KIM_YES_DESC:0 "대한제국의 장교진에 특별한 인물들이 추가되고, 이벤트를 통해 최대 두개의 교리를 선택할 수 있게 됩니다."
+ 
+ TLE_KOREA_HARDCORE_RULE:0 "한중전쟁 난이도"
+ RULE_OPTION_TLE_HARDCORE:0 "§Y기본§!"
+ RULE_OPTION_TLE_HARDCORE_DESC:0 "한중전쟁의 난이도가 변함이 없을 것입니다."
+ RULE_OPTION_TLE_LIGHT:0 "§C쉬움§!"
+ RULE_OPTION_TLE_LIGHT_DESC:0 "한중전쟁에서의 패널티가 §Y기본§! 난이도의 50%만 적용됩니다."
