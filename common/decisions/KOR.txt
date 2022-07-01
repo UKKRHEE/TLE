@@ -443,7 +443,10 @@ KOR_the_three_countries_plan = {
 		icon = generic_prepare_civil_war 
 		available = {
 			original_tag = KOR
+				OR = {
 				has_idea = KOR_not_planed_attack_2
+				has_idea = KOR_not_planed_attack_4
+				}
 				has_army_experience > 200
 				command_power > 50
 		}
@@ -452,7 +455,10 @@ KOR_the_three_countries_plan = {
 			factor = 2000
 		}
 		visible = {
+				OR = {
 				has_idea = KOR_not_planed_attack_2
+				has_idea = KOR_not_planed_attack_4
+				}
 		}
 		allowed = {
 			original_tag = KOR
