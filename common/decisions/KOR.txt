@@ -379,7 +379,7 @@ KOR_the_three_countries_plan = {
 		}
 
 		ai_will_do = {
-			factor = 200
+			factor = 200000
 		}
 		visible = {
 			has_completed_focus = KOR_kwangtungjun

@@ -222,6 +222,7 @@ news_event = { #파나이 호 사건
 			NOT = {
 				has_government = democratic
 				has_government = communism
+				has_government = neutrality
 			}
 			NOT = {
 				has_country_flag = KOR_PANAI_PROBLEM

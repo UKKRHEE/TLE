@@ -1,6 +1,10 @@
 spriteTypes = {	
 	
 	spriteType = {
+		name = "GFX_idea_KOR_gangseong_daeguk"
+		texturefile = "gfx/interface/ideas/GFX_idea_KOR_gangseong_daeguk.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_KOR_neutrality_start"
 		texturefile = "gfx/interface/ideas/idea_hol_the_foundations_of_defense.dds"
 	}

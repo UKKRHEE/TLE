@@ -1,5 +1,17 @@
 spriteTypes = {
 
+	SpriteType = {        
+		name = "GFX_focus_goal_강성대국"
+		texturefile = "gfx/interface/goals/강성대국.png"     
+	}  
+	SpriteType = {        
+		name = "GFX_focus_goal_전투공업"   
+		texturefile = "gfx/interface/goals/전투공업.png"     
+	}  
+	SpriteType = {        
+		name = "GFX_focus_goal_천리마운동재개"  
+		texturefile = "gfx/interface/goals/천리마운동재개.png"     
+	}  
 	SpriteType = {       
 		name = "GFX_focus_goal_조곤"  
 		texturefile = "gfx/interface/goals/조곤.png"     
