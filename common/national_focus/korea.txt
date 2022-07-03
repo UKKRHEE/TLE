@@ -2075,7 +2075,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kor_lifeguard_extension
-		icon = GFX_focus_kor_loyal
+		icon = GFX_goal_generic_political_purge
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_up-coupdetat
@@ -2223,16 +2223,13 @@ focus_tree = {
 	}
 	focus = {
 		id = kor_a_stronger_country
-		icon = GFX_focus_chi_control_army
+		icon = GFX_goal_generic_army_high_command
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_power_up_to_imperial
 		}
 		x = 56
 		y = 5
-		allow_branch = {
-			has_country_flag = TLE_FLAG_ENDING
-		}
 		available = {
 			has_completed_focus = KOR_focus_bangjeonghwan_sup
 		}
@@ -2253,7 +2250,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_zaebeol_kill
-		icon = GFX_goal_ANQ_Zaibatsu_Contracts
+		icon = GFX_goal_syndicalist_industry
 		cost = 8.00
 		prerequisite = {
 			focus = kor_a_stronger_country
@@ -2433,12 +2430,13 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			add_ideas = KOR_gangseong_daeguk
+			add_stability = -0.1
 		}	
 
 	}
 	focus = {
 		id = kor_best_gangju
-		icon = GFX_focus_goal_kor_empire_gangyu
+		icon = GFX_focus_kor_ihwa
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_kangseong_daeguk
@@ -2456,8 +2454,8 @@ focus_tree = {
 	}
 	focus = {
 		id = kor_god_save_the_king
-		icon = GFX_focus_kor_ihwa
-		cost = 8.00
+		icon = GFX_focus_goal_KOR_patriotism
+		cost = 4.00
 		prerequisite = {
 			focus = kor_a_stronger_country
 		}
@@ -2468,64 +2466,71 @@ focus_tree = {
 }
 			completion_reward = {
 					add_ideas = KOR_god_save_the_king
-					if = {
-							limit = {
-									has_idea = KOR_divided_politics
-									has_completed_focus = KOR_focus_neutrality_imperial
-								}
-							remove_ideas = KOR_divided_politics
-						}
-					if = {
-							limit = {
-									has_idea = KOR_not_go_outside
-								}
-							remove_ideas = KOR_not_go_outside
-						}
 				}
 
 	}
 	focus = {
 		id = KOR_focus_god_save_kangmyong
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_면류관
+		cost = 8.00
+		x = 57
+		y = 8
+		prerequisite = {
+			focus = KOR_focus_yiwon_support
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+		}
+
+	}
+	focus = {
+		id = KOR_focus_yiwon_support
+		icon = GFX_focus_goal_경친왕전하
 		cost = 8.00
 		prerequisite = {
 			focus = kor_god_save_the_king
 		}
 		x = 57
 		y = 7
-
-	}
-	focus = {
-		id = KOR_focus_yiwon_support
-		icon = GFX_goal_unknown
-		cost = 8.00
-		prerequisite = {
-			focus = KOR_focus_god_save_kangmyong
+		completion_reward = {
+			country_event = {
+				id = korea.101
+			}
 		}
-		x = 57
-		y = 8
 
 	}
 	focus = {
 		id = KOR_focus_private_support
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_황국협회동원
 		cost = 8.00
 		prerequisite = {
 			focus = kor_god_save_the_king
 		}
 		x = 59
 		y = 7
+		completion_reward = {
+			country_event = {
+				id = korea.102
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_focus_great_korean_emperor
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KOR_eagle
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_private_support
 		}
 		x = 59
 		y = 8
+		completion_reward = {
+			swap_ideas = {
+				add_idea = KOR_god_save_the_king_2
+				remove_idea = KOR_god_save_the_king
+			}	
+		}
 
 	}
 	focus = {
@@ -2533,7 +2538,7 @@ focus_tree = {
 		icon = GFX_goal_KOR_strong_hand
 		cost = 8.00
 		prerequisite = {
-			focus = KOR_focus_yiwon_support
+			focus = KOR_focus_god_save_kangmyong
 		}
 		prerequisite = {
 			focus = KOR_focus_great_korean_emperor
@@ -2578,73 +2583,106 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_cheondo_using
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_소파방정환
 		cost = 8.00
 		prerequisite = {
 			focus = kor_a_stronger_country
 		}
 		x = 62
 		y = 6
+		available = {
+			has_idea = KOR_god_save_the_king
+		}
+		completion_reward = {
+			add_ideas = KOR_cheondogyo
+		}
 
 	}
 	focus = {
 		id = KOR_focus_national_spirit_ideology
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_join_faction
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_cheondo_using
 		}
 		x = 61
 		y = 7
+		completion_reward = {
+			add_war_support = 0.1
+		}
 
 	}
 	focus = {
 		id = KOR_focus_jeongshin_of_korean
-		icon = GFX_goal_unknown
+		icon = GFX_goal_KOR_secret_agency
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_cheondo_using
 		}
 		x = 62
 		y = 8
+		available = {
+		
+		}
+		completion_reward = {
+			add_ideas = KOR_focus_jeongshin_of_korean
+		}
 
 	}
 	focus = {
 		id = KOR_focus_great_state_of_korea
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_lightbulb
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_jeongshin_of_korean
 		}
 		x = 62
 		y = 9
+		available = {
+			num_of_factories > 82
+			has_stability > 0.89
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
 
 	}
 	focus = {
 		id = KOR_focus_confucians_duty
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_join_faction
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_cheondo_using
 		}
 		x = 63
 		y = 7
+		completion_reward = {
+			remove_ideas = KOR_not_go_outside
+		}
 
 	}
 	focus = {
 		id = KOR_focus_east_asian_peace
-		icon = GFX_goal_unknown
-		cost = 8.00
+		icon = GFX_focus_goal_KJE_winner_in_great_war
+		cost = 5.00
 		prerequisite = {
 			focus = kor_a_stronger_country
 		}
+		available = {
+			has_completed_focus = KOR_focus_neutrality_imperial
+		}
 		x = 67
 		y = 6
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_focus_peace_for_china
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_east_asian_peace
@@ -2655,7 +2693,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_none_attack_pact
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_peace_for_china
@@ -2666,7 +2704,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_south_kuomintang_attack
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_peace_for_china
@@ -2677,7 +2715,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_china_join_korea
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_south_kuomintang_attack
@@ -2691,7 +2729,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_warlords_theorem
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_china_join_korea
@@ -2702,7 +2740,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_economic_support_china
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_china_join_korea
@@ -2713,7 +2751,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_chinese_unification_war
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_warlords_theorem
@@ -2727,7 +2765,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_peace_for_england
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_east_asian_peace
@@ -2738,7 +2776,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_qingdao_return
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_peace_for_china
@@ -2750,7 +2788,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_the_empire_strikes_back
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_peace_for_england
@@ -2761,7 +2799,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_asian_korea
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_peace_for_england
@@ -2772,7 +2810,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_with_britain
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_the_empire_strikes_back
@@ -2786,7 +2824,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_we_will_peace
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_china_join_korea
@@ -2801,7 +2839,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_betray_the_west
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_with_britain
@@ -2815,7 +2853,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_diplomatic_genius
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_with_britain
@@ -2829,7 +2867,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_war_with_axis
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_diplomatic_genius
@@ -2840,7 +2878,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_sword_outside
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_east_asian_peace
@@ -2851,7 +2889,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_japanese_attack
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_sword_outside
@@ -2862,7 +2900,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_dual_empire
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_japanese_attack
@@ -2876,7 +2914,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_japanese_partner_country
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_japanese_attack
@@ -2890,7 +2928,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_aju_pact
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_sword_outside
@@ -2901,7 +2939,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_siam_attack
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_aju_pact
@@ -2915,7 +2953,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_imperial_return
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_siam_attack
@@ -2926,7 +2964,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_siam_support
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_aju_pact
@@ -2940,7 +2978,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_anti_communist_pact
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_sword_outside
@@ -2951,7 +2989,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_siberial_rising
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_anti_communist_pact
@@ -2962,7 +3000,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_sinkiang_civilwar
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_siberial_rising
@@ -3684,7 +3722,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kor_military_organization_youth
-		icon = GFX_focus_kcpr
+		icon = GFX_goal_army_guy_2
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_NMO_law
@@ -3743,7 +3781,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kor_ethnicity
-		icon = GFX_goal_prussia_army
+		icon = focus_kcpr
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_NMO_law
@@ -4314,7 +4352,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_the_last_war
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_sinkiang_civilwar
@@ -4328,7 +4366,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_soviet_spy_search
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_strengthening_the_military_intelligence_service
@@ -4339,7 +4377,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_strengthening_the_military_intelligence_service
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_anti_communist_pact
@@ -4350,7 +4388,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_attack_south
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KJE_winner_in_great_war
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_betray_the_west
@@ -4361,7 +4399,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_end_up_at_the_top
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_KOR_hegemony
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_neutrality_imperial
@@ -4374,17 +4412,41 @@ focus_tree = {
 		}
 		x = 58
 		y = 10
+		available = {
+			OR = {
+				is_in_faction = no
+				is_faction_leader = yes
+			}
+			num_of_factories > 200
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = KOR_gangseong_daeguk_2
+				remove_idea = KOR_gangseong_daeguk
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_focus_end_of_korea
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_제국의시대
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_end_up_at_the_top
 		}
 		x = 58
 		y = 11
-
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = TOOLTIP_IDEA_GSK_2
+				has_idea = KOR_god_save_the_king_2
+			}
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = KOR_god_save_the_king_3
+				remove_idea = KOR_god_save_the_king_2
+			}
+		}
 	}
 }

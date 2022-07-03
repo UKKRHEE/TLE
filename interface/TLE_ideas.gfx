@@ -1,8 +1,16 @@
 spriteTypes = {	
 	
 	spriteType = {
+		name = "GFX_idea_KOR_focus_jeongshin_of_korean"
+		texturefile = "gfx/interface/ideas/KOR_secret_agency.png"
+	}
+	spriteType = {
 		name = "GFX_idea_KOR_gangseong_daeguk"
-		texturefile = "gfx/interface/ideas/GFX_idea_KOR_gangseong_daeguk.dds"
+		texturefile = "gfx/interface/ideas/강성대국.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_gangseong_daeguk_2"
+		texturefile = "gfx/interface/ideas/강성대국.png"
 	}
 	spriteType = {
 		name = "GFX_idea_KOR_neutrality_start"

@@ -1,6 +1,46 @@
 spriteTypes = {
 
 	SpriteType = {        
+		name = "GFX_focus_goal_KOR_hegemony"
+		texturefile = "gfx/interface/goals/goal_KOR_hegemony.tga"     
+	}  
+	SpriteType = {        
+		name = "GFX_focus_goal_KOR_hegemony"
+		texturefile = "gfx/interface/goals/goal_KOR_hegemony.tga"     
+	}  
+	SpriteType = {        
+		name = "GFX_focus_goal_소파방정환"
+		texturefile = "gfx/interface/goals/소파방정환.png"     
+	}  
+	SpriteType = {        
+		name = "GFX_focus_goal_면류관"
+		texturefile = "gfx/interface/goals/면류관.png"     
+	}  
+	SpriteType = {        
+		name = "GFX_focus_goal_제국의시대"
+		texturefile = "gfx/interface/goals/정상서다.png"     
+	}  
+	SpriteType = {        
+		name = "GFX_focus_goal_KJE_winner_in_great_war"
+		texturefile = "gfx/interface/goals/idea_KJE_winner_in_great_war.png"     
+	}  
+	SpriteType = {        
+		name = "GFX_focus_goal_황국협회동원"
+		texturefile = "gfx/interface/goals/황국협회동원.png"     
+	}  
+	SpriteType = {        
+		name = "GFX_focus_goal_경친왕전하"
+		texturefile = "gfx/interface/goals/경친왕전하.png"     
+	}  
+	SpriteType = {        
+		name = "GFX_focus_goal_KOR_patriotism"
+		texturefile = "gfx/interface/goals/goal_KOR_patriotism.tga"     
+	}  
+	SpriteType = {        
+		name = "GFX_focus_goal_KOR_eagle"
+		texturefile = "gfx/interface/goals/goal_KOR_eagle.tga"     
+	}  
+	SpriteType = {        
 		name = "GFX_focus_goal_강성대국"
 		texturefile = "gfx/interface/goals/강성대국.png"     
 	}  
