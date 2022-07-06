@@ -729,6 +729,29 @@ on_actions = {
 			if = {
 				limit = {
 					FROM = {
+						original_tag = JAP
+					}
+					ROOT = {
+						original_tag = KOR
+					}
+					KOR = {
+						is_ai = yes
+					}
+					JAP = {
+						is_ai = no
+					}
+				}
+				KOR = {
+					load_oob = "KOR_ai_Japan"
+					add_timed_idea = {
+						idea = KOR_war_japan_ai
+						days = 240
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
 						original_tag = KOR
 					}
 					ROOT = {
