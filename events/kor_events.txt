@@ -1200,15 +1200,15 @@ country_event = { #상하이 공습
 		name = korea.35.a
 		load_oob = "KOR_shanghai"
 		transfer_state = 857
-		add_state_core = 857
-		857 = {
-			set_state_name = "상해"
-		}	
+		#add_state_core = 857
+		#857 = {
+		#	set_state_name = "상해"
+		#}	
 		
-		set_province_name = {
-            id = 7014
-            name = "상해"
-        }
+		#set_province_name = {
+        #    id = 7014
+        #    name = "상해"
+        #}
 		set_country_flag = KOR_SHANGHAI_ATTACK
 	}
 }
@@ -3161,7 +3161,12 @@ country_event = { #충칭
 		605 = {
 			add_manpower = -15000
 		}
-		
+		CHI = {
+			set_country_flag = FLAG_CHONGQING_COLLAPSED
+		}
+		ZLC = {
+			set_country_flag = FLAG_CHONGQING_COLLAPSED
+		}
 	}
 }
 country_event = { #광저우
@@ -3750,12 +3755,12 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { #
-		name = korea.100.a
+		name = korea.101.a
 		add_political_power = 100
 	}
 }
 country_event = { 
-	id = korea.102 #경친왕의 설득
+	id = korea.102 #황국협회
 	title = korea.102.title
 	desc = korea.102.desc
 	picture = GFX_TLE_korea_event_none
@@ -3765,6 +3770,91 @@ country_event = {
 	
 	option = { #
 		name = korea.102.a
+	}
+}
+#########
+country_event = { 
+	id = korea.103 #중국 - 항복 ㄱ?
+	title = korea.103.title
+	desc = korea.103.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #항복(유저 전용)
+		name = korea.103.a
+		ai_chance = {
+			base = 0
+		}	
+		KOR = {
+			country_event = {
+				id = korea.104
+				days = 2
+			}
+		}
+	}
+	option = { #항전(AI전용)
+		name = korea.103.b
+		ai_chance = {
+			base = 100
+		}	
+		trigger = {
+			is_ai = yes
+		}
+	}
+}
+country_event = { 
+	id = korea.104 #중국이 항복한다 하였노라.
+	title = korea.104.title
+	desc = korea.104.desc
+	picture = GFX_TLE_korea_event_none
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #승리다!
+		name = korea.104.a
+		every_country = {
+			limit = {
+				is_chinese_clique = yes
+				has_war_with = KOR
+			}
+			white_peace = KOR
+		}
+		KOR = {
+			annex_country = {
+				target = ZLC
+			}
+			annex_country = {
+				target = CHI
+			}
+			annex_country = {
+				target = SHX
+			}
+			annex_country = {
+				target = SZC
+			}
+			annex_country = {
+				target = GXC
+			}
+			annex_country = {
+				target = XSM
+			}
+			annex_country = {
+				target = WZC
+			}
+			annex_country = {
+				target = HNC
+			}
+			annex_country = {
+				target = YUN
+			}
+			annex_country = {
+				target = SND
+			}
+			activate_decision = KOR_three_divided_china
+		}
 	}
 }
 ##########

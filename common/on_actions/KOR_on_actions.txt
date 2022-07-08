@@ -3115,7 +3115,67 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					KOR = {
+						is_ai = yes
+					}
+					ZLC = {
+						is_ai = yes
+					}
+					CHI = {
+						is_ai = yes
+					}
+					KOR = {
+						controls_state = 608
+						controls_state = 613
+						controls_state = 857
+						controls_state = 878
+					}
+				}	
+				ZLC = {
+					add_ideas = CHI_AI_WAR_BONUS_IDEA
 				}
+				CHI = {
+					add_ideas = CHI_AI_WAR_BONUS_IDEA
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						original_tag = ZLC
+						original_tag = CHI
+					}
+					KOR = {
+						has_government = fascism
+						controls_state = 605
+					}
+					OR = {
+						ZLC = {
+							has_country_flag = FLAG_CHONGQING_COLLAPSED
+							surrender_progress < 0.03
+							owns_state = 605
+						}	
+						CHI = {
+							has_country_flag = FLAG_CHONGQING_COLLAPSED
+							surrender_progress < 0.03
+							owns_state = 605
+						}	
+					}
+					NOT = {
+						has_country_flag = FLAG_CHON_WAR_END
+					}
+				}	
+				every_country = {
+					limit = {
+						has_country_flag = FLAG_CHONGQING_COLLAPSED
+						owns_state = 605
+						has_war_with = KOR
+						surrender_progress < 0.03
+					}
+					country_event = {
+						id = korea.103
+					}
+				}
+				set_country_flag = FLAG_CHON_WAR_END
 			}	
 			if = {
 				limit = {

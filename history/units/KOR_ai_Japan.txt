@@ -73,6 +73,76 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
+		location = 1025
+		division_template = "구주-북해도 방위군"
+		start_experience_factor = 1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1025
+		division_template = "구주-북해도 방위군"
+		start_experience_factor = 1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1025
+		division_template = "구주-북해도 방위군"
+		start_experience_factor = 1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10092
+		division_template = "구주-북해도 방위군"
+		start_experience_factor = 1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10092
+		division_template = "구주-북해도 방위군"
+		start_experience_factor = 1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10092
+		division_template = "구주-북해도 방위군"
+		start_experience_factor = 1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10092
+		division_template = "구주-북해도 방위군"
+		start_experience_factor = 1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 10092
 		division_template = "구주-북해도 방위군"
 		start_experience_factor = 1
@@ -135,6 +205,66 @@ units = {
 			name_order = 1
 		}
 		location = 9950
+		division_template = "구주-북해도 방위군"
+		start_experience_factor = 1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "구주-북해도 방위군"
+		start_experience_factor = 1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "구주-북해도 방위군"
+		start_experience_factor = 1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "구주-북해도 방위군"
+		start_experience_factor = 1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3962
+		division_template = "구주-북해도 방위군"
+		start_experience_factor = 1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3962
+		division_template = "구주-북해도 방위군"
+		start_experience_factor = 1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3962
 		division_template = "구주-북해도 방위군"
 		start_experience_factor = 1
 		start_equipment_factor = 1.0
