@@ -1249,6 +1249,7 @@ country_event = { #미국 공습 시발아!!!!
 				is_ai = no
 			}
 			set_country_flag = korea_war_with_usa
+			play_song = "tno_se_korea_war_with_usa"
 		}
 		hidden_effect = {
 		declare_war_on = {

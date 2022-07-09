@@ -72,5 +72,15 @@
  flying_through_the_night:0 "깊은 밤을 날아서"
  when_love_passes:0 "사랑이 지나가면"
  
+ # Super event Music
+ tno_se_fall_of_korea:0 "슈퍼 이벤트 - 목포의 눈물"
+ tno_se_japan_cw:0 "슈퍼 이벤트 - 왕자님 왕자님"
+ tno_se_korea_the_yi_kang:0 "슈퍼 이벤트 - 아리랑 겨레"
+ tno_se_korea_war_with_usa:0 "슈퍼 이벤트 - 군함행진곡"
+ tno_se_korea_ww_china:0 "슈퍼 이벤트 - 노병"
+ tno_se_russia_attack_korea:0 "슈퍼 이벤트 - 만주의 언덕에서"
+ tno_se_war_in_china_kor:0 "슈퍼 이벤트 - 황하를 지켜라"
+ tno_se_won_in_china:0 "슈퍼 이벤트 - 연설, 1942년"
+ 
  CHI_seek_japanese_support:0 "한국의 지원 모색"
  CHI_approach_japan:0 "한국 가입 요청"

@@ -200,3 +200,60 @@ music = {
 		}
 	}
 }
+
+music = {
+	song = "tno_se_fall_of_korea"
+	
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "tno_se_japan_cw"
+	
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "tno_se_korea_the_yi_kang"
+	
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "tno_se_korea_war_with_usa"
+	
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "tno_se_korea_ww_china"
+	
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "tno_se_russia_attack_korea"
+	
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "tno_se_war_in_china_kor"
+	
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "tno_se_won_in_china"
+	
+	chance = {
+		factor = 0
+	}
+}

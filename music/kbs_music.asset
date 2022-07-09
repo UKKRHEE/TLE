@@ -117,3 +117,44 @@ music = {
 	file = "kbs/arirang.ogg"
 	volume = 0.6
 }
+###############
+music = {
+	name = "tno_se_fall_of_korea"
+	file = "kbs/tno_se_fall_of_korea.ogg"
+	volume = 1
+}
+music = {
+	name = "tno_se_japan_cw"
+	file = "kbs/tno_se_japan_cw.ogg"
+	volume = 1
+}
+music = {
+	name = "tno_se_korea_the_yi_kang"
+	file = "kbs/tno_se_korea_the_yi_kang.ogg"
+	volume = 1
+}
+music = {
+	name = "tno_se_korea_war_with_usa"
+	file = "kbs/tno_se_korea_war_with_usa.ogg"
+	volume = 1
+}
+music = {
+	name = "tno_se_korea_ww_china"
+	file = "kbs/tno_se_korea_ww_china.ogg"
+	volume = 1
+}
+music = {
+	name = "tno_se_russia_attack_korea"
+	file = "kbs/tno_se_russia_attack_korea.ogg"
+	volume = 1
+}
+music = {
+	name = "tno_se_war_in_china_kor"
+	file = "kbs/tno_se_war_in_china_kor.ogg"
+	volume = 1
+}
+music = {
+	name = "tno_se_won_in_china"
+	file = "kbs/tno_se_won_in_china.ogg"
+	volume = 1
+}

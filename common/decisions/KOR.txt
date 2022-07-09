@@ -435,6 +435,7 @@ KOR_the_three_countries_plan = {
 					}
 				}
 				set_country_flag = won_in_china_sp
+				play_song = "tno_se_won_in_china"
 			}
 			set_country_flag = won_in_china
 		}

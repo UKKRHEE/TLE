@@ -743,8 +743,28 @@ country_event = { #내전 발발
 			every_country = {
 				limit = {
 					is_ai = no
+					OR = {
+						NOT = {
+							original_tag = JAP
+						}
+						NOT = {
+							original_tag = DKG
+						}
+					}	
 				}
 				set_country_flag = Japanese_civil_war_sp
+				play_song = "tno_se_japan_cw"
+			}
+			if = {
+				limit = {
+				    DKG = {
+						has_country_flag = JAP_Empire
+					}
+				}
+				JAP = {
+					set_country_flag = Japanese_civil_war_sp
+					play_song = "tno_se_japan_cw"
+				}
 			}
 			TBJ = {
 				country_event = {
@@ -871,8 +891,28 @@ country_event = { #내전 발발
 			every_country = {
 				limit = {
 					is_ai = no
+					OR = {
+						NOT = {
+							original_tag = JAP
+						}
+						NOT = {
+							original_tag = DKG
+						}
+					}	
 				}
 				set_country_flag = Japanese_civil_war_sp
+				play_song = "tno_se_japan_cw"
+			}
+			if = {
+				limit = {
+				    DKG = {
+						has_country_flag = JAP_Shogunate
+					}
+				}
+				DKG = {
+					set_country_flag = Japanese_civil_war_sp
+					play_song = "tno_se_japan_cw"
+				}
 			}
 			TBJ = {
 				country_event = {

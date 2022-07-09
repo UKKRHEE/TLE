@@ -35,6 +35,7 @@ news_event = { #이강 집권
 				is_ai = no
 			}
 			set_country_flag = korea_the_yi_kang
+			play_song = "tno_se_korea_the_yi_kang"
 		}	
 	}
 }
@@ -411,6 +412,7 @@ news_event = { #한중전쟁
 					is_ai = no
 				}
 			set_country_flag = korea_ww_china
+			play_song = "tno_se_war_in_china_kor"
 			}
 		}	
 	}
@@ -441,6 +443,7 @@ news_event = { #한중전쟁
 					is_ai = no
 				}
 			set_country_flag = korea_ww_china
+			play_song = "tno_se_war_in_china_kor"
 			}
 		}	
 	}
@@ -474,7 +477,40 @@ news_event = { #한중전쟁
 					is_ai = no
 				}
 			set_country_flag = korea_ww_china
+			play_song = "tno_se_war_in_china_kor"
 			}
 		}	
+	}
+}
+
+news_event = { #강명제를 향한 테러
+	id = eok_news.10
+	title = eok_news.10.t
+	desc = {
+		text = eok_news.10.desc
+		trigger = {
+			KOR = {
+				has_government = fascism
+			}
+		}
+	}	
+	desc = {
+		text = eok_news.10_2.desc
+		trigger = {
+			KOR = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+		}
+	}	
+	picture = GFX_news_event_GER_funeral
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eok_news.10.a
 	}
 }
