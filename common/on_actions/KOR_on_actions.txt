@@ -189,7 +189,12 @@ on_actions = {
 						}
 					}
 				}
+				every_country = {
+					limit = {
+						exists = yes
+					}
 				news_event = { id = eok_news.10 days = 1 }
+				}
 				if = {
 					limit = {
 						MEN = {
