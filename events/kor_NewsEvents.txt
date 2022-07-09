@@ -509,7 +509,7 @@ news_event = { #강명제를 향한 테러
 	major = yes
 	
 	is_triggered_only = yes
-	fire_only_once = yes
+	#fire_only_once = yes
 	
 	option = {
 		name = eok_news.10.a
