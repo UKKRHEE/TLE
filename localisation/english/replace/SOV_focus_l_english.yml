@@ -49,6 +49,9 @@
  JAP_shogunate_lose:0 "막부군의 종말"
  JAP_shogunate_lose_desc:0 "우리 군대는 망했습니다. 자칭 유신회라는 저 망할 것들에게 현혹되어 군대는 엉망이 되었고 농민들은 이틈에 정부를 뒤엎어보고자 사보타주를 주도하고 있습니다. 우리 도쿠가와 가문에게 남은 것은 한국으로의 망명 뿐입니다."
  
+ TRIGGER_IS_FRIEND:0 "@$TAG$$OTHER|H$ 측과 동맹임\n"
+ TRIGGER_IS_NOT_FRIEND:0 "@$TAG$$OTHER|H$ 측과 동맹이 아님\n"
+ EFFECT_SET_RULE:0 "규칙 설정:\n"
  
  STRATEGICREGION_148:0 "연해주 지역"
  STRATEGICREGION_186:0 "한반도"

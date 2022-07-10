@@ -3655,7 +3655,6 @@ country_event = {
 	desc = korea.95.desc
 	picture = GFX_TLE_korea_event_none
 	
-	fire_only_once = yes	
 	is_triggered_only = yes
 	
 	option = { #
@@ -3674,7 +3673,6 @@ country_event = {
 	desc = korea.96.desc
 	picture = GFX_TLE_korea_event_none
 	
-	fire_only_once = yes	
 	is_triggered_only = yes
 	
 	option = { #
@@ -3689,7 +3687,6 @@ country_event = {
 	desc = korea.97.desc
 	picture = GFX_TLE_korea_event_none
 	
-	fire_only_once = yes	
 	is_triggered_only = yes
 	
 	option = { #
@@ -3705,7 +3702,6 @@ country_event = {
 	desc = korea.98.desc
 	picture = GFX_TLE_korea_event_none
 	
-	fire_only_once = yes	
 	is_triggered_only = yes
 	
 	option = { #
@@ -3723,7 +3719,6 @@ country_event = {
 	desc = korea.99.desc
 	picture = GFX_TLE_korea_event_none
 	
-	fire_only_once = yes	
 	is_triggered_only = yes
 	
 	option = { #
@@ -3737,7 +3732,6 @@ country_event = {
 	desc = korea.100.desc
 	picture = GFX_TLE_korea_event_none
 	
-	fire_only_once = yes	
 	is_triggered_only = yes
 	
 	option = { #
@@ -3752,7 +3746,6 @@ country_event = {
 	desc = korea.101.desc
 	picture = GFX_TLE_korea_event_none
 	
-	fire_only_once = yes	
 	is_triggered_only = yes
 	
 	option = { #
@@ -3766,7 +3759,6 @@ country_event = {
 	desc = korea.102.desc
 	picture = GFX_TLE_korea_event_none
 	
-	fire_only_once = yes	
 	is_triggered_only = yes
 	
 	option = { #
@@ -3855,6 +3847,87 @@ country_event = {
 				target = SND
 			}
 			activate_decision = KOR_three_divided_china
+		}
+	}
+}
+country_event = { 
+	id = korea.105 #중국이 항복한다 하였노라.
+	title = korea.105.title
+	desc = korea.105.desc
+	picture = GFX_TLE_korea_event_none
+	
+	is_triggered_only = yes
+	
+	option = { #승리다!
+		name = korea.105.a
+		add_political_power = 100
+		FROM = {
+			diplomatic_relation = {
+				country = ROOT
+				relation = non_aggression_pact
+				active = yes
+			}
+			country_event = {
+				id = korea.106
+				days = 3
+			}
+		}
+	}
+	option = {
+		name = korea.105.b
+		FROM = {
+			country_event = {
+				id = korea.107
+				days = 3
+			}
+		}
+	}
+}
+country_event = { 
+	id = korea.106 #동의
+	title = korea.106.title
+	desc = korea.106.desc
+	picture = GFX_TLE_korea_event_none
+	
+	is_triggered_only = yes
+	
+	option = { #승리다!
+		name = korea.106.a
+	}
+}
+country_event = { 
+	id = korea.107 #동의
+	title = korea.107.title
+	desc = korea.107.desc
+	picture = GFX_TLE_korea_event_none
+	
+	is_triggered_only = yes
+	
+	option = { #승리다!
+		name = korea.107.a
+	}
+}
+country_event = { 
+	id = korea.108 #동의
+	title = korea.108.title
+	desc = korea.108.desc
+	picture = GFX_TLE_korea_event_none
+	
+	is_triggered_only = yes
+	
+	option = { #승리다!
+		name = korea.108.a
+		KOR = {
+			set_cosmetic_tag = KJE
+		}
+		every_state = {
+			limit = {
+				is_core_of = JAP
+				NOT = {
+					is_core_of = KOR
+				}
+			}
+			add_core_of = KOR
 		}
 	}
 }

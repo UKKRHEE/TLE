@@ -1104,13 +1104,26 @@ on_actions = {
 				}
 				if = {
 					limit = {
-						PRC = {
+						HNC = {
 							exists = yes
 						}
 					}
 					
 					ZLC = {
-						add_to_faction = PRC 
+						add_to_faction = HNC
+						puppet = HNC
+					}
+				}
+				if = {
+					limit = {
+						SND = {
+							exists = yes
+						}
+					}
+					
+					ZLC = {
+						add_to_faction = SND
+						puppet = SND
 					}
 				}
 				if = {
@@ -3100,6 +3113,28 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					ZLC = {
+						has_idea = CHI_AI_WAR_BONUS_IDEA
+					}
+					CHI = {
+						has_idea = CHI_AI_WAR_BONUS_IDEA
+					}
+					KOR = {
+						NOT = {
+							controls_state = 878
+							controls_state = 869
+						}
+					} 
+				}	
+				ZLC = {
+					remove_ideas = CHI_AI_WAR_BONUS_IDEA
+				}
+				CHI = {
+					remove_ideas = CHI_AI_WAR_BONUS_IDEA
+				}
+			}
+			if = {
+				limit = {
 					KOR = {
 						is_ai = yes
 					}
@@ -3114,6 +3149,7 @@ on_actions = {
 						controls_state = 613
 						controls_state = 857
 						controls_state = 878
+						controls_state = 869
 					}
 				}	
 				ZLC = {

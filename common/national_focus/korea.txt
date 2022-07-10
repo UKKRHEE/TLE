@@ -1600,16 +1600,11 @@ focus_tree = {
 				}
 			completion_reward = {
 					SOV = {
-							add_political_power = 100
+						country_event = {
+							id = korea.105
 						}
-					KOR = {
-							add_political_power = 100
-							diplomatic_relation = {
-									country = SOV
-									relation = non_aggression_pact
-									active = yes
-								}
-						}
+					}		
+					add_political_power = 100
 				}
 
 	}
@@ -2682,40 +2677,74 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_peace_for_china
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_goal_china_deal
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_east_asian_peace
 		}
 		x = 67
 		y = 7
+		available = {
+			NOT = {
+				has_war_with = ZLC
+			}
+		}
+		bypass = {
+			has_war_with = ZLC
+		}
+		completion_reward = {
+			ZLC = {
+				add_opinion_modifier = {
+					target = KOR
+					modifier = TLE_general_government_opinion
+				}
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_focus_none_attack_pact
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_goal_chinese_instructors
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_peace_for_china
 		}
 		x = 66
 		y = 8
+		completion_reward = {
+			ZLC = {
+				country_event = {
+					id = korea.105
+				}
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_focus_south_kuomintang_attack
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_goal_LKMT_A_New_China
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_peace_for_china
 		}
 		x = 68
 		y = 8
+		completion_reward = {
+			every_country = {
+				limit = {
+					owns_state = 613
+				}
+				add_timed_idea = { 
+					idea = CHI_embargo_korea 
+					days = 360
+				}
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_focus_china_join_korea
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_goal_chinese_investment
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_south_kuomintang_attack
@@ -2725,33 +2754,109 @@ focus_tree = {
 		}
 		x = 67
 		y = 9
+		available = {
+			ZLC = {
+				is_in_faction = no
+			}
+			KOR = {
+				is_faction_leader = yes
+			}
+		}
+		bypass = {
+			ZLC = {
+				is_in_faction = yes
+			}
+		}
+		completion_reward = {
+			ZLC = {
+				country_event = {
+					id = generic.5
+				}	
+			}	
+		}
 
 	}
 	focus = {
 		id = KOR_focus_warlords_theorem
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = YUN_GFX_Goal_Secure_Western_China
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_china_join_korea
 		}
 		x = 66
 		y = 10
+		available = {
+			ZLC = {
+				is_ally_with = KOR
+			}
+			KOR = {
+				is_faction_leader = yes
+			}
+		}
+		bypass = {
+			ZLC = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			ZLC = {
+				create_wargoal = {
+					type = annex_everything
+					target = SHX
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = XSM
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = SIK
+				}
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_focus_economic_support_china
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_goal_china_split_helmet
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_china_join_korea
 		}
 		x = 68
 		y = 10
+		available = {
+			ZLC = {
+				is_ally_with = KOR
+			}
+			KOR = {
+				is_faction_leader = yes
+			}
+		}
+		bypass = {
+			ZLC = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = KOR
+						original_tag = ZLC
+					}
+				}
+				add_timed_idea = {
+					idea = KOR_economic_effect
+					days = 1350
+				}
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_focus_chinese_unification_war
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_goal_QIE_zhili_unite_china
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_warlords_theorem
@@ -2761,22 +2866,67 @@ focus_tree = {
 		}
 		x = 67
 		y = 11
+		available = {
+			ZLC = {
+				is_ally_with = KOR
+			}
+			KOR = {
+				is_faction_leader = yes
+			}
+		}
+		bypass = {
+			ZLC = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			ZLC = {
+				create_wargoal = {
+					type = annex_everything
+					target = CHI
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = YUN
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = SZC
+				}
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_focus_peace_for_england
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_GBR_five_eyes
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_east_asian_peace
 		}
+		available = {
+			NOT = {
+				has_war_with = ENG
+			}
+		}
+		bypass = {
+			has_war_with = ENG
+		}
 		x = 73
 		y = 7
+		completion_reward = {
+			ENG = {
+				add_opinion_modifier = {
+					target = KOR
+					modifier = TLE_general_government_opinion
+				}
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_focus_qingdao_return
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_goal_ANQ_qing_loyalty
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_peace_for_china
@@ -2784,33 +2934,91 @@ focus_tree = {
 		}
 		x = 70
 		y = 8
+		available = {
+			owns_state = 743
+			NOT = {
+				has_completed_focus = KOR_focus_betray_the_west
+			}
+		}
+		bypass = {
+			has_completed_focus = KOR_focus_betray_the_west
+		}
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_chinese_clique = yes
+					owns_state = 597
+				}
+				transfer_state = 743
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_focus_the_empire_strikes_back
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_GBR_big_ben
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_peace_for_england
 		}
 		x = 72
 		y = 8
+		available = {
+			NOT = {
+				has_war_with = ENG
+			}
+		}
+		bypass = {
+			has_war_with = ENG
+		}
+		completion_reward = {
+			ENG = {
+				country_event = {
+					id = korea.105
+					days = 2
+				}
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_focus_asian_korea
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_GBR_westerminster_dec
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_peace_for_england
 		}
 		x = 74
 		y = 8
+		available = {
+			NOT = {
+				has_war_with = ENG
+			}
+		}
+		bypass = {
+			has_war_with = ENG
+		}
+		completion_reward = {
+			ENG = {
+				give_guarantee = KOR
+				give_military_access = KOR
+				add_relation_modifier = {
+					target = KOR
+					modifier = HUN_dynastic_ties_license
+				}
+			}
+			KOR = {
+				add_relation_modifier = {
+					target = ENG
+					modifier = HUN_dynastic_ties_license
+				}
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_focus_with_britain
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_GBR_britannia
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_the_empire_strikes_back
@@ -2820,11 +3028,35 @@ focus_tree = {
 		}
 		x = 73
 		y = 9
+		available = {
+			ENG = {
+				is_faction_leader = yes
+			}
+			KOR = {
+				is_in_faction = no
+			}
+		}
+		bypass = {
+			ENG = {
+				is_faction_leader = no
+			}
+			KOR = {
+				is_in_faction = yes
+			}
+		}
+		completion_reward = {
+			ENG = {
+				country_event = {
+					id = generic.2
+					days = 1
+				}
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_focus_we_will_peace
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_HON_peace_in_our_time
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_china_join_korea
@@ -2835,11 +3067,26 @@ focus_tree = {
 		}
 		x = 70
 		y = 10
+		available = {
+			NOT = {
+				has_completed_focus = KOR_focus_betray_the_west
+			}	
+		}
+		completion_reward = {
+					set_rule = {
+							can_declare_war_without_wargoal_when_in_war = yes
+									can_send_volunteers = yes
+									can_puppet = yes
+									can_only_justify_war_on_threat_country = no
+									can_create_collaboration_government = yes
+									can_declare_war_on_same_ideology = yes
+						}
+		}
 
 	}
 	focus = {
 		id = KOR_focus_betray_the_west
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_goal_HOL_policy_south_africa
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_with_britain
@@ -2847,13 +3094,27 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = KOR_focus_diplomatic_genius
 		}
+		available = {
+			NOT = {
+				has_completed_focus = KOR_focus_qingdao_return
+			}
+		}
+		bypass = {
+			KOR = {
+				has_completed_focus = KOR_focus_qingdao_return
+			}			
+		}
 		x = 72
 		y = 10
+		completion_reward = {
+			transfer_state = 856
+			transfer_state = 855
+		}
 
 	}
 	focus = {
 		id = KOR_focus_diplomatic_genius
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_goal_champagne_diplomacy
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_with_britain
@@ -2861,46 +3122,86 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = KOR_focus_betray_the_west
 		}
+		available = {
+			is_ally_with = ENG
+		}
+		bypass = {
+			OR = {
+				ENG = {
+					exists = no
+				}
+				NOT = {
+					is_ally_with = ENG
+				}
+			}
+		}
 		x = 74
 		y = 10
+		completion_reward = {
+			transfer_state = 887
+		}
 
 	}
 	focus = {
 		id = KOR_focus_war_with_axis
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_goal_GER_Man_in_the_High_Castle
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_diplomatic_genius
 		}
 		x = 74
 		y = 11
+		available = {
+			NOT = {
+				is_ally_with = GER
+			}
+		}
+		bypass = {
+			is_ally_with = GER
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = GER
+				type = annex_everything
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_focus_sword_outside
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_SIA_Urban_Warfare_NF
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_east_asian_peace
 		}
 		x = 78
 		y = 7
+		completion_reward = {
+			remove_ideas = KOR_political_officer
+			add_threat = 3
+		}	
 
 	}
 	focus = {
 		id = KOR_focus_japanese_attack
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_goal_japan_helmet
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_sword_outside
 		}
 		x = 77
 		y = 8
+		completion_reward = {
+			create_wargoal = {
+				target = JAP
+				type = annex_everything
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_focus_dual_empire
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_focus_goal_이중제국건설
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_japanese_attack
@@ -2908,13 +3209,21 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = KOR_focus_japanese_partner_country
 		}
+		available = {
+			owns_state = 282
+		}
 		x = 76
 		y = 9
+		completion_reward = {
+			country_event = {
+				id = korea.108
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_focus_japanese_partner_country
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_goal_generic_sea_of_japan
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_japanese_attack
@@ -2924,22 +3233,67 @@ focus_tree = {
 		}
 		x = 78
 		y = 9
+		available = {
+				owns_state = 529
+				owns_state = 530
+				owns_state = 531
+				owns_state = 890
+				owns_state = 891
+				owns_state = 894
+				owns_state = 893
+				owns_state = 892
+				owns_state = 532
+				owns_state = 535
+				owns_state = 533
+				owns_state = 534
+				owns_state = 282
+				owns_state = 889
+		}
+		completion_reward = {
+			JAP = {
+				transfer_state = 529
+				transfer_state = 530
+				transfer_state = 531
+				transfer_state = 890
+				transfer_state = 891
+				transfer_state = 894
+				transfer_state = 893
+				transfer_state = 892
+				transfer_state = 532
+				transfer_state = 535
+				transfer_state = 533
+				transfer_state = 534
+				transfer_state = 282
+				transfer_state = 889
+			}
+			KOR = {
+				puppet = JAP
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_focus_aju_pact
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_SIA_ratthaniyom
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_sword_outside
 		}
+		available = {
+			NOT = {
+				is_in_faction = yes
+			}
+		}
 		x = 81
 		y = 8
+		completion_reward = {
+			create_faction = "범 아주 조약기구"
+		}
 
 	}
 	focus = {
 		id = KOR_focus_siam_attack
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_SIA_siamese_rifles
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_aju_pact
@@ -2949,22 +3303,50 @@ focus_tree = {
 		}
 		x = 80
 		y = 9
+		available = {
+			NOT = {
+				is_ally_with = SIA
+			}
+		}
+		bypass = {
+			SIA = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = SIA
+				type = annex_everything
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_focus_imperial_return
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_SIA_constitution
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_siam_attack
 		}
 		x = 80
 		y = 10
+		available = {
+			owns_state = 289
+			owns_state = 724
+		}
+		bypass = {
+			SIA = {
+				is_puppet_of = KOR
+			}
+		}
+		completion_reward = {
+			release_puppet_on_controlled = SIA
+		}
 
 	}
 	focus = {
 		id = KOR_focus_siam_support
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_goal_JAP_target_siam
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_aju_pact
@@ -2974,6 +3356,16 @@ focus_tree = {
 		}
 		x = 82
 		y = 9
+		available = {
+			is_faction_leader = yes
+		}	
+		completion_reward = {
+			SIA = {
+				country_event = {
+					id = generic.5
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -4388,13 +4780,44 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_attack_south
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_focus_jap_strike_south
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_betray_the_west
 		}
 		x = 72
 		y = 11
+		available = {
+			OR = {
+				NOT = {
+					is_ally_with = INS
+				}
+				is_faction_leader = yes
+			}
+		}
+		bypass = {
+			INS = {
+				exists = no
+			}
+			
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					is_ally_with = INS
+				}
+				HOL = {
+					leave_faction = yes
+				}
+				INS = {
+					leave_faction = yes
+				}
+			}
+			create_wargoal = {
+				target = INS
+				type = annex_everything
+			}
+		}
 
 	}
 	focus = {

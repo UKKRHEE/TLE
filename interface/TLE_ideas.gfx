@@ -1,6 +1,10 @@
 spriteTypes = {	
 	
 	spriteType = {
+		name = "GFX_idea_KOR_industry_reform"
+		texturefile = "gfx/interface/ideas/idea_KOR_industry_reform.png"
+	}
+	spriteType = {
 		name = "GFX_idea_KOR_focus_jeongshin_of_korean"
 		texturefile = "gfx/interface/ideas/KOR_secret_agency.png"
 	}
@@ -244,6 +248,10 @@ spriteTypes = {
 	}	
 	spriteType = {
 		name = "GFX_idea_KOR_militarism"
+		texturefile = "gfx/interface/ideas/korea/군국주의.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_KOR_militarism_2" 
 		texturefile = "gfx/interface/ideas/korea/군국주의.png"
 	}	
 	

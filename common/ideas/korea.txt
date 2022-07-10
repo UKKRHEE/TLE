@@ -451,8 +451,14 @@ ideas = {
 		KOR_industry_reform = {
 			picture = generic_goods_red_bonus
 			modifier = {
-				consumer_goods_factor = -0.025
 				production_speed_infrastructure_factor = 0.05
+			}
+		}
+		KOR_economic_effect = {
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.15
 			}
 		}
 
@@ -479,7 +485,7 @@ ideas = {
 				war_support_factor = -0.05
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
-			}
+			} 
 		}
 		KOR_embargo_us = {
 			picture = generic_economic_increase
