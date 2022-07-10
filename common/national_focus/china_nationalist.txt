@@ -938,12 +938,17 @@ focus_tree = {
 					NOT = {
 							is_in_faction_with = KOR
 						}
-				}
-			bypass = {
-					has_war_with = KOR
+				if = {
+				limit = {
 					KOR = {
 						has_completed_focus = KOR_power_up_to_imperial
 					}
+				}
+			has_army_manpower = { size > 699999 }
+			}	
+				}
+			bypass = {
+					has_war_with = KOR
 				}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
