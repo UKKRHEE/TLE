@@ -883,6 +883,9 @@ focus_tree = {
 			bypass = {
 					is_in_faction = yes
 					is_in_faction_with = CHI
+					KOR = {
+						has_completed_focus = KOR_power_up_to_imperial
+					}
 				}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
@@ -938,6 +941,9 @@ focus_tree = {
 				}
 			bypass = {
 					has_war_with = KOR
+					KOR = {
+						has_completed_focus = KOR_power_up_to_imperial
+					}
 				}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
