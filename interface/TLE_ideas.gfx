@@ -1,6 +1,10 @@
 spriteTypes = {	
 	
 	spriteType = {
+		name = "GFX_idea_KOR_anti_communism_pact_joincountry"
+		texturefile = "gfx/interface/ideas/anti_soviet_pact.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_KOR_industry_reform"
 		texturefile = "gfx/interface/ideas/idea_KOR_industry_reform.png"
 	}

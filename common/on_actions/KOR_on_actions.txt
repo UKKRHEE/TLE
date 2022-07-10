@@ -582,6 +582,29 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					FROM = {
+						has_idea = KOR_anti_communism_pact_joincountry
+					}
+					ROOT = {
+						tag = SOV
+						has_government = communism
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = {
+							original_tag = SOV
+						}	
+						has_idea = KOR_anti_communism_pact_joincountry
+					}
+					declare_war_on = {
+						targer = SOV
+						type = annex_everything
+					}
+				}
+			}
+			if = {
+				limit = {
 					
 					FROM = {
 						original_tag = CHI

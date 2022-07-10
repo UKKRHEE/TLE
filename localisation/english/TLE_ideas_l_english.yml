@@ -19,6 +19,9 @@
  CHI_fight_in_core_2:0 "저들은 이곳을 절대 지나지 못하리라"
  
  KOR_economic_effect:0 "한중 경제협력"
+ KOR_anti_communism_pact_joincountry:0 "동아 방공협정"
+ 
+ TOOLTIP_PCT:0 "@SOV§Y소련§!이 §Y동아 방공협정§!에 참여한 국가를 공격할 경우, 조약국 전체가 @SOV§Y소련§!과의 §R전쟁§!에 가담합니다."
  
  KOR_law_the_5th:0 "평화헌법"
  KPL_is_cant_attack:0 "보장되는 중립"

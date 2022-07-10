@@ -1,5 +1,14 @@
 ideas = {
 	country = { #국민정신 
+		KOR_anti_communism_pact_joincountry = {
+			allowed = {
+				original_tag = KOR
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = TOOLTIP_PCT
+			}
+		}
 		KOR_focus_jeongshin_of_korean = {
 			allowed = {
 				original_tag = KOR

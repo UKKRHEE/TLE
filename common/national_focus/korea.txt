@@ -3370,35 +3370,75 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_anti_communist_pact
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_HOL_crackdown_syndie
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_sword_outside
 		}
 		x = 85
 		y = 8
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = AFG
+						original_tag = PER
+						original_tag = IRQ
+						original_tag = TUR
+						original_tag = SIA
+						is_chinese_clique = yes
+					}	
+					exists = yes
+					is_puppet = no
+				}
+				country_event = {
+					id = korea.109
+					days = 5
+				}
+			}
+		}	
 
 	}
 	focus = {
 		id = KOR_focus_siberial_rising
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_goal_generic_cold_training
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_anti_communist_pact
 		}
 		x = 84
 		y = 9
+		completion_reward = {
+			custom_effect_tooltip = TOOLTIP_DEC_UNLOCK_SIBER
+			hidden_effect = {
+				#시베리아게릴라조직
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_focus_sinkiang_civilwar
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_goal_KUM_fan_yaonan
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_siberial_rising
 		}
 		x = 84
 		y = 10
+		completion_reward = {
+			SIK = {
+				start_civil_war = {
+					ruling_party = communism
+					ideology = neutrality
+					size = 0.65
+					only_own_territory = no
+					capital = 617
+					states = { 
+						617 287 759
+					}
+				}
+			}	
+		}
 
 	}
 	focus = {
@@ -4744,7 +4784,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_the_last_war
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_focus_SOV_support_spanish_poum
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_sinkiang_civilwar
@@ -4754,28 +4794,68 @@ focus_tree = {
 		}
 		x = 85
 		y = 11
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SOV
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_focus_soviet_spy_search
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_focus_SOV_international_union_of_soviet_republics
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_strengthening_the_military_intelligence_service
 		}
 		x = 86
 		y = 10
+		completion_reward = {
+			add_intel = {
+				target = SOV
+				civilian_intel = 10
+				army_intel = 20
+				navy_intel = 10
+				airforce_intel = 20
+			}
+			create_operative_leader = {
+				name = "알렉산드라 킴"
+				female = yes
+				#GFX = GFX_portrait_jacques_duclos
+				traits = { operative_infiltrator operative_natural_orator }
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				nationalities = { SOV KOR }
+			}
+			create_operative_leader = {
+				name = "니콜라이 초이"
+				female = yes
+				#GFX = GFX_portrait_jacques_duclos
+				traits = { operative_infiltrator operative_natural_orator }
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				nationalities = { SOV KOR }
+			}
+		}
 
 	}
 	focus = {
 		id = KOR_focus_strengthening_the_military_intelligence_service
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_goal_ANQ_convince_intellectuals
 		cost = 8.00
 		prerequisite = {
 			focus = KOR_focus_anti_communist_pact
 		}
 		x = 86
 		y = 9
+		completion_reward = {
+			create_intelligence_agency = {
+				name = "중앙정보부"
+				icon = GFX_intelligence_agency_logo_kor
+			}
+			upgrade_intelligence_agency = upgrade_form_department
+		}
 
 	}
 	focus = {
