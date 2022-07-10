@@ -430,11 +430,11 @@
  korea.105.a:0 "좋다!"
  korea.105.b:0 "우리는 다른 생각이 있다"
  
- korea.106.title:0 "[PREV.GetName]의 동의"
+ korea.106.title:0 "[FROM.GetName]의 동의"
  korea.106.desc:0 ""
  korea.106.a:0 "좋다!"
  
- korea.107.title:0 "[PREV.GetName]의 거절"
+ korea.107.title:0 "[FROM.GetName]의 거절"
  korea.107.desc:0 ""
  korea.107.a:0 "제길!"
  
@@ -447,11 +447,11 @@
  korea.109.a:0 "좋아."
  korea.109.b:0 "거절하지."
  
- korea.110.title:0 "[PREV.GetName]의 동의"
+ korea.110.title:0 "[FROM.GetName]의 동의"
  korea.110.desc:0 ""
  korea.110.a:0 "좋다!"
  
- korea.111.title:0 "[PREV.GetName]의 거절"
+ korea.111.title:0 "[FROM.GetName]의 거절"
  korea.111.desc:0 ""
  korea.111.a:0 "제길!"
  

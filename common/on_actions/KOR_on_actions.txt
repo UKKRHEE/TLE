@@ -1092,7 +1092,7 @@ on_actions = {
 					}
 					white_peace = PRC
 				}
-				ROOT = {
+				KOR = {
 					country_event = {
 						id = korea.34
 						days = 3
