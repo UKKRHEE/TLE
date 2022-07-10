@@ -922,23 +922,11 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					OR = {
-						AND = {
-							FROM = {
-								original_tag = ZLC
-							}
-							ROOT = {
-								original_tag = KOR
-							}
-						}
-						AND = {
-							FROM = {
-								original_tag = KOR
-							}
-							ROOT = {
-								original_tag = ZLC
-							}
-						}
+					FROM = {
+						original_tag = ZLC
+					}
+					ROOT = {
+						original_tag = KOR
 					}
 				}
 				if = {
@@ -1171,82 +1159,83 @@ on_actions = {
 					load_oob = "KOR_ai_qingdao"
 					
 				}
-				FROM = {
-					if = {
-						limit = {
-							original_tag = ZLC
-							NOT = {
-								has_country_flag = FLAG_UNITED_FRONT_ZLC
-							}
+				if = {
+					limit = {
+						original_tag = ZLC
+						NOT = {
+							has_country_flag = FLAG_UNITED_FRONT_ZLC
 						}
-						country_lock_all_division_template = no
-						hidden_effect = {
-							CHI = {
-								add_ideas = CHI_fight_with_korea
-							}
-							KOR = {
-								country_event = {
-									id = korea.35
-									days = 10
-								}
-							}
-							if = {
-								limit = {
-									is_in_faction = no
-								}
-								
-								create_faction = FACTION_ZLC_UNITED_FRONT
-							}
-							set_rule = {
-								can_create_faction = yes
-							}	
-							
-							if = {
-								limit = {
-									WZC = {
-										is_ai = yes
-										exists = yes
-									}
-								}
-								CHI = {
-									annex_country = {
-										target = WZC
-										transfer_troops = yes
-									}
-									set_cosmetic_tag = CHI_nanking
-									set_country_flag = FLAG_CHI_COSMETIC_NANKING
-									add_ideas = CHI_army_corruption_1
-									capital = 613
-								}
-							}
-							if = {
-								limit = {
-									AHC = {
-										exists = yes
-										is_ai = yes
-									}
-								}
-								CHI = {
-									annex_country = {
-										target = AHC
-										transfer_troops = yes
-									}
-								}
-							}
-							ZLC = {
-								set_major = yes
-							}
-							CHI = {
-								set_major = yes
-							}
+					}
+					set_country_flag = FLAG_UNITED_FRONT_ZLC
+				}
+				if = {
+					limit = {
+						ZLC = {
+							is_in_faction = no
 						}
+					}
+					ZLC = {
+						create_faction = FACTION_ZLC_UNITED_FRONT
+						set_rule = {
+							can_create_faction = yes
+						}	
 						country_event = {
 							id = china.1093
 						}
-						
-						set_country_flag = FLAG_UNITED_FRONT_ZLC
+						country_lock_all_division_template = no
 					}
 				}
+					hidden_effect = {
+						CHI = {
+							add_ideas = CHI_fight_with_korea
+						}
+						KOR = {
+							country_event = {
+								id = korea.35
+								days = 10
+							}
+						}
+						
+						if = {
+							limit = {
+								WZC = {
+									is_ai = yes
+									exists = yes
+								}
+							}
+							CHI = {
+								annex_country = {
+									target = WZC
+										transfer_troops = yes
+								}
+								set_cosmetic_tag = CHI_nanking
+								set_country_flag = FLAG_CHI_COSMETIC_NANKING
+								add_ideas = CHI_army_corruption_1
+								capital = 613
+							}
+						}
+						if = {
+							limit = {
+								AHC = {
+									exists = yes
+									is_ai = yes
+								}
+							}
+							CHI = {
+								annex_country = {
+									target = AHC
+									transfer_troops = yes
+								}
+							}
+						}
+						ZLC = {
+							set_major = yes
+						}
+						CHI = {
+							set_major = yes
+						}
+					}
+				
 				
 			}
 		}
