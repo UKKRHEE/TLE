@@ -437,7 +437,10 @@ focus_tree = {
 		}
 		available = {
 			KOR = {
+				OR = {
 				has_government = fascism
+				has_government = neutrality
+				}
 			}
 		}
 		x = 13
@@ -733,8 +736,9 @@ focus_tree = {
 		}
 		available = {
 			KOR = {
-				NOT = {
+				NOR = {
 					has_government = fascism
+					has_government = neutrality
 				}
 			}
 		}

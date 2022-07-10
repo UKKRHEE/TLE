@@ -2586,7 +2586,10 @@ focus_tree = {
 		x = 62
 		y = 6
 		available = {
-			has_idea = KOR_god_save_the_king
+			OR = {
+				has_idea = KOR_god_save_the_king_2
+				has_idea = KOR_god_save_the_king
+			}
 		}
 		completion_reward = {
 			add_ideas = KOR_cheondogyo
