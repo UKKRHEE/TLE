@@ -3182,6 +3182,16 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = KOR_political_officer
 			add_threat = 3
+			create_wargoal = {
+				target = KPL
+				type = annex_everything
+			}
+			annex_country = {
+				target = KMN
+			}	
+			annex_country = {
+				target = KYH
+			}	
 		}	
 
 	}
@@ -3198,6 +3208,14 @@ focus_tree = {
 			create_wargoal = {
 				target = JAP
 				type = annex_everything
+			}
+			annex_country = {
+				target = KHK
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = KKS
+				transfer_troops = yes
 			}
 		}
 
