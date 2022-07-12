@@ -1,6 +1,22 @@
 spriteTypes = {	
 	
 	spriteType = {
+		name = "GFX_idea_KOR_cheondogyo"
+		texturefile = "gfx/interface/ideas/idea_KOR_cheondo.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_god_save_the_king"
+		texturefile = "gfx/interface/ideas/idea_KOR_emperor_hurray.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_god_save_the_king_2"
+		texturefile = "gfx/interface/ideas/idea_KOR_emperor_hurray.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_god_save_the_king_3"
+		texturefile = "gfx/interface/ideas/idea_KOR_emperor_hurray.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_KOR_anti_communism_pact_joincountry"
 		texturefile = "gfx/interface/ideas/anti_soviet_pact.dds"
 	}
