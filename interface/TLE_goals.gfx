@@ -1,6 +1,10 @@
 spriteTypes = {
 
 	SpriteType = {        
+		name = "GFX_focus_mkr_victory_in_the_civil_war"
+		texturefile = "gfx/interface/goals/mkr_victory_in_the_civil_war.png"     
+	}  
+	SpriteType = {        
 		name = "GFX_focus_goal_이중제국건설"
 		texturefile = "gfx/interface/goals/이중제국건설.png"     
 	}  

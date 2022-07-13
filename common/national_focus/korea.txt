@@ -2661,7 +2661,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_focus_east_asian_peace
-		icon = GFX_focus_goal_KJE_winner_in_great_war
+		icon = GFX_focus_mkr_victory_in_the_civil_war
 		cost = 5.00
 		prerequisite = {
 			focus = kor_a_stronger_country
