@@ -561,8 +561,15 @@ focus_tree = {
 			focus = KOR_focus_plan_manchu
 		}
 		available = {
-			controls_state = 608
-			controls_state = 614
+			OR = {
+				AND = {
+					controls_state = 608
+					controls_state = 614
+				}
+				has_country_flag = won_in_china
+			}
+		}
+		bypass = {
 		}
 		x = 10
 		y = 4
@@ -597,8 +604,13 @@ focus_tree = {
 			focus = KOR_focus_plan_manchu
 		}
 		available = {
-			controls_state = 613
-			controls_state = 859
+			OR = {
+				AND = {
+					controls_state = 613
+					controls_state = 859
+				}
+				has_country_flag = won_in_china
+			}
 		}
 		x = 12
 		y = 4

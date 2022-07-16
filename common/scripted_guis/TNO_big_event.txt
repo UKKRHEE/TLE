@@ -180,9 +180,75 @@ scripted_gui = {
 	}
 
 	#일본 내전
-	TNO_SG_big_event_japan_cw = { 
+	TNO_SG_big_event_japan_cw_0 = { 
 		context_type = player_context
-		window_name = "TNO_SG_big_event_japan_cw"
+		window_name = "TNO_SG_big_event_japan_cw_0"
+
+		visible = {
+			has_country_flag = Japanese_civil_war_sp
+			NOT = {
+				has_country_flag = TLE_CANT_SEE_SP_EVENT
+			}
+		}
+	}
+	TNO_SG_big_event_japan_cw_1 = { 
+		context_type = player_context
+		window_name = "TNO_SG_big_event_japan_cw_1"
+
+		visible = {
+			has_country_flag = Japanese_civil_war_sp
+			NOT = {
+				has_country_flag = TLE_CANT_SEE_SP_EVENT
+			}
+		}
+	}
+	TNO_SG_big_event_japan_cw_2 = { 
+		context_type = player_context
+		window_name = "TNO_SG_big_event_japan_cw_2"
+
+		visible = {
+			has_country_flag = Japanese_civil_war_sp
+			NOT = {
+				has_country_flag = TLE_CANT_SEE_SP_EVENT
+			}
+		}
+	}
+	TNO_SG_big_event_japan_cw_3 = { 
+		context_type = player_context
+		window_name = "TNO_SG_big_event_japan_cw_3"
+
+		visible = {
+			has_country_flag = Japanese_civil_war_sp
+			NOT = {
+				has_country_flag = TLE_CANT_SEE_SP_EVENT
+			}
+		}
+	}
+	TNO_SG_big_event_japan_cw_4 = { 
+		context_type = player_context
+		window_name = "TNO_SG_big_event_japan_cw_4"
+
+		visible = {
+			has_country_flag = Japanese_civil_war_sp
+			NOT = {
+				has_country_flag = TLE_CANT_SEE_SP_EVENT
+			}
+		}
+	}
+	TNO_SG_big_event_japan_cw_5 = { 
+		context_type = player_context
+		window_name = "TNO_SG_big_event_japan_cw_5"
+
+		visible = {
+			has_country_flag = Japanese_civil_war_sp
+			NOT = {
+				has_country_flag = TLE_CANT_SEE_SP_EVENT
+			}
+		}
+	}
+	TNO_SG_big_event_japan_cw_6 = { 
+		context_type = player_context
+		window_name = "TNO_SG_big_event_japan_cw_6"
 
 		visible = {
 			has_country_flag = Japanese_civil_war_sp
@@ -204,6 +270,9 @@ scripted_gui = {
 		}
 
 		effects = {
+			hidden_effect = {
+				play_song = "tno_se_japan_cw"
+			}
 			Option_click = {
 				clr_country_flag = Japanese_civil_war_sp
 			}

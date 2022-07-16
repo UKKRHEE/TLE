@@ -391,11 +391,11 @@ guiTypes = {
 		}
 	}
 
-	#일본 내전
+	#일본 내전#
 	containerWindowType = {
-		name = "TNO_SG_big_event_japan_cw"
+		name = "TNO_SG_big_event_japan_cw_0"
 		size = { width = 580 height = 128 }
-		position = { x=0 y=-210 }
+		position = { x=0 y=-190 }
 		Orientation = center
 		Origo = center
 		clipping = no
@@ -407,7 +407,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "Title"
-			position = { x = 0 y = 18 }
+			position = { x = 0 y = 20 }
 			font = "aldrich_24_outline"
 			borderSize = {x = 0 y = 0}
 			text = "TNO_SG_big_event_japan_cw_T"
@@ -416,19 +416,111 @@ guiTypes = {
 			format = centre
 		}
 
-		iconType = {
-			name ="image"
-			spriteType = "GFX_japan_cw"
-			position = { x= -286 y = -18 }
-			Orientation = center
-			alwaystransparent = yes
+		#iconType = {
+		#	name ="image"
+		#	spriteType = "GFX_japan_cw"
+		#	position = { x= -286 y = -18 }
+		#	Orientation = center
+		#	alwaystransparent = yes
+		#}
+
+	}
+	containerWindowType = {
+		name = "TNO_SG_big_event_japan_cw_1"
+		size = { width = 580 height = 128 }
+		position = { x=-12	y=-130 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="TLE_superevent_jap_1"
+            alwaystransparent = yes
 		}
 
 	}
+	containerWindowType = {
+		name = "TNO_SG_big_event_japan_cw_2"
+		size = { width = 580 height = 128 }
+		position = { x=88	y=-130 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="TLE_superevent_jap_2"
+            alwaystransparent = yes
+		}
+
+	}
+	containerWindowType = {
+		name = "TNO_SG_big_event_japan_cw_3"
+		size = { width = 580 height = 128 }
+		position = { x=188	y=-130 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="TLE_superevent_jap_3"
+            alwaystransparent = yes
+		}
+
+	}
+	containerWindowType = {
+		name = "TNO_SG_big_event_japan_cw_4"
+		size = { width = 580 height = 128 }
+		position = { x=288	y=-130 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="TLE_superevent_jap_4"
+            alwaystransparent = yes
+		}
+
+	}
+	containerWindowType = {
+		name = "TNO_SG_big_event_japan_cw_5"
+		size = { width = 580 height = 128 }
+		position = { x=388	y=-130 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="TLE_superevent_jap_5"
+            alwaystransparent = yes
+		}
+
+	}
+	containerWindowType = {
+		name = "TNO_SG_big_event_japan_cw_6"
+		size = { width = 580 height = 128 }
+		position = { x=488	y=-130 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="TLE_superevent_jap_6"
+            alwaystransparent = yes
+		}
+
+	}
+	
+	#################
 
 	containerWindowType = {
 		name = "TNO_SG_big_event_frame_japan_cw"
-		size = { width = 588 height = 465 }
+		size = { width = 610 height = 400 }
 		position = { x=0 y=0 }
 		Orientation = center
 		Origo = center
@@ -443,7 +535,7 @@ guiTypes = {
 			name = "Option"
 			text = "TNO_SG_big_event_japan_cw_A"
 			shortcut = "ESCAPE"
-			position = { x = -110 y = 183 }
+			position = { x = -110 y = 145 }
 			quadTextureSprite ="GFX_button_221x34"
 			buttonFont = "Bomb_24"
 			Orientation = center
@@ -452,14 +544,14 @@ guiTypes = {
 		iconType = {
 			name ="underlay"
 			spriteType = "GFX_superevent_text_underlay"
-			position = { x= 30 y = -200 }
+			position = { x= 50 y = -200 }
 			Orientation = lower_left
 			alwaystransparent = yes
 		}
 
 		instantTextBoxType = {
 			name = "text"
-			position = {  x= 120 y = -195 }
+			position = {  x= 140 y = -195 }
 			font = "Bomb_24"
 			text = "TNO_SG_big_event_japan_cw_D"
 			maxWidth = 455
@@ -626,6 +718,21 @@ guiTypes = {
 			format = right
 			Orientation = lower_left
 		}
+	}
+	
+	containerWindowType = {
+		name = "higuchi_gatcha_01"
+		position = { x=-290	y=-230 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_portrait_GER_adolf_hitler"
+            alwaystransparent = yes
+		}
+
 	}
 
 	##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##

@@ -90,3 +90,83 @@ spriteTypes = {
 		textureFile = "gfx/superevent_pictures/2nd_northattack.png"
 	}
 }
+spriteTypes = {
+	frameAnimatedSpriteType = {
+        name = "TLE_superevent_jap_1"
+        texturefile = "gfx/superevent_pictures/TLE_superevent_jap_1.dds"
+        noOfFrames = 112
+        loadType = "INGAME"
+        animation_rate_fps = 7
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+        alwaystransparent = yes
+    }
+	frameAnimatedSpriteType = {
+        name = "TLE_superevent_jap_2"
+        texturefile = "gfx/superevent_pictures/TLE_superevent_jap_2.dds"
+        noOfFrames = 112
+        loadType = "INGAME"
+        animation_rate_fps = 7
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+        alwaystransparent = yes
+    }
+	frameAnimatedSpriteType = {
+        name = "TLE_superevent_jap_3"
+        texturefile = "gfx/superevent_pictures/TLE_superevent_jap_3.dds"
+        noOfFrames = 112
+        loadType = "INGAME"
+        animation_rate_fps = 7
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+        alwaystransparent = yes
+    }
+	frameAnimatedSpriteType = {
+        name = "TLE_superevent_jap_4"
+        texturefile = "gfx/superevent_pictures/TLE_superevent_jap_4.dds"
+        noOfFrames = 112
+        loadType = "INGAME"
+        animation_rate_fps = 7
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+        alwaystransparent = yes
+    }
+	frameAnimatedSpriteType = {
+        name = "TLE_superevent_jap_5"
+        texturefile = "gfx/superevent_pictures/TLE_superevent_jap_5.dds"
+        noOfFrames = 112
+        loadType = "INGAME"
+        animation_rate_fps = 7
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+        alwaystransparent = yes
+    }
+	frameAnimatedSpriteType = {
+        name = "TLE_superevent_jap_6"
+        texturefile = "gfx/superevent_pictures/TLE_superevent_jap_6.dds"
+        noOfFrames = 112
+        loadType = "INGAME"
+        animation_rate_fps = 7
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+        alwaystransparent = yes
+    }
+	frameAnimatedSpriteType = {
+        name = "GFX_higuchi_gatcha_01"
+        texturefile = "gfx/superevent_pictures/TLE_superevent_jap_0.png"
+        noOfFrames = 112
+        #loadType = "INGAME"
+        animation_rate_fps = 12
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+        alwaystransparent = yes
+        #effectFile = "gfx/FX/buttonstate_blendframes.lua"
+    }
+}	
