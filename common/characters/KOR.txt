@@ -1436,6 +1436,14 @@ characters={
 		    allowed = {
 		    	original_tag = KOR
 		    }
+			on_add = {
+				
+			}
+			on_remove = {
+				hidden_effect = {
+					add_political_power = 200
+				}
+			}
 			
 			available = {
 			}

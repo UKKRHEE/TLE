@@ -607,7 +607,7 @@ ideas = {
 				army_org_Factor = 0.2
 				army_morale_factor = 0.4
 				planning_speed = 0.3
-				army_attack_factor = 0.1
+				army_attack_factor = 0.15
 			}
 			targeted_modifier = {
                 tag = ZLC
@@ -657,6 +657,7 @@ ideas = {
 				custom_modifier_tooltip = IDEA_WILL_REMOVE_IN_DECISION
 				army_org_Factor = -0.65
 				army_morale_factor = -0.65
+				supply_consumption_factor = 0.3
 			}
 			targeted_modifier = {
                 tag = ZLC
@@ -707,6 +708,7 @@ ideas = {
 				army_morale_factor = -0.45
 				army_org_regain = -0.15
 				war_support_factor = 0.4
+				supply_consumption_factor = 0.15
 			}
 			targeted_modifier = {
                 tag = ZLC

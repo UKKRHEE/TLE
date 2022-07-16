@@ -1536,7 +1536,7 @@ country_event = { #청도사건 - 중민
 		name = korea.42.a
 	}
 }
-country_event = { #청도사건 - 중민
+country_event = { #
 	id = korea.43
 	title = korea.43.title
 	desc = korea.43.desc
@@ -3993,6 +3993,19 @@ country_event = {
 	
 	option = { #승리다!
 		name = korea.111.a
+	}
+}
+country_event = { 
+	id = korea.112 #거절
+	title = korea.112.title
+	desc = korea.112.desc
+	picture = GFX_TLE_korea_event_none
+	
+	is_triggered_only = yes
+	
+	option = { #아.
+		name = korea.112.a
+		add_ideas = KOR_embargo_us
 	}
 }
 ##########

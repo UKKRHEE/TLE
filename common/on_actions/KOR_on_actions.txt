@@ -766,18 +766,39 @@ on_actions = {
 					ROOT = {
 						original_tag = KOR
 					}
-					KOR = {
-						is_ai = yes
+				}
+				if = {
+					limit = {
+						KOR = {
+							is_ai = yes
+						}
+						JAP = {
+							is_ai = no
+						}
 					}
-					JAP = {
-						is_ai = no
+					KOR = {
+						load_oob = "KOR_ai_Japan"
+						add_timed_idea = {
+							idea = KOR_war_japan_ai
+							days = 240
+						}
 					}
 				}
-				KOR = {
-					load_oob = "KOR_ai_Japan"
-					add_timed_idea = {
-						idea = KOR_war_japan_ai
-						days = 240
+				if = {
+					limit = {
+						KOR = {
+							is_ai = no
+						}
+						JAP = {
+							is_ai = yes
+						}
+					}
+					JAP = {
+						load_oob = "JAP_ai_units"
+						add_timed_idea = {
+							idea = JAP_war_japan_ai
+							days = 240
+						}
 					}
 				}
 			}
@@ -3232,7 +3253,7 @@ on_actions = {
 						set_country_flag = FLAG_PURGE_KOREAN_WAR_SUPPORT
 						country_event = {
 							days = 7
-							id = 
+							id = korea.112
 						}
 					}
 				}
@@ -3855,21 +3876,18 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					original_tag = ZLC
-					original_tag = WZC
-					original_tag = SHX
-					original_tag = XSM
-					original_tag = SND
-					original_tag = CHI
-					original_tag = HNC
-					original_tag = YUN
-					original_tag = SZC
-					original_tag = GXC
-					original_tag = SIK
+					ZLC = {
 						NOT = {
 							has_war_with = KOR
 						}
+					}	
+					CHI = {
+						NOT = {
+							has_war_with = KOR
+						}
+					}	
 						KOR = {
+							has_completed_focus = kor_tsushima
 							has_idea = KOR_embargo_us
 						}
 				}	
