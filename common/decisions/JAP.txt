@@ -2278,6 +2278,7 @@ JAP_the_army = {
 				has_idea = JAP_anti_yushin_level_none
 				has_idea = JAP_anti_yushin_level_1
 				has_idea = JAP_anti_yushin_level_2
+				has_country_flag = FLAG_CLOSED_BUNCHI_COUNTRY
 			}
 		}
 
