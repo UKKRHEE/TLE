@@ -37,6 +37,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GHQ/GHQ_afterwar_7.png"     
 	}  
 	SpriteType = {        
+		name = "GFX_focus_GHQ_afterwar_5"
+		texturefile = "gfx/interface/goals/GHQ/GHQ_afterwar_5.png"     
+	}  
+	SpriteType = {        
 		name = "GFX_focus_GHQ_afterwar_4"
 		texturefile = "gfx/interface/goals/GHQ/GHQ_afterwar_4.png"     
 	}  
