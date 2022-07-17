@@ -1,6 +1,22 @@
 spriteTypes = {
 
 	SpriteType = {
+		name = "GFX_focus_GHQ_afterwar_15"
+		texturefile = "gfx/interface/goals/GHQ/GHQ_afterwar_15.png"     
+	}  
+	SpriteType = {
+		name = "GFX_focus_GHQ_afterwar_14"
+		texturefile = "gfx/interface/goals/GHQ/GHQ_afterwar_14.png"     
+	}  
+	SpriteType = {
+		name = "GFX_focus_GHQ_afterwar_13"
+		texturefile = "gfx/interface/goals/GHQ/GHQ_afterwar_13.png"     
+	}  
+	SpriteType = {
+		name = "GFX_focus_GHQ_afterwar_12"
+		texturefile = "gfx/interface/goals/GHQ/GHQ_afterwar_12.png"     
+	}  
+	SpriteType = {
 		name = "GFX_focus_GHQ_afterwar_11"
 		texturefile = "gfx/interface/goals/GHQ/GHQ_afterwar_11.png"     
 	}  
@@ -19,6 +35,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_GHQ_afterwar_7"
 		texturefile = "gfx/interface/goals/GHQ/GHQ_afterwar_7.png"     
+	}  
+	SpriteType = {        
+		name = "GFX_focus_GHQ_afterwar_4"
+		texturefile = "gfx/interface/goals/GHQ/GHQ_afterwar_4.png"     
 	}  
 	SpriteType = {        
 		name = "GFX_focus_GHQ_afterwar_3"

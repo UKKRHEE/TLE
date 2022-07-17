@@ -30,7 +30,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GHQ_newfocus_16
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GHQ_afterwar_13
 		cost = 10.00
 		prerequisite = {
 			focus = GHQ_newfocus_13
@@ -41,7 +41,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GHQ_newfocus_17
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GHQ_afterwar_12
 		cost = 10.00
 		prerequisite = {
 			focus = GHQ_newfocus_16
@@ -52,7 +52,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GHQ_newfocus_2
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GHQ_afterwar_15
 		cost = 10.00
 		prerequisite = {
 			focus = GHQ_newfocus_13
@@ -63,7 +63,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GHQ_newfocus_4
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GHQ_afterwar_14
 		cost = 10.00
 		prerequisite = {
 			focus = GHQ_newfocus_2
@@ -74,7 +74,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GHQ_newfocus_18
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GHQ_afterwar_4
 		cost = 10.00
 		prerequisite = {
 			focus = GHQ_newfocus_17
