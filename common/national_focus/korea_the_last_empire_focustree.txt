@@ -4,13 +4,14 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = tle
+			tag = RYU
 		}
 	}
+	continuous_focus_position = { x = 500 y = 1300 }
 	default = no
 	focus = {
 		id = GHQ_focus_1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GHQ_afterwar_1
 		cost = 10.00
 		x = 8
 		y = 0
@@ -18,7 +19,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GHQ_newfocus_13
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GHQ_afterwar_2
 		cost = 10.00
 		prerequisite = {
 			focus = GHQ_focus_1
@@ -87,7 +88,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GHQ_newfocus_14
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GHQ_afterwar_3
 		cost = 10.00
 		prerequisite = {
 			focus = GHQ_focus_1
@@ -98,7 +99,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GHQ_newfocus_1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GHQ_afterwar_7
 		cost = 10.00
 		prerequisite = {
 			focus = GHQ_newfocus_14
@@ -109,7 +110,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GHQ_newfocus_3
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GHQ_afterwar_9
 		cost = 10.00
 		prerequisite = {
 			focus = GHQ_newfocus_1
@@ -120,7 +121,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GHQ_newfocus_5
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GHQ_afterwar_10
 		cost = 10.00
 		prerequisite = {
 			focus = GHQ_newfocus_20
@@ -228,7 +229,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GHQ_newfocus_19
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GHQ_afterwar_11
 		cost = 10.00
 		prerequisite = {
 			focus = GHQ_newfocus_3
@@ -242,7 +243,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GHQ_newfocus_20
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GHQ_afterwar_8
 		cost = 10.00
 		prerequisite = {
 			focus = GHQ_newfocus_14

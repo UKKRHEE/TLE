@@ -1,5 +1,37 @@
 spriteTypes = {
 
+	SpriteType = {
+		name = "GFX_focus_GHQ_afterwar_11"
+		texturefile = "gfx/interface/goals/GHQ/GHQ_afterwar_11.png"     
+	}  
+	SpriteType = {
+		name = "GFX_focus_GHQ_afterwar_10"
+		texturefile = "gfx/interface/goals/GHQ/GHQ_afterwar_10.png"     
+	}  
+	SpriteType = {
+		name = "GFX_focus_GHQ_afterwar_9"
+		texturefile = "gfx/interface/goals/GHQ/GHQ_afterwar_9.png"     
+	}  
+	SpriteType = {
+		name = "GFX_focus_GHQ_afterwar_8"
+		texturefile = "gfx/interface/goals/GHQ/GHQ_afterwar_8.png"     
+	}  
+	SpriteType = {
+		name = "GFX_focus_GHQ_afterwar_7"
+		texturefile = "gfx/interface/goals/GHQ/GHQ_afterwar_7.png"     
+	}  
+	SpriteType = {        
+		name = "GFX_focus_GHQ_afterwar_3"
+		texturefile = "gfx/interface/goals/GHQ/GHQ_afterwar_3.png"     
+	}  
+	SpriteType = {        
+		name = "GFX_focus_GHQ_afterwar_2"
+		texturefile = "gfx/interface/goals/GHQ/GHQ_afterwar_2.png"     
+	}  
+	SpriteType = {        
+		name = "GFX_focus_GHQ_afterwar_1"
+		texturefile = "gfx/interface/goals/GHQ/GHQ_afterwar_1.png"     
+	}  
 	SpriteType = {        
 		name = "GFX_focus_mkr_victory_in_the_civil_war"
 		texturefile = "gfx/interface/goals/mkr_victory_in_the_civil_war.png"     
