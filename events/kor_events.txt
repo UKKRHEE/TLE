@@ -1547,7 +1547,10 @@ country_event = { #
 	
 	option = { #
 		name = korea.43.a
-		add_ideas = KOR_embargo_us_2
+		add_timed_idea = {
+                    idea = KOR_embargo_us_2
+                    days = 720
+                }
 		remove_ideas = KOR_embargo_us
 	}
 }
