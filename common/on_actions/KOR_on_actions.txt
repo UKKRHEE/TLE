@@ -583,6 +583,12 @@ on_actions = {
 						tag = FRA
 					}
 					has_government = fascism
+					has_war_with = FRA
+				}
+				FRA = {
+					annex_country = {
+						targer = ROOT
+					}
 				}
 			}
 		}
