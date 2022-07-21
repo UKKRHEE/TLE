@@ -1,5 +1,9 @@
 ﻿l_english:
 
+ KOR_GHQ:0 "연합군 최고 사령부"
+ KOR_GHQ_DEF:0 "연합군 최고 사령부"
+ KOR_GHQ_ADJ:0 "한국"
+
  KJE:0 "대한-일본 이중제국"
  KJE_DEF:0 "대한-일본 이중제국"
  KJE_ADJ:0 "이중제국"

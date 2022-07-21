@@ -4157,6 +4157,8 @@ country_event = { #결론
 	 
 	option = { #
 		name = korea.782.a
+		hidden_effect = {
+		}
 	}
 }
 country_event = { #결론

@@ -1001,3 +1001,755 @@ USA_add_factories_TLE = {
 		}
 	}
 }
+KOR_hangbok_event = {
+	every_country = {
+		limit = {
+			is_ai = no
+		}
+		set_country_flag = fall_of_korea
+		country_event = {
+			id = korea.782
+		}
+	}
+	KOR = {
+		#set_country_flag = fall_of_korea
+		set_country_flag = TLE_THE_WAR_IS_ENDED
+		add_ideas = KOR_not_go_outside
+		every_other_country = {
+			limit = {
+				has_war_with = KOR
+			}	
+			white_peace = KOR
+		}
+		complete_national_focus = KOR_the_last_empire_ending
+		retire_character = KOR_an_jung_geun 
+		retire_character = KOR_yi_wu 
+		retire_character = KOR_yi_geon 
+		retire_character = KOR_kim_sung_ju 
+		retire_character = KOR_yu_dong_yeol 
+		retire_character = KOR_mae_ji_rang 
+		retire_character = KOR_choe_yong_geon 
+		retire_character = KOR_kim_du_han 
+		retire_character = KOR_yi_won 
+		retire_character = KOR_yi_kang 
+		retire_character = KOR_lee_beom_seok 
+		retire_character = KOR_kim_chwa_chin 
+		add_country_leader_role = {
+			Character = KOR_emperor_yi_jin
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = despotism
+				desc="KOR_yi_jin_desc"
+				traits = {
+					korea_emperor
+				}
+			}
+			promote_leader = yes
+		}	
+		add_country_leader_role = {
+			Character = KOR_syngman_rhee
+			Promote_leader = yes
+			Country_leader = {
+				ideology = conservatism
+				expire = "1965.1.1"
+				desc = "SYNGMAN_RHEE_DESC"
+				traits = {
+					syngman_rhee_trait
+				}
+			}
+		}
+		add_country_leader_role = {
+			Character = KOR_emperor_yi_jin
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = rexism
+				desc="KOR_yi_jin_2_desc"
+				traits = {
+					korea_emperor
+				}
+			}
+			promote_leader = yes
+		}	
+		remove_ideas = KOR_militarism
+		remove_ideas = KOR_Weakening_the_kingship
+		remove_ideas = KOR_political_officer
+		remove_ideas = KOR_not_go_outside
+		remove_ideas = KOR_not_go_outside_2
+		remove_ideas = KOR_yi_jin
+		add_ideas = KOR_yi_jin_2
+		remove_ideas = spiritual_mobilization_idea
+		add_ideas = KOR_law_the_5th
+		delete_unit_template_and_units = {
+			division_template = "보병 사단"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "전차 사단"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "후방 사단"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "기병 사단"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "해병대"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "시위대"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "보병 편제 1"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "보병 편제 2"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "보병 편제 3"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "보병 편제 4"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "보병 편제 5"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "보병 편제 6"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "보병 편제 7"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "보병 편제 8"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "보병 편제 9"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "보병 편제 10"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "민병대"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "수도방위군"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "상하이 진공군"
+			disband = yes #will refund equipment and manpower
+		}
+		load_oob = "KOR_jingcha"
+		set_cosmetic_tag = KOR_GHQ
+	}
+    if = {
+		limit = {
+			KOR = {
+				owns_state = 671
+				owns_state = 286
+				owns_state = 741
+				owns_state = 670
+			}
+		}
+		FRA = {
+			transfer_state = 286
+			transfer_state = 741
+			transfer_state = 670
+			transfer_state = 671
+		}
+	}
+	set_country_flag = TLE_THE_WAR_IS_ENDED
+	if = { #영국이 서울 입성했을 때
+		limit = { #평양에 소련군 없어야 함
+			tag = ENG
+			SOV = {
+				NOT = {
+					has_country_flag = TLE_THE_RULING_PYONGYANG
+				}	
+			}
+		}
+		ENG = {
+			country_event = {
+				id = korea.44
+			}
+		}
+	}
+	if = { #미국이 서울 입성했을 때
+		limit = { #평양에 소련군이 있을 시
+			tag = ENG
+			SOV = {
+				has_country_flag = TLE_THE_RULING_PYONGYANG
+			}
+		}
+		ENG = {
+			country_event = {
+				id = korea.45
+			}
+		}
+	}
+	if = { #미국이 서울 입성했을 때
+		limit = { #평양에 소련군 없어야 함
+			tag = USA
+			SOV = {
+				NOT = {
+					has_country_flag = TLE_THE_RULING_PYONGYANG
+				}	
+			}
+		}
+		USA = {
+			country_event = {
+				id = korea.44
+			}
+		}
+		KOR = {
+			set_cosmetic_tag = KOR_GHQ
+		}
+	}
+	if = { #미국이 서울 입성했을 때
+		limit = { #평양에 소련군이 있을 시
+			tag = USA
+			SOV = {
+				has_country_flag = TLE_THE_RULING_PYONGYANG
+			}
+		}
+		USA = {
+			country_event = {
+				id = korea.45
+			}
+		}
+		KOR = {
+			set_cosmetic_tag = KOR_GHQ
+		}
+	}
+	if = { #일본이 서울 점령
+		limit = {
+			tag = JAP
+		}
+		JAP = {
+			country_event = {
+				id = korea.48
+			}
+		}
+	}
+	if = { #중국이 서울 점령
+		limit = {
+			is_chinese_clique = yes
+		}
+		country_event = {
+			id = korea.56
+		}
+		transfer_state = 609
+	}
+	if = { #소련이 서울 점령
+		limit = {
+			tag = SOV
+			USA = {
+				NOT = {
+					has_country_flag = TLE_THE_RULING_KOREAN_STATE
+				}
+			}	
+		}
+		SOV = {
+			country_event = {
+				id = korea.46
+			}
+		}
+	}
+	if = { #소련이 서울 점령, 근데 미군을 곁들인
+		limit = {
+			tag = SOV
+			USA = {
+				has_country_flag = TLE_THE_RULING_KOREAN_STATE
+			}	
+		}
+		SOV = {
+			country_event = {
+				id = korea.47
+			}
+		}
+	}
+	if = { #소련이 극동공화국과 전쟁할 때
+		limit = {
+			SOV = {
+				has_war_with = KOR
+			}
+		}
+		SOV = {
+			transfer_state = 637
+			transfer_state = 644
+			transfer_state = 562
+			transfer_state = 574
+			transfer_state = 565
+			transfer_state = 564
+			transfer_state = 563
+			transfer_state = 561
+			transfer_state = 657
+			transfer_state = 560
+			transfer_state = 555
+			transfer_state = 537
+			transfer_state = 655
+			transfer_state = 848
+			transfer_state = 849
+			transfer_state = 409
+			transfer_state = 408
+			
+			add_state_core = 637
+			add_state_core = 644
+			add_state_core = 562
+			add_state_core = 574
+			add_state_core = 565
+			add_state_core = 564
+			add_state_core = 563
+			add_state_core = 561
+			add_state_core = 657
+			add_state_core = 560
+			add_state_core = 555
+			add_state_core = 537
+			add_state_core = 655
+			add_state_core = 848
+			add_state_core = 849
+			add_state_core = 409
+			add_state_core = 408
+		}
+	}
+	every_other_country = {
+		limit = {
+			owns_state = 608
+		}
+		transfer_state = 743
+		transfer_state = 611
+		transfer_state = 621
+		transfer_state = 612
+		annex_country = {
+			target = MEN
+		}
+	}
+    every_country = {
+    	limit = {
+    		is_chinese_clique = yes
+    	}
+    	leave_faction = yes
+    }
+    every_other_country = {
+    	limit = {
+    		OR = {
+    			TAG = CHI
+    			TAG = WZC
+    			TAG = ZLC
+    			TAG = YUN
+    			TAG = GXC
+    			TAG = PRC
+    			TAG = XSM
+    			TAG = AHC
+    			TAG = HNC
+    			TAG = SND
+    			TAG = SZC
+    			TAG = SIK
+    		}
+    		owns_state = 613
+    	}
+    	transfer_state = 524
+    	transfer_state = 857
+    }
+    MON = {
+    	transfer_state = 330
+    	transfer_state = 818
+    	transfer_state = 817
+    	transfer_state = 819
+    	transfer_state = 820
+    	set_cosmetic_tag = MON
+    }
+    SOV = {
+    	puppet = MON
+    	add_state_core = 849
+    	add_state_core = 848
+    	add_state_core = 409
+    	add_state_core = 408
+    	transfer_state = 329
+    	transfer_state = 655
+    	transfer_state = 537
+    	transfer_state = 555
+    	transfer_state = 561
+    	transfer_state = 560
+    	transfer_state = 657
+    	transfer_state = 409
+    	transfer_state = 408
+    	transfer_state = 848
+    	transfer_state = 849
+    }
+    every_country = {
+    	limit = {
+    		is_japan_clique = yes
+    		owns_state = 282
+    	}
+    	transfer_state = 886
+    	transfer_state = 887
+    	transfer_state = 888
+    	transfer_state = 528
+    	transfer_state = 850
+    	transfer_state = 885
+    	transfer_state = 536
+    	transfer_state = 645
+    	add_state_core = 536
+    	add_state_core = 850
+    	add_state_core = 645
+    }
+    every_country = {
+    	limit = {
+    		owns_state = 613
+    	}
+    	transfer_state = 524
+    	transfer_state = 857
+    }
+    USA = {
+    	transfer_state = 526
+    	transfer_state = 648
+    	transfer_state = 633
+    	transfer_state = 684
+    	transfer_state = 647
+    	transfer_state = 646
+    }
+    KMN = {
+    	set_cosmetic_tag = KMN_REP
+    }
+}
+KOR_hangbok_event_2 = {
+	every_country = {
+		limit = {
+			is_ai = no
+		}
+		set_country_flag = fall_of_korea
+		country_event = {
+			id = korea.782
+		}
+	}
+	KOR = {
+		#set_country_flag = fall_of_korea
+		set_country_flag = TLE_THE_WAR_IS_ENDED
+		add_ideas = KOR_not_go_outside
+		every_other_country = {
+			limit = {
+				has_war_with = KOR
+			}	
+			white_peace = KOR
+		}
+		complete_national_focus = KOR_the_last_empire_ending
+		retire_character = KOR_an_jung_geun 
+		retire_character = KOR_yi_wu 
+		retire_character = KOR_yi_geon 
+		retire_character = KOR_kim_sung_ju 
+		retire_character = KOR_yu_dong_yeol 
+		retire_character = KOR_mae_ji_rang 
+		retire_character = KOR_choe_yong_geon 
+		retire_character = KOR_kim_du_han 
+		retire_character = KOR_yi_won 
+		retire_character = KOR_yi_kang 
+		retire_character = KOR_lee_beom_seok 
+		retire_character = KOR_kim_chwa_chin 
+		add_country_leader_role = {
+			Character = KOR_emperor_yi_jin
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = despotism
+				desc="KOR_yi_jin_desc"
+				traits = {
+					korea_emperor
+				}
+			}
+			promote_leader = yes
+		}	
+		add_country_leader_role = {
+			Character = KOR_syngman_rhee
+			Promote_leader = yes
+			Country_leader = {
+				ideology = conservatism
+				expire = "1965.1.1"
+				desc = "SYNGMAN_RHEE_DESC"
+				traits = {
+					syngman_rhee_trait
+				}
+			}
+		}
+		add_country_leader_role = {
+			Character = KOR_emperor_yi_jin
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = rexism
+				desc="KOR_yi_jin_2_desc"
+				traits = {
+					korea_emperor
+				}
+			}
+			promote_leader = yes
+		}	
+		remove_ideas = KOR_militarism
+		remove_ideas = KOR_Weakening_the_kingship
+		remove_ideas = KOR_political_officer
+		remove_ideas = KOR_not_go_outside
+		remove_ideas = KOR_not_go_outside_2
+		remove_ideas = KOR_yi_jin
+		add_ideas = KOR_yi_jin_2
+		remove_ideas = spiritual_mobilization_idea
+		add_ideas = KOR_law_the_5th
+		delete_unit_template_and_units = {
+			division_template = "보병 사단"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "전차 사단"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "후방 사단"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "기병 사단"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "해병대"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "시위대"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "보병 편제 1"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "보병 편제 2"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "보병 편제 3"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "보병 편제 4"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "보병 편제 5"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "보병 편제 6"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "보병 편제 7"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "보병 편제 8"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "보병 편제 9"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "보병 편제 10"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "민병대"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "수도방위군"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "상하이 진공군"
+			disband = yes #will refund equipment and manpower
+		}
+		load_oob = "KOR_jingcha"
+		set_cosmetic_tag = KOR_GHQ
+	}
+    if = {
+		limit = {
+			KOR = {
+				owns_state = 671
+				owns_state = 286
+				owns_state = 741
+				owns_state = 670
+			}
+		}
+		FRA = {
+			transfer_state = 286
+			transfer_state = 741
+			transfer_state = 670
+			transfer_state = 671
+		}
+	}
+	set_country_flag = TLE_THE_WAR_IS_ENDED
+	USA = {
+		country_event = {
+			id = korea.44
+		}
+	}
+	if = { #소련이 극동공화국과 전쟁할 때
+		limit = {
+			SOV = {
+				has_war_with = KOR
+			}
+		}
+		SOV = {
+			transfer_state = 637
+			transfer_state = 644
+			transfer_state = 562
+			transfer_state = 574
+			transfer_state = 565
+			transfer_state = 564
+			transfer_state = 563
+			transfer_state = 561
+			transfer_state = 657
+			transfer_state = 560
+			transfer_state = 555
+			transfer_state = 537
+			transfer_state = 655
+			transfer_state = 848
+			transfer_state = 849
+			transfer_state = 409
+			transfer_state = 408
+			
+			add_state_core = 637
+			add_state_core = 644
+			add_state_core = 562
+			add_state_core = 574
+			add_state_core = 565
+			add_state_core = 564
+			add_state_core = 563
+			add_state_core = 561
+			add_state_core = 657
+			add_state_core = 560
+			add_state_core = 555
+			add_state_core = 537
+			add_state_core = 655
+			add_state_core = 848
+			add_state_core = 849
+			add_state_core = 409
+			add_state_core = 408
+		}
+	}
+	every_other_country = {
+		limit = {
+			owns_state = 608
+		}
+		transfer_state = 743
+		transfer_state = 611
+		transfer_state = 621
+		transfer_state = 612
+		annex_country = {
+			target = MEN
+		}
+	}
+    every_country = {
+    	limit = {
+    		is_chinese_clique = yes
+    	}
+    	leave_faction = yes
+    }
+    every_other_country = {
+    	limit = {
+    		OR = {
+    			TAG = CHI
+    			TAG = WZC
+    			TAG = ZLC
+    			TAG = YUN
+    			TAG = GXC
+    			TAG = PRC
+    			TAG = XSM
+    			TAG = AHC
+    			TAG = HNC
+    			TAG = SND
+    			TAG = SZC
+    			TAG = SIK
+    		}
+    		owns_state = 613
+    	}
+    	transfer_state = 524
+    	transfer_state = 857
+    }
+    MON = {
+    	transfer_state = 330
+    	transfer_state = 818
+    	transfer_state = 817
+    	transfer_state = 819
+    	transfer_state = 820
+    	set_cosmetic_tag = MON
+    }
+    SOV = {
+    	puppet = MON
+    	add_state_core = 849
+    	add_state_core = 848
+    	add_state_core = 409
+    	add_state_core = 408
+    	transfer_state = 329
+    	transfer_state = 655
+    	transfer_state = 537
+    	transfer_state = 555
+    	transfer_state = 561
+    	transfer_state = 560
+    	transfer_state = 657
+    	transfer_state = 409
+    	transfer_state = 408
+    	transfer_state = 848
+    	transfer_state = 849
+    }
+    every_country = {
+    	limit = {
+    		is_japan_clique = yes
+    		owns_state = 282
+    	}
+    	transfer_state = 886
+    	transfer_state = 887
+    	transfer_state = 888
+    	transfer_state = 528
+    	transfer_state = 850
+    	transfer_state = 885
+    	transfer_state = 536
+    	transfer_state = 645
+    	add_state_core = 536
+    	add_state_core = 850
+    	add_state_core = 645
+    }
+    every_country = {
+    	limit = {
+    		owns_state = 613
+    	}
+    	transfer_state = 524
+    	transfer_state = 857
+    }
+    USA = {
+    	transfer_state = 526
+    	transfer_state = 648
+    	transfer_state = 633
+    	transfer_state = 684
+    	transfer_state = 647
+    	transfer_state = 646
+    }
+    KMN = {
+    	set_cosmetic_tag = KMN_REP
+    }
+}
