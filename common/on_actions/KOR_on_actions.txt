@@ -576,6 +576,15 @@ on_actions = {
 					clear_global_event_targets = yes
 				}
 			}
+			if = {
+				limit = {
+					original_tag = FRA
+					NOT = {
+						tag = FRA
+					}
+					has_government = fascism
+				}
+			}
 		}
 	}
 	on_declare_war = {

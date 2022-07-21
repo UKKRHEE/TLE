@@ -31,7 +31,7 @@ add_ideas = {
 	KOR_the_country_of_korea
 }
 create_country_leader = {
-	name = "창산군 이해창"
+	name = "청풍군 이해승"
 	desc = ""
 	picture = "gfx/leaders/KOR/Portrait_KOR_yi_hae_chang.png"
 	expire = "1965.1.1"
@@ -41,7 +41,7 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-	name = "창산군 이해창"
+	name = "청풍군 이해승"
 	desc = ""
 	picture = "gfx/leaders/KOR/Portrait_KOR_yi_hae_chang.png"
 	expire = "1965.1.1"
