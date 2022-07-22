@@ -157,16 +157,4 @@ spriteTypes = {
         pause_on_loop = 0.0
         alwaystransparent = yes
     }
-	frameAnimatedSpriteType = {
-        name = "GFX_higuchi_gatcha_01"
-        texturefile = "gfx/superevent_pictures/TLE_superevent_jap_0.png"
-        noOfFrames = 112
-        #loadType = "INGAME"
-        animation_rate_fps = 12
-        looping = yes
-        play_on_show = yes
-        pause_on_loop = 0.0
-        alwaystransparent = yes
-        #effectFile = "gfx/FX/buttonstate_blendframes.lua"
-    }
 }	
