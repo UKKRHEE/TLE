@@ -2489,6 +2489,7 @@ on_actions = {
 							NOT = {
 								has_country_flag = FLAG_PURGE_KOREAN_WAR_SUPPORT
 								has_country_flag = FLAG_DEC_CLEAR_EMBARGO
+								has_country_flag = won_in_china
 							}
 						}
 					}
