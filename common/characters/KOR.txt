@@ -927,6 +927,28 @@ characters={
 			logistics_skill = 1
 		}
 	}
+	KOR_hwang_geunchul = {
+		name=KOR_hwang_geunchul
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_hwang_geunchul.png"
+			}
+		}
+		corps_commander={
+			visible = {
+				has_game_rule = {
+					rule = TLE_EUGENE_KIM_RULE
+					option = KIM_YES
+				}
+			}
+			traits = { commando trickster brilliant_strategist }
+			skill = 9
+			attack_skill = 10
+			defense_skill = 10
+			planning_skill = 10
+			logistics_skill = 10
+		}
+	}
 	KOR_kim_sung_ju = {
 		name=KOR_kim_sung_ju
 		portraits={
