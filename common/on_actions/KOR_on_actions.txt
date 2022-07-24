@@ -175,6 +175,25 @@ on_actions = {
 				}
 				
 				add_ideas = ZLC_Wu_Peifu
+				if = {
+					limit = {
+						ZLC = {
+							is_ai = yes
+						}
+					}
+				}
+				ZLC = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_0
+						amount = 21000
+						producer = ZLC
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 2000
+						producer = ENG
+					}
+				}
 			}
 		}
 	}
@@ -2411,7 +2430,10 @@ on_actions = {
 			if = {
 				limit = {
 					KOR = {
-						is_ai = yes
+						OR = {
+							is_ai = yes
+							is_ai = no
+						}	
 					}
 					ZLC = {
 						is_ai = yes
@@ -2422,8 +2444,6 @@ on_actions = {
 					KOR = {
 						controls_state = 608
 						controls_state = 613
-						controls_state = 857
-						controls_state = 878
 						controls_state = 869
 					}
 				}	
