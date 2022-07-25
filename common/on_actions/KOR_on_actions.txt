@@ -173,7 +173,6 @@ on_actions = {
 				limit = {
 					original_tag = ZLC
 				}
-				
 				add_ideas = ZLC_Wu_Peifu
 				if = {
 					limit = {
