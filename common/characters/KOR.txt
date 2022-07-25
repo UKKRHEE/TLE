@@ -1172,6 +1172,14 @@ characters={
 		    }
 			
 			available = {
+				if = {
+					limit = {
+						KOR = {
+							has_cosmetic_tag = KOR_GHQ
+						}
+					}
+					has_cosmetic_tag = KOR_STATE
+				}
 			}
 			
 		    traits = { propaganda_expert }
@@ -1208,7 +1216,15 @@ characters={
 		    	}
 		    }
 		    available = {
-					has_completed_focus = kor_reform_korea
+				has_completed_focus = kor_reform_korea
+				if = {
+					limit = {
+						KOR = {
+							has_cosmetic_tag = KOR_GHQ
+						}
+					}
+					has_cosmetic_tag = KOR_STATE
+				}
 			}	
 		
 			ai_will_do = {
@@ -1239,6 +1255,14 @@ characters={
 			visible = {
 		    	NOT = {
 					has_completed_focus = KOR_the_day_which_very_long
+				}
+				if = {
+					limit = {
+						KOR = {
+							has_cosmetic_tag = KOR_GHQ
+						}
+					}
+					has_cosmetic_tag = KOR_STATE
 				}
 			}
 		    traits = { staunch_monarchist }
@@ -1358,6 +1382,16 @@ characters={
 		    allowed = {
 		    	original_tag = KOR
 		    }
+			available = {
+				if = {
+					limit = {
+						KOR = {
+							has_cosmetic_tag = KOR_GHQ
+						}
+					}
+					has_cosmetic_tag = KOR_STATE
+				}
+			}
 			
 		    traits = { backroom_backstabber }
 
@@ -1433,6 +1467,16 @@ characters={
 		advisor={
 			slot = political_advisor
 			idea_token = yeounhyeong
+			available = {
+				if = {
+					limit = {
+						KOR = {
+							has_cosmetic_tag = KOR_GHQ
+						}
+					}
+					has_cosmetic_tag = KOR_STATE
+				}
+			}
 		    allowed = {
 		    	original_tag = KOR
 		    }
@@ -1458,6 +1502,14 @@ characters={
 		    }
 			
 			available = {
+				if = {
+					limit = {
+						KOR = {
+							has_cosmetic_tag = KOR_GHQ
+						}
+					}
+					has_cosmetic_tag = KOR_STATE
+				}
 			}
 			
 		    traits = { captain_of_industry }
@@ -1490,6 +1542,14 @@ characters={
 			}
 			
 			available = {
+				if = {
+					limit = {
+						KOR = {
+							has_cosmetic_tag = KOR_GHQ
+						}
+					}
+					has_cosmetic_tag = KOR_STATE
+				}
 			}
 			
 		    traits = { war_industrialist }
@@ -1514,6 +1574,14 @@ characters={
 		    }
 			
 			available = {
+				if = {
+					limit = {
+						KOR = {
+							has_cosmetic_tag = KOR_GHQ
+						}
+					}
+					has_cosmetic_tag = KOR_STATE
+				}
 			}
 		    
 		    traits = { compassionate_gentleman }
@@ -1536,6 +1604,16 @@ characters={
 		    allowed = {
 		    	original_tag = KOR
 		    }
+			available = {
+				if = {
+					limit = {
+						KOR = {
+							has_cosmetic_tag = KOR_GHQ
+						}
+					}
+					has_cosmetic_tag = KOR_STATE
+				}
+			}
 		
 		    traits = { fortification_engineer }
 			ai_will_do = {
@@ -1557,6 +1635,16 @@ characters={
 		    allowed = {
 		    	original_tag = KOR
 		    }
+			available = {
+				if = {
+					limit = {
+						KOR = {
+							has_cosmetic_tag = KOR_GHQ
+						}
+					}
+					has_cosmetic_tag = KOR_STATE
+				}
+			}
 		
 		    traits = { financial_expert }
 			ai_will_do = {
@@ -1576,6 +1664,14 @@ characters={
 			idea_token = sin_ik_hui
 			available = {
 				has_intelligence_agency = yes
+				if = {
+					limit = {
+						KOR = {
+							has_cosmetic_tag = KOR_GHQ
+						}
+					}
+					has_cosmetic_tag = KOR_STATE
+				}
 			}
 			
 			allowed = {
@@ -1601,6 +1697,14 @@ characters={
 			slot = political_advisor
 			idea_token = ahn_chang_ho
 			available = {
+				if = {
+					limit = {
+						KOR = {
+							has_cosmetic_tag = KOR_GHQ
+						}
+					}
+					has_cosmetic_tag = KOR_STATE
+				}
 			}
 			
 			allowed = {
@@ -1625,6 +1729,14 @@ characters={
 			slot = political_advisor
 			idea_token = chang_myon
 			available = {
+				if = {
+					limit = {
+						KOR = {
+							has_cosmetic_tag = KOR_GHQ
+						}
+					}
+					has_cosmetic_tag = KOR_STATE
+				}
 			}
 			
 			allowed = {
@@ -1653,6 +1765,14 @@ characters={
 			}
 			available = {
 				has_government = democratic
+				if = {
+					limit = {
+						KOR = {
+							has_cosmetic_tag = KOR_GHQ
+						}
+					}
+					has_cosmetic_tag = KOR_STATE
+				}
 			}
 			visible = {
 			}

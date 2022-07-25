@@ -1035,49 +1035,11 @@ KOR_hangbok_event = {
 		retire_character = KOR_yi_kang 
 		retire_character = KOR_lee_beom_seok 
 		retire_character = KOR_kim_chwa_chin 
-		add_country_leader_role = {
-			Character = KOR_emperor_yi_jin
-			country_leader = {
-				expire = "1965.1.1"
-				ideology = despotism
-				desc="KOR_yi_jin_desc"
-				traits = {
-					korea_emperor
-				}
-			}
-			promote_leader = yes
-		}	
-		add_country_leader_role = {
-			Character = KOR_syngman_rhee
-			Promote_leader = yes
-			Country_leader = {
-				ideology = conservatism
-				expire = "1965.1.1"
-				desc = "SYNGMAN_RHEE_DESC"
-				traits = {
-					syngman_rhee_trait
-				}
-			}
-		}
-		add_country_leader_role = {
-			Character = KOR_emperor_yi_jin
-			country_leader = {
-				expire = "1965.1.1"
-				ideology = rexism
-				desc="KOR_yi_jin_2_desc"
-				traits = {
-					korea_emperor
-				}
-			}
-			promote_leader = yes
-		}	
 		remove_ideas = KOR_militarism
 		remove_ideas = KOR_Weakening_the_kingship
 		remove_ideas = KOR_political_officer
 		remove_ideas = KOR_not_go_outside
 		remove_ideas = KOR_not_go_outside_2
-		remove_ideas = KOR_yi_jin
-		add_ideas = KOR_yi_jin_2
 		remove_ideas = spiritual_mobilization_idea
 		add_ideas = KOR_law_the_5th
 		delete_unit_template_and_units = {
@@ -1464,49 +1426,11 @@ KOR_hangbok_event_2 = {
 		retire_character = KOR_yi_kang 
 		retire_character = KOR_lee_beom_seok 
 		retire_character = KOR_kim_chwa_chin 
-		add_country_leader_role = {
-			Character = KOR_emperor_yi_jin
-			country_leader = {
-				expire = "1965.1.1"
-				ideology = despotism
-				desc="KOR_yi_jin_desc"
-				traits = {
-					korea_emperor
-				}
-			}
-			promote_leader = yes
-		}	
-		add_country_leader_role = {
-			Character = KOR_syngman_rhee
-			Promote_leader = yes
-			Country_leader = {
-				ideology = conservatism
-				expire = "1965.1.1"
-				desc = "SYNGMAN_RHEE_DESC"
-				traits = {
-					syngman_rhee_trait
-				}
-			}
-		}
-		add_country_leader_role = {
-			Character = KOR_emperor_yi_jin
-			country_leader = {
-				expire = "1965.1.1"
-				ideology = rexism
-				desc="KOR_yi_jin_2_desc"
-				traits = {
-					korea_emperor
-				}
-			}
-			promote_leader = yes
-		}	
 		remove_ideas = KOR_militarism
 		remove_ideas = KOR_Weakening_the_kingship
 		remove_ideas = KOR_political_officer
 		remove_ideas = KOR_not_go_outside
 		remove_ideas = KOR_not_go_outside_2
-		remove_ideas = KOR_yi_jin
-		add_ideas = KOR_yi_jin_2
 		remove_ideas = spiritual_mobilization_idea
 		add_ideas = KOR_law_the_5th
 		delete_unit_template_and_units = {

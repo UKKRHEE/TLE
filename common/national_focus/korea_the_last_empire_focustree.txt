@@ -10,7 +10,7 @@ focus_tree = {
 	continuous_focus_position = { x = 500 y = 1300 }
 	default = no
 	focus = {
-		id = GHQ_focus_1
+		id = GHQ_focus_1 #모든 것이 끝난 이후
 		icon = GFX_focus_GHQ_afterwar_1
 		cost = 2
 		x = 8
@@ -23,7 +23,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GHQ_newfocus_13
+		id = GHQ_newfocus_13 #그 땅에 서서
 		icon = GFX_focus_GHQ_afterwar_2
 		cost = 2
 		prerequisite = {
@@ -31,10 +31,15 @@ focus_tree = {
 		}
 		x = 6
 		y = 1
+		completion_reward = {
+			country_event = {
+				id = korea.201
+			}
+		}
 
 	}
 	focus = {
-		id = GHQ_newfocus_16
+		id = GHQ_newfocus_16 #보릿고개
 		icon = GFX_focus_GHQ_afterwar_13
 		cost = 2
 		prerequisite = {
@@ -42,10 +47,15 @@ focus_tree = {
 		}
 		x = 5
 		y = 2
+		completion_reward = {
+			country_event = {
+				id = korea.202
+			}
+		}
 
 	}
 	focus = {
-		id = GHQ_newfocus_17
+		id = GHQ_newfocus_17 #맨발의 아이
 		icon = GFX_focus_GHQ_afterwar_12
 		cost = 2
 		prerequisite = {
@@ -53,10 +63,15 @@ focus_tree = {
 		}
 		x = 5
 		y = 3
+		completion_reward = {
+			country_event = {
+				id = korea.203
+			}
+		}
 
 	}
 	focus = {
-		id = GHQ_newfocus_2
+		id = GHQ_newfocus_2 #지부상소
 		icon = GFX_focus_GHQ_afterwar_15
 		cost = 2
 		prerequisite = {
@@ -64,10 +79,15 @@ focus_tree = {
 		}
 		x = 7
 		y = 2
+		completion_reward = {
+			country_event = {
+				id = korea.204
+			}
+		}
 
 	}
 	focus = {
-		id = GHQ_newfocus_4
+		id = GHQ_newfocus_4 #웅크린 이들이 몸을 펴다
 		icon = GFX_focus_GHQ_afterwar_14
 		cost = 2
 		prerequisite = {
@@ -75,10 +95,15 @@ focus_tree = {
 		}
 		x = 7
 		y = 3
+		completion_reward = {
+			country_event = {
+				id = korea.205
+			}
+		}
 
 	}
 	focus = {
-		id = GHQ_newfocus_18
+		id = GHQ_newfocus_18 #희망
 		icon = GFX_focus_GHQ_afterwar_4
 		cost = 2
 		prerequisite = {
@@ -89,10 +114,15 @@ focus_tree = {
 		}
 		x = 6
 		y = 4
+		completion_reward = {
+			country_event = {
+				id = korea.206
+			}
+		}
 
 	}
 	focus = {
-		id = GHQ_newfocus_14
+		id = GHQ_newfocus_14 #낯선 곳에서 온 이방인
 		icon = GFX_focus_GHQ_afterwar_3
 		cost = 2
 		prerequisite = {
@@ -100,10 +130,15 @@ focus_tree = {
 		}
 		x = 10
 		y = 1
+		completion_reward = {
+			country_event = {
+				id = korea.207
+			}
+		}
 
 	}
 	focus = {
-		id = GHQ_newfocus_1
+		id = GHQ_newfocus_1 #금의환향
 		icon = GFX_focus_GHQ_afterwar_7
 		cost = 2
 		prerequisite = {
@@ -111,10 +146,15 @@ focus_tree = {
 		}
 		x = 9
 		y = 2
+		completion_reward = {
+			country_event = {
+				id = korea.208
+			}
+		}
 
 	}
 	focus = {
-		id = GHQ_newfocus_3
+		id = GHQ_newfocus_3 #광명천지
 		icon = GFX_focus_GHQ_afterwar_9
 		cost = 2
 		prerequisite = {
@@ -122,10 +162,17 @@ focus_tree = {
 		}
 		x = 9
 		y = 3
+		completion_reward = {
+			country_event = {
+				id = korea.209
+			}
+			hidden_effect = {
+			}
+		}
 
 	}
 	focus = {
-		id = GHQ_newfocus_5
+		id = GHQ_newfocus_5 #형제
 		icon = GFX_focus_GHQ_afterwar_10
 		cost = 2
 		prerequisite = {
@@ -133,10 +180,15 @@ focus_tree = {
 		}
 		x = 11
 		y = 3
+		completion_reward = {
+			country_event = {
+				id = korea.210
+			}
+		}
 
 	}
 	focus = {
-		id = GHQ_newfocus_6
+		id = GHQ_newfocus_6 #
 		icon = GFX_goal_unknown
 		cost = 2
 		prerequisite = {
@@ -150,7 +202,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GHQ_newfocus_7
+		id = GHQ_newfocus_7 #
 		icon = GFX_goal_unknown
 		cost = 2
 		prerequisite = {
@@ -228,7 +280,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GHQ_newfocus_15
+		id = GHQ_newfocus_15 #사필귀정
 		icon = GFX_focus_GHQ_afterwar_5
 		cost = 2
 		prerequisite = {
@@ -240,9 +292,47 @@ focus_tree = {
 		x = 8
 		y = 5
 		completion_reward = {
-			KOR = {
-				set_cosmetic_tag = KOR_STATE
+			country_event = {
+				id = korea.211
 			}
+			hidden_effect = {
+				add_country_leader_role = {
+					Character = KOR_emperor_yi_jin
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						desc="KOR_yi_jin_desc"
+						traits = {
+							korea_emperor
+						}
+					}
+					promote_leader = yes
+				}	
+				add_country_leader_role = {
+					Character = KOR_syngman_rhee
+					Promote_leader = yes
+					Country_leader = {
+						ideology = conservatism
+						expire = "1965.1.1"
+						desc = "SYNGMAN_RHEE_DESC"
+						traits = {
+							syngman_rhee_trait
+						}
+					}
+				}
+				add_country_leader_role = {
+					Character = KOR_emperor_yi_jin
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = rexism
+						desc="KOR_yi_jin_2_desc"
+						traits = {
+							korea_emperor
+						}
+					}
+					promote_leader = yes
+				}	
+			}	
 		}
 
 	}

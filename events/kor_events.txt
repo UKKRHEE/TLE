@@ -4013,15 +4013,155 @@ country_event = {
 }
 #####패전 후######
 country_event = { 
-	id = korea.200 #거절
+	id = korea.200 #이주선씨
 	title = korea.200.title
 	desc = korea.200.desc
 	picture = GFX_TLE_korea_event_none
 	
 	is_triggered_only = yes
 	
-	option = { #아.
+	option = { #
 		name = korea.200.a
+	}
+}
+country_event = { 
+	id = korea.201 #남아 있는 모든 이들
+	title = korea.201.title
+	desc = korea.201.desc
+	picture = GFX_TLE_korea_event_none
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.201.a
+	}
+}
+country_event = { 
+	id = korea.202 #한성대학 우장춘 박사
+	title = korea.202.title
+	desc = korea.202.desc
+	picture = GFX_TLE_korea_event_none
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.202.a
+	}
+}
+country_event = { 
+	id = korea.203 #윤기중
+	title = korea.203.title
+	desc = korea.203.desc
+	picture = GFX_TLE_korea_event_none
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.203.a
+	}
+}
+country_event = { 
+	id = korea.204 #지부상소
+	title = korea.204.title
+	desc = korea.204.desc
+	picture = GFX_TLE_korea_event_none
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.204.a
+	}
+}
+country_event = { 
+	id = korea.205 #조용한 남자
+	title = korea.205.title
+	desc = korea.205.desc
+	picture = GFX_TLE_korea_event_none
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.205.a
+	}
+}
+country_event = { 
+	id = korea.206 #새싹
+	title = korea.206.title
+	desc = korea.206.desc
+	picture = GFX_TLE_korea_event_none
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.206.a
+	}
+}
+country_event = { 
+	id = korea.207 #낯선 곳에서 온 이방인
+	title = korea.207.title
+	desc = korea.207.desc
+	picture = GFX_TLE_korea_event_none
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.207.a
+	}
+}
+country_event = { 
+	id = korea.208 #이승만 귀환
+	title = korea.208.title
+	desc = korea.208.desc
+	picture = GFX_TLE_korea_event_none
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.208.a
+		add_ideas = syngman_rhee
+	}
+}
+country_event = { 
+	id = korea.209 #강명황제 이진
+	title = korea.209.title
+	desc = korea.209.desc
+	picture = GFX_TLE_korea_event_none
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.209.a
+		swap_ideas = {
+			remove_idea = KOR_yi_jin
+			add_idea = KOR_yi_jin_2
+		}	
+	}
+}
+country_event = { 
+	id = korea.210 #이우, 이건
+	title = korea.210.title
+	desc = korea.210.desc
+	picture = GFX_TLE_korea_event_none
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.210.a
+	}
+}
+country_event = { 
+	id = korea.211 #새 시작
+	title = korea.211.title
+	desc = korea.211.desc
+	picture = GFX_TLE_korea_event_none
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = korea.211.a
+		KOR = {
+			set_cosmetic_tag = KOR_STATE
+		}
 	}
 }
 ##########
