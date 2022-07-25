@@ -99,35 +99,13 @@ DIPLOMACY_REVOKE_GUARANTEE_ENABLE_TRIGGER = {
 		}
 	}
 }
+
 DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 	if = {
 		limit = {
-			OR = {
-				has_game_rule = {
-					rule = allow_release_nations
-					option = BLOCKED
-				}
-				has_game_rule = {
-					rule = allow_release_nations
-					option = PEACE_ONLY
-				}
-				has_game_rule = {
-					rule = allow_release_nations
-					option = FREE
-				}
-			}	
-			original_tag = KOR
+			tag = KOR
 		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_KOR_CAN_NOT_RELEASE_NATION
-			OR = {
-				NOT = {
-					has_ideas = KOR_yi_jin
-					has_ideas = KOR_yi_jin_2
-				}
-				has_country_flag = TLE_THE_WAR_IS_ENDED
-			}
-		}
+		always = no
 	}
 	if = {
 		limit = {

@@ -1505,7 +1505,7 @@ JAP_the_plan_rework_japan = {
 		
 		fixed_random_seed = no
 
-		fire_only_once = yes
+		fire_only_once = no
         
 		
 		is_good = yes
@@ -1751,11 +1751,7 @@ JAP_closed_bunchi_county = {
 		available = {
 			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
 			has_completed_focus = JAP_expansionism
-			OR = {
-				has_idea = JAP_anti_yushin_level_none
-				has_idea = JAP_anti_yushin_level_1
-				has_idea = JAP_anti_yushin_level_2
-			}
+			JAP_clear_or_has_yushin = yes
 			has_political_power > 50
 			not = {
 				has_decision = JAP_dec_war_FJP
@@ -1811,11 +1807,7 @@ JAP_closed_bunchi_county = {
 		available = {
 			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
 			has_completed_focus = JAP_expansionism
-			OR = {
-				has_idea = JAP_anti_yushin_level_none
-				has_idea = JAP_anti_yushin_level_1
-				has_idea = JAP_anti_yushin_level_2
-			}
+			JAP_clear_or_has_yushin = yes
 			has_political_power > 50
 			not = {
 				has_decision = JAP_dec_war_FJP
@@ -1871,11 +1863,7 @@ JAP_closed_bunchi_county = {
 		available = {
 			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
 			has_completed_focus = JAP_expansionism
-			OR = {
-				has_idea = JAP_anti_yushin_level_none
-				has_idea = JAP_anti_yushin_level_1
-				has_idea = JAP_anti_yushin_level_2
-			}
+			JAP_clear_or_has_yushin = yes
 			has_political_power > 50
 			not = {
 				has_decision = JAP_dec_war_NBJ
@@ -1931,11 +1919,7 @@ JAP_closed_bunchi_county = {
 		available = {
 			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
 			has_completed_focus = JAP_expansionism
-			OR = {
-				has_idea = JAP_anti_yushin_level_none
-				has_idea = JAP_anti_yushin_level_1
-				has_idea = JAP_anti_yushin_level_2
-			}
+			JAP_clear_or_has_yushin = yes
 			has_political_power > 50
 			not = {
 				has_decision = JAP_dec_war_NBJ
@@ -1991,11 +1975,7 @@ JAP_closed_bunchi_county = {
 		available = {
 			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
 			has_completed_focus = JAP_expansionism
-			OR = {
-				has_idea = JAP_anti_yushin_level_none
-				has_idea = JAP_anti_yushin_level_1
-				has_idea = JAP_anti_yushin_level_2
-			}
+			JAP_clear_or_has_yushin = yes
 			has_political_power > 50
 			not = {
 				has_decision = JAP_dec_war_NBJ

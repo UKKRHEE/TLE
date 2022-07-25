@@ -35,4 +35,20 @@ defined_text = {
         }
         localization_key = LOC_HAS_LEVEL_4
     }
+    text = {
+        trigger = {
+            tag = JAP
+			NOT = {
+				OR = {
+					has_idea = JAP_anti_yushin_level_4
+					has_idea = JAP_anti_yushin_level_3
+					has_idea = JAP_anti_yushin_level_2
+					has_idea = JAP_anti_yushin_level_1
+					has_idea = JAP_anti_yushin_level_none
+				}
+			}
+			has_country_flag = FLAG_END_OF_NAISEN
+        }
+        localization_key = LOC_HAS_LEVEL_ZERO
+    }
 }

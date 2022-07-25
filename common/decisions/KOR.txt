@@ -1914,7 +1914,7 @@ KOR_nuke_surrend = {
 		}
 
 		modifier = {
-			forced_surrender_limit = -1.0
+			#forced_surrender_limit = -1.0
 		}
 
 		remove_effect = {
@@ -1925,7 +1925,9 @@ KOR_nuke_surrend = {
 			has_war = no
 		}
 		complete_effect = {
+			custom_effect_tooltip = TOOLTIP_WAR_BE_END_IN_KOREA
 			hidden_effect = {
+				KOR_hangbok_event_2 = yes
 				clr_global_flag = KOR_nuke_1
 				clr_global_flag = KOR_nuke_2
 			}

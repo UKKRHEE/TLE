@@ -2803,21 +2803,6 @@ on_actions = {
 			if = {
 				limit = {
 					KOR = {
-						NOT = {
-							OR = {
-								has_idea = KOR_yi_jin
-								has_idea = KOR_yi_jin_2
-							}
-						}
-					}
-				}
-				KOR = {
-					set_cosmetic_tag = KOR_REPUBLIC
-				}
-			}
-			if = {
-				limit = {
-					KOR = {
 						has_country_flag = TLE_THE_WAR_IS_ENDED
 					}
 					KYH = {

@@ -1,0 +1,11 @@
+JAP_clear_or_has_yushin = {
+	custom_trigger_tooltip = {
+		tooltip = TOOLTIP_JAP_CLER_TIP
+		OR = {
+			has_country_flag = FLAG_END_OF_NAISEN
+			has_idea = JAP_anti_yushin_level_none
+			has_idea = JAP_anti_yushin_level_1
+			has_idea = JAP_anti_yushin_level_2
+		}
+	}
+}
