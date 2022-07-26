@@ -30,15 +30,15 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_KOR_keumseong_af"
-		texturefile = "gfx/interface/ideas/companies/idea_KOR_keumseong_af.png"
+		texturefile = "gfx/interface/ideas/companies/idea_KOR_keumseong.png"
 	}
 	spriteType = {
 		name = "GFX_idea_KOR_keumseong_af2"
-		texturefile = "gfx/interface/ideas/companies/idea_KOR_keumseong_af.png"
+		texturefile = "gfx/interface/ideas/companies/idea_KOR_keumseong.png"
 	}
 	spriteType = {
 		name = "GFX_idea_KOR_keumseong_af3"
-		texturefile = "gfx/interface/ideas/companies/idea_KOR_keumseong_af.png"
+		texturefile = "gfx/interface/ideas/companies/idea_KOR_keumseong.png"
 	}
 	spriteType = {
 		name = "GFX_idea_KOR_samsung"
