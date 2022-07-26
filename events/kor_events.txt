@@ -1552,6 +1552,7 @@ country_event = { #
                     days = 720
                 }
 		remove_ideas = KOR_embargo_us
+		set_country_flag = FLAG_THE_RULING_CHINA
 	}
 }
 country_event = { #미국의 단독 점령

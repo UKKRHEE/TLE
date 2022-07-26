@@ -2509,6 +2509,7 @@ on_actions = {
 								has_country_flag = FLAG_PURGE_KOREAN_WAR_SUPPORT
 								has_country_flag = FLAG_DEC_CLEAR_EMBARGO
 								has_country_flag = won_in_china
+								has_country_flag = FLAG_THE_RULING_CHINA
 							}
 						}
 					}
@@ -3134,10 +3135,11 @@ on_actions = {
 							has_war_with = KOR
 						}
 					}	
-						KOR = {
-							has_completed_focus = kor_tsushima
-							has_idea = KOR_embargo_us
-						}
+					KOR = {
+						has_completed_focus = kor_tsushima
+						has_idea = KOR_embargo_us
+						has_war_with = USA
+					}
 				}	
 				KOR = {
 					country_event = {
