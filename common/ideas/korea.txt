@@ -2000,9 +2000,9 @@ ideas = {
 	
 	#설계사
 	tank_manufacturer = {
-		KOR_hyundai_tank = { #현대 로템
+		KOR_hwangseong = { #황성
 			
-		    picture = kor_hyundai
+		    picture = KOR_hwangseong
 
 		    allowed = {
 		    	original_tag = KOR
@@ -2015,9 +2015,9 @@ ideas = {
 		    traits = { fast_tank_manufacturer }
 	    }
 		
-		KOR_hyundai_tank2 = { #현대_로템
+		KOR_yeomin = { #여민
 			
-		    picture = kor_hyundai
+		    picture = KOR_yeomin
 
 		    allowed = {
 		    	original_tag = KOR
@@ -2030,9 +2030,9 @@ ideas = {
 		    traits = { medium_tank_manufacturer }
 	    }	
 		
-		KOR_hanwha_def = { #한화_디펜스
+		KOR_kyungil = { #한화_디펜스
 			
-		    picture = kor_hanwha
+		    picture = KOR_kyungil
 
 		    allowed = {
 				original_tag = KOR
@@ -2048,9 +2048,9 @@ ideas = {
 	
 	naval_manufacturer = {
 	
-		KOR_samsung_pacific = { #삼성_중공업
+		KOR_anheung_dockyard = { #안흥
 			
-		    picture = kor_samsung
+		    picture = KOR_anheung
 		
 		    allowed = {
 		    	original_tag = KOR
@@ -2063,7 +2063,7 @@ ideas = {
 		    traits = { pacific_fleet_naval_manufacturer }
     	}
 		
-		KOR_daewoo_josun = { #대우조선
+		KOR_kyungil_dockyard = { #경일
 			
 		    picture = kor_daewoo
     
@@ -2078,7 +2078,7 @@ ideas = {
 		    traits = { coastal_defence_naval_manufacturer }
 	    }
 		
-		KOR_hyundia_yong = { #현대_중공업
+		KOR_pyoahm = { #현대_중공업
 			
 		    picture = kor_hyundai
     
@@ -2096,7 +2096,7 @@ ideas = {
 	
 	aircraft_manufacturer = {
 	
-		KOR_daihan_af = { #한국항공우주산업
+		KOR_keumseong_af = { #한국항공우주산업
 			
 		    picture = kor_kai
 				
@@ -2113,7 +2113,7 @@ ideas = {
 		    traits = { light_aircraft_manufacturer }
 	    }
 		
-		KOR_daihan_af2 = { #한국항공우주산업
+		KOR_keumseong_af2 = { #한국항공우주산업
 					
 		    picture = kor_kai
 				
@@ -2130,7 +2130,7 @@ ideas = {
 		    traits = { medium_aircraft_manufacturer }
 	    }
 		
-		KOR_daihan_af3 = { #한국항공우주산업
+		KOR_keumseong_af3 = { #한국항공우주산업
 					
 		    picture = kor_kai
 				
@@ -2148,48 +2148,48 @@ ideas = {
 	    }
 	}
 	
-	materiel_manufacturer = { #대우정밀
+	materiel_manufacturer = { 
 	
-		KOR_daewoo_st = {
+		KOR_samsung = { #삼성
 
-	    	picture = kor_daewoo
+	    	picture = KOR_samsung
             
 		    allowed = {
 		    	original_tag = KOR
 		    }
 	    		
 		    research_bonus = {
-		    	infantry_weapons = 0.20
+		    	infantry_weapons = 0.1
 	    	}
 			
 		    traits = { infantry_equipment_manufacturer }
 	    }
 		
-		KOR_dasan = { #다산
+		KOR_anheung = { #안흥
 
-	    	picture = kor_dasan
+	    	picture = KOR_anheung
             
 		    allowed = {
 		    	original_tag = KOR
 		    }
 	    		
 		    research_bonus = {
-		    	infantry_weapons = 0.20
+		    	infantry_weapons = 0.1
 	    	}
 			
 		    traits = { infantry_equipment_manufacturer }
 	    }
 		
-		KOR_kia_car = { #기아_자동차
+		KOR_hwangseong_car = { #황성
 		
-			picture = kor_kia
+			picture = KOR_hwangseong_car
 			
 			allowed = {
 				original_tag = KOR
 			}
 			
 			research_bonus = {
-				motorized_equipment = 0.10
+				motorized_equipment = 0.1
 			}
 			
 			traits = { motorized_equipment_manufacturer }
@@ -2198,9 +2198,9 @@ ideas = {
 	
 	industrial_concern = {
 	
-		KOR_posco = { #포항종합제철
+		KOR_haepyong = { #해평 그룹
 
-		    picture = KOR_posco
+		    picture = KOR_haepyong
 			
 		    allowed = {
 		    	original_tag = KOR
@@ -2212,25 +2212,25 @@ ideas = {
 			
 		    traits = { industrial_concern }
 	    }
-		KOR_kepco = { #한국전력공사
+		KOR_gamwon = { #감원 그룹
 					
-		    picture = KOR_kepco
+		    picture = KOR_gamwon
 				
 		    allowed = {
 		    	original_tag = KOR
 		    }
 			
 		    research_bonus = {
-		    	electronics = 0.10
+				synth_resources = 0.1
 		    }
 
 		    cost = 150
 			
-		    traits = { electronics_developer }
+		    traits = { refinery_concern }
 	    }
-		KOR_samsung = { #삼성전자
+		KOR_keumjeong = { #금정 그룹
 					
-		    picture = kor_samsung
+		    picture = KOR_keumjeong
 				
 		    allowed = {
 				original_tag = KOR

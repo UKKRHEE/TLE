@@ -904,14 +904,14 @@ focus_tree = {
 					if = {
 							limit = {
 									NOT = {
-											has_idea = KOR_samsung_pacific
+											has_idea = KOR_kyungil_dockyard
 										}
 								}
-							add_ideas = KOR_samsung_pacific
+							add_ideas = KOR_kyungil_dockyard
 						}
 					if = {
 							limit = {
-									has_idea = KOR_samsung_pacific
+									has_idea = KOR_kyungil_dockyard
 								}
 							add_political_power = 150
 						}

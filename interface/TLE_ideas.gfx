@@ -1,6 +1,75 @@
 spriteTypes = {	
 	
 	spriteType = {
+		name = "GFX_idea_"
+		texturefile = "gfx/interface/ideas/companies/.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_hwangseong"
+		texturefile = "gfx/interface/ideas/companies/idea_KOR_hwangseong.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_yeomin"
+		texturefile = "gfx/interface/ideas/companies/idea_KOR_yeomin.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_kyungil"
+		texturefile = "gfx/interface/ideas/companies/idea_KOR_kyungil.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_anheung_dockyard"
+		texturefile = "gfx/interface/ideas/companies/idea_KOR_anheung_dockyard.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_kyungil_dockyard"
+		texturefile = "gfx/interface/ideas/companies/idea_KOR_kyungil_dockyard.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_pyoahm"
+		texturefile = "gfx/interface/ideas/companies/idea_KOR_pyoahm.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_keumseong_af"
+		texturefile = "gfx/interface/ideas/companies/idea_KOR_keumseong_af.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_keumseong_af2"
+		texturefile = "gfx/interface/ideas/companies/idea_KOR_keumseong_af.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_keumseong_af3"
+		texturefile = "gfx/interface/ideas/companies/idea_KOR_keumseong_af.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_samsung"
+		texturefile = "gfx/interface/ideas/companies/idea_KOR_samsung.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_anheung"
+		texturefile = "gfx/interface/ideas/companies/idea_KOR_anheung.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_anheung"
+		texturefile = "gfx/interface/ideas/companies/idea_KOR_anheung.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_hwangseong_car"
+		texturefile = "gfx/interface/ideas/companies/idea_KOR_hwangseong_car.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_haepyong"
+		texturefile = "gfx/interface/ideas/companies/idea_KOR_haepyong.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_gamwon"
+		texturefile = "gfx/interface/ideas/companies/idea_KOR_gamwon.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_keumjeong"
+		texturefile = "gfx/interface/ideas/companies/idea_KOR_keumjeong.png"
+	}
+	######
+	spriteType = {
 		name = "GFX_idea_KOR_cheondogyo"
 		texturefile = "gfx/interface/ideas/idea_KOR_cheondo.png"
 	}
