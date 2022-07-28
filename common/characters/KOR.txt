@@ -515,7 +515,7 @@ characters={
 		name=KOR_kim_kyung_cheon
 		portraits={
 			army={
-				large="gfx/leaders/KOR/Portrait_KOR_Kim_Kyung_cheon.dds"
+				large="gfx/leaders/KOR/Portrait_KOR_kim_gyeongcheon.png"
 				small="gfx/interface/ideas/idea_KOR_kim_kyung_cheon.dds"
 			}
 		}
@@ -626,7 +626,7 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_KOR_no_baeg_lin"
-				large="gfx/leaders/KOR/Portrait_KOR_Shin_Sung_mo.dds"
+				large="gfx/leaders/KOR/Portrait_KOR_no_baeg_lin.dds"
 			}
 		}
 		advisor={
