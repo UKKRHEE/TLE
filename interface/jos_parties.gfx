@@ -1,6 +1,14 @@
 spriteTypes = {
 
 	spriteType = {
+		name = "GFX_yi_kang_peace_portrait" 
+		textureFile = "gfx/leaders/KOR/portrait_KOR_yi_kang_old.png"
+	}
+	spriteType = {
+		name = "GFX_yi_kang_war_portrait" 
+		textureFile = "gfx/leaders/KOR/Portrait_KOR_yi_kang_general.png"
+	}
+	spriteType = {
 		name = "GFX_frontend_logo_TLE" 
 		textureFile = "gfx/interface/TLE_logo_game.dds"
 	}

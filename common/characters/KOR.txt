@@ -244,7 +244,7 @@ characters={
 		name=KOR_ji_cheong_cheon
 		portraits={
 			army={
-				large="gfx/leaders/KOR/Portrait_KOR_Ji_Cheong_cheon.dds"
+				large="gfx/leaders/KOR/Portrait_Korea_Ji_Cheong_cheon.dds"
 				small="GFX_idea_KOR_ji_chung_chun"
 			}
 		}

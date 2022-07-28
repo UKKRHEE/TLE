@@ -2367,6 +2367,58 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					tag = KOR
+					has_government = fascism
+					has_country_leader = {
+						character = KOR_yi_kang
+					}
+					NOT = {
+						has_country_flag = FLAG_YI_KANG_WAR_PORTRAIT
+					}
+					has_war = yes
+				}
+				set_portraits = {
+					character = KOR_yi_kang
+					civilian = { 
+						large ="GFX_yi_kang_war_portrait"
+					}
+				}
+				set_country_flag = FLAG_YI_KANG_WAR_PORTRAIT
+				if = {
+					limit = {
+						has_country_flag = FLAG_YI_KANG_PEACE_PORTRAIT
+					}
+					clr_country_flag = FLAG_YI_KANG_PEACE_PORTRAIT
+				}
+			}	
+			if = {
+				limit = {
+					tag = KOR
+					has_government = fascism
+					has_country_leader = {
+						character = KOR_yi_kang
+					}
+					NOT = {
+						has_country_flag = FLAG_YI_KANG_PEACE_PORTRAIT
+					}
+					has_war = no
+				}
+				set_portraits = {
+					character = KOR_yi_kang
+					civilian = { 
+						large ="GFX_yi_kang_peace_portrait"
+					}
+				}
+				set_country_flag = FLAG_YI_KANG_PEACE_PORTRAIT
+				if = {
+					limit = {
+						has_country_flag = FLAG_YI_KANG_WAR_PORTRAIT
+					}
+					clr_country_flag = FLAG_YI_KANG_WAR_PORTRAIT
+				}
+			}
+			if = {
+				limit = {
 					original_tag = KOR
 					is_puppet = no
 					has_completed_focus = KOR_plan_manchu
