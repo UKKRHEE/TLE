@@ -408,10 +408,10 @@ characters={
 		name=KOR_lee_beom_seok
 		portraits={
 			army={
-				small="GFX_idea_KOR_lee_beom_seok"
+				small="gfx/interface/ideas/idea_KOR_lee_beomseok.png"
 			}
 			army={
-				large="gfx/leaders/KOR/Portrait_KOR_Lee_Beom_seok.dds"
+				large="gfx/leaders/KOR/Portrait_KOR_Lee_Beom_seok.png"
 			}
 		}
 		advisor={
@@ -925,6 +925,92 @@ characters={
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
+		}
+	}
+	KOR_UKKRHEE = {
+		name=KOR_UKKRHEE
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_UKKRHEE.png"
+			}
+		}
+		field_marshal={
+			visible = {
+				has_game_rule = {
+					rule = TLE_EUGENE_KIM_RULE
+					option = KIM_YES
+				}
+			}
+			traits = {
+				KOR_empire_royal_family
+		#뒷배경
+				bearer_of_artillery #대포 운반자(야포 공격력)
+				old_guard #보수파(최대 참호/장군 경험치 얻음)
+				brilliant_strategist #명석한 전략가(공격/계획)
+				inflexible_strategist #확고한 전략가(방어/보급)
+		#		politically_connected #정계와의 연줄(장군 경험치 얻음/진급 비용)
+				war_hero #전쟁 영웅(집급 비용/병력 재배치 기간)
+		#		career_officer #직업 장교(진급 비용)
+				trait_cautious #신중함(계획 수립 속도-/전투에서 부상을 입을 확률-)
+				trait_reckless #무모함(계획 수립 속도/전투에서 부상을 입을 확률)
+		#		media_personality #언론의 인기인(병력 재배치 기간)
+		#		harsh_leader #가혹한 지휘관(사단 회복율-/공격)
+				infantry_officer #보병 장교(보병 지휘관 경험 요인)
+				cavalry_officer #기병 장교(기병 지휘관 경험 요인)
+				armor_officer #기갑 장교(기갑 지휘관 경험 요인)
+		#획득한 특성
+				organizer #조직자(계획 수립 속도)
+				panzer_leader #기갑 지휘관(기갑 속도/공격력)
+				cavalry_leader #기병 지휘관(기병/차량화/기계확 공격력)
+				trait_engineer #공학자(강/요새 공격)
+				infantry_leader #보병 지휘관(보병 사단 방어력)
+				naval_invader #침략자(상륙작전 속도/상륙 준비 시간)
+				commando #특공대(보급품 고갈)
+				trickster #책략가(정찰)
+				skilled_staffer #숙련된 참모(장군 최대 군 규모)
+		#장군 특성
+				panzer_expert #전차 전문가(기갑 방어력)
+				combined_arms_expert #제병현동 전문가(차량화/기계화 방어력)
+				cavalry_expert #기병 전문가(기병 공격력/방어력)
+				fortress_buster #요새 파괴자(요새 공격)
+				scavenger #노획꾼(장비 노획)
+				infantry_expert #보병 전문가(사단 공격력)
+				ambusher #매복가(최대 참호/참호 정찰)
+				invader_ii #상륙전 전문가(해병대 보급유예)
+				naval_liason #해군 연락장교(해안 포격)
+				skirmisher #척후병(탐침 공격)
+				paratrooper #공수부대(공수부대 보급유예)
+				camouflage_expert #위장 전문가(CAS 피해 감소)
+				expert_improviser #즉흥전술 전문가(육상 이동)
+				guerilla_fighter #게릴라 투사(참호 부설 속도)
+		# 원수 특성
+				logistics_wizard #병참의 마술사(보급소모량/추가보급품)
+				fast_planner #빠른 계획자(계획 수립 속도)
+				thorough_planner #철저한 준비자(최대 계획 수립)
+				unyielding_defender #방어가(방어)
+				aggressive_assaulter #공격적인 돌격가(돌격과 충격 전술 확률)
+				offensive_doctrine #공격적인 교리(이동시 조직력 손실)
+				defensive_doctrine #방어적인 교리(최대 참호)
+				organisational_leader #조직 우선주의(충원률)
+				inspirational_leader #카리스마
+				expert_delegator #위침 전문가(장군 최대 집단군 규모)
+		#지형 특성
+				desert_fox #사막의 여우(사막 이동/공격/방어)
+				swamp_fox #늪의 여우(습지 이동/공격/방어)
+				hill_fighter #언덕 싸움꾼(언덕 이동/공격/방어)
+				trait_mountaineer #등산가(산악 이동/공격/방어)
+				urban_assault_specialist #시가전 전문가(도시 이동/공격/방어)
+				jungle_rat #정글쥐(정글 이동/공격/방어)
+				ranger #레인저(숲 이동/공격/방어)
+				winter_specialist #혹한기 전문가(추위손실)
+				adaptable #적응가(화경 불이익감소/주위 적응/더위 적응)
+				winter_expert #동계전 전문가(추위 적응)
+			}
+			skill = 9
+			attack_skill = 10
+			defense_skill = 10
+			planning_skill = 10
+			logistics_skill = 10
 		}
 	}
 	KOR_hwang_geunchul = {
