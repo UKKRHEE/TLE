@@ -2367,6 +2367,25 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					original_tag = KOR
+					is_puppet = no
+					has_completed_focus = KOR_plan_manchu
+					has_completed_focus = KOR_all_claim
+					NOT = {
+						has_completed_focus = kor_tsushima
+						has_country_flag = FLAG_ATTACK_CHINA_FOCUS_KOR
+					}
+					date > 1938.2.1
+				}
+				KOR = {
+					set_country_flag = FLAG_ATTACK_CHINA_FOCUS_KOR
+					country_event = {
+						id = korea.113
+					}
+				}
+			}	
+			if = {
+				limit = {
 					KOR = {
 						OR = {
 							has_completed_focus = KOR_use_the_anti-armed

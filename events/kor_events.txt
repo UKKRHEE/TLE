@@ -4012,6 +4012,20 @@ country_event = {
 		add_ideas = KOR_embargo_us
 	}
 }
+##강제전쟁 이벤트
+country_event = { 
+	id = korea.113 #
+	title = korea.113.title
+	desc = korea.113.desc
+	picture = GFX_TLE_korea_event_none
+	
+	is_triggered_only = yes
+	
+	option = { #아.
+		name = korea.113.a
+		complete_national_focus = kor_tsushima
+	}
+}
 #####패전 후######
 country_event = { 
 	id = korea.200 #이주선씨
