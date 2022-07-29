@@ -1547,6 +1547,7 @@ country_event = { #쇼와 유신
 		ai_chance = {
 			factor = 100
 		}
+		custom_effect_tooltip = TOOLTIP_ENDING_JAPAN
 		set_cosmetic_tag = JAP_great_japan
 		add_political_power = 200
 	}

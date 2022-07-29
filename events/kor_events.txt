@@ -4174,6 +4174,7 @@ country_event = {
 	
 	option = { #
 		name = korea.211.a
+		custom_effect_tooltip = TOOLTIP_ENDING_KOREA
 		KOR = {
 			set_cosmetic_tag = KOR_STATE
 		}
