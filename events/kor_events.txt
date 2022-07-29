@@ -1868,7 +1868,7 @@ country_event = { #소련의 단독 점령
 					SOV = {
 						transfer_state = 841
 						transfer_state = 745
-						puppet = KOR
+						puppet = PRK
 						puppet = MAN
 					}
 					ZLC = {
@@ -1998,6 +1998,12 @@ country_event = { #소련의 단독 점령
 					KOR = {
 						add_state_core = 841
 					}
+			PRK = {
+				annex_country = {
+					target = KOR
+					transfer_troops = yes
+				}
+			}			
 	}
 }
 country_event = { #소련의 미국과의 분할점령

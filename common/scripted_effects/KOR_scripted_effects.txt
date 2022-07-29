@@ -1013,6 +1013,46 @@ KOR_hangbok_event = {
 		}
 	}
 	KOR = {
+		create_country_leader = {
+			name = "더글라스 맥아더"
+			desc = ""
+			picture = "gfx/leaders/KOR/Portrait_KOR_douglas_mcauther.png"
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+				#
+			}
+		}
+		create_country_leader = {
+			name = "더글라스 맥아더"
+			desc = ""
+			picture = "gfx/leaders/KOR/Portrait_KOR_douglas_mcauther.png"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				#
+			}
+		}
+		create_country_leader = {
+			name = "더글라스 맥아더"
+			desc = ""
+			picture = "gfx/leaders/KOR/Portrait_KOR_douglas_mcauther.png"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				#
+			}
+		}
+		create_country_leader = {
+			name = "더글라스 맥아더"
+			desc = ""
+			picture = "gfx/leaders/KOR/Portrait_KOR_douglas_mcauther.png"
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+				#
+			}
+		}
 		#set_country_flag = fall_of_korea
 		set_country_flag = TLE_THE_WAR_IS_ENDED
 		add_ideas = KOR_not_go_outside
@@ -1298,7 +1338,6 @@ KOR_hangbok_event = {
 		transfer_state = 743
 		transfer_state = 611
 		transfer_state = 621
-		transfer_state = 612
 		annex_country = {
 			target = MEN
 		}
@@ -1327,7 +1366,6 @@ KOR_hangbok_event = {
     		}
     		owns_state = 613
     	}
-    	transfer_state = 524
     	transfer_state = 857
     }
     MON = {
@@ -1336,6 +1374,7 @@ KOR_hangbok_event = {
     	transfer_state = 817
     	transfer_state = 819
     	transfer_state = 820
+		transfer_state = 612
     	set_cosmetic_tag = MON
     }
     SOV = {
@@ -1373,11 +1412,16 @@ KOR_hangbok_event = {
     	add_state_core = 850
     	add_state_core = 645
     }
+	every_country = {
+		limit = {
+    		owns_state = 608
+		}
+    	transfer_state = 524
+	}
     every_country = {
     	limit = {
     		owns_state = 613
     	}
-    	transfer_state = 524
     	transfer_state = 857
     }
     USA = {
@@ -1404,6 +1448,46 @@ KOR_hangbok_event_2 = {
 		}
 	}
 	KOR = {
+		create_country_leader = {
+			name = "더글라스 맥아더"
+			desc = ""
+			picture = "gfx/leaders/KOR/Portrait_KOR_douglas_mcauther.png"
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+				#
+			}
+		}
+		create_country_leader = {
+			name = "더글라스 맥아더"
+			desc = ""
+			picture = "gfx/leaders/KOR/Portrait_KOR_douglas_mcauther.png"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				#
+			}
+		}
+		create_country_leader = {
+			name = "더글라스 맥아더"
+			desc = ""
+			picture = "gfx/leaders/KOR/Portrait_KOR_douglas_mcauther.png"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				#
+			}
+		}
+		create_country_leader = {
+			name = "더글라스 맥아더"
+			desc = ""
+			picture = "gfx/leaders/KOR/Portrait_KOR_douglas_mcauther.png"
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+				#
+			}
+		}
 		#set_country_flag = fall_of_korea
 		set_country_flag = TLE_THE_WAR_IS_ENDED
 		add_ideas = KOR_not_go_outside
@@ -1585,8 +1669,6 @@ KOR_hangbok_event_2 = {
 		transfer_state = 743
 		transfer_state = 611
 		transfer_state = 621
-		transfer_state = 612
-    	transfer_state = 524
 		annex_country = {
 			target = MEN
 		}
@@ -1623,6 +1705,7 @@ KOR_hangbok_event_2 = {
     	transfer_state = 817
     	transfer_state = 819
     	transfer_state = 820
+		transfer_state = 612
     	set_cosmetic_tag = MON
     }
     SOV = {
@@ -1660,11 +1743,16 @@ KOR_hangbok_event_2 = {
     	add_state_core = 850
     	add_state_core = 645
     }
+	every_country = {
+		limit = {
+    		owns_state = 608
+		}
+    	transfer_state = 524
+	}
     every_country = {
     	limit = {
     		owns_state = 613
     	}
-    	transfer_state = 524
     	transfer_state = 857
     }
     USA = {
