@@ -348,6 +348,11 @@ focus_tree = {
 		}
 		x = 10
 		y = 4
+		completion_reward = {
+			country_event = {
+				id = korea.213
+			}
+		}
 
 	}
 	focus = {
@@ -359,6 +364,11 @@ focus_tree = {
 		}
 		x = 11
 		y = 2
+		completion_reward = {
+			country_event = {
+				id = korea.212
+			}
+		}
 
 	}
 }
