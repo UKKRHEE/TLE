@@ -1,6 +1,22 @@
 spriteTypes = {
 	 
 	spriteType = {
+		name = "GFX_imperial_korea_red"
+		texturefile = "gfx/레드이씨.png"
+	}  
+	spriteType = {
+		name = "GFX_imperial_korea_white"
+		texturefile = "gfx/화이트이씨.png"
+	}  
+	spriteType = {
+		name = "GFX_imperial_korea_black"
+		texturefile = "gfx/블랙이씨.png"
+	}  
+	spriteType = {
+		name = "GFX_imperial_korea_redblue"
+		texturefile = "gfx/태극이씨.png"
+	}  
+	spriteType = {
 		name = "GFX_focus_completed_bg_2"
 		texturefile = "gfx/interface/shangus2.dds"
 	}  

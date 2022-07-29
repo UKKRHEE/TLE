@@ -12,8 +12,8 @@
  KOR_independent_army_desc:0 "충군애국\n민족자주\n한인불사\n대한불멸"
  KOR_imperial_family:0 "제국 황실"
  KOR_imperial_family_desc:0 "이 인물은 대한국 황제의 혈통을 잇고 있습니다."
- KOR_emperor:0 "대한국 태황"
- KOR_emperor_desc:0 "동방의 호랑이,대한국 태황입니다."
+ KOR_emperor:0 "대한국 대황제"
+ KOR_emperor_desc:0 "수 백년간 이어온 사직의 계승자, 적법한 대한의 군주입니다."
  
  #정치고문
  KOR_phillip_jaisohn:0 "서재필"

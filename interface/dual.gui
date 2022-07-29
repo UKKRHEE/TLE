@@ -6,7 +6,7 @@ guiTypes = {
 		buttonType = {
 			name = "view"
 			position = { x = 470 y = 241 }
-			spriteType = "GFX_idea_KOR_Weakening_the_kingship"
+			spriteType = "GFX_imperial_korea_red"
 			pdx_tooltip = "NAME_SECOND_LEADER"
 			pdx_tooltip_delayed = "테스트용2"
 		}

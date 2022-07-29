@@ -832,7 +832,7 @@ instant_effect = {
 			type = artillery_equipment_1
 			creator = "KOR" 
 		}
-		requested_factories = 3
+		requested_factories = 2
 		progress = 0.3
 		efficiency = 100
 	}
@@ -844,7 +844,7 @@ instant_effect = {
 			creator = "KOR" 
 			version_name = "흑표 제 1식"
 		}
-		requested_factories = 4
+		requested_factories = 2
 		progress = 0.4
 		efficiency = 50
 	}
