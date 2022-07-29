@@ -1013,6 +1013,26 @@ KOR_hangbok_event = {
 		}
 	}
 	KOR = {
+		set_party_name = {
+			ideology = democratic
+			long_name = "GHQ"
+			name = "연합군최고사령부"
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = "GHQ"
+			name = "연합군최고사령부"
+		}
+		set_party_name = {
+			ideology = communism
+			long_name = "GHQ"
+			name = "연합군최고사령부"
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = "GHQ"
+			name = "연합군최고사령부"
+		}
 		create_country_leader = {
 			name = "더글라스 맥아더"
 			desc = ""
@@ -1448,6 +1468,26 @@ KOR_hangbok_event_2 = {
 		}
 	}
 	KOR = {
+		set_party_name = {
+			ideology = democratic
+			long_name = "GHQ"
+			name = "연합군최고사령부"
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = "GHQ"
+			name = "연합군최고사령부"
+		}
+		set_party_name = {
+			ideology = communism
+			long_name = "GHQ"
+			name = "연합군최고사령부"
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = "GHQ"
+			name = "연합군최고사령부"
+		}
 		create_country_leader = {
 			name = "더글라스 맥아더"
 			desc = ""

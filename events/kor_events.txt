@@ -4155,12 +4155,6 @@ country_event = {
 	option = { #
 		name = korea.208.a
 		add_ideas = syngman_rhee
-		
-		set_party_name = {
-			ideology = democratic
-			long_name = "대한민주당"
-			name = "대한민주당"
-		}
 	}
 }
 country_event = { 
@@ -4202,8 +4196,30 @@ country_event = {
 	option = { #
 		name = korea.211.a
 		custom_effect_tooltip = TOOLTIP_ENDING_KOREA
-		KOR = {
-			set_cosmetic_tag = KOR_STATE
+		hidden_effect = {
+			KOR = {
+				set_cosmetic_tag = KOR_STATE
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = "대한민주당"
+				name = "대한민주당"
+			}
+			set_party_name = {
+				ideology = fascism
+				long_name = "§R금지됨§!"
+				name = "§R금지됨§!"
+			}
+			set_party_name = {
+				ideology = communism
+				long_name = "대한사회당"
+				name = "대한사회당"
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = "대한민주당"
+				name = "대한민주당"
+			}
 		}
 	}
 }
