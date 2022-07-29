@@ -894,3 +894,7 @@ FRA_VICHY = {
 	color = rgb { 0 18 127 }
 	color_ui = rgb { 0 18 127 }
 }
+JAP_great_japan = {
+	color = rgb { 130 19 46 }
+	color_ui = rgb { 130 19 46 }
+}

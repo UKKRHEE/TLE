@@ -1533,6 +1533,24 @@ country_event = { #쇼와 유신
 		}
 	}
 }
+country_event = { #쇼와 유신
+	id = japan.1100
+	title = japan.1100.t
+	desc = japan.1100.d
+	picture = GFX_TLE_NONE
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1100.a	#동의
+		ai_chance = {
+			factor = 100
+		}
+		set_cosmetic_tag = JAP_great_japan
+		add_political_power = 200
+	}
+}
 ####
 country_event = { #설정
 	id = TLE_japan.1

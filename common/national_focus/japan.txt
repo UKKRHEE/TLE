@@ -2387,9 +2387,10 @@ focus_tree = {
 		x = 27
 		y = 10
 			completion_reward = {
-			set_cosmetic_tag = JAP_great_japan
-			add_political_power = 200
+				country_event = {
+					id = japan.1100
 				}
+			}
 
 	}
 	focus = {
