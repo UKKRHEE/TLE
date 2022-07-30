@@ -1369,6 +1369,9 @@ country_event = { #3분지계
 			transfer_state = 597
 			transfer_state = 870
 			transfer_state = 871
+			transfer_state = 898
+			transfer_state = 899
+			transfer_state = 900
 			set_cosmetic_tag = QIN_KOR
 		}
 		WZC = {
@@ -1402,10 +1405,12 @@ country_event = { #3분지계
 			transfer_state = 867
 			transfer_state = 592
 			transfer_state = 866
+			transfer_state = 897
 			add_state_core = 593
 			add_state_core = 867
 			add_state_core = 592
 			add_state_core = 866
+			add_state_core = 897
 		}
 		GXC = {
 			set_cosmetic_tag = GXC_KOR
