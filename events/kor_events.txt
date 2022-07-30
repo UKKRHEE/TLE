@@ -1441,6 +1441,7 @@ country_event = { #3분지계
 				}
 			}
 			MEN = {
+				transfer_state = 896
 				transfer_state = 616
 				transfer_state = 756
 				transfer_state = 746
@@ -1455,6 +1456,7 @@ country_event = { #3분지계
 					exists = no
 				}
 			}
+				add_state_core = 896
 				add_state_core = 616
 				add_state_core = 756
 				add_state_core = 746
