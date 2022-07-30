@@ -1,0 +1,31 @@
+state={
+	id=899
+	name="STATE_899"
+	provinces={
+		1084 7160 7189 9987 11933 11962 12093 
+	}
+	history={
+		owner = ZLC
+		add_core_of = ZLC
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			4032 5 
+		}
+		victory_points = {
+			4190 3 
+		}
+		1938.10.25 = {
+			controller = DKG
+
+		}
+
+	}
+	manpower=2434900
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

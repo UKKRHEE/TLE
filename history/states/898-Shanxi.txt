@@ -1,0 +1,43 @@
+
+state={
+	id=898
+	name="STATE_898"
+
+	history={
+		owner = ZLC
+		add_core_of = ZLC
+		add_core_of = SHX
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			10480 = {
+				bunker = 8
+
+			}
+
+		}
+		1938.10.25 = {
+			owner = PRC
+			controller = KOR
+			PRC = {
+				set_province_controller = 1034
+				set_province_controller = 1531
+				set_province_controller = 4074
+				set_province_controller = 10367
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1027 1180 1203 1438 4469 4538 10421 10480 12078 
+	}
+	manpower=5101000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -3,7 +3,6 @@ state={
 	id=611
 	name="STATE_611"
 
-	local_supplies=0.0 
 	history={
 		owner = MEN
 		add_core_of = MEN
@@ -18,17 +17,14 @@ state={
 		victory_points = {
 			11752 3 
 		}
-		1936.3.5 = {
-			owner = MEN
-
-		}
 
 	}
 
 	provinces={
-		828 952 1489 1590 3955 4495 4612 6904 7545 7674 9768 9776 10397 11752 
+		828 952 1489 4495 4612 7545 7674 9768 10397 11752 
 	}
-	manpower=1470000
+	manpower=1030000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
+	local_supplies=0.000
 }

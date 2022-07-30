@@ -1,0 +1,28 @@
+state={
+	id=896
+	name="STATE_896"
+	provinces={
+		1590 3955 6904 9776 
+	}
+	history={
+		owner = ZLC
+		add_core_of = MEN
+		add_core_of = MON
+		add_core_of = CHI
+		add_core_of = ZLC
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			11752 3 
+		}
+		1936.3.5 = {
+		}
+
+	}
+	manpower=470000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

@@ -1,0 +1,26 @@
+state={
+	id=897
+	name="STATE_897"
+	provinces={
+		1018 4023 10004 10105 
+	}
+	history={
+		owner = CHI
+		add_core_of = GXC
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			7137 10 
+		}
+
+	}
+	manpower=2130000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=1.000
+}
