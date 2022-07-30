@@ -973,6 +973,23 @@ focus_tree = {
 				}
 			}
 		}
+		bypass = {
+			OR = {
+				JAP = {
+					owns_state = 885
+				}
+				AND = {
+					NOT = {
+						KOR = {
+							owns_state = 885 
+						}
+						KKS = {
+							owns_state 885
+						}
+					}	
+				}
+			}
+		}
 			completion_reward = {
 			start_border_war = {
 				change_state_after_war = no
@@ -1010,6 +1027,23 @@ focus_tree = {
 				}
 				KHK = {
 					owns_state = 536 
+				}
+			}
+		}
+		bypass = {
+			OR = {
+				JAP = {
+					owns_state = 536
+				}
+				AND = {
+					NOT = {
+						KOR = {
+							owns_state = 536 
+						}
+						KHK = {
+							owns_state 536
+						}
+					}	
 				}
 			}
 		}
@@ -1181,7 +1215,10 @@ focus_tree = {
 					controls_state = 887
 				}
 			completion_reward = {
-					ENG = {
+				every_country = {
+					limit = {
+						owns_state = 887
+					}
 						country_event = {
 							id = japan.1044
 							days = 0
@@ -1199,11 +1236,19 @@ focus_tree = {
 		}
 		x = 28
 		y = 7
+		bypass = {
+			JAP = {
+				owns_state = 886
+			}
+		}
 		available = {
 			controls_state = 530
 		}
 			completion_reward = {
-					FRA = {
+				every_country = {
+					limit = {
+						owns_state = 886
+					}
 						country_event = {
 							id = japan.1043
 							days = 0
@@ -2355,8 +2400,16 @@ focus_tree = {
 			controls_state = 886
 			controls_state = 887
 		}
+		bypass = {
+			JAP = {
+				owns_state = 888
+			}
+		}
 			completion_reward = {
-					USA = {
+				every_country = {
+					limit = {
+						owns_state = 888
+					}
 						country_event = {
 							id = japan.1042
 							days = 0
