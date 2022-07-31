@@ -1,6 +1,6 @@
 ﻿#편제
 division_template = {
-	name = "보병"
+	name = "Choshu Infantry"
 	division_names_group = JAP_INF_01
 	
 	regiments = {
@@ -21,7 +21,7 @@ units = {
 			name_order = 1
 		}
 		location = 1092
-		division_template = "보병"
+		division_template = "Choshu Infantry"
 		start_experience_factor = 1
 		start_equipment_factor = 0.6
 	}
@@ -31,7 +31,7 @@ units = {
 			name_order = 1
 		}
 		location = 7145
-		division_template = "보병"
+		division_template = "Choshu Infantry"
 		start_experience_factor = 1
 		start_equipment_factor = 0.6
 	}
@@ -41,7 +41,7 @@ units = {
 			name_order = 1
 		}
 		location = 4197
-		division_template = "보병"
+		division_template = "Choshu Infantry"
 		start_experience_factor = 1
 		start_equipment_factor = 0.6
 	}
@@ -51,7 +51,7 @@ units = {
 			name_order = 1
 		}
 		location = 10055
-		division_template = "보병"
+		division_template = "Choshu Infantry"
 		start_experience_factor = 1
 		start_equipment_factor = 0.6
 	}

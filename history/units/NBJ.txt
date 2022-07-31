@@ -1,6 +1,6 @@
 ﻿#편제
 division_template = {
-	name = "보병"
+	name = "Nanbu Infantry"
 	division_names_group = JAP_INF_01
 	
 	regiments = {
@@ -21,7 +21,7 @@ units = {
 			name_order = 1
 		}
 		location = 6994
-		division_template = "보병"
+		division_template = "Nanbu Infantry"
 		start_experience_factor = 1
 		start_equipment_factor = 0.6
 	}
@@ -31,7 +31,7 @@ units = {
 			name_order = 1
 		}
 		location = 11847
-		division_template = "보병"
+		division_template = "Nanbu Infantry"
 		start_experience_factor = 1
 		start_equipment_factor = 0.6
 	}
@@ -41,7 +41,7 @@ units = {
 			name_order = 1
 		}
 		location = 6873
-		division_template = "보병"
+		division_template = "Nanbu Infantry"
 		start_experience_factor = 1
 		start_equipment_factor = 0.6
 	}

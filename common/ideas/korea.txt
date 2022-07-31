@@ -591,13 +591,13 @@ ideas = {
 	    KOR_war_japan_ai = {
 			picture = chi_warlord_integration5
 			modifier = {
-				army_org_Factor = 0.2
-				army_morale_factor = 0.2
-				planning_speed = 0.3
+				army_org_Factor = 0.1
+				army_morale_factor = 0.1
+				planning_speed = 0.1
 			}
 			targeted_modifier = {
                 tag = JAP
-				attack_bonus_against = 0.7
+				attack_bonus_against = 0.15
 			}
 		}
 	    KOR_not_planed_attack = {
