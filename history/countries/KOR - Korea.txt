@@ -411,6 +411,8 @@ recruit_character = KOR_kim_du_han
 recruit_character = KOR_hwang_geunchul
 recruit_character = KOR_cho_jiwon
 recruit_character = KOR_UKKRHEE
+recruit_character = KOR_moon_jaein
+recruit_character = KOR_roh_moohyun
 
 #육군(원수)
 
