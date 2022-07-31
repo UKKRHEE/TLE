@@ -46,7 +46,7 @@ leader_traits = {
 	dictator_kor = { #이강
 		random = no
 		political_power_factor = 0.1
-		fascism_drift = 0.1
+		fascism_drift = 0.2
 	}
 	the_shogun = { #황족 출신
 		sprite = 13
