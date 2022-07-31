@@ -2989,6 +2989,9 @@ on_actions = {
 					original_tag = KOR
 					has_idea = KOR_Weakening_the_kingship
 					NOT = {
+						has_completed_focus = kor_korean_lebensraum
+					}
+					NOT = {
 						has_government = neutrality
 					}		
 					neutrality > 0.4

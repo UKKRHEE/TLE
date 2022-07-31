@@ -125,7 +125,7 @@ country_event = {
 		add_stability = 0.1
 		set_province_name = {
 			id = 1182
-			name = "도시마"
+			name = "도쿄"
 		}
 	}
 }

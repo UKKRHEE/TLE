@@ -1270,33 +1270,6 @@ country_event = { #근황파 쿠데타
 	
 	fire_only_once = yes	
     is_triggered_only = yes
-	
-	option = { #ㅇㅇ ㅋㅋ
-		name = korea.38.a
-		set_politics = {
-			ruling_party = neutrality
-			last_election = "1936.3.15"
-			election_frequency = 48
-			elections_allowed = no
-		}
-		set_popularities = {
-			neutrality = 100
-			fascism = 0
-			communism = 0
-			democratic = 0
-		}
-		add_country_leader_role = {
-			Character = KOR_yi_kang
-			Promote_leader = yes
-			Country_leader = {
-				ideology = conservatism
-				expire = "1965.1.1"
-				traits = {
-				}
-			}
-		}
-		
-	}		
 	option = { #응~ 대가리 깨져도 울 정부 지지해~
 		name = korea.38.b
 		hidden_effect = {
@@ -1314,7 +1287,17 @@ country_event = { #근황파 쿠데타
 				}
 			}
 			KOR = {
-				set_capital = 525
+				set_capital = { state = 525 }
+			}
+			add_country_leader_role = {
+				Character = KOR_yu_dongyeol
+				Promote_leader = yes
+				Country_leader = {
+					ideology = despotism
+					expire = "1965.1.1"
+					traits = {
+					}
+				}
 			}
 		}
 		
@@ -1375,7 +1358,7 @@ country_event = { #3분지계
 			set_cosmetic_tag = QIN_KOR
 		}
 		WZC = {
-			set_capital = 613
+			set_capital = { state = 613 }
 			transfer_state = 607
 			transfer_state = 878
 			transfer_state = 620
