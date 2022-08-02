@@ -413,6 +413,11 @@ recruit_character = KOR_cho_jiwon
 recruit_character = KOR_UKKRHEE
 recruit_character = KOR_moon_jaein
 recruit_character = KOR_roh_moohyun
+recruit_character = KOR_park_geunhye
+recruit_character = KOR_park_chunghee
+recruit_character = KOR_lee_myungbak
+recruit_character = KOR_chun_doohwan
+recruit_character = KOR_lee_jieun
 
 #육군(원수)
 
