@@ -1349,6 +1349,11 @@ focus_tree = {
 				}
 			}
 		}
+		bypass = {
+			KOR = {
+				has_country_flag = TLE_THE_WAR_IS_ENDED
+			}	
+		}
 			completion_reward = {
 				country_event = {
 					id = japan.1028
@@ -1372,6 +1377,11 @@ focus_tree = {
 					has_war_with = ZLC
 				}
 			}
+		}
+		bypass = {
+			KOR = {
+				has_country_flag = TLE_THE_WAR_IS_ENDED
+			}	
 		}
 		x = 31
 		y = 10

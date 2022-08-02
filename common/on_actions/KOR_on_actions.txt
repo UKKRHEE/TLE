@@ -339,6 +339,22 @@ on_actions = {
 			if = {
 				limit = {
 					FROM = {
+						original_tag = ZLC
+					}
+					ROOT = {
+						original_tag = CHI
+					}
+				}
+				CHI = {
+					create_faction = "국민혁명군"
+				}
+				ZLC = {
+					create_faction = "북양정부"
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
 						has_idea = KOR_anti_communism_pact_joincountry
 					}
 					ROOT = {
@@ -2365,6 +2381,18 @@ on_actions = {
 	}
 	on_daily = {
 		effect = {
+			if = {
+				limit = {
+					has_wargoal_against = KOR
+					KOR = {
+						has_country_flag = TLE_THE_WAR_IS_ENDED
+					}
+				}
+				remove_wargoal = {
+					type = all
+					target = KOR
+				}
+			}
 			if = {
 				limit = {
 					tag = KOR
