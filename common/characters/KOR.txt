@@ -1118,7 +1118,7 @@ characters={
 					option = KIM_YES
 				}
 			}
-			desc = "KOR_moon_jaein_desc"
+			desc = "KOR_KOR_chun_doohwan_desc"
 			traits = {
 				KOR_empire_royal_family
 		#뒷배경
@@ -1206,7 +1206,7 @@ characters={
 					option = KIM_YES
 				}
 			}
-			desc = "KOR_moon_jaein_desc"
+			desc = "KOR_KOR_lee_myungbak_desc"
 			traits = {
 				KOR_empire_royal_family
 		#뒷배경
@@ -1294,7 +1294,7 @@ characters={
 					option = KIM_YES
 				}
 			}
-			desc = "KOR_moon_jaein_desc"
+			desc = "KOR_KOR_park_geunhye_desc"
 			traits = {
 				KOR_empire_royal_family
 		#뒷배경
@@ -1382,7 +1382,7 @@ characters={
 					option = KIM_YES
 				}
 			}
-			desc = "KOR_moon_jaein_desc"
+			desc = "KOR_KOR_park_chunghee_desc"
 			traits = {
 				KOR_empire_royal_family
 		#뒷배경
