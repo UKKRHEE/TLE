@@ -344,6 +344,28 @@ on_actions = {
 					ROOT = {
 						original_tag = CHI
 					}
+					KOR = {
+						has_country_flag = TLE_THE_WAR_IS_ENDED
+					}	
+				}
+				CHI = {
+					create_faction = "국민혁명군"
+				}
+				ZLC = {
+					create_faction = "북양정부"
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = ZLC
+					}
+					FROM = {
+						original_tag = CHI
+					}
+					KOR = {
+						has_country_flag = TLE_THE_WAR_IS_ENDED
+					}	
 				}
 				CHI = {
 					create_faction = "국민혁명군"

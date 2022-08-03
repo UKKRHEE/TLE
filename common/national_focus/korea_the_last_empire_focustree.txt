@@ -296,6 +296,32 @@ focus_tree = {
 				id = korea.211
 			}
 			hidden_effect = {
+				USA = {
+					end_puppet = KOR
+				}
+				CHI = {
+					end_puppet = KOR
+				}
+				ZLC = {
+					end_puppet = KOR
+				}
+				JAP = {
+					end_puppet = KOR
+				}
+				SOV = {
+					end_puppet = KOR
+				}
+				end_puppet = KOR
+				set_politics = {
+					ruling_party = democratic
+					last_election = "1936.2.26"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 1
+				}
 				add_country_leader_role = {
 					Character = KOR_emperor_yi_jin
 					country_leader = {

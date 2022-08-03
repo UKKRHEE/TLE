@@ -4192,23 +4192,23 @@ country_event = {
 			}
 			set_party_name = {
 				ideology = democratic
-				long_name = "대한민주당"
-				name = "대한민주당"
+				long_name = "THE_LAST_EMPIRE_DEMOCRATIC_LONG"
+				name = "THE_LAST_EMPIRE_DEMOCRATIC_SHORT"
 			}
 			set_party_name = {
 				ideology = fascism
-				long_name = "§R금지됨§!"
-				name = "§R금지됨§!"
+				long_name = "THE_LAST_EMPIRE_FASCISM_LONG"
+				name = "THE_LAST_EMPIRE_FASCISM_SHORT"
 			}
 			set_party_name = {
 				ideology = communism
-				long_name = "대한사회당"
-				name = "대한사회당"
+				long_name = "THE_LAST_EMPIRE_COMMUNISM_LONG"
+				name = "THE_LAST_EMPIRE_COMMUNISM_SHORT"
 			}
 			set_party_name = {
 				ideology = neutrality
-				long_name = "대한민주당"
-				name = "대한민주당"
+				long_name = "THE_LAST_EMPIRE_DEMOCRATIC_LONG"
+				name = "THE_LAST_EMPIRE_DEMOCRATIC_SHORT"
 			}
 		}
 	}
